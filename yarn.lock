@@ -1134,6 +1134,19 @@
     global "^4.3.2"
     prop-types "^15.6.2"
 
+"@storybook/addon-viewport@^4.0.9":
+  version "4.0.9"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-viewport/-/addon-viewport-4.0.9.tgz#b983e4f679ecac7fc5a4380e3a3aec6c81dfd1b0"
+  integrity sha512-bg+H5OLQsb5ltREaXWOYD8uLBbG9Sblq7CFFAy74dqurG9EiLRGISC8FUhLhUzGkYkx2Hvew/em8K2XFH5ixiw==
+  dependencies:
+    "@emotion/styled" "^0.10.6"
+    "@storybook/addons" "4.0.9"
+    "@storybook/components" "4.0.9"
+    "@storybook/core-events" "4.0.8"
+    global "^4.3.2"
+    prop-types "^15.6.2"
+    util-deprecate "^1.0.2"
+
 "@storybook/addons@4.0.9", "@storybook/addons@^4.0.9":
   version "4.0.9"
   resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-4.0.9.tgz#cfa18fe10ddda454dbbc3aae17562e46d04d3955"
