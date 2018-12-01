@@ -1,26 +1,10 @@
-import { ApolloClient } from 'apollo-client';
-import { ApolloLink } from 'apollo-link';
-import { HttpLink } from 'apollo-link-http';
-import { onError } from 'apollo-link-error';
-import { InMemoryCache } from 'apollo-cache-inmemory';
+import ApolloClient from 'apollo-boost';
 import api from 'src/constants/api';
 
-const httpLink = new HttpLink({
+export default new ApolloClient({
   uri: api.graphqlServer,
-  headers: {},
+  onError: ({ graphQLErrors, networkError }) => {
+    if (graphQLErrors) console.log(graphQLErrors);
+    if (networkError) console.log(networkError);
+  },
 });
-
-const errorLink = onError(({ graphQLErrors, networkError }) => {
-  if (graphQLErrors) console.log('graphql error');
-  if (networkError) console.log('network error');
-});
-
-const link = ApolloLink.from([errorLink, httpLink]);
-const cache = new InMemoryCache();
-
-const client = new ApolloClient({
-  link,
-  cache,
-});
-
-export default { client };
