@@ -21,7 +21,7 @@ stories.add('通常パターン', () => (
         id: '4',
         body: (
           <>
-            <h3 className="bp3-heading">4cつ目のカード</h3>
+            <h3 className="bp3-heading">4つ目のカード</h3>
             <Text>カードの中に文章を書いています</Text>
           </>
         ),
