@@ -1,14 +1,12 @@
-import React, { Component } from 'react';
-import './App.css';
+import React from 'react';
+import { ApolloProvider } from 'react-apollo';
+import Router from './router';
+import client from 'src/graphql/client';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <h1>Hello IPPO</h1>
-      </div>
-    );
-  }
-}
+const App = () => (
+  <ApolloProvider client={client}>
+    <Router />
+  </ApolloProvider>
+);
 
 export default App;
