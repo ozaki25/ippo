@@ -19,3 +19,5 @@ const data = {
 };
 
 stories.add('通常パターン', () => <Events data={data} />);
+
+stories.add('ロード中', () => <Events data={{ loading: true }} />);
