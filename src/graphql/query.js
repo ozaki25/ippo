@@ -3,7 +3,7 @@ import gql from 'graphql-tag';
 const hello = gql`
   query Hello {
     hello
-    number
+    count
   }
 `;
 
