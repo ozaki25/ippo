@@ -55,8 +55,4 @@ Events.propTypes = {
   }),
 };
 
-Events.defaultProps = {
-  events: [],
-};
-
 export default Events;
