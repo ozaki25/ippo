@@ -20,7 +20,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "deploy-storybook": "build-storybook -s public -o storybook-dist/build && cd storybook-dist && git init && git add -A && git commit -m 'deploy storybook' && git push -f git@github.com:ozaki25/ippo.git master:storybook"
   },
   "eslintConfig": {
     "extends": "react-app"
