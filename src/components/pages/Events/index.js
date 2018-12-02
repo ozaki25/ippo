@@ -55,4 +55,13 @@ Events.propTypes = {
   }),
 };
 
+Events.defaultProps = {
+  data: {
+    loading: false,
+    connpass: {
+      events: [],
+    },
+  },
+};
+
 export default Events;
