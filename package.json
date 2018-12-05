@@ -5,9 +5,6 @@
   "dependencies": {
     "@blueprintjs/core": "^3.9.0",
     "apollo-boost": "^0.1.22",
-    "apollo-server-lambda": "^2.2.6",
-    "connpass": "^0.1.0",
-    "dayjs": "^1.7.7",
     "graphql": "^14.0.2",
     "react": "^16.6.3",
     "react-apollo": "^2.3.2",
