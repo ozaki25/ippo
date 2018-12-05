@@ -1,4 +1,4 @@
-const { ApolloServer, gql } = require('apollo-server');
+const { ApolloServer, gql } = require('apollo-server-lambda');
 const fetchConnpassEvents = require('./src/fetchConnpassEvent');
 
 const typeDefs = gql`
