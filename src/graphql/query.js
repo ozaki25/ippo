@@ -21,7 +21,17 @@ const connpassEvents = gql`
   }
 `;
 
+const registerSubscriber = token =>
+  gql`
+    mutation {
+      subscriber(token: $token) {
+        token: token
+      }
+    }
+  `;
+
 export default {
   hello,
   connpassEvents,
+  registerSubscriber,
 };
