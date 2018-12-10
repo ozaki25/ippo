@@ -1,5 +1,8 @@
-import { graphql } from 'react-apollo';
+import { compose, graphql } from 'react-apollo';
 import query from 'src/graphql/query';
 import Hello from 'src/components/pages/Hello';
 
-export default graphql(query.hello)(Hello);
+export default compose(
+  graphql(query.hello),
+  graphql(query.registerSubscriber),
+)(Hello);

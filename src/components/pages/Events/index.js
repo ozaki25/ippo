@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
-import { Spinner, Text } from '@blueprintjs/core';
+import { Spinner } from '@blueprintjs/core';
 import NavigationBar from 'src/components/molecules/NavigationBar';
 import EventCard from 'src/components/organisms/EventCard';
 
