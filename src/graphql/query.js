@@ -29,8 +29,17 @@ const registerSubscriber = gql`
   }
 `;
 
+const publishNotification = gql`
+  mutation publishNotification($target: String) {
+    publishNotification(target: $target) {
+      token
+    }
+  }
+`;
+
 export default {
   hello,
   connpassEvents,
   registerSubscriber,
+  publishNotification,
 };
