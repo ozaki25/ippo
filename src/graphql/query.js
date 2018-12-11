@@ -16,6 +16,8 @@ const connpassEvents = gql`
         event_url
         catch
         place
+        started_at
+        ended_at
       }
     }
   }
