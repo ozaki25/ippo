@@ -16,7 +16,23 @@ const connpassEvents = gql`
         event_url
         catch
         place
+        started_at
+        ended_at
       }
+    }
+  }
+`;
+
+const registerSubscriber = gql`
+  mutation registerNotification($token: String) {
+    registerNotification(token: $token)
+  }
+`;
+
+const publishNotification = gql`
+  mutation publishNotification($target: String) {
+    publishNotification(target: $target) {
+      result
     }
   }
 `;
@@ -24,4 +40,6 @@ const connpassEvents = gql`
 export default {
   hello,
   connpassEvents,
+  registerSubscriber,
+  publishNotification,
 };

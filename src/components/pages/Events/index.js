@@ -19,11 +19,10 @@ const Events = ({ data: { loading, connpass } }) => (
     <Container>
       {loading ? (
         <Spinner />
-      ) : (
+      ) : connpass ? (
         connpass.events.map(event => (
-          <EventCardContainer>
+          <EventCardContainer key={event.event_id}>
             <EventCard
-              key={event.event_id}
               title={event.title}
               eventUrl={event.event_url}
               catchMessage={event.catch}
@@ -32,6 +31,8 @@ const Events = ({ data: { loading, connpass } }) => (
             />
           </EventCardContainer>
         ))
+      ) : (
+        <Text>No Contents</Text>
       )}
     </Container>
   </>
