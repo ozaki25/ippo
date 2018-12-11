@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
+import dayjs from 'dayjs';
 import { Spinner, Text } from '@blueprintjs/core';
 import NavigationBar from 'src/components/molecules/NavigationBar';
 import EventCard from 'src/components/organisms/EventCard';
@@ -27,6 +28,9 @@ const Events = ({ data: { loading, connpass } }) => (
               eventUrl={event.event_url}
               catchMessage={event.catch}
               place={event.place}
+              datetime={
+                event.started_at && dayjs(event.started_at).format('YYYY年MM月DD日 HH:mm〜')
+              }
               interactive
             />
           </EventCardContainer>
@@ -50,6 +54,7 @@ Events.propTypes = {
           event_url: propTypes.string,
           catch: propTypes.string,
           place: propTypes.string,
+          started_at: propTypes.string,
         }),
       ),
     }),
