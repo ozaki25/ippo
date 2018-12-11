@@ -5,5 +5,5 @@ import Hello from 'src/components/pages/Hello';
 export default compose(
   graphql(query.hello),
   graphql(query.publishNotification, { name: 'publishNotification' }),
-  graphql(query.registerSubscriber, { name: 'registerSubscriber' }),
+  graphql(query.registerNotification, { name: 'registerNotification' }),
 )(Hello);

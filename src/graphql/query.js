@@ -23,9 +23,11 @@ const connpassEvents = gql`
   }
 `;
 
-const registerSubscriber = gql`
+const registerNotification = gql`
   mutation registerNotification($token: String) {
-    registerNotification(token: $token)
+    registerNotification(token: $token) {
+      result
+    }
   }
 `;
 
@@ -40,6 +42,6 @@ const publishNotification = gql`
 export default {
   hello,
   connpassEvents,
-  registerSubscriber,
+  registerNotification,
   publishNotification,
 };
