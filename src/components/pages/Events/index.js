@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
-import { Spinner } from '@blueprintjs/core';
+import { Spinner, Text } from '@blueprintjs/core';
 import NavigationBar from 'src/components/molecules/NavigationBar';
 import EventCard from 'src/components/organisms/EventCard';
 
@@ -19,11 +19,10 @@ const Events = ({ data: { loading, connpass } }) => (
     <Container>
       {loading ? (
         <Spinner />
-      ) : (
+      ) : connpass ? (
         connpass.events.map(event => (
-          <EventCardContainer>
+          <EventCardContainer key={event.event_id}>
             <EventCard
-              key={event.event_id}
               title={event.title}
               eventUrl={event.event_url}
               catchMessage={event.catch}
@@ -32,6 +31,8 @@ const Events = ({ data: { loading, connpass } }) => (
             />
           </EventCardContainer>
         ))
+      ) : (
+        <Text>No Contents</Text>
       )}
     </Container>
   </>
