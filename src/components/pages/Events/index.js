@@ -5,6 +5,7 @@ import dayjs from 'dayjs';
 import { Spinner, Text } from '@blueprintjs/core';
 import NavigationBar from 'src/components/molecules/NavigationBar';
 import EventCard from 'src/components/organisms/EventCard';
+import SearchForm from 'src/components/organisms/SerchForm';
 
 const Container = styled.div`
   padding: 10px 15px;
@@ -21,20 +22,23 @@ const Events = ({ data: { loading, connpass } }) => (
       {loading ? (
         <Spinner />
       ) : connpass ? (
-        connpass.events.map(event => (
-          <EventCardContainer key={event.event_id}>
-            <EventCard
-              title={event.title}
-              eventUrl={event.event_url}
-              catchMessage={event.catch}
-              place={event.place}
-              datetime={
-                event.started_at && dayjs(event.started_at).format('YYYY年MM月DD日 HH:mm〜')
-              }
-              interactive
-            />
-          </EventCardContainer>
-        ))
+        <>
+          <SearchForm />
+          {connpass.events.map(event => (
+            <EventCardContainer key={event.event_id}>
+              <EventCard
+                title={event.title}
+                eventUrl={event.event_url}
+                catchMessage={event.catch}
+                place={event.place}
+                datetime={
+                  event.started_at && dayjs(event.started_at).format('YYYY年MM月DD日 HH:mm〜')
+                }
+                interactive
+              />
+            </EventCardContainer>
+          ))}
+        </>
       ) : (
         <Text>No Contents</Text>
       )}
