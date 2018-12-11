@@ -3,11 +3,13 @@ import { Link } from 'react-router-dom';
 import { Button } from '@blueprintjs/core';
 import notifications from 'src/utils/notifications';
 
-const Hello = ({ data: { hello, count }, registerSubscriber, publishNotification }) => {
+const Hello = ({ data: { hello, count }, registerNotification, publishNotification }) => {
   const onClickSubscribe = async () => {
     const token = await notifications.askForPermission();
     console.log(token);
-    registerSubscriber({ variables: { token } });
+    const { data } = await registerNotification({ variables: { token } });
+    console.log(data);
+    alert(data.registerNotification.result);
   };
   const onClickPublish = async () => {
     const { data } = await publishNotification({ variables: { target: 'all' } });
