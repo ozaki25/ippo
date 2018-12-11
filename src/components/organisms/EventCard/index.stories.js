@@ -18,5 +18,6 @@ stories.add('全項目ある場合', () => (
     eventUrl={text('url', 'https://connpass.com/')}
     catchMessage={text('説明', 'イベントの説明です')}
     place={text('場所', '東京都千代田区丸の内')}
+    datetime={text('日時', '2018年12月1日 19:30〜')}
   />
 ));
