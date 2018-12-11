@@ -25,16 +25,14 @@ const connpassEvents = gql`
 
 const registerSubscriber = gql`
   mutation registerNotification($token: String) {
-    registerNotification(token: $token) {
-      token
-    }
+    registerNotification(token: $token)
   }
 `;
 
 const publishNotification = gql`
   mutation publishNotification($target: String) {
     publishNotification(target: $target) {
-      token
+      result
     }
   }
 `;

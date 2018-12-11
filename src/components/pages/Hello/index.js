@@ -9,7 +9,11 @@ const Hello = ({ data: { hello, count }, registerSubscriber, publishNotification
     console.log(token);
     registerSubscriber({ variables: { token } });
   };
-  const onClickPublish = () => publishNotification({ variables: { target: 'all' } });
+  const onClickPublish = async () => {
+    const { data } = await publishNotification({ variables: { target: 'all' } });
+    console.log(data);
+    alert(data.publishNotification.result);
+  };
   return (
     <>
       <div>
