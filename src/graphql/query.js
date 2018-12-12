@@ -8,8 +8,8 @@ const hello = gql`
 `;
 
 const connpassEvents = gql`
-  query {
-    connpass {
+  query($searchQuery: String) {
+    connpass(searchQuery: $searchQuery) {
       events {
         event_id
         title
