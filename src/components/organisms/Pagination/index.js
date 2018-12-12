@@ -2,8 +2,8 @@ import React from 'react';
 import propTypes from 'prop-types';
 import { Button, ButtonGroup } from '@blueprintjs/core';
 
-const Pagination = ({ current, total, onClick }) => (
-  <ButtonGroup>
+const Pagination = ({ current, total, onClick, large }) => (
+  <ButtonGroup large={large}>
     {current > 1 && (
       <>
         <Button icon="double-chevron-left" onClick={() => onClick(1)} />
@@ -26,6 +26,11 @@ Pagination.propTypes = {
   current: propTypes.number.isRequired,
   total: propTypes.number.isRequired,
   onClick: propTypes.func.isRequired,
+  large: propTypes.bool,
+};
+
+Pagination.defaultProps = {
+  large: false,
 };
 
 export default Pagination;
