@@ -15,7 +15,7 @@ const EventCardContainer = styled.div`
   margin: 8px 0;
 `;
 
-const Events = ({ data: { loading, connpass } }) => (
+const Events = ({ data: { loading, connpass, refetch } }) => (
   <>
     <NavigationBar appName="IPPO" />
     <Container>
@@ -23,7 +23,7 @@ const Events = ({ data: { loading, connpass } }) => (
         <Spinner />
       ) : connpass ? (
         <>
-          <SearchForm />
+          <SearchForm search={searchQuery => refetch({ searchQuery })} />
           {connpass.events.map(event => (
             <EventCardContainer key={event.event_id}>
               <EventCard
@@ -62,6 +62,7 @@ Events.propTypes = {
         }),
       ),
     }),
+    refetch: propTypes.func.isRequired,
   }),
 };
 
