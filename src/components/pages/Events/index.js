@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
-import dayjs from 'dayjs';
 import { Spinner, Text } from '@blueprintjs/core';
 import NavigationBar from 'src/components/molecules/NavigationBar';
 import EventCard from 'src/components/organisms/EventCard';
 import SearchForm from 'src/components/organisms/SerchForm';
+import dateFormat from 'src/utils/dateFormat';
 
 const Container = styled.div`
   padding: 10px 15px;
@@ -19,9 +19,8 @@ const Events = ({ data: { loading, connpass, refetch } }) => (
   <>
     <NavigationBar appName="IPPO" />
     <Container>
-      {loading ? (
-        <Spinner />
-      ) : connpass ? (
+      {loading && <Spinner />}
+      {connpass && connpass.events ? (
         <>
           <SearchForm search={searchQuery => refetch({ searchQuery })} />
           {connpass.events.map(event => (
@@ -31,9 +30,7 @@ const Events = ({ data: { loading, connpass, refetch } }) => (
                 eventUrl={event.event_url}
                 catchMessage={event.catch}
                 place={event.place}
-                datetime={
-                  event.started_at && dayjs(event.started_at).format('YYYY年MM月DD日 HH:mm〜')
-                }
+                datetime={event.started_at && dateFormat.startDatetimeJa(event.started_at)}
                 interactive
               />
             </EventCardContainer>
