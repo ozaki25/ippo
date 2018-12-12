@@ -8,8 +8,8 @@ const hello = gql`
 `;
 
 const connpassEvents = gql`
-  query($searchQuery: String) {
-    connpass(searchQuery: $searchQuery) {
+  query($searchQuery: String, $page: Int, $count: Int) {
+    connpass(searchQuery: $searchQuery, page: $page, count: $count) {
       events {
         event_id
         title
@@ -19,6 +19,8 @@ const connpassEvents = gql`
         started_at
         ended_at
       }
+      results_available
+      results_start
     }
   }
 `;

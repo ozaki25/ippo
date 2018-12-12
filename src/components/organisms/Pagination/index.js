@@ -10,7 +10,7 @@ const Pagination = ({ current, total, onClick, large }) => (
         <Button icon="chevron-left" onClick={() => onClick(current - 1)} />
       </>
     )}
-    <Button tagName="span" text={`${current} of ${total}`} />
+    <Button text={`${current} of ${total}`} />
     {current < total && (
       <>
         <Button icon="chevron-right" onClick={() => onClick(current + 1)} />
