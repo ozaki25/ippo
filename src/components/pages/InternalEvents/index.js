@@ -14,16 +14,16 @@ const EventCardContainer = styled.div`
   margin: 8px 0;
 `;
 
-const InternalEvents = ({ data: { loading, events } }) => {
+const InternalEvents = ({ data: { loading, internalEvents } }) => {
   return (
     <>
       <NavigationBar appName="IPPO" />
       <Container>
         {loading ? (
           <Spinner />
-        ) : events ? (
+        ) : internalEvents ? (
           <>
-            {events.map(event => (
+            {internalEvents.map(event => (
               <EventCardContainer key={event.id}>
                 <EventCard
                   title={event.title}
@@ -49,8 +49,9 @@ InternalEvents.displayName = 'InternalEvents';
 InternalEvents.propTypes = {
   data: propTypes.shape({
     loading: propTypes.bool.isRequired,
-    events: propTypes.arrayOf(
+    internalEvents: propTypes.arrayOf(
       propTypes.shape({
+        id: propTypes.string,
         title: propTypes.string,
         catchMessage: propTypes.string,
         place: propTypes.string,
@@ -63,7 +64,7 @@ InternalEvents.propTypes = {
 InternalEvents.defaultProps = {
   data: {
     loading: false,
-    events: [],
+    internalEvents: [],
   },
 };
 

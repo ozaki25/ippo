@@ -27,7 +27,7 @@ const connpassEvents = gql`
 
 const internalEvents = gql`
   query {
-    events {
+    internalEvents {
       id
       title
       catchMessage
