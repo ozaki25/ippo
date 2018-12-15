@@ -1,4 +1,4 @@
-import dayjs from 'dayjs-ext';
+import dayjs from 'dayjs';
 
 const startDatetimeJa = date => dayjs(date).format('YYYY年MM月DD日 HH:mm〜');
 

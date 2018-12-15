@@ -10,6 +10,7 @@ const event = i => ({
   event_url: 'https://connpass.com/',
   catch: 'イベントの説明です',
   place: '東京都千代田区丸の内',
+  started_at: '2012-04-17T18:30:00+09:00',
 });
 
 const data = {
@@ -21,3 +22,5 @@ const data = {
 stories.add('通常パターン', () => <Events data={data} />);
 
 stories.add('ロード中', () => <Events data={{ loading: true }} />);
+
+stories.add('データなし', () => <Events data={{ events: null }} />);
