@@ -8,11 +8,13 @@ const validate = () => true;
 class EventCreateForm extends React.Component {
   state = { title: '', catchMessage: '', place: '', startedAt: '', endedAt: '', invalid: false };
 
-  onClick = () => {
+  onClick = async () => {
     const { title, catchMessage, place, startedAt, endedAt } = this.state;
     const { onSubmit } = this.props;
     if (validate()) {
-      onSubmit({ title, catchMessage, place, startedAt, endedAt });
+      const { data } = await onSubmit({ title, catchMessage, place, startedAt, endedAt });
+      alert(JSON.stringify(data.createEvent.result));
+      console.log(data);
     } else {
       this.setState({ invalid: true });
     }
