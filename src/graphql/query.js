@@ -41,9 +41,18 @@ const publishNotification = gql`
   }
 `;
 
+const createEvent = gql`
+  mutation createEvent($event: inputEvent) {
+    createEvent(event: $event) {
+      result
+    }
+  }
+`;
+
 export default {
   hello,
   connpassEvents,
   registerNotification,
   publishNotification,
+  createEvent,
 };
