@@ -28,7 +28,6 @@ class EventCreateForm extends React.Component {
             onChange={e => this.setState({ title: e.target.value })}
             large
           />
-          <p>{this.state.title}</p>
         </FormGroup>
         <FormGroup label="概要" labelFor="catchMessage">
           <InputGroup
