@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
-import {} from '@blueprintjs/core';
 import NavigationBar from 'src/components/molecules/NavigationBar';
 import EventCreateForm from 'src/components/organisms/EventCreateForm';
 
