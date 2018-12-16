@@ -3,6 +3,8 @@
 exports[`should match snapshot: FloatingButton/nomal 1`] = `
 .c1 {
   border-radius: 50%;
+  height: 50px;
+  width: 50px;
 }
 
 .c0 {
@@ -17,8 +19,8 @@ exports[`should match snapshot: FloatingButton/nomal 1`] = `
 >
   <Styled(RoundButton)
     icon="notifications"
-    large={true}
     onClick={[MockFunction]}
+    xlarge={true}
   >
     <StyledComponent
       forwardedComponent={
@@ -50,20 +52,20 @@ exports[`should match snapshot: FloatingButton/nomal 1`] = `
       }
       forwardedRef={null}
       icon="notifications"
-      large={true}
       onClick={[MockFunction]}
+      xlarge={true}
     >
       <RoundButton
         className="c0"
         icon="notifications"
-        large={true}
         onClick={[MockFunction]}
+        xlarge={true}
       >
         <Styled(Blueprint3.Button)
           className="c0"
           icon="notifications"
-          large={true}
           onClick={[MockFunction]}
+          xlarge={1}
         >
           <StyledComponent
             className="c0"
@@ -73,11 +75,17 @@ exports[`should match snapshot: FloatingButton/nomal 1`] = `
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
                   "componentId": "sc-bdVaJa",
-                  "isStatic": true,
+                  "isStatic": false,
                   "lastClassName": "c1",
                   "rules": Array [
                     "
   border-radius: 50%;
+  height: ",
+                    [Function],
+                    ";
+  width: ",
+                    [Function],
+                    ";
 ",
                   ],
                 },
@@ -94,21 +102,22 @@ exports[`should match snapshot: FloatingButton/nomal 1`] = `
             }
             forwardedRef={null}
             icon="notifications"
-            large={true}
             onClick={[MockFunction]}
+            xlarge={1}
           >
             <Blueprint3.Button
               className="c0 c1"
               icon="notifications"
-              large={true}
               onClick={[MockFunction]}
+              xlarge={1}
             >
               <button
-                className="bp3-button bp3-large c0 c1"
+                className="bp3-button c0 c1"
                 onClick={[MockFunction]}
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 type="button"
+                xlarge={1}
               >
                 <Blueprint3.Icon
                   icon="notifications"

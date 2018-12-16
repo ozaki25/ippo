@@ -4,9 +4,13 @@ import styled from 'styled-components';
 
 const StyledRoundButton = styled(Button)`
   border-radius: 50%;
+  height: ${({ xlarge }) => (xlarge ? '50px' : 'inherit')};
+  width: ${({ xlarge }) => (xlarge ? '50px' : 'inherit')};
 `;
 
-const RoundButton = props => <StyledRoundButton {...props} />;
+const RoundButton = ({ xlarge, ...props }) => (
+  <StyledRoundButton xlarge={xlarge ? 1 : 0} {...props} />
+);
 
 RoundButton.displayName = 'RoundButton';
 

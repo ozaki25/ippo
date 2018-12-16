@@ -11,23 +11,22 @@ const event = i => ({
   started_at: '2012-04-17T18:30:00+09:00',
 });
 
-const events = {
-  connpass: {
-    events: [...new Array(10)].map((_, i) => event(i)),
-    results_available: 10,
-  },
+const connpass = {
+  events: [...new Array(10)].map((_, i) => event(i)),
+  results_available: 100,
+  results_start: 11,
 };
 
-const props = ({ loading = false, events = null }) => ({
+const props = ({ loading = false, connpass = null }) => ({
   data: {
     loading,
-    events,
+    connpass,
     refetch: jest.fn(),
   },
   registerNotification: jest.fn(),
 });
 
-snapshot('Events/nomal', <Events {...props({ events })} />);
+snapshot('Events/nomal', <Events {...props({ connpass })} />);
 
 snapshot('Events/loading', <Events {...props({ loading: true })} />);
 

@@ -10,7 +10,7 @@ const StyledRoundButton = styled(RoundButton)`
 `;
 
 const FloatingButton = ({ icon, onClick }) => (
-  <StyledRoundButton icon={icon} onClick={onClick} large />
+  <StyledRoundButton icon={icon} onClick={onClick} xlarge />
 );
 
 FloatingButton.displayName = 'FloatingButton';
