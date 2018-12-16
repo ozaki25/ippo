@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { text } from '@storybook/addon-knobs';
+import { boolean, text } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
 import RoundButton from '.';
 
@@ -12,4 +12,8 @@ stories.add('通常パターン', () => (
 
 stories.add('大きめ', () => (
   <RoundButton icon={text('icon', 'notifications')} onClick={action('onClick')} large />
+));
+
+stories.add('特大', () => (
+  <RoundButton icon={text('icon', 'notifications')} onClick={action('onClick')} xlarge />
 ));

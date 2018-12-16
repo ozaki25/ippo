@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addons-actions';
+import { action } from '@storybook/addon-actions';
 import Events from '.';
 
 const stories = storiesOf('pages/Events', module);
@@ -14,20 +14,23 @@ const event = i => ({
   started_at: '2012-04-17T18:30:00+09:00',
 });
 
-const data = {
-  connpass: {
-    events: [...new Array(10)].map((_, i) => event(i)),
-  },
+const connpass = {
+  events: [...new Array(10)].map((_, i) => event(i)),
+  results_available: 100,
+  results_start: 11,
 };
 
-stories.add('通常パターン', () => (
-  <Events data={data} registerNotification={action('registerNotification')} />
-));
+const props = ({ loading = false, connpass = null }) => ({
+  data: {
+    loading,
+    connpass,
+    refetch: action('refetch'),
+  },
+  registerNotification: action('registerNotification'),
+});
 
-stories.add('ロード中', () => (
-  <Events data={{ loading: true }} registerNotification={action('registerNotification')} />
-));
+stories.add('通常パターン', () => <Events {...props({ connpass })} />);
 
-stories.add('データなし', () => (
-  <Events data={{ events: null }} registerNotification={action('registerNotification')} />
-));
+stories.add('ロード中', () => <Events {...props({ loading: true })} />);
+
+stories.add('データなし', () => <Events {...props({})} />);

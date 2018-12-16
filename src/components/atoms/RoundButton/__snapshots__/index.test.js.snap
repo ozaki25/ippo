@@ -3,6 +3,12 @@
 exports[`should match snapshot: RoundButton/bigsize 1`] = `
 .c0 {
   border-radius: 50%;
+  height: inherit;
+  width: inherit;
+}
+
+.c0:focus {
+  outline-width: 0;
 }
 
 <RoundButton
@@ -12,6 +18,7 @@ exports[`should match snapshot: RoundButton/bigsize 1`] = `
   <Styled(Blueprint3.Button)
     icon="notifications"
     large={true}
+    xlarge={0}
   >
     <StyledComponent
       forwardedComponent={
@@ -20,11 +27,20 @@ exports[`should match snapshot: RoundButton/bigsize 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-bdVaJa",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
               "
   border-radius: 50%;
+  height: ",
+              [Function],
+              ";
+  width: ",
+              [Function],
+              ";
+  &:focus {
+    outline-width: 0;
+  }
 ",
             ],
           },
@@ -42,17 +58,20 @@ exports[`should match snapshot: RoundButton/bigsize 1`] = `
       forwardedRef={null}
       icon="notifications"
       large={true}
+      xlarge={0}
     >
       <Blueprint3.Button
         className="c0"
         icon="notifications"
         large={true}
+        xlarge={0}
       >
         <button
           className="bp3-button bp3-large c0"
           onKeyDown={[Function]}
           onKeyUp={[Function]}
           type="button"
+          xlarge={0}
         >
           <Blueprint3.Icon
             icon="notifications"
@@ -92,6 +111,12 @@ exports[`should match snapshot: RoundButton/bigsize 1`] = `
 exports[`should match snapshot: RoundButton/nomal 1`] = `
 .c0 {
   border-radius: 50%;
+  height: inherit;
+  width: inherit;
+}
+
+.c0:focus {
+  outline-width: 0;
 }
 
 <RoundButton
@@ -101,6 +126,7 @@ exports[`should match snapshot: RoundButton/nomal 1`] = `
   <Styled(Blueprint3.Button)
     icon="notifications"
     large={false}
+    xlarge={0}
   >
     <StyledComponent
       forwardedComponent={
@@ -109,11 +135,20 @@ exports[`should match snapshot: RoundButton/nomal 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-bdVaJa",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
               "
   border-radius: 50%;
+  height: ",
+              [Function],
+              ";
+  width: ",
+              [Function],
+              ";
+  &:focus {
+    outline-width: 0;
+  }
 ",
             ],
           },
@@ -131,17 +166,20 @@ exports[`should match snapshot: RoundButton/nomal 1`] = `
       forwardedRef={null}
       icon="notifications"
       large={false}
+      xlarge={0}
     >
       <Blueprint3.Button
         className="c0"
         icon="notifications"
         large={false}
+        xlarge={0}
       >
         <button
           className="bp3-button c0"
           onKeyDown={[Function]}
           onKeyUp={[Function]}
           type="button"
+          xlarge={0}
         >
           <Blueprint3.Icon
             icon="notifications"
