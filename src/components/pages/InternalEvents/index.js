@@ -3,8 +3,10 @@ import styled from 'styled-components';
 import propTypes from 'prop-types';
 import { Spinner, Text } from '@blueprintjs/core';
 import NavigationBar from 'src/components/molecules/NavigationBar';
+import FloatingButton from 'src/components/molecules/FloatingButton';
 import EventCard from 'src/components/organisms/EventCard';
 import dateFormat from 'src/utils/dateFormat';
+import notifications from 'src/utils/notifications';
 
 const Container = styled.div`
   padding: 10px 15px;
@@ -14,7 +16,13 @@ const EventCardContainer = styled.div`
   margin: 8px 0;
 `;
 
-const InternalEvents = ({ data: { loading, internalEvents } }) => {
+const InternalEvents = ({ data: { loading, internalEvents }, registerNotification }) => {
+  const onClickSubscribe = async () => {
+    const token = await notifications.askForPermission();
+    const { data } = await registerNotification({ variables: { token } });
+    console.log(data);
+  };
+
   return (
     <>
       <NavigationBar appName="IPPO" />
@@ -35,6 +43,7 @@ const InternalEvents = ({ data: { loading, internalEvents } }) => {
                 />
               </EventCardContainer>
             ))}
+            <FloatingButton icon="notifications" onClick={onClickSubscribe} />
           </>
         ) : (
           <Text>No Contents</Text>
@@ -59,6 +68,7 @@ InternalEvents.propTypes = {
       }),
     ),
   }),
+  registerNotification: propTypes.func.isRequired,
 };
 
 InternalEvents.defaultProps = {

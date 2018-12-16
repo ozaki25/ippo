@@ -3,11 +3,13 @@ import styled from 'styled-components';
 import propTypes from 'prop-types';
 import { Spinner, Text } from '@blueprintjs/core';
 import NavigationBar from 'src/components/molecules/NavigationBar';
+import FloatingButton from 'src/components/molecules/FloatingButton';
 import EventCard from 'src/components/organisms/EventCard';
 import SearchForm from 'src/components/organisms/SerchForm';
 import Pagination from 'src/components/organisms/Pagination';
 import dateFormat from 'src/utils/dateFormat';
 import pagination from 'src/utils/pagination';
+import notifications from 'src/utils/notifications';
 import paging from 'src/constants/paging';
 
 const Container = styled.div`
@@ -22,13 +24,21 @@ const PaginationContainer = styled.div`
   text-align: center;
 `;
 
-const Events = ({ data: { loading, connpass, refetch } }) => {
+const Events = ({ data: { loading, connpass, refetch }, registerNotification }) => {
   const { events, results_available, results_start } = connpass || {};
+
   const { current, total } = pagination.paging(
     results_start,
     results_available,
     paging.eventsPerPage,
   );
+
+  const onClickSubscribe = async () => {
+    const token = await notifications.askForPermission();
+    const { data } = await registerNotification({ variables: { token } });
+    console.log(data);
+  };
+
   return (
     <>
       <NavigationBar appName="IPPO" />
@@ -58,6 +68,7 @@ const Events = ({ data: { loading, connpass, refetch } }) => {
                 large
               />
             </PaginationContainer>
+            <FloatingButton icon="notifications" onClick={onClickSubscribe} />
           </>
         ) : (
           <Text>No Contents</Text>
@@ -87,6 +98,7 @@ Events.propTypes = {
     }),
     refetch: propTypes.func.isRequired,
   }),
+  registerNotification: propTypes.func.isRequired,
 };
 
 Events.defaultProps = {

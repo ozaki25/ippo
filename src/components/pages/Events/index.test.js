@@ -24,6 +24,7 @@ const props = ({ loading = false, events = null }) => ({
     events,
     refetch: jest.fn(),
   },
+  registerNotification: jest.fn(),
 });
 
 snapshot('Events/nomal', <Events {...props({ events })} />);

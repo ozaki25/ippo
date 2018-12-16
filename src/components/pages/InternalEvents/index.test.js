@@ -19,6 +19,7 @@ const props = ({ loading = false, events = null }) => ({
     loading,
     events,
   },
+  registerNotification: jest.fn(),
 });
 
 snapshot('InternalEvents/nomal', <InternalEvents {...props({ events })} />);
