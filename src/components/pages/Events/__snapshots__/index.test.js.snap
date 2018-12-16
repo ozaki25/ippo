@@ -13,6 +13,7 @@ exports[`should match snapshot: Events/loading 1`] = `
       "refetch": [MockFunction],
     }
   }
+  registerNotification={[MockFunction]}
 >
   <NavigationBar
     appName="IPPO"
@@ -46,7 +47,7 @@ exports[`should match snapshot: Events/loading 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
+            "componentId": "sc-htpNat",
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
@@ -58,7 +59,7 @@ exports[`should match snapshot: Events/loading 1`] = `
           "displayName": "styled.div",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
+          "styledComponentId": "sc-htpNat",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -117,6 +118,7 @@ exports[`should match snapshot: Events/nocontents 1`] = `
       "refetch": [MockFunction],
     }
   }
+  registerNotification={[MockFunction]}
 >
   <NavigationBar
     appName="IPPO"
@@ -150,7 +152,7 @@ exports[`should match snapshot: Events/nocontents 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
+            "componentId": "sc-htpNat",
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
@@ -162,7 +164,7 @@ exports[`should match snapshot: Events/nocontents 1`] = `
           "displayName": "styled.div",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
+          "styledComponentId": "sc-htpNat",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -286,6 +288,7 @@ exports[`should match snapshot: Events/nomal 1`] = `
       "refetch": [MockFunction],
     }
   }
+  registerNotification={[MockFunction]}
 >
   <NavigationBar
     appName="IPPO"
@@ -319,7 +322,7 @@ exports[`should match snapshot: Events/nomal 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
+            "componentId": "sc-htpNat",
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
@@ -331,7 +334,7 @@ exports[`should match snapshot: Events/nomal 1`] = `
           "displayName": "styled.div",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
+          "styledComponentId": "sc-htpNat",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],

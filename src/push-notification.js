@@ -1,4 +1,5 @@
 import firebase from 'firebase/app';
+import 'firebase/messaging';
 
 const messagingSenderId = '911143219860';
 

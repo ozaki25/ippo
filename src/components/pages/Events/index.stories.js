@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addons-actions';
 import Events from '.';
 
 const stories = storiesOf('pages/Events', module);
@@ -19,8 +20,14 @@ const data = {
   },
 };
 
-stories.add('通常パターン', () => <Events data={data} />);
+stories.add('通常パターン', () => (
+  <Events data={data} registerNotification={action('registerNotification')} />
+));
 
-stories.add('ロード中', () => <Events data={{ loading: true }} />);
+stories.add('ロード中', () => (
+  <Events data={{ loading: true }} registerNotification={action('registerNotification')} />
+));
 
-stories.add('データなし', () => <Events data={{ events: null }} />);
+stories.add('データなし', () => (
+  <Events data={{ events: null }} registerNotification={action('registerNotification')} />
+));
