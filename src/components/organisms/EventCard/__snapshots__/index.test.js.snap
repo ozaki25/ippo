@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot: EventCard/full 1`] = `
+<EventCard
+  catchMessage="イベントの説明です"
+  datetime="2018年12月1日 19:30〜"
+  eventUrl="https://connpass.com/"
+  interactive={true}
+  place="東京都千代田区丸の内"
+  title="イベントのタイトル"
+>
+  <Blueprint3.Card
+    elevation={2}
+    interactive={true}
+    onClick={[Function]}
+  >
+    <div
+      className="bp3-card bp3-interactive bp3-elevation-2"
+      onClick={[Function]}
+    >
+      <h3
+        className="bp3-heading"
+      >
+        イベントのタイトル
+      </h3>
+      <Blueprint3.Text>
+        <div
+          className=""
+        >
+          概要：イベントの説明です
+        </div>
+      </Blueprint3.Text>
+      <Blueprint3.Text>
+        <div
+          className=""
+        >
+          場所：東京都千代田区丸の内
+        </div>
+      </Blueprint3.Text>
+      <Blueprint3.Text>
+        <div
+          className=""
+        >
+          日時：2018年12月1日 19:30〜
+        </div>
+      </Blueprint3.Text>
+    </div>
+  </Blueprint3.Card>
+</EventCard>
+`;
+
+exports[`should match snapshot: EventCard/minimam 1`] = `
+<EventCard
+  catchMessage=""
+  datetime=""
+  eventUrl="https://connpass.com/"
+  interactive={true}
+  place=""
+  title="イベントのタイトル"
+>
+  <Blueprint3.Card
+    elevation={2}
+    interactive={true}
+    onClick={[Function]}
+  >
+    <div
+      className="bp3-card bp3-interactive bp3-elevation-2"
+      onClick={[Function]}
+    >
+      <h3
+        className="bp3-heading"
+      >
+        イベントのタイトル
+      </h3>
+    </div>
+  </Blueprint3.Card>
+</EventCard>
+`;
