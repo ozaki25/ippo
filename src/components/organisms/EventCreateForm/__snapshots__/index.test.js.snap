@@ -1,0 +1,279 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot: EventCreateForm/nomal 1`] = `
+<EventCreateForm
+  onSubmit={[MockFunction]}
+>
+  <form>
+    <Blueprint3.FormGroup
+      label="イベント名"
+      labelFor="title"
+      labelInfo="(必須)"
+    >
+      <div
+        className="bp3-form-group"
+      >
+        <label
+          className="bp3-label"
+          htmlFor="title"
+        >
+          イベント名
+           
+          <span
+            className="bp3-text-muted"
+          >
+            (必須)
+          </span>
+        </label>
+        <div
+          className="bp3-form-content"
+        >
+          <Blueprint3.InputGroup
+            id="title"
+            large={true}
+            onChange={[Function]}
+            value=""
+          >
+            <div
+              className="bp3-input-group bp3-large"
+            >
+              <Blueprint3.Icon />
+              <input
+                className="bp3-input"
+                id="title"
+                onChange={[Function]}
+                style={
+                  Object {
+                    "paddingRight": 10,
+                  }
+                }
+                type="text"
+                value=""
+              />
+            </div>
+          </Blueprint3.InputGroup>
+        </div>
+      </div>
+    </Blueprint3.FormGroup>
+    <Blueprint3.FormGroup
+      label="概要"
+      labelFor="catchMessage"
+    >
+      <div
+        className="bp3-form-group"
+      >
+        <label
+          className="bp3-label"
+          htmlFor="catchMessage"
+        >
+          概要
+           
+          <span
+            className="bp3-text-muted"
+          />
+        </label>
+        <div
+          className="bp3-form-content"
+        >
+          <Blueprint3.InputGroup
+            id="catchMessage"
+            large={true}
+            onChange={[Function]}
+            value=""
+          >
+            <div
+              className="bp3-input-group bp3-large"
+            >
+              <Blueprint3.Icon />
+              <input
+                className="bp3-input"
+                id="catchMessage"
+                onChange={[Function]}
+                style={
+                  Object {
+                    "paddingRight": 10,
+                  }
+                }
+                type="text"
+                value=""
+              />
+            </div>
+          </Blueprint3.InputGroup>
+        </div>
+      </div>
+    </Blueprint3.FormGroup>
+    <Blueprint3.FormGroup
+      label="場所"
+      labelFor="place"
+    >
+      <div
+        className="bp3-form-group"
+      >
+        <label
+          className="bp3-label"
+          htmlFor="place"
+        >
+          場所
+           
+          <span
+            className="bp3-text-muted"
+          />
+        </label>
+        <div
+          className="bp3-form-content"
+        >
+          <Blueprint3.InputGroup
+            id="place"
+            large={true}
+            onChange={[Function]}
+            value=""
+          >
+            <div
+              className="bp3-input-group bp3-large"
+            >
+              <Blueprint3.Icon />
+              <input
+                className="bp3-input"
+                id="place"
+                onChange={[Function]}
+                style={
+                  Object {
+                    "paddingRight": 10,
+                  }
+                }
+                type="text"
+                value=""
+              />
+            </div>
+          </Blueprint3.InputGroup>
+        </div>
+      </div>
+    </Blueprint3.FormGroup>
+    <Blueprint3.FormGroup
+      label="開始日時"
+      labelFor="startedAt"
+    >
+      <div
+        className="bp3-form-group"
+      >
+        <label
+          className="bp3-label"
+          htmlFor="startedAt"
+        >
+          開始日時
+           
+          <span
+            className="bp3-text-muted"
+          />
+        </label>
+        <div
+          className="bp3-form-content"
+        >
+          <Blueprint3.InputGroup
+            id="startedAt"
+            large={true}
+            onChange={[Function]}
+            placeholder="2018/1/23 9:30"
+            value=""
+          >
+            <div
+              className="bp3-input-group bp3-large"
+            >
+              <Blueprint3.Icon />
+              <input
+                className="bp3-input"
+                id="startedAt"
+                onChange={[Function]}
+                placeholder="2018/1/23 9:30"
+                style={
+                  Object {
+                    "paddingRight": 10,
+                  }
+                }
+                type="text"
+                value=""
+              />
+            </div>
+          </Blueprint3.InputGroup>
+        </div>
+      </div>
+    </Blueprint3.FormGroup>
+    <Blueprint3.FormGroup
+      label="終了日時"
+      labelFor="endedAt"
+    >
+      <div
+        className="bp3-form-group"
+      >
+        <label
+          className="bp3-label"
+          htmlFor="endedAt"
+        >
+          終了日時
+           
+          <span
+            className="bp3-text-muted"
+          />
+        </label>
+        <div
+          className="bp3-form-content"
+        >
+          <Blueprint3.InputGroup
+            id="endedAt"
+            large={true}
+            onChange={[Function]}
+            placeholder="2018/1/23 9:30"
+            value=""
+          >
+            <div
+              className="bp3-input-group bp3-large"
+            >
+              <Blueprint3.Icon />
+              <input
+                className="bp3-input"
+                id="endedAt"
+                onChange={[Function]}
+                placeholder="2018/1/23 9:30"
+                style={
+                  Object {
+                    "paddingRight": 10,
+                  }
+                }
+                type="text"
+                value=""
+              />
+            </div>
+          </Blueprint3.InputGroup>
+        </div>
+      </div>
+    </Blueprint3.FormGroup>
+    <Blueprint3.Button
+      fill={true}
+      large={true}
+      onClick={[Function]}
+      text="作成"
+    >
+      <button
+        className="bp3-button bp3-fill bp3-large"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        type="button"
+      >
+        <Blueprint3.Icon
+          key="leftIcon"
+        />
+        <span
+          className="bp3-button-text"
+          key="text"
+        >
+          作成
+        </span>
+        <Blueprint3.Icon
+          key="rightIcon"
+        />
+      </button>
+    </Blueprint3.Button>
+  </form>
+</EventCreateForm>
+`;
