@@ -6,6 +6,9 @@ const StyledRoundButton = styled(Button)`
   border-radius: 50%;
   height: ${({ xlarge }) => (xlarge ? '50px' : 'inherit')};
   width: ${({ xlarge }) => (xlarge ? '50px' : 'inherit')};
+  &:focus {
+    outline-width: 0;
+  }
 `;
 
 const RoundButton = ({ xlarge, ...props }) => (

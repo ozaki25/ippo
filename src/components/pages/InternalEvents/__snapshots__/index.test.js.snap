@@ -194,6 +194,10 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
   width: 50px;
 }
 
+.c3:focus {
+  outline-width: 0;
+}
+
 .c2 {
   position: fixed;
   right: 16px;
@@ -1237,6 +1241,9 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
   width: ",
                             [Function],
                             ";
+  &:focus {
+    outline-width: 0;
+  }
 ",
                           ],
                         },

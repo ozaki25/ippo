@@ -196,6 +196,10 @@ exports[`should match snapshot: Events/nomal 1`] = `
   width: 50px;
 }
 
+.c4:focus {
+  outline-width: 0;
+}
+
 .c3 {
   position: fixed;
   right: 16px;
@@ -1597,6 +1601,9 @@ exports[`should match snapshot: Events/nomal 1`] = `
   width: ",
                             [Function],
                             ";
+  &:focus {
+    outline-width: 0;
+  }
 ",
                           ],
                         },

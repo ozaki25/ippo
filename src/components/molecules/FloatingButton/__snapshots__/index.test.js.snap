@@ -7,6 +7,10 @@ exports[`should match snapshot: FloatingButton/nomal 1`] = `
   width: 50px;
 }
 
+.c1:focus {
+  outline-width: 0;
+}
+
 .c0 {
   position: fixed;
   right: 16px;
@@ -86,6 +90,9 @@ exports[`should match snapshot: FloatingButton/nomal 1`] = `
   width: ",
                     [Function],
                     ";
+  &:focus {
+    outline-width: 0;
+  }
 ",
                   ],
                 },
