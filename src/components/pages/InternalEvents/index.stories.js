@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addons-actions';
+import { action } from '@storybook/addon-actions';
 import InternalEvents from '.';
 
 const stories = storiesOf('pages/InternalEvents', module);
