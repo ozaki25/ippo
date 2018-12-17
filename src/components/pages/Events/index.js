@@ -13,17 +13,17 @@ const Container = styled.div`
 const Events = ({ connpassEvents, internalEvents, registerNotification }) => {
   const items = [
     {
-      id: 'external',
-      title: '社外',
-      Component: () => (
-        <ConnpassEvents data={{ ...connpassEvents }} registerNotification={registerNotification} />
-      ),
-    },
-    {
       id: 'internal',
       title: '社内',
       Component: () => (
         <InternalEvents data={{ ...internalEvents }} registerNotification={registerNotification} />
+      ),
+    },
+    {
+      id: 'external',
+      title: '社外',
+      Component: () => (
+        <ConnpassEvents data={{ ...connpassEvents }} registerNotification={registerNotification} />
       ),
     },
   ];

@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
 import { Spinner, Text } from '@blueprintjs/core';
@@ -11,12 +12,14 @@ const EventCardContainer = styled.div`
   margin: 8px 0;
 `;
 
-const InternalEvents = ({ data: { loading, internalEvents }, registerNotification }) => {
+const InternalEvents = ({ data: { loading, internalEvents }, registerNotification, history }) => {
   const onClickSubscribe = async () => {
     const token = await notifications.askForPermission();
     const { data } = await registerNotification({ variables: { token } });
     console.log(data);
   };
+
+  const onClickNew = () => history.push('/events/new');
 
   return (
     <>
@@ -36,7 +39,7 @@ const InternalEvents = ({ data: { loading, internalEvents }, registerNotificatio
               />
             </EventCardContainer>
           ))}
-          <FloatingButton icon="notifications" onClick={onClickSubscribe} />
+          <FloatingButton icon="plus" onClick={onClickNew} />
         </>
       ) : (
         <Text>No Contents</Text>
@@ -70,4 +73,4 @@ InternalEvents.defaultProps = {
   },
 };
 
-export default InternalEvents;
+export default withRouter(InternalEvents);
