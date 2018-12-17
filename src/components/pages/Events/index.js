@@ -1,16 +1,11 @@
 import React from 'react';
 import propTypes from 'prop-types';
-import styled from 'styled-components';
-import NavigationBar from 'src/components/molecules/NavigationBar';
 import TabMenu from 'src/components/molecules/TabMenu';
+import Container from 'src/components/templates/Container';
 import ConnpassEvents from 'src/components/pages/ConnpassEvents';
 import InternalEvents from 'src/hoc/WithInternalEvents';
 import notifications from 'src/utils/notifications';
 import alertMessage from 'src/constants/alertMessage';
-
-const Container = styled.div`
-  padding: 10px 15px;
-`;
 
 const Events = ({ connpassEvents, internalEvents, registerNotification }) => {
   const subscribe = async () => {
@@ -35,12 +30,9 @@ const Events = ({ connpassEvents, internalEvents, registerNotification }) => {
     },
   ];
   return (
-    <>
-      <NavigationBar appName="IPPO" />
-      <Container>
-        <TabMenu items={items} />
-      </Container>
-    </>
+    <Container>
+      <TabMenu items={items} />
+    </Container>
   );
 };
 

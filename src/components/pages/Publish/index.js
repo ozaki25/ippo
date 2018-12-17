@@ -1,10 +1,11 @@
 import React from 'react';
-import { Button, Text } from '@blueprintjs/core';
+import { Link } from 'react-router-dom';
+import { Button, H3, Text } from '@blueprintjs/core';
 import styled from 'styled-components';
-import NavigationBar from 'src/components/molecules/NavigationBar';
+import Container from 'src/components/templates/Container';
 
-const Container = styled.div`
-  padding: 10px 15px;
+const LinkContainer = styled.div`
+  margin: 15px 0;
 `;
 
 const Publish = ({ publishNotification }) => {
@@ -14,13 +15,14 @@ const Publish = ({ publishNotification }) => {
   };
 
   return (
-    <>
-      <NavigationBar appName="IPPO" />
-      <Container>
-        <Button onClick={onClickPublish} text="プッシュ通知を送信する" />
-        <Text>※ボタンを押すと購読者全員に通知が送信されます。</Text>
-      </Container>
-    </>
+    <Container>
+      <H3>プッシュ通知の管理</H3>
+      <Text>※ボタンを押すと購読者全員に通知が送信されます。</Text>
+      <Button onClick={onClickPublish} text="プッシュ通知を送信する" />
+      <LinkContainer>
+        <Link to="/events">イベント一覧へ</Link>
+      </LinkContainer>
+    </Container>
   );
 };
 

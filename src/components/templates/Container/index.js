@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import NavigationBar from 'src/components/molecules/NavigationBar';
+import NavigationBar from 'src/hoc/WithNavigationBar';
 
 const StyledContainer = styled.div`
   padding: 10px 15px;
@@ -8,7 +8,7 @@ const StyledContainer = styled.div`
 
 const Container = ({ children }) => (
   <>
-    <NavigationBar appName="IPPO" />
+    <NavigationBar />
     <StyledContainer>{children}</StyledContainer>
   </>
 );
