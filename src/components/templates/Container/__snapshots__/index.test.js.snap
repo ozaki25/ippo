@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot: Container/nomal 1`] = `
+.c0 {
+  padding: 10px 15px;
+}
+
+<MockRouter
+  createHref={[Function]}
+  location=""
+  params={Object {}}
+  path=""
+  push={[Function]}
+  replace={[Function]}
+  url=""
+>
+  <Container>
+    <withRouter(NavigationBar)>
+      <Route>
+        <NavigationBar
+          history={
+            Object {
+              "createHref": [Function],
+              "path": "",
+              "push": [Function],
+              "replace": [Function],
+            }
+          }
+          location=""
+          match={
+            Object {
+              "params": Object {},
+              "path": "",
+              "url": "",
+            }
+          }
+        >
+          <Blueprint3.Navbar>
+            <div
+              className="bp3-navbar"
+            >
+              <Blueprint3.NavbarGroup
+                align="left"
+              >
+                <div
+                  className="bp3-navbar-group bp3-align-left"
+                >
+                  <Blueprint3.NavbarHeading>
+                    <div
+                      className="bp3-navbar-heading"
+                    >
+                      IPPO
+                    </div>
+                  </Blueprint3.NavbarHeading>
+                  <Blueprint3.NavbarDivider>
+                    <div
+                      className="bp3-navbar-divider"
+                    />
+                  </Blueprint3.NavbarDivider>
+                </div>
+              </Blueprint3.NavbarGroup>
+              <Blueprint3.NavbarGroup
+                align="right"
+              >
+                <div
+                  className="bp3-navbar-group bp3-align-right"
+                >
+                  <Blueprint3.Button
+                    icon="wrench"
+                    minimal={true}
+                    onClick={[Function]}
+                  >
+                    <button
+                      className="bp3-button bp3-minimal"
+                      onClick={[Function]}
+                      onKeyDown={[Function]}
+                      onKeyUp={[Function]}
+                      type="button"
+                    >
+                      <Blueprint3.Icon
+                        icon="wrench"
+                        key="leftIcon"
+                      >
+                        <span
+                          className="bp3-icon bp3-icon-wrench"
+                          icon="wrench"
+                        >
+                          <svg
+                            data-icon="wrench"
+                            height={16}
+                            viewBox="0 0 16 16"
+                            width={16}
+                          >
+                            <desc>
+                              wrench
+                            </desc>
+                            <path
+                              d="M15.83 3.7l-3.06 3.05-2.84-.7-.7-2.83L12.29.17a5.004 5.004 0 0 0-4.83 1.29 4.967 4.967 0 0 0-1.12 5.36L.58 12.58c-.36.36-.58.86-.58 1.41 0 1.1.9 2 2 2 .55 0 1.05-.22 1.41-.59l5.77-5.77c1.79.69 3.91.33 5.35-1.12 1.32-1.3 1.74-3.15 1.3-4.81z"
+                              fillRule="evenodd"
+                              key="0"
+                            />
+                          </svg>
+                        </span>
+                      </Blueprint3.Icon>
+                      <Blueprint3.Icon
+                        key="rightIcon"
+                      />
+                    </button>
+                  </Blueprint3.Button>
+                </div>
+              </Blueprint3.NavbarGroup>
+            </div>
+          </Blueprint3.Navbar>
+        </NavigationBar>
+      </Route>
+    </withRouter(NavigationBar)>
+    <styled.div>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bdVaJa",
+              "isStatic": true,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
+  padding: 10px 15px;
+",
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bdVaJa",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <div
+          className="c0"
+        >
+          テスト
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </Container>
+</MockRouter>
+`;
