@@ -18,7 +18,7 @@ TabMenu.propTypes = {
     propTypes.shape({
       id: propTypes.string,
       title: propTypes.string,
-      Component: propTypes.element,
+      Component: propTypes.func,
     }),
   ),
 };

@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
 import NavigationBar from 'src/components/molecules/NavigationBar';
@@ -8,12 +9,17 @@ const Container = styled.div`
   padding: 10px 15px;
 `;
 
-const NewEvent = ({ createEvent }) => {
+const NewEvent = ({ createEvent, history }) => {
   return (
     <>
       <NavigationBar appName="IPPO" />
       <Container>
-        <EventCreateForm onSubmit={event => createEvent({ variables: { event } })} />
+        <EventCreateForm
+          onSubmit={event => {
+            history.push('/events');
+            return createEvent({ variables: { event } });
+          }}
+        />
       </Container>
     </>
   );
@@ -27,4 +33,4 @@ NewEvent.propTypes = {
 
 NewEvent.defaultProps = {};
 
-export default NewEvent;
+export default withRouter(NewEvent);

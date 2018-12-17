@@ -1,11 +1,13 @@
 import { compose, graphql } from 'react-apollo';
 import query from 'src/graphql/query';
-import ConnpassEvents from 'src/components/pages/ConnpassEvents/';
+import Events from 'src/components/pages/Events/';
 import paging from 'src/constants/paging';
 
 export default compose(
+  graphql(query.internalEvents, { name: 'internalEvents' }),
   graphql(query.connpassEvents, {
     options: props => ({ variables: { page: 1, count: paging.eventsPerPage } }),
+    name: 'connpassEvents',
   }),
   graphql(query.registerNotification, { name: 'registerNotification' }),
-)(ConnpassEvents);
+)(Events);
