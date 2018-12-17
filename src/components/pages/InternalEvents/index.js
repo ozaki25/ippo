@@ -1,9 +1,8 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
 import { Spinner, Text } from '@blueprintjs/core';
-import FloatingButton from 'src/components/molecules/FloatingButton';
+import FloatingButtonList from 'src/components/organisms/FloatingButtonList';
 import EventCard from 'src/components/organisms/EventCard';
 import dateFormat from 'src/utils/dateFormat';
 
@@ -11,8 +10,13 @@ const EventCardContainer = styled.div`
   margin: 8px 0;
 `;
 
-const InternalEvents = ({ data: { loading, internalEvents }, history }) => {
+const InternalEvents = ({ data: { loading, internalEvents }, history, subscribe }) => {
   const onClickNew = () => history.push('/events/new');
+
+  const actionButtons = [
+    { icon: 'notifications', onClick: subscribe },
+    { icon: 'plus', onClick: onClickNew },
+  ];
 
   return (
     <>
@@ -36,7 +40,7 @@ const InternalEvents = ({ data: { loading, internalEvents }, history }) => {
       ) : (
         <Text>No Contents</Text>
       )}
-      <FloatingButton icon="plus" onClick={onClickNew} />
+      <FloatingButtonList items={actionButtons} />
     </>
   );
 };
@@ -56,6 +60,7 @@ InternalEvents.propTypes = {
       }),
     ),
   }),
+  subscribe: propTypes.func.isRequired,
 };
 
 InternalEvents.defaultProps = {
@@ -65,4 +70,4 @@ InternalEvents.defaultProps = {
   },
 };
 
-export default withRouter(InternalEvents);
+export default InternalEvents;

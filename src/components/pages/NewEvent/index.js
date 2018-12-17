@@ -1,5 +1,4 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
 import NavigationBar from 'src/components/molecules/NavigationBar';
@@ -33,4 +32,4 @@ NewEvent.propTypes = {
 
 NewEvent.defaultProps = {};
 
-export default withRouter(NewEvent);
+export default NewEvent;

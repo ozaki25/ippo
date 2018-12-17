@@ -23,7 +23,7 @@ const props = ({ loading = false, connpass = null }) => ({
     connpass,
     refetch: jest.fn(),
   },
-  registerNotification: jest.fn(),
+  subscribe: jest.fn(),
 });
 
 snapshot('ConnpassEvents/nomal', <ConnpassEvents {...props({ connpass })} />);

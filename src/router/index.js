@@ -2,7 +2,7 @@ import React from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import Hello from 'src/hoc/WithHello';
 import Events from 'src/hoc/WithEvents';
-import NewEvent from 'src/hoc/WithCreateEvent';
+import NewEvent from 'src/hoc/WithNewEvent';
 import ConnpassEvents from 'src/hoc/WithConnpassEvents';
 import InternalEvents from 'src/hoc/WithInternalEvents';
 

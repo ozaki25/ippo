@@ -5,26 +5,33 @@ import NavigationBar from 'src/components/molecules/NavigationBar';
 import TabMenu from 'src/components/molecules/TabMenu';
 import ConnpassEvents from 'src/components/pages/ConnpassEvents';
 import InternalEvents from 'src/components/pages/InternalEvents';
+import notifications from 'src/utils/notifications';
+import alertMessage from 'src/constants/alertMessage';
 
 const Container = styled.div`
   padding: 10px 15px;
 `;
 
 const Events = ({ connpassEvents, internalEvents, registerNotification }) => {
+  const subscribe = async () => {
+    if (notifications.isSupported() && notifications.isUndecided()) {
+      const token = await notifications.askForPermission();
+      await registerNotification({ variables: { token } });
+    } else {
+      const type = notifications.isSupported() ? notifications.permission() : 'unsupported';
+      alert(alertMessage.subscribeNotification[type]);
+    }
+  };
   const items = [
     {
       id: 'internal',
       title: '社内',
-      Component: () => (
-        <InternalEvents data={{ ...internalEvents }} registerNotification={registerNotification} />
-      ),
+      Component: () => <InternalEvents data={{ ...internalEvents }} subscribe={subscribe} />,
     },
     {
       id: 'external',
       title: '社外',
-      Component: () => (
-        <ConnpassEvents data={{ ...connpassEvents }} registerNotification={registerNotification} />
-      ),
+      Component: () => <ConnpassEvents data={{ ...connpassEvents }} subscribe={subscribe} />,
     },
   ];
   return (

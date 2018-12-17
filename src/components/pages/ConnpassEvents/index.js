@@ -2,15 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
 import { Spinner, Text } from '@blueprintjs/core';
-import FloatingButton from 'src/components/molecules/FloatingButton';
+import FloatingButtonList from 'src/components/organisms/FloatingButtonList';
 import EventCard from 'src/components/organisms/EventCard';
 import SearchForm from 'src/components/organisms/SerchForm';
 import Pagination from 'src/components/organisms/Pagination';
 import dateFormat from 'src/utils/dateFormat';
 import pagination from 'src/utils/pagination';
-import notifications from 'src/utils/notifications';
 import paging from 'src/constants/paging';
-import alertMessage from 'src/constants/alertMessage';
 
 const EventCardContainer = styled.div`
   margin: 8px 0;
@@ -20,7 +18,7 @@ const PaginationContainer = styled.div`
   text-align: center;
 `;
 
-const ConnpassEvents = ({ data: { loading, connpass, refetch }, registerNotification }) => {
+const ConnpassEvents = ({ data: { loading, connpass, refetch }, subscribe }) => {
   const { events, results_available, results_start } = connpass || {};
 
   const { current, total } = pagination.paging(
@@ -29,15 +27,7 @@ const ConnpassEvents = ({ data: { loading, connpass, refetch }, registerNotifica
     paging.eventsPerPage,
   );
 
-  const onClickSubscribe = async () => {
-    if (notifications.isSupported() && notifications.isUndecided()) {
-      const token = await notifications.askForPermission();
-      await registerNotification({ variables: { token } });
-    } else {
-      const type = notifications.isSupported() ? notifications.permission() : 'unsupported';
-      alert(alertMessage.subscribeNotification[type]);
-    }
-  };
+  const actionButtons = [{ icon: 'notifications', onClick: subscribe }];
 
   return (
     <>
@@ -65,7 +55,7 @@ const ConnpassEvents = ({ data: { loading, connpass, refetch }, registerNotifica
       ) : (
         <Text>No Contents</Text>
       )}
-      <FloatingButton icon="notifications" onClick={onClickSubscribe} />
+      <FloatingButtonList items={actionButtons} />
     </>
   );
 };
@@ -90,7 +80,7 @@ ConnpassEvents.propTypes = {
     }),
     refetch: propTypes.func.isRequired,
   }),
-  registerNotification: propTypes.func.isRequired,
+  subscribe: propTypes.func.isRequired,
 };
 
 ConnpassEvents.defaultProps = {
