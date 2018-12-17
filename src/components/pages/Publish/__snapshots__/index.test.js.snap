@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot: Publish/nomal 1`] = `
+.c0 {
+  padding: 10px 15px;
+}
+
+<Publish
+  publishNotification={[MockFunction]}
+>
+  <NavigationBar
+    appName="IPPO"
+  >
+    <Blueprint3.Navbar>
+      <div
+        className="bp3-navbar"
+      >
+        <Blueprint3.NavbarGroup
+          align="left"
+        >
+          <div
+            className="bp3-navbar-group bp3-align-left"
+          >
+            <Blueprint3.NavbarHeading>
+              <div
+                className="bp3-navbar-heading"
+              >
+                IPPO
+              </div>
+            </Blueprint3.NavbarHeading>
+          </div>
+        </Blueprint3.NavbarGroup>
+      </div>
+    </Blueprint3.Navbar>
+  </NavigationBar>
+  <styled.div>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  padding: 10px 15px;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="c0"
+      >
+        <Blueprint3.Button
+          onClick={[Function]}
+          text="プッシュ通知を送信する"
+        >
+          <button
+            className="bp3-button"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            type="button"
+          >
+            <Blueprint3.Icon
+              key="leftIcon"
+            />
+            <span
+              className="bp3-button-text"
+              key="text"
+            >
+              プッシュ通知を送信する
+            </span>
+            <Blueprint3.Icon
+              key="rightIcon"
+            />
+          </button>
+        </Blueprint3.Button>
+        <Blueprint3.Text>
+          <div
+            className=""
+          >
+            ※ボタンを押すと購読者全員に通知が送信されます。
+          </div>
+        </Blueprint3.Text>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</Publish>
+`;

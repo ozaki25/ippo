@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import NavigationBar from 'src/components/molecules/NavigationBar';
 import TabMenu from 'src/components/molecules/TabMenu';
 import ConnpassEvents from 'src/components/pages/ConnpassEvents';
-import InternalEvents from 'src/components/pages/InternalEvents';
+import InternalEvents from 'src/hoc/WithInternalEvents';
 import notifications from 'src/utils/notifications';
 import alertMessage from 'src/constants/alertMessage';
 
