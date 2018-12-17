@@ -13,4 +13,6 @@ const Container = ({ children }) => (
   </>
 );
 
+Container.displayName = 'Container';
+
 export default Container;
