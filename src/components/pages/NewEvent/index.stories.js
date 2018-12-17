@@ -5,6 +5,4 @@ import NewEvent from '.';
 
 const stories = storiesOf('pages/NewEvent', module);
 
-// stories.add('通常パターン', () => (
-//   <NewEvent createEvent={action('createEvent')} history={{ push: () => {} }} />
-// ));
+stories.add('通常パターン', () => <NewEvent createEvent={action('createEvent')} />);
