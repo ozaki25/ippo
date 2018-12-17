@@ -26,4 +26,6 @@ const Publish = ({ publishNotification }) => {
   );
 };
 
+Publish.displayName = 'Publish';
+
 export default Publish;
