@@ -10,6 +10,7 @@ import dateFormat from 'src/utils/dateFormat';
 import pagination from 'src/utils/pagination';
 import notifications from 'src/utils/notifications';
 import paging from 'src/constants/paging';
+import alertMessage from 'src/constants/alertMessage';
 
 const EventCardContainer = styled.div`
   margin: 8px 0;
@@ -29,9 +30,13 @@ const ConnpassEvents = ({ data: { loading, connpass, refetch }, registerNotifica
   );
 
   const onClickSubscribe = async () => {
-    const token = await notifications.askForPermission();
-    const { data } = await registerNotification({ variables: { token } });
-    console.log(data);
+    if (notifications.isSupported() && notifications.isUndecided()) {
+      const token = await notifications.askForPermission();
+      await registerNotification({ variables: { token } });
+    } else {
+      const type = notifications.isSupported() ? notifications.permission() : 'unsupported';
+      alert(alertMessage.subscribeNotification[type]);
+    }
   };
 
   return (
@@ -56,11 +61,11 @@ const ConnpassEvents = ({ data: { loading, connpass, refetch }, registerNotifica
           <PaginationContainer>
             <Pagination current={current} total={total} onClick={page => refetch({ page })} large />
           </PaginationContainer>
-          <FloatingButton icon="notifications" onClick={onClickSubscribe} />
         </>
       ) : (
         <Text>No Contents</Text>
       )}
+      <FloatingButton icon="notifications" onClick={onClickSubscribe} />
     </>
   );
 };
