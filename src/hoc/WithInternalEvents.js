@@ -1,8 +1,4 @@
-import { compose, graphql } from 'react-apollo';
-import query from 'src/graphql/query';
+import { withRouter } from 'react-router-dom';
 import InternalEvents from 'src/components/pages/InternalEvents/';
 
-export default compose(
-  graphql(query.internalEvents),
-  graphql(query.registerNotification, { name: 'registerNotification' }),
-)(InternalEvents);
+export default withRouter(InternalEvents);

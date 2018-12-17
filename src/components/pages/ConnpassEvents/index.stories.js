@@ -26,7 +26,7 @@ const props = ({ loading = false, connpass = null }) => ({
     connpass,
     refetch: action('refetch'),
   },
-  registerNotification: action('registerNotification'),
+  subscribe: action('subscribe'),
 });
 
 stories.add('通常パターン', () => <ConnpassEvents {...props({ connpass })} />);

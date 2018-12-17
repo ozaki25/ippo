@@ -1,6 +1,6 @@
 import React from 'react';
 import { snapshot } from 'test/helpers';
-import NewEvent from '.';
+import Publish from '.';
 
 // TODO
 test('test', () => expect(true).toBe(true));

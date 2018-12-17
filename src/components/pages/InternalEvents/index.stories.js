@@ -20,7 +20,7 @@ const props = ({ loading = false, internalEvents = null }) => ({
     loading,
     internalEvents,
   },
-  registerNotification: action('registerNotification'),
+  subscribe: action('subscribe'),
 });
 
 stories.add('通常パターン', () => <InternalEvents {...props({ internalEvents })} />);
