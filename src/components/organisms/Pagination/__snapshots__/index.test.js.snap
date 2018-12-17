@@ -1,657 +1,697 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should match snapshot: Pagination/button/large 1`] = `
-<Pagination
-  current={5}
-  large={true}
-  onClick={[MockFunction]}
-  total={10}
+<MockRouter
+  createHref={[Function]}
+  location=""
+  params={Object {}}
+  path=""
+  push={[Function]}
+  replace={[Function]}
+  url=""
 >
-  <Blueprint3.ButtonGroup
+  <Pagination
+    current={5}
     large={true}
+    onClick={[MockFunction]}
+    total={10}
   >
-    <div
-      className="bp3-button-group bp3-large"
+    <Blueprint3.ButtonGroup
+      large={true}
     >
-      <Blueprint3.Button
-        icon="double-chevron-left"
-        onClick={[Function]}
+      <div
+        className="bp3-button-group bp3-large"
       >
-        <button
-          className="bp3-button"
+        <Blueprint3.Button
+          icon="double-chevron-left"
           onClick={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          type="button"
         >
-          <Blueprint3.Icon
-            icon="double-chevron-left"
-            key="leftIcon"
+          <button
+            className="bp3-button"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            type="button"
           >
-            <span
-              className="bp3-icon bp3-icon-double-chevron-left"
+            <Blueprint3.Icon
               icon="double-chevron-left"
+              key="leftIcon"
             >
-              <svg
-                data-icon="double-chevron-left"
-                height={16}
-                viewBox="0 0 16 16"
-                width={16}
+              <span
+                className="bp3-icon bp3-icon-double-chevron-left"
+                icon="double-chevron-left"
               >
-                <desc>
-                  double-chevron-left
-                </desc>
-                <path
-                  d="M4.41 8L7.7 4.71c.19-.18.3-.43.3-.71a1.003 1.003 0 0 0-1.71-.71l-4 4C2.11 7.47 2 7.72 2 8c0 .28.11.53.29.71l4 4a1.003 1.003 0 0 0 1.42-1.42L4.41 8zm5 0l3.29-3.29c.19-.18.3-.43.3-.71a1.003 1.003 0 0 0-1.71-.71l-4 4C7.11 7.47 7 7.72 7 8c0 .28.11.53.29.71l4 4a1.003 1.003 0 0 0 1.42-1.42L9.41 8z"
-                  fillRule="evenodd"
-                  key="0"
-                />
-              </svg>
-            </span>
-          </Blueprint3.Icon>
-          <Blueprint3.Icon
-            key="rightIcon"
-          />
-        </button>
-      </Blueprint3.Button>
-      <Blueprint3.Button
-        icon="chevron-left"
-        onClick={[Function]}
-      >
-        <button
-          className="bp3-button"
+                <svg
+                  data-icon="double-chevron-left"
+                  height={16}
+                  viewBox="0 0 16 16"
+                  width={16}
+                >
+                  <desc>
+                    double-chevron-left
+                  </desc>
+                  <path
+                    d="M4.41 8L7.7 4.71c.19-.18.3-.43.3-.71a1.003 1.003 0 0 0-1.71-.71l-4 4C2.11 7.47 2 7.72 2 8c0 .28.11.53.29.71l4 4a1.003 1.003 0 0 0 1.42-1.42L4.41 8zm5 0l3.29-3.29c.19-.18.3-.43.3-.71a1.003 1.003 0 0 0-1.71-.71l-4 4C7.11 7.47 7 7.72 7 8c0 .28.11.53.29.71l4 4a1.003 1.003 0 0 0 1.42-1.42L9.41 8z"
+                    fillRule="evenodd"
+                    key="0"
+                  />
+                </svg>
+              </span>
+            </Blueprint3.Icon>
+            <Blueprint3.Icon
+              key="rightIcon"
+            />
+          </button>
+        </Blueprint3.Button>
+        <Blueprint3.Button
+          icon="chevron-left"
           onClick={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          type="button"
         >
-          <Blueprint3.Icon
-            icon="chevron-left"
-            key="leftIcon"
+          <button
+            className="bp3-button"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            type="button"
           >
-            <span
-              className="bp3-icon bp3-icon-chevron-left"
+            <Blueprint3.Icon
               icon="chevron-left"
+              key="leftIcon"
             >
-              <svg
-                data-icon="chevron-left"
-                height={16}
-                viewBox="0 0 16 16"
-                width={16}
+              <span
+                className="bp3-icon bp3-icon-chevron-left"
+                icon="chevron-left"
               >
-                <desc>
-                  chevron-left
-                </desc>
-                <path
-                  d="M7.41 8l3.29-3.29c.19-.18.3-.43.3-.71a1.003 1.003 0 0 0-1.71-.71l-4 4C5.11 7.47 5 7.72 5 8c0 .28.11.53.29.71l4 4a1.003 1.003 0 0 0 1.42-1.42L7.41 8z"
-                  fillRule="evenodd"
-                  key="0"
-                />
-              </svg>
-            </span>
-          </Blueprint3.Icon>
-          <Blueprint3.Icon
-            key="rightIcon"
-          />
-        </button>
-      </Blueprint3.Button>
-      <Blueprint3.Button
-        text="5 of 10"
-      >
-        <button
-          className="bp3-button"
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          type="button"
+                <svg
+                  data-icon="chevron-left"
+                  height={16}
+                  viewBox="0 0 16 16"
+                  width={16}
+                >
+                  <desc>
+                    chevron-left
+                  </desc>
+                  <path
+                    d="M7.41 8l3.29-3.29c.19-.18.3-.43.3-.71a1.003 1.003 0 0 0-1.71-.71l-4 4C5.11 7.47 5 7.72 5 8c0 .28.11.53.29.71l4 4a1.003 1.003 0 0 0 1.42-1.42L7.41 8z"
+                    fillRule="evenodd"
+                    key="0"
+                  />
+                </svg>
+              </span>
+            </Blueprint3.Icon>
+            <Blueprint3.Icon
+              key="rightIcon"
+            />
+          </button>
+        </Blueprint3.Button>
+        <Blueprint3.Button
+          text="5 of 10"
         >
-          <Blueprint3.Icon
-            key="leftIcon"
-          />
-          <span
-            className="bp3-button-text"
-            key="text"
+          <button
+            className="bp3-button"
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            type="button"
           >
-            5 of 10
-          </span>
-          <Blueprint3.Icon
-            key="rightIcon"
-          />
-        </button>
-      </Blueprint3.Button>
-      <Blueprint3.Button
-        icon="chevron-right"
-        onClick={[Function]}
-      >
-        <button
-          className="bp3-button"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          type="button"
-        >
-          <Blueprint3.Icon
-            icon="chevron-right"
-            key="leftIcon"
-          >
+            <Blueprint3.Icon
+              key="leftIcon"
+            />
             <span
-              className="bp3-icon bp3-icon-chevron-right"
+              className="bp3-button-text"
+              key="text"
+            >
+              5 of 10
+            </span>
+            <Blueprint3.Icon
+              key="rightIcon"
+            />
+          </button>
+        </Blueprint3.Button>
+        <Blueprint3.Button
+          icon="chevron-right"
+          onClick={[Function]}
+        >
+          <button
+            className="bp3-button"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            type="button"
+          >
+            <Blueprint3.Icon
               icon="chevron-right"
+              key="leftIcon"
             >
-              <svg
-                data-icon="chevron-right"
-                height={16}
-                viewBox="0 0 16 16"
-                width={16}
+              <span
+                className="bp3-icon bp3-icon-chevron-right"
+                icon="chevron-right"
               >
-                <desc>
-                  chevron-right
-                </desc>
-                <path
-                  d="M10.71 7.29l-4-4a1.003 1.003 0 0 0-1.42 1.42L8.59 8 5.3 11.29c-.19.18-.3.43-.3.71a1.003 1.003 0 0 0 1.71.71l4-4c.18-.18.29-.43.29-.71 0-.28-.11-.53-.29-.71z"
-                  fillRule="evenodd"
-                  key="0"
-                />
-              </svg>
-            </span>
-          </Blueprint3.Icon>
-          <Blueprint3.Icon
-            key="rightIcon"
-          />
-        </button>
-      </Blueprint3.Button>
-      <Blueprint3.Button
-        icon="double-chevron-right"
-        onClick={[Function]}
-      >
-        <button
-          className="bp3-button"
+                <svg
+                  data-icon="chevron-right"
+                  height={16}
+                  viewBox="0 0 16 16"
+                  width={16}
+                >
+                  <desc>
+                    chevron-right
+                  </desc>
+                  <path
+                    d="M10.71 7.29l-4-4a1.003 1.003 0 0 0-1.42 1.42L8.59 8 5.3 11.29c-.19.18-.3.43-.3.71a1.003 1.003 0 0 0 1.71.71l4-4c.18-.18.29-.43.29-.71 0-.28-.11-.53-.29-.71z"
+                    fillRule="evenodd"
+                    key="0"
+                  />
+                </svg>
+              </span>
+            </Blueprint3.Icon>
+            <Blueprint3.Icon
+              key="rightIcon"
+            />
+          </button>
+        </Blueprint3.Button>
+        <Blueprint3.Button
+          icon="double-chevron-right"
           onClick={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          type="button"
         >
-          <Blueprint3.Icon
-            icon="double-chevron-right"
-            key="leftIcon"
+          <button
+            className="bp3-button"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            type="button"
           >
-            <span
-              className="bp3-icon bp3-icon-double-chevron-right"
+            <Blueprint3.Icon
               icon="double-chevron-right"
+              key="leftIcon"
             >
-              <svg
-                data-icon="double-chevron-right"
-                height={16}
-                viewBox="0 0 16 16"
-                width={16}
+              <span
+                className="bp3-icon bp3-icon-double-chevron-right"
+                icon="double-chevron-right"
               >
-                <desc>
-                  double-chevron-right
-                </desc>
-                <path
-                  d="M9 8c0-.28-.11-.53-.29-.71l-4-4a1.003 1.003 0 0 0-1.42 1.42L6.59 8 3.3 11.29c-.19.18-.3.43-.3.71a1.003 1.003 0 0 0 1.71.71l4-4C8.89 8.53 9 8.28 9 8zm4.71-.71l-4-4a1.003 1.003 0 0 0-1.42 1.42L11.59 8 8.3 11.29c-.19.18-.3.43-.3.71a1.003 1.003 0 0 0 1.71.71l4-4c.18-.18.29-.43.29-.71 0-.28-.11-.53-.29-.71z"
-                  fillRule="evenodd"
-                  key="0"
-                />
-              </svg>
-            </span>
-          </Blueprint3.Icon>
-          <Blueprint3.Icon
-            key="rightIcon"
-          />
-        </button>
-      </Blueprint3.Button>
-    </div>
-  </Blueprint3.ButtonGroup>
-</Pagination>
+                <svg
+                  data-icon="double-chevron-right"
+                  height={16}
+                  viewBox="0 0 16 16"
+                  width={16}
+                >
+                  <desc>
+                    double-chevron-right
+                  </desc>
+                  <path
+                    d="M9 8c0-.28-.11-.53-.29-.71l-4-4a1.003 1.003 0 0 0-1.42 1.42L6.59 8 3.3 11.29c-.19.18-.3.43-.3.71a1.003 1.003 0 0 0 1.71.71l4-4C8.89 8.53 9 8.28 9 8zm4.71-.71l-4-4a1.003 1.003 0 0 0-1.42 1.42L11.59 8 8.3 11.29c-.19.18-.3.43-.3.71a1.003 1.003 0 0 0 1.71.71l4-4c.18-.18.29-.43.29-.71 0-.28-.11-.53-.29-.71z"
+                    fillRule="evenodd"
+                    key="0"
+                  />
+                </svg>
+              </span>
+            </Blueprint3.Icon>
+            <Blueprint3.Icon
+              key="rightIcon"
+            />
+          </button>
+        </Blueprint3.Button>
+      </div>
+    </Blueprint3.ButtonGroup>
+  </Pagination>
+</MockRouter>
 `;
 
 exports[`should match snapshot: Pagination/first 1`] = `
-<Pagination
-  current={1}
-  large={false}
-  onClick={[MockFunction]}
-  total={10}
+<MockRouter
+  createHref={[Function]}
+  location=""
+  params={Object {}}
+  path=""
+  push={[Function]}
+  replace={[Function]}
+  url=""
 >
-  <Blueprint3.ButtonGroup
+  <Pagination
+    current={1}
     large={false}
+    onClick={[MockFunction]}
+    total={10}
   >
-    <div
-      className="bp3-button-group"
+    <Blueprint3.ButtonGroup
+      large={false}
     >
-      <Blueprint3.Button
-        text="1 of 10"
+      <div
+        className="bp3-button-group"
       >
-        <button
-          className="bp3-button"
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          type="button"
+        <Blueprint3.Button
+          text="1 of 10"
         >
-          <Blueprint3.Icon
-            key="leftIcon"
-          />
-          <span
-            className="bp3-button-text"
-            key="text"
+          <button
+            className="bp3-button"
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            type="button"
           >
-            1 of 10
-          </span>
-          <Blueprint3.Icon
-            key="rightIcon"
-          />
-        </button>
-      </Blueprint3.Button>
-      <Blueprint3.Button
-        icon="chevron-right"
-        onClick={[Function]}
-      >
-        <button
-          className="bp3-button"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          type="button"
-        >
-          <Blueprint3.Icon
-            icon="chevron-right"
-            key="leftIcon"
-          >
+            <Blueprint3.Icon
+              key="leftIcon"
+            />
             <span
-              className="bp3-icon bp3-icon-chevron-right"
+              className="bp3-button-text"
+              key="text"
+            >
+              1 of 10
+            </span>
+            <Blueprint3.Icon
+              key="rightIcon"
+            />
+          </button>
+        </Blueprint3.Button>
+        <Blueprint3.Button
+          icon="chevron-right"
+          onClick={[Function]}
+        >
+          <button
+            className="bp3-button"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            type="button"
+          >
+            <Blueprint3.Icon
               icon="chevron-right"
+              key="leftIcon"
             >
-              <svg
-                data-icon="chevron-right"
-                height={16}
-                viewBox="0 0 16 16"
-                width={16}
+              <span
+                className="bp3-icon bp3-icon-chevron-right"
+                icon="chevron-right"
               >
-                <desc>
-                  chevron-right
-                </desc>
-                <path
-                  d="M10.71 7.29l-4-4a1.003 1.003 0 0 0-1.42 1.42L8.59 8 5.3 11.29c-.19.18-.3.43-.3.71a1.003 1.003 0 0 0 1.71.71l4-4c.18-.18.29-.43.29-.71 0-.28-.11-.53-.29-.71z"
-                  fillRule="evenodd"
-                  key="0"
-                />
-              </svg>
-            </span>
-          </Blueprint3.Icon>
-          <Blueprint3.Icon
-            key="rightIcon"
-          />
-        </button>
-      </Blueprint3.Button>
-      <Blueprint3.Button
-        icon="double-chevron-right"
-        onClick={[Function]}
-      >
-        <button
-          className="bp3-button"
+                <svg
+                  data-icon="chevron-right"
+                  height={16}
+                  viewBox="0 0 16 16"
+                  width={16}
+                >
+                  <desc>
+                    chevron-right
+                  </desc>
+                  <path
+                    d="M10.71 7.29l-4-4a1.003 1.003 0 0 0-1.42 1.42L8.59 8 5.3 11.29c-.19.18-.3.43-.3.71a1.003 1.003 0 0 0 1.71.71l4-4c.18-.18.29-.43.29-.71 0-.28-.11-.53-.29-.71z"
+                    fillRule="evenodd"
+                    key="0"
+                  />
+                </svg>
+              </span>
+            </Blueprint3.Icon>
+            <Blueprint3.Icon
+              key="rightIcon"
+            />
+          </button>
+        </Blueprint3.Button>
+        <Blueprint3.Button
+          icon="double-chevron-right"
           onClick={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          type="button"
         >
-          <Blueprint3.Icon
-            icon="double-chevron-right"
-            key="leftIcon"
+          <button
+            className="bp3-button"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            type="button"
           >
-            <span
-              className="bp3-icon bp3-icon-double-chevron-right"
+            <Blueprint3.Icon
               icon="double-chevron-right"
+              key="leftIcon"
             >
-              <svg
-                data-icon="double-chevron-right"
-                height={16}
-                viewBox="0 0 16 16"
-                width={16}
+              <span
+                className="bp3-icon bp3-icon-double-chevron-right"
+                icon="double-chevron-right"
               >
-                <desc>
-                  double-chevron-right
-                </desc>
-                <path
-                  d="M9 8c0-.28-.11-.53-.29-.71l-4-4a1.003 1.003 0 0 0-1.42 1.42L6.59 8 3.3 11.29c-.19.18-.3.43-.3.71a1.003 1.003 0 0 0 1.71.71l4-4C8.89 8.53 9 8.28 9 8zm4.71-.71l-4-4a1.003 1.003 0 0 0-1.42 1.42L11.59 8 8.3 11.29c-.19.18-.3.43-.3.71a1.003 1.003 0 0 0 1.71.71l4-4c.18-.18.29-.43.29-.71 0-.28-.11-.53-.29-.71z"
-                  fillRule="evenodd"
-                  key="0"
-                />
-              </svg>
-            </span>
-          </Blueprint3.Icon>
-          <Blueprint3.Icon
-            key="rightIcon"
-          />
-        </button>
-      </Blueprint3.Button>
-    </div>
-  </Blueprint3.ButtonGroup>
-</Pagination>
+                <svg
+                  data-icon="double-chevron-right"
+                  height={16}
+                  viewBox="0 0 16 16"
+                  width={16}
+                >
+                  <desc>
+                    double-chevron-right
+                  </desc>
+                  <path
+                    d="M9 8c0-.28-.11-.53-.29-.71l-4-4a1.003 1.003 0 0 0-1.42 1.42L6.59 8 3.3 11.29c-.19.18-.3.43-.3.71a1.003 1.003 0 0 0 1.71.71l4-4C8.89 8.53 9 8.28 9 8zm4.71-.71l-4-4a1.003 1.003 0 0 0-1.42 1.42L11.59 8 8.3 11.29c-.19.18-.3.43-.3.71a1.003 1.003 0 0 0 1.71.71l4-4c.18-.18.29-.43.29-.71 0-.28-.11-.53-.29-.71z"
+                    fillRule="evenodd"
+                    key="0"
+                  />
+                </svg>
+              </span>
+            </Blueprint3.Icon>
+            <Blueprint3.Icon
+              key="rightIcon"
+            />
+          </button>
+        </Blueprint3.Button>
+      </div>
+    </Blueprint3.ButtonGroup>
+  </Pagination>
+</MockRouter>
 `;
 
 exports[`should match snapshot: Pagination/last 1`] = `
-<Pagination
-  current={10}
-  large={false}
-  onClick={[MockFunction]}
-  total={10}
+<MockRouter
+  createHref={[Function]}
+  location=""
+  params={Object {}}
+  path=""
+  push={[Function]}
+  replace={[Function]}
+  url=""
 >
-  <Blueprint3.ButtonGroup
+  <Pagination
+    current={10}
     large={false}
+    onClick={[MockFunction]}
+    total={10}
   >
-    <div
-      className="bp3-button-group"
+    <Blueprint3.ButtonGroup
+      large={false}
     >
-      <Blueprint3.Button
-        icon="double-chevron-left"
-        onClick={[Function]}
+      <div
+        className="bp3-button-group"
       >
-        <button
-          className="bp3-button"
+        <Blueprint3.Button
+          icon="double-chevron-left"
           onClick={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          type="button"
         >
-          <Blueprint3.Icon
-            icon="double-chevron-left"
-            key="leftIcon"
+          <button
+            className="bp3-button"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            type="button"
           >
-            <span
-              className="bp3-icon bp3-icon-double-chevron-left"
+            <Blueprint3.Icon
               icon="double-chevron-left"
+              key="leftIcon"
             >
-              <svg
-                data-icon="double-chevron-left"
-                height={16}
-                viewBox="0 0 16 16"
-                width={16}
+              <span
+                className="bp3-icon bp3-icon-double-chevron-left"
+                icon="double-chevron-left"
               >
-                <desc>
-                  double-chevron-left
-                </desc>
-                <path
-                  d="M4.41 8L7.7 4.71c.19-.18.3-.43.3-.71a1.003 1.003 0 0 0-1.71-.71l-4 4C2.11 7.47 2 7.72 2 8c0 .28.11.53.29.71l4 4a1.003 1.003 0 0 0 1.42-1.42L4.41 8zm5 0l3.29-3.29c.19-.18.3-.43.3-.71a1.003 1.003 0 0 0-1.71-.71l-4 4C7.11 7.47 7 7.72 7 8c0 .28.11.53.29.71l4 4a1.003 1.003 0 0 0 1.42-1.42L9.41 8z"
-                  fillRule="evenodd"
-                  key="0"
-                />
-              </svg>
-            </span>
-          </Blueprint3.Icon>
-          <Blueprint3.Icon
-            key="rightIcon"
-          />
-        </button>
-      </Blueprint3.Button>
-      <Blueprint3.Button
-        icon="chevron-left"
-        onClick={[Function]}
-      >
-        <button
-          className="bp3-button"
+                <svg
+                  data-icon="double-chevron-left"
+                  height={16}
+                  viewBox="0 0 16 16"
+                  width={16}
+                >
+                  <desc>
+                    double-chevron-left
+                  </desc>
+                  <path
+                    d="M4.41 8L7.7 4.71c.19-.18.3-.43.3-.71a1.003 1.003 0 0 0-1.71-.71l-4 4C2.11 7.47 2 7.72 2 8c0 .28.11.53.29.71l4 4a1.003 1.003 0 0 0 1.42-1.42L4.41 8zm5 0l3.29-3.29c.19-.18.3-.43.3-.71a1.003 1.003 0 0 0-1.71-.71l-4 4C7.11 7.47 7 7.72 7 8c0 .28.11.53.29.71l4 4a1.003 1.003 0 0 0 1.42-1.42L9.41 8z"
+                    fillRule="evenodd"
+                    key="0"
+                  />
+                </svg>
+              </span>
+            </Blueprint3.Icon>
+            <Blueprint3.Icon
+              key="rightIcon"
+            />
+          </button>
+        </Blueprint3.Button>
+        <Blueprint3.Button
+          icon="chevron-left"
           onClick={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          type="button"
         >
-          <Blueprint3.Icon
-            icon="chevron-left"
-            key="leftIcon"
+          <button
+            className="bp3-button"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            type="button"
           >
-            <span
-              className="bp3-icon bp3-icon-chevron-left"
+            <Blueprint3.Icon
               icon="chevron-left"
+              key="leftIcon"
             >
-              <svg
-                data-icon="chevron-left"
-                height={16}
-                viewBox="0 0 16 16"
-                width={16}
+              <span
+                className="bp3-icon bp3-icon-chevron-left"
+                icon="chevron-left"
               >
-                <desc>
-                  chevron-left
-                </desc>
-                <path
-                  d="M7.41 8l3.29-3.29c.19-.18.3-.43.3-.71a1.003 1.003 0 0 0-1.71-.71l-4 4C5.11 7.47 5 7.72 5 8c0 .28.11.53.29.71l4 4a1.003 1.003 0 0 0 1.42-1.42L7.41 8z"
-                  fillRule="evenodd"
-                  key="0"
-                />
-              </svg>
-            </span>
-          </Blueprint3.Icon>
-          <Blueprint3.Icon
-            key="rightIcon"
-          />
-        </button>
-      </Blueprint3.Button>
-      <Blueprint3.Button
-        text="10 of 10"
-      >
-        <button
-          className="bp3-button"
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          type="button"
+                <svg
+                  data-icon="chevron-left"
+                  height={16}
+                  viewBox="0 0 16 16"
+                  width={16}
+                >
+                  <desc>
+                    chevron-left
+                  </desc>
+                  <path
+                    d="M7.41 8l3.29-3.29c.19-.18.3-.43.3-.71a1.003 1.003 0 0 0-1.71-.71l-4 4C5.11 7.47 5 7.72 5 8c0 .28.11.53.29.71l4 4a1.003 1.003 0 0 0 1.42-1.42L7.41 8z"
+                    fillRule="evenodd"
+                    key="0"
+                  />
+                </svg>
+              </span>
+            </Blueprint3.Icon>
+            <Blueprint3.Icon
+              key="rightIcon"
+            />
+          </button>
+        </Blueprint3.Button>
+        <Blueprint3.Button
+          text="10 of 10"
         >
-          <Blueprint3.Icon
-            key="leftIcon"
-          />
-          <span
-            className="bp3-button-text"
-            key="text"
+          <button
+            className="bp3-button"
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            type="button"
           >
-            10 of 10
-          </span>
-          <Blueprint3.Icon
-            key="rightIcon"
-          />
-        </button>
-      </Blueprint3.Button>
-    </div>
-  </Blueprint3.ButtonGroup>
-</Pagination>
+            <Blueprint3.Icon
+              key="leftIcon"
+            />
+            <span
+              className="bp3-button-text"
+              key="text"
+            >
+              10 of 10
+            </span>
+            <Blueprint3.Icon
+              key="rightIcon"
+            />
+          </button>
+        </Blueprint3.Button>
+      </div>
+    </Blueprint3.ButtonGroup>
+  </Pagination>
+</MockRouter>
 `;
 
 exports[`should match snapshot: Pagination/middle 1`] = `
-<Pagination
-  current={5}
-  large={false}
-  onClick={[MockFunction]}
-  total={10}
+<MockRouter
+  createHref={[Function]}
+  location=""
+  params={Object {}}
+  path=""
+  push={[Function]}
+  replace={[Function]}
+  url=""
 >
-  <Blueprint3.ButtonGroup
+  <Pagination
+    current={5}
     large={false}
+    onClick={[MockFunction]}
+    total={10}
   >
-    <div
-      className="bp3-button-group"
+    <Blueprint3.ButtonGroup
+      large={false}
     >
-      <Blueprint3.Button
-        icon="double-chevron-left"
-        onClick={[Function]}
+      <div
+        className="bp3-button-group"
       >
-        <button
-          className="bp3-button"
+        <Blueprint3.Button
+          icon="double-chevron-left"
           onClick={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          type="button"
         >
-          <Blueprint3.Icon
-            icon="double-chevron-left"
-            key="leftIcon"
+          <button
+            className="bp3-button"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            type="button"
           >
-            <span
-              className="bp3-icon bp3-icon-double-chevron-left"
+            <Blueprint3.Icon
               icon="double-chevron-left"
+              key="leftIcon"
             >
-              <svg
-                data-icon="double-chevron-left"
-                height={16}
-                viewBox="0 0 16 16"
-                width={16}
+              <span
+                className="bp3-icon bp3-icon-double-chevron-left"
+                icon="double-chevron-left"
               >
-                <desc>
-                  double-chevron-left
-                </desc>
-                <path
-                  d="M4.41 8L7.7 4.71c.19-.18.3-.43.3-.71a1.003 1.003 0 0 0-1.71-.71l-4 4C2.11 7.47 2 7.72 2 8c0 .28.11.53.29.71l4 4a1.003 1.003 0 0 0 1.42-1.42L4.41 8zm5 0l3.29-3.29c.19-.18.3-.43.3-.71a1.003 1.003 0 0 0-1.71-.71l-4 4C7.11 7.47 7 7.72 7 8c0 .28.11.53.29.71l4 4a1.003 1.003 0 0 0 1.42-1.42L9.41 8z"
-                  fillRule="evenodd"
-                  key="0"
-                />
-              </svg>
-            </span>
-          </Blueprint3.Icon>
-          <Blueprint3.Icon
-            key="rightIcon"
-          />
-        </button>
-      </Blueprint3.Button>
-      <Blueprint3.Button
-        icon="chevron-left"
-        onClick={[Function]}
-      >
-        <button
-          className="bp3-button"
+                <svg
+                  data-icon="double-chevron-left"
+                  height={16}
+                  viewBox="0 0 16 16"
+                  width={16}
+                >
+                  <desc>
+                    double-chevron-left
+                  </desc>
+                  <path
+                    d="M4.41 8L7.7 4.71c.19-.18.3-.43.3-.71a1.003 1.003 0 0 0-1.71-.71l-4 4C2.11 7.47 2 7.72 2 8c0 .28.11.53.29.71l4 4a1.003 1.003 0 0 0 1.42-1.42L4.41 8zm5 0l3.29-3.29c.19-.18.3-.43.3-.71a1.003 1.003 0 0 0-1.71-.71l-4 4C7.11 7.47 7 7.72 7 8c0 .28.11.53.29.71l4 4a1.003 1.003 0 0 0 1.42-1.42L9.41 8z"
+                    fillRule="evenodd"
+                    key="0"
+                  />
+                </svg>
+              </span>
+            </Blueprint3.Icon>
+            <Blueprint3.Icon
+              key="rightIcon"
+            />
+          </button>
+        </Blueprint3.Button>
+        <Blueprint3.Button
+          icon="chevron-left"
           onClick={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          type="button"
         >
-          <Blueprint3.Icon
-            icon="chevron-left"
-            key="leftIcon"
+          <button
+            className="bp3-button"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            type="button"
           >
-            <span
-              className="bp3-icon bp3-icon-chevron-left"
+            <Blueprint3.Icon
               icon="chevron-left"
+              key="leftIcon"
             >
-              <svg
-                data-icon="chevron-left"
-                height={16}
-                viewBox="0 0 16 16"
-                width={16}
+              <span
+                className="bp3-icon bp3-icon-chevron-left"
+                icon="chevron-left"
               >
-                <desc>
-                  chevron-left
-                </desc>
-                <path
-                  d="M7.41 8l3.29-3.29c.19-.18.3-.43.3-.71a1.003 1.003 0 0 0-1.71-.71l-4 4C5.11 7.47 5 7.72 5 8c0 .28.11.53.29.71l4 4a1.003 1.003 0 0 0 1.42-1.42L7.41 8z"
-                  fillRule="evenodd"
-                  key="0"
-                />
-              </svg>
-            </span>
-          </Blueprint3.Icon>
-          <Blueprint3.Icon
-            key="rightIcon"
-          />
-        </button>
-      </Blueprint3.Button>
-      <Blueprint3.Button
-        text="5 of 10"
-      >
-        <button
-          className="bp3-button"
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          type="button"
+                <svg
+                  data-icon="chevron-left"
+                  height={16}
+                  viewBox="0 0 16 16"
+                  width={16}
+                >
+                  <desc>
+                    chevron-left
+                  </desc>
+                  <path
+                    d="M7.41 8l3.29-3.29c.19-.18.3-.43.3-.71a1.003 1.003 0 0 0-1.71-.71l-4 4C5.11 7.47 5 7.72 5 8c0 .28.11.53.29.71l4 4a1.003 1.003 0 0 0 1.42-1.42L7.41 8z"
+                    fillRule="evenodd"
+                    key="0"
+                  />
+                </svg>
+              </span>
+            </Blueprint3.Icon>
+            <Blueprint3.Icon
+              key="rightIcon"
+            />
+          </button>
+        </Blueprint3.Button>
+        <Blueprint3.Button
+          text="5 of 10"
         >
-          <Blueprint3.Icon
-            key="leftIcon"
-          />
-          <span
-            className="bp3-button-text"
-            key="text"
+          <button
+            className="bp3-button"
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            type="button"
           >
-            5 of 10
-          </span>
-          <Blueprint3.Icon
-            key="rightIcon"
-          />
-        </button>
-      </Blueprint3.Button>
-      <Blueprint3.Button
-        icon="chevron-right"
-        onClick={[Function]}
-      >
-        <button
-          className="bp3-button"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          type="button"
-        >
-          <Blueprint3.Icon
-            icon="chevron-right"
-            key="leftIcon"
-          >
+            <Blueprint3.Icon
+              key="leftIcon"
+            />
             <span
-              className="bp3-icon bp3-icon-chevron-right"
+              className="bp3-button-text"
+              key="text"
+            >
+              5 of 10
+            </span>
+            <Blueprint3.Icon
+              key="rightIcon"
+            />
+          </button>
+        </Blueprint3.Button>
+        <Blueprint3.Button
+          icon="chevron-right"
+          onClick={[Function]}
+        >
+          <button
+            className="bp3-button"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            type="button"
+          >
+            <Blueprint3.Icon
               icon="chevron-right"
+              key="leftIcon"
             >
-              <svg
-                data-icon="chevron-right"
-                height={16}
-                viewBox="0 0 16 16"
-                width={16}
+              <span
+                className="bp3-icon bp3-icon-chevron-right"
+                icon="chevron-right"
               >
-                <desc>
-                  chevron-right
-                </desc>
-                <path
-                  d="M10.71 7.29l-4-4a1.003 1.003 0 0 0-1.42 1.42L8.59 8 5.3 11.29c-.19.18-.3.43-.3.71a1.003 1.003 0 0 0 1.71.71l4-4c.18-.18.29-.43.29-.71 0-.28-.11-.53-.29-.71z"
-                  fillRule="evenodd"
-                  key="0"
-                />
-              </svg>
-            </span>
-          </Blueprint3.Icon>
-          <Blueprint3.Icon
-            key="rightIcon"
-          />
-        </button>
-      </Blueprint3.Button>
-      <Blueprint3.Button
-        icon="double-chevron-right"
-        onClick={[Function]}
-      >
-        <button
-          className="bp3-button"
+                <svg
+                  data-icon="chevron-right"
+                  height={16}
+                  viewBox="0 0 16 16"
+                  width={16}
+                >
+                  <desc>
+                    chevron-right
+                  </desc>
+                  <path
+                    d="M10.71 7.29l-4-4a1.003 1.003 0 0 0-1.42 1.42L8.59 8 5.3 11.29c-.19.18-.3.43-.3.71a1.003 1.003 0 0 0 1.71.71l4-4c.18-.18.29-.43.29-.71 0-.28-.11-.53-.29-.71z"
+                    fillRule="evenodd"
+                    key="0"
+                  />
+                </svg>
+              </span>
+            </Blueprint3.Icon>
+            <Blueprint3.Icon
+              key="rightIcon"
+            />
+          </button>
+        </Blueprint3.Button>
+        <Blueprint3.Button
+          icon="double-chevron-right"
           onClick={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          type="button"
         >
-          <Blueprint3.Icon
-            icon="double-chevron-right"
-            key="leftIcon"
+          <button
+            className="bp3-button"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            type="button"
           >
-            <span
-              className="bp3-icon bp3-icon-double-chevron-right"
+            <Blueprint3.Icon
               icon="double-chevron-right"
+              key="leftIcon"
             >
-              <svg
-                data-icon="double-chevron-right"
-                height={16}
-                viewBox="0 0 16 16"
-                width={16}
+              <span
+                className="bp3-icon bp3-icon-double-chevron-right"
+                icon="double-chevron-right"
               >
-                <desc>
-                  double-chevron-right
-                </desc>
-                <path
-                  d="M9 8c0-.28-.11-.53-.29-.71l-4-4a1.003 1.003 0 0 0-1.42 1.42L6.59 8 3.3 11.29c-.19.18-.3.43-.3.71a1.003 1.003 0 0 0 1.71.71l4-4C8.89 8.53 9 8.28 9 8zm4.71-.71l-4-4a1.003 1.003 0 0 0-1.42 1.42L11.59 8 8.3 11.29c-.19.18-.3.43-.3.71a1.003 1.003 0 0 0 1.71.71l4-4c.18-.18.29-.43.29-.71 0-.28-.11-.53-.29-.71z"
-                  fillRule="evenodd"
-                  key="0"
-                />
-              </svg>
-            </span>
-          </Blueprint3.Icon>
-          <Blueprint3.Icon
-            key="rightIcon"
-          />
-        </button>
-      </Blueprint3.Button>
-    </div>
-  </Blueprint3.ButtonGroup>
-</Pagination>
+                <svg
+                  data-icon="double-chevron-right"
+                  height={16}
+                  viewBox="0 0 16 16"
+                  width={16}
+                >
+                  <desc>
+                    double-chevron-right
+                  </desc>
+                  <path
+                    d="M9 8c0-.28-.11-.53-.29-.71l-4-4a1.003 1.003 0 0 0-1.42 1.42L6.59 8 3.3 11.29c-.19.18-.3.43-.3.71a1.003 1.003 0 0 0 1.71.71l4-4C8.89 8.53 9 8.28 9 8zm4.71-.71l-4-4a1.003 1.003 0 0 0-1.42 1.42L11.59 8 8.3 11.29c-.19.18-.3.43-.3.71a1.003 1.003 0 0 0 1.71.71l4-4c.18-.18.29-.43.29-.71 0-.28-.11-.53-.29-.71z"
+                    fillRule="evenodd"
+                    key="0"
+                  />
+                </svg>
+              </span>
+            </Blueprint3.Icon>
+            <Blueprint3.Icon
+              key="rightIcon"
+            />
+          </button>
+        </Blueprint3.Button>
+      </div>
+    </Blueprint3.ButtonGroup>
+  </Pagination>
+</MockRouter>
 `;

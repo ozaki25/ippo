@@ -9,4 +9,4 @@ const props = {
   publishNotification: action('publish'),
 };
 
-// stories.add('通常パターン', () => <Publish {...props} />);
+stories.add('通常パターン', () => <Publish {...props} />);

@@ -1,78 +1,98 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should match snapshot: EventCard/full 1`] = `
-<EventCard
-  catchMessage="イベントの説明です"
-  datetime="2018年12月1日 19:30〜"
-  eventUrl="https://connpass.com/"
-  interactive={true}
-  place="東京都千代田区丸の内"
-  title="イベントのタイトル"
+<MockRouter
+  createHref={[Function]}
+  location=""
+  params={Object {}}
+  path=""
+  push={[Function]}
+  replace={[Function]}
+  url=""
 >
-  <Blueprint3.Card
-    elevation={2}
+  <EventCard
+    catchMessage="イベントの説明です"
+    datetime="2018年12月1日 19:30〜"
+    eventUrl="https://connpass.com/"
     interactive={true}
-    onClick={[Function]}
+    place="東京都千代田区丸の内"
+    title="イベントのタイトル"
   >
-    <div
-      className="bp3-card bp3-interactive bp3-elevation-2"
+    <Blueprint3.Card
+      elevation={2}
+      interactive={true}
       onClick={[Function]}
     >
-      <h3
-        className="bp3-heading"
+      <div
+        className="bp3-card bp3-interactive bp3-elevation-2"
+        onClick={[Function]}
       >
-        イベントのタイトル
-      </h3>
-      <Blueprint3.Text>
-        <div
-          className=""
+        <h3
+          className="bp3-heading"
         >
-          概要：イベントの説明です
-        </div>
-      </Blueprint3.Text>
-      <Blueprint3.Text>
-        <div
-          className=""
-        >
-          場所：東京都千代田区丸の内
-        </div>
-      </Blueprint3.Text>
-      <Blueprint3.Text>
-        <div
-          className=""
-        >
-          日時：2018年12月1日 19:30〜
-        </div>
-      </Blueprint3.Text>
-    </div>
-  </Blueprint3.Card>
-</EventCard>
+          イベントのタイトル
+        </h3>
+        <Blueprint3.Text>
+          <div
+            className=""
+          >
+            概要：イベントの説明です
+          </div>
+        </Blueprint3.Text>
+        <Blueprint3.Text>
+          <div
+            className=""
+          >
+            場所：東京都千代田区丸の内
+          </div>
+        </Blueprint3.Text>
+        <Blueprint3.Text>
+          <div
+            className=""
+          >
+            日時：2018年12月1日 19:30〜
+          </div>
+        </Blueprint3.Text>
+      </div>
+    </Blueprint3.Card>
+  </EventCard>
+</MockRouter>
 `;
 
 exports[`should match snapshot: EventCard/minimam 1`] = `
-<EventCard
-  catchMessage=""
-  datetime=""
-  eventUrl="https://connpass.com/"
-  interactive={true}
-  place=""
-  title="イベントのタイトル"
+<MockRouter
+  createHref={[Function]}
+  location=""
+  params={Object {}}
+  path=""
+  push={[Function]}
+  replace={[Function]}
+  url=""
 >
-  <Blueprint3.Card
-    elevation={2}
+  <EventCard
+    catchMessage=""
+    datetime=""
+    eventUrl="https://connpass.com/"
     interactive={true}
-    onClick={[Function]}
+    place=""
+    title="イベントのタイトル"
   >
-    <div
-      className="bp3-card bp3-interactive bp3-elevation-2"
+    <Blueprint3.Card
+      elevation={2}
+      interactive={true}
       onClick={[Function]}
     >
-      <h3
-        className="bp3-heading"
+      <div
+        className="bp3-card bp3-interactive bp3-elevation-2"
+        onClick={[Function]}
       >
-        イベントのタイトル
-      </h3>
-    </div>
-  </Blueprint3.Card>
-</EventCard>
+        <h3
+          className="bp3-heading"
+        >
+          イベントのタイトル
+        </h3>
+      </div>
+    </Blueprint3.Card>
+  </EventCard>
+</MockRouter>
 `;
