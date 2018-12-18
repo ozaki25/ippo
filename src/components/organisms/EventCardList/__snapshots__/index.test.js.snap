@@ -1,0 +1,482 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot: EventCardList/nomal 1`] = `
+.c0 {
+  margin: 8px 0;
+}
+
+<MockRouter
+  createHref={[Function]}
+  location=""
+  params={Object {}}
+  path=""
+  push={[Function]}
+  replace={[Function]}
+  url=""
+>
+  <EventCardList
+    eventUrl=""
+    events={
+      Array [
+        Object {
+          "catchMessage": "イベントの説明です",
+          "eventUrl": "https://connpass.com/",
+          "id": "0",
+          "interactive": true,
+          "place": "東京都千代田区丸の内",
+          "startedAt": "2018/12/1 19:30",
+          "title": "タイトル",
+        },
+        Object {
+          "catchMessage": "イベントの説明です",
+          "eventUrl": "https://connpass.com/",
+          "id": "1",
+          "interactive": true,
+          "place": "東京都千代田区丸の内",
+          "startedAt": "2018/12/1 19:30",
+          "title": "タイトル",
+        },
+        Object {
+          "catchMessage": "イベントの説明です",
+          "eventUrl": "https://connpass.com/",
+          "id": "2",
+          "interactive": true,
+          "place": "東京都千代田区丸の内",
+          "startedAt": "2018/12/1 19:30",
+          "title": "タイトル",
+        },
+        Object {
+          "catchMessage": "イベントの説明です",
+          "eventUrl": "https://connpass.com/",
+          "id": "3",
+          "interactive": true,
+          "place": "東京都千代田区丸の内",
+          "startedAt": "2018/12/1 19:30",
+          "title": "タイトル",
+        },
+        Object {
+          "catchMessage": "イベントの説明です",
+          "eventUrl": "https://connpass.com/",
+          "id": "4",
+          "interactive": true,
+          "place": "東京都千代田区丸の内",
+          "startedAt": "2018/12/1 19:30",
+          "title": "タイトル",
+        },
+      ]
+    }
+    interactive={true}
+  >
+    <styled.div
+      key="0"
+    >
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bdVaJa",
+              "isStatic": true,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
+  margin: 8px 0;
+",
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bdVaJa",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <div
+          className="c0"
+        >
+          <EventCard
+            catchMessage="イベントの説明です"
+            datetime="2018年12月01日 19:30 〜"
+            eventUrl="https://connpass.com/"
+            interactive={true}
+            place="東京都千代田区丸の内"
+            title="タイトル"
+          >
+            <Blueprint3.Card
+              elevation={2}
+              interactive={true}
+              onClick={[Function]}
+            >
+              <div
+                className="bp3-card bp3-interactive bp3-elevation-2"
+                onClick={[Function]}
+              >
+                <h3
+                  className="bp3-heading"
+                >
+                  タイトル
+                </h3>
+                <Blueprint3.Text>
+                  <div
+                    className=""
+                  >
+                    概要：イベントの説明です
+                  </div>
+                </Blueprint3.Text>
+                <Blueprint3.Text>
+                  <div
+                    className=""
+                  >
+                    場所：東京都千代田区丸の内
+                  </div>
+                </Blueprint3.Text>
+                <Blueprint3.Text>
+                  <div
+                    className=""
+                  >
+                    日時：2018年12月01日 19:30 〜
+                  </div>
+                </Blueprint3.Text>
+              </div>
+            </Blueprint3.Card>
+          </EventCard>
+        </div>
+      </StyledComponent>
+    </styled.div>
+    <styled.div
+      key="1"
+    >
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bdVaJa",
+              "isStatic": true,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
+  margin: 8px 0;
+",
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bdVaJa",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <div
+          className="c0"
+        >
+          <EventCard
+            catchMessage="イベントの説明です"
+            datetime="2018年12月01日 19:30 〜"
+            eventUrl="https://connpass.com/"
+            interactive={true}
+            place="東京都千代田区丸の内"
+            title="タイトル"
+          >
+            <Blueprint3.Card
+              elevation={2}
+              interactive={true}
+              onClick={[Function]}
+            >
+              <div
+                className="bp3-card bp3-interactive bp3-elevation-2"
+                onClick={[Function]}
+              >
+                <h3
+                  className="bp3-heading"
+                >
+                  タイトル
+                </h3>
+                <Blueprint3.Text>
+                  <div
+                    className=""
+                  >
+                    概要：イベントの説明です
+                  </div>
+                </Blueprint3.Text>
+                <Blueprint3.Text>
+                  <div
+                    className=""
+                  >
+                    場所：東京都千代田区丸の内
+                  </div>
+                </Blueprint3.Text>
+                <Blueprint3.Text>
+                  <div
+                    className=""
+                  >
+                    日時：2018年12月01日 19:30 〜
+                  </div>
+                </Blueprint3.Text>
+              </div>
+            </Blueprint3.Card>
+          </EventCard>
+        </div>
+      </StyledComponent>
+    </styled.div>
+    <styled.div
+      key="2"
+    >
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bdVaJa",
+              "isStatic": true,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
+  margin: 8px 0;
+",
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bdVaJa",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <div
+          className="c0"
+        >
+          <EventCard
+            catchMessage="イベントの説明です"
+            datetime="2018年12月01日 19:30 〜"
+            eventUrl="https://connpass.com/"
+            interactive={true}
+            place="東京都千代田区丸の内"
+            title="タイトル"
+          >
+            <Blueprint3.Card
+              elevation={2}
+              interactive={true}
+              onClick={[Function]}
+            >
+              <div
+                className="bp3-card bp3-interactive bp3-elevation-2"
+                onClick={[Function]}
+              >
+                <h3
+                  className="bp3-heading"
+                >
+                  タイトル
+                </h3>
+                <Blueprint3.Text>
+                  <div
+                    className=""
+                  >
+                    概要：イベントの説明です
+                  </div>
+                </Blueprint3.Text>
+                <Blueprint3.Text>
+                  <div
+                    className=""
+                  >
+                    場所：東京都千代田区丸の内
+                  </div>
+                </Blueprint3.Text>
+                <Blueprint3.Text>
+                  <div
+                    className=""
+                  >
+                    日時：2018年12月01日 19:30 〜
+                  </div>
+                </Blueprint3.Text>
+              </div>
+            </Blueprint3.Card>
+          </EventCard>
+        </div>
+      </StyledComponent>
+    </styled.div>
+    <styled.div
+      key="3"
+    >
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bdVaJa",
+              "isStatic": true,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
+  margin: 8px 0;
+",
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bdVaJa",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <div
+          className="c0"
+        >
+          <EventCard
+            catchMessage="イベントの説明です"
+            datetime="2018年12月01日 19:30 〜"
+            eventUrl="https://connpass.com/"
+            interactive={true}
+            place="東京都千代田区丸の内"
+            title="タイトル"
+          >
+            <Blueprint3.Card
+              elevation={2}
+              interactive={true}
+              onClick={[Function]}
+            >
+              <div
+                className="bp3-card bp3-interactive bp3-elevation-2"
+                onClick={[Function]}
+              >
+                <h3
+                  className="bp3-heading"
+                >
+                  タイトル
+                </h3>
+                <Blueprint3.Text>
+                  <div
+                    className=""
+                  >
+                    概要：イベントの説明です
+                  </div>
+                </Blueprint3.Text>
+                <Blueprint3.Text>
+                  <div
+                    className=""
+                  >
+                    場所：東京都千代田区丸の内
+                  </div>
+                </Blueprint3.Text>
+                <Blueprint3.Text>
+                  <div
+                    className=""
+                  >
+                    日時：2018年12月01日 19:30 〜
+                  </div>
+                </Blueprint3.Text>
+              </div>
+            </Blueprint3.Card>
+          </EventCard>
+        </div>
+      </StyledComponent>
+    </styled.div>
+    <styled.div
+      key="4"
+    >
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bdVaJa",
+              "isStatic": true,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
+  margin: 8px 0;
+",
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bdVaJa",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <div
+          className="c0"
+        >
+          <EventCard
+            catchMessage="イベントの説明です"
+            datetime="2018年12月01日 19:30 〜"
+            eventUrl="https://connpass.com/"
+            interactive={true}
+            place="東京都千代田区丸の内"
+            title="タイトル"
+          >
+            <Blueprint3.Card
+              elevation={2}
+              interactive={true}
+              onClick={[Function]}
+            >
+              <div
+                className="bp3-card bp3-interactive bp3-elevation-2"
+                onClick={[Function]}
+              >
+                <h3
+                  className="bp3-heading"
+                >
+                  タイトル
+                </h3>
+                <Blueprint3.Text>
+                  <div
+                    className=""
+                  >
+                    概要：イベントの説明です
+                  </div>
+                </Blueprint3.Text>
+                <Blueprint3.Text>
+                  <div
+                    className=""
+                  >
+                    場所：東京都千代田区丸の内
+                  </div>
+                </Blueprint3.Text>
+                <Blueprint3.Text>
+                  <div
+                    className=""
+                  >
+                    日時：2018年12月01日 19:30 〜
+                  </div>
+                </Blueprint3.Text>
+              </div>
+            </Blueprint3.Card>
+          </EventCard>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </EventCardList>
+</MockRouter>
+`;

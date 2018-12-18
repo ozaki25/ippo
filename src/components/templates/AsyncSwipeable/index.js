@@ -1,25 +1,10 @@
 import React from 'react';
-import SwipeableViews from 'react-swipeable-views';
 import { Spinner } from '@blueprintjs/core';
 import propTypes from 'prop-types';
-
-const styles = {
-  root: {
-    padding: '0 10px',
-  },
-  slideContainer: {
-    padding: '0 5px',
-  },
-};
+import ShrinkSwipeable from 'src/components/templates/ShrinkSwipeable';
 
 const AsyncSwipeable = ({ loading, children }) =>
-  loading ? (
-    <Spinner />
-  ) : (
-    <SwipeableViews style={styles.root} slideStyle={styles.slideContainer} enableMouseEvents>
-      {children}
-    </SwipeableViews>
-  );
+  loading ? <Spinner /> : <ShrinkSwipeable>{children}</ShrinkSwipeable>;
 
 AsyncSwipeable.displayName = 'AsyncSwipeable';
 

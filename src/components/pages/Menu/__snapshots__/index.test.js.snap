@@ -1,0 +1,602 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot: Menu/nomal 1`] = `
+.c1 {
+  margin: 8px 0;
+}
+
+.c0 {
+  padding: 10px 15px;
+}
+
+<MockRouter
+  createHref={[Function]}
+  location=""
+  params={Object {}}
+  path=""
+  push={[Function]}
+  replace={[Function]}
+  url=""
+>
+  <Menu
+    external={
+      Object {
+        "connpass": Object {
+          "events": Array [
+            Object {
+              "catch": "説明です",
+              "event_id": 0,
+              "event_url": "https://connpass.com/",
+              "place": "晴海",
+              "started_at": "2018/12/1 9:30",
+              "title": "タイトル0",
+            },
+            Object {
+              "catch": "説明です",
+              "event_id": 1,
+              "event_url": "https://connpass.com/",
+              "place": "晴海",
+              "started_at": "2018/12/1 9:30",
+              "title": "タイトル1",
+            },
+            Object {
+              "catch": "説明です",
+              "event_id": 2,
+              "event_url": "https://connpass.com/",
+              "place": "晴海",
+              "started_at": "2018/12/1 9:30",
+              "title": "タイトル2",
+            },
+            Object {
+              "catch": "説明です",
+              "event_id": 3,
+              "event_url": "https://connpass.com/",
+              "place": "晴海",
+              "started_at": "2018/12/1 9:30",
+              "title": "タイトル3",
+            },
+            Object {
+              "catch": "説明です",
+              "event_id": 4,
+              "event_url": "https://connpass.com/",
+              "place": "晴海",
+              "started_at": "2018/12/1 9:30",
+              "title": "タイトル4",
+            },
+          ],
+        },
+        "loading": false,
+      }
+    }
+    internal={
+      Object {
+        "internalEvents": Array [
+          Object {
+            "catchMessage": "説明です",
+            "eventUrl": "https://connpass.com/",
+            "id": "ID0",
+            "place": "晴海",
+            "startedAt": "2018/12/1 9:30",
+            "title": "タイトル0",
+          },
+          Object {
+            "catchMessage": "説明です",
+            "eventUrl": "https://connpass.com/",
+            "id": "ID1",
+            "place": "晴海",
+            "startedAt": "2018/12/1 9:30",
+            "title": "タイトル1",
+          },
+          Object {
+            "catchMessage": "説明です",
+            "eventUrl": "https://connpass.com/",
+            "id": "ID2",
+            "place": "晴海",
+            "startedAt": "2018/12/1 9:30",
+            "title": "タイトル2",
+          },
+          Object {
+            "catchMessage": "説明です",
+            "eventUrl": "https://connpass.com/",
+            "id": "ID3",
+            "place": "晴海",
+            "startedAt": "2018/12/1 9:30",
+            "title": "タイトル3",
+          },
+          Object {
+            "catchMessage": "説明です",
+            "eventUrl": "https://connpass.com/",
+            "id": "ID4",
+            "place": "晴海",
+            "startedAt": "2018/12/1 9:30",
+            "title": "タイトル4",
+          },
+        ],
+        "loading": false,
+      }
+    }
+  >
+    <Container>
+      <withRouter(NavigationBar)>
+        <Route>
+          <NavigationBar
+            history={
+              Object {
+                "createHref": [Function],
+                "path": "",
+                "push": [Function],
+                "replace": [Function],
+              }
+            }
+            location=""
+            match={
+              Object {
+                "params": Object {},
+                "path": "",
+                "url": "",
+              }
+            }
+          >
+            <Blueprint3.Navbar>
+              <div
+                className="bp3-navbar"
+              >
+                <Blueprint3.NavbarGroup
+                  align="left"
+                >
+                  <div
+                    className="bp3-navbar-group bp3-align-left"
+                  >
+                    <Blueprint3.NavbarHeading>
+                      <div
+                        className="bp3-navbar-heading"
+                      >
+                        IPPO
+                      </div>
+                    </Blueprint3.NavbarHeading>
+                    <Blueprint3.NavbarDivider>
+                      <div
+                        className="bp3-navbar-divider"
+                      />
+                    </Blueprint3.NavbarDivider>
+                  </div>
+                </Blueprint3.NavbarGroup>
+                <Blueprint3.NavbarGroup
+                  align="right"
+                >
+                  <div
+                    className="bp3-navbar-group bp3-align-right"
+                  >
+                    <Blueprint3.Button
+                      icon="wrench"
+                      minimal={true}
+                      onClick={[Function]}
+                    >
+                      <button
+                        className="bp3-button bp3-minimal"
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        onKeyUp={[Function]}
+                        type="button"
+                      >
+                        <Blueprint3.Icon
+                          icon="wrench"
+                          key="leftIcon"
+                        >
+                          <span
+                            className="bp3-icon bp3-icon-wrench"
+                            icon="wrench"
+                          >
+                            <svg
+                              data-icon="wrench"
+                              height={16}
+                              viewBox="0 0 16 16"
+                              width={16}
+                            >
+                              <desc>
+                                wrench
+                              </desc>
+                              <path
+                                d="M15.83 3.7l-3.06 3.05-2.84-.7-.7-2.83L12.29.17a5.004 5.004 0 0 0-4.83 1.29 4.967 4.967 0 0 0-1.12 5.36L.58 12.58c-.36.36-.58.86-.58 1.41 0 1.1.9 2 2 2 .55 0 1.05-.22 1.41-.59l5.77-5.77c1.79.69 3.91.33 5.35-1.12 1.32-1.3 1.74-3.15 1.3-4.81z"
+                                fillRule="evenodd"
+                                key="0"
+                              />
+                            </svg>
+                          </span>
+                        </Blueprint3.Icon>
+                        <Blueprint3.Icon
+                          key="rightIcon"
+                        />
+                      </button>
+                    </Blueprint3.Button>
+                  </div>
+                </Blueprint3.NavbarGroup>
+              </div>
+            </Blueprint3.Navbar>
+          </NavigationBar>
+        </Route>
+      </withRouter(NavigationBar)>
+      <styled.div>
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-bwzfXH",
+                "isStatic": true,
+                "lastClassName": "c0",
+                "rules": Array [
+                  "
+  padding: 10px 15px;
+",
+                ],
+              },
+              "displayName": "styled.div",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-bwzfXH",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <div
+            className="c0"
+          >
+            <Component>
+              <h3
+                className="bp3-heading"
+              >
+                社内イベント
+              </h3>
+            </Component>
+            <AsyncSwipeable
+              loading={false}
+            >
+              <ShrinkSwipeable>
+                <ReactSwipableView
+                  animateHeight={false}
+                  animateTransitions={true}
+                  axis="x"
+                  disableLazyLoading={false}
+                  disabled={false}
+                  enableMouseEvents={true}
+                  hysteresis={0.4}
+                  ignoreNativeScroll={false}
+                  index={0}
+                  resistance={false}
+                  slideStyle={
+                    Object {
+                      "padding": "0 5px",
+                    }
+                  }
+                  springConfig={
+                    Object {
+                      "delay": "0s",
+                      "duration": "0.35s",
+                      "easeFunction": "cubic-bezier(0.15, 0.3, 0.25, 1)",
+                    }
+                  }
+                  style={
+                    Object {
+                      "padding": "0 15px",
+                    }
+                  }
+                  threshold={5}
+                >
+                  <div
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseMove={[Function]}
+                    onMouseUp={[Function]}
+                    onScroll={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchStart={[Function]}
+                    style={
+                      Object {
+                        "overflowX": "hidden",
+                        "padding": "0 15px",
+                      }
+                    }
+                  >
+                    <div
+                      className="react-swipeable-view-container"
+                      style={
+                        Object {
+                          "WebkitFlexDirection": "row",
+                          "WebkitTransition": "all 0s ease 0s",
+                          "direction": "ltr",
+                          "display": "flex",
+                          "flexDirection": "row",
+                          "height": null,
+                          "transition": "all 0s ease 0s",
+                          "willChange": "transform",
+                        }
+                      }
+                    >
+                      <div
+                        aria-hidden={false}
+                        data-swipeable="true"
+                        key=".$ID0"
+                        style={
+                          Object {
+                            "WebkitFlexShrink": 0,
+                            "flexShrink": 0,
+                            "overflow": "auto",
+                            "padding": "0 5px",
+                            "width": "100%",
+                          }
+                        }
+                      >
+                        <styled.div
+                          key="ID0"
+                        >
+                          <StyledComponent
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "sc-bdVaJa",
+                                  "isStatic": true,
+                                  "lastClassName": "c1",
+                                  "rules": Array [
+                                    "
+  margin: 8px 0;
+",
+                                  ],
+                                },
+                                "displayName": "styled.div",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "sc-bdVaJa",
+                                "target": "div",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                          >
+                            <div
+                              className="c1"
+                            >
+                              <EventCard
+                                catchMessage="説明です"
+                                datetime="2018年12月01日 09:30 〜"
+                                eventUrl="https://connpass.com/"
+                                interactive={true}
+                                place="晴海"
+                                title="タイトル0"
+                              >
+                                <Blueprint3.Card
+                                  elevation={2}
+                                  interactive={true}
+                                  onClick={[Function]}
+                                >
+                                  <div
+                                    className="bp3-card bp3-interactive bp3-elevation-2"
+                                    onClick={[Function]}
+                                  >
+                                    <h3
+                                      className="bp3-heading"
+                                    >
+                                      タイトル0
+                                    </h3>
+                                    <Blueprint3.Text>
+                                      <div
+                                        className=""
+                                      >
+                                        概要：説明です
+                                      </div>
+                                    </Blueprint3.Text>
+                                    <Blueprint3.Text>
+                                      <div
+                                        className=""
+                                      >
+                                        場所：晴海
+                                      </div>
+                                    </Blueprint3.Text>
+                                    <Blueprint3.Text>
+                                      <div
+                                        className=""
+                                      >
+                                        日時：2018年12月01日 09:30 〜
+                                      </div>
+                                    </Blueprint3.Text>
+                                  </div>
+                                </Blueprint3.Card>
+                              </EventCard>
+                            </div>
+                          </StyledComponent>
+                        </styled.div>
+                      </div>
+                    </div>
+                  </div>
+                </ReactSwipableView>
+              </ShrinkSwipeable>
+            </AsyncSwipeable>
+            <Component>
+              <h3
+                className="bp3-heading"
+              >
+                社外イベント
+              </h3>
+            </Component>
+            <AsyncSwipeable
+              loading={false}
+            >
+              <ShrinkSwipeable>
+                <ReactSwipableView
+                  animateHeight={false}
+                  animateTransitions={true}
+                  axis="x"
+                  disableLazyLoading={false}
+                  disabled={false}
+                  enableMouseEvents={true}
+                  hysteresis={0.4}
+                  ignoreNativeScroll={false}
+                  index={0}
+                  resistance={false}
+                  slideStyle={
+                    Object {
+                      "padding": "0 5px",
+                    }
+                  }
+                  springConfig={
+                    Object {
+                      "delay": "0s",
+                      "duration": "0.35s",
+                      "easeFunction": "cubic-bezier(0.15, 0.3, 0.25, 1)",
+                    }
+                  }
+                  style={
+                    Object {
+                      "padding": "0 15px",
+                    }
+                  }
+                  threshold={5}
+                >
+                  <div
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseMove={[Function]}
+                    onMouseUp={[Function]}
+                    onScroll={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchStart={[Function]}
+                    style={
+                      Object {
+                        "overflowX": "hidden",
+                        "padding": "0 15px",
+                      }
+                    }
+                  >
+                    <div
+                      className="react-swipeable-view-container"
+                      style={
+                        Object {
+                          "WebkitFlexDirection": "row",
+                          "WebkitTransition": "all 0s ease 0s",
+                          "direction": "ltr",
+                          "display": "flex",
+                          "flexDirection": "row",
+                          "height": null,
+                          "transition": "all 0s ease 0s",
+                          "willChange": "transform",
+                        }
+                      }
+                    >
+                      <div
+                        aria-hidden={false}
+                        data-swipeable="true"
+                        key=".$0"
+                        style={
+                          Object {
+                            "WebkitFlexShrink": 0,
+                            "flexShrink": 0,
+                            "overflow": "auto",
+                            "padding": "0 5px",
+                            "width": "100%",
+                          }
+                        }
+                      >
+                        <styled.div
+                          key="0"
+                        >
+                          <StyledComponent
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "sc-bdVaJa",
+                                  "isStatic": true,
+                                  "lastClassName": "c1",
+                                  "rules": Array [
+                                    "
+  margin: 8px 0;
+",
+                                  ],
+                                },
+                                "displayName": "styled.div",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "sc-bdVaJa",
+                                "target": "div",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                          >
+                            <div
+                              className="c1"
+                            >
+                              <EventCard
+                                catchMessage="説明です"
+                                datetime="2018年12月01日 09:30 〜"
+                                eventUrl="https://connpass.com/"
+                                interactive={true}
+                                place="晴海"
+                                title="タイトル0"
+                              >
+                                <Blueprint3.Card
+                                  elevation={2}
+                                  interactive={true}
+                                  onClick={[Function]}
+                                >
+                                  <div
+                                    className="bp3-card bp3-interactive bp3-elevation-2"
+                                    onClick={[Function]}
+                                  >
+                                    <h3
+                                      className="bp3-heading"
+                                    >
+                                      タイトル0
+                                    </h3>
+                                    <Blueprint3.Text>
+                                      <div
+                                        className=""
+                                      >
+                                        概要：説明です
+                                      </div>
+                                    </Blueprint3.Text>
+                                    <Blueprint3.Text>
+                                      <div
+                                        className=""
+                                      >
+                                        場所：晴海
+                                      </div>
+                                    </Blueprint3.Text>
+                                    <Blueprint3.Text>
+                                      <div
+                                        className=""
+                                      >
+                                        日時：2018年12月01日 09:30 〜
+                                      </div>
+                                    </Blueprint3.Text>
+                                  </div>
+                                </Blueprint3.Card>
+                              </EventCard>
+                            </div>
+                          </StyledComponent>
+                        </styled.div>
+                      </div>
+                    </div>
+                  </div>
+                </ReactSwipableView>
+              </ShrinkSwipeable>
+            </AsyncSwipeable>
+          </div>
+        </StyledComponent>
+      </styled.div>
+    </Container>
+  </Menu>
+</MockRouter>
+`;
