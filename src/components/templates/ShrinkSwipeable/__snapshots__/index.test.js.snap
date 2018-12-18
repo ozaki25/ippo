@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot: ShrinkSwipeable/nomal 1`] = `
+<MockRouter
+  createHref={[Function]}
+  location=""
+  params={Object {}}
+  path=""
+  push={[Function]}
+  replace={[Function]}
+  url=""
+>
+  <ShrinkSwipeable>
+    <ReactSwipableView
+      animateHeight={false}
+      animateTransitions={true}
+      axis="x"
+      disableLazyLoading={false}
+      disabled={false}
+      enableMouseEvents={true}
+      hysteresis={0.4}
+      ignoreNativeScroll={false}
+      index={0}
+      resistance={false}
+      slideStyle={
+        Object {
+          "padding": "0 5px",
+        }
+      }
+      springConfig={
+        Object {
+          "delay": "0s",
+          "duration": "0.35s",
+          "easeFunction": "cubic-bezier(0.15, 0.3, 0.25, 1)",
+        }
+      }
+      style={
+        Object {
+          "padding": "0 15px",
+        }
+      }
+      threshold={5}
+    >
+      <div
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseMove={[Function]}
+        onMouseUp={[Function]}
+        onScroll={[Function]}
+        onTouchEnd={[Function]}
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "overflowX": "hidden",
+            "padding": "0 15px",
+          }
+        }
+      >
+        <div
+          className="react-swipeable-view-container"
+          style={
+            Object {
+              "WebkitFlexDirection": "row",
+              "WebkitTransition": "all 0s ease 0s",
+              "direction": "ltr",
+              "display": "flex",
+              "flexDirection": "row",
+              "height": null,
+              "transition": "all 0s ease 0s",
+              "willChange": "transform",
+            }
+          }
+        >
+          <div
+            aria-hidden={false}
+            data-swipeable="true"
+            key=".$1"
+            style={
+              Object {
+                "WebkitFlexShrink": 0,
+                "flexShrink": 0,
+                "overflow": "auto",
+                "padding": "0 5px",
+                "width": "100%",
+              }
+            }
+          >
+            <h1
+              key="1"
+            >
+              テスト1
+            </h1>
+          </div>
+        </div>
+      </div>
+    </ReactSwipableView>
+  </ShrinkSwipeable>
+</MockRouter>
+`;

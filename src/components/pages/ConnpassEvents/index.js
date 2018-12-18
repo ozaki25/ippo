@@ -43,7 +43,7 @@ const ConnpassEvents = ({ data: { loading, connpass, refetch }, subscribe }) => 
                 eventUrl={event.event_url}
                 catchMessage={event.catch}
                 place={event.place}
-                datetime={event.started_at && dateFormat.startDatetimeJa(event.started_at)}
+                datetime={event.started_at && `${dateFormat.datetimeJa(event.started_at)}〜`}
                 interactive
               />
             </EventCardContainer>
