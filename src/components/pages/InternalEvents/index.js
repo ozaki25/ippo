@@ -31,7 +31,7 @@ const InternalEvents = ({ data: { loading, internalEvents }, history, subscribe 
                 eventUrl=""
                 catchMessage={event.catchMessage}
                 place={event.place}
-                datetime={event.startedAt && `${dateFormat.datetimeJa(event.startedAt)}`}
+                datetime={event.startedAt && `${dateFormat.datetimeJa(event.startedAt)}〜`}
                 interactive
               />
             </EventCardContainer>

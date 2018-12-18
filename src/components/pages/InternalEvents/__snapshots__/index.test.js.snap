@@ -906,7 +906,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
         >
           <EventCard
             catchMessage="イベントの説明です"
-            datetime="2018年12月01日 10:30"
+            datetime="2018年12月01日 10:30〜"
             eventUrl=""
             interactive={true}
             place="東京都千代田区丸の内"
@@ -944,7 +944,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                   <div
                     className=""
                   >
-                    日時：2018年12月01日 10:30
+                    日時：2018年12月01日 10:30〜
                   </div>
                 </Blueprint3.Text>
               </div>
@@ -988,7 +988,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
         >
           <EventCard
             catchMessage="イベントの説明です"
-            datetime="2018年12月01日 10:30"
+            datetime="2018年12月01日 10:30〜"
             eventUrl=""
             interactive={true}
             place="東京都千代田区丸の内"
@@ -1026,7 +1026,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                   <div
                     className=""
                   >
-                    日時：2018年12月01日 10:30
+                    日時：2018年12月01日 10:30〜
                   </div>
                 </Blueprint3.Text>
               </div>
@@ -1070,7 +1070,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
         >
           <EventCard
             catchMessage="イベントの説明です"
-            datetime="2018年12月01日 10:30"
+            datetime="2018年12月01日 10:30〜"
             eventUrl=""
             interactive={true}
             place="東京都千代田区丸の内"
@@ -1108,7 +1108,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                   <div
                     className=""
                   >
-                    日時：2018年12月01日 10:30
+                    日時：2018年12月01日 10:30〜
                   </div>
                 </Blueprint3.Text>
               </div>
@@ -1152,7 +1152,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
         >
           <EventCard
             catchMessage="イベントの説明です"
-            datetime="2018年12月01日 10:30"
+            datetime="2018年12月01日 10:30〜"
             eventUrl=""
             interactive={true}
             place="東京都千代田区丸の内"
@@ -1190,7 +1190,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                   <div
                     className=""
                   >
-                    日時：2018年12月01日 10:30
+                    日時：2018年12月01日 10:30〜
                   </div>
                 </Blueprint3.Text>
               </div>
@@ -1234,7 +1234,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
         >
           <EventCard
             catchMessage="イベントの説明です"
-            datetime="2018年12月01日 10:30"
+            datetime="2018年12月01日 10:30〜"
             eventUrl=""
             interactive={true}
             place="東京都千代田区丸の内"
@@ -1272,7 +1272,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                   <div
                     className=""
                   >
-                    日時：2018年12月01日 10:30
+                    日時：2018年12月01日 10:30〜
                   </div>
                 </Blueprint3.Text>
               </div>
@@ -1316,7 +1316,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
         >
           <EventCard
             catchMessage="イベントの説明です"
-            datetime="2018年12月01日 10:30"
+            datetime="2018年12月01日 10:30〜"
             eventUrl=""
             interactive={true}
             place="東京都千代田区丸の内"
@@ -1354,7 +1354,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                   <div
                     className=""
                   >
-                    日時：2018年12月01日 10:30
+                    日時：2018年12月01日 10:30〜
                   </div>
                 </Blueprint3.Text>
               </div>
@@ -1398,7 +1398,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
         >
           <EventCard
             catchMessage="イベントの説明です"
-            datetime="2018年12月01日 10:30"
+            datetime="2018年12月01日 10:30〜"
             eventUrl=""
             interactive={true}
             place="東京都千代田区丸の内"
@@ -1436,7 +1436,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                   <div
                     className=""
                   >
-                    日時：2018年12月01日 10:30
+                    日時：2018年12月01日 10:30〜
                   </div>
                 </Blueprint3.Text>
               </div>
@@ -1480,7 +1480,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
         >
           <EventCard
             catchMessage="イベントの説明です"
-            datetime="2018年12月01日 10:30"
+            datetime="2018年12月01日 10:30〜"
             eventUrl=""
             interactive={true}
             place="東京都千代田区丸の内"
@@ -1518,7 +1518,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                   <div
                     className=""
                   >
-                    日時：2018年12月01日 10:30
+                    日時：2018年12月01日 10:30〜
                   </div>
                 </Blueprint3.Text>
               </div>
@@ -1562,7 +1562,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
         >
           <EventCard
             catchMessage="イベントの説明です"
-            datetime="2018年12月01日 10:30"
+            datetime="2018年12月01日 10:30〜"
             eventUrl=""
             interactive={true}
             place="東京都千代田区丸の内"
@@ -1600,7 +1600,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                   <div
                     className=""
                   >
-                    日時：2018年12月01日 10:30
+                    日時：2018年12月01日 10:30〜
                   </div>
                 </Blueprint3.Text>
               </div>
@@ -1644,7 +1644,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
         >
           <EventCard
             catchMessage="イベントの説明です"
-            datetime="2018年12月01日 10:30"
+            datetime="2018年12月01日 10:30〜"
             eventUrl=""
             interactive={true}
             place="東京都千代田区丸の内"
@@ -1682,7 +1682,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                   <div
                     className=""
                   >
-                    日時：2018年12月01日 10:30
+                    日時：2018年12月01日 10:30〜
                   </div>
                 </Blueprint3.Text>
               </div>
