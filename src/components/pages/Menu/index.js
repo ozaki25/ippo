@@ -9,6 +9,10 @@ import eventFormat from 'src/utils/eventFormat';
 const Menu = ({ internal, external }) => {
   return (
     <Container>
+      <H3>参加予定イベント</H3>
+      <AsyncSwipeable loading={true} />
+      <H3>おすすめイベント</H3>
+      <AsyncSwipeable loading={true} />
       <H3>社内イベント</H3>
       <AsyncSwipeable loading={internal.loading}>
         {EventCardList({ events: internal.internalEvents })}
