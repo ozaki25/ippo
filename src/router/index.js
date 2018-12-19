@@ -19,7 +19,7 @@ const Router = () => (
       <Route path={ROUTES.Events} exact component={Events} />
       <Route path={ROUTES.InternalEvents} exact component={InternalEvents} />
       <Route path={ROUTES.ExternEvents} exact component={ExternalEvents} />
-      <Route path={ROUTES.NewEvent} component={NewEvent} />
+      <Route path={ROUTES.NewEvent} exact component={NewEvent} />
       <Route path={ROUTES.Publish} exact component={Publish} />
     </Switch>
   </HashRouter>
