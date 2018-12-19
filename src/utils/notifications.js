@@ -1,6 +1,8 @@
-import { askForPermissionToReceiveNotifications } from 'src/push-notification';
+import Firebase from 'src/utils/firebase';
 
-const askForPermission = () => askForPermissionToReceiveNotifications();
+// const firebase = new Firebase();
+
+const askForPermission = () => {}; //firebase.askForPermissionToReceiveNotifications();
 
 const isGranted = () => Notification.permission === 'granted';
 
