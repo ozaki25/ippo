@@ -17,14 +17,14 @@
     "styled-components": "^4.1.2"
   },
   "scripts": {
-    "start": "REACT_APP_LOCAL=true react-scripts start",
-    "start:aws": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "NODE_PATH=. REACT_APP_LOCAL=true react-scripts start",
+    "start:aws": "NODE_PATH=. react-scripts start",
+    "build": "NODE_PATH=. react-scripts build",
+    "test": "NODE_PATH=. react-scripts test",
     "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public",
-    "deploy-storybook": "build-storybook -s public && cd storybook-static && git init && git add -A && git commit -m 'deploy storybook' && git push -f git@github.com:ozaki25/ippo.git master:gh-pages"
+    "storybook": "NODE_PATH=. start-storybook -p 9009 -s public",
+    "build-storybook": "NODE_PATH=. build-storybook -s public",
+    "deploy-storybook": "NODE_PATH=. build-storybook -s public && cd storybook-static && git init && git add -A && git commit -m 'deploy storybook' && git push -f git@github.com:ozaki25/ippo.git master:gh-pages"
   },
   "eslintConfig": {
     "extends": "react-app"
