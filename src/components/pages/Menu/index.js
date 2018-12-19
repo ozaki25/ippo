@@ -1,23 +1,37 @@
 import React from 'react';
 import propTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import { H3 } from '@blueprintjs/core';
 import EventCardList from 'src/components/organisms/EventCardList';
 import Container from 'src/components/templates/Container';
 import AsyncSwipeable from 'src/components/templates/AsyncSwipeable';
 import eventFormat from 'src/utils/eventFormat';
+import ROUTES from 'src/constants/routes';
 
 const Menu = ({ internal, external }) => {
   return (
     <Container>
-      <H3>参加予定イベント</H3>
-      <AsyncSwipeable loading={true} />
-      <H3>おすすめイベント</H3>
-      <AsyncSwipeable loading={true} />
-      <H3>社内イベント</H3>
+      <H3>
+        <Link to={ROUTES.Menu}>参加予定イベント</Link>
+      </H3>
       <AsyncSwipeable loading={internal.loading}>
         {EventCardList({ events: internal.internalEvents })}
       </AsyncSwipeable>
-      <H3>社外イベント</H3>
+      <H3>
+        <Link to={ROUTES.Menu}>おすすめイベント</Link>
+      </H3>
+      <AsyncSwipeable loading={internal.loading}>
+        {EventCardList({ events: internal.internalEvents })}
+      </AsyncSwipeable>
+      <H3>
+        <Link to={ROUTES.InternalEvents}>社内イベント</Link>
+      </H3>
+      <AsyncSwipeable loading={internal.loading}>
+        {EventCardList({ events: internal.internalEvents })}
+      </AsyncSwipeable>
+      <H3>
+        <Link to={ROUTES.ExternalEvents}>社外イベント</Link>
+      </H3>
       <AsyncSwipeable loading={external.loading}>
         {EventCardList({ events: eventFormat.convertPropsName(external.connpass) })}
       </AsyncSwipeable>

@@ -1,9 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import ConnpassEvents from '.';
+import ExternalEvents from '.';
 
-const stories = storiesOf('pages/ConnpassEvents', module);
+const stories = storiesOf('pages/ExternalEvents', module);
 
 const event = i => ({
   event_id: i,
@@ -26,11 +26,10 @@ const props = ({ loading = false, connpass = null }) => ({
     connpass,
     refetch: action('refetch'),
   },
-  subscribe: action('subscribe'),
 });
 
-stories.add('通常パターン', () => <ConnpassEvents {...props({ connpass })} />);
+stories.add('通常パターン', () => <ExternalEvents {...props({ connpass })} />);
 
-stories.add('ロード中', () => <ConnpassEvents {...props({ loading: true })} />);
+stories.add('ロード中', () => <ExternalEvents {...props({ loading: true })} />);
 
-stories.add('データなし', () => <ConnpassEvents {...props({})} />);
+stories.add('データなし', () => <ExternalEvents {...props({})} />);

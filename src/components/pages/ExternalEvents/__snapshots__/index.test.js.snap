@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should match snapshot: InternalEvents/loading 1`] = `
+exports[`should match snapshot: ExternalEvents/loading 1`] = `
 .c0 {
   padding: 10px 15px;
 }
@@ -14,11 +14,12 @@ exports[`should match snapshot: InternalEvents/loading 1`] = `
   replace={[Function]}
   url=""
 >
-  <InternalEvents
+  <ExternalEvents
     data={
       Object {
-        "internalEvents": null,
+        "connpass": null,
         "loading": true,
+        "refetch": [MockFunction],
       }
     }
   >
@@ -185,11 +186,11 @@ exports[`should match snapshot: InternalEvents/loading 1`] = `
         </StyledComponent>
       </styled.div>
     </Container>
-  </InternalEvents>
+  </ExternalEvents>
 </MockRouter>
 `;
 
-exports[`should match snapshot: InternalEvents/nocontents 1`] = `
+exports[`should match snapshot: ExternalEvents/nocontents 1`] = `
 .c0 {
   padding: 10px 15px;
 }
@@ -203,11 +204,12 @@ exports[`should match snapshot: InternalEvents/nocontents 1`] = `
   replace={[Function]}
   url=""
 >
-  <InternalEvents
+  <ExternalEvents
     data={
       Object {
-        "internalEvents": null,
+        "connpass": null,
         "loading": false,
+        "refetch": [MockFunction],
       }
     }
   >
@@ -353,17 +355,21 @@ exports[`should match snapshot: InternalEvents/nocontents 1`] = `
         </StyledComponent>
       </styled.div>
     </Container>
-  </InternalEvents>
+  </ExternalEvents>
 </MockRouter>
 `;
 
-exports[`should match snapshot: InternalEvents/nomal 1`] = `
+exports[`should match snapshot: ExternalEvents/nomal 1`] = `
 .c0 {
   padding: 10px 15px;
 }
 
 .c1 {
   margin: 8px 0;
+}
+
+.c2 {
+  text-align: center;
 }
 
 <MockRouter
@@ -375,82 +381,97 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
   replace={[Function]}
   url=""
 >
-  <InternalEvents
+  <ExternalEvents
     data={
       Object {
-        "internalEvents": Array [
-          Object {
-            "catchMessage": "イベントの説明です",
-            "id": "0",
-            "place": "東京都千代田区丸の内",
-            "startedAt": "2018/12/1 10:30",
-            "title": "イベントのタイトル0",
-          },
-          Object {
-            "catchMessage": "イベントの説明です",
-            "id": "1",
-            "place": "東京都千代田区丸の内",
-            "startedAt": "2018/12/1 10:30",
-            "title": "イベントのタイトル1",
-          },
-          Object {
-            "catchMessage": "イベントの説明です",
-            "id": "2",
-            "place": "東京都千代田区丸の内",
-            "startedAt": "2018/12/1 10:30",
-            "title": "イベントのタイトル2",
-          },
-          Object {
-            "catchMessage": "イベントの説明です",
-            "id": "3",
-            "place": "東京都千代田区丸の内",
-            "startedAt": "2018/12/1 10:30",
-            "title": "イベントのタイトル3",
-          },
-          Object {
-            "catchMessage": "イベントの説明です",
-            "id": "4",
-            "place": "東京都千代田区丸の内",
-            "startedAt": "2018/12/1 10:30",
-            "title": "イベントのタイトル4",
-          },
-          Object {
-            "catchMessage": "イベントの説明です",
-            "id": "5",
-            "place": "東京都千代田区丸の内",
-            "startedAt": "2018/12/1 10:30",
-            "title": "イベントのタイトル5",
-          },
-          Object {
-            "catchMessage": "イベントの説明です",
-            "id": "6",
-            "place": "東京都千代田区丸の内",
-            "startedAt": "2018/12/1 10:30",
-            "title": "イベントのタイトル6",
-          },
-          Object {
-            "catchMessage": "イベントの説明です",
-            "id": "7",
-            "place": "東京都千代田区丸の内",
-            "startedAt": "2018/12/1 10:30",
-            "title": "イベントのタイトル7",
-          },
-          Object {
-            "catchMessage": "イベントの説明です",
-            "id": "8",
-            "place": "東京都千代田区丸の内",
-            "startedAt": "2018/12/1 10:30",
-            "title": "イベントのタイトル8",
-          },
-          Object {
-            "catchMessage": "イベントの説明です",
-            "id": "9",
-            "place": "東京都千代田区丸の内",
-            "startedAt": "2018/12/1 10:30",
-            "title": "イベントのタイトル9",
-          },
-        ],
+        "connpass": Object {
+          "events": Array [
+            Object {
+              "catch": "イベントの説明です",
+              "event_id": 0,
+              "event_url": "https://connpass.com/",
+              "place": "東京都千代田区丸の内",
+              "started_at": "2012-04-17T18:30:00+09:00",
+              "title": "イベントのタイトル0",
+            },
+            Object {
+              "catch": "イベントの説明です",
+              "event_id": 1,
+              "event_url": "https://connpass.com/",
+              "place": "東京都千代田区丸の内",
+              "started_at": "2012-04-17T18:30:00+09:00",
+              "title": "イベントのタイトル1",
+            },
+            Object {
+              "catch": "イベントの説明です",
+              "event_id": 2,
+              "event_url": "https://connpass.com/",
+              "place": "東京都千代田区丸の内",
+              "started_at": "2012-04-17T18:30:00+09:00",
+              "title": "イベントのタイトル2",
+            },
+            Object {
+              "catch": "イベントの説明です",
+              "event_id": 3,
+              "event_url": "https://connpass.com/",
+              "place": "東京都千代田区丸の内",
+              "started_at": "2012-04-17T18:30:00+09:00",
+              "title": "イベントのタイトル3",
+            },
+            Object {
+              "catch": "イベントの説明です",
+              "event_id": 4,
+              "event_url": "https://connpass.com/",
+              "place": "東京都千代田区丸の内",
+              "started_at": "2012-04-17T18:30:00+09:00",
+              "title": "イベントのタイトル4",
+            },
+            Object {
+              "catch": "イベントの説明です",
+              "event_id": 5,
+              "event_url": "https://connpass.com/",
+              "place": "東京都千代田区丸の内",
+              "started_at": "2012-04-17T18:30:00+09:00",
+              "title": "イベントのタイトル5",
+            },
+            Object {
+              "catch": "イベントの説明です",
+              "event_id": 6,
+              "event_url": "https://connpass.com/",
+              "place": "東京都千代田区丸の内",
+              "started_at": "2012-04-17T18:30:00+09:00",
+              "title": "イベントのタイトル6",
+            },
+            Object {
+              "catch": "イベントの説明です",
+              "event_id": 7,
+              "event_url": "https://connpass.com/",
+              "place": "東京都千代田区丸の内",
+              "started_at": "2012-04-17T18:30:00+09:00",
+              "title": "イベントのタイトル7",
+            },
+            Object {
+              "catch": "イベントの説明です",
+              "event_id": 8,
+              "event_url": "https://connpass.com/",
+              "place": "東京都千代田区丸の内",
+              "started_at": "2012-04-17T18:30:00+09:00",
+              "title": "イベントのタイトル8",
+            },
+            Object {
+              "catch": "イベントの説明です",
+              "event_id": 9,
+              "event_url": "https://connpass.com/",
+              "place": "東京都千代田区丸の内",
+              "started_at": "2012-04-17T18:30:00+09:00",
+              "title": "イベントのタイトル9",
+            },
+          ],
+          "results_available": 100,
+          "results_start": 11,
+        },
         "loading": false,
+        "refetch": [MockFunction],
       }
     }
   >
@@ -585,6 +606,109 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
           <div
             className="c0"
           >
+            <SearchForm
+              search={[Function]}
+            >
+              <Blueprint3.InputGroup
+                large={true}
+                leftIcon="search"
+                onChange={[Function]}
+                rightElement={
+                  <Blueprint3.Button
+                    icon="arrow-right"
+                    minimal={true}
+                    onClick={[Function]}
+                  />
+                }
+                value=""
+              >
+                <div
+                  className="bp3-input-group bp3-large"
+                >
+                  <Blueprint3.Icon
+                    icon="search"
+                  >
+                    <span
+                      className="bp3-icon bp3-icon-search"
+                      icon="search"
+                    >
+                      <svg
+                        data-icon="search"
+                        height={16}
+                        viewBox="0 0 16 16"
+                        width={16}
+                      >
+                        <desc>
+                          search
+                        </desc>
+                        <path
+                          d="M15.55 13.43l-2.67-2.68a6.94 6.94 0 0 0 1.11-3.76c0-3.87-3.13-7-7-7s-7 3.13-7 7 3.13 7 7 7c1.39 0 2.68-.42 3.76-1.11l2.68 2.67a1.498 1.498 0 1 0 2.12-2.12zm-8.56-1.44c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"
+                          fillRule="evenodd"
+                          key="0"
+                        />
+                      </svg>
+                    </span>
+                  </Blueprint3.Icon>
+                  <input
+                    className="bp3-input"
+                    onChange={[Function]}
+                    style={
+                      Object {
+                        "paddingRight": 0,
+                      }
+                    }
+                    type="text"
+                    value=""
+                  />
+                  <span
+                    className="bp3-input-action"
+                  >
+                    <Blueprint3.Button
+                      icon="arrow-right"
+                      minimal={true}
+                      onClick={[Function]}
+                    >
+                      <button
+                        className="bp3-button bp3-minimal"
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        onKeyUp={[Function]}
+                        type="button"
+                      >
+                        <Blueprint3.Icon
+                          icon="arrow-right"
+                          key="leftIcon"
+                        >
+                          <span
+                            className="bp3-icon bp3-icon-arrow-right"
+                            icon="arrow-right"
+                          >
+                            <svg
+                              data-icon="arrow-right"
+                              height={16}
+                              viewBox="0 0 16 16"
+                              width={16}
+                            >
+                              <desc>
+                                arrow-right
+                              </desc>
+                              <path
+                                d="M14.7 7.29l-5-5a.965.965 0 0 0-.71-.3 1.003 1.003 0 0 0-.71 1.71l3.29 3.29H1.99c-.55 0-1 .45-1 1s.45 1 1 1h9.59l-3.29 3.29a1.003 1.003 0 0 0 1.42 1.42l5-5c.18-.18.29-.43.29-.71s-.12-.52-.3-.7z"
+                                fillRule="evenodd"
+                                key="0"
+                              />
+                            </svg>
+                          </span>
+                        </Blueprint3.Icon>
+                        <Blueprint3.Icon
+                          key="rightIcon"
+                        />
+                      </button>
+                    </Blueprint3.Button>
+                  </span>
+                </div>
+              </Blueprint3.InputGroup>
+            </SearchForm>
             <styled.div
               key="0"
             >
@@ -620,8 +744,8 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                 >
                   <EventCard
                     catchMessage="イベントの説明です"
-                    datetime="2018年12月01日 10:30〜"
-                    eventUrl=""
+                    datetime="2012年04月17日 18:30〜"
+                    eventUrl="https://connpass.com/"
                     interactive={true}
                     place="東京都千代田区丸の内"
                     title="イベントのタイトル0"
@@ -658,7 +782,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                           <div
                             className=""
                           >
-                            日時：2018年12月01日 10:30〜
+                            日時：2012年04月17日 18:30〜
                           </div>
                         </Blueprint3.Text>
                       </div>
@@ -702,8 +826,8 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                 >
                   <EventCard
                     catchMessage="イベントの説明です"
-                    datetime="2018年12月01日 10:30〜"
-                    eventUrl=""
+                    datetime="2012年04月17日 18:30〜"
+                    eventUrl="https://connpass.com/"
                     interactive={true}
                     place="東京都千代田区丸の内"
                     title="イベントのタイトル1"
@@ -740,7 +864,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                           <div
                             className=""
                           >
-                            日時：2018年12月01日 10:30〜
+                            日時：2012年04月17日 18:30〜
                           </div>
                         </Blueprint3.Text>
                       </div>
@@ -784,8 +908,8 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                 >
                   <EventCard
                     catchMessage="イベントの説明です"
-                    datetime="2018年12月01日 10:30〜"
-                    eventUrl=""
+                    datetime="2012年04月17日 18:30〜"
+                    eventUrl="https://connpass.com/"
                     interactive={true}
                     place="東京都千代田区丸の内"
                     title="イベントのタイトル2"
@@ -822,7 +946,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                           <div
                             className=""
                           >
-                            日時：2018年12月01日 10:30〜
+                            日時：2012年04月17日 18:30〜
                           </div>
                         </Blueprint3.Text>
                       </div>
@@ -866,8 +990,8 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                 >
                   <EventCard
                     catchMessage="イベントの説明です"
-                    datetime="2018年12月01日 10:30〜"
-                    eventUrl=""
+                    datetime="2012年04月17日 18:30〜"
+                    eventUrl="https://connpass.com/"
                     interactive={true}
                     place="東京都千代田区丸の内"
                     title="イベントのタイトル3"
@@ -904,7 +1028,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                           <div
                             className=""
                           >
-                            日時：2018年12月01日 10:30〜
+                            日時：2012年04月17日 18:30〜
                           </div>
                         </Blueprint3.Text>
                       </div>
@@ -948,8 +1072,8 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                 >
                   <EventCard
                     catchMessage="イベントの説明です"
-                    datetime="2018年12月01日 10:30〜"
-                    eventUrl=""
+                    datetime="2012年04月17日 18:30〜"
+                    eventUrl="https://connpass.com/"
                     interactive={true}
                     place="東京都千代田区丸の内"
                     title="イベントのタイトル4"
@@ -986,7 +1110,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                           <div
                             className=""
                           >
-                            日時：2018年12月01日 10:30〜
+                            日時：2012年04月17日 18:30〜
                           </div>
                         </Blueprint3.Text>
                       </div>
@@ -1030,8 +1154,8 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                 >
                   <EventCard
                     catchMessage="イベントの説明です"
-                    datetime="2018年12月01日 10:30〜"
-                    eventUrl=""
+                    datetime="2012年04月17日 18:30〜"
+                    eventUrl="https://connpass.com/"
                     interactive={true}
                     place="東京都千代田区丸の内"
                     title="イベントのタイトル5"
@@ -1068,7 +1192,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                           <div
                             className=""
                           >
-                            日時：2018年12月01日 10:30〜
+                            日時：2012年04月17日 18:30〜
                           </div>
                         </Blueprint3.Text>
                       </div>
@@ -1112,8 +1236,8 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                 >
                   <EventCard
                     catchMessage="イベントの説明です"
-                    datetime="2018年12月01日 10:30〜"
-                    eventUrl=""
+                    datetime="2012年04月17日 18:30〜"
+                    eventUrl="https://connpass.com/"
                     interactive={true}
                     place="東京都千代田区丸の内"
                     title="イベントのタイトル6"
@@ -1150,7 +1274,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                           <div
                             className=""
                           >
-                            日時：2018年12月01日 10:30〜
+                            日時：2012年04月17日 18:30〜
                           </div>
                         </Blueprint3.Text>
                       </div>
@@ -1194,8 +1318,8 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                 >
                   <EventCard
                     catchMessage="イベントの説明です"
-                    datetime="2018年12月01日 10:30〜"
-                    eventUrl=""
+                    datetime="2012年04月17日 18:30〜"
+                    eventUrl="https://connpass.com/"
                     interactive={true}
                     place="東京都千代田区丸の内"
                     title="イベントのタイトル7"
@@ -1232,7 +1356,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                           <div
                             className=""
                           >
-                            日時：2018年12月01日 10:30〜
+                            日時：2012年04月17日 18:30〜
                           </div>
                         </Blueprint3.Text>
                       </div>
@@ -1276,8 +1400,8 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                 >
                   <EventCard
                     catchMessage="イベントの説明です"
-                    datetime="2018年12月01日 10:30〜"
-                    eventUrl=""
+                    datetime="2012年04月17日 18:30〜"
+                    eventUrl="https://connpass.com/"
                     interactive={true}
                     place="東京都千代田区丸の内"
                     title="イベントのタイトル8"
@@ -1314,7 +1438,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                           <div
                             className=""
                           >
-                            日時：2018年12月01日 10:30〜
+                            日時：2012年04月17日 18:30〜
                           </div>
                         </Blueprint3.Text>
                       </div>
@@ -1358,8 +1482,8 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                 >
                   <EventCard
                     catchMessage="イベントの説明です"
-                    datetime="2018年12月01日 10:30〜"
-                    eventUrl=""
+                    datetime="2012年04月17日 18:30〜"
+                    eventUrl="https://connpass.com/"
                     interactive={true}
                     place="東京都千代田区丸の内"
                     title="イベントのタイトル9"
@@ -1396,7 +1520,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                           <div
                             className=""
                           >
-                            日時：2018年12月01日 10:30〜
+                            日時：2012年04月17日 18:30〜
                           </div>
                         </Blueprint3.Text>
                       </div>
@@ -1405,10 +1529,246 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                 </div>
               </StyledComponent>
             </styled.div>
+            <styled.div>
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-htpNat",
+                      "isStatic": true,
+                      "lastClassName": "c2",
+                      "rules": Array [
+                        "
+  text-align: center;
+",
+                      ],
+                    },
+                    "displayName": "styled.div",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-htpNat",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <div
+                  className="c2"
+                >
+                  <Pagination
+                    current={2}
+                    large={true}
+                    onClick={[Function]}
+                    total={10}
+                  >
+                    <Blueprint3.ButtonGroup
+                      large={true}
+                    >
+                      <div
+                        className="bp3-button-group bp3-large"
+                      >
+                        <Blueprint3.Button
+                          icon="double-chevron-left"
+                          onClick={[Function]}
+                        >
+                          <button
+                            className="bp3-button"
+                            onClick={[Function]}
+                            onKeyDown={[Function]}
+                            onKeyUp={[Function]}
+                            type="button"
+                          >
+                            <Blueprint3.Icon
+                              icon="double-chevron-left"
+                              key="leftIcon"
+                            >
+                              <span
+                                className="bp3-icon bp3-icon-double-chevron-left"
+                                icon="double-chevron-left"
+                              >
+                                <svg
+                                  data-icon="double-chevron-left"
+                                  height={16}
+                                  viewBox="0 0 16 16"
+                                  width={16}
+                                >
+                                  <desc>
+                                    double-chevron-left
+                                  </desc>
+                                  <path
+                                    d="M4.41 8L7.7 4.71c.19-.18.3-.43.3-.71a1.003 1.003 0 0 0-1.71-.71l-4 4C2.11 7.47 2 7.72 2 8c0 .28.11.53.29.71l4 4a1.003 1.003 0 0 0 1.42-1.42L4.41 8zm5 0l3.29-3.29c.19-.18.3-.43.3-.71a1.003 1.003 0 0 0-1.71-.71l-4 4C7.11 7.47 7 7.72 7 8c0 .28.11.53.29.71l4 4a1.003 1.003 0 0 0 1.42-1.42L9.41 8z"
+                                    fillRule="evenodd"
+                                    key="0"
+                                  />
+                                </svg>
+                              </span>
+                            </Blueprint3.Icon>
+                            <Blueprint3.Icon
+                              key="rightIcon"
+                            />
+                          </button>
+                        </Blueprint3.Button>
+                        <Blueprint3.Button
+                          icon="chevron-left"
+                          onClick={[Function]}
+                        >
+                          <button
+                            className="bp3-button"
+                            onClick={[Function]}
+                            onKeyDown={[Function]}
+                            onKeyUp={[Function]}
+                            type="button"
+                          >
+                            <Blueprint3.Icon
+                              icon="chevron-left"
+                              key="leftIcon"
+                            >
+                              <span
+                                className="bp3-icon bp3-icon-chevron-left"
+                                icon="chevron-left"
+                              >
+                                <svg
+                                  data-icon="chevron-left"
+                                  height={16}
+                                  viewBox="0 0 16 16"
+                                  width={16}
+                                >
+                                  <desc>
+                                    chevron-left
+                                  </desc>
+                                  <path
+                                    d="M7.41 8l3.29-3.29c.19-.18.3-.43.3-.71a1.003 1.003 0 0 0-1.71-.71l-4 4C5.11 7.47 5 7.72 5 8c0 .28.11.53.29.71l4 4a1.003 1.003 0 0 0 1.42-1.42L7.41 8z"
+                                    fillRule="evenodd"
+                                    key="0"
+                                  />
+                                </svg>
+                              </span>
+                            </Blueprint3.Icon>
+                            <Blueprint3.Icon
+                              key="rightIcon"
+                            />
+                          </button>
+                        </Blueprint3.Button>
+                        <Blueprint3.Button
+                          text="2 of 10"
+                        >
+                          <button
+                            className="bp3-button"
+                            onKeyDown={[Function]}
+                            onKeyUp={[Function]}
+                            type="button"
+                          >
+                            <Blueprint3.Icon
+                              key="leftIcon"
+                            />
+                            <span
+                              className="bp3-button-text"
+                              key="text"
+                            >
+                              2 of 10
+                            </span>
+                            <Blueprint3.Icon
+                              key="rightIcon"
+                            />
+                          </button>
+                        </Blueprint3.Button>
+                        <Blueprint3.Button
+                          icon="chevron-right"
+                          onClick={[Function]}
+                        >
+                          <button
+                            className="bp3-button"
+                            onClick={[Function]}
+                            onKeyDown={[Function]}
+                            onKeyUp={[Function]}
+                            type="button"
+                          >
+                            <Blueprint3.Icon
+                              icon="chevron-right"
+                              key="leftIcon"
+                            >
+                              <span
+                                className="bp3-icon bp3-icon-chevron-right"
+                                icon="chevron-right"
+                              >
+                                <svg
+                                  data-icon="chevron-right"
+                                  height={16}
+                                  viewBox="0 0 16 16"
+                                  width={16}
+                                >
+                                  <desc>
+                                    chevron-right
+                                  </desc>
+                                  <path
+                                    d="M10.71 7.29l-4-4a1.003 1.003 0 0 0-1.42 1.42L8.59 8 5.3 11.29c-.19.18-.3.43-.3.71a1.003 1.003 0 0 0 1.71.71l4-4c.18-.18.29-.43.29-.71 0-.28-.11-.53-.29-.71z"
+                                    fillRule="evenodd"
+                                    key="0"
+                                  />
+                                </svg>
+                              </span>
+                            </Blueprint3.Icon>
+                            <Blueprint3.Icon
+                              key="rightIcon"
+                            />
+                          </button>
+                        </Blueprint3.Button>
+                        <Blueprint3.Button
+                          icon="double-chevron-right"
+                          onClick={[Function]}
+                        >
+                          <button
+                            className="bp3-button"
+                            onClick={[Function]}
+                            onKeyDown={[Function]}
+                            onKeyUp={[Function]}
+                            type="button"
+                          >
+                            <Blueprint3.Icon
+                              icon="double-chevron-right"
+                              key="leftIcon"
+                            >
+                              <span
+                                className="bp3-icon bp3-icon-double-chevron-right"
+                                icon="double-chevron-right"
+                              >
+                                <svg
+                                  data-icon="double-chevron-right"
+                                  height={16}
+                                  viewBox="0 0 16 16"
+                                  width={16}
+                                >
+                                  <desc>
+                                    double-chevron-right
+                                  </desc>
+                                  <path
+                                    d="M9 8c0-.28-.11-.53-.29-.71l-4-4a1.003 1.003 0 0 0-1.42 1.42L6.59 8 3.3 11.29c-.19.18-.3.43-.3.71a1.003 1.003 0 0 0 1.71.71l4-4C8.89 8.53 9 8.28 9 8zm4.71-.71l-4-4a1.003 1.003 0 0 0-1.42 1.42L11.59 8 8.3 11.29c-.19.18-.3.43-.3.71a1.003 1.003 0 0 0 1.71.71l4-4c.18-.18.29-.43.29-.71 0-.28-.11-.53-.29-.71z"
+                                    fillRule="evenodd"
+                                    key="0"
+                                  />
+                                </svg>
+                              </span>
+                            </Blueprint3.Icon>
+                            <Blueprint3.Icon
+                              key="rightIcon"
+                            />
+                          </button>
+                        </Blueprint3.Button>
+                      </div>
+                    </Blueprint3.ButtonGroup>
+                  </Pagination>
+                </div>
+              </StyledComponent>
+            </styled.div>
           </div>
         </StyledComponent>
       </styled.div>
     </Container>
-  </InternalEvents>
+  </ExternalEvents>
 </MockRouter>
 `;

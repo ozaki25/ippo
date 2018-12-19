@@ -2,12 +2,12 @@ import React from 'react';
 import propTypes from 'prop-types';
 import TabMenu from 'src/components/molecules/TabMenu';
 import Container from 'src/components/templates/Container';
-import ConnpassEvents from 'src/components/pages/ConnpassEvents';
+import ExternalEvents from 'src/components/pages/ExternalEvents';
 import InternalEvents from 'src/hoc/WithInternalEvents';
 import notifications from 'src/utils/notifications';
 import alertMessage from 'src/constants/alertMessage';
 
-const Events = ({ connpassEvents, internalEvents, registerNotification }) => {
+const Events = ({ externalEvents, internalEvents, registerNotification }) => {
   const subscribe = async () => {
     if (notifications.isSupported() && notifications.isUndecided()) {
       const token = await notifications.askForPermission();
@@ -26,7 +26,7 @@ const Events = ({ connpassEvents, internalEvents, registerNotification }) => {
     {
       id: 'external',
       title: '社外',
-      Component: () => <ConnpassEvents data={{ ...connpassEvents }} subscribe={subscribe} />,
+      Component: () => <ExternalEvents data={{ ...externalEvents }} subscribe={subscribe} />,
     },
   ];
   return (
@@ -39,7 +39,7 @@ const Events = ({ connpassEvents, internalEvents, registerNotification }) => {
 Events.displayName = 'Events';
 
 Events.propTypes = {
-  connpassEvents: propTypes.shape({
+  externalEvents: propTypes.shape({
     loading: propTypes.bool.isRequired,
     connpass: propTypes.shape({
       events: propTypes.arrayOf(

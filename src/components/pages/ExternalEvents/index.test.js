@@ -1,6 +1,6 @@
 import React from 'react';
 import { snapshot } from 'test/helpers';
-import ConnpassEvents from '.';
+import ExternalEvents from '.';
 
 const event = i => ({
   event_id: i,
@@ -23,11 +23,10 @@ const props = ({ loading = false, connpass = null }) => ({
     connpass,
     refetch: jest.fn(),
   },
-  subscribe: jest.fn(),
 });
 
-snapshot('ConnpassEvents/nomal', <ConnpassEvents {...props({ connpass })} />);
+snapshot('ExternalEvents/nomal', <ExternalEvents {...props({ connpass })} />);
 
-snapshot('ConnpassEvents/loading', <ConnpassEvents {...props({ loading: true })} />);
+snapshot('ExternalEvents/loading', <ExternalEvents {...props({ loading: true })} />);
 
-snapshot('ConnpassEvents/nocontents', <ConnpassEvents {...props({})} />);
+snapshot('ExternalEvents/nocontents', <ExternalEvents {...props({})} />);
