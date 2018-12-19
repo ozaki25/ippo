@@ -14,11 +14,15 @@ const Menu = ({ internal, external }) => {
       <H3>
         <Link to={ROUTES.Menu}>参加予定イベント</Link>
       </H3>
-      <AsyncSwipeable loading={true} />
+      <AsyncSwipeable loading={internal.loading}>
+        {EventCardList({ events: internal.internalEvents })}
+      </AsyncSwipeable>
       <H3>
         <Link to={ROUTES.Menu}>おすすめイベント</Link>
       </H3>
-      <AsyncSwipeable loading={true} />
+      <AsyncSwipeable loading={internal.loading}>
+        {EventCardList({ events: internal.internalEvents })}
+      </AsyncSwipeable>
       <H3>
         <Link to={ROUTES.InternalEvents}>社内イベント</Link>
       </H3>

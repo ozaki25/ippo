@@ -7,7 +7,7 @@ const hello = gql`
   }
 `;
 
-const connpassEvents = gql`
+const externalEvents = gql`
   query($searchQuery: String, $page: Int, $count: Int) {
     connpass(searchQuery: $searchQuery, page: $page, count: $count) {
       events {
@@ -64,7 +64,7 @@ const createEvent = gql`
 
 export default {
   hello,
-  connpassEvents,
+  externalEvents,
   internalEvents,
   registerNotification,
   publishNotification,
