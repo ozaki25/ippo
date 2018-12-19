@@ -59,7 +59,14 @@ class Signup extends React.Component {
 
 Signup.displayName = 'Signup';
 
-Signup.propTypes = {};
+Signup.propTypes = {
+  history: propTypes.shape({
+    push: propTypes.func.isRequired,
+  }).isRequired,
+  firebase: propTypes.shape({
+    doCreateUserWithEmailAndPassword: propTypes.func.isRequired,
+  }).isRequired,
+};
 
 Signup.defaultProps = {};
 

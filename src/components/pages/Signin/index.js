@@ -59,7 +59,14 @@ class Signin extends React.Component {
 
 Signin.displayName = 'Signin';
 
-Signin.propTypes = {};
+Signin.propTypes = {
+  history: propTypes.shape({
+    push: propTypes.func.isRequired,
+  }).isRequired,
+  firebase: propTypes.shape({
+    doSignInWithEmailAndPassword: propTypes.func.isRequired,
+  }).isRequired,
+};
 
 Signin.defaultProps = {};
 
