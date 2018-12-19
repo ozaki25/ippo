@@ -1,9 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import SignUp from '.';
+import Signup from '.';
 
-const stories = storiesOf('pages/SignUp', module);
+const stories = storiesOf('pages/Signup', module);
 
 const props = {};
 
-stories.add('通常パターン', () => <SignUp {...props} />);
+stories.add('通常パターン', () => <Signup {...props} />);

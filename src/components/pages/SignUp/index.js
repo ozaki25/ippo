@@ -4,7 +4,7 @@ import { Button, FormGroup, InputGroup } from '@blueprintjs/core';
 import ROUTES from 'src/router';
 import Container from 'src/components/templates/Container';
 
-class SignUp extends React.Component {
+class Signup extends React.Component {
   constructor(props) {
     super(props);
     this.state = { email: '', pass: '' };
@@ -69,10 +69,10 @@ class SignUp extends React.Component {
   }
 }
 
-SignUp.displayName = 'SignUp';
+Signup.displayName = 'Signup';
 
-SignUp.propTypes = {};
+Signup.propTypes = {};
 
-SignUp.defaultProps = {};
+Signup.defaultProps = {};
 
-export default SignUp;
+export default Signup;
