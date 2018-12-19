@@ -1,6 +1,7 @@
 import React from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import Menu from 'src/hoc/WithMenu';
+import Signin from 'src/hoc/WithSignin';
 import Signup from 'src/hoc/WithSignup';
 import Publish from 'src/hoc/WithPublish';
 import Events from 'src/hoc/WithEvents';
@@ -10,7 +11,7 @@ import ROUTES from 'src/constants/routes';
 const Router = () => (
   <HashRouter>
     <Switch>
-      {/* <Route path={ROUTES.Signin} exact component={Signin} /> */}
+      <Route path={ROUTES.Signin} exact component={Signin} />
       <Route path={ROUTES.Signup} exact component={Signup} />
       <Route path={ROUTES.Menu} exact component={Menu} />
       <Route path={ROUTES.Events} exact component={Events} />
