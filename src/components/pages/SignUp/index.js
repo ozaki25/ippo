@@ -1,7 +1,7 @@
 import React from 'react';
 import propTypes from 'prop-types';
 import { Button, FormGroup, InputGroup } from '@blueprintjs/core';
-import ROUTES from 'src/router';
+import ROUTES from 'src/constants/routes';
 import Container from 'src/components/templates/Container';
 
 class Signup extends React.Component {
