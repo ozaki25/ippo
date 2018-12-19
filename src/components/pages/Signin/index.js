@@ -4,23 +4,35 @@ import { Button, FormGroup, InputGroup } from '@blueprintjs/core';
 import ROUTES from 'src/router';
 import Container from 'src/components/templates/Container';
 
-class Signup extends React.Component {
+class Signin extends React.Component {
   constructor(props) {
     super(props);
     this.state = { email: '', pass: '' };
   }
 
-  onSubmit = async e => {
+  onSubmit = e => {
     e.preventDefault();
     const { email, pass } = this.state;
-    try {
-      const authUser = await this.props.firebase.doCreateUserWithEmailAndPassword(email, pass);
-      console.log(authUser);
-      this.setState({ email: '', pass: '' });
-      this.props.history.push(ROUTES.Menu);
-    } catch (error) {
-      console.log(error);
-    }
+    console.log({ email, pass });
+    this.props.firebase
+      .doCreateUserWithEmailAndPassword(email, pass)
+      .then(authUser => {
+        // Create a user in your Firebase realtime database
+        return this.props.firebase.user(authUser.user.uid).set({
+          email,
+        });
+      })
+      .then(() => {
+        return this.props.firebase.doSendEmailVerification();
+      })
+      .then(() => {
+        this.setState({ email: '', pass: '' });
+        this.props.history.push(ROUTES.Menu);
+      })
+      .catch(error => {
+        console.log(error);
+        this.setState({ error });
+      });
   };
 
   onChange = event => this.setState({ [event.target.name]: event.target.value });
@@ -50,17 +62,17 @@ class Signup extends React.Component {
               large
             />
           </FormGroup>
-          <Button text="登録" type="submit" disabled={invalid} fill large />
+          <Button text="ログイン" type="submit" disabled={invalid} fill large />
         </form>
       </Container>
     );
   }
 }
 
-Signup.displayName = 'Signup';
+Signin.displayName = 'Signin';
 
-Signup.propTypes = {};
+Signin.propTypes = {};
 
-Signup.defaultProps = {};
+Signin.defaultProps = {};
 
-export default Signup;
+export default Signin;

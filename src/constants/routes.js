@@ -1,5 +1,5 @@
-const SignIn = '/signin';
-const SignUp = '/signup';
+const Signin = '/signin';
+const Signup = '/signup';
 const Menu = '/';
 const Events = '/events';
 const NewEvent = '/events/new';
@@ -10,6 +10,6 @@ export default {
   Events,
   NewEvent,
   Publish,
-  SignIn,
-  SignUp,
+  Signin,
+  Signup,
 };
