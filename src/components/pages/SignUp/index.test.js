@@ -1,7 +1,7 @@
 import React from 'react';
 import { snapshot } from 'test/helpers';
-import Login from '.';
+import SignUp from '.';
 
 const props = {};
 
-snapshot('Login/nomal', <Login {...props} />);
+snapshot('SignUp/nomal', <SignUp {...props} />);
