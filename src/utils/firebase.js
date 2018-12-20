@@ -31,6 +31,9 @@ class Firebase {
 
   doSignOut = () => this.auth.signOut();
 
+  onAuthUserListener = (next, fallback) =>
+    this.auth.onAuthStateChanged(authUser => (!!authUser ? next(authUser) : fallback()));
+
   askForPermissionToReceiveNotifications = async () => {
     try {
       const messaging = app.messaging();

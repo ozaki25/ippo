@@ -1,5 +1,4 @@
-const Signin = '/signin';
-const Signup = '/signup';
+const Signin = '/users/signin';
 const Menu = '/';
 const Events = '/events';
 const InternalEvents = '/events/internal';
@@ -15,5 +14,4 @@ export default {
   NewEvent,
   Publish,
   Signin,
-  Signup,
 };

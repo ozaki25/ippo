@@ -1,57 +1,60 @@
 import React from 'react';
+import styled from 'styled-components';
 import propTypes from 'prop-types';
-import { Button, FormGroup, InputGroup } from '@blueprintjs/core';
+import { Button, Classes, Dialog, Intent } from '@blueprintjs/core';
 import ROUTES from 'src/constants/routes';
 import Container from 'src/components/templates/Container';
+import BasicAuthForm from 'src/components/organisms/BasicAuthForm';
+
+const styles = {
+  dialog: {
+    margin: '0 15px',
+  },
+};
+
+const LinkContainer = styled.div`
+  font-size: 120%;
+  margin: 15px 0;
+  text-align: center;
+`;
 
 class Signin extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { email: '', pass: '' };
-  }
+  state = { isOpen: false };
 
-  onSubmit = async e => {
-    e.preventDefault();
-    const { email, pass } = this.state;
-    try {
-      const authUser = await this.props.firebase.doSignInWithEmailAndPassword(email, pass);
-      console.log(authUser);
-      this.setState({ email: '', pass: '' });
-      this.props.history.push(ROUTES.Menu);
-    } catch (error) {
-      console.log(error);
-    }
+  toggleDialog = () => this.setState(prevState => ({ isOpen: !prevState.isOpen }));
+
+  signin = async ({ data: { email, pass } }) => {
+    await this.props.firebase.doSignInWithEmailAndPassword(email, pass);
+    this.props.history.push(ROUTES.Menu);
+  };
+
+  signup = async ({ data: { email, pass } }) => {
+    await this.props.firebase.doCreateUserWithEmailAndPassword(email, pass);
+    this.props.history.push(ROUTES.Menu);
   };
 
   onChange = event => this.setState({ [event.target.name]: event.target.value });
 
   render() {
-    const { email, pass } = this.state;
-    const invalid = email.trim() === '' || pass.trim() === '';
     return (
       <Container>
-        <form onSubmit={this.onSubmit}>
-          <FormGroup label="メールアドレス" labelFor="email">
-            <InputGroup
-              id="email"
-              name="email"
-              value={this.state.email}
-              onChange={this.onChange}
-              large
-            />
-          </FormGroup>
-          <FormGroup label="パスワード" labelFor="pass">
-            <InputGroup
-              id="pass"
-              name="pass"
-              type="password"
-              value={this.state.pass}
-              onChange={this.onChange}
-              large
-            />
-          </FormGroup>
-          <Button text="ログイン" type="submit" disabled={invalid} fill large />
-        </form>
+        <BasicAuthForm onSubmit={this.signin} buttonText="ログイン" />
+        <LinkContainer>
+          <Button onClick={this.toggleDialog} intent={Intent.PRIMARY} minimal large>
+            新規登録
+          </Button>
+        </LinkContainer>
+        <Dialog
+          title="ユーザ登録"
+          isOpen={this.state.isOpen}
+          onClose={this.toggleDialog}
+          style={styles.dialog}
+          isCloseButtonShown
+        >
+          <div className={Classes.DIALOG_BODY}>
+            <BasicAuthForm buttonText="登録" onSubmit={this.signup} />
+          </div>
+        </Dialog>
       </Container>
     );
   }
