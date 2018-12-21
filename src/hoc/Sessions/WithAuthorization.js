@@ -5,12 +5,12 @@ import { compose } from 'recompose';
 import { withFirebase } from 'src/context/firebase';
 import ROUTES from 'src/constants/routes';
 
-const withAuthorization = condition => Component => {
+const withAuthorization = Component => {
   class WithAuthorization extends React.Component {
     componentDidMount() {
       this.listener = this.props.firebase.onAuthUserListener(
         authUser => {
-          if (!condition(authUser)) {
+          if (!authUser) {
             this.props.history.push(ROUTES.Signin);
           }
         },
@@ -23,12 +23,12 @@ const withAuthorization = condition => Component => {
     }
 
     render() {
-      return condition(this.props.authUser) ? <Component {...this.props} /> : null;
+      return !!this.props.authUser ? <Component {...this.props} /> : null;
     }
   }
 
   const mapStateToProps = state => ({
-    authUser: state.sessionState.authUser,
+    authUser: state.session.authUser,
   });
 
   return compose(
