@@ -23,7 +23,7 @@ const withAuthorization = condition => Component => {
     }
 
     render() {
-      return condition(this.props.authUser) ? <Component {...this.props} /> : null;
+      return !!this.props.authUser ? <Component {...this.props} /> : null;
     }
   }
 

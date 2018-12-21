@@ -6,9 +6,7 @@ import Menu from 'src/components/pages/Menu/';
 import paging from 'src/constants/paging';
 import { WithAuthorization } from 'src/hoc/Sessions';
 
-const condition = authUser => !!authUser;
-
-export default compose(WithAuthorization(condition))(
+export default compose(WithAuthorization())(
   apolloCompose(
     graphql(query.internalEvents, { name: 'internal' }),
     graphql(query.externalEvents, {

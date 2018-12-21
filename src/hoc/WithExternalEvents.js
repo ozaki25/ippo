@@ -1,11 +1,15 @@
-import { compose, graphql } from 'react-apollo';
+import { compose as apolloCompose, graphql } from 'react-apollo';
+import { compose } from 'recompose';
 import query from 'src/graphql/query';
 import ExternalEvents from 'src/components/pages/ExternalEvents/';
+import { WithAuthorization } from 'src/hoc/Sessions';
 import paging from 'src/constants/paging';
 
-export default compose(
-  graphql(query.externalEvents, {
-    options: props => ({ variables: { page: 1, count: paging.eventsPerPage } }),
-  }),
-  graphql(query.registerNotification, { name: 'registerNotification' }),
-)(ExternalEvents);
+export default compose(WithAuthorization())(
+  apolloCompose(
+    graphql(query.externalEvents, {
+      options: props => ({ variables: { page: 1, count: paging.eventsPerPage } }),
+    }),
+    graphql(query.registerNotification, { name: 'registerNotification' }),
+  )(ExternalEvents),
+);
