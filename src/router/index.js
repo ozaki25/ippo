@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Menu from 'src/hoc/WithMenu';
 import Signin from 'src/hoc/WithSignin';
 import Publish from 'src/hoc/WithPublish';
-import Events from 'src/hoc/WithEvents';
 import InternalEvents from 'src/hoc/WithInternalEvents';
 import ExternalEvents from 'src/hoc/WithExternalEvents';
 import NewEvent from 'src/hoc/WithNewEvent';
@@ -14,7 +13,6 @@ const Router = () => (
     <Switch>
       <Route path={ROUTES.Signin} exact component={Signin} />
       <Route path={ROUTES.Menu} exact component={Menu} />
-      <Route path={ROUTES.Events} exact component={Events} />
       <Route path={ROUTES.InternalEvents} exact component={InternalEvents} />
       <Route path={ROUTES.ExternalEvents} exact component={ExternalEvents} />
       <Route path={ROUTES.NewEvent} exact component={NewEvent} />
