@@ -8,9 +8,9 @@ import AsyncSwipeable from 'src/components/templates/AsyncSwipeable';
 import eventFormat from 'src/utils/eventFormat';
 import ROUTES from 'src/constants/routes';
 
-const Menu = ({ internal, external }) => {
+const Menu = ({ internal, external, authUser }) => {
   return (
-    <Container>
+    <Container authUser={authUser}>
       <H3>
         <Link to={ROUTES.Menu}>参加予定イベント</Link>
       </H3>
@@ -69,8 +69,11 @@ Menu.propTypes = {
       ),
     }),
   }).isRequired,
+  authUser: propTypes.object,
 };
 
-Menu.defaultProps = {};
+Menu.defaultProps = {
+  authUser: null,
+};
 
 export default Menu;

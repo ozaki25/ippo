@@ -10,9 +10,9 @@ const EventCardContainer = styled.div`
   margin: 8px 0;
 `;
 
-const InternalEvents = ({ data: { loading, internalEvents } }) => {
+const InternalEvents = ({ data: { loading, internalEvents }, authUser }) => {
   return (
-    <Container>
+    <Container authUser={authUser}>
       {loading ? (
         <Spinner />
       ) : internalEvents && internalEvents.length ? (
@@ -52,6 +52,7 @@ InternalEvents.propTypes = {
       }),
     ),
   }),
+  authUser: propTypes.object,
 };
 
 InternalEvents.defaultProps = {
@@ -59,6 +60,7 @@ InternalEvents.defaultProps = {
     loading: false,
     internalEvents: [],
   },
+  authUser: null,
 };
 
 export default InternalEvents;

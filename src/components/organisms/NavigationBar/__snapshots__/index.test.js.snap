@@ -11,6 +11,8 @@ exports[`should match snapshot: NavigationBar/nomal 1`] = `
   url=""
 >
   <NavigationBar
+    authUser={null}
+    firebase={null}
     history={Object {}}
   >
     <Blueprint3.Navbar>
