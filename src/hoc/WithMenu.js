@@ -4,9 +4,9 @@ import { withRouter } from 'react-router-dom';
 import query from 'src/graphql/query';
 import Menu from 'src/components/pages/Menu/';
 import paging from 'src/constants/paging';
-import { WithAuthorization } from 'src/hoc/Sessions';
+import { withAuthorization } from 'src/hoc/Sessions';
 
-export default compose(WithAuthorization())(
+export default compose(withAuthorization)(
   apolloCompose(
     graphql(query.internalEvents, { name: 'internal' }),
     graphql(query.externalEvents, {

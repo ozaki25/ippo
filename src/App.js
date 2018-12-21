@@ -6,9 +6,9 @@ import client from 'src/graphql/client';
 import store from 'src/modules/createStore';
 import Firebase from 'src/utils/firebase';
 import FirebaseContext from 'src/context/firebase';
-import { WithAuthentication } from 'src/hoc/Sessions';
+import { withAuthentication } from 'src/hoc/Sessions';
 
-const AuthRouter = WithAuthentication(Router);
+const AuthRouter = withAuthentication(Router);
 
 const App = () => (
   <ApolloProvider client={client}>
