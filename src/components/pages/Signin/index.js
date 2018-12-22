@@ -5,6 +5,7 @@ import { Button, Classes, Dialog, Intent } from '@blueprintjs/core';
 import ROUTES from 'src/constants/routes';
 import Container from 'src/components/templates/Container';
 import BasicAuthForm from 'src/components/organisms/BasicAuthForm';
+import GoogleButton from 'src/components/atoms/GoogleButton';
 
 const styles = {
   dialog: {
@@ -18,8 +19,18 @@ const LinkContainer = styled.div`
   text-align: center;
 `;
 
+const ButtonContainer = styled.div`
+  margin: 15px 0;
+  text-align: center;
+`;
+
 class Signin extends React.Component {
   state = { isOpen: false };
+
+  async componentDidMount() {
+    const result = await this.props.firebase.auth.getRedirectResult();
+    if (result.user) this.props.history.push(ROUTES.Menu);
+  }
 
   toggleDialog = () => this.setState(prevState => ({ isOpen: !prevState.isOpen }));
 
@@ -31,6 +42,10 @@ class Signin extends React.Component {
   signup = async ({ data: { email, pass } }) => {
     await this.props.firebase.doCreateUserWithEmailAndPassword(email, pass);
     this.props.history.push(ROUTES.Menu);
+  };
+
+  signinWithGoogle = async () => {
+    await this.props.firebase.doSignInWithGoogle().catch(e => console.log(e));
   };
 
   onChange = event => this.setState({ [event.target.name]: event.target.value });
@@ -53,6 +68,9 @@ class Signin extends React.Component {
         >
           <div className={Classes.DIALOG_BODY}>
             <BasicAuthForm buttonText="登録" onSubmit={this.signup} />
+            <ButtonContainer>
+              <GoogleButton onClick={this.signinWithGoogle} />
+            </ButtonContainer>
           </div>
         </Dialog>
       </Container>
