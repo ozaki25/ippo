@@ -4,12 +4,14 @@ import 'firebase/auth';
 
 const prodConfig = {
   apiKey: process.env.REACT_APP_PROD_API_KEY,
+  authDomain: process.env.REACT_APP_PROD_AUTH_DOMAIN,
   projectId: process.env.REACT_APP_PROD_PROJECT_ID,
   messagingSenderId: process.env.REACT_APP_PROD_MESSAGING_SENDER_ID,
 };
 
 const devConfig = {
   apiKey: process.env.REACT_APP_DEV_API_KEY,
+  authDomain: process.env.REACT_APP_DEV_AUTH_DOMAIN,
   projectId: process.env.REACT_APP_DEV_PROJECT_ID,
   messagingSenderId: process.env.REACT_APP_DEV_MESSAGING_SENDER_ID,
 };
@@ -21,6 +23,7 @@ class Firebase {
     app.initializeApp(config);
     this.emailAuthProvider = app.auth.EmailAuthProvider;
     this.auth = app.auth();
+    this.googleProvider = new app.auth.GoogleAuthProvider();
   }
 
   doCreateUserWithEmailAndPassword = (email, password) =>
@@ -28,6 +31,8 @@ class Firebase {
 
   doSignInWithEmailAndPassword = (email, password) =>
     this.auth.signInWithEmailAndPassword(email, password);
+
+  doSignInWithGoogle = () => this.auth.signInWithPopup(this.googleProvider);
 
   doSignOut = () => this.auth.signOut();
 

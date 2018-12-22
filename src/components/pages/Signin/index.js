@@ -18,6 +18,11 @@ const LinkContainer = styled.div`
   text-align: center;
 `;
 
+const ButtonContainer = styled.div`
+  margin: 15px 0;
+  text-align: center;
+`;
+
 class Signin extends React.Component {
   state = { isOpen: false };
 
@@ -30,6 +35,11 @@ class Signin extends React.Component {
 
   signup = async ({ data: { email, pass } }) => {
     await this.props.firebase.doCreateUserWithEmailAndPassword(email, pass);
+    this.props.history.push(ROUTES.Menu);
+  };
+
+  signinWithGoogle = async () => {
+    await this.props.firebase.doSignInWithGoogle().catch(e => console.log(e));
     this.props.history.push(ROUTES.Menu);
   };
 
@@ -53,6 +63,9 @@ class Signin extends React.Component {
         >
           <div className={Classes.DIALOG_BODY}>
             <BasicAuthForm buttonText="登録" onSubmit={this.signup} />
+            <ButtonContainer>
+              <Button onClick={this.signinWithGoogle}>Sign In with Google</Button>
+            </ButtonContainer>
           </div>
         </Dialog>
       </Container>
