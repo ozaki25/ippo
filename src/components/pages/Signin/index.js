@@ -5,6 +5,7 @@ import { Button, Classes, Dialog, Intent } from '@blueprintjs/core';
 import ROUTES from 'src/constants/routes';
 import Container from 'src/components/templates/Container';
 import BasicAuthForm from 'src/components/organisms/BasicAuthForm';
+import GoogleButton from 'src/components/atoms/GoogleButton';
 
 const styles = {
   dialog: {
@@ -26,6 +27,11 @@ const ButtonContainer = styled.div`
 class Signin extends React.Component {
   state = { isOpen: false };
 
+  async componentDidMount() {
+    const result = await this.props.firebase.auth.getRedirectResult();
+    if (result.user) this.props.history.push(ROUTES.Menu);
+  }
+
   toggleDialog = () => this.setState(prevState => ({ isOpen: !prevState.isOpen }));
 
   signin = async ({ data: { email, pass } }) => {
@@ -40,7 +46,6 @@ class Signin extends React.Component {
 
   signinWithGoogle = async () => {
     await this.props.firebase.doSignInWithGoogle().catch(e => console.log(e));
-    this.props.history.push(ROUTES.Menu);
   };
 
   onChange = event => this.setState({ [event.target.name]: event.target.value });
@@ -64,7 +69,7 @@ class Signin extends React.Component {
           <div className={Classes.DIALOG_BODY}>
             <BasicAuthForm buttonText="登録" onSubmit={this.signup} />
             <ButtonContainer>
-              <Button onClick={this.signinWithGoogle}>Sign In with Google</Button>
+              <GoogleButton onClick={this.signinWithGoogle} />
             </ButtonContainer>
           </div>
         </Dialog>
