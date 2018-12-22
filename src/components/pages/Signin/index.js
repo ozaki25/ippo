@@ -13,14 +13,13 @@ const styles = {
   },
 };
 
-const LinkContainer = styled.div`
-  font-size: 120%;
-  margin: 15px 0;
+const ButtonContainer = styled.div`
+  margin-top: 10px;
   text-align: center;
 `;
 
-const ButtonContainer = styled.div`
-  margin: 15px 0;
+const LinkContainer = styled.div`
+  font-size: 120%;
   text-align: center;
 `;
 
@@ -54,6 +53,9 @@ class Signin extends React.Component {
     return (
       <Container>
         <BasicAuthForm onSubmit={this.signin} buttonText="ログイン" />
+        <ButtonContainer>
+          <GoogleButton onClick={this.signinWithGoogle} />
+        </ButtonContainer>
         <LinkContainer>
           <Button onClick={this.toggleDialog} intent={Intent.PRIMARY} minimal large>
             新規登録
@@ -68,9 +70,6 @@ class Signin extends React.Component {
         >
           <div className={Classes.DIALOG_BODY}>
             <BasicAuthForm buttonText="登録" onSubmit={this.signup} />
-            <ButtonContainer>
-              <GoogleButton onClick={this.signinWithGoogle} />
-            </ButtonContainer>
           </div>
         </Dialog>
       </Container>
