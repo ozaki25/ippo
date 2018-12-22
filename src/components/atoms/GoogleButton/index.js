@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 
 const GoogleButton = props => (
   <svg width="12em" height="3em" viewBox="0 0 193 48" {...props}>
@@ -75,4 +76,13 @@ const GoogleButton = props => (
   </svg>
 );
 
-export default GoogleButton;
+const StyledGoogleButton = styled(GoogleButton)`
+  cursor: pointer;
+  &:active {
+    opacity: 0.4;
+  }
+`;
+
+StyledGoogleButton.displayName = 'GoogleButton';
+
+export default StyledGoogleButton;
