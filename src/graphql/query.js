@@ -38,6 +38,18 @@ const internalEvents = gql`
   }
 `;
 
+const tweets = gql`
+  query($hashtag: String, $limit: Int, $startId: String) {
+    tweets(hashtag: $hashtag, limit: $limit, startId: $startId) {
+      id
+      name
+      text
+      time
+      hashtag
+    }
+  }
+`;
+
 const registerNotification = gql`
   mutation registerNotification($token: String) {
     registerNotification(token: $token) {
@@ -66,6 +78,7 @@ export default {
   hello,
   externalEvents,
   internalEvents,
+  tweets,
   registerNotification,
   publishNotification,
   createEvent,

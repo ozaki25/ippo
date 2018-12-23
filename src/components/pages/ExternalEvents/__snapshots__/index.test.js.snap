@@ -843,7 +843,7 @@ exports[`should match snapshot: ExternalEvents/nomal 1`] = `
                 >
                   <EventCard
                     catchMessage="イベントの説明です"
-                    datetime="2012年04月17日 18:30〜"
+                    datetime="2012/04/17 18:30〜"
                     eventUrl="https://connpass.com/"
                     interactive={true}
                     place="東京都千代田区丸の内"
@@ -881,7 +881,7 @@ exports[`should match snapshot: ExternalEvents/nomal 1`] = `
                           <div
                             className=""
                           >
-                            日時：2012年04月17日 18:30〜
+                            日時：2012/04/17 18:30〜
                           </div>
                         </Blueprint3.Text>
                       </div>
@@ -925,7 +925,7 @@ exports[`should match snapshot: ExternalEvents/nomal 1`] = `
                 >
                   <EventCard
                     catchMessage="イベントの説明です"
-                    datetime="2012年04月17日 18:30〜"
+                    datetime="2012/04/17 18:30〜"
                     eventUrl="https://connpass.com/"
                     interactive={true}
                     place="東京都千代田区丸の内"
@@ -963,7 +963,7 @@ exports[`should match snapshot: ExternalEvents/nomal 1`] = `
                           <div
                             className=""
                           >
-                            日時：2012年04月17日 18:30〜
+                            日時：2012/04/17 18:30〜
                           </div>
                         </Blueprint3.Text>
                       </div>
@@ -1007,7 +1007,7 @@ exports[`should match snapshot: ExternalEvents/nomal 1`] = `
                 >
                   <EventCard
                     catchMessage="イベントの説明です"
-                    datetime="2012年04月17日 18:30〜"
+                    datetime="2012/04/17 18:30〜"
                     eventUrl="https://connpass.com/"
                     interactive={true}
                     place="東京都千代田区丸の内"
@@ -1045,7 +1045,7 @@ exports[`should match snapshot: ExternalEvents/nomal 1`] = `
                           <div
                             className=""
                           >
-                            日時：2012年04月17日 18:30〜
+                            日時：2012/04/17 18:30〜
                           </div>
                         </Blueprint3.Text>
                       </div>
@@ -1089,7 +1089,7 @@ exports[`should match snapshot: ExternalEvents/nomal 1`] = `
                 >
                   <EventCard
                     catchMessage="イベントの説明です"
-                    datetime="2012年04月17日 18:30〜"
+                    datetime="2012/04/17 18:30〜"
                     eventUrl="https://connpass.com/"
                     interactive={true}
                     place="東京都千代田区丸の内"
@@ -1127,7 +1127,7 @@ exports[`should match snapshot: ExternalEvents/nomal 1`] = `
                           <div
                             className=""
                           >
-                            日時：2012年04月17日 18:30〜
+                            日時：2012/04/17 18:30〜
                           </div>
                         </Blueprint3.Text>
                       </div>
@@ -1171,7 +1171,7 @@ exports[`should match snapshot: ExternalEvents/nomal 1`] = `
                 >
                   <EventCard
                     catchMessage="イベントの説明です"
-                    datetime="2012年04月17日 18:30〜"
+                    datetime="2012/04/17 18:30〜"
                     eventUrl="https://connpass.com/"
                     interactive={true}
                     place="東京都千代田区丸の内"
@@ -1209,7 +1209,7 @@ exports[`should match snapshot: ExternalEvents/nomal 1`] = `
                           <div
                             className=""
                           >
-                            日時：2012年04月17日 18:30〜
+                            日時：2012/04/17 18:30〜
                           </div>
                         </Blueprint3.Text>
                       </div>
@@ -1253,7 +1253,7 @@ exports[`should match snapshot: ExternalEvents/nomal 1`] = `
                 >
                   <EventCard
                     catchMessage="イベントの説明です"
-                    datetime="2012年04月17日 18:30〜"
+                    datetime="2012/04/17 18:30〜"
                     eventUrl="https://connpass.com/"
                     interactive={true}
                     place="東京都千代田区丸の内"
@@ -1291,7 +1291,7 @@ exports[`should match snapshot: ExternalEvents/nomal 1`] = `
                           <div
                             className=""
                           >
-                            日時：2012年04月17日 18:30〜
+                            日時：2012/04/17 18:30〜
                           </div>
                         </Blueprint3.Text>
                       </div>
@@ -1335,7 +1335,7 @@ exports[`should match snapshot: ExternalEvents/nomal 1`] = `
                 >
                   <EventCard
                     catchMessage="イベントの説明です"
-                    datetime="2012年04月17日 18:30〜"
+                    datetime="2012/04/17 18:30〜"
                     eventUrl="https://connpass.com/"
                     interactive={true}
                     place="東京都千代田区丸の内"
@@ -1373,7 +1373,7 @@ exports[`should match snapshot: ExternalEvents/nomal 1`] = `
                           <div
                             className=""
                           >
-                            日時：2012年04月17日 18:30〜
+                            日時：2012/04/17 18:30〜
                           </div>
                         </Blueprint3.Text>
                       </div>
@@ -1417,7 +1417,7 @@ exports[`should match snapshot: ExternalEvents/nomal 1`] = `
                 >
                   <EventCard
                     catchMessage="イベントの説明です"
-                    datetime="2012年04月17日 18:30〜"
+                    datetime="2012/04/17 18:30〜"
                     eventUrl="https://connpass.com/"
                     interactive={true}
                     place="東京都千代田区丸の内"
@@ -1455,7 +1455,7 @@ exports[`should match snapshot: ExternalEvents/nomal 1`] = `
                           <div
                             className=""
                           >
-                            日時：2012年04月17日 18:30〜
+                            日時：2012/04/17 18:30〜
                           </div>
                         </Blueprint3.Text>
                       </div>
@@ -1499,7 +1499,7 @@ exports[`should match snapshot: ExternalEvents/nomal 1`] = `
                 >
                   <EventCard
                     catchMessage="イベントの説明です"
-                    datetime="2012年04月17日 18:30〜"
+                    datetime="2012/04/17 18:30〜"
                     eventUrl="https://connpass.com/"
                     interactive={true}
                     place="東京都千代田区丸の内"
@@ -1537,7 +1537,7 @@ exports[`should match snapshot: ExternalEvents/nomal 1`] = `
                           <div
                             className=""
                           >
-                            日時：2012年04月17日 18:30〜
+                            日時：2012/04/17 18:30〜
                           </div>
                         </Blueprint3.Text>
                       </div>
@@ -1581,7 +1581,7 @@ exports[`should match snapshot: ExternalEvents/nomal 1`] = `
                 >
                   <EventCard
                     catchMessage="イベントの説明です"
-                    datetime="2012年04月17日 18:30〜"
+                    datetime="2012/04/17 18:30〜"
                     eventUrl="https://connpass.com/"
                     interactive={true}
                     place="東京都千代田区丸の内"
@@ -1619,7 +1619,7 @@ exports[`should match snapshot: ExternalEvents/nomal 1`] = `
                           <div
                             className=""
                           >
-                            日時：2012年04月17日 18:30〜
+                            日時：2012/04/17 18:30〜
                           </div>
                         </Blueprint3.Text>
                       </div>
