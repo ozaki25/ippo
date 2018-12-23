@@ -6,6 +6,7 @@ import Publish from 'src/hoc/WithPublish';
 import InternalEvents from 'src/hoc/WithInternalEvents';
 import ExternalEvents from 'src/hoc/WithExternalEvents';
 import NewEvent from 'src/hoc/WithNewEvent';
+import Tweets from 'src/hoc/WithTweets';
 import ROUTES from 'src/constants/routes';
 
 const Router = () => (
@@ -16,6 +17,7 @@ const Router = () => (
       <Route path={ROUTES.InternalEvents} exact component={InternalEvents} />
       <Route path={ROUTES.ExternalEvents} exact component={ExternalEvents} />
       <Route path={ROUTES.NewEvent} exact component={NewEvent} />
+      <Route path={ROUTES.Tweets} exact component={Tweets} />
       <Route path={ROUTES.Publish} exact component={Publish} />
       <Route path="/" component={() => <p>Not Found</p>} />
     </Switch>

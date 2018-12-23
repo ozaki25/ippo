@@ -119,6 +119,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
   >
     <Container
       authUser={null}
+      noPadding={false}
     >
       <withRouter()
         authUser={null}
@@ -243,7 +244,9 @@ exports[`should match snapshot: Menu/nomal 1`] = `
           </Component>
         </Route>
       </withRouter()>
-      <styled.div>
+      <styled.div
+        noPadding={false}
+      >
         <StyledComponent
           forwardedComponent={
             Object {
@@ -251,11 +254,13 @@ exports[`should match snapshot: Menu/nomal 1`] = `
               "attrs": Array [],
               "componentStyle": ComponentStyle {
                 "componentId": "sc-bwzfXH",
-                "isStatic": true,
+                "isStatic": false,
                 "lastClassName": "c0",
                 "rules": Array [
                   "
-  padding: 10px 15px;
+  padding: ",
+                  [Function],
+                  ";
 ",
                 ],
               },
@@ -270,6 +275,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
             }
           }
           forwardedRef={null}
+          noPadding={false}
         >
           <div
             className="c0"

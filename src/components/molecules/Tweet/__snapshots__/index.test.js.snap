@@ -1,0 +1,484 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot: Tweet/nomal 1`] = `
+.c0 {
+  border-bottom: 1px solid #e6ecf0;
+  padding: 9px 12px;
+}
+
+.c1 {
+  margin-left: 58px;
+}
+
+.c2 {
+  border-radius: 50%;
+  float: left;
+  height: 48px;
+  margin-top: 3px;
+  margin-left: -58px;
+  position: absolute;
+  width: 48px;
+}
+
+.c3 {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.c4 {
+  margin-top: 10px;
+}
+
+.c5 {
+  display: inline-block;
+  min-width: 80px;
+}
+
+<MockRouter
+  createHref={[Function]}
+  location=""
+  params={Object {}}
+  path=""
+  push={[Function]}
+  replace={[Function]}
+  url=""
+>
+  <Tweet
+    name="ozaki25"
+    text="Storybookいいところ
+  - どんなコンポーネントが存在してるか可視化できる
+  - コンポーネントの扱い方が分かる
+  - UIの修正デバッグが楽
+  #ThinkAtomicDesign"
+    time="12月10日"
+  >
+    <styled.div>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bdVaJa",
+              "isStatic": true,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
+  border-bottom: 1px solid #e6ecf0;
+  padding: 9px 12px;
+",
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bdVaJa",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <div
+          className="c0"
+        >
+          <styled.div>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bwzfXH",
+                    "isStatic": true,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
+  margin-left: 58px;
+",
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bwzfXH",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <div
+                className="c1"
+              >
+                <styled.img
+                  src="/icon.png"
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-htpNat",
+                          "isStatic": true,
+                          "lastClassName": "c2",
+                          "rules": Array [
+                            "
+  border-radius: 50%;
+  float: left;
+  height: 48px;
+  margin-top: 3px;
+  margin-left: -58px;
+  position: absolute;
+  width: 48px;
+",
+                          ],
+                        },
+                        "displayName": "styled.img",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-htpNat",
+                        "target": "img",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    src="/icon.png"
+                  >
+                    <img
+                      className="c2"
+                      src="/icon.png"
+                    />
+                  </StyledComponent>
+                </styled.img>
+                <styled.div>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bxivhb",
+                          "isStatic": true,
+                          "lastClassName": "bUZGRr",
+                          "rules": Array [],
+                        },
+                        "displayName": "styled.div",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bxivhb",
+                        "target": "div",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <div
+                      className=""
+                    >
+                      <strong>
+                        ozaki25
+                      </strong>
+                      <styled.small>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-ifAKCX",
+                                "isStatic": true,
+                                "lastClassName": "cFlEyZ",
+                                "rules": Array [],
+                              },
+                              "displayName": "styled.small",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-ifAKCX",
+                              "target": "small",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <small
+                            className=""
+                          >
+                            12月10日
+                          </small>
+                        </StyledComponent>
+                      </styled.small>
+                    </div>
+                  </StyledComponent>
+                </styled.div>
+                <styled.p>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-EHOje",
+                          "isStatic": true,
+                          "lastClassName": "c3",
+                          "rules": Array [
+                            "
+  white-space: pre-wrap;
+  word-wrap: break-word;
+",
+                          ],
+                        },
+                        "displayName": "styled.p",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-EHOje",
+                        "target": "p",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <p
+                      className="c3"
+                    >
+                      Storybookいいところ
+  - どんなコンポーネントが存在してるか可視化できる
+  - コンポーネントの扱い方が分かる
+  - UIの修正デバッグが楽
+  #ThinkAtomicDesign
+                    </p>
+                  </StyledComponent>
+                </styled.p>
+                <styled.div>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bZQynM",
+                          "isStatic": true,
+                          "lastClassName": "c4",
+                          "rules": Array [
+                            "
+  margin-top: 10px;
+",
+                          ],
+                        },
+                        "displayName": "styled.div",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bZQynM",
+                        "target": "div",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <div
+                      className="c4"
+                    >
+                      <styled.div>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-gzVnrw",
+                                "isStatic": true,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  "
+  display: inline-block;
+  min-width: 80px;
+",
+                                ],
+                              },
+                              "displayName": "styled.div",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-gzVnrw",
+                              "target": "div",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <div
+                            className="c5"
+                          >
+                            <Blueprint3.Icon
+                              icon="comment"
+                            >
+                              <span
+                                className="bp3-icon bp3-icon-comment"
+                                icon="comment"
+                              >
+                                <svg
+                                  data-icon="comment"
+                                  height={16}
+                                  viewBox="0 0 16 16"
+                                  width={16}
+                                >
+                                  <desc>
+                                    comment
+                                  </desc>
+                                  <path
+                                    d="M14 1H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h2v3a1.003 1.003 0 0 0 1.71.71L8.41 12H14c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1zM3.5 8C2.67 8 2 7.33 2 6.5S2.67 5 3.5 5 5 5.67 5 6.5 4.33 8 3.5 8zm4 0C6.67 8 6 7.33 6 6.5S6.67 5 7.5 5 9 5.67 9 6.5 8.33 8 7.5 8zm4 0c-.83 0-1.5-.67-1.5-1.5S10.67 5 11.5 5s1.5.67 1.5 1.5S12.33 8 11.5 8z"
+                                    fillRule="evenodd"
+                                    key="0"
+                                  />
+                                </svg>
+                              </span>
+                            </Blueprint3.Icon>
+                          </div>
+                        </StyledComponent>
+                      </styled.div>
+                      <styled.div>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-gzVnrw",
+                                "isStatic": true,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  "
+  display: inline-block;
+  min-width: 80px;
+",
+                                ],
+                              },
+                              "displayName": "styled.div",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-gzVnrw",
+                              "target": "div",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <div
+                            className="c5"
+                          >
+                            <Blueprint3.Icon
+                              icon="refresh"
+                            >
+                              <span
+                                className="bp3-icon bp3-icon-refresh"
+                                icon="refresh"
+                              >
+                                <svg
+                                  data-icon="refresh"
+                                  height={16}
+                                  viewBox="0 0 16 16"
+                                  width={16}
+                                >
+                                  <desc>
+                                    refresh
+                                  </desc>
+                                  <path
+                                    d="M14.99 6.99c-.55 0-1 .45-1 1 0 3.31-2.69 6-6 6-1.77 0-3.36-.78-4.46-2h1.46c.55 0 1-.45 1-1s-.45-1-1-1h-4c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-1.74a7.95 7.95 0 0 0 6 2.74c4.42 0 8-3.58 8-8 0-.55-.45-1-1-1zm0-7c-.55 0-1 .45-1 1v1.74a7.95 7.95 0 0 0-6-2.74c-4.42 0-8 3.58-8 8 0 .55.45 1 1 1s1-.45 1-1c0-3.31 2.69-6 6-6 1.77 0 3.36.78 4.46 2h-1.46c-.55 0-1 .45-1 1s.45 1 1 1h4c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1z"
+                                    fillRule="evenodd"
+                                    key="0"
+                                  />
+                                </svg>
+                              </span>
+                            </Blueprint3.Icon>
+                          </div>
+                        </StyledComponent>
+                      </styled.div>
+                      <styled.div>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-gzVnrw",
+                                "isStatic": true,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  "
+  display: inline-block;
+  min-width: 80px;
+",
+                                ],
+                              },
+                              "displayName": "styled.div",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-gzVnrw",
+                              "target": "div",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <div
+                            className="c5"
+                          >
+                            <Blueprint3.Icon
+                              icon="heart"
+                            >
+                              <span
+                                className="bp3-icon bp3-icon-heart"
+                                icon="heart"
+                              >
+                                <svg
+                                  data-icon="heart"
+                                  height={16}
+                                  viewBox="0 0 16 16"
+                                  width={16}
+                                >
+                                  <desc>
+                                    heart
+                                  </desc>
+                                  <path
+                                    d="M16 5.095c0-2.255-1.88-4.083-4.2-4.083-1.682 0-3.13.964-3.8 2.352a4.206 4.206 0 0 0-3.8-2.352C1.88 1.012 0 2.84 0 5.095c0 .066.007.13.01.194H.004c.001.047.01.096.014.143l.013.142c.07.8.321 1.663.824 2.573C2.073 10.354 4.232 12.018 8 15c3.767-2.982 5.926-4.647 7.144-6.854.501-.905.752-1.766.823-2.562.007-.055.012-.11.016-.164.003-.043.012-.088.013-.13h-.006c.003-.066.01-.13.01-.195z"
+                                    fillRule="evenodd"
+                                    key="0"
+                                  />
+                                </svg>
+                              </span>
+                            </Blueprint3.Icon>
+                          </div>
+                        </StyledComponent>
+                      </styled.div>
+                    </div>
+                  </StyledComponent>
+                </styled.div>
+              </div>
+            </StyledComponent>
+          </styled.div>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </Tweet>
+</MockRouter>
+`;
