@@ -18,3 +18,5 @@ const optional = {
 snapshot('EventCard/minimam', <EventCard {...required} />);
 
 snapshot('EventCard/full', <EventCard {...required} {...optional} />);
+
+snapshot('EventCard/expand', <EventCard {...required} expand />);
