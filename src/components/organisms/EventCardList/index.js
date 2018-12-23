@@ -9,7 +9,7 @@ const EventCardContainer = styled.div`
   margin: 8px 0;
 `;
 
-const EventCardList = ({ events, expand }) =>
+const EventCardList = ({ events, expand, history }) =>
   events && events.length ? (
     events.map(event => (
       <EventCardContainer key={event.id}>
@@ -21,6 +21,7 @@ const EventCardList = ({ events, expand }) =>
           datetime={event.startedAt && `${dateFormat.datetimeJa(event.startedAt)} 〜`}
           interactive
           expand={expand}
+          history={history}
         />
       </EventCardContainer>
     ))
@@ -42,11 +43,15 @@ EventCardList.propTypes = {
     }),
   ).isRequired,
   expand: propTypes.bool,
+  history: propTypes.shape({
+    push: propTypes.func,
+  }),
 };
 
 EventCardList.defaultProps = {
   eventUrl: '',
   expand: false,
+  history: null,
 };
 
 export default EventCardList;
