@@ -32,6 +32,7 @@ const TweetTime = styled.small`
 
 const TweetBody = styled.p`
   white-space: pre-wrap;
+  word-wrap: break-word;
 `;
 
 const TweetFooter = styled.div`

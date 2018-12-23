@@ -22,6 +22,7 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
 
 .c3 {
   white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 .c4 {
@@ -314,6 +315,7 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                             "rules": Array [
                               "
   white-space: pre-wrap;
+  word-wrap: break-word;
 ",
                             ],
                           },
@@ -749,6 +751,7 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                             "rules": Array [
                               "
   white-space: pre-wrap;
+  word-wrap: break-word;
 ",
                             ],
                           },
@@ -1185,6 +1188,7 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                             "rules": Array [
                               "
   white-space: pre-wrap;
+  word-wrap: break-word;
 ",
                             ],
                           },
@@ -1621,6 +1625,7 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                             "rules": Array [
                               "
   white-space: pre-wrap;
+  word-wrap: break-word;
 ",
                             ],
                           },
@@ -2055,6 +2060,7 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                             "rules": Array [
                               "
   white-space: pre-wrap;
+  word-wrap: break-word;
 ",
                             ],
                           },
@@ -2488,6 +2494,7 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                             "rules": Array [
                               "
   white-space: pre-wrap;
+  word-wrap: break-word;
 ",
                             ],
                           },
@@ -2920,6 +2927,7 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                             "rules": Array [
                               "
   white-space: pre-wrap;
+  word-wrap: break-word;
 ",
                             ],
                           },
@@ -3353,6 +3361,7 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                             "rules": Array [
                               "
   white-space: pre-wrap;
+  word-wrap: break-word;
 ",
                             ],
                           },
@@ -3787,6 +3796,7 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                             "rules": Array [
                               "
   white-space: pre-wrap;
+  word-wrap: break-word;
 ",
                             ],
                           },

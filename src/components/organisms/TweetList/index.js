@@ -1,6 +1,4 @@
 import React from 'react';
-import {} from '@blueprintjs/core';
-import styled from 'styled-components';
 import propTypes from 'prop-types';
 import Tweet from 'src/components/molecules/Tweet';
 
