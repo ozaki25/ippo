@@ -8,21 +8,18 @@ import AsyncSwipeable from 'src/components/templates/AsyncSwipeable';
 import eventFormat from 'src/utils/eventFormat';
 import ROUTES from 'src/constants/routes';
 
-const Menu = ({ internal, external, authUser }) => {
+const Menu = ({ internal, external, authUser, history }) => {
+  // const onClick = () => history.push(ROUTES.NewEvent);
   return (
     <Container authUser={authUser}>
       <H3>
-        <Link to={ROUTES.Menu}>参加予定イベント</Link>
+        <Link to={ROUTES.EnteredEvents}>参加イベント</Link>
       </H3>
-      <AsyncSwipeable loading={internal.loading}>
-        {EventCardList({ events: internal.internalEvents, expand: true })}
-      </AsyncSwipeable>
+      <AsyncSwipeable loading={false}>{EventCardList({ events: [], expand: true })}</AsyncSwipeable>
       <H3>
-        <Link to={ROUTES.Menu}>おすすめイベント</Link>
+        <Link to={ROUTES.RecommendedEvents}>おすすめイベント</Link>
       </H3>
-      <AsyncSwipeable loading={internal.loading}>
-        {EventCardList({ events: internal.internalEvents, expand: true })}
-      </AsyncSwipeable>
+      <AsyncSwipeable loading={false}>{EventCardList({ events: [], expand: true })}</AsyncSwipeable>
       <H3>
         <Link to={ROUTES.InternalEvents}>社内イベント</Link>
       </H3>
@@ -35,6 +32,10 @@ const Menu = ({ internal, external, authUser }) => {
       <AsyncSwipeable loading={external.loading}>
         {EventCardList({ events: eventFormat.convertPropsName(external.connpass), expand: true })}
       </AsyncSwipeable>
+      <H3>
+        <Link to={ROUTES.OrganizedEvents}>主催イベント</Link>
+      </H3>
+      <AsyncSwipeable loading={false}>{EventCardList({ events: [], expand: true })}</AsyncSwipeable>
     </Container>
   );
 };

@@ -10,7 +10,7 @@ const EventCardContainer = styled.div`
 `;
 
 const EventCardList = ({ events, expand }) =>
-  events ? (
+  events && events.length ? (
     events.map(event => (
       <EventCardContainer key={event.id}>
         <EventCard
@@ -25,7 +25,7 @@ const EventCardList = ({ events, expand }) =>
       </EventCardContainer>
     ))
   ) : (
-    <Text>No Contents</Text>
+    <Text>該当するイベントがありません</Text>
   );
 EventCardList.displayName = 'EventCardList';
 
