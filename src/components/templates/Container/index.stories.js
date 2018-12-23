@@ -9,4 +9,6 @@ const props = {
   children: text('children', 'コンテンツ'),
 };
 
-stories.add('通常パターン', () => <Container {...props} />);
+stories.add('paddingあり', () => <Container {...props} />);
+
+stories.add('paddingなし', () => <Container {...props} noPadding={true} />);

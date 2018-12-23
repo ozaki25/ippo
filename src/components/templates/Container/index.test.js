@@ -6,4 +6,6 @@ const props = {
   children: 'テスト',
 };
 
-snapshot('Container/nomal', <Container {...props} />);
+snapshot('Container/padding', <Container {...props} />);
+
+snapshot('Container/nopadding', <Container {...props} noPadding={true} />);
