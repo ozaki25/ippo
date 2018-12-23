@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import Events from '.';
+import Tweets from '.';
 
-const stories = storiesOf('pages/Events', module);
+const stories = storiesOf('pages/Tweets', module);
 
 // TODO
