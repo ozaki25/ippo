@@ -32,6 +32,7 @@ const internalEvents = gql`
       title
       catchMessage
       place
+      hashtag
       startedAt
       endedAt
     }

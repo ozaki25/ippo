@@ -40,6 +40,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
             <Blueprint3.InputGroup
               id="title"
               large={true}
+              name="title"
               onChange={[Function]}
               value=""
             >
@@ -50,6 +51,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                 <input
                   className="bp3-input"
                   id="title"
+                  name="title"
                   onChange={[Function]}
                   style={
                     Object {
@@ -87,6 +89,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
             <Blueprint3.InputGroup
               id="catchMessage"
               large={true}
+              name="catchMessage"
               onChange={[Function]}
               value=""
             >
@@ -97,6 +100,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                 <input
                   className="bp3-input"
                   id="catchMessage"
+                  name="catchMessage"
                   onChange={[Function]}
                   style={
                     Object {
@@ -134,6 +138,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
             <Blueprint3.InputGroup
               id="place"
               large={true}
+              name="place"
               onChange={[Function]}
               value=""
             >
@@ -144,6 +149,59 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                 <input
                   className="bp3-input"
                   id="place"
+                  name="place"
+                  onChange={[Function]}
+                  style={
+                    Object {
+                      "paddingRight": 10,
+                    }
+                  }
+                  type="text"
+                  value=""
+                />
+              </div>
+            </Blueprint3.InputGroup>
+          </div>
+        </div>
+      </Blueprint3.FormGroup>
+      <Blueprint3.FormGroup
+        label="ハッシュタグ"
+        labelFor="hashtag"
+        labelInfo="(必須)"
+      >
+        <div
+          className="bp3-form-group"
+        >
+          <label
+            className="bp3-label"
+            htmlFor="hashtag"
+          >
+            ハッシュタグ
+             
+            <span
+              className="bp3-text-muted"
+            >
+              (必須)
+            </span>
+          </label>
+          <div
+            className="bp3-form-content"
+          >
+            <Blueprint3.InputGroup
+              id="hashtag"
+              large={true}
+              name="hashtag"
+              onChange={[Function]}
+              value=""
+            >
+              <div
+                className="bp3-input-group bp3-large"
+              >
+                <Blueprint3.Icon />
+                <input
+                  className="bp3-input"
+                  id="hashtag"
+                  name="hashtag"
                   onChange={[Function]}
                   style={
                     Object {
@@ -181,6 +239,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
             <Blueprint3.InputGroup
               id="startedAt"
               large={true}
+              name="startedAt"
               onChange={[Function]}
               placeholder="2018/1/23 9:30"
               value=""
@@ -192,6 +251,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                 <input
                   className="bp3-input"
                   id="startedAt"
+                  name="startedAt"
                   onChange={[Function]}
                   placeholder="2018/1/23 9:30"
                   style={
@@ -230,6 +290,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
             <Blueprint3.InputGroup
               id="endedAt"
               large={true}
+              name="endedAt"
               onChange={[Function]}
               placeholder="2018/1/23 9:30"
               value=""
@@ -241,6 +302,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                 <input
                   className="bp3-input"
                   id="endedAt"
+                  name="endedAt"
                   onChange={[Function]}
                   placeholder="2018/1/23 9:30"
                   style={
@@ -257,16 +319,18 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
         </div>
       </Blueprint3.FormGroup>
       <Blueprint3.Button
+        disabled={true}
         fill={true}
         large={true}
         onClick={[Function]}
         text="作成"
       >
         <button
-          className="bp3-button bp3-fill bp3-large"
-          onClick={[Function]}
+          className="bp3-button bp3-disabled bp3-fill bp3-large"
+          disabled={true}
           onKeyDown={[Function]}
           onKeyUp={[Function]}
+          tabIndex={-1}
           type="button"
         >
           <Blueprint3.Icon

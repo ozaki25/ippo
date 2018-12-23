@@ -637,7 +637,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                               <EventCard
                                 catchMessage="説明です"
                                 datetime="2018/12/01 09:30 〜"
-                                eventUrl="https://connpass.com/"
+                                eventUrl="/tweets?hashtag=undefined"
                                 expand={true}
                                 history={null}
                                 interactive={true}
@@ -648,7 +648,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                   expand={true}
                                   history={null}
                                   interactive={true}
-                                  url="https://connpass.com/"
+                                  url="/tweets?hashtag=undefined"
                                 >
                                   <Styled(Blueprint3.Card)
                                     elevation={2}

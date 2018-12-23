@@ -1,4 +1,6 @@
-const convertPropsName = props =>
+import ROUTES from 'src/constants/routes';
+
+const external = props =>
   props
     ? props.events.map(event => ({
         id: event.event_id,
@@ -10,6 +12,12 @@ const convertPropsName = props =>
       }))
     : [];
 
+const internal = props =>
+  props
+    ? props.map(event => ({ ...event, eventUrl: `${ROUTES.Tweets}?hashtag=${event.hashtag}` }))
+    : [];
+
 export default {
-  convertPropsName,
+  external,
+  internal,
 };

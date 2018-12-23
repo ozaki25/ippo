@@ -33,14 +33,18 @@ const Menu = ({ internal, external, authUser, history }) => (
       <Link to={ROUTES.InternalEvents}>社内イベント</Link>
     </H3>
     <AsyncSwipeable loading={internal.loading}>
-      {EventCardList({ events: internal.internalEvents, expand: true, history })}
+      {EventCardList({
+        events: eventFormat.internal(internal.internalEvents),
+        expand: true,
+        history,
+      })}
     </AsyncSwipeable>
     <H3>
       <Link to={ROUTES.ExternalEvents}>社外イベント</Link>
     </H3>
     <AsyncSwipeable loading={external.loading}>
       {EventCardList({
-        events: eventFormat.convertPropsName(external.connpass),
+        events: eventFormat.external(external.connpass),
         expand: true,
       })}
     </AsyncSwipeable>
