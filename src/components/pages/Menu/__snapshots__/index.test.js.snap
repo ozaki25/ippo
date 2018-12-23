@@ -290,12 +290,12 @@ exports[`should match snapshot: Menu/nomal 1`] = `
               >
                 <Link
                   replace={false}
-                  to="/"
+                  to="/events/entry"
                 >
                   <a
                     onClick={[Function]}
                   >
-                    参加予定イベント
+                    参加イベント
                   </a>
                 </Link>
               </h3>
@@ -367,7 +367,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                       <div
                         aria-hidden={false}
                         data-swipeable="true"
-                        key=".$ID0"
+                        key=".0"
                         style={
                           Object {
                             "WebkitFlexShrink": 0,
@@ -378,134 +378,13 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                           }
                         }
                       >
-                        <styled.div
-                          key="ID0"
-                        >
-                          <StyledComponent
-                            forwardedComponent={
-                              Object {
-                                "$$typeof": Symbol(react.forward_ref),
-                                "attrs": Array [],
-                                "componentStyle": ComponentStyle {
-                                  "componentId": "sc-bwzfXH",
-                                  "isStatic": true,
-                                  "lastClassName": "c1",
-                                  "rules": Array [
-                                    "
-  margin: 8px 0;
-",
-                                  ],
-                                },
-                                "displayName": "styled.div",
-                                "foldedComponentIds": Array [],
-                                "render": [Function],
-                                "styledComponentId": "sc-bwzfXH",
-                                "target": "div",
-                                "toString": [Function],
-                                "warnTooManyClasses": [Function],
-                                "withComponent": [Function],
-                              }
-                            }
-                            forwardedRef={null}
+                        <Blueprint3.Text>
+                          <div
+                            className=""
                           >
-                            <div
-                              className="c1"
-                            >
-                              <EventCard
-                                catchMessage="説明です"
-                                datetime="2018/12/01 09:30 〜"
-                                eventUrl="https://connpass.com/"
-                                expand={true}
-                                interactive={true}
-                                place="晴海"
-                                title="タイトル0"
-                              >
-                                <Styled(Blueprint3.Card)
-                                  elevation={2}
-                                  expand={1}
-                                  interactive={true}
-                                  onClick={[Function]}
-                                >
-                                  <StyledComponent
-                                    elevation={2}
-                                    expand={1}
-                                    forwardedComponent={
-                                      Object {
-                                        "$$typeof": Symbol(react.forward_ref),
-                                        "attrs": Array [],
-                                        "componentStyle": ComponentStyle {
-                                          "componentId": "sc-bdVaJa",
-                                          "isStatic": false,
-                                          "lastClassName": "c2",
-                                          "rules": Array [
-                                            "
-  min-height: ",
-                                            [Function],
-                                            ";
-",
-                                          ],
-                                        },
-                                        "displayName": "Styled(Blueprint3.Card)",
-                                        "foldedComponentIds": Array [],
-                                        "render": [Function],
-                                        "styledComponentId": "sc-bdVaJa",
-                                        "target": [Function],
-                                        "toString": [Function],
-                                        "warnTooManyClasses": [Function],
-                                        "withComponent": [Function],
-                                        Symbol(Symbol.hasInstance): [Function],
-                                      }
-                                    }
-                                    forwardedRef={null}
-                                    interactive={true}
-                                    onClick={[Function]}
-                                  >
-                                    <Blueprint3.Card
-                                      className="c2"
-                                      elevation={2}
-                                      expand={1}
-                                      interactive={true}
-                                      onClick={[Function]}
-                                    >
-                                      <div
-                                        className="bp3-card bp3-interactive bp3-elevation-2 c2"
-                                        expand={1}
-                                        onClick={[Function]}
-                                      >
-                                        <h3
-                                          className="bp3-heading"
-                                        >
-                                          タイトル0
-                                        </h3>
-                                        <Blueprint3.Text>
-                                          <div
-                                            className=""
-                                          >
-                                            概要：説明です
-                                          </div>
-                                        </Blueprint3.Text>
-                                        <Blueprint3.Text>
-                                          <div
-                                            className=""
-                                          >
-                                            場所：晴海
-                                          </div>
-                                        </Blueprint3.Text>
-                                        <Blueprint3.Text>
-                                          <div
-                                            className=""
-                                          >
-                                            日時：2018/12/01 09:30 〜
-                                          </div>
-                                        </Blueprint3.Text>
-                                      </div>
-                                    </Blueprint3.Card>
-                                  </StyledComponent>
-                                </Styled(Blueprint3.Card)>
-                              </EventCard>
-                            </div>
-                          </StyledComponent>
-                        </styled.div>
+                            該当するイベントがありません
+                          </div>
+                        </Blueprint3.Text>
                       </div>
                     </div>
                   </div>
@@ -518,7 +397,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
               >
                 <Link
                   replace={false}
-                  to="/"
+                  to="/events/recommended"
                 >
                   <a
                     onClick={[Function]}
@@ -595,7 +474,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                       <div
                         aria-hidden={false}
                         data-swipeable="true"
-                        key=".$ID0"
+                        key=".0"
                         style={
                           Object {
                             "WebkitFlexShrink": 0,
@@ -606,134 +485,13 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                           }
                         }
                       >
-                        <styled.div
-                          key="ID0"
-                        >
-                          <StyledComponent
-                            forwardedComponent={
-                              Object {
-                                "$$typeof": Symbol(react.forward_ref),
-                                "attrs": Array [],
-                                "componentStyle": ComponentStyle {
-                                  "componentId": "sc-bwzfXH",
-                                  "isStatic": true,
-                                  "lastClassName": "c1",
-                                  "rules": Array [
-                                    "
-  margin: 8px 0;
-",
-                                  ],
-                                },
-                                "displayName": "styled.div",
-                                "foldedComponentIds": Array [],
-                                "render": [Function],
-                                "styledComponentId": "sc-bwzfXH",
-                                "target": "div",
-                                "toString": [Function],
-                                "warnTooManyClasses": [Function],
-                                "withComponent": [Function],
-                              }
-                            }
-                            forwardedRef={null}
+                        <Blueprint3.Text>
+                          <div
+                            className=""
                           >
-                            <div
-                              className="c1"
-                            >
-                              <EventCard
-                                catchMessage="説明です"
-                                datetime="2018/12/01 09:30 〜"
-                                eventUrl="https://connpass.com/"
-                                expand={true}
-                                interactive={true}
-                                place="晴海"
-                                title="タイトル0"
-                              >
-                                <Styled(Blueprint3.Card)
-                                  elevation={2}
-                                  expand={1}
-                                  interactive={true}
-                                  onClick={[Function]}
-                                >
-                                  <StyledComponent
-                                    elevation={2}
-                                    expand={1}
-                                    forwardedComponent={
-                                      Object {
-                                        "$$typeof": Symbol(react.forward_ref),
-                                        "attrs": Array [],
-                                        "componentStyle": ComponentStyle {
-                                          "componentId": "sc-bdVaJa",
-                                          "isStatic": false,
-                                          "lastClassName": "c2",
-                                          "rules": Array [
-                                            "
-  min-height: ",
-                                            [Function],
-                                            ";
-",
-                                          ],
-                                        },
-                                        "displayName": "Styled(Blueprint3.Card)",
-                                        "foldedComponentIds": Array [],
-                                        "render": [Function],
-                                        "styledComponentId": "sc-bdVaJa",
-                                        "target": [Function],
-                                        "toString": [Function],
-                                        "warnTooManyClasses": [Function],
-                                        "withComponent": [Function],
-                                        Symbol(Symbol.hasInstance): [Function],
-                                      }
-                                    }
-                                    forwardedRef={null}
-                                    interactive={true}
-                                    onClick={[Function]}
-                                  >
-                                    <Blueprint3.Card
-                                      className="c2"
-                                      elevation={2}
-                                      expand={1}
-                                      interactive={true}
-                                      onClick={[Function]}
-                                    >
-                                      <div
-                                        className="bp3-card bp3-interactive bp3-elevation-2 c2"
-                                        expand={1}
-                                        onClick={[Function]}
-                                      >
-                                        <h3
-                                          className="bp3-heading"
-                                        >
-                                          タイトル0
-                                        </h3>
-                                        <Blueprint3.Text>
-                                          <div
-                                            className=""
-                                          >
-                                            概要：説明です
-                                          </div>
-                                        </Blueprint3.Text>
-                                        <Blueprint3.Text>
-                                          <div
-                                            className=""
-                                          >
-                                            場所：晴海
-                                          </div>
-                                        </Blueprint3.Text>
-                                        <Blueprint3.Text>
-                                          <div
-                                            className=""
-                                          >
-                                            日時：2018/12/01 09:30 〜
-                                          </div>
-                                        </Blueprint3.Text>
-                                      </div>
-                                    </Blueprint3.Card>
-                                  </StyledComponent>
-                                </Styled(Blueprint3.Card)>
-                              </EventCard>
-                            </div>
-                          </StyledComponent>
-                        </styled.div>
+                            該当するイベントがありません
+                          </div>
+                        </Blueprint3.Text>
                       </div>
                     </div>
                   </div>
@@ -1190,6 +948,113 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                             </div>
                           </StyledComponent>
                         </styled.div>
+                      </div>
+                    </div>
+                  </div>
+                </ReactSwipableView>
+              </ShrinkSwipeable>
+            </AsyncSwipeable>
+            <Component>
+              <h3
+                className="bp3-heading"
+              >
+                <Link
+                  replace={false}
+                  to="/events/organized"
+                >
+                  <a
+                    onClick={[Function]}
+                  >
+                    主催イベント
+                  </a>
+                </Link>
+              </h3>
+            </Component>
+            <AsyncSwipeable
+              loading={false}
+            >
+              <ShrinkSwipeable>
+                <ReactSwipableView
+                  animateHeight={false}
+                  animateTransitions={true}
+                  axis="x"
+                  disableLazyLoading={false}
+                  disabled={false}
+                  enableMouseEvents={true}
+                  hysteresis={0.4}
+                  ignoreNativeScroll={false}
+                  index={0}
+                  resistance={false}
+                  slideStyle={
+                    Object {
+                      "padding": "0 5px",
+                    }
+                  }
+                  springConfig={
+                    Object {
+                      "delay": "0s",
+                      "duration": "0.35s",
+                      "easeFunction": "cubic-bezier(0.15, 0.3, 0.25, 1)",
+                    }
+                  }
+                  style={
+                    Object {
+                      "padding": "0 15px",
+                    }
+                  }
+                  threshold={5}
+                >
+                  <div
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseMove={[Function]}
+                    onMouseUp={[Function]}
+                    onScroll={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchStart={[Function]}
+                    style={
+                      Object {
+                        "overflowX": "hidden",
+                        "padding": "0 15px",
+                      }
+                    }
+                  >
+                    <div
+                      className="react-swipeable-view-container"
+                      style={
+                        Object {
+                          "WebkitFlexDirection": "row",
+                          "WebkitTransition": "all 0s ease 0s",
+                          "direction": "ltr",
+                          "display": "flex",
+                          "flexDirection": "row",
+                          "height": null,
+                          "transition": "all 0s ease 0s",
+                          "willChange": "transform",
+                        }
+                      }
+                    >
+                      <div
+                        aria-hidden={false}
+                        data-swipeable="true"
+                        key=".0"
+                        style={
+                          Object {
+                            "WebkitFlexShrink": 0,
+                            "flexShrink": 0,
+                            "overflow": "auto",
+                            "padding": "0 5px",
+                            "width": "100%",
+                          }
+                        }
+                      >
+                        <Blueprint3.Text>
+                          <div
+                            className=""
+                          >
+                            該当するイベントがありません
+                          </div>
+                        </Blueprint3.Text>
                       </div>
                     </div>
                   </div>
