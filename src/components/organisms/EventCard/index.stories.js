@@ -21,3 +21,11 @@ stories.add('全項目ある場合', () => (
     datetime={text('日時', '2018年12月1日 19:30〜')}
   />
 ));
+
+stories.add('サイズを拡張する場合', () => (
+  <EventCard
+    title={text('タイトル', 'イベントのタイトル')}
+    eventUrl={text('url', 'https://connpass.com/')}
+    expand
+  />
+));

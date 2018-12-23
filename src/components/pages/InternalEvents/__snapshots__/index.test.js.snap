@@ -159,7 +159,7 @@ exports[`should match snapshot: InternalEvents/loading 1`] = `
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-bdVaJa",
+                "componentId": "sc-bwzfXH",
                 "isStatic": false,
                 "lastClassName": "c0",
                 "rules": Array [
@@ -173,7 +173,7 @@ exports[`should match snapshot: InternalEvents/loading 1`] = `
               "displayName": "styled.div",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-bdVaJa",
+              "styledComponentId": "sc-bwzfXH",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -381,7 +381,7 @@ exports[`should match snapshot: InternalEvents/nocontents 1`] = `
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-bdVaJa",
+                "componentId": "sc-bwzfXH",
                 "isStatic": false,
                 "lastClassName": "c0",
                 "rules": Array [
@@ -395,7 +395,7 @@ exports[`should match snapshot: InternalEvents/nocontents 1`] = `
               "displayName": "styled.div",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-bdVaJa",
+              "styledComponentId": "sc-bwzfXH",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -424,6 +424,10 @@ exports[`should match snapshot: InternalEvents/nocontents 1`] = `
 `;
 
 exports[`should match snapshot: InternalEvents/nomal 1`] = `
+.c2 {
+  min-height: inherit;
+}
+
 .c0 {
   padding: 10px 15px;
 }
@@ -657,7 +661,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-bdVaJa",
+                "componentId": "sc-bwzfXH",
                 "isStatic": false,
                 "lastClassName": "c0",
                 "rules": Array [
@@ -671,7 +675,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
               "displayName": "styled.div",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-bdVaJa",
+              "styledComponentId": "sc-bwzfXH",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -693,7 +697,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-bwzfXH",
+                      "componentId": "sc-htpNat",
                       "isStatic": true,
                       "lastClassName": "c1",
                       "rules": Array [
@@ -705,7 +709,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "displayName": "styled.div",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-bwzfXH",
+                    "styledComponentId": "sc-htpNat",
                     "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -721,47 +725,93 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     catchMessage="イベントの説明です"
                     datetime="2018/12/01 10:30〜"
                     eventUrl=""
+                    expand={false}
                     interactive={true}
                     place="東京都千代田区丸の内"
                     title="イベントのタイトル0"
                   >
-                    <Blueprint3.Card
+                    <Styled(Blueprint3.Card)
                       elevation={2}
+                      expand={0}
                       interactive={true}
                       onClick={[Function]}
                     >
-                      <div
-                        className="bp3-card bp3-interactive bp3-elevation-2"
+                      <StyledComponent
+                        elevation={2}
+                        expand={0}
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bdVaJa",
+                              "isStatic": false,
+                              "lastClassName": "c2",
+                              "rules": Array [
+                                "
+  min-height: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "Styled(Blueprint3.Card)",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bdVaJa",
+                            "target": [Function],
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                            Symbol(Symbol.hasInstance): [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        interactive={true}
                         onClick={[Function]}
                       >
-                        <h3
-                          className="bp3-heading"
+                        <Blueprint3.Card
+                          className="c2"
+                          elevation={2}
+                          expand={0}
+                          interactive={true}
+                          onClick={[Function]}
                         >
-                          イベントのタイトル0
-                        </h3>
-                        <Blueprint3.Text>
                           <div
-                            className=""
+                            className="bp3-card bp3-interactive bp3-elevation-2 c2"
+                            expand={0}
+                            onClick={[Function]}
                           >
-                            概要：イベントの説明です
+                            <h3
+                              className="bp3-heading"
+                            >
+                              イベントのタイトル0
+                            </h3>
+                            <Blueprint3.Text>
+                              <div
+                                className=""
+                              >
+                                概要：イベントの説明です
+                              </div>
+                            </Blueprint3.Text>
+                            <Blueprint3.Text>
+                              <div
+                                className=""
+                              >
+                                場所：東京都千代田区丸の内
+                              </div>
+                            </Blueprint3.Text>
+                            <Blueprint3.Text>
+                              <div
+                                className=""
+                              >
+                                日時：2018/12/01 10:30〜
+                              </div>
+                            </Blueprint3.Text>
                           </div>
-                        </Blueprint3.Text>
-                        <Blueprint3.Text>
-                          <div
-                            className=""
-                          >
-                            場所：東京都千代田区丸の内
-                          </div>
-                        </Blueprint3.Text>
-                        <Blueprint3.Text>
-                          <div
-                            className=""
-                          >
-                            日時：2018/12/01 10:30〜
-                          </div>
-                        </Blueprint3.Text>
-                      </div>
-                    </Blueprint3.Card>
+                        </Blueprint3.Card>
+                      </StyledComponent>
+                    </Styled(Blueprint3.Card)>
                   </EventCard>
                 </div>
               </StyledComponent>
@@ -775,7 +825,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-bwzfXH",
+                      "componentId": "sc-htpNat",
                       "isStatic": true,
                       "lastClassName": "c1",
                       "rules": Array [
@@ -787,7 +837,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "displayName": "styled.div",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-bwzfXH",
+                    "styledComponentId": "sc-htpNat",
                     "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -803,47 +853,93 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     catchMessage="イベントの説明です"
                     datetime="2018/12/01 10:30〜"
                     eventUrl=""
+                    expand={false}
                     interactive={true}
                     place="東京都千代田区丸の内"
                     title="イベントのタイトル1"
                   >
-                    <Blueprint3.Card
+                    <Styled(Blueprint3.Card)
                       elevation={2}
+                      expand={0}
                       interactive={true}
                       onClick={[Function]}
                     >
-                      <div
-                        className="bp3-card bp3-interactive bp3-elevation-2"
+                      <StyledComponent
+                        elevation={2}
+                        expand={0}
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bdVaJa",
+                              "isStatic": false,
+                              "lastClassName": "c2",
+                              "rules": Array [
+                                "
+  min-height: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "Styled(Blueprint3.Card)",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bdVaJa",
+                            "target": [Function],
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                            Symbol(Symbol.hasInstance): [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        interactive={true}
                         onClick={[Function]}
                       >
-                        <h3
-                          className="bp3-heading"
+                        <Blueprint3.Card
+                          className="c2"
+                          elevation={2}
+                          expand={0}
+                          interactive={true}
+                          onClick={[Function]}
                         >
-                          イベントのタイトル1
-                        </h3>
-                        <Blueprint3.Text>
                           <div
-                            className=""
+                            className="bp3-card bp3-interactive bp3-elevation-2 c2"
+                            expand={0}
+                            onClick={[Function]}
                           >
-                            概要：イベントの説明です
+                            <h3
+                              className="bp3-heading"
+                            >
+                              イベントのタイトル1
+                            </h3>
+                            <Blueprint3.Text>
+                              <div
+                                className=""
+                              >
+                                概要：イベントの説明です
+                              </div>
+                            </Blueprint3.Text>
+                            <Blueprint3.Text>
+                              <div
+                                className=""
+                              >
+                                場所：東京都千代田区丸の内
+                              </div>
+                            </Blueprint3.Text>
+                            <Blueprint3.Text>
+                              <div
+                                className=""
+                              >
+                                日時：2018/12/01 10:30〜
+                              </div>
+                            </Blueprint3.Text>
                           </div>
-                        </Blueprint3.Text>
-                        <Blueprint3.Text>
-                          <div
-                            className=""
-                          >
-                            場所：東京都千代田区丸の内
-                          </div>
-                        </Blueprint3.Text>
-                        <Blueprint3.Text>
-                          <div
-                            className=""
-                          >
-                            日時：2018/12/01 10:30〜
-                          </div>
-                        </Blueprint3.Text>
-                      </div>
-                    </Blueprint3.Card>
+                        </Blueprint3.Card>
+                      </StyledComponent>
+                    </Styled(Blueprint3.Card)>
                   </EventCard>
                 </div>
               </StyledComponent>
@@ -857,7 +953,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-bwzfXH",
+                      "componentId": "sc-htpNat",
                       "isStatic": true,
                       "lastClassName": "c1",
                       "rules": Array [
@@ -869,7 +965,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "displayName": "styled.div",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-bwzfXH",
+                    "styledComponentId": "sc-htpNat",
                     "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -885,47 +981,93 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     catchMessage="イベントの説明です"
                     datetime="2018/12/01 10:30〜"
                     eventUrl=""
+                    expand={false}
                     interactive={true}
                     place="東京都千代田区丸の内"
                     title="イベントのタイトル2"
                   >
-                    <Blueprint3.Card
+                    <Styled(Blueprint3.Card)
                       elevation={2}
+                      expand={0}
                       interactive={true}
                       onClick={[Function]}
                     >
-                      <div
-                        className="bp3-card bp3-interactive bp3-elevation-2"
+                      <StyledComponent
+                        elevation={2}
+                        expand={0}
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bdVaJa",
+                              "isStatic": false,
+                              "lastClassName": "c2",
+                              "rules": Array [
+                                "
+  min-height: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "Styled(Blueprint3.Card)",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bdVaJa",
+                            "target": [Function],
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                            Symbol(Symbol.hasInstance): [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        interactive={true}
                         onClick={[Function]}
                       >
-                        <h3
-                          className="bp3-heading"
+                        <Blueprint3.Card
+                          className="c2"
+                          elevation={2}
+                          expand={0}
+                          interactive={true}
+                          onClick={[Function]}
                         >
-                          イベントのタイトル2
-                        </h3>
-                        <Blueprint3.Text>
                           <div
-                            className=""
+                            className="bp3-card bp3-interactive bp3-elevation-2 c2"
+                            expand={0}
+                            onClick={[Function]}
                           >
-                            概要：イベントの説明です
+                            <h3
+                              className="bp3-heading"
+                            >
+                              イベントのタイトル2
+                            </h3>
+                            <Blueprint3.Text>
+                              <div
+                                className=""
+                              >
+                                概要：イベントの説明です
+                              </div>
+                            </Blueprint3.Text>
+                            <Blueprint3.Text>
+                              <div
+                                className=""
+                              >
+                                場所：東京都千代田区丸の内
+                              </div>
+                            </Blueprint3.Text>
+                            <Blueprint3.Text>
+                              <div
+                                className=""
+                              >
+                                日時：2018/12/01 10:30〜
+                              </div>
+                            </Blueprint3.Text>
                           </div>
-                        </Blueprint3.Text>
-                        <Blueprint3.Text>
-                          <div
-                            className=""
-                          >
-                            場所：東京都千代田区丸の内
-                          </div>
-                        </Blueprint3.Text>
-                        <Blueprint3.Text>
-                          <div
-                            className=""
-                          >
-                            日時：2018/12/01 10:30〜
-                          </div>
-                        </Blueprint3.Text>
-                      </div>
-                    </Blueprint3.Card>
+                        </Blueprint3.Card>
+                      </StyledComponent>
+                    </Styled(Blueprint3.Card)>
                   </EventCard>
                 </div>
               </StyledComponent>
@@ -939,7 +1081,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-bwzfXH",
+                      "componentId": "sc-htpNat",
                       "isStatic": true,
                       "lastClassName": "c1",
                       "rules": Array [
@@ -951,7 +1093,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "displayName": "styled.div",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-bwzfXH",
+                    "styledComponentId": "sc-htpNat",
                     "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -967,47 +1109,93 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     catchMessage="イベントの説明です"
                     datetime="2018/12/01 10:30〜"
                     eventUrl=""
+                    expand={false}
                     interactive={true}
                     place="東京都千代田区丸の内"
                     title="イベントのタイトル3"
                   >
-                    <Blueprint3.Card
+                    <Styled(Blueprint3.Card)
                       elevation={2}
+                      expand={0}
                       interactive={true}
                       onClick={[Function]}
                     >
-                      <div
-                        className="bp3-card bp3-interactive bp3-elevation-2"
+                      <StyledComponent
+                        elevation={2}
+                        expand={0}
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bdVaJa",
+                              "isStatic": false,
+                              "lastClassName": "c2",
+                              "rules": Array [
+                                "
+  min-height: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "Styled(Blueprint3.Card)",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bdVaJa",
+                            "target": [Function],
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                            Symbol(Symbol.hasInstance): [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        interactive={true}
                         onClick={[Function]}
                       >
-                        <h3
-                          className="bp3-heading"
+                        <Blueprint3.Card
+                          className="c2"
+                          elevation={2}
+                          expand={0}
+                          interactive={true}
+                          onClick={[Function]}
                         >
-                          イベントのタイトル3
-                        </h3>
-                        <Blueprint3.Text>
                           <div
-                            className=""
+                            className="bp3-card bp3-interactive bp3-elevation-2 c2"
+                            expand={0}
+                            onClick={[Function]}
                           >
-                            概要：イベントの説明です
+                            <h3
+                              className="bp3-heading"
+                            >
+                              イベントのタイトル3
+                            </h3>
+                            <Blueprint3.Text>
+                              <div
+                                className=""
+                              >
+                                概要：イベントの説明です
+                              </div>
+                            </Blueprint3.Text>
+                            <Blueprint3.Text>
+                              <div
+                                className=""
+                              >
+                                場所：東京都千代田区丸の内
+                              </div>
+                            </Blueprint3.Text>
+                            <Blueprint3.Text>
+                              <div
+                                className=""
+                              >
+                                日時：2018/12/01 10:30〜
+                              </div>
+                            </Blueprint3.Text>
                           </div>
-                        </Blueprint3.Text>
-                        <Blueprint3.Text>
-                          <div
-                            className=""
-                          >
-                            場所：東京都千代田区丸の内
-                          </div>
-                        </Blueprint3.Text>
-                        <Blueprint3.Text>
-                          <div
-                            className=""
-                          >
-                            日時：2018/12/01 10:30〜
-                          </div>
-                        </Blueprint3.Text>
-                      </div>
-                    </Blueprint3.Card>
+                        </Blueprint3.Card>
+                      </StyledComponent>
+                    </Styled(Blueprint3.Card)>
                   </EventCard>
                 </div>
               </StyledComponent>
@@ -1021,7 +1209,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-bwzfXH",
+                      "componentId": "sc-htpNat",
                       "isStatic": true,
                       "lastClassName": "c1",
                       "rules": Array [
@@ -1033,7 +1221,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "displayName": "styled.div",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-bwzfXH",
+                    "styledComponentId": "sc-htpNat",
                     "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -1049,47 +1237,93 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     catchMessage="イベントの説明です"
                     datetime="2018/12/01 10:30〜"
                     eventUrl=""
+                    expand={false}
                     interactive={true}
                     place="東京都千代田区丸の内"
                     title="イベントのタイトル4"
                   >
-                    <Blueprint3.Card
+                    <Styled(Blueprint3.Card)
                       elevation={2}
+                      expand={0}
                       interactive={true}
                       onClick={[Function]}
                     >
-                      <div
-                        className="bp3-card bp3-interactive bp3-elevation-2"
+                      <StyledComponent
+                        elevation={2}
+                        expand={0}
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bdVaJa",
+                              "isStatic": false,
+                              "lastClassName": "c2",
+                              "rules": Array [
+                                "
+  min-height: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "Styled(Blueprint3.Card)",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bdVaJa",
+                            "target": [Function],
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                            Symbol(Symbol.hasInstance): [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        interactive={true}
                         onClick={[Function]}
                       >
-                        <h3
-                          className="bp3-heading"
+                        <Blueprint3.Card
+                          className="c2"
+                          elevation={2}
+                          expand={0}
+                          interactive={true}
+                          onClick={[Function]}
                         >
-                          イベントのタイトル4
-                        </h3>
-                        <Blueprint3.Text>
                           <div
-                            className=""
+                            className="bp3-card bp3-interactive bp3-elevation-2 c2"
+                            expand={0}
+                            onClick={[Function]}
                           >
-                            概要：イベントの説明です
+                            <h3
+                              className="bp3-heading"
+                            >
+                              イベントのタイトル4
+                            </h3>
+                            <Blueprint3.Text>
+                              <div
+                                className=""
+                              >
+                                概要：イベントの説明です
+                              </div>
+                            </Blueprint3.Text>
+                            <Blueprint3.Text>
+                              <div
+                                className=""
+                              >
+                                場所：東京都千代田区丸の内
+                              </div>
+                            </Blueprint3.Text>
+                            <Blueprint3.Text>
+                              <div
+                                className=""
+                              >
+                                日時：2018/12/01 10:30〜
+                              </div>
+                            </Blueprint3.Text>
                           </div>
-                        </Blueprint3.Text>
-                        <Blueprint3.Text>
-                          <div
-                            className=""
-                          >
-                            場所：東京都千代田区丸の内
-                          </div>
-                        </Blueprint3.Text>
-                        <Blueprint3.Text>
-                          <div
-                            className=""
-                          >
-                            日時：2018/12/01 10:30〜
-                          </div>
-                        </Blueprint3.Text>
-                      </div>
-                    </Blueprint3.Card>
+                        </Blueprint3.Card>
+                      </StyledComponent>
+                    </Styled(Blueprint3.Card)>
                   </EventCard>
                 </div>
               </StyledComponent>
@@ -1103,7 +1337,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-bwzfXH",
+                      "componentId": "sc-htpNat",
                       "isStatic": true,
                       "lastClassName": "c1",
                       "rules": Array [
@@ -1115,7 +1349,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "displayName": "styled.div",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-bwzfXH",
+                    "styledComponentId": "sc-htpNat",
                     "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -1131,47 +1365,93 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     catchMessage="イベントの説明です"
                     datetime="2018/12/01 10:30〜"
                     eventUrl=""
+                    expand={false}
                     interactive={true}
                     place="東京都千代田区丸の内"
                     title="イベントのタイトル5"
                   >
-                    <Blueprint3.Card
+                    <Styled(Blueprint3.Card)
                       elevation={2}
+                      expand={0}
                       interactive={true}
                       onClick={[Function]}
                     >
-                      <div
-                        className="bp3-card bp3-interactive bp3-elevation-2"
+                      <StyledComponent
+                        elevation={2}
+                        expand={0}
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bdVaJa",
+                              "isStatic": false,
+                              "lastClassName": "c2",
+                              "rules": Array [
+                                "
+  min-height: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "Styled(Blueprint3.Card)",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bdVaJa",
+                            "target": [Function],
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                            Symbol(Symbol.hasInstance): [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        interactive={true}
                         onClick={[Function]}
                       >
-                        <h3
-                          className="bp3-heading"
+                        <Blueprint3.Card
+                          className="c2"
+                          elevation={2}
+                          expand={0}
+                          interactive={true}
+                          onClick={[Function]}
                         >
-                          イベントのタイトル5
-                        </h3>
-                        <Blueprint3.Text>
                           <div
-                            className=""
+                            className="bp3-card bp3-interactive bp3-elevation-2 c2"
+                            expand={0}
+                            onClick={[Function]}
                           >
-                            概要：イベントの説明です
+                            <h3
+                              className="bp3-heading"
+                            >
+                              イベントのタイトル5
+                            </h3>
+                            <Blueprint3.Text>
+                              <div
+                                className=""
+                              >
+                                概要：イベントの説明です
+                              </div>
+                            </Blueprint3.Text>
+                            <Blueprint3.Text>
+                              <div
+                                className=""
+                              >
+                                場所：東京都千代田区丸の内
+                              </div>
+                            </Blueprint3.Text>
+                            <Blueprint3.Text>
+                              <div
+                                className=""
+                              >
+                                日時：2018/12/01 10:30〜
+                              </div>
+                            </Blueprint3.Text>
                           </div>
-                        </Blueprint3.Text>
-                        <Blueprint3.Text>
-                          <div
-                            className=""
-                          >
-                            場所：東京都千代田区丸の内
-                          </div>
-                        </Blueprint3.Text>
-                        <Blueprint3.Text>
-                          <div
-                            className=""
-                          >
-                            日時：2018/12/01 10:30〜
-                          </div>
-                        </Blueprint3.Text>
-                      </div>
-                    </Blueprint3.Card>
+                        </Blueprint3.Card>
+                      </StyledComponent>
+                    </Styled(Blueprint3.Card)>
                   </EventCard>
                 </div>
               </StyledComponent>
@@ -1185,7 +1465,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-bwzfXH",
+                      "componentId": "sc-htpNat",
                       "isStatic": true,
                       "lastClassName": "c1",
                       "rules": Array [
@@ -1197,7 +1477,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "displayName": "styled.div",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-bwzfXH",
+                    "styledComponentId": "sc-htpNat",
                     "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -1213,47 +1493,93 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     catchMessage="イベントの説明です"
                     datetime="2018/12/01 10:30〜"
                     eventUrl=""
+                    expand={false}
                     interactive={true}
                     place="東京都千代田区丸の内"
                     title="イベントのタイトル6"
                   >
-                    <Blueprint3.Card
+                    <Styled(Blueprint3.Card)
                       elevation={2}
+                      expand={0}
                       interactive={true}
                       onClick={[Function]}
                     >
-                      <div
-                        className="bp3-card bp3-interactive bp3-elevation-2"
+                      <StyledComponent
+                        elevation={2}
+                        expand={0}
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bdVaJa",
+                              "isStatic": false,
+                              "lastClassName": "c2",
+                              "rules": Array [
+                                "
+  min-height: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "Styled(Blueprint3.Card)",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bdVaJa",
+                            "target": [Function],
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                            Symbol(Symbol.hasInstance): [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        interactive={true}
                         onClick={[Function]}
                       >
-                        <h3
-                          className="bp3-heading"
+                        <Blueprint3.Card
+                          className="c2"
+                          elevation={2}
+                          expand={0}
+                          interactive={true}
+                          onClick={[Function]}
                         >
-                          イベントのタイトル6
-                        </h3>
-                        <Blueprint3.Text>
                           <div
-                            className=""
+                            className="bp3-card bp3-interactive bp3-elevation-2 c2"
+                            expand={0}
+                            onClick={[Function]}
                           >
-                            概要：イベントの説明です
+                            <h3
+                              className="bp3-heading"
+                            >
+                              イベントのタイトル6
+                            </h3>
+                            <Blueprint3.Text>
+                              <div
+                                className=""
+                              >
+                                概要：イベントの説明です
+                              </div>
+                            </Blueprint3.Text>
+                            <Blueprint3.Text>
+                              <div
+                                className=""
+                              >
+                                場所：東京都千代田区丸の内
+                              </div>
+                            </Blueprint3.Text>
+                            <Blueprint3.Text>
+                              <div
+                                className=""
+                              >
+                                日時：2018/12/01 10:30〜
+                              </div>
+                            </Blueprint3.Text>
                           </div>
-                        </Blueprint3.Text>
-                        <Blueprint3.Text>
-                          <div
-                            className=""
-                          >
-                            場所：東京都千代田区丸の内
-                          </div>
-                        </Blueprint3.Text>
-                        <Blueprint3.Text>
-                          <div
-                            className=""
-                          >
-                            日時：2018/12/01 10:30〜
-                          </div>
-                        </Blueprint3.Text>
-                      </div>
-                    </Blueprint3.Card>
+                        </Blueprint3.Card>
+                      </StyledComponent>
+                    </Styled(Blueprint3.Card)>
                   </EventCard>
                 </div>
               </StyledComponent>
@@ -1267,7 +1593,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-bwzfXH",
+                      "componentId": "sc-htpNat",
                       "isStatic": true,
                       "lastClassName": "c1",
                       "rules": Array [
@@ -1279,7 +1605,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "displayName": "styled.div",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-bwzfXH",
+                    "styledComponentId": "sc-htpNat",
                     "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -1295,47 +1621,93 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     catchMessage="イベントの説明です"
                     datetime="2018/12/01 10:30〜"
                     eventUrl=""
+                    expand={false}
                     interactive={true}
                     place="東京都千代田区丸の内"
                     title="イベントのタイトル7"
                   >
-                    <Blueprint3.Card
+                    <Styled(Blueprint3.Card)
                       elevation={2}
+                      expand={0}
                       interactive={true}
                       onClick={[Function]}
                     >
-                      <div
-                        className="bp3-card bp3-interactive bp3-elevation-2"
+                      <StyledComponent
+                        elevation={2}
+                        expand={0}
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bdVaJa",
+                              "isStatic": false,
+                              "lastClassName": "c2",
+                              "rules": Array [
+                                "
+  min-height: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "Styled(Blueprint3.Card)",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bdVaJa",
+                            "target": [Function],
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                            Symbol(Symbol.hasInstance): [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        interactive={true}
                         onClick={[Function]}
                       >
-                        <h3
-                          className="bp3-heading"
+                        <Blueprint3.Card
+                          className="c2"
+                          elevation={2}
+                          expand={0}
+                          interactive={true}
+                          onClick={[Function]}
                         >
-                          イベントのタイトル7
-                        </h3>
-                        <Blueprint3.Text>
                           <div
-                            className=""
+                            className="bp3-card bp3-interactive bp3-elevation-2 c2"
+                            expand={0}
+                            onClick={[Function]}
                           >
-                            概要：イベントの説明です
+                            <h3
+                              className="bp3-heading"
+                            >
+                              イベントのタイトル7
+                            </h3>
+                            <Blueprint3.Text>
+                              <div
+                                className=""
+                              >
+                                概要：イベントの説明です
+                              </div>
+                            </Blueprint3.Text>
+                            <Blueprint3.Text>
+                              <div
+                                className=""
+                              >
+                                場所：東京都千代田区丸の内
+                              </div>
+                            </Blueprint3.Text>
+                            <Blueprint3.Text>
+                              <div
+                                className=""
+                              >
+                                日時：2018/12/01 10:30〜
+                              </div>
+                            </Blueprint3.Text>
                           </div>
-                        </Blueprint3.Text>
-                        <Blueprint3.Text>
-                          <div
-                            className=""
-                          >
-                            場所：東京都千代田区丸の内
-                          </div>
-                        </Blueprint3.Text>
-                        <Blueprint3.Text>
-                          <div
-                            className=""
-                          >
-                            日時：2018/12/01 10:30〜
-                          </div>
-                        </Blueprint3.Text>
-                      </div>
-                    </Blueprint3.Card>
+                        </Blueprint3.Card>
+                      </StyledComponent>
+                    </Styled(Blueprint3.Card)>
                   </EventCard>
                 </div>
               </StyledComponent>
@@ -1349,7 +1721,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-bwzfXH",
+                      "componentId": "sc-htpNat",
                       "isStatic": true,
                       "lastClassName": "c1",
                       "rules": Array [
@@ -1361,7 +1733,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "displayName": "styled.div",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-bwzfXH",
+                    "styledComponentId": "sc-htpNat",
                     "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -1377,47 +1749,93 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     catchMessage="イベントの説明です"
                     datetime="2018/12/01 10:30〜"
                     eventUrl=""
+                    expand={false}
                     interactive={true}
                     place="東京都千代田区丸の内"
                     title="イベントのタイトル8"
                   >
-                    <Blueprint3.Card
+                    <Styled(Blueprint3.Card)
                       elevation={2}
+                      expand={0}
                       interactive={true}
                       onClick={[Function]}
                     >
-                      <div
-                        className="bp3-card bp3-interactive bp3-elevation-2"
+                      <StyledComponent
+                        elevation={2}
+                        expand={0}
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bdVaJa",
+                              "isStatic": false,
+                              "lastClassName": "c2",
+                              "rules": Array [
+                                "
+  min-height: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "Styled(Blueprint3.Card)",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bdVaJa",
+                            "target": [Function],
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                            Symbol(Symbol.hasInstance): [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        interactive={true}
                         onClick={[Function]}
                       >
-                        <h3
-                          className="bp3-heading"
+                        <Blueprint3.Card
+                          className="c2"
+                          elevation={2}
+                          expand={0}
+                          interactive={true}
+                          onClick={[Function]}
                         >
-                          イベントのタイトル8
-                        </h3>
-                        <Blueprint3.Text>
                           <div
-                            className=""
+                            className="bp3-card bp3-interactive bp3-elevation-2 c2"
+                            expand={0}
+                            onClick={[Function]}
                           >
-                            概要：イベントの説明です
+                            <h3
+                              className="bp3-heading"
+                            >
+                              イベントのタイトル8
+                            </h3>
+                            <Blueprint3.Text>
+                              <div
+                                className=""
+                              >
+                                概要：イベントの説明です
+                              </div>
+                            </Blueprint3.Text>
+                            <Blueprint3.Text>
+                              <div
+                                className=""
+                              >
+                                場所：東京都千代田区丸の内
+                              </div>
+                            </Blueprint3.Text>
+                            <Blueprint3.Text>
+                              <div
+                                className=""
+                              >
+                                日時：2018/12/01 10:30〜
+                              </div>
+                            </Blueprint3.Text>
                           </div>
-                        </Blueprint3.Text>
-                        <Blueprint3.Text>
-                          <div
-                            className=""
-                          >
-                            場所：東京都千代田区丸の内
-                          </div>
-                        </Blueprint3.Text>
-                        <Blueprint3.Text>
-                          <div
-                            className=""
-                          >
-                            日時：2018/12/01 10:30〜
-                          </div>
-                        </Blueprint3.Text>
-                      </div>
-                    </Blueprint3.Card>
+                        </Blueprint3.Card>
+                      </StyledComponent>
+                    </Styled(Blueprint3.Card)>
                   </EventCard>
                 </div>
               </StyledComponent>
@@ -1431,7 +1849,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-bwzfXH",
+                      "componentId": "sc-htpNat",
                       "isStatic": true,
                       "lastClassName": "c1",
                       "rules": Array [
@@ -1443,7 +1861,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "displayName": "styled.div",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-bwzfXH",
+                    "styledComponentId": "sc-htpNat",
                     "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -1459,47 +1877,93 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     catchMessage="イベントの説明です"
                     datetime="2018/12/01 10:30〜"
                     eventUrl=""
+                    expand={false}
                     interactive={true}
                     place="東京都千代田区丸の内"
                     title="イベントのタイトル9"
                   >
-                    <Blueprint3.Card
+                    <Styled(Blueprint3.Card)
                       elevation={2}
+                      expand={0}
                       interactive={true}
                       onClick={[Function]}
                     >
-                      <div
-                        className="bp3-card bp3-interactive bp3-elevation-2"
+                      <StyledComponent
+                        elevation={2}
+                        expand={0}
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bdVaJa",
+                              "isStatic": false,
+                              "lastClassName": "c2",
+                              "rules": Array [
+                                "
+  min-height: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "Styled(Blueprint3.Card)",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bdVaJa",
+                            "target": [Function],
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                            Symbol(Symbol.hasInstance): [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        interactive={true}
                         onClick={[Function]}
                       >
-                        <h3
-                          className="bp3-heading"
+                        <Blueprint3.Card
+                          className="c2"
+                          elevation={2}
+                          expand={0}
+                          interactive={true}
+                          onClick={[Function]}
                         >
-                          イベントのタイトル9
-                        </h3>
-                        <Blueprint3.Text>
                           <div
-                            className=""
+                            className="bp3-card bp3-interactive bp3-elevation-2 c2"
+                            expand={0}
+                            onClick={[Function]}
                           >
-                            概要：イベントの説明です
+                            <h3
+                              className="bp3-heading"
+                            >
+                              イベントのタイトル9
+                            </h3>
+                            <Blueprint3.Text>
+                              <div
+                                className=""
+                              >
+                                概要：イベントの説明です
+                              </div>
+                            </Blueprint3.Text>
+                            <Blueprint3.Text>
+                              <div
+                                className=""
+                              >
+                                場所：東京都千代田区丸の内
+                              </div>
+                            </Blueprint3.Text>
+                            <Blueprint3.Text>
+                              <div
+                                className=""
+                              >
+                                日時：2018/12/01 10:30〜
+                              </div>
+                            </Blueprint3.Text>
                           </div>
-                        </Blueprint3.Text>
-                        <Blueprint3.Text>
-                          <div
-                            className=""
-                          >
-                            場所：東京都千代田区丸の内
-                          </div>
-                        </Blueprint3.Text>
-                        <Blueprint3.Text>
-                          <div
-                            className=""
-                          >
-                            日時：2018/12/01 10:30〜
-                          </div>
-                        </Blueprint3.Text>
-                      </div>
-                    </Blueprint3.Card>
+                        </Blueprint3.Card>
+                      </StyledComponent>
+                    </Styled(Blueprint3.Card)>
                   </EventCard>
                 </div>
               </StyledComponent>

@@ -15,25 +15,25 @@ const Menu = ({ internal, external, authUser }) => {
         <Link to={ROUTES.Menu}>参加予定イベント</Link>
       </H3>
       <AsyncSwipeable loading={internal.loading}>
-        {EventCardList({ events: internal.internalEvents })}
+        {EventCardList({ events: internal.internalEvents, expand: true })}
       </AsyncSwipeable>
       <H3>
         <Link to={ROUTES.Menu}>おすすめイベント</Link>
       </H3>
       <AsyncSwipeable loading={internal.loading}>
-        {EventCardList({ events: internal.internalEvents })}
+        {EventCardList({ events: internal.internalEvents, expand: true })}
       </AsyncSwipeable>
       <H3>
         <Link to={ROUTES.InternalEvents}>社内イベント</Link>
       </H3>
       <AsyncSwipeable loading={internal.loading}>
-        {EventCardList({ events: internal.internalEvents })}
+        {EventCardList({ events: internal.internalEvents, expand: true })}
       </AsyncSwipeable>
       <H3>
         <Link to={ROUTES.ExternalEvents}>社外イベント</Link>
       </H3>
       <AsyncSwipeable loading={external.loading}>
-        {EventCardList({ events: eventFormat.convertPropsName(external.connpass) })}
+        {EventCardList({ events: eventFormat.convertPropsName(external.connpass), expand: true })}
       </AsyncSwipeable>
     </Container>
   );
