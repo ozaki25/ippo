@@ -42,11 +42,14 @@ const internalEvents = gql`
 const tweets = gql`
   query($hashtag: String, $limit: Int, $startId: String) {
     tweets(hashtag: $hashtag, limit: $limit, startId: $startId) {
-      id
-      name
-      text
-      time
-      hashtag
+      tweetList {
+        id
+        name
+        text
+        time
+        hashtag
+      }
+      startId
     }
   }
 `;

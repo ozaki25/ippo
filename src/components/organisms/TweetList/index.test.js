@@ -3,6 +3,8 @@ import { snapshot } from 'test/helpers';
 import TweetList from '.';
 
 const props = {
+  loadMore: jest.fn(),
+  hasMore: true,
   items: [
     {
       id: '1',

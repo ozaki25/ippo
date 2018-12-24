@@ -1,8 +1,23 @@
 import React from 'react';
+import InfiniteScroll from 'react-infinite-scroller';
+import { Spinner } from '@blueprintjs/core';
 import propTypes from 'prop-types';
 import Tweet from 'src/components/molecules/Tweet';
 
-const TweetList = ({ items }) => items.map(item => <Tweet key={item.id} {...item} />);
+const TweetList = ({ items, loadMore, hasMore }) => (
+  <InfiniteScroll
+    key={items.length}
+    pageStart={0}
+    loadMore={loadMore}
+    hasMore={hasMore}
+    loader={<Spinner key={items.length} />}
+    threshold={10}
+  >
+    {items.map(item => (
+      <Tweet key={item.id} {...item} />
+    ))}
+  </InfiniteScroll>
+);
 
 TweetList.displayName = 'TweetList';
 
@@ -15,6 +30,8 @@ TweetList.propTypes = {
       time: propTypes.string.isRequired,
     }),
   ),
+  loadMore: propTypes.func.isRequired,
+  hasMore: propTypes.bool.isRequired,
 };
 
 TweetList.defaultProps = {
