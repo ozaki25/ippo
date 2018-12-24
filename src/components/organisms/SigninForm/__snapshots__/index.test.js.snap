@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should match snapshot: BasicAuthForm/nomal 1`] = `
+exports[`should match snapshot: SigninForm/nomal 1`] = `
 <MockRouter
   createHref={[Function]}
   location=""
@@ -10,7 +10,7 @@ exports[`should match snapshot: BasicAuthForm/nomal 1`] = `
   replace={[Function]}
   url=""
 >
-  <BasicAuthForm
+  <SigninForm
     buttonText="ボタン"
     onSubmit={[MockFunction]}
   >
@@ -145,6 +145,6 @@ exports[`should match snapshot: BasicAuthForm/nomal 1`] = `
         </button>
       </Blueprint3.Button>
     </form>
-  </BasicAuthForm>
+  </SigninForm>
 </MockRouter>
 `;
