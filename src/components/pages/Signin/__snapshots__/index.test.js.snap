@@ -208,7 +208,6 @@ exports[`should match snapshot: Signin/nomal 1`] = `
             className="c0"
           >
             <SigninForm
-              buttonText="ログイン"
               onSubmit={[Function]}
             >
               <form>
@@ -604,29 +603,15 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                 </div>
               </StyledComponent>
             </styled.div>
-            <Blueprint3.Dialog
-              canOutsideClickClose={true}
-              isCloseButtonShown={true}
+            <SignupFormDialog
               isOpen={false}
               onClose={[Function]}
-              style={
-                Object {
-                  "margin": "0 15px",
-                }
-              }
-              title="ユーザ登録"
+              onSubmit={[Function]}
             >
-              <Blueprint3.Overlay
-                autoFocus={true}
-                backdropProps={Object {}}
-                canEscapeKeyClose={true}
+              <Blueprint3.Dialog
                 canOutsideClickClose={true}
-                className="bp3-overlay-scroll-container"
-                enforceFocus={true}
-                hasBackdrop={true}
                 isCloseButtonShown={true}
                 isOpen={false}
-                lazy={true}
                 onClose={[Function]}
                 style={
                   Object {
@@ -634,11 +619,31 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                   }
                 }
                 title="ユーザ登録"
-                transitionDuration={300}
-                transitionName="bp3-overlay"
-                usePortal={true}
-              />
-            </Blueprint3.Dialog>
+              >
+                <Blueprint3.Overlay
+                  autoFocus={true}
+                  backdropProps={Object {}}
+                  canEscapeKeyClose={true}
+                  canOutsideClickClose={true}
+                  className="bp3-overlay-scroll-container"
+                  enforceFocus={true}
+                  hasBackdrop={true}
+                  isCloseButtonShown={true}
+                  isOpen={false}
+                  lazy={true}
+                  onClose={[Function]}
+                  style={
+                    Object {
+                      "margin": "0 15px",
+                    }
+                  }
+                  title="ユーザ登録"
+                  transitionDuration={300}
+                  transitionName="bp3-overlay"
+                  usePortal={true}
+                />
+              </Blueprint3.Dialog>
+            </SignupFormDialog>
           </div>
         </StyledComponent>
       </styled.div>
