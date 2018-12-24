@@ -19,7 +19,7 @@ const LinkContainer = styled.div`
 `;
 
 class Signin extends React.Component {
-  state = { isOpen: false, loading: false };
+  state = { isOpen: false };
 
   componentWillMount() {
     const key = sessionStorage.getItem('willRedirect');
@@ -33,11 +33,6 @@ class Signin extends React.Component {
     const result = await this.props.firebase.auth.getRedirectResult();
     const authUser = result.user;
     if (authUser) {
-      const user = {
-        id: authUser.uid,
-        name: authUser.displayName,
-      };
-      this.props.createUser({ variables: { user } });
       this.props.history.push(ROUTES.Menu);
     }
   };
@@ -50,12 +45,8 @@ class Signin extends React.Component {
   };
 
   signup = async ({ data: { email, pass, name } }) => {
-    const response = await this.props.firebase.doCreateUserWithEmailAndPassword(email, pass);
-    const user = {
-      id: response.user.uid,
-      name,
-    };
-    this.props.createUser({ variables: { user } });
+    sessionStorage.setItem('authUser', JSON.stringify({ name }));
+    await this.props.firebase.doCreateUserWithEmailAndPassword(email, pass);
     this.props.history.push(ROUTES.Menu);
   };
 
@@ -101,7 +92,6 @@ Signin.propTypes = {
   firebase: propTypes.shape({
     doSignInWithEmailAndPassword: propTypes.func.isRequired,
   }).isRequired,
-  createUser: propTypes.func.isRequired,
 };
 
 Signin.defaultProps = {};
