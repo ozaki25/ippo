@@ -207,7 +207,7 @@ exports[`should match snapshot: Signin/nomal 1`] = `
           <div
             className="c0"
           >
-            <BasicAuthForm
+            <SigninForm
               buttonText="ログイン"
               onSubmit={[Function]}
             >
@@ -342,7 +342,7 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                   </button>
                 </Blueprint3.Button>
               </form>
-            </BasicAuthForm>
+            </SigninForm>
             <styled.div>
               <StyledComponent
                 forwardedComponent={
