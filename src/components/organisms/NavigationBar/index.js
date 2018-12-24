@@ -1,20 +1,29 @@
 import React from 'react';
-import { Alignment, Button, Navbar, Text } from '@blueprintjs/core';
+import styled from 'styled-components';
+import { AppBar, IconButton, Toolbar, Typography } from '@material-ui/core';
+import { ExitToApp } from '@material-ui/icons';
 import propTypes from 'prop-types';
-import ROUTES from 'src/constants/routes';
+
+const Title = styled(Typography)`
+  flex-grow: 1;
+`;
 
 const NavigationBar = ({ history, firebase, authUser }) => (
-  <Navbar>
-    <Navbar.Group align={Alignment.LEFT}>
-      <Navbar.Heading>IPPO</Navbar.Heading>
-      <Navbar.Divider />
-    </Navbar.Group>
-    <Navbar.Group align={Alignment.RIGHT}>
-      <Button icon="wrench" minimal onClick={() => history.push(ROUTES.Publish)} />
-      {authUser && <Button icon="log-out" minimal onClick={firebase.doSignOut} />}
-      {authUser && <Text>{authUser.displayName}</Text>}
-    </Navbar.Group>
-  </Navbar>
+  <AppBar position="static" color="default">
+    <Toolbar>
+      <Title variant="h6" color="inherit">
+        IPPO
+      </Title>
+      {authUser && (
+        <>
+          <Typography>{authUser.displayName}</Typography>
+          <IconButton onClick={firebase.doSignOut}>
+            <ExitToApp />
+          </IconButton>
+        </>
+      )}
+    </Toolbar>
+  </AppBar>
 );
 
 NavigationBar.displayName = 'NavigationBar';
