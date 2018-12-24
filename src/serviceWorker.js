@@ -1,3 +1,4 @@
+// 2018/12/24 23:10
 // This optional code is used to register a service worker.
 // register() is not called by default.
 
