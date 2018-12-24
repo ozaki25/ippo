@@ -1,10 +1,14 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
+import { boolean } from '@storybook/addon-knobs';
 import TweetList from '.';
 
 const stories = storiesOf('organisms/TweetList', module);
 
 const props = {
+  loadMore: action('loadMore'),
+  hasMore: boolean('hasMore', false),
   items: [
     {
       id: '1',
