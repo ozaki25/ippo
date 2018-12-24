@@ -1,5 +1,5 @@
 import React from 'react';
-import { Alignment, Button, Navbar } from '@blueprintjs/core';
+import { Alignment, Button, Navbar, Text } from '@blueprintjs/core';
 import propTypes from 'prop-types';
 import ROUTES from 'src/constants/routes';
 
@@ -12,6 +12,7 @@ const NavigationBar = ({ history, firebase, authUser }) => (
     <Navbar.Group align={Alignment.RIGHT}>
       <Button icon="wrench" minimal onClick={() => history.push(ROUTES.Publish)} />
       {authUser && <Button icon="log-out" minimal onClick={firebase.doSignOut} />}
+      {authUser && <Text>{authUser.displayName}</Text>}
     </Navbar.Group>
   </Navbar>
 );
