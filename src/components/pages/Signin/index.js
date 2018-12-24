@@ -6,6 +6,7 @@ import ROUTES from 'src/constants/routes';
 import Container from 'src/components/templates/Container';
 import SigninForm from 'src/components/organisms/SigninForm';
 import SignupFormDialog from 'src/components/organisms/SignupFormDialog';
+import OverlaySpinner from 'src/components/molecules/OverlaySpinner';
 import GoogleButton from 'src/components/atoms/GoogleButton';
 
 const ButtonContainer = styled.div`
@@ -19,7 +20,7 @@ const LinkContainer = styled.div`
 `;
 
 class Signin extends React.Component {
-  state = { isOpen: false };
+  state = { isOpen: false, loading: false };
 
   componentWillMount() {
     const key = sessionStorage.getItem('willRedirect');
@@ -30,11 +31,13 @@ class Signin extends React.Component {
   }
 
   redirectResult = async () => {
+    this.setState({ loading: true });
     const result = await this.props.firebase.auth.getRedirectResult();
     const authUser = result.user;
     if (authUser) {
       this.props.history.push(ROUTES.Menu);
     }
+    this.setState({ loading: false });
   };
 
   toggleDialog = () => this.setState(prevState => ({ isOpen: !prevState.isOpen }));
@@ -78,6 +81,7 @@ class Signin extends React.Component {
           onSubmit={this.signup}
           onClose={this.toggleDialog}
         />
+        <OverlaySpinner loading={this.state.loading} />
       </Container>
     );
   }

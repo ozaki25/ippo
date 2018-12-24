@@ -349,7 +349,7 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-htpNat",
+                      "componentId": "sc-bxivhb",
                       "isStatic": true,
                       "lastClassName": "c1",
                       "rules": Array [
@@ -362,7 +362,7 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                     "displayName": "styled.div",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-htpNat",
+                    "styledComponentId": "sc-bxivhb",
                     "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -383,7 +383,7 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-bwzfXH",
+                            "componentId": "sc-htpNat",
                             "isStatic": true,
                             "lastClassName": "c2",
                             "rules": Array [
@@ -398,7 +398,7 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                           "displayName": "GoogleButton",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-bwzfXH",
+                          "styledComponentId": "sc-htpNat",
                           "target": [Function],
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -548,7 +548,7 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-bxivhb",
+                      "componentId": "sc-ifAKCX",
                       "isStatic": true,
                       "lastClassName": "c3",
                       "rules": Array [
@@ -561,7 +561,7 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                     "displayName": "styled.div",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-bxivhb",
+                    "styledComponentId": "sc-ifAKCX",
                     "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -644,6 +644,23 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                 />
               </Blueprint3.Dialog>
             </SignupFormDialog>
+            <OverlaySpinner
+              loading={false}
+            >
+              <Blueprint3.Overlay
+                autoFocus={true}
+                backdropProps={Object {}}
+                canEscapeKeyClose={true}
+                canOutsideClickClose={true}
+                enforceFocus={true}
+                hasBackdrop={true}
+                isOpen={false}
+                lazy={true}
+                transitionDuration={300}
+                transitionName="bp3-overlay"
+                usePortal={true}
+              />
+            </OverlaySpinner>
           </div>
         </StyledComponent>
       </styled.div>
