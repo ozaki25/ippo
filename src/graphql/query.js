@@ -91,6 +91,15 @@ const createUser = gql`
   }
 `;
 
+const fetchUser = gql`
+  mutation fetchUser($uid: String) {
+    fetchUser(uid: $uid) {
+      uid
+      displayName
+    }
+  }
+`;
+
 export default {
   hello,
   externalEvents,
@@ -101,4 +110,5 @@ export default {
   createEvent,
   createTweet,
   createUser,
+  fetchUser,
 };
