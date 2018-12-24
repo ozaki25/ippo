@@ -1,17 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
-import { Button, Classes, Dialog, Intent } from '@blueprintjs/core';
+import { Button, Intent } from '@blueprintjs/core';
 import ROUTES from 'src/constants/routes';
 import Container from 'src/components/templates/Container';
-import BasicAuthForm from 'src/components/organisms/BasicAuthForm';
+import SigninForm from 'src/components/organisms/SigninForm';
+import SignupFormDialog from 'src/components/organisms/SignupFormDialog';
+import OverlaySpinner from 'src/components/molecules/OverlaySpinner';
 import GoogleButton from 'src/components/atoms/GoogleButton';
-
-const styles = {
-  dialog: {
-    margin: '0 15px',
-  },
-};
 
 const ButtonContainer = styled.div`
   margin-top: 10px;
@@ -24,12 +20,25 @@ const LinkContainer = styled.div`
 `;
 
 class Signin extends React.Component {
-  state = { isOpen: false };
+  state = { isOpen: false, loading: false };
 
-  async componentDidMount() {
-    const result = await this.props.firebase.auth.getRedirectResult();
-    if (result.user) this.props.history.push(ROUTES.Menu);
+  componentWillMount() {
+    const key = sessionStorage.getItem('willRedirect');
+    if (key) {
+      sessionStorage.removeItem('willRedirect');
+      this.redirectResult();
+    }
   }
+
+  redirectResult = async () => {
+    this.setState({ loading: true });
+    const result = await this.props.firebase.auth.getRedirectResult();
+    const authUser = result.user;
+    if (authUser) {
+      this.props.history.push(ROUTES.Menu);
+    }
+    this.setState({ loading: false });
+  };
 
   toggleDialog = () => this.setState(prevState => ({ isOpen: !prevState.isOpen }));
 
@@ -38,13 +47,19 @@ class Signin extends React.Component {
     this.props.history.push(ROUTES.Menu);
   };
 
-  signup = async ({ data: { email, pass } }) => {
+  signup = async ({ data: { email, pass, name } }) => {
+    sessionStorage.setItem('authUser', JSON.stringify({ name }));
     await this.props.firebase.doCreateUserWithEmailAndPassword(email, pass);
     this.props.history.push(ROUTES.Menu);
   };
 
   signinWithGoogle = async () => {
-    await this.props.firebase.doSignInWithGoogle().catch(e => console.log(e));
+    try {
+      sessionStorage.setItem('willRedirect', 'true');
+      this.props.firebase.doSignInWithGoogle();
+    } catch (e) {
+      console.log(e);
+    }
   };
 
   onChange = event => this.setState({ [event.target.name]: event.target.value });
@@ -52,7 +67,7 @@ class Signin extends React.Component {
   render() {
     return (
       <Container>
-        <BasicAuthForm onSubmit={this.signin} buttonText="ログイン" />
+        <SigninForm onSubmit={this.signin} />
         <ButtonContainer>
           <GoogleButton onClick={this.signinWithGoogle} />
         </ButtonContainer>
@@ -61,17 +76,12 @@ class Signin extends React.Component {
             新規登録
           </Button>
         </LinkContainer>
-        <Dialog
-          title="ユーザ登録"
+        <SignupFormDialog
           isOpen={this.state.isOpen}
+          onSubmit={this.signup}
           onClose={this.toggleDialog}
-          style={styles.dialog}
-          isCloseButtonShown
-        >
-          <div className={Classes.DIALOG_BODY}>
-            <BasicAuthForm buttonText="登録" onSubmit={this.signup} />
-          </div>
-        </Dialog>
+        />
+        <OverlaySpinner loading={this.state.loading} />
       </Container>
     );
   }

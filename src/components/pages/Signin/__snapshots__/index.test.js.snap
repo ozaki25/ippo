@@ -207,8 +207,7 @@ exports[`should match snapshot: Signin/nomal 1`] = `
           <div
             className="c0"
           >
-            <BasicAuthForm
-              buttonText="ログイン"
+            <SigninForm
               onSubmit={[Function]}
             >
               <form>
@@ -342,7 +341,7 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                   </button>
                 </Blueprint3.Button>
               </form>
-            </BasicAuthForm>
+            </SigninForm>
             <styled.div>
               <StyledComponent
                 forwardedComponent={
@@ -350,7 +349,7 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-htpNat",
+                      "componentId": "sc-bxivhb",
                       "isStatic": true,
                       "lastClassName": "c1",
                       "rules": Array [
@@ -363,7 +362,7 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                     "displayName": "styled.div",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-htpNat",
+                    "styledComponentId": "sc-bxivhb",
                     "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -384,7 +383,7 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-bwzfXH",
+                            "componentId": "sc-htpNat",
                             "isStatic": true,
                             "lastClassName": "c2",
                             "rules": Array [
@@ -399,7 +398,7 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                           "displayName": "GoogleButton",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-bwzfXH",
+                          "styledComponentId": "sc-htpNat",
                           "target": [Function],
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -549,7 +548,7 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-bxivhb",
+                      "componentId": "sc-ifAKCX",
                       "isStatic": true,
                       "lastClassName": "c3",
                       "rules": Array [
@@ -562,7 +561,7 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                     "displayName": "styled.div",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-bxivhb",
+                    "styledComponentId": "sc-ifAKCX",
                     "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -604,29 +603,15 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                 </div>
               </StyledComponent>
             </styled.div>
-            <Blueprint3.Dialog
-              canOutsideClickClose={true}
-              isCloseButtonShown={true}
+            <SignupFormDialog
               isOpen={false}
               onClose={[Function]}
-              style={
-                Object {
-                  "margin": "0 15px",
-                }
-              }
-              title="ユーザ登録"
+              onSubmit={[Function]}
             >
-              <Blueprint3.Overlay
-                autoFocus={true}
-                backdropProps={Object {}}
-                canEscapeKeyClose={true}
+              <Blueprint3.Dialog
                 canOutsideClickClose={true}
-                className="bp3-overlay-scroll-container"
-                enforceFocus={true}
-                hasBackdrop={true}
                 isCloseButtonShown={true}
                 isOpen={false}
-                lazy={true}
                 onClose={[Function]}
                 style={
                   Object {
@@ -634,11 +619,48 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                   }
                 }
                 title="ユーザ登録"
+              >
+                <Blueprint3.Overlay
+                  autoFocus={true}
+                  backdropProps={Object {}}
+                  canEscapeKeyClose={true}
+                  canOutsideClickClose={true}
+                  className="bp3-overlay-scroll-container"
+                  enforceFocus={true}
+                  hasBackdrop={true}
+                  isCloseButtonShown={true}
+                  isOpen={false}
+                  lazy={true}
+                  onClose={[Function]}
+                  style={
+                    Object {
+                      "margin": "0 15px",
+                    }
+                  }
+                  title="ユーザ登録"
+                  transitionDuration={300}
+                  transitionName="bp3-overlay"
+                  usePortal={true}
+                />
+              </Blueprint3.Dialog>
+            </SignupFormDialog>
+            <OverlaySpinner
+              loading={false}
+            >
+              <Blueprint3.Overlay
+                autoFocus={true}
+                backdropProps={Object {}}
+                canEscapeKeyClose={true}
+                canOutsideClickClose={true}
+                enforceFocus={true}
+                hasBackdrop={true}
+                isOpen={false}
+                lazy={true}
                 transitionDuration={300}
                 transitionName="bp3-overlay"
                 usePortal={true}
               />
-            </Blueprint3.Dialog>
+            </OverlaySpinner>
           </div>
         </StyledComponent>
       </styled.div>

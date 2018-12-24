@@ -83,6 +83,23 @@ const createTweet = gql`
   }
 `;
 
+const createUser = gql`
+  mutation createUser($user: inputUser) {
+    createUser(user: $user) {
+      result
+    }
+  }
+`;
+
+const fetchUser = gql`
+  mutation fetchUser($uid: String) {
+    fetchUser(uid: $uid) {
+      uid
+      displayName
+    }
+  }
+`;
+
 export default {
   hello,
   externalEvents,
@@ -92,4 +109,6 @@ export default {
   publishNotification,
   createEvent,
   createTweet,
+  createUser,
+  fetchUser,
 };

@@ -2,23 +2,31 @@ import React from 'react';
 import propTypes from 'prop-types';
 import { Button, FormGroup, InputGroup } from '@blueprintjs/core';
 
-class BasicAuthForm extends React.Component {
-  state = { email: '', pass: '' };
+class SignupForm extends React.Component {
+  state = { email: '', pass: '', name: '' };
 
   onClick = event => {
     event.preventDefault();
-    const { email, pass } = this.state;
-    this.props.onSubmit({ data: { email, pass } });
+    const { email, pass, name } = this.state;
+    this.props.onSubmit({ data: { email, pass, name } });
   };
 
   onChange = event => this.setState({ [event.target.name]: event.target.value });
 
   render() {
-    const { email, pass } = this.state;
-    const { buttonText } = this.props;
-    const invalid = email.trim() === '' || pass.trim() === '';
+    const { email, pass, name } = this.state;
+    const invalid = email.trim() === '' || pass.trim() === '' || name.trim() === '';
     return (
       <form>
+        <FormGroup label="名前" labelFor="name">
+          <InputGroup
+            id="name"
+            name="name"
+            value={this.state.name}
+            onChange={this.onChange}
+            large
+          />
+        </FormGroup>
         <FormGroup label="メールアドレス" labelFor="email">
           <InputGroup
             id="email"
@@ -38,24 +46,16 @@ class BasicAuthForm extends React.Component {
             large
           />
         </FormGroup>
-        <Button
-          onClick={this.onClick}
-          text={buttonText}
-          type="submit"
-          disabled={invalid}
-          fill
-          large
-        />
+        <Button onClick={this.onClick} text="登録" type="submit" disabled={invalid} fill large />
       </form>
     );
   }
 }
 
-BasicAuthForm.displayName = 'BasicAuthForm';
+SignupForm.displayName = 'SignupForm';
 
-BasicAuthForm.propTypes = {
+SignupForm.propTypes = {
   onSubmit: propTypes.func.isRequired,
-  buttonText: propTypes.string.isRequired,
 };
 
-export default BasicAuthForm;
+export default SignupForm;
