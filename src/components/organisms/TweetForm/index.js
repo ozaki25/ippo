@@ -28,11 +28,12 @@ class TweetForm extends React.Component {
   onClick = async () => {
     if (!this.invalid()) {
       const { text } = this.state;
-      const { hashtag, createTweet, onFinished } = this.props;
+      const { hashtag, createTweet, onFinished, authUser } = this.props;
       const tweet = {
         text,
         hashtag,
-        name: 'ozaki25', // TODO
+        name: authUser.displayName,
+        uid: authUser.uid,
         time: new Date().toString(),
       };
       const result = await createTweet({
@@ -76,6 +77,10 @@ TweetForm.propTypes = {
   createTweet: propTypes.func.isRequired,
   hashtag: propTypes.string.isRequired,
   onFinished: propTypes.func.isRequired,
+  authUser: propTypes.shape({
+    uid: propTypes.string.isRequired,
+    displayName: propTypes.string.isRequired,
+  }).isRequired,
 };
 
 TweetForm.defaultProps = {};
