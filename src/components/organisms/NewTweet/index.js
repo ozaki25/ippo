@@ -9,7 +9,7 @@ const styles = {
   },
 };
 
-const NewTweet = ({ createTweet, isOpen, onClose, hashtag, refetch }) => {
+const NewTweet = ({ createTweet, isOpen, onClose, hashtag, refetch, authUser }) => {
   const onFinished = () => {
     refetch();
     onClose();
@@ -23,7 +23,12 @@ const NewTweet = ({ createTweet, isOpen, onClose, hashtag, refetch }) => {
       isCloseButtonShown
     >
       <div className={Classes.DIALOG_BODY}>
-        <TweetForm createTweet={createTweet} hashtag={hashtag} onFinished={onFinished} />
+        <TweetForm
+          createTweet={createTweet}
+          hashtag={hashtag}
+          onFinished={onFinished}
+          authUser={authUser}
+        />
       </div>
     </Dialog>
   );
@@ -37,6 +42,10 @@ NewTweet.propTypes = {
   onClose: propTypes.func,
   hashtag: propTypes.string.isRequired,
   refetch: propTypes.func.isRequired,
+  authUser: propTypes.shape({
+    uid: propTypes.string.isRequired,
+    displayName: propTypes.string.isRequired,
+  }).isRequired,
 };
 
 NewTweet.defaultProps = {

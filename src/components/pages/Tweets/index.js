@@ -16,9 +16,10 @@ class Tweets extends React.Component {
   render() {
     const {
       data: { tweets = [], loading, variables, refetch },
+      authUser,
     } = this.props;
     return (
-      <Container noPadding>
+      <Container noPadding authUser={authUser}>
         {loading ? (
           <Spinner />
         ) : (
