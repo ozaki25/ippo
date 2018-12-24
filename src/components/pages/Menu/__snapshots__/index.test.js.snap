@@ -5,12 +5,21 @@ exports[`should match snapshot: Menu/nomal 1`] = `
   min-height: 130px;
 }
 
+.c4 {
+  min-height: inherit;
+}
+
 .c1 {
   margin: 8px 0;
 }
 
 .c0 {
   padding: 10px 15px;
+}
+
+.c3 {
+  margin: 8px 0;
+  text-align: center;
 }
 
 <MockRouter
@@ -628,94 +637,100 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                               <EventCard
                                 catchMessage="説明です"
                                 datetime="2018/12/01 09:30 〜"
-                                eventUrl="https://connpass.com/"
+                                eventUrl="/tweets?hashtag=undefined"
                                 expand={true}
+                                history={null}
                                 interactive={true}
                                 place="晴海"
                                 title="タイトル0"
                               >
-                                <Styled(Blueprint3.Card)
-                                  elevation={2}
-                                  expand={1}
+                                <CustomCard
+                                  expand={true}
+                                  history={null}
                                   interactive={true}
-                                  onClick={[Function]}
+                                  url="/tweets?hashtag=undefined"
                                 >
-                                  <StyledComponent
+                                  <Styled(Blueprint3.Card)
                                     elevation={2}
                                     expand={1}
-                                    forwardedComponent={
-                                      Object {
-                                        "$$typeof": Symbol(react.forward_ref),
-                                        "attrs": Array [],
-                                        "componentStyle": ComponentStyle {
-                                          "componentId": "sc-bdVaJa",
-                                          "isStatic": false,
-                                          "lastClassName": "c2",
-                                          "rules": Array [
-                                            "
-  min-height: ",
-                                            [Function],
-                                            ";
-",
-                                          ],
-                                        },
-                                        "displayName": "Styled(Blueprint3.Card)",
-                                        "foldedComponentIds": Array [],
-                                        "render": [Function],
-                                        "styledComponentId": "sc-bdVaJa",
-                                        "target": [Function],
-                                        "toString": [Function],
-                                        "warnTooManyClasses": [Function],
-                                        "withComponent": [Function],
-                                        Symbol(Symbol.hasInstance): [Function],
-                                      }
-                                    }
-                                    forwardedRef={null}
-                                    interactive={true}
                                     onClick={[Function]}
                                   >
-                                    <Blueprint3.Card
-                                      className="c2"
+                                    <StyledComponent
                                       elevation={2}
                                       expand={1}
-                                      interactive={true}
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-bdVaJa",
+                                            "isStatic": false,
+                                            "lastClassName": "c4",
+                                            "rules": Array [
+                                              "
+  min-height: ",
+                                              [Function],
+                                              ";
+",
+                                            ],
+                                          },
+                                          "displayName": "Styled(Blueprint3.Card)",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-bdVaJa",
+                                          "target": [Function],
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                          Symbol(Symbol.hasInstance): [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
                                       onClick={[Function]}
                                     >
-                                      <div
-                                        className="bp3-card bp3-interactive bp3-elevation-2 c2"
+                                      <Blueprint3.Card
+                                        className="c2"
+                                        elevation={2}
                                         expand={1}
+                                        interactive={false}
                                         onClick={[Function]}
                                       >
-                                        <h3
-                                          className="bp3-heading"
+                                        <div
+                                          className="bp3-card bp3-elevation-2 c2"
+                                          expand={1}
+                                          onClick={[Function]}
                                         >
-                                          タイトル0
-                                        </h3>
-                                        <Blueprint3.Text>
-                                          <div
-                                            className=""
+                                          <h3
+                                            className="bp3-heading"
                                           >
-                                            概要：説明です
-                                          </div>
-                                        </Blueprint3.Text>
-                                        <Blueprint3.Text>
-                                          <div
-                                            className=""
-                                          >
-                                            場所：晴海
-                                          </div>
-                                        </Blueprint3.Text>
-                                        <Blueprint3.Text>
-                                          <div
-                                            className=""
-                                          >
-                                            日時：2018/12/01 09:30 〜
-                                          </div>
-                                        </Blueprint3.Text>
-                                      </div>
-                                    </Blueprint3.Card>
-                                  </StyledComponent>
-                                </Styled(Blueprint3.Card)>
+                                            タイトル0
+                                          </h3>
+                                          <Blueprint3.Text>
+                                            <div
+                                              className=""
+                                            >
+                                              概要：説明です
+                                            </div>
+                                          </Blueprint3.Text>
+                                          <Blueprint3.Text>
+                                            <div
+                                              className=""
+                                            >
+                                              場所：晴海
+                                            </div>
+                                          </Blueprint3.Text>
+                                          <Blueprint3.Text>
+                                            <div
+                                              className=""
+                                            >
+                                              日時：2018/12/01 09:30 〜
+                                            </div>
+                                          </Blueprint3.Text>
+                                        </div>
+                                      </Blueprint3.Card>
+                                    </StyledComponent>
+                                  </Styled(Blueprint3.Card)>
+                                </CustomCard>
                               </EventCard>
                             </div>
                           </StyledComponent>
@@ -858,92 +873,98 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                 datetime="2018/12/01 09:30 〜"
                                 eventUrl="https://connpass.com/"
                                 expand={true}
+                                history={null}
                                 interactive={true}
                                 place="晴海"
                                 title="タイトル0"
                               >
-                                <Styled(Blueprint3.Card)
-                                  elevation={2}
-                                  expand={1}
+                                <CustomCard
+                                  expand={true}
+                                  history={null}
                                   interactive={true}
-                                  onClick={[Function]}
+                                  url="https://connpass.com/"
                                 >
-                                  <StyledComponent
+                                  <Styled(Blueprint3.Card)
                                     elevation={2}
                                     expand={1}
-                                    forwardedComponent={
-                                      Object {
-                                        "$$typeof": Symbol(react.forward_ref),
-                                        "attrs": Array [],
-                                        "componentStyle": ComponentStyle {
-                                          "componentId": "sc-bdVaJa",
-                                          "isStatic": false,
-                                          "lastClassName": "c2",
-                                          "rules": Array [
-                                            "
-  min-height: ",
-                                            [Function],
-                                            ";
-",
-                                          ],
-                                        },
-                                        "displayName": "Styled(Blueprint3.Card)",
-                                        "foldedComponentIds": Array [],
-                                        "render": [Function],
-                                        "styledComponentId": "sc-bdVaJa",
-                                        "target": [Function],
-                                        "toString": [Function],
-                                        "warnTooManyClasses": [Function],
-                                        "withComponent": [Function],
-                                        Symbol(Symbol.hasInstance): [Function],
-                                      }
-                                    }
-                                    forwardedRef={null}
-                                    interactive={true}
                                     onClick={[Function]}
                                   >
-                                    <Blueprint3.Card
-                                      className="c2"
+                                    <StyledComponent
                                       elevation={2}
                                       expand={1}
-                                      interactive={true}
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-bdVaJa",
+                                            "isStatic": false,
+                                            "lastClassName": "c4",
+                                            "rules": Array [
+                                              "
+  min-height: ",
+                                              [Function],
+                                              ";
+",
+                                            ],
+                                          },
+                                          "displayName": "Styled(Blueprint3.Card)",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-bdVaJa",
+                                          "target": [Function],
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                          Symbol(Symbol.hasInstance): [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
                                       onClick={[Function]}
                                     >
-                                      <div
-                                        className="bp3-card bp3-interactive bp3-elevation-2 c2"
+                                      <Blueprint3.Card
+                                        className="c2"
+                                        elevation={2}
                                         expand={1}
+                                        interactive={false}
                                         onClick={[Function]}
                                       >
-                                        <h3
-                                          className="bp3-heading"
+                                        <div
+                                          className="bp3-card bp3-elevation-2 c2"
+                                          expand={1}
+                                          onClick={[Function]}
                                         >
-                                          タイトル0
-                                        </h3>
-                                        <Blueprint3.Text>
-                                          <div
-                                            className=""
+                                          <h3
+                                            className="bp3-heading"
                                           >
-                                            概要：説明です
-                                          </div>
-                                        </Blueprint3.Text>
-                                        <Blueprint3.Text>
-                                          <div
-                                            className=""
-                                          >
-                                            場所：晴海
-                                          </div>
-                                        </Blueprint3.Text>
-                                        <Blueprint3.Text>
-                                          <div
-                                            className=""
-                                          >
-                                            日時：2018/12/01 09:30 〜
-                                          </div>
-                                        </Blueprint3.Text>
-                                      </div>
-                                    </Blueprint3.Card>
-                                  </StyledComponent>
-                                </Styled(Blueprint3.Card)>
+                                            タイトル0
+                                          </h3>
+                                          <Blueprint3.Text>
+                                            <div
+                                              className=""
+                                            >
+                                              概要：説明です
+                                            </div>
+                                          </Blueprint3.Text>
+                                          <Blueprint3.Text>
+                                            <div
+                                              className=""
+                                            >
+                                              場所：晴海
+                                            </div>
+                                          </Blueprint3.Text>
+                                          <Blueprint3.Text>
+                                            <div
+                                              className=""
+                                            >
+                                              日時：2018/12/01 09:30 〜
+                                            </div>
+                                          </Blueprint3.Text>
+                                        </div>
+                                      </Blueprint3.Card>
+                                    </StyledComponent>
+                                  </Styled(Blueprint3.Card)>
+                                </CustomCard>
                               </EventCard>
                             </div>
                           </StyledComponent>
@@ -1048,13 +1069,133 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                           }
                         }
                       >
-                        <Blueprint3.Text>
-                          <div
-                            className=""
+                        <styled.div>
+                          <StyledComponent
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "sc-bxivhb",
+                                  "isStatic": true,
+                                  "lastClassName": "c3",
+                                  "rules": Array [
+                                    "
+  margin: 8px 0;
+  text-align: center;
+",
+                                  ],
+                                },
+                                "displayName": "styled.div",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "sc-bxivhb",
+                                "target": "div",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
                           >
-                            該当するイベントがありません
-                          </div>
-                        </Blueprint3.Text>
+                            <div
+                              className="c3"
+                            >
+                              <CustomCard
+                                expand={false}
+                                history={null}
+                                url="/events/new"
+                              >
+                                <Styled(Blueprint3.Card)
+                                  elevation={2}
+                                  expand={0}
+                                  onClick={[Function]}
+                                >
+                                  <StyledComponent
+                                    elevation={2}
+                                    expand={0}
+                                    forwardedComponent={
+                                      Object {
+                                        "$$typeof": Symbol(react.forward_ref),
+                                        "attrs": Array [],
+                                        "componentStyle": ComponentStyle {
+                                          "componentId": "sc-bdVaJa",
+                                          "isStatic": false,
+                                          "lastClassName": "c4",
+                                          "rules": Array [
+                                            "
+  min-height: ",
+                                            [Function],
+                                            ";
+",
+                                          ],
+                                        },
+                                        "displayName": "Styled(Blueprint3.Card)",
+                                        "foldedComponentIds": Array [],
+                                        "render": [Function],
+                                        "styledComponentId": "sc-bdVaJa",
+                                        "target": [Function],
+                                        "toString": [Function],
+                                        "warnTooManyClasses": [Function],
+                                        "withComponent": [Function],
+                                        Symbol(Symbol.hasInstance): [Function],
+                                      }
+                                    }
+                                    forwardedRef={null}
+                                    onClick={[Function]}
+                                  >
+                                    <Blueprint3.Card
+                                      className="c4"
+                                      elevation={2}
+                                      expand={0}
+                                      interactive={false}
+                                      onClick={[Function]}
+                                    >
+                                      <div
+                                        className="bp3-card bp3-elevation-2 c4"
+                                        expand={0}
+                                        onClick={[Function]}
+                                      >
+                                        <Component>
+                                          <h3
+                                            className="bp3-heading"
+                                          >
+                                            <Blueprint3.Icon
+                                              icon="plus"
+                                              iconSize={28}
+                                            >
+                                              <span
+                                                className="bp3-icon bp3-icon-plus"
+                                                icon="plus"
+                                              >
+                                                <svg
+                                                  data-icon="plus"
+                                                  height={28}
+                                                  viewBox="0 0 20 20"
+                                                  width={28}
+                                                >
+                                                  <desc>
+                                                    plus
+                                                  </desc>
+                                                  <path
+                                                    d="M16 9h-5V4c0-.55-.45-1-1-1s-1 .45-1 1v5H4c-.55 0-1 .45-1 1s.45 1 1 1h5v5c0 .55.45 1 1 1s1-.45 1-1v-5h5c.55 0 1-.45 1-1s-.45-1-1-1z"
+                                                    fillRule="evenodd"
+                                                    key="0"
+                                                  />
+                                                </svg>
+                                              </span>
+                                            </Blueprint3.Icon>
+                                             イベント作成
+                                          </h3>
+                                        </Component>
+                                      </div>
+                                    </Blueprint3.Card>
+                                  </StyledComponent>
+                                </Styled(Blueprint3.Card)>
+                              </CustomCard>
+                            </div>
+                          </StyledComponent>
+                        </styled.div>
                       </div>
                     </div>
                   </div>

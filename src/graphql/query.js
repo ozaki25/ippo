@@ -32,6 +32,7 @@ const internalEvents = gql`
       title
       catchMessage
       place
+      hashtag
       startedAt
       endedAt
     }
@@ -74,6 +75,14 @@ const createEvent = gql`
   }
 `;
 
+const createTweet = gql`
+  mutation createTweet($tweet: inputTweet) {
+    createTweet(tweet: $tweet) {
+      result
+    }
+  }
+`;
+
 export default {
   hello,
   externalEvents,
@@ -82,4 +91,5 @@ export default {
   registerNotification,
   publishNotification,
   createEvent,
+  createTweet,
 };

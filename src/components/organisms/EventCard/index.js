@@ -1,26 +1,24 @@
 import React from 'react';
-import styled from 'styled-components';
 import propTypes from 'prop-types';
-import { Card, Elevation, Text } from '@blueprintjs/core';
+import { Text } from '@blueprintjs/core';
+import CustomCard from 'src/components/molecules/CustomCard';
 
-const onClick = url => window.open(url, '_blank');
-
-const StyledCard = styled(Card)`
-  min-height: ${({ expand }) => (expand ? '130px' : 'inherit')};
-`;
-
-const EventCard = ({ title, eventUrl, catchMessage, place, datetime, interactive, expand }) => (
-  <StyledCard
-    expand={expand ? 1 : 0}
-    interactive={interactive}
-    onClick={() => onClick(eventUrl)}
-    elevation={Elevation.TWO}
-  >
+const EventCard = ({
+  title,
+  eventUrl,
+  catchMessage,
+  place,
+  datetime,
+  interactive,
+  expand,
+  history,
+}) => (
+  <CustomCard expand={expand} interactive={interactive} url={eventUrl} history={history}>
     <h3 className="bp3-heading">{title}</h3>
     {catchMessage && <Text>{`概要：${catchMessage}`}</Text>}
     {place && <Text>{`場所：${place}`}</Text>}
     {datetime && <Text>{`日時：${datetime}`}</Text>}
-  </StyledCard>
+  </CustomCard>
 );
 
 EventCard.displayName = 'EventCard';
@@ -33,6 +31,9 @@ EventCard.propTypes = {
   datetime: propTypes.string,
   interactive: propTypes.bool,
   expand: propTypes.bool,
+  history: propTypes.shape({
+    push: propTypes.func,
+  }),
 };
 
 EventCard.defaultProps = {
@@ -41,6 +42,7 @@ EventCard.defaultProps = {
   datetime: '',
   interactive: true,
   expand: false,
+  history: null,
 };
 
 export default EventCard;

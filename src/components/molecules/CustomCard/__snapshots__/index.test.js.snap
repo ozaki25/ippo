@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot: CustomCard/expand 1`] = `
+.c0 {
+  min-height: 130px;
+}
+
+<MockRouter
+  createHref={[Function]}
+  location=""
+  params={Object {}}
+  path=""
+  push={[Function]}
+  replace={[Function]}
+  url=""
+>
+  <CustomCard
+    expand={true}
+    history={
+      Object {
+        "push": [MockFunction],
+      }
+    }
+    url="https://connpass.com/"
+  >
+    <Styled(Blueprint3.Card)
+      elevation={2}
+      expand={1}
+      onClick={[Function]}
+    >
+      <StyledComponent
+        elevation={2}
+        expand={1}
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bdVaJa",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
+  min-height: ",
+                [Function],
+                ";
+",
+              ],
+            },
+            "displayName": "Styled(Blueprint3.Card)",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bdVaJa",
+            "target": [Function],
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+            Symbol(Symbol.hasInstance): [Function],
+          }
+        }
+        forwardedRef={null}
+        onClick={[Function]}
+      >
+        <Blueprint3.Card
+          className="c0"
+          elevation={2}
+          expand={1}
+          interactive={false}
+          onClick={[Function]}
+        >
+          <div
+            className="bp3-card bp3-elevation-2 c0"
+            expand={1}
+            onClick={[Function]}
+          >
+            <h2>
+              Hello
+            </h2>
+          </div>
+        </Blueprint3.Card>
+      </StyledComponent>
+    </Styled(Blueprint3.Card)>
+  </CustomCard>
+</MockRouter>
+`;
+
+exports[`should match snapshot: CustomCard/nomal 1`] = `
+.c0 {
+  min-height: inherit;
+}
+
+<MockRouter
+  createHref={[Function]}
+  location=""
+  params={Object {}}
+  path=""
+  push={[Function]}
+  replace={[Function]}
+  url=""
+>
+  <CustomCard
+    expand={false}
+    history={
+      Object {
+        "push": [MockFunction],
+      }
+    }
+    url="https://connpass.com/"
+  >
+    <Styled(Blueprint3.Card)
+      elevation={2}
+      expand={0}
+      onClick={[Function]}
+    >
+      <StyledComponent
+        elevation={2}
+        expand={0}
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bdVaJa",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
+  min-height: ",
+                [Function],
+                ";
+",
+              ],
+            },
+            "displayName": "Styled(Blueprint3.Card)",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bdVaJa",
+            "target": [Function],
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+            Symbol(Symbol.hasInstance): [Function],
+          }
+        }
+        forwardedRef={null}
+        onClick={[Function]}
+      >
+        <Blueprint3.Card
+          className="c0"
+          elevation={2}
+          expand={0}
+          interactive={false}
+          onClick={[Function]}
+        >
+          <div
+            className="bp3-card bp3-elevation-2 c0"
+            expand={0}
+            onClick={[Function]}
+          >
+            <h2>
+              Hello
+            </h2>
+          </div>
+        </Blueprint3.Card>
+      </StyledComponent>
+    </Styled(Blueprint3.Card)>
+  </CustomCard>
+</MockRouter>
+`;

@@ -10,7 +10,7 @@ const EventCardContainer = styled.div`
   margin: 8px 0;
 `;
 
-const InternalEvents = ({ data: { loading, internalEvents }, authUser }) => {
+const InternalEvents = ({ data: { loading, internalEvents }, authUser, history }) => {
   return (
     <Container authUser={authUser}>
       {loading ? (
@@ -26,6 +26,7 @@ const InternalEvents = ({ data: { loading, internalEvents }, authUser }) => {
                 place={event.place}
                 datetime={event.startedAt && `${dateFormat.datetimeJa(event.startedAt)}〜`}
                 interactive
+                history={history}
               />
             </EventCardContainer>
           ))}
