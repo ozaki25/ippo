@@ -10,7 +10,7 @@ const NavigationBar = ({ history, firebase, authUser }) => (
       <Navbar.Divider />
     </Navbar.Group>
     <Navbar.Group align={Alignment.RIGHT}>
-      <Button icon="wrench" minimal onClick={() => history.push(ROUTES.Publish)} />
+      <Button icon="notifications" minimal onClick={() => history.push(ROUTES.Notification)} />
       {authUser && <Button icon="log-out" minimal onClick={firebase.doSignOut} />}
       {authUser && <Text>{authUser.displayName}</Text>}
     </Navbar.Group>

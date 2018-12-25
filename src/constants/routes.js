@@ -6,7 +6,7 @@ const InternalEvents = '/events/internal';
 const ExternalEvents = '/events/external';
 const OrganizedEvents = '/events/organized';
 const NewEvent = '/events/new';
-const Publish = '/notifications/publish';
+const Notification = '/notifications';
 const Tweets = '/tweets';
 
 export default {
@@ -19,5 +19,5 @@ export default {
   OrganizedEvents,
   NewEvent,
   Tweets,
-  Publish,
+  Notification,
 };
