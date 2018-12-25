@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Menu from 'src/hoc/WithMenu';
 import Signin from 'src/hoc/WithSignin';
-import Publish from 'src/hoc/WithPublish';
+import Notification from 'src/hoc/WithNotification';
 import InternalEvents from 'src/hoc/WithInternalEvents';
 import ExternalEvents from 'src/hoc/WithExternalEvents';
 import NewEvent from 'src/hoc/WithNewEvent';
@@ -25,7 +25,7 @@ const Router = () => (
       <Route path={ROUTES.OrganizedEvents} exact component={OrganizedEvents} />
       <Route path={ROUTES.NewEvent} exact component={NewEvent} />
       <Route path={ROUTES.Tweets} exact component={Tweets} />
-      <Route path={ROUTES.Publish} exact component={Publish} />
+      <Route path={ROUTES.Notification} exact component={Notification} />
       <Route path="/" component={() => <p>Not Found</p>} />
     </Switch>
   </BrowserRouter>
