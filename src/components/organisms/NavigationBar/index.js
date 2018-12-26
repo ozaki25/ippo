@@ -9,7 +9,7 @@ const Title = styled(Typography)`
 `;
 
 const NavigationBar = ({ history, firebase, authUser }) => (
-  <AppBar position="static" color="default">
+  <AppBar position="static" color="primary">
     <Toolbar>
       <Title variant="h6" color="inherit">
         IPPO
