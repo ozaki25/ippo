@@ -12,17 +12,17 @@ const NavigationBar = ({ title, history, firebase, authUser, back }) => (
   <AppBar position="static" color="primary">
     <Toolbar disableGutters={back}>
       {back && (
-        <IconButton color="primary" onClick={history.goBack}>
-          <ArrowBackIosOutlined color="action" />
+        <IconButton color="inherit" onClick={history.goBack}>
+          <ArrowBackIosOutlined />
         </IconButton>
       )}
-      <Title variant="h6" color="inherit">
+      <Title variant="h5" color="inherit">
         {title}
       </Title>
       {authUser && (
         <>
-          <Typography>{authUser.displayName}</Typography>
-          <IconButton onClick={firebase.doSignOut}>
+          <Typography color="inherit">{authUser.displayName}</Typography>
+          <IconButton color="inherit" onClick={firebase.doSignOut}>
             <ExitToApp />
           </IconButton>
         </>
