@@ -3,6 +3,10 @@ import { snapshot } from 'test/helpers';
 import NavigationBar from '.';
 
 const props = {
+  title: 'タイトル',
+  history: {
+    goBack: jest.fn(),
+  },
   firebase: {
     doSignOut: jest.fn(),
   },
@@ -16,3 +20,7 @@ const authUser = {
 snapshot('NavigationBar/nologin', <NavigationBar {...props} />);
 
 snapshot('NavigationBar/login', <NavigationBar {...props} authUser={authUser} />);
+
+snapshot('NavigationBar/back', <NavigationBar {...props} back />);
+
+snapshot('NavigationBar/all', <NavigationBar {...props} back authUser={authUser} />);
