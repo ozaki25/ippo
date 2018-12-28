@@ -2,5 +2,6 @@
   "compilerOptions": {
     "target": "es2015",
     "baseUrl": "."
-  }
+  },
+  "exclude": ["node_modules"]
 }
