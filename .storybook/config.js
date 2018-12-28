@@ -5,7 +5,9 @@ import StoryRouter from 'storybook-react-router';
 import '@blueprintjs/core/lib/css/blueprint.css';
 import '@blueprintjs/icons/lib/css/blueprint-icons.css';
 import '../src/index.css';
+import Layout from './Layout';
 
+addDecorator(Layout);
 addDecorator(withKnobs);
 addDecorator(withInfo);
 addDecorator(StoryRouter());
