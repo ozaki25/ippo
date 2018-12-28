@@ -9,7 +9,6 @@ const event = i => ({
   catchMessage: 'イベントの説明です',
   place: '東京都千代田区丸の内',
   startedAt: '2018/12/1 19:30',
-  interactive: true,
 });
 
 const props = {
@@ -17,3 +16,5 @@ const props = {
 };
 
 snapshot('EventCardList/nomal', <EventCardList {...props} />);
+
+snapshot('EventCardList/empty', <EventCardList events={[]} />);

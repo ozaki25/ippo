@@ -1,7 +1,7 @@
 import React from 'react';
+import { Typography } from '@material-ui/core';
 import propTypes from 'prop-types';
 import CustomCard from 'src/components/molecules/CustomCard';
-import { Typography } from '@material-ui/core';
 
 const EventCard = ({ title, eventUrl, catchMessage, place, datetime, expand, history }) => (
   <CustomCard expand={expand} url={eventUrl} history={history}>

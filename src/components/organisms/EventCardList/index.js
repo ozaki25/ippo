@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
-import { Text } from '@blueprintjs/core';
+import { Typography } from '@material-ui/core';
 import EventCard from 'src/components/organisms/EventCard';
 import dateFormat from 'src/utils/dateFormat';
 
@@ -26,7 +26,7 @@ const EventCardList = ({ events, expand, history }) =>
       </EventCardContainer>
     ))
   ) : (
-    <Text>該当するイベントがありません</Text>
+    <Typography>該当するイベントがありません</Typography>
   );
 EventCardList.displayName = 'EventCardList';
 
@@ -39,7 +39,6 @@ EventCardList.propTypes = {
       catchMessage: propTypes.string,
       place: propTypes.string,
       datetime: propTypes.string,
-      interactive: propTypes.bool,
     }),
   ).isRequired,
   expand: propTypes.bool,
