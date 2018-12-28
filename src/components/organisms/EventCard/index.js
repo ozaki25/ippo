@@ -1,7 +1,8 @@
 import React from 'react';
 import propTypes from 'prop-types';
-import { Text } from '@blueprintjs/core';
-import CustomCard from 'src/components/molecules/CustomCard';
+// import { Text } from '@blueprintjs/core';
+// import CustomCard from 'src/components/molecules/CustomCard';
+import { Card, CardActionArea, CardContent, Typography } from '@material-ui/core';
 
 const EventCard = ({
   title,
@@ -13,12 +14,16 @@ const EventCard = ({
   expand,
   history,
 }) => (
-  <CustomCard expand={expand} interactive={interactive} url={eventUrl} history={history}>
-    <h3 className="bp3-heading">{title}</h3>
-    {catchMessage && <Text>{`概要：${catchMessage}`}</Text>}
-    {place && <Text>{`場所：${place}`}</Text>}
-    {datetime && <Text>{`日時：${datetime}`}</Text>}
-  </CustomCard>
+  <Card expand={expand} interactive={interactive} url={eventUrl} history={history}>
+    <CardActionArea>
+      <CardContent>
+        <h3 className="bp3-heading">{title}</h3>
+        {catchMessage && <Typography>{`概要：${catchMessage}`}</Typography>}
+        {place && <Typography>{`場所：${place}`}</Typography>}
+        {datetime && <Typography>{`日時：${datetime}`}</Typography>}
+      </CardContent>
+    </CardActionArea>
+  </Card>
 );
 
 EventCard.displayName = 'EventCard';
