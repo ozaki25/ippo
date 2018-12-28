@@ -1,18 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
 import { AppBar, IconButton, Toolbar, Typography } from '@material-ui/core';
-import { ExitToApp } from '@material-ui/icons';
+import { ArrowBackIosOutlined, ExitToApp } from '@material-ui/icons';
 import propTypes from 'prop-types';
 
 const Title = styled(Typography)`
   flex-grow: 1;
 `;
 
-const NavigationBar = ({ history, firebase, authUser }) => (
+const NavigationBar = ({ title, history, firebase, authUser, back }) => (
   <AppBar position="static" color="primary">
-    <Toolbar>
+    <Toolbar disableGutters={back}>
+      {back && (
+        <IconButton color="primary" onClick={history.goBack}>
+          <ArrowBackIosOutlined color="action" />
+        </IconButton>
+      )}
       <Title variant="h6" color="inherit">
-        IPPO
+        {title}
       </Title>
       {authUser && (
         <>
@@ -29,6 +34,7 @@ const NavigationBar = ({ history, firebase, authUser }) => (
 NavigationBar.displayName = 'NavigationBar';
 
 NavigationBar.propTypes = {
+  title: propTypes.string,
   history: propTypes.shape({
     push: propTypes.func,
   }),
@@ -36,12 +42,15 @@ NavigationBar.propTypes = {
     doSignOut: propTypes.func,
   }),
   authUser: propTypes.object,
+  back: propTypes.bool,
 };
 
 NavigationBar.defaultProps = {
+  title: '',
   history: null,
   firebase: null,
   authUser: null,
+  back: false,
 };
 
 export default NavigationBar;
