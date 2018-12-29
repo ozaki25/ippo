@@ -5,4 +5,4 @@ import OverlaySpinner from '.';
 
 const stories = storiesOf('molecules/OverlaySpinner', module);
 
-stories.add('通常パターン', () => <OverlaySpinner loading={boolean('loading', true)} />);
+stories.add('通常パターン', () => <OverlaySpinner visible={boolean('visible', true)} />);
