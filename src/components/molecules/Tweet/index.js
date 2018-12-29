@@ -1,11 +1,12 @@
 import React from 'react';
-import { Icon } from '@blueprintjs/core';
+import { IconButton } from '@material-ui/core';
+import { FavoriteBorder, ModeCommentOutlined, RepeatRounded } from '@material-ui/icons';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
 
 const Container = styled.div`
   border-bottom: 1px solid #e6ecf0;
-  padding: 9px 12px;
+  padding: 9px 12px 0;
 `;
 
 const Wrapper = styled.div`
@@ -22,8 +23,6 @@ const IconImage = styled.img`
   width: 48px;
 `;
 
-const TweetHeader = styled.div``;
-
 const TweetTime = styled.small`
   &:before {
     content: '\00b7';
@@ -31,12 +30,9 @@ const TweetTime = styled.small`
 `;
 
 const TweetBody = styled.p`
+  margin: 0;
   white-space: pre-wrap;
   word-wrap: break-word;
-`;
-
-const TweetFooter = styled.div`
-  margin-top: 10px;
 `;
 
 const TweetAction = styled.div`
@@ -44,26 +40,40 @@ const TweetAction = styled.div`
   min-width: 80px;
 `;
 
+const TweetHeader = ({ name, time }) => (
+  <>
+    <strong>{name}</strong>
+    <TweetTime>{time}</TweetTime>
+  </>
+);
+
+const TweetFooter = ({ onClickReply, onClickRetweet, onClickLike }) => (
+  <>
+    <TweetAction>
+      <IconButton onClick={onClickReply}>
+        <ModeCommentOutlined fontSize="small" color="action" />
+      </IconButton>
+    </TweetAction>
+    <TweetAction>
+      <IconButton onClick={onClickRetweet}>
+        <RepeatRounded fontSize="small" color="action" />
+      </IconButton>
+    </TweetAction>
+    <TweetAction>
+      <IconButton onClick={onClickLike}>
+        <FavoriteBorder fontSize="small" color="action" />
+      </IconButton>
+    </TweetAction>
+  </>
+);
+
 const Tweet = ({ name, text, time }) => (
   <Container>
     <Wrapper>
       <IconImage src="/icon.png" />
-      <TweetHeader>
-        <strong>{name}</strong>
-        <TweetTime>{time}</TweetTime>
-      </TweetHeader>
+      <TweetHeader name={name} time={time} />
       <TweetBody>{text}</TweetBody>
-      <TweetFooter>
-        <TweetAction>
-          <Icon icon="comment" />
-        </TweetAction>
-        <TweetAction>
-          <Icon icon="refresh" />
-        </TweetAction>
-        <TweetAction>
-          <Icon icon="heart" />
-        </TweetAction>
-      </TweetFooter>
+      <TweetFooter />
     </Wrapper>
   </Container>
 );
