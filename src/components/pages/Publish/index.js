@@ -8,14 +8,14 @@ const LinkContainer = styled.div`
   margin: 15px 0;
 `;
 
-const Publish = ({ publishNotification }) => {
+const Publish = ({ publishNotification, history, firebase }) => {
   const onClickPublish = async () => {
     const { data } = await publishNotification({ variables: { target: 'all' } });
     alert(data.publishNotification.result);
   };
 
   return (
-    <Container>
+    <Container title="通知" back history={history} firebase={firebase}>
       <H3>プッシュ通知の管理</H3>
       <Text>※ボタンを押すと購読者全員に通知が送信されます。</Text>
       <Button onClick={onClickPublish} text="プッシュ通知を送信する" />

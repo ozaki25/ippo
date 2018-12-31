@@ -8,15 +8,19 @@ const Title = styled(Typography)`
   flex-grow: 1;
 `;
 
+const StyledToolbar = styled(Toolbar)`
+  padding-left: ${({ back }) => (back ? '0' : '16px')};
+`;
+
 const NavigationBar = ({ title, history, firebase, authUser, back }) => (
   <AppBar position="static" color="primary">
-    <Toolbar disableGutters={back}>
+    <StyledToolbar back={back ? 1 : 0} disableGutters>
       {back && (
         <IconButton color="inherit" onClick={history.goBack}>
           <ArrowBackIosOutlined />
         </IconButton>
       )}
-      <Title variant="h5" color="inherit">
+      <Title variant="h6" color="inherit">
         {title}
       </Title>
       {authUser && (
@@ -27,7 +31,7 @@ const NavigationBar = ({ title, history, firebase, authUser, back }) => (
           </IconButton>
         </>
       )}
-    </Toolbar>
+    </StyledToolbar>
   </AppBar>
 );
 

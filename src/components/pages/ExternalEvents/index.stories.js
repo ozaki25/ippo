@@ -26,6 +26,15 @@ const props = ({ loading = false, connpass = null }) => ({
     connpass,
     refetch: action('refetch'),
   },
+  authUser: {
+    uid: '123',
+    displayName: 'テストユーザ',
+  },
+  history: {
+    push: action('push'),
+    goBack: action('goBack'),
+  },
+  firebase: {},
 });
 
 stories.add('通常パターン', () => <ExternalEvents {...props({ connpass })} />);

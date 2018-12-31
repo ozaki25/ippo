@@ -15,8 +15,8 @@ const CardContainer = styled.div`
   text-align: center;
 `;
 
-const Menu = ({ internal, external, authUser, history }) => (
-  <Container authUser={authUser}>
+const Menu = ({ internal, external, authUser, history, firebase }) => (
+  <Container title="IPPO" authUser={authUser} history={history} firebase={firebase}>
     <H3>
       <Link to={ROUTES.EnteredEvents}>参加イベント</Link>
     </H3>
@@ -94,11 +94,17 @@ Menu.propTypes = {
       ),
     }),
   }).isRequired,
-  authUser: propTypes.object,
+  authUser: propTypes.shape({
+    displayName: propTypes.string.isRequired,
+    uid: propTypes.string.isRequired,
+  }).isRequired,
+  history: propTypes.shape({
+    push: propTypes.func.isRequired,
+    goBack: propTypes.func.isRequired,
+  }).isRequired,
+  firebase: propTypes.object.isRequired,
 };
 
-Menu.defaultProps = {
-  authUser: null,
-};
+Menu.defaultProps = {};
 
 export default Menu;

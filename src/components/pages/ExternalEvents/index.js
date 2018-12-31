@@ -18,7 +18,7 @@ const PaginationContainer = styled.div`
   text-align: center;
 `;
 
-const ExternalEvents = ({ data: { loading, connpass, refetch }, authUser }) => {
+const ExternalEvents = ({ data: { loading, connpass, refetch }, authUser, history, firebase }) => {
   const { events, results_available, results_start } = connpass || {};
 
   const { current, total } = pagination.paging(
@@ -28,7 +28,7 @@ const ExternalEvents = ({ data: { loading, connpass, refetch }, authUser }) => {
   );
 
   return (
-    <Container authUser={authUser}>
+    <Container title="社外イベント" back authUser={authUser} history={history} firebase={firebase}>
       {loading ? (
         <Spinner />
       ) : events && events.length ? (
@@ -77,7 +77,15 @@ ExternalEvents.propTypes = {
     }),
     refetch: propTypes.func.isRequired,
   }),
-  authUser: propTypes.object,
+  authUser: propTypes.shape({
+    displayName: propTypes.string.isRequired,
+    uid: propTypes.string.isRequired,
+  }).isRequired,
+  history: propTypes.shape({
+    push: propTypes.func.isRequired,
+    goBack: propTypes.func.isRequired,
+  }).isRequired,
+  firebase: propTypes.object.isRequired,
 };
 
 ExternalEvents.defaultProps = {
@@ -87,7 +95,6 @@ ExternalEvents.defaultProps = {
       events: [],
     },
   },
-  authUser: null,
 };
 
 export default ExternalEvents;

@@ -57,6 +57,7 @@ exports[`should match snapshot: Publish/nomal 1`] = `
           >
             <NavigationBar
               authUser={null}
+              back={false}
               firebase={null}
               history={
                 Object {
@@ -74,9 +75,10 @@ exports[`should match snapshot: Publish/nomal 1`] = `
                   "url": "",
                 }
               }
+              title=""
             >
               <WithStyles(AppBar)
-                color="default"
+                color="primary"
                 position="static"
               >
                 <AppBar
@@ -93,17 +95,17 @@ exports[`should match snapshot: Publish/nomal 1`] = `
                       "root": "MuiAppBar-root-1",
                     }
                   }
-                  color="default"
+                  color="primary"
                   position="static"
                 >
                   <WithStyles(Paper)
-                    className="MuiAppBar-root-1 MuiAppBar-positionStatic-5 MuiAppBar-colorDefault-7"
+                    className="MuiAppBar-root-1 MuiAppBar-positionStatic-5 MuiAppBar-colorPrimary-8"
                     component="header"
                     elevation={4}
                     square={true}
                   >
                     <Paper
-                      className="MuiAppBar-root-1 MuiAppBar-positionStatic-5 MuiAppBar-colorDefault-7"
+                      className="MuiAppBar-root-1 MuiAppBar-positionStatic-5 MuiAppBar-colorPrimary-8"
                       classes={
                         Object {
                           "elevation0": "MuiPaper-elevation0-12",
@@ -140,9 +142,11 @@ exports[`should match snapshot: Publish/nomal 1`] = `
                       square={true}
                     >
                       <header
-                        className="MuiPaper-root-10 MuiPaper-elevation4-16 MuiAppBar-root-1 MuiAppBar-positionStatic-5 MuiAppBar-colorDefault-7"
+                        className="MuiPaper-root-10 MuiPaper-elevation4-16 MuiAppBar-root-1 MuiAppBar-positionStatic-5 MuiAppBar-colorPrimary-8"
                       >
-                        <WithStyles(Toolbar)>
+                        <WithStyles(Toolbar)
+                          disableGutters={false}
+                        >
                           <Toolbar
                             classes={
                               Object {
@@ -160,7 +164,7 @@ exports[`should match snapshot: Publish/nomal 1`] = `
                             >
                               <Styled(WithStyles(Typography))
                                 color="inherit"
-                                variant="h6"
+                                variant="h5"
                               >
                                 <StyledComponent
                                   color="inherit"
@@ -555,12 +559,12 @@ exports[`should match snapshot: Publish/nomal 1`] = `
                                     }
                                   }
                                   forwardedRef={null}
-                                  variant="h6"
+                                  variant="h5"
                                 >
                                   <WithStyles(Typography)
                                     className="c0"
                                     color="inherit"
-                                    variant="h6"
+                                    variant="h5"
                                   >
                                     <Typography
                                       align="inherit"
@@ -991,13 +995,11 @@ exports[`should match snapshot: Publish/nomal 1`] = `
                                           },
                                         }
                                       }
-                                      variant="h6"
+                                      variant="h5"
                                     >
-                                      <h6
-                                        className="MuiTypography-root-41 MuiTypography-h6-58 MuiTypography-colorInherit-70 c0"
-                                      >
-                                        IPPO
-                                      </h6>
+                                      <h5
+                                        className="MuiTypography-root-41 MuiTypography-h5-57 MuiTypography-colorInherit-70 c0"
+                                      />
                                     </Typography>
                                   </WithStyles(Typography)>
                                 </StyledComponent>

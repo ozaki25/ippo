@@ -10,9 +10,9 @@ const EventCardContainer = styled.div`
   margin: 8px 0;
 `;
 
-const InternalEvents = ({ data: { loading, internalEvents }, authUser, history }) => {
+const InternalEvents = ({ data: { loading, internalEvents }, authUser, history, firebase }) => {
   return (
-    <Container authUser={authUser}>
+    <Container title="社内イベント" back authUser={authUser} history={history} firebase={firebase}>
       {loading ? (
         <Spinner />
       ) : internalEvents && internalEvents.length ? (
@@ -53,7 +53,15 @@ InternalEvents.propTypes = {
       }),
     ),
   }),
-  authUser: propTypes.object,
+  authUser: propTypes.shape({
+    displayName: propTypes.string.isRequired,
+    uid: propTypes.string.isRequired,
+  }).isRequired,
+  history: propTypes.shape({
+    push: propTypes.func.isRequired,
+    goBack: propTypes.func.isRequired,
+  }).isRequired,
+  firebase: propTypes.object.isRequired,
 };
 
 InternalEvents.defaultProps = {
@@ -61,7 +69,6 @@ InternalEvents.defaultProps = {
     loading: false,
     internalEvents: [],
   },
-  authUser: null,
 };
 
 export default InternalEvents;

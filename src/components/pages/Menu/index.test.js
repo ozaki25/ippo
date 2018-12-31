@@ -31,6 +31,15 @@ const props = {
       events: [...[...Array(5)].map((_, i) => externalEvent(i))],
     },
   },
+  authUser: {
+    uid: '123',
+    displayName: 'テストユーザ',
+  },
+  history: {
+    push: jest.fn(),
+    goBack: jest.fn(),
+  },
+  firebase: {},
 };
 
 snapshot('Menu/nomal', <Menu {...props} />);

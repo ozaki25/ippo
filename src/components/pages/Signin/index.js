@@ -65,8 +65,9 @@ class Signin extends React.Component {
   onChange = event => this.setState({ [event.target.name]: event.target.value });
 
   render() {
+    const { history, firebase } = this.props;
     return (
-      <Container>
+      <Container title="ログイン" history={history} firebase={firebase}>
         <SigninForm onSubmit={this.signin} />
         <ButtonContainer>
           <GoogleButton onClick={this.signinWithGoogle} />
