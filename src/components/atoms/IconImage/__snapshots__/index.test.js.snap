@@ -19,12 +19,8 @@ exports[`should match snapshot: IconImage/nomal 1`] = `
   replace={[Function]}
   url=""
 >
-  <IconImage
-    src="/icon.png"
-  >
-    <styled.img
-      src="/icon.png"
-    >
+  <IconImage>
+    <styled.img>
       <StyledComponent
         forwardedComponent={
           Object {
@@ -56,11 +52,9 @@ exports[`should match snapshot: IconImage/nomal 1`] = `
           }
         }
         forwardedRef={null}
-        src="/icon.png"
       >
         <img
           className="c0"
-          src="/icon.png"
         />
       </StyledComponent>
     </styled.img>

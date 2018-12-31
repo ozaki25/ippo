@@ -6,4 +6,4 @@ const props = () => ({
   src: '/icon.png',
 });
 
-snapshot('IconImage/nomal', <IconImage {...props({})} />);
+snapshot('IconImage/nomal', <IconImage {...props} />);
