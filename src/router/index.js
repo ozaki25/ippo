@@ -7,6 +7,7 @@ import InternalEvents from 'src/hoc/WithInternalEvents';
 import ExternalEvents from 'src/hoc/WithExternalEvents';
 import NewEvent from 'src/hoc/WithNewEvent';
 import Tweets from 'src/hoc/WithTweets';
+import NewTweet from 'src/hoc/WithNewTweet';
 import ROUTES from 'src/constants/routes';
 
 const EnteredEvents = () => <p>tmp...</p>;
@@ -25,6 +26,7 @@ const Router = () => (
       <Route path={ROUTES.OrganizedEvents} exact component={OrganizedEvents} />
       <Route path={ROUTES.NewEvent} exact component={NewEvent} />
       <Route path={ROUTES.Tweets} exact component={Tweets} />
+      <Route path={ROUTES.NewTweet} exact component={NewTweet} />
       <Route path={ROUTES.Publish} exact component={Publish} />
       <Route path="/" component={() => <p>Not Found</p>} />
     </Switch>
