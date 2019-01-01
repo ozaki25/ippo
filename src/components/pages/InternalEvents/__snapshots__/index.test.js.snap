@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should match snapshot: InternalEvents/loading 1`] = `
+.c3 {
+  text-align: center;
+}
+
 .c1 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -161,7 +165,7 @@ exports[`should match snapshot: InternalEvents/loading 1`] = `
                           "Naked": [Function],
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-bxivhb",
+                            "componentId": "sc-ifAKCX",
                             "isStatic": false,
                             "lastClassName": "c0",
                             "rules": Array [
@@ -538,7 +542,7 @@ exports[`should match snapshot: InternalEvents/loading 1`] = `
                             "name": "MuiToolbar",
                           },
                           "render": [Function],
-                          "styledComponentId": "sc-bxivhb",
+                          "styledComponentId": "sc-ifAKCX",
                           "target": [Function],
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -733,7 +737,7 @@ exports[`should match snapshot: InternalEvents/loading 1`] = `
                                     "Naked": [Function],
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "sc-htpNat",
+                                      "componentId": "sc-bxivhb",
                                       "isStatic": true,
                                       "lastClassName": "c1",
                                       "rules": Array [
@@ -1109,7 +1113,7 @@ exports[`should match snapshot: InternalEvents/loading 1`] = `
                                       "withTheme": true,
                                     },
                                     "render": [Function],
-                                    "styledComponentId": "sc-htpNat",
+                                    "styledComponentId": "sc-bxivhb",
                                     "target": [Function],
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
@@ -2168,7 +2172,7 @@ exports[`should match snapshot: InternalEvents/loading 1`] = `
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-ifAKCX",
+                "componentId": "sc-EHOje",
                 "isStatic": false,
                 "lastClassName": "c2",
                 "rules": Array [
@@ -2182,7 +2186,7 @@ exports[`should match snapshot: InternalEvents/loading 1`] = `
               "displayName": "styled.div",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-ifAKCX",
+              "styledComponentId": "sc-EHOje",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -2195,34 +2199,92 @@ exports[`should match snapshot: InternalEvents/loading 1`] = `
           <div
             className="c2"
           >
-            <Blueprint3.Spinner>
-              <div
-                className="bp3-spinner"
-              >
-                <div
-                  className="bp3-spinner-animation"
+            <Spinner>
+              <styled.div>
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-bdVaJa",
+                        "isStatic": true,
+                        "lastClassName": "c3",
+                        "rules": Array [
+                          "
+  text-align: center;
+",
+                        ],
+                      },
+                      "displayName": "styled.div",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-bdVaJa",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
                 >
-                  <svg
-                    height={50}
-                    strokeWidth="8.00"
-                    viewBox="1.00 1.00 98.00 98.00"
-                    width={50}
+                  <div
+                    className="c3"
                   >
-                    <path
-                      className="bp3-spinner-track"
-                      d="M 50,50 m 0,-45 a 45,45 0 1 1 0,90 a 45,45 0 1 1 0,-90"
-                    />
-                    <path
-                      className="bp3-spinner-head"
-                      d="M 50,50 m 0,-45 a 45,45 0 1 1 0,90 a 45,45 0 1 1 0,-90"
-                      pathLength={280}
-                      strokeDasharray="280 280"
-                      strokeDashoffset={210}
-                    />
-                  </svg>
-                </div>
-              </div>
-            </Blueprint3.Spinner>
+                    <WithStyles(CircularProgress)>
+                      <CircularProgress
+                        classes={
+                          Object {
+                            "circle": "MuiCircularProgress-circle-112",
+                            "circleDisableShrink": "MuiCircularProgress-circleDisableShrink-115",
+                            "circleIndeterminate": "MuiCircularProgress-circleIndeterminate-114",
+                            "circleStatic": "MuiCircularProgress-circleStatic-113",
+                            "colorPrimary": "MuiCircularProgress-colorPrimary-109",
+                            "colorSecondary": "MuiCircularProgress-colorSecondary-110",
+                            "indeterminate": "MuiCircularProgress-indeterminate-108",
+                            "root": "MuiCircularProgress-root-106",
+                            "static": "MuiCircularProgress-static-107",
+                            "svg": "MuiCircularProgress-svg-111",
+                          }
+                        }
+                        color="primary"
+                        disableShrink={false}
+                        size={40}
+                        thickness={3.6}
+                        value={0}
+                        variant="indeterminate"
+                      >
+                        <div
+                          className="MuiCircularProgress-root-106 MuiCircularProgress-colorPrimary-109 MuiCircularProgress-indeterminate-108"
+                          role="progressbar"
+                          style={
+                            Object {
+                              "height": 40,
+                              "width": 40,
+                            }
+                          }
+                        >
+                          <svg
+                            className="MuiCircularProgress-svg-111"
+                            viewBox="22 22 44 44"
+                          >
+                            <circle
+                              className="MuiCircularProgress-circle-112 MuiCircularProgress-circleIndeterminate-114"
+                              cx={44}
+                              cy={44}
+                              fill="none"
+                              r={20.2}
+                              strokeWidth={3.6}
+                              style={Object {}}
+                            />
+                          </svg>
+                        </div>
+                      </CircularProgress>
+                    </WithStyles(CircularProgress)>
+                  </div>
+                </StyledComponent>
+              </styled.div>
+            </Spinner>
           </div>
         </StyledComponent>
       </styled.div>
@@ -2392,7 +2454,7 @@ exports[`should match snapshot: InternalEvents/nocontents 1`] = `
                           "Naked": [Function],
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-bxivhb",
+                            "componentId": "sc-ifAKCX",
                             "isStatic": false,
                             "lastClassName": "c0",
                             "rules": Array [
@@ -2769,7 +2831,7 @@ exports[`should match snapshot: InternalEvents/nocontents 1`] = `
                             "name": "MuiToolbar",
                           },
                           "render": [Function],
-                          "styledComponentId": "sc-bxivhb",
+                          "styledComponentId": "sc-ifAKCX",
                           "target": [Function],
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -2964,7 +3026,7 @@ exports[`should match snapshot: InternalEvents/nocontents 1`] = `
                                     "Naked": [Function],
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "sc-htpNat",
+                                      "componentId": "sc-bxivhb",
                                       "isStatic": true,
                                       "lastClassName": "c1",
                                       "rules": Array [
@@ -3340,7 +3402,7 @@ exports[`should match snapshot: InternalEvents/nocontents 1`] = `
                                       "withTheme": true,
                                     },
                                     "render": [Function],
-                                    "styledComponentId": "sc-htpNat",
+                                    "styledComponentId": "sc-bxivhb",
                                     "target": [Function],
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
@@ -4399,7 +4461,7 @@ exports[`should match snapshot: InternalEvents/nocontents 1`] = `
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-ifAKCX",
+                "componentId": "sc-EHOje",
                 "isStatic": false,
                 "lastClassName": "c2",
                 "rules": Array [
@@ -4413,7 +4475,7 @@ exports[`should match snapshot: InternalEvents/nocontents 1`] = `
               "displayName": "styled.div",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-ifAKCX",
+              "styledComponentId": "sc-EHOje",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -4426,13 +4488,443 @@ exports[`should match snapshot: InternalEvents/nocontents 1`] = `
           <div
             className="c2"
           >
-            <Blueprint3.Text>
-              <div
-                className=""
+            <WithStyles(Typography)>
+              <Typography
+                align="inherit"
+                classes={
+                  Object {
+                    "alignCenter": "MuiTypography-alignCenter-82",
+                    "alignJustify": "MuiTypography-alignJustify-84",
+                    "alignLeft": "MuiTypography-alignLeft-81",
+                    "alignRight": "MuiTypography-alignRight-83",
+                    "body1": "MuiTypography-body1-68",
+                    "body2": "MuiTypography-body2-67",
+                    "button": "MuiTypography-button-70",
+                    "caption": "MuiTypography-caption-69",
+                    "colorError": "MuiTypography-colorError-93",
+                    "colorInherit": "MuiTypography-colorInherit-88",
+                    "colorPrimary": "MuiTypography-colorPrimary-89",
+                    "colorSecondary": "MuiTypography-colorSecondary-90",
+                    "colorTextPrimary": "MuiTypography-colorTextPrimary-91",
+                    "colorTextSecondary": "MuiTypography-colorTextSecondary-92",
+                    "display1": "MuiTypography-display1-63",
+                    "display2": "MuiTypography-display2-62",
+                    "display3": "MuiTypography-display3-61",
+                    "display4": "MuiTypography-display4-60",
+                    "gutterBottom": "MuiTypography-gutterBottom-86",
+                    "h1": "MuiTypography-h1-71",
+                    "h2": "MuiTypography-h2-72",
+                    "h3": "MuiTypography-h3-73",
+                    "h4": "MuiTypography-h4-74",
+                    "h5": "MuiTypography-h5-75",
+                    "h6": "MuiTypography-h6-76",
+                    "headline": "MuiTypography-headline-64",
+                    "noWrap": "MuiTypography-noWrap-85",
+                    "overline": "MuiTypography-overline-79",
+                    "paragraph": "MuiTypography-paragraph-87",
+                    "root": "MuiTypography-root-59",
+                    "srOnly": "MuiTypography-srOnly-80",
+                    "subheading": "MuiTypography-subheading-66",
+                    "subtitle1": "MuiTypography-subtitle1-77",
+                    "subtitle2": "MuiTypography-subtitle2-78",
+                    "title": "MuiTypography-title-65",
+                  }
+                }
+                color="default"
+                gutterBottom={false}
+                headlineMapping={
+                  Object {
+                    "body1": "p",
+                    "body2": "p",
+                    "display1": "h1",
+                    "display2": "h1",
+                    "display3": "h1",
+                    "display4": "h1",
+                    "h1": "h1",
+                    "h2": "h2",
+                    "h3": "h3",
+                    "h4": "h4",
+                    "h5": "h5",
+                    "h6": "h6",
+                    "headline": "h1",
+                    "subheading": "h3",
+                    "subtitle1": "h6",
+                    "subtitle2": "h6",
+                    "title": "h2",
+                  }
+                }
+                noWrap={false}
+                paragraph={false}
+                theme={
+                  Object {
+                    "breakpoints": Object {
+                      "between": [Function],
+                      "down": [Function],
+                      "keys": Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ],
+                      "only": [Function],
+                      "up": [Function],
+                      "values": Object {
+                        "lg": 1280,
+                        "md": 960,
+                        "sm": 600,
+                        "xl": 1920,
+                        "xs": 0,
+                      },
+                      "width": [Function],
+                    },
+                    "direction": "ltr",
+                    "mixins": Object {
+                      "gutters": [Function],
+                      "toolbar": Object {
+                        "@media (min-width:0px) and (orientation: landscape)": Object {
+                          "minHeight": 48,
+                        },
+                        "@media (min-width:600px)": Object {
+                          "minHeight": 64,
+                        },
+                        "minHeight": 56,
+                      },
+                    },
+                    "overrides": Object {},
+                    "palette": Object {
+                      "action": Object {
+                        "active": "rgba(0, 0, 0, 0.54)",
+                        "disabled": "rgba(0, 0, 0, 0.26)",
+                        "disabledBackground": "rgba(0, 0, 0, 0.12)",
+                        "hover": "rgba(0, 0, 0, 0.08)",
+                        "hoverOpacity": 0.08,
+                        "selected": "rgba(0, 0, 0, 0.14)",
+                      },
+                      "augmentColor": [Function],
+                      "background": Object {
+                        "default": "#fafafa",
+                        "paper": "#fff",
+                      },
+                      "common": Object {
+                        "black": "#000",
+                        "white": "#fff",
+                      },
+                      "contrastThreshold": 3,
+                      "divider": "rgba(0, 0, 0, 0.12)",
+                      "error": Object {
+                        "contrastText": "#fff",
+                        "dark": "#d32f2f",
+                        "light": "#e57373",
+                        "main": "#f44336",
+                      },
+                      "getContrastText": [Function],
+                      "grey": Object {
+                        "100": "#f5f5f5",
+                        "200": "#eeeeee",
+                        "300": "#e0e0e0",
+                        "400": "#bdbdbd",
+                        "50": "#fafafa",
+                        "500": "#9e9e9e",
+                        "600": "#757575",
+                        "700": "#616161",
+                        "800": "#424242",
+                        "900": "#212121",
+                        "A100": "#d5d5d5",
+                        "A200": "#aaaaaa",
+                        "A400": "#303030",
+                        "A700": "#616161",
+                      },
+                      "primary": Object {
+                        "contrastText": "#fff",
+                        "dark": "#303f9f",
+                        "light": "#7986cb",
+                        "main": "#3f51b5",
+                      },
+                      "secondary": Object {
+                        "contrastText": "#fff",
+                        "dark": "#c51162",
+                        "light": "#ff4081",
+                        "main": "#f50057",
+                      },
+                      "text": Object {
+                        "disabled": "rgba(0, 0, 0, 0.38)",
+                        "hint": "rgba(0, 0, 0, 0.38)",
+                        "primary": "rgba(0, 0, 0, 0.87)",
+                        "secondary": "rgba(0, 0, 0, 0.54)",
+                      },
+                      "tonalOffset": 0.2,
+                      "type": "light",
+                    },
+                    "props": Object {},
+                    "shadows": Array [
+                      "none",
+                      "0px 1px 3px 0px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 2px 1px -1px rgba(0,0,0,0.12)",
+                      "0px 1px 5px 0px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 3px 1px -2px rgba(0,0,0,0.12)",
+                      "0px 1px 8px 0px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 3px 3px -2px rgba(0,0,0,0.12)",
+                      "0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12)",
+                      "0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12)",
+                      "0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12)",
+                      "0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12)",
+                      "0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12)",
+                      "0px 5px 6px -3px rgba(0,0,0,0.2),0px 9px 12px 1px rgba(0,0,0,0.14),0px 3px 16px 2px rgba(0,0,0,0.12)",
+                      "0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12)",
+                      "0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12)",
+                      "0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12)",
+                      "0px 7px 8px -4px rgba(0,0,0,0.2),0px 13px 19px 2px rgba(0,0,0,0.14),0px 5px 24px 4px rgba(0,0,0,0.12)",
+                      "0px 7px 9px -4px rgba(0,0,0,0.2),0px 14px 21px 2px rgba(0,0,0,0.14),0px 5px 26px 4px rgba(0,0,0,0.12)",
+                      "0px 8px 9px -5px rgba(0,0,0,0.2),0px 15px 22px 2px rgba(0,0,0,0.14),0px 6px 28px 5px rgba(0,0,0,0.12)",
+                      "0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12)",
+                      "0px 8px 11px -5px rgba(0,0,0,0.2),0px 17px 26px 2px rgba(0,0,0,0.14),0px 6px 32px 5px rgba(0,0,0,0.12)",
+                      "0px 9px 11px -5px rgba(0,0,0,0.2),0px 18px 28px 2px rgba(0,0,0,0.14),0px 7px 34px 6px rgba(0,0,0,0.12)",
+                      "0px 9px 12px -6px rgba(0,0,0,0.2),0px 19px 29px 2px rgba(0,0,0,0.14),0px 7px 36px 6px rgba(0,0,0,0.12)",
+                      "0px 10px 13px -6px rgba(0,0,0,0.2),0px 20px 31px 3px rgba(0,0,0,0.14),0px 8px 38px 7px rgba(0,0,0,0.12)",
+                      "0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12)",
+                      "0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12)",
+                      "0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12)",
+                      "0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12)",
+                    ],
+                    "shape": Object {
+                      "borderRadius": 4,
+                    },
+                    "spacing": Object {
+                      "unit": 8,
+                    },
+                    "transitions": Object {
+                      "create": [Function],
+                      "duration": Object {
+                        "complex": 375,
+                        "enteringScreen": 225,
+                        "leavingScreen": 195,
+                        "short": 250,
+                        "shorter": 200,
+                        "shortest": 150,
+                        "standard": 300,
+                      },
+                      "easing": Object {
+                        "easeIn": "cubic-bezier(0.4, 0, 1, 1)",
+                        "easeInOut": "cubic-bezier(0.4, 0, 0.2, 1)",
+                        "easeOut": "cubic-bezier(0.0, 0, 0.2, 1)",
+                        "sharp": "cubic-bezier(0.4, 0, 0.6, 1)",
+                      },
+                      "getAutoHeightDuration": [Function],
+                    },
+                    "typography": Object {
+                      "body1": Object {
+                        "color": "rgba(0, 0, 0, 0.87)",
+                        "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                        "fontSize": "0.875rem",
+                        "fontWeight": 400,
+                        "lineHeight": "1.46429em",
+                      },
+                      "body1Next": Object {
+                        "color": "rgba(0, 0, 0, 0.87)",
+                        "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                        "fontSize": "1rem",
+                        "fontWeight": 400,
+                        "letterSpacing": "0.00938em",
+                        "lineHeight": 1.5,
+                      },
+                      "body2": Object {
+                        "color": "rgba(0, 0, 0, 0.87)",
+                        "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                        "fontSize": "0.875rem",
+                        "fontWeight": 500,
+                        "lineHeight": "1.71429em",
+                      },
+                      "body2Next": Object {
+                        "color": "rgba(0, 0, 0, 0.87)",
+                        "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                        "fontSize": "0.875rem",
+                        "fontWeight": 400,
+                        "letterSpacing": "0.01071em",
+                        "lineHeight": 1.5,
+                      },
+                      "button": Object {
+                        "color": "rgba(0, 0, 0, 0.87)",
+                        "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                        "fontSize": "0.875rem",
+                        "fontWeight": 500,
+                        "textTransform": "uppercase",
+                      },
+                      "buttonNext": Object {
+                        "color": "rgba(0, 0, 0, 0.87)",
+                        "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                        "fontSize": "0.875rem",
+                        "fontWeight": 500,
+                        "letterSpacing": "0.02857em",
+                        "lineHeight": 1.5,
+                        "textTransform": "uppercase",
+                      },
+                      "caption": Object {
+                        "color": "rgba(0, 0, 0, 0.54)",
+                        "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                        "lineHeight": "1.375em",
+                      },
+                      "captionNext": Object {
+                        "color": "rgba(0, 0, 0, 0.87)",
+                        "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                        "letterSpacing": "0.03333em",
+                        "lineHeight": 1.66,
+                      },
+                      "display1": Object {
+                        "color": "rgba(0, 0, 0, 0.54)",
+                        "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                        "fontSize": "2.125rem",
+                        "fontWeight": 400,
+                        "lineHeight": "1.20588em",
+                      },
+                      "display2": Object {
+                        "color": "rgba(0, 0, 0, 0.54)",
+                        "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                        "fontSize": "2.8125rem",
+                        "fontWeight": 400,
+                        "lineHeight": "1.13333em",
+                        "marginLeft": "-.02em",
+                      },
+                      "display3": Object {
+                        "color": "rgba(0, 0, 0, 0.54)",
+                        "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                        "fontSize": "3.5rem",
+                        "fontWeight": 400,
+                        "letterSpacing": "-.02em",
+                        "lineHeight": "1.30357em",
+                        "marginLeft": "-.02em",
+                      },
+                      "display4": Object {
+                        "color": "rgba(0, 0, 0, 0.54)",
+                        "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                        "fontSize": "7rem",
+                        "fontWeight": 300,
+                        "letterSpacing": "-.04em",
+                        "lineHeight": "1.14286em",
+                        "marginLeft": "-.04em",
+                      },
+                      "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                      "fontSize": 14,
+                      "fontWeightLight": 300,
+                      "fontWeightMedium": 500,
+                      "fontWeightRegular": 400,
+                      "h1": Object {
+                        "color": "rgba(0, 0, 0, 0.87)",
+                        "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                        "fontSize": "6rem",
+                        "fontWeight": 300,
+                        "letterSpacing": "-0.01562em",
+                        "lineHeight": 1,
+                      },
+                      "h2": Object {
+                        "color": "rgba(0, 0, 0, 0.87)",
+                        "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                        "fontSize": "3.75rem",
+                        "fontWeight": 300,
+                        "letterSpacing": "-0.00833em",
+                        "lineHeight": 1,
+                      },
+                      "h3": Object {
+                        "color": "rgba(0, 0, 0, 0.87)",
+                        "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                        "fontSize": "3rem",
+                        "fontWeight": 400,
+                        "letterSpacing": "0em",
+                        "lineHeight": 1.04,
+                      },
+                      "h4": Object {
+                        "color": "rgba(0, 0, 0, 0.87)",
+                        "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                        "fontSize": "2.125rem",
+                        "fontWeight": 400,
+                        "letterSpacing": "0.00735em",
+                        "lineHeight": 1.17,
+                      },
+                      "h5": Object {
+                        "color": "rgba(0, 0, 0, 0.87)",
+                        "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                        "fontSize": "1.5rem",
+                        "fontWeight": 400,
+                        "letterSpacing": "0em",
+                        "lineHeight": 1.33,
+                      },
+                      "h6": Object {
+                        "color": "rgba(0, 0, 0, 0.87)",
+                        "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                        "fontSize": "1.25rem",
+                        "fontWeight": 500,
+                        "letterSpacing": "0.0075em",
+                        "lineHeight": 1.6,
+                      },
+                      "headline": Object {
+                        "color": "rgba(0, 0, 0, 0.87)",
+                        "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                        "fontSize": "1.5rem",
+                        "fontWeight": 400,
+                        "lineHeight": "1.35417em",
+                      },
+                      "overline": Object {
+                        "color": "rgba(0, 0, 0, 0.87)",
+                        "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                        "letterSpacing": "0.08333em",
+                        "lineHeight": 2.66,
+                        "textTransform": "uppercase",
+                      },
+                      "pxToRem": [Function],
+                      "round": [Function],
+                      "subheading": Object {
+                        "color": "rgba(0, 0, 0, 0.87)",
+                        "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                        "fontSize": "1rem",
+                        "fontWeight": 400,
+                        "lineHeight": "1.5em",
+                      },
+                      "subtitle1": Object {
+                        "color": "rgba(0, 0, 0, 0.87)",
+                        "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                        "fontSize": "1rem",
+                        "fontWeight": 400,
+                        "letterSpacing": "0.00938em",
+                        "lineHeight": 1.75,
+                      },
+                      "subtitle2": Object {
+                        "color": "rgba(0, 0, 0, 0.87)",
+                        "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                        "fontSize": "0.875rem",
+                        "fontWeight": 500,
+                        "letterSpacing": "0.00714em",
+                        "lineHeight": 1.57,
+                      },
+                      "title": Object {
+                        "color": "rgba(0, 0, 0, 0.87)",
+                        "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                        "fontSize": "1.3125rem",
+                        "fontWeight": 500,
+                        "lineHeight": "1.16667em",
+                      },
+                      "useNextVariants": false,
+                    },
+                    "zIndex": Object {
+                      "appBar": 1100,
+                      "drawer": 1200,
+                      "mobileStepper": 1000,
+                      "modal": 1300,
+                      "snackbar": 1400,
+                      "tooltip": 1500,
+                    },
+                  }
+                }
               >
-                No Contents
-              </div>
-            </Blueprint3.Text>
+                <p
+                  className="MuiTypography-root-59 MuiTypography-body1-68"
+                >
+                  No Contents
+                </p>
+              </Typography>
+            </WithStyles(Typography)>
           </div>
         </StyledComponent>
       </styled.div>
@@ -4685,7 +5177,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                           "Naked": [Function],
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-bxivhb",
+                            "componentId": "sc-ifAKCX",
                             "isStatic": false,
                             "lastClassName": "c0",
                             "rules": Array [
@@ -5062,7 +5554,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                             "name": "MuiToolbar",
                           },
                           "render": [Function],
-                          "styledComponentId": "sc-bxivhb",
+                          "styledComponentId": "sc-ifAKCX",
                           "target": [Function],
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -5257,7 +5749,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                                     "Naked": [Function],
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "sc-htpNat",
+                                      "componentId": "sc-bxivhb",
                                       "isStatic": true,
                                       "lastClassName": "c1",
                                       "rules": Array [
@@ -5633,7 +6125,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                                       "withTheme": true,
                                     },
                                     "render": [Function],
-                                    "styledComponentId": "sc-htpNat",
+                                    "styledComponentId": "sc-bxivhb",
                                     "target": [Function],
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
@@ -6692,7 +7184,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-ifAKCX",
+                "componentId": "sc-EHOje",
                 "isStatic": false,
                 "lastClassName": "c2",
                 "rules": Array [
@@ -6706,7 +7198,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
               "displayName": "styled.div",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-ifAKCX",
+              "styledComponentId": "sc-EHOje",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -6728,7 +7220,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-EHOje",
+                      "componentId": "sc-bZQynM",
                       "isStatic": true,
                       "lastClassName": "c3",
                       "rules": Array [
@@ -6740,7 +7232,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "displayName": "styled.div",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-EHOje",
+                    "styledComponentId": "sc-bZQynM",
                     "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -6789,7 +7281,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                               "Naked": [Function],
                               "attrs": Array [],
                               "componentStyle": ComponentStyle {
-                                "componentId": "sc-bdVaJa",
+                                "componentId": "sc-bwzfXH",
                                 "isStatic": false,
                                 "lastClassName": "c4",
                                 "rules": Array [
@@ -7166,7 +7658,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                                 "name": "MuiCard",
                               },
                               "render": [Function],
-                              "styledComponentId": "sc-bdVaJa",
+                              "styledComponentId": "sc-bwzfXH",
                               "target": [Function],
                               "toString": [Function],
                               "warnTooManyClasses": [Function],
@@ -7254,7 +7746,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                                             "Naked": [Function],
                                             "attrs": Array [],
                                             "componentStyle": ComponentStyle {
-                                              "componentId": "sc-bwzfXH",
+                                              "componentId": "sc-htpNat",
                                               "isStatic": false,
                                               "lastClassName": "c5",
                                               "rules": Array [
@@ -7631,7 +8123,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                                               "name": "MuiCardActionArea",
                                             },
                                             "render": [Function],
-                                            "styledComponentId": "sc-bwzfXH",
+                                            "styledComponentId": "sc-htpNat",
                                             "target": [Function],
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
@@ -9095,7 +9587,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-EHOje",
+                      "componentId": "sc-bZQynM",
                       "isStatic": true,
                       "lastClassName": "c3",
                       "rules": Array [
@@ -9107,7 +9599,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "displayName": "styled.div",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-EHOje",
+                    "styledComponentId": "sc-bZQynM",
                     "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -9156,7 +9648,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                               "Naked": [Function],
                               "attrs": Array [],
                               "componentStyle": ComponentStyle {
-                                "componentId": "sc-bdVaJa",
+                                "componentId": "sc-bwzfXH",
                                 "isStatic": false,
                                 "lastClassName": "c4",
                                 "rules": Array [
@@ -9533,7 +10025,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                                 "name": "MuiCard",
                               },
                               "render": [Function],
-                              "styledComponentId": "sc-bdVaJa",
+                              "styledComponentId": "sc-bwzfXH",
                               "target": [Function],
                               "toString": [Function],
                               "warnTooManyClasses": [Function],
@@ -9621,7 +10113,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                                             "Naked": [Function],
                                             "attrs": Array [],
                                             "componentStyle": ComponentStyle {
-                                              "componentId": "sc-bwzfXH",
+                                              "componentId": "sc-htpNat",
                                               "isStatic": false,
                                               "lastClassName": "c5",
                                               "rules": Array [
@@ -9998,7 +10490,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                                               "name": "MuiCardActionArea",
                                             },
                                             "render": [Function],
-                                            "styledComponentId": "sc-bwzfXH",
+                                            "styledComponentId": "sc-htpNat",
                                             "target": [Function],
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
@@ -11462,7 +11954,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-EHOje",
+                      "componentId": "sc-bZQynM",
                       "isStatic": true,
                       "lastClassName": "c3",
                       "rules": Array [
@@ -11474,7 +11966,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "displayName": "styled.div",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-EHOje",
+                    "styledComponentId": "sc-bZQynM",
                     "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -11523,7 +12015,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                               "Naked": [Function],
                               "attrs": Array [],
                               "componentStyle": ComponentStyle {
-                                "componentId": "sc-bdVaJa",
+                                "componentId": "sc-bwzfXH",
                                 "isStatic": false,
                                 "lastClassName": "c4",
                                 "rules": Array [
@@ -11900,7 +12392,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                                 "name": "MuiCard",
                               },
                               "render": [Function],
-                              "styledComponentId": "sc-bdVaJa",
+                              "styledComponentId": "sc-bwzfXH",
                               "target": [Function],
                               "toString": [Function],
                               "warnTooManyClasses": [Function],
@@ -11988,7 +12480,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                                             "Naked": [Function],
                                             "attrs": Array [],
                                             "componentStyle": ComponentStyle {
-                                              "componentId": "sc-bwzfXH",
+                                              "componentId": "sc-htpNat",
                                               "isStatic": false,
                                               "lastClassName": "c5",
                                               "rules": Array [
@@ -12365,7 +12857,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                                               "name": "MuiCardActionArea",
                                             },
                                             "render": [Function],
-                                            "styledComponentId": "sc-bwzfXH",
+                                            "styledComponentId": "sc-htpNat",
                                             "target": [Function],
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
@@ -13829,7 +14321,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-EHOje",
+                      "componentId": "sc-bZQynM",
                       "isStatic": true,
                       "lastClassName": "c3",
                       "rules": Array [
@@ -13841,7 +14333,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "displayName": "styled.div",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-EHOje",
+                    "styledComponentId": "sc-bZQynM",
                     "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -13890,7 +14382,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                               "Naked": [Function],
                               "attrs": Array [],
                               "componentStyle": ComponentStyle {
-                                "componentId": "sc-bdVaJa",
+                                "componentId": "sc-bwzfXH",
                                 "isStatic": false,
                                 "lastClassName": "c4",
                                 "rules": Array [
@@ -14267,7 +14759,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                                 "name": "MuiCard",
                               },
                               "render": [Function],
-                              "styledComponentId": "sc-bdVaJa",
+                              "styledComponentId": "sc-bwzfXH",
                               "target": [Function],
                               "toString": [Function],
                               "warnTooManyClasses": [Function],
@@ -14355,7 +14847,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                                             "Naked": [Function],
                                             "attrs": Array [],
                                             "componentStyle": ComponentStyle {
-                                              "componentId": "sc-bwzfXH",
+                                              "componentId": "sc-htpNat",
                                               "isStatic": false,
                                               "lastClassName": "c5",
                                               "rules": Array [
@@ -14732,7 +15224,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                                               "name": "MuiCardActionArea",
                                             },
                                             "render": [Function],
-                                            "styledComponentId": "sc-bwzfXH",
+                                            "styledComponentId": "sc-htpNat",
                                             "target": [Function],
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
@@ -16196,7 +16688,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-EHOje",
+                      "componentId": "sc-bZQynM",
                       "isStatic": true,
                       "lastClassName": "c3",
                       "rules": Array [
@@ -16208,7 +16700,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "displayName": "styled.div",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-EHOje",
+                    "styledComponentId": "sc-bZQynM",
                     "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -16257,7 +16749,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                               "Naked": [Function],
                               "attrs": Array [],
                               "componentStyle": ComponentStyle {
-                                "componentId": "sc-bdVaJa",
+                                "componentId": "sc-bwzfXH",
                                 "isStatic": false,
                                 "lastClassName": "c4",
                                 "rules": Array [
@@ -16634,7 +17126,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                                 "name": "MuiCard",
                               },
                               "render": [Function],
-                              "styledComponentId": "sc-bdVaJa",
+                              "styledComponentId": "sc-bwzfXH",
                               "target": [Function],
                               "toString": [Function],
                               "warnTooManyClasses": [Function],
@@ -16722,7 +17214,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                                             "Naked": [Function],
                                             "attrs": Array [],
                                             "componentStyle": ComponentStyle {
-                                              "componentId": "sc-bwzfXH",
+                                              "componentId": "sc-htpNat",
                                               "isStatic": false,
                                               "lastClassName": "c5",
                                               "rules": Array [
@@ -17099,7 +17591,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                                               "name": "MuiCardActionArea",
                                             },
                                             "render": [Function],
-                                            "styledComponentId": "sc-bwzfXH",
+                                            "styledComponentId": "sc-htpNat",
                                             "target": [Function],
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
@@ -18563,7 +19055,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-EHOje",
+                      "componentId": "sc-bZQynM",
                       "isStatic": true,
                       "lastClassName": "c3",
                       "rules": Array [
@@ -18575,7 +19067,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "displayName": "styled.div",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-EHOje",
+                    "styledComponentId": "sc-bZQynM",
                     "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -18624,7 +19116,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                               "Naked": [Function],
                               "attrs": Array [],
                               "componentStyle": ComponentStyle {
-                                "componentId": "sc-bdVaJa",
+                                "componentId": "sc-bwzfXH",
                                 "isStatic": false,
                                 "lastClassName": "c4",
                                 "rules": Array [
@@ -19001,7 +19493,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                                 "name": "MuiCard",
                               },
                               "render": [Function],
-                              "styledComponentId": "sc-bdVaJa",
+                              "styledComponentId": "sc-bwzfXH",
                               "target": [Function],
                               "toString": [Function],
                               "warnTooManyClasses": [Function],
@@ -19089,7 +19581,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                                             "Naked": [Function],
                                             "attrs": Array [],
                                             "componentStyle": ComponentStyle {
-                                              "componentId": "sc-bwzfXH",
+                                              "componentId": "sc-htpNat",
                                               "isStatic": false,
                                               "lastClassName": "c5",
                                               "rules": Array [
@@ -19466,7 +19958,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                                               "name": "MuiCardActionArea",
                                             },
                                             "render": [Function],
-                                            "styledComponentId": "sc-bwzfXH",
+                                            "styledComponentId": "sc-htpNat",
                                             "target": [Function],
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
@@ -20930,7 +21422,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-EHOje",
+                      "componentId": "sc-bZQynM",
                       "isStatic": true,
                       "lastClassName": "c3",
                       "rules": Array [
@@ -20942,7 +21434,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "displayName": "styled.div",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-EHOje",
+                    "styledComponentId": "sc-bZQynM",
                     "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -20991,7 +21483,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                               "Naked": [Function],
                               "attrs": Array [],
                               "componentStyle": ComponentStyle {
-                                "componentId": "sc-bdVaJa",
+                                "componentId": "sc-bwzfXH",
                                 "isStatic": false,
                                 "lastClassName": "c4",
                                 "rules": Array [
@@ -21368,7 +21860,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                                 "name": "MuiCard",
                               },
                               "render": [Function],
-                              "styledComponentId": "sc-bdVaJa",
+                              "styledComponentId": "sc-bwzfXH",
                               "target": [Function],
                               "toString": [Function],
                               "warnTooManyClasses": [Function],
@@ -21456,7 +21948,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                                             "Naked": [Function],
                                             "attrs": Array [],
                                             "componentStyle": ComponentStyle {
-                                              "componentId": "sc-bwzfXH",
+                                              "componentId": "sc-htpNat",
                                               "isStatic": false,
                                               "lastClassName": "c5",
                                               "rules": Array [
@@ -21833,7 +22325,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                                               "name": "MuiCardActionArea",
                                             },
                                             "render": [Function],
-                                            "styledComponentId": "sc-bwzfXH",
+                                            "styledComponentId": "sc-htpNat",
                                             "target": [Function],
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
@@ -23297,7 +23789,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-EHOje",
+                      "componentId": "sc-bZQynM",
                       "isStatic": true,
                       "lastClassName": "c3",
                       "rules": Array [
@@ -23309,7 +23801,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "displayName": "styled.div",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-EHOje",
+                    "styledComponentId": "sc-bZQynM",
                     "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -23358,7 +23850,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                               "Naked": [Function],
                               "attrs": Array [],
                               "componentStyle": ComponentStyle {
-                                "componentId": "sc-bdVaJa",
+                                "componentId": "sc-bwzfXH",
                                 "isStatic": false,
                                 "lastClassName": "c4",
                                 "rules": Array [
@@ -23735,7 +24227,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                                 "name": "MuiCard",
                               },
                               "render": [Function],
-                              "styledComponentId": "sc-bdVaJa",
+                              "styledComponentId": "sc-bwzfXH",
                               "target": [Function],
                               "toString": [Function],
                               "warnTooManyClasses": [Function],
@@ -23823,7 +24315,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                                             "Naked": [Function],
                                             "attrs": Array [],
                                             "componentStyle": ComponentStyle {
-                                              "componentId": "sc-bwzfXH",
+                                              "componentId": "sc-htpNat",
                                               "isStatic": false,
                                               "lastClassName": "c5",
                                               "rules": Array [
@@ -24200,7 +24692,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                                               "name": "MuiCardActionArea",
                                             },
                                             "render": [Function],
-                                            "styledComponentId": "sc-bwzfXH",
+                                            "styledComponentId": "sc-htpNat",
                                             "target": [Function],
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
@@ -25664,7 +26156,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-EHOje",
+                      "componentId": "sc-bZQynM",
                       "isStatic": true,
                       "lastClassName": "c3",
                       "rules": Array [
@@ -25676,7 +26168,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "displayName": "styled.div",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-EHOje",
+                    "styledComponentId": "sc-bZQynM",
                     "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -25725,7 +26217,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                               "Naked": [Function],
                               "attrs": Array [],
                               "componentStyle": ComponentStyle {
-                                "componentId": "sc-bdVaJa",
+                                "componentId": "sc-bwzfXH",
                                 "isStatic": false,
                                 "lastClassName": "c4",
                                 "rules": Array [
@@ -26102,7 +26594,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                                 "name": "MuiCard",
                               },
                               "render": [Function],
-                              "styledComponentId": "sc-bdVaJa",
+                              "styledComponentId": "sc-bwzfXH",
                               "target": [Function],
                               "toString": [Function],
                               "warnTooManyClasses": [Function],
@@ -26190,7 +26682,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                                             "Naked": [Function],
                                             "attrs": Array [],
                                             "componentStyle": ComponentStyle {
-                                              "componentId": "sc-bwzfXH",
+                                              "componentId": "sc-htpNat",
                                               "isStatic": false,
                                               "lastClassName": "c5",
                                               "rules": Array [
@@ -26567,7 +27059,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                                               "name": "MuiCardActionArea",
                                             },
                                             "render": [Function],
-                                            "styledComponentId": "sc-bwzfXH",
+                                            "styledComponentId": "sc-htpNat",
                                             "target": [Function],
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
@@ -28031,7 +28523,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-EHOje",
+                      "componentId": "sc-bZQynM",
                       "isStatic": true,
                       "lastClassName": "c3",
                       "rules": Array [
@@ -28043,7 +28535,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                     "displayName": "styled.div",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-EHOje",
+                    "styledComponentId": "sc-bZQynM",
                     "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -28092,7 +28584,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                               "Naked": [Function],
                               "attrs": Array [],
                               "componentStyle": ComponentStyle {
-                                "componentId": "sc-bdVaJa",
+                                "componentId": "sc-bwzfXH",
                                 "isStatic": false,
                                 "lastClassName": "c4",
                                 "rules": Array [
@@ -28469,7 +28961,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                                 "name": "MuiCard",
                               },
                               "render": [Function],
-                              "styledComponentId": "sc-bdVaJa",
+                              "styledComponentId": "sc-bwzfXH",
                               "target": [Function],
                               "toString": [Function],
                               "warnTooManyClasses": [Function],
@@ -28557,7 +29049,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                                             "Naked": [Function],
                                             "attrs": Array [],
                                             "componentStyle": ComponentStyle {
-                                              "componentId": "sc-bwzfXH",
+                                              "componentId": "sc-htpNat",
                                               "isStatic": false,
                                               "lastClassName": "c5",
                                               "rules": Array [
@@ -28934,7 +29426,7 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
                                               "name": "MuiCardActionArea",
                                             },
                                             "render": [Function],
-                                            "styledComponentId": "sc-bwzfXH",
+                                            "styledComponentId": "sc-htpNat",
                                             "target": [Function],
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],

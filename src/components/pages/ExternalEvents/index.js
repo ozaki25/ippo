@@ -1,7 +1,8 @@
 import React from 'react';
+import { Typography } from '@material-ui/core';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
-import { Spinner, Text } from '@blueprintjs/core';
+import Spinner from 'src/components/atoms/Spinner';
 import EventCard from 'src/components/organisms/EventCard';
 import Pagination from 'src/components/organisms/Pagination';
 import Container from 'src/components/templates/Container';
@@ -49,7 +50,7 @@ const ExternalEvents = ({ data: { loading, connpass, refetch }, authUser, histor
           </PaginationContainer>
         </>
       ) : (
-        <Text>No Contents</Text>
+        <Typography>No Contents</Typography>
       )}
     </Container>
   );
