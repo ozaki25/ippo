@@ -3,6 +3,7 @@ import { IconButton } from '@material-ui/core';
 import { FavoriteBorder, ModeCommentOutlined, RepeatRounded } from '@material-ui/icons';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
+import IconImage from 'src/components/atoms/IconImage';
 
 const Container = styled.div`
   border-bottom: 1px solid #e6ecf0;
@@ -13,14 +14,8 @@ const Wrapper = styled.div`
   margin-left: 58px;
 `;
 
-const IconImage = styled.img`
-  border-radius: 50%;
-  float: left;
-  height: 48px;
-  margin-top: 3px;
+const StyledIconImage = styled(IconImage)`
   margin-left: -58px;
-  position: absolute;
-  width: 48px;
 `;
 
 const TweetTime = styled.small`
@@ -70,7 +65,7 @@ const TweetFooter = ({ onClickReply, onClickRetweet, onClickLike }) => (
 const Tweet = ({ name, text, time }) => (
   <Container>
     <Wrapper>
-      <IconImage src="/icon.png" />
+      <StyledIconImage src="/icon.png" />
       <TweetHeader name={name} time={time} />
       <TweetBody>{text}</TweetBody>
       <TweetFooter />

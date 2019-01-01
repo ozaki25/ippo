@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import Tweet from '.';
 
-const stories = storiesOf('molecules/Tweet', module);
+const stories = storiesOf('organisms/Tweet', module);
 
 const props = {
   name: 'ozaki25',

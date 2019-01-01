@@ -1,6 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should match snapshot: Tweet/nomal 1`] = `
+.c3 {
+  border-radius: 50%;
+  float: left;
+  height: 48px;
+  margin-top: 3px;
+  position: absolute;
+  width: 48px;
+}
+
 .c0 {
   border-bottom: 1px solid #e6ecf0;
   padding: 9px 12px 0;
@@ -11,22 +20,16 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
 }
 
 .c2 {
-  border-radius: 50%;
-  float: left;
-  height: 48px;
-  margin-top: 3px;
   margin-left: -58px;
-  position: absolute;
-  width: 48px;
 }
 
-.c3 {
+.c4 {
   margin: 0;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 
-.c4 {
+.c5 {
   display: inline-block;
   min-width: 80px;
 }
@@ -56,7 +59,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bdVaJa",
+              "componentId": "sc-bwzfXH",
               "isStatic": true,
               "lastClassName": "c0",
               "rules": Array [
@@ -69,7 +72,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
             "displayName": "styled.div",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bdVaJa",
+            "styledComponentId": "sc-bwzfXH",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -88,7 +91,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-bwzfXH",
+                    "componentId": "sc-htpNat",
                     "isStatic": true,
                     "lastClassName": "c1",
                     "rules": Array [
@@ -100,7 +103,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                   "displayName": "styled.div",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-bwzfXH",
+                  "styledComponentId": "sc-htpNat",
                   "target": "div",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -112,7 +115,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
               <div
                 className="c1"
               >
-                <styled.img
+                <Styled(IconImage)
                   src="/icon.png"
                 >
                   <StyledComponent
@@ -121,40 +124,80 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "sc-htpNat",
+                          "componentId": "sc-bxivhb",
                           "isStatic": true,
                           "lastClassName": "c2",
                           "rules": Array [
                             "
-  border-radius: 50%;
-  float: left;
-  height: 48px;
-  margin-top: 3px;
   margin-left: -58px;
-  position: absolute;
-  width: 48px;
 ",
                           ],
                         },
-                        "displayName": "styled.img",
+                        "displayName": "Styled(IconImage)",
                         "foldedComponentIds": Array [],
                         "render": [Function],
-                        "styledComponentId": "sc-htpNat",
-                        "target": "img",
+                        "styledComponentId": "sc-bxivhb",
+                        "target": [Function],
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
                         "withComponent": [Function],
+                        Symbol(Symbol.hasInstance): [Function],
                       }
                     }
                     forwardedRef={null}
                     src="/icon.png"
                   >
-                    <img
+                    <IconImage
                       className="c2"
                       src="/icon.png"
-                    />
+                    >
+                      <styled.img
+                        className="c2"
+                        src="/icon.png"
+                      >
+                        <StyledComponent
+                          className="c2"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-bdVaJa",
+                                "isStatic": true,
+                                "lastClassName": "c3",
+                                "rules": Array [
+                                  "
+  border-radius: 50%;
+  float: left;
+  height: 48px;
+  margin-top: 3px;
+  position: absolute;
+  width: 48px;
+",
+                                ],
+                              },
+                              "displayName": "styled.img",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-bdVaJa",
+                              "target": "img",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          src="/icon.png"
+                        >
+                          <img
+                            className="c2 c3"
+                            src="/icon.png"
+                          />
+                        </StyledComponent>
+                      </styled.img>
+                    </IconImage>
                   </StyledComponent>
-                </styled.img>
+                </Styled(IconImage)>
                 <TweetHeader
                   name="ozaki25"
                   time="12月10日"
@@ -169,15 +212,15 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-bxivhb",
+                            "componentId": "sc-ifAKCX",
                             "isStatic": true,
-                            "lastClassName": "bUZGRr",
+                            "lastClassName": "cFlEyZ",
                             "rules": Array [],
                           },
                           "displayName": "styled.small",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-bxivhb",
+                          "styledComponentId": "sc-ifAKCX",
                           "target": "small",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -201,9 +244,9 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "sc-ifAKCX",
+                          "componentId": "sc-EHOje",
                           "isStatic": true,
-                          "lastClassName": "c3",
+                          "lastClassName": "c4",
                           "rules": Array [
                             "
   margin: 0;
@@ -215,7 +258,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                         "displayName": "styled.p",
                         "foldedComponentIds": Array [],
                         "render": [Function],
-                        "styledComponentId": "sc-ifAKCX",
+                        "styledComponentId": "sc-EHOje",
                         "target": "p",
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -225,7 +268,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                     forwardedRef={null}
                   >
                     <p
-                      className="c3"
+                      className="c4"
                     >
                       Storybookいいところ
   - どんなコンポーネントが存在してるか可視化できる
@@ -243,9 +286,9 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-EHOje",
+                            "componentId": "sc-bZQynM",
                             "isStatic": true,
-                            "lastClassName": "c4",
+                            "lastClassName": "c5",
                             "rules": Array [
                               "
   display: inline-block;
@@ -256,7 +299,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                           "displayName": "styled.div",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-EHOje",
+                          "styledComponentId": "sc-bZQynM",
                           "target": "div",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -266,7 +309,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                       forwardedRef={null}
                     >
                       <div
-                        className="c4"
+                        className="c5"
                       >
                         <WithStyles(IconButton)>
                           <IconButton
@@ -431,9 +474,9 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-EHOje",
+                            "componentId": "sc-bZQynM",
                             "isStatic": true,
-                            "lastClassName": "c4",
+                            "lastClassName": "c5",
                             "rules": Array [
                               "
   display: inline-block;
@@ -444,7 +487,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                           "displayName": "styled.div",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-EHOje",
+                          "styledComponentId": "sc-bZQynM",
                           "target": "div",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -454,7 +497,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                       forwardedRef={null}
                     >
                       <div
-                        className="c4"
+                        className="c5"
                       >
                         <WithStyles(IconButton)>
                           <IconButton
@@ -613,9 +656,9 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-EHOje",
+                            "componentId": "sc-bZQynM",
                             "isStatic": true,
-                            "lastClassName": "c4",
+                            "lastClassName": "c5",
                             "rules": Array [
                               "
   display: inline-block;
@@ -626,7 +669,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                           "displayName": "styled.div",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-EHOje",
+                          "styledComponentId": "sc-bZQynM",
                           "target": "div",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -636,7 +679,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                       forwardedRef={null}
                     >
                       <div
-                        className="c4"
+                        className="c5"
                       >
                         <WithStyles(IconButton)>
                           <IconButton
