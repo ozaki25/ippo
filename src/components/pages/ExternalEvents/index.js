@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import propTypes from 'prop-types';
 import { Spinner, Text } from '@blueprintjs/core';
 import EventCard from 'src/components/organisms/EventCard';
-import SearchForm from 'src/components/organisms/SerchForm';
 import Pagination from 'src/components/organisms/Pagination';
 import Container from 'src/components/templates/Container';
 import dateFormat from 'src/utils/dateFormat';
@@ -33,7 +32,6 @@ const ExternalEvents = ({ data: { loading, connpass, refetch }, authUser, histor
         <Spinner />
       ) : events && events.length ? (
         <>
-          <SearchForm search={searchQuery => refetch({ searchQuery })} />
           {connpass.events.map(event => (
             <EventCardContainer key={event.event_id}>
               <EventCard
