@@ -1,14 +1,18 @@
 import React from 'react';
-import { Spinner } from '@blueprintjs/core';
 import propTypes from 'prop-types';
-import Container from 'src/components/templates/Container';
-import TweetsList from 'src/components/organisms/TweetList';
+import Spinner from 'src/components/atoms/Spinner';
 import FloatingButton from 'src/components/molecules/FloatingButton';
+import TweetsList from 'src/components/organisms/TweetList';
+import Container from 'src/components/templates/Container';
 import dateFormat from 'src/utils/dateFormat';
 import paging from 'src/constants/paging';
 import ROUTES from 'src/constants/routes';
 
 class Tweets extends React.Component {
+  componentDidMount() {
+    this.props.data.refetch();
+  }
+
   loadMore = () => {
     const {
       data: {
@@ -97,10 +101,14 @@ Tweets.propTypes = {
           hashtag: propTypes.string.isRequired,
         }),
       ),
-      startId: propTypes.string.isRequired,
+      startId: propTypes.string,
     }),
     refetch: propTypes.func.isRequired,
     fetchMore: propTypes.func.isRequired,
+    variables: propTypes.shape({
+      hashtag: propTypes.string.isRequired,
+      limit: propTypes.number.isRequired,
+    }),
   }),
   authUser: propTypes.shape({
     displayName: propTypes.string.isRequired,
@@ -117,6 +125,7 @@ Tweets.defaultProps = {
   data: {
     tweets: {
       tweetList: [],
+      startId: null,
     },
   },
 };
