@@ -1,13 +1,8 @@
 import React from 'react';
 import InfiniteScroll from 'react-infinite-scroller';
-import { CircularProgress } from '@material-ui/core';
-import styled from 'styled-components';
 import propTypes from 'prop-types';
+import Spinner from 'src/components/atoms/Spinner';
 import Tweet from 'src/components/molecules/Tweet';
-
-const Centering = styled.div`
-  text-align: center;
-`;
 
 const TweetList = ({ items, loadMore, hasMore }) => (
   <InfiniteScroll
@@ -15,11 +10,7 @@ const TweetList = ({ items, loadMore, hasMore }) => (
     pageStart={0}
     loadMore={loadMore}
     hasMore={hasMore}
-    loader={
-      <Centering key={items.length}>
-        <CircularProgress />
-      </Centering>
-    }
+    loader={<Spinner key={items.length} />}
     threshold={100}
   >
     {items.map(item => (
