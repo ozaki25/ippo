@@ -2,7 +2,7 @@ import React from 'react';
 import InfiniteScroll from 'react-infinite-scroller';
 import propTypes from 'prop-types';
 import Spinner from 'src/components/atoms/Spinner';
-import Tweet from 'src/components/molecules/Tweet';
+import Tweet from 'src/components/organisms/Tweet';
 
 const TweetList = ({ items, loadMore, hasMore }) => (
   <InfiniteScroll
