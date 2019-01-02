@@ -10,13 +10,13 @@ import Container from 'src/components/templates/Container';
 import ROUTES from 'src/constants/routes';
 
 const ButtonContainer = styled.div`
-  margin: 5px 0;
+  margin: 8px 0;
   text-align: center;
 `;
 
 const ImageContainer = styled.div`
   text-align: center;
-  margin: 80px 0 30px;
+  margin: 60px 0 30px;
 `;
 
 const StyledImg = styled.img`
