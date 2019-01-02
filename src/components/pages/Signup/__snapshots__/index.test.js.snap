@@ -2654,7 +2654,6 @@ exports[`should match snapshot: Signup/nomal 1`] = `
                   disabled={true}
                   fullWidth={true}
                   onClick={[Function]}
-                  type="submit"
                   variant="contained"
                 >
                   <Button
@@ -2696,7 +2695,7 @@ exports[`should match snapshot: Signup/nomal 1`] = `
                     mini={false}
                     onClick={[Function]}
                     size="medium"
-                    type="submit"
+                    type="button"
                     variant="contained"
                   >
                     <WithStyles(ButtonBase)
@@ -2706,7 +2705,7 @@ exports[`should match snapshot: Signup/nomal 1`] = `
                       focusRipple={true}
                       focusVisibleClassName="MuiButton-focusVisible-166"
                       onClick={[Function]}
-                      type="submit"
+                      type="button"
                     >
                       <ButtonBase
                         centerRipple={false}
@@ -2726,7 +2725,7 @@ exports[`should match snapshot: Signup/nomal 1`] = `
                         focusVisibleClassName="MuiButton-focusVisible-166"
                         onClick={[Function]}
                         tabIndex="0"
-                        type="submit"
+                        type="button"
                       >
                         <button
                           className="MuiButtonBase-root-48 MuiButtonBase-disabled-49 MuiButton-root-147 MuiButton-contained-158 MuiButton-containedPrimary-159 MuiButton-raised-161 MuiButton-raisedPrimary-162 MuiButton-disabled-167 MuiButton-fullWidth-172"
@@ -2744,7 +2743,7 @@ exports[`should match snapshot: Signup/nomal 1`] = `
                           onTouchMove={[Function]}
                           onTouchStart={[Function]}
                           tabIndex="-1"
-                          type="submit"
+                          type="button"
                         >
                           <span
                             className="MuiButton-label-148"

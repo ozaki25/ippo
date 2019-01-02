@@ -832,7 +832,6 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                   disabled={true}
                   fullWidth={true}
                   onClick={[Function]}
-                  type="submit"
                   variant="contained"
                 >
                   <Button
@@ -874,7 +873,7 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                     mini={false}
                     onClick={[Function]}
                     size="medium"
-                    type="submit"
+                    type="button"
                     variant="contained"
                   >
                     <WithStyles(ButtonBase)
@@ -884,7 +883,7 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                       focusRipple={true}
                       focusVisibleClassName="MuiButton-focusVisible-72"
                       onClick={[Function]}
-                      type="submit"
+                      type="button"
                     >
                       <ButtonBase
                         centerRipple={false}
@@ -904,7 +903,7 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                         focusVisibleClassName="MuiButton-focusVisible-72"
                         onClick={[Function]}
                         tabIndex="0"
-                        type="submit"
+                        type="button"
                       >
                         <button
                           className="MuiButtonBase-root-79 MuiButtonBase-disabled-80 MuiButton-root-53 MuiButton-contained-64 MuiButton-containedPrimary-65 MuiButton-raised-67 MuiButton-raisedPrimary-68 MuiButton-disabled-73 MuiButton-fullWidth-78"
@@ -922,7 +921,7 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                           onTouchMove={[Function]}
                           onTouchStart={[Function]}
                           tabIndex="-1"
-                          type="submit"
+                          type="button"
                         >
                           <span
                             className="MuiButton-label-54"
