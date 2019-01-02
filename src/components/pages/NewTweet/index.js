@@ -31,6 +31,7 @@ class NewTweet extends React.Component {
     this.state = {
       tweet: `
 #${this.props.hashtag}`,
+      disabled: false,
       error: false,
     };
     this.tweet = React.createRef();
@@ -53,6 +54,7 @@ class NewTweet extends React.Component {
       uid: authUser.uid,
       time: new Date().toString(),
     };
+    this.setState({ disabled: true });
     try {
       const result = await createTweet({
         variables: { tweet },
@@ -62,13 +64,14 @@ class NewTweet extends React.Component {
     } catch (e) {
       this.setState({ error: e.toString() });
       console.log(e);
+    } finally {
+      this.setState({ disabled: false });
     }
   };
 
   render() {
     const { authUser, history, firebase } = this.props;
-    const { tweet, error } = this.state;
-    const disabled = !tweet.trim();
+    const { disabled, error } = this.state;
     return (
       <Container title="ツイート" back authUser={authUser} history={history} firebase={firebase}>
         <Wrapper>
