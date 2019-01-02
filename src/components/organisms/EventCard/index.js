@@ -5,7 +5,9 @@ import CustomCard from 'src/components/molecules/CustomCard';
 
 const EventCard = ({ title, eventUrl, catchMessage, place, datetime, expand, history }) => (
   <CustomCard expand={expand} url={eventUrl} history={history}>
-    <h3 className="bp3-heading">{title}</h3>
+    <Typography color="primary" variant="h6">
+      {title}
+    </Typography>
     {catchMessage && <Typography>{`概要：${catchMessage}`}</Typography>}
     {place && <Typography>{`場所：${place}`}</Typography>}
     {datetime && <Typography>{`日時：${datetime}`}</Typography>}
