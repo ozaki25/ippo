@@ -73,6 +73,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
       }
       back={true}
       firebase={Object {}}
+      header={true}
       history={
         Object {
           "goBack": [MockFunction],

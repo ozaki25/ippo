@@ -60,7 +60,7 @@ class NewTweet extends React.Component {
         variables: { tweet },
       });
       console.log(result);
-      history.goBack('refetch');
+      history.goBack();
     } catch (e) {
       this.setState({ error: e.toString() });
       console.log(e);
