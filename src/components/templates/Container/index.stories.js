@@ -25,3 +25,5 @@ stories.add('paddingあり', () => <Container {...props} />);
 stories.add('paddingなし', () => <Container {...props} noPadding />);
 
 stories.add('戻るあり', () => <Container {...props} back />);
+
+stories.add('ヘッダーなし', () => <Container {...props} header={false} />);

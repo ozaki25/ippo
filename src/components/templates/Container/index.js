@@ -7,15 +7,17 @@ const StyledContainer = styled.div`
   padding: ${({ noPadding }) => (noPadding ? 'inherit' : '10px')};
 `;
 
-const Container = ({ children, title, authUser, noPadding, back, history, firebase }) => (
+const Container = ({ children, title, authUser, noPadding, header, back, history, firebase }) => (
   <>
-    <NavigationBar
-      title={title}
-      authUser={authUser}
-      back={back}
-      history={history}
-      firebase={firebase}
-    />
+    {header && (
+      <NavigationBar
+        title={title}
+        authUser={authUser}
+        back={back}
+        history={history}
+        firebase={firebase}
+      />
+    )}
     <StyledContainer noPadding={noPadding}>{children}</StyledContainer>
   </>
 );
@@ -26,6 +28,7 @@ Container.propTypes = {
   title: propTypes.string,
   authUser: propTypes.object,
   noPadding: propTypes.bool,
+  header: propTypes.bool,
   back: propTypes.bool,
   history: propTypes.object.isRequired,
   firebase: propTypes.object.isRequired,
@@ -35,6 +38,7 @@ Container.defaultProps = {
   title: '',
   authUser: null,
   noPadding: false,
+  header: true,
   back: false,
 };
 

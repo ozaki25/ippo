@@ -18,3 +18,7 @@ const props = {
 snapshot('Container/padding', <Container {...props} />);
 
 snapshot('Container/nopadding', <Container {...props} noPadding />);
+
+snapshot('Container/back', <Container {...props} back />);
+
+snapshot('Container/noheader', <Container {...props} header={false} />);
