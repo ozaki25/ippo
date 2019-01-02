@@ -72,7 +72,7 @@ class Signin extends React.Component {
           <GoogleButton onClick={this.signinWithGoogle} />
         </ButtonContainer>
         <ButtonContainer>
-          <Button component={Link} to={ROUTES.Signup} color="primary" fullWidth>
+          <Button component={Link} to={ROUTES.Signup} color="primary">
             新規登録
           </Button>
         </ButtonContainer>

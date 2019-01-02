@@ -1169,7 +1169,6 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                   <WithStyles(Button)
                     color="primary"
                     component={[Function]}
-                    fullWidth={true}
                     to="/users/signup"
                   >
                     <Button
@@ -1207,7 +1206,7 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                       component={[Function]}
                       disableFocusRipple={false}
                       disabled={false}
-                      fullWidth={true}
+                      fullWidth={false}
                       mini={false}
                       size="medium"
                       to="/users/signup"
@@ -1215,7 +1214,7 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                       variant="text"
                     >
                       <WithStyles(ButtonBase)
-                        className="MuiButton-root-53 MuiButton-text-55 MuiButton-textPrimary-56 MuiButton-flat-58 MuiButton-flatPrimary-59 MuiButton-fullWidth-78"
+                        className="MuiButton-root-53 MuiButton-text-55 MuiButton-textPrimary-56 MuiButton-flat-58 MuiButton-flatPrimary-59"
                         component={[Function]}
                         disabled={false}
                         focusRipple={true}
@@ -1225,7 +1224,7 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                       >
                         <ButtonBase
                           centerRipple={false}
-                          className="MuiButton-root-53 MuiButton-text-55 MuiButton-textPrimary-56 MuiButton-flat-58 MuiButton-flatPrimary-59 MuiButton-fullWidth-78"
+                          className="MuiButton-root-53 MuiButton-text-55 MuiButton-textPrimary-56 MuiButton-flat-58 MuiButton-flatPrimary-59"
                           classes={
                             Object {
                               "disabled": "MuiButtonBase-disabled-80",
@@ -1244,7 +1243,7 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                           type="button"
                         >
                           <Link
-                            className="MuiButtonBase-root-79 MuiButton-root-53 MuiButton-text-55 MuiButton-textPrimary-56 MuiButton-flat-58 MuiButton-flatPrimary-59 MuiButton-fullWidth-78"
+                            className="MuiButtonBase-root-79 MuiButton-root-53 MuiButton-text-55 MuiButton-textPrimary-56 MuiButton-flat-58 MuiButton-flatPrimary-59"
                             onBlur={[Function]}
                             onContextMenu={[Function]}
                             onFocus={[Function]}
@@ -1262,7 +1261,7 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                             to="/users/signup"
                           >
                             <a
-                              className="MuiButtonBase-root-79 MuiButton-root-53 MuiButton-text-55 MuiButton-textPrimary-56 MuiButton-flat-58 MuiButton-flatPrimary-59 MuiButton-fullWidth-78"
+                              className="MuiButtonBase-root-79 MuiButton-root-53 MuiButton-text-55 MuiButton-textPrimary-56 MuiButton-flat-58 MuiButton-flatPrimary-59"
                               onBlur={[Function]}
                               onClick={[Function]}
                               onContextMenu={[Function]}
