@@ -18,7 +18,7 @@ const OrganizedEvents = () => <p>tmp...</p>;
 const Router = () => (
   <BrowserRouter>
     <Switch>
-      <div>
+      <>
         <ScrollToTop />
         <Route path={ROUTES.Signin} exact component={Signin} />
         <Route path={ROUTES.Menu} exact component={Menu} />
@@ -31,7 +31,7 @@ const Router = () => (
         <Route path={ROUTES.Tweets} exact component={Tweets} />
         <Route path={ROUTES.NewTweet} exact component={NewTweet} />
         <Route path={ROUTES.Publish} exact component={Publish} />
-      </div>
+      </>
     </Switch>
   </BrowserRouter>
 );
