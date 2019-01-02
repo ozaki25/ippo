@@ -2,6 +2,7 @@ import { addDecorator, configure } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 import StoryRouter from 'storybook-react-router';
+import 'typeface-roboto';
 import '../src/index.css';
 import Layout from './Layout';
 
