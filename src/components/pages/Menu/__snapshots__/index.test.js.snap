@@ -195,6 +195,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
       }
       back={false}
       firebase={Object {}}
+      header={true}
       history={
         Object {
           "goBack": [MockFunction],
