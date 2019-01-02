@@ -22,7 +22,8 @@
     "react-swipeable-views": "^0.13.0",
     "recompose": "^0.30.0",
     "redux": "^4.0.1",
-    "styled-components": "^4.1.2"
+    "styled-components": "^4.1.2",
+    "typeface-roboto": "^0.0.54"
   },
   "scripts": {
     "start": "NODE_PATH=. REACT_APP_LOCAL=true react-scripts start",
