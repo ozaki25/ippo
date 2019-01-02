@@ -12,9 +12,7 @@ class SigninForm extends React.Component {
     try {
       await this.props.onSubmit({ data: { email, pass } });
     } catch (e) {
-      this.setState({ error: e.toString() });
-    } finally {
-      this.setState({ loading: false });
+      this.setState({ loading: false, error: e.toString() });
     }
   };
 
@@ -29,7 +27,7 @@ class SigninForm extends React.Component {
         <TextField
           label="メールアドレス"
           name="email"
-          value={this.state.email}
+          value={email}
           onChange={this.onChange}
           margin="normal"
           color="primary"
@@ -40,7 +38,7 @@ class SigninForm extends React.Component {
           label="パスワード"
           name="pass"
           type="password"
-          value={this.state.pass}
+          value={pass}
           onChange={this.onChange}
           margin="normal"
           color="primary"
@@ -49,7 +47,6 @@ class SigninForm extends React.Component {
         <br />
         <Button
           onClick={this.onClick}
-          type="submit"
           disabled={invalid || loading}
           color="primary"
           variant="contained"
