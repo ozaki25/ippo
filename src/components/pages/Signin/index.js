@@ -63,7 +63,7 @@ class Signin extends React.Component {
   render() {
     const { history, firebase } = this.props;
     return (
-      <Container title="ログイン" header={false} history={history} firebase={firebase}>
+      <Container header={false} history={history} firebase={firebase}>
         <ImageContainer>
           <StyledImg src="/images/ippo.png" alt="IPPO" />
         </ImageContainer>

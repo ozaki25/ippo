@@ -63,7 +63,7 @@ exports[`should match snapshot: Signin/nomal 1`] = `
         }
       }
       noPadding={false}
-      title="ログイン"
+      title=""
     >
       <styled.div
         noPadding={false}
