@@ -3,8 +3,12 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import ScrollToTop from 'src/router/ScrollToTop';
 import Menu from 'src/hoc/WithMenu';
 import Signin from 'src/hoc/WithSignin';
+<<<<<<< HEAD
 import Signup from 'src/hoc/WithSignup';
 import Admin from 'src/hoc/WithAdmin';
+=======
+import Notification from 'src/hoc/WithNotification';
+>>>>>>> origin/development
 import InternalEvents from 'src/hoc/WithInternalEvents';
 import ExternalEvents from 'src/hoc/WithExternalEvents';
 import NewEvent from 'src/hoc/WithNewEvent';
