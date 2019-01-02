@@ -7,7 +7,7 @@ const InternalEvents = '/events/internal';
 const ExternalEvents = '/events/external';
 const OrganizedEvents = '/events/organized';
 const NewEvent = '/events/new';
-const Publish = '/notifications/publish';
+const Admin = '/admin';
 const Tweets = '/tweets';
 const NewTweet = '/tweets/new';
 
@@ -23,5 +23,5 @@ export default {
   NewEvent,
   Tweets,
   NewTweet,
-  Publish,
+  Admin,
 };

@@ -1,9 +1,10 @@
 import React from 'react';
 import { snapshot } from 'test/helpers';
-import Publish from '.';
+import Admin from '.';
 
 const props = {
   publishNotification: jest.fn(),
+  registerNotification: jest.fn(),
   authUser: {
     uid: '123',
     displayName: 'テストユーザ',
@@ -12,7 +13,9 @@ const props = {
     push: jest.fn(),
     goBack: jest.fn(),
   },
-  firebase: {},
+  firebase: {
+    askForPermissionToReceiveNotifications: jest.fn(),
+  },
 };
 
-snapshot('Publish/nomal', <Publish {...props} />);
+snapshot('Admin/nomal', <Admin {...props} />);

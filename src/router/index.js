@@ -4,7 +4,7 @@ import ScrollToTop from 'src/router/ScrollToTop';
 import Menu from 'src/hoc/WithMenu';
 import Signin from 'src/hoc/WithSignin';
 import Signup from 'src/hoc/WithSignup';
-import Publish from 'src/hoc/WithPublish';
+import Admin from 'src/hoc/WithAdmin';
 import InternalEvents from 'src/hoc/WithInternalEvents';
 import ExternalEvents from 'src/hoc/WithExternalEvents';
 import NewEvent from 'src/hoc/WithNewEvent';
@@ -32,7 +32,7 @@ const Router = () => (
         <Route path={ROUTES.NewEvent} exact component={NewEvent} />
         <Route path={ROUTES.Tweets} exact component={Tweets} />
         <Route path={ROUTES.NewTweet} exact component={NewTweet} />
-        <Route path={ROUTES.Publish} exact component={Publish} />
+        <Route path={ROUTES.Admin} exact component={Admin} />
       </>
     </Switch>
   </BrowserRouter>
