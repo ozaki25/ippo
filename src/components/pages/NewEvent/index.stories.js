@@ -14,6 +14,7 @@ const props = {
   history: {
     push: action('push'),
     goBack: action('goBack'),
+    replace: action('replace'),
   },
   firebase: {},
 };

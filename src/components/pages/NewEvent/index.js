@@ -8,9 +8,10 @@ const NewEvent = ({ createEvent, authUser, history, firebase }) => {
   return (
     <Container title="イベント作成" back authUser={authUser} history={history} firebase={firebase}>
       <EventCreateForm
-        onSubmit={event => {
-          history.push(`${ROUTES.Tweets}?hashtag=${event.hashtag}`);
-          return createEvent({ variables: { event } });
+        onSubmit={async event => {
+          const result = await createEvent({ variables: { event } });
+          history.replace(`${ROUTES.Tweets}?hashtag=${event.hashtag}`);
+          return result;
         }}
       />
     </Container>
@@ -28,6 +29,7 @@ NewEvent.propTypes = {
   history: propTypes.shape({
     push: propTypes.func.isRequired,
     goBack: propTypes.func.isRequired,
+    replace: propTypes.func.isRequired,
   }).isRequired,
   firebase: propTypes.object.isRequired,
 };

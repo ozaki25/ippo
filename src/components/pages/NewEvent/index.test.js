@@ -11,6 +11,7 @@ const props = {
   history: {
     push: jest.fn(),
     goBack: jest.fn(),
+    replace: jest.fn(),
   },
   firebase: {},
 };
