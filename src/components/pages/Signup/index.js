@@ -1,10 +1,13 @@
 import React from 'react';
-import {} from '@material-ui/core';
-import styled from 'styled-components';
 import propTypes from 'prop-types';
+import OverlaySpinner from 'src/components/molecules/OverlaySpinner';
+import SignupForm from 'src/components/organisms/SignupForm';
+import Container from 'src/components/templates/Container';
 import ROUTES from 'src/constants/routes';
 
 class Signup extends React.Component {
+  state = { loading: false };
+
   signup = async ({ data: { email, pass, name } }) => {
     sessionStorage.setItem('authUser', JSON.stringify({ name }));
     await this.props.firebase.doCreateUserWithEmailAndPassword(email, pass);
@@ -12,7 +15,13 @@ class Signup extends React.Component {
   };
 
   render() {
-    return <p>...</p>;
+    const { history, firebase } = this.props;
+    return (
+      <Container title="新規登録" back history={history} firebase={firebase}>
+        <SignupForm onSubmit={this.signup} />
+        <OverlaySpinner visible={this.state.loading} />
+      </Container>
+    );
   }
 }
 
