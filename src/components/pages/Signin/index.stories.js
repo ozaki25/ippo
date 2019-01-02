@@ -7,7 +7,8 @@ const stories = storiesOf('pages/Signin', module);
 
 const props = {
   history: {
-    push: action('push', 'push'),
+    push: action('push'),
+    goBack: action('goBack'),
   },
   firebase: {
     doSignInWithEmailAndPassword: action('signin', 'signin'),

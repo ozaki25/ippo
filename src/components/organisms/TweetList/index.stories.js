@@ -1,14 +1,13 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { boolean } from '@storybook/addon-knobs';
 import TweetList from '.';
 
 const stories = storiesOf('organisms/TweetList', module);
 
 const props = {
   loadMore: action('loadMore'),
-  hasMore: boolean('hasMore', false),
+  hasMore: false,
   items: [
     {
       id: '1',
@@ -87,3 +86,5 @@ http://atomicdesign.bradfrost.com/chapter-4/
 };
 
 stories.add('通常パターン', () => <TweetList {...props} />);
+
+stories.add('ローディング', () => <TweetList {...props} hasMore={true} />);

@@ -16,7 +16,3 @@ stories.add('10ページ中5ページ目', () => (
 stories.add('10ページ中10ページ目', () => (
   <Pagination current={10} total={10} onClick={action('click')} />
 ));
-
-stories.add('ボタン大きめ', () => (
-  <Pagination current={5} total={10} onClick={action('click')} large />
-));

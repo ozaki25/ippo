@@ -8,4 +8,4 @@ const permission = () => Notification.permission;
 
 const isSupported = () => 'PushManager' in window;
 
-export default {  isGranted, isDenied, isUndecided, permission, isSupported };
+export default { isGranted, isDenied, isUndecided, permission, isSupported };

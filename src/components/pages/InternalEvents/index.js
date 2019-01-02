@@ -1,7 +1,8 @@
 import React from 'react';
+import { Typography } from '@material-ui/core';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
-import { Spinner, Text } from '@blueprintjs/core';
+import Spinner from 'src/components/atoms/Spinner';
 import EventCard from 'src/components/organisms/EventCard';
 import Container from 'src/components/templates/Container';
 import dateFormat from 'src/utils/dateFormat';
@@ -10,9 +11,9 @@ const EventCardContainer = styled.div`
   margin: 8px 0;
 `;
 
-const InternalEvents = ({ data: { loading, internalEvents }, authUser, history }) => {
+const InternalEvents = ({ data: { loading, internalEvents }, authUser, history, firebase }) => {
   return (
-    <Container authUser={authUser}>
+    <Container title="社内イベント" back authUser={authUser} history={history} firebase={firebase}>
       {loading ? (
         <Spinner />
       ) : internalEvents && internalEvents.length ? (
@@ -32,7 +33,7 @@ const InternalEvents = ({ data: { loading, internalEvents }, authUser, history }
           ))}
         </>
       ) : (
-        <Text>No Contents</Text>
+        <Typography>No Contents</Typography>
       )}
     </Container>
   );
@@ -53,7 +54,15 @@ InternalEvents.propTypes = {
       }),
     ),
   }),
-  authUser: propTypes.object,
+  authUser: propTypes.shape({
+    displayName: propTypes.string.isRequired,
+    uid: propTypes.string.isRequired,
+  }).isRequired,
+  history: propTypes.shape({
+    push: propTypes.func.isRequired,
+    goBack: propTypes.func.isRequired,
+  }).isRequired,
+  firebase: propTypes.object.isRequired,
 };
 
 InternalEvents.defaultProps = {
@@ -61,7 +70,6 @@ InternalEvents.defaultProps = {
     loading: false,
     internalEvents: [],
   },
-  authUser: null,
 };
 
 export default InternalEvents;

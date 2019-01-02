@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
 import Menu from '.';
 
 const stories = storiesOf('pages/Menu', module);
@@ -33,6 +34,15 @@ const props = {
       events: [...[...Array(5)].map((_, i) => externalEvent(i))],
     },
   },
+  authUser: {
+    uid: '123',
+    displayName: 'テストユーザ',
+  },
+  history: {
+    push: action('push'),
+    goBack: action('goBack'),
+  },
+  firebase: {},
 };
 
 stories.add('通常パターン', () => <Menu {...props} />);

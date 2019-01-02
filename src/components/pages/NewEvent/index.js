@@ -4,13 +4,14 @@ import EventCreateForm from 'src/components/organisms/EventCreateForm';
 import Container from 'src/components/templates/Container';
 import ROUTES from 'src/constants/routes';
 
-const NewEvent = ({ createEvent, history }) => {
+const NewEvent = ({ createEvent, authUser, history, firebase }) => {
   return (
-    <Container>
+    <Container title="イベント作成" back authUser={authUser} history={history} firebase={firebase}>
       <EventCreateForm
-        onSubmit={event => {
-          history.push(`${ROUTES.Tweets}?hashtag=${event.hashtag}`);
-          return createEvent({ variables: { event } });
+        onSubmit={async event => {
+          const result = await createEvent({ variables: { event } });
+          history.replace(`${ROUTES.Tweets}?hashtag=${event.hashtag}`);
+          return result;
         }}
       />
     </Container>
@@ -21,6 +22,16 @@ NewEvent.displayName = 'NewEvent';
 
 NewEvent.propTypes = {
   createEvent: propTypes.func,
+  authUser: propTypes.shape({
+    displayName: propTypes.string.isRequired,
+    uid: propTypes.string.isRequired,
+  }).isRequired,
+  history: propTypes.shape({
+    push: propTypes.func.isRequired,
+    goBack: propTypes.func.isRequired,
+    replace: propTypes.func.isRequired,
+  }).isRequired,
+  firebase: propTypes.object.isRequired,
 };
 
 NewEvent.defaultProps = {};

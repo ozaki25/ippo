@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
-import { Card, Elevation } from '@blueprintjs/core';
+import { Card, CardActionArea, CardContent } from '@material-ui/core';
 
 const onClick = (url, history) => (history ? history.push(url) : window.open(url, '_blank'));
 
@@ -9,13 +9,16 @@ const StyledCard = styled(Card)`
   min-height: ${({ expand }) => (expand ? '130px' : 'inherit')};
 `;
 
-const CustomCard = ({ interactive, expand, url, history, ...rest }) => (
-  <StyledCard
-    expand={expand ? 1 : 0}
-    elevation={Elevation.TWO}
-    onClick={() => onClick(url, history)}
-    {...rest}
-  />
+const StyledCardActionArea = styled(CardActionArea)`
+  min-height: ${({ expand }) => (expand ? '130px' : 'inherit')};
+`;
+
+const CustomCard = ({ interactive, expand, url, history, children }) => (
+  <StyledCard expand={expand ? 1 : 0} onClick={() => onClick(url, history)}>
+    <StyledCardActionArea expand={expand ? 1 : 0}>
+      <CardContent>{children}</CardContent>
+    </StyledCardActionArea>
+  </StyledCard>
 );
 
 CustomCard.displayName = 'CustomCard';
@@ -26,6 +29,7 @@ CustomCard.propTypes = {
   history: propTypes.shape({
     push: propTypes.func,
   }),
+  children: propTypes.node.isRequired,
 };
 
 CustomCard.defaultProps = {

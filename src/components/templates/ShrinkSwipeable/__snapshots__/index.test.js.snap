@@ -25,6 +25,7 @@ exports[`should match snapshot: ShrinkSwipeable/nomal 1`] = `
       slideStyle={
         Object {
           "padding": "0 5px",
+          "width": "calc(100% - 10px)",
         }
       }
       springConfig={
@@ -81,7 +82,7 @@ exports[`should match snapshot: ShrinkSwipeable/nomal 1`] = `
                 "flexShrink": 0,
                 "overflow": "auto",
                 "padding": "0 5px",
-                "width": "100%",
+                "width": "calc(100% - 10px)",
               }
             }
           >
