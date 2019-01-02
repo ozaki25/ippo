@@ -1,4 +1,5 @@
 const Signin = '/users/signin';
+const Signup = '/users/signup';
 const Menu = '/';
 const EnteredEvents = '/events/entry';
 const RecommendedEvents = '/events/recommended';
@@ -12,6 +13,7 @@ const NewTweet = '/tweets/new';
 
 export default {
   Signin,
+  Signup,
   Menu,
   EnteredEvents,
   RecommendedEvents,

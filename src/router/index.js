@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import ScrollToTop from 'src/router/ScrollToTop';
 import Menu from 'src/hoc/WithMenu';
 import Signin from 'src/hoc/WithSignin';
+import Signup from 'src/hoc/WithSignup';
 import Publish from 'src/hoc/WithPublish';
 import InternalEvents from 'src/hoc/WithInternalEvents';
 import ExternalEvents from 'src/hoc/WithExternalEvents';
@@ -21,6 +22,7 @@ const Router = () => (
       <>
         <ScrollToTop />
         <Route path={ROUTES.Signin} exact component={Signin} />
+        <Route path={ROUTES.Signup} exact component={Signup} />
         <Route path={ROUTES.Menu} exact component={Menu} />
         <Route path={ROUTES.EnteredEvents} exact component={EnteredEvents} />
         <Route path={ROUTES.RecommendedEvents} exact component={RecommendedEvents} />
