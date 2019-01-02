@@ -8,8 +8,8 @@ class SigninForm extends React.Component {
   onClick = async event => {
     event.preventDefault();
     const { email, pass } = this.state;
+    this.setState({ loading: true });
     try {
-      this.setState({ loading: true });
       await this.props.onSubmit({ data: { email, pass } });
     } catch (e) {
       this.setState({ error: e.toString() });
