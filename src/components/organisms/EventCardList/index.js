@@ -6,13 +6,13 @@ import EventCard from 'src/components/organisms/EventCard';
 import dateFormat from 'src/utils/dateFormat';
 
 const EventCardContainer = styled.div`
-  margin: 8px 0;
+  margin: ${({ horizontal }) => (horizontal ? '2px 0' : '8px 0')};
 `;
 
-const EventCardList = ({ events, expand, history }) =>
+const EventCardList = ({ events, expand, history, horizontal }) =>
   events && events.length ? (
     events.map(event => (
-      <EventCardContainer key={event.id}>
+      <EventCardContainer key={event.id} horizontal={horizontal ? 1 : 0}>
         <EventCard
           title={event.title}
           eventUrl={event.eventUrl}
@@ -42,6 +42,7 @@ EventCardList.propTypes = {
     }),
   ).isRequired,
   expand: propTypes.bool,
+  horizontal: propTypes.bool,
   history: propTypes.shape({
     push: propTypes.func,
   }),
@@ -50,6 +51,7 @@ EventCardList.propTypes = {
 EventCardList.defaultProps = {
   eventUrl: '',
   expand: false,
+  horizontal: false,
   history: null,
 };
 
