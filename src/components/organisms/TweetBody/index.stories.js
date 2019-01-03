@@ -1,12 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { text } from '@storybook/addon-knobs';
-import Tweet from '.';
+import TweetBody from '.';
 
-const stories = storiesOf('organisms/Tweet', module);
+const stories = storiesOf('organisms/TweetBody', module);
 
 const props = {
-  name: text('name', 'ozaki25'),
   text: text(
     'text',
     `Storybookいいところ
@@ -15,7 +14,6 @@ const props = {
   - UIの修正デバッグが楽
   #ThinkAtomicDesign`,
   ),
-  time: text('time', '12月10日'),
 };
 
-stories.add('通常パターン', () => <Tweet {...props} />);
+stories.add('通常パターン', () => <TweetBody {...props} />);
