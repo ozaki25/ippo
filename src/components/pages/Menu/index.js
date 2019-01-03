@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography } from '@material-ui/core';
+import { Divider, Typography } from '@material-ui/core';
 import { AddRounded, NavigateNextRounded } from '@material-ui/icons';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
@@ -42,40 +42,42 @@ const Menu = ({ internal, external, authUser, history, firebase }) => (
     <EventsContainer>
       <LinkHeading linkTo={ROUTES.EnteredEvents}>参加イベント</LinkHeading>
       <AsyncSwipeable loading={false}>
-        {EventCardList({ events: [], expand: true, horizontal: true, history })}
+        {EventCardList({ events: [], expand: true, noWrap: true, horizontal: true, history })}
       </AsyncSwipeable>
     </EventsContainer>
-
+    <Divider light />
     <EventsContainer>
       <LinkHeading linkTo={ROUTES.RecommendedEvents}>おすすめイベント</LinkHeading>
       <AsyncSwipeable loading={false}>
-        {EventCardList({ events: [], expand: true, horizontal: true, history })}
+        {EventCardList({ events: [], expand: true, noWrap: true, horizontal: true, history })}
       </AsyncSwipeable>
     </EventsContainer>
-
+    <Divider light />
     <EventsContainer>
       <LinkHeading linkTo={ROUTES.InternalEvents}>社内イベント</LinkHeading>
       <AsyncSwipeable loading={internal.loading}>
         {EventCardList({
           events: eventFormat.internal(internal.internalEvents),
           expand: true,
+          noWrap: true,
           horizontal: true,
           history,
         })}
       </AsyncSwipeable>
     </EventsContainer>
-
+    <Divider light />
     <EventsContainer>
       <LinkHeading linkTo={ROUTES.ExternalEvents}>社外イベント</LinkHeading>
       <AsyncSwipeable loading={external.loading}>
         {EventCardList({
           events: eventFormat.external(external.connpass),
           expand: true,
+          noWrap: true,
           horizontal: true,
         })}
       </AsyncSwipeable>
     </EventsContainer>
-
+    <Divider light />
     <EventsContainer>
       <LinkHeading linkTo={ROUTES.OrganizedEvents}>主催イベント</LinkHeading>
       <AsyncSwipeable loading={false}>
@@ -87,9 +89,10 @@ const Menu = ({ internal, external, authUser, history, firebase }) => (
             </IconWithText>
           </CustomCard>
         </CardContainer>
-        {EventCardList({ events: [], expand: true, horizontal: true, history })}
+        {EventCardList({ events: [], expand: true, noWrap: true, horizontal: true, history })}
       </AsyncSwipeable>
     </EventsContainer>
+    <Divider light />
   </Container>
 );
 

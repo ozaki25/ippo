@@ -577,7 +577,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                           "fontSize": "0.875rem",
                                           "fontWeight": 500,
                                           "letterSpacing": "0.02857em",
-                                          "lineHeight": 1.5,
+                                          "lineHeight": 1.3125,
                                           "textTransform": "uppercase",
                                         },
                                         "caption": Object {
@@ -997,7 +997,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                     "fontSize": "0.875rem",
                                                     "fontWeight": 500,
                                                     "letterSpacing": "0.02857em",
-                                                    "lineHeight": 1.5,
+                                                    "lineHeight": 1.3125,
                                                     "textTransform": "uppercase",
                                                   },
                                                   "caption": Object {
@@ -1445,7 +1445,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                     "fontSize": "0.875rem",
                                                     "fontWeight": 500,
                                                     "letterSpacing": "0.02857em",
-                                                    "lineHeight": 1.5,
+                                                    "lineHeight": 1.3125,
                                                     "textTransform": "uppercase",
                                                   },
                                                   "caption": Object {
@@ -1887,7 +1887,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                 "fontSize": "0.875rem",
                                                 "fontWeight": 500,
                                                 "letterSpacing": "0.02857em",
-                                                "lineHeight": 1.5,
+                                                "lineHeight": 1.3125,
                                                 "textTransform": "uppercase",
                                               },
                                               "caption": Object {
@@ -2174,25 +2174,25 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                     center={true}
                                                     classes={
                                                       Object {
-                                                        "child": "MuiTouchRipple-child-104",
-                                                        "childLeaving": "MuiTouchRipple-childLeaving-105",
-                                                        "childPulsate": "MuiTouchRipple-childPulsate-106",
-                                                        "ripple": "MuiTouchRipple-ripple-101",
-                                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate-103",
-                                                        "rippleVisible": "MuiTouchRipple-rippleVisible-102",
-                                                        "root": "MuiTouchRipple-root-100",
+                                                        "child": "MuiTouchRipple-child-109",
+                                                        "childLeaving": "MuiTouchRipple-childLeaving-110",
+                                                        "childPulsate": "MuiTouchRipple-childPulsate-111",
+                                                        "ripple": "MuiTouchRipple-ripple-106",
+                                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate-108",
+                                                        "rippleVisible": "MuiTouchRipple-rippleVisible-107",
+                                                        "root": "MuiTouchRipple-root-105",
                                                       }
                                                     }
                                                   >
                                                     <TransitionGroup
                                                       childFactory={[Function]}
-                                                      className="MuiTouchRipple-root-100"
+                                                      className="MuiTouchRipple-root-105"
                                                       component="span"
                                                       enter={true}
                                                       exit={true}
                                                     >
                                                       <span
-                                                        className="MuiTouchRipple-root-100"
+                                                        className="MuiTouchRipple-root-105"
                                                       />
                                                     </TransitionGroup>
                                                   </TouchRipple>
@@ -2681,7 +2681,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                 "fontSize": "0.875rem",
                                                 "fontWeight": 500,
                                                 "letterSpacing": "0.02857em",
-                                                "lineHeight": 1.5,
+                                                "lineHeight": 1.3125,
                                                 "textTransform": "uppercase",
                                               },
                                               "caption": Object {
@@ -3207,7 +3207,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                           "fontSize": "0.875rem",
                                           "fontWeight": 500,
                                           "letterSpacing": "0.02857em",
-                                          "lineHeight": 1.5,
+                                          "lineHeight": 1.3125,
                                           "textTransform": "uppercase",
                                         },
                                         "caption": Object {
@@ -3388,6 +3388,29 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                 </div>
               </StyledComponent>
             </styled.div>
+            <WithStyles(Divider)
+              light={true}
+            >
+              <Divider
+                absolute={false}
+                classes={
+                  Object {
+                    "absolute": "MuiDivider-absolute-96",
+                    "inset": "MuiDivider-inset-97",
+                    "light": "MuiDivider-light-98",
+                    "middle": "MuiDivider-middle-99",
+                    "root": "MuiDivider-root-95",
+                  }
+                }
+                component="hr"
+                light={true}
+                variant="fullWidth"
+              >
+                <hr
+                  className="MuiDivider-root-95 MuiDivider-light-98"
+                />
+              </Divider>
+            </WithStyles(Divider)>
             <styled.div>
               <StyledComponent
                 forwardedComponent={
@@ -3815,7 +3838,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                 "fontSize": "0.875rem",
                                                 "fontWeight": 500,
                                                 "letterSpacing": "0.02857em",
-                                                "lineHeight": 1.5,
+                                                "lineHeight": 1.3125,
                                                 "textTransform": "uppercase",
                                               },
                                               "caption": Object {
@@ -4341,7 +4364,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                           "fontSize": "0.875rem",
                                           "fontWeight": 500,
                                           "letterSpacing": "0.02857em",
-                                          "lineHeight": 1.5,
+                                          "lineHeight": 1.3125,
                                           "textTransform": "uppercase",
                                         },
                                         "caption": Object {
@@ -4522,6 +4545,29 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                 </div>
               </StyledComponent>
             </styled.div>
+            <WithStyles(Divider)
+              light={true}
+            >
+              <Divider
+                absolute={false}
+                classes={
+                  Object {
+                    "absolute": "MuiDivider-absolute-96",
+                    "inset": "MuiDivider-inset-97",
+                    "light": "MuiDivider-light-98",
+                    "middle": "MuiDivider-middle-99",
+                    "root": "MuiDivider-root-95",
+                  }
+                }
+                component="hr"
+                light={true}
+                variant="fullWidth"
+              >
+                <hr
+                  className="MuiDivider-root-95 MuiDivider-light-98"
+                />
+              </Divider>
+            </WithStyles(Divider)>
             <styled.div>
               <StyledComponent
                 forwardedComponent={
@@ -4949,7 +4995,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                 "fontSize": "0.875rem",
                                                 "fontWeight": 500,
                                                 "letterSpacing": "0.02857em",
-                                                "lineHeight": 1.5,
+                                                "lineHeight": 1.3125,
                                                 "textTransform": "uppercase",
                                               },
                                               "caption": Object {
@@ -5259,6 +5305,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                         }
                                       }
                                       interactive={true}
+                                      noWrap={true}
                                       place="晴海"
                                       title="タイトル0"
                                     >
@@ -5495,7 +5542,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                         "fontSize": "0.875rem",
                                                         "fontWeight": 500,
                                                         "letterSpacing": "0.02857em",
-                                                        "lineHeight": 1.5,
+                                                        "lineHeight": 1.3125,
                                                         "textTransform": "uppercase",
                                                       },
                                                       "caption": Object {
@@ -5681,7 +5728,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                 className="c7"
                                                 classes={
                                                   Object {
-                                                    "root": "MuiCard-root-95",
+                                                    "root": "MuiCard-root-100",
                                                   }
                                                 }
                                                 expand={1}
@@ -5689,13 +5736,13 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                 raised={false}
                                               >
                                                 <WithStyles(Paper)
-                                                  className="MuiCard-root-95 c7"
+                                                  className="MuiCard-root-100 c7"
                                                   elevation={1}
                                                   expand={1}
                                                   onClick={[Function]}
                                                 >
                                                   <Paper
-                                                    className="MuiCard-root-95 c7"
+                                                    className="MuiCard-root-100 c7"
                                                     classes={
                                                       Object {
                                                         "elevation0": "MuiPaper-elevation0-13",
@@ -5734,7 +5781,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                     square={false}
                                                   >
                                                     <div
-                                                      className="MuiPaper-root-11 MuiPaper-elevation1-14 MuiPaper-rounded-12 MuiCard-root-95 c7"
+                                                      className="MuiPaper-root-11 MuiPaper-elevation1-14 MuiPaper-rounded-12 MuiCard-root-100 c7"
                                                       expand={1}
                                                       onClick={[Function]}
                                                     >
@@ -5960,7 +6007,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                       "fontSize": "0.875rem",
                                                                       "fontWeight": 500,
                                                                       "letterSpacing": "0.02857em",
-                                                                      "lineHeight": 1.5,
+                                                                      "lineHeight": 1.3125,
                                                                       "textTransform": "uppercase",
                                                                     },
                                                                     "caption": Object {
@@ -6144,21 +6191,21 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                               className="c8"
                                                               classes={
                                                                 Object {
-                                                                  "focusHighlight": "MuiCardActionArea-focusHighlight-98",
-                                                                  "focusVisible": "MuiCardActionArea-focusVisible-97",
-                                                                  "root": "MuiCardActionArea-root-96",
+                                                                  "focusHighlight": "MuiCardActionArea-focusHighlight-103",
+                                                                  "focusVisible": "MuiCardActionArea-focusVisible-102",
+                                                                  "root": "MuiCardActionArea-root-101",
                                                                 }
                                                               }
                                                               expand={1}
                                                             >
                                                               <WithStyles(ButtonBase)
-                                                                className="MuiCardActionArea-root-96 c8"
+                                                                className="MuiCardActionArea-root-101 c8"
                                                                 expand={1}
-                                                                focusVisibleClassName="MuiCardActionArea-focusVisible-97"
+                                                                focusVisibleClassName="MuiCardActionArea-focusVisible-102"
                                                               >
                                                                 <ButtonBase
                                                                   centerRipple={false}
-                                                                  className="MuiCardActionArea-root-96 c8"
+                                                                  className="MuiCardActionArea-root-101 c8"
                                                                   classes={
                                                                     Object {
                                                                       "disabled": "MuiButtonBase-disabled-84",
@@ -6171,12 +6218,12 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                   disableTouchRipple={false}
                                                                   expand={1}
                                                                   focusRipple={false}
-                                                                  focusVisibleClassName="MuiCardActionArea-focusVisible-97"
+                                                                  focusVisibleClassName="MuiCardActionArea-focusVisible-102"
                                                                   tabIndex="0"
                                                                   type="button"
                                                                 >
                                                                   <button
-                                                                    className="MuiButtonBase-root-83 MuiCardActionArea-root-96 c8"
+                                                                    className="MuiButtonBase-root-83 MuiCardActionArea-root-101 c8"
                                                                     expand={1}
                                                                     onBlur={[Function]}
                                                                     onContextMenu={[Function]}
@@ -6196,16 +6243,16 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                       <CardContent
                                                                         classes={
                                                                           Object {
-                                                                            "root": "MuiCardContent-root-99",
+                                                                            "root": "MuiCardContent-root-104",
                                                                           }
                                                                         }
                                                                         component="div"
                                                                       >
                                                                         <div
-                                                                          className="MuiCardContent-root-99"
+                                                                          className="MuiCardContent-root-104"
                                                                         >
                                                                           <WithStyles(Typography)
-                                                                            color="primary"
+                                                                            noWrap={true}
                                                                             variant="h6"
                                                                           >
                                                                             <Typography
@@ -6249,7 +6296,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                                   "title": "MuiTypography-title-48",
                                                                                 }
                                                                               }
-                                                                              color="primary"
+                                                                              color="default"
                                                                               gutterBottom={false}
                                                                               headlineMapping={
                                                                                 Object {
@@ -6272,7 +6319,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                                   "title": "h2",
                                                                                 }
                                                                               }
-                                                                              noWrap={false}
+                                                                              noWrap={true}
                                                                               paragraph={false}
                                                                               theme={
                                                                                 Object {
@@ -6472,7 +6519,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                                       "fontSize": "0.875rem",
                                                                                       "fontWeight": 500,
                                                                                       "letterSpacing": "0.02857em",
-                                                                                      "lineHeight": 1.5,
+                                                                                      "lineHeight": 1.3125,
                                                                                       "textTransform": "uppercase",
                                                                                     },
                                                                                     "caption": Object {
@@ -6639,13 +6686,15 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                               variant="h6"
                                                                             >
                                                                               <h6
-                                                                                className="MuiTypography-root-42 MuiTypography-h6-59 MuiTypography-colorPrimary-72"
+                                                                                className="MuiTypography-root-42 MuiTypography-h6-59 MuiTypography-noWrap-68"
                                                                               >
                                                                                 タイトル0
                                                                               </h6>
                                                                             </Typography>
                                                                           </WithStyles(Typography)>
-                                                                          <WithStyles(Typography)>
+                                                                          <WithStyles(Typography)
+                                                                            noWrap={true}
+                                                                          >
                                                                             <Typography
                                                                               align="inherit"
                                                                               classes={
@@ -6710,7 +6759,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                                   "title": "h2",
                                                                                 }
                                                                               }
-                                                                              noWrap={false}
+                                                                              noWrap={true}
                                                                               paragraph={false}
                                                                               theme={
                                                                                 Object {
@@ -6910,7 +6959,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                                       "fontSize": "0.875rem",
                                                                                       "fontWeight": 500,
                                                                                       "letterSpacing": "0.02857em",
-                                                                                      "lineHeight": 1.5,
+                                                                                      "lineHeight": 1.3125,
                                                                                       "textTransform": "uppercase",
                                                                                     },
                                                                                     "caption": Object {
@@ -7076,13 +7125,15 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                               }
                                                                             >
                                                                               <p
-                                                                                className="MuiTypography-root-42 MuiTypography-body1-51"
+                                                                                className="MuiTypography-root-42 MuiTypography-body1-51 MuiTypography-noWrap-68"
                                                                               >
                                                                                 概要：説明です
                                                                               </p>
                                                                             </Typography>
                                                                           </WithStyles(Typography)>
-                                                                          <WithStyles(Typography)>
+                                                                          <WithStyles(Typography)
+                                                                            noWrap={true}
+                                                                          >
                                                                             <Typography
                                                                               align="inherit"
                                                                               classes={
@@ -7147,7 +7198,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                                   "title": "h2",
                                                                                 }
                                                                               }
-                                                                              noWrap={false}
+                                                                              noWrap={true}
                                                                               paragraph={false}
                                                                               theme={
                                                                                 Object {
@@ -7347,7 +7398,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                                       "fontSize": "0.875rem",
                                                                                       "fontWeight": 500,
                                                                                       "letterSpacing": "0.02857em",
-                                                                                      "lineHeight": 1.5,
+                                                                                      "lineHeight": 1.3125,
                                                                                       "textTransform": "uppercase",
                                                                                     },
                                                                                     "caption": Object {
@@ -7513,13 +7564,15 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                               }
                                                                             >
                                                                               <p
-                                                                                className="MuiTypography-root-42 MuiTypography-body1-51"
+                                                                                className="MuiTypography-root-42 MuiTypography-body1-51 MuiTypography-noWrap-68"
                                                                               >
                                                                                 場所：晴海
                                                                               </p>
                                                                             </Typography>
                                                                           </WithStyles(Typography)>
-                                                                          <WithStyles(Typography)>
+                                                                          <WithStyles(Typography)
+                                                                            noWrap={true}
+                                                                          >
                                                                             <Typography
                                                                               align="inherit"
                                                                               classes={
@@ -7584,7 +7637,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                                   "title": "h2",
                                                                                 }
                                                                               }
-                                                                              noWrap={false}
+                                                                              noWrap={true}
                                                                               paragraph={false}
                                                                               theme={
                                                                                 Object {
@@ -7784,7 +7837,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                                       "fontSize": "0.875rem",
                                                                                       "fontWeight": 500,
                                                                                       "letterSpacing": "0.02857em",
-                                                                                      "lineHeight": 1.5,
+                                                                                      "lineHeight": 1.3125,
                                                                                       "textTransform": "uppercase",
                                                                                     },
                                                                                     "caption": Object {
@@ -7950,7 +8003,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                               }
                                                                             >
                                                                               <p
-                                                                                className="MuiTypography-root-42 MuiTypography-body1-51"
+                                                                                className="MuiTypography-root-42 MuiTypography-body1-51 MuiTypography-noWrap-68"
                                                                               >
                                                                                 日時：2018/12/01 09:30 〜
                                                                               </p>
@@ -7960,7 +8013,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                       </CardContent>
                                                                     </WithStyles(CardContent)>
                                                                     <span
-                                                                      className="MuiCardActionArea-focusHighlight-98"
+                                                                      className="MuiCardActionArea-focusHighlight-103"
                                                                     />
                                                                     <NoSsr
                                                                       defer={false}
@@ -7974,25 +8027,25 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                           center={false}
                                                                           classes={
                                                                             Object {
-                                                                              "child": "MuiTouchRipple-child-104",
-                                                                              "childLeaving": "MuiTouchRipple-childLeaving-105",
-                                                                              "childPulsate": "MuiTouchRipple-childPulsate-106",
-                                                                              "ripple": "MuiTouchRipple-ripple-101",
-                                                                              "ripplePulsate": "MuiTouchRipple-ripplePulsate-103",
-                                                                              "rippleVisible": "MuiTouchRipple-rippleVisible-102",
-                                                                              "root": "MuiTouchRipple-root-100",
+                                                                              "child": "MuiTouchRipple-child-109",
+                                                                              "childLeaving": "MuiTouchRipple-childLeaving-110",
+                                                                              "childPulsate": "MuiTouchRipple-childPulsate-111",
+                                                                              "ripple": "MuiTouchRipple-ripple-106",
+                                                                              "ripplePulsate": "MuiTouchRipple-ripplePulsate-108",
+                                                                              "rippleVisible": "MuiTouchRipple-rippleVisible-107",
+                                                                              "root": "MuiTouchRipple-root-105",
                                                                             }
                                                                           }
                                                                         >
                                                                           <TransitionGroup
                                                                             childFactory={[Function]}
-                                                                            className="MuiTouchRipple-root-100"
+                                                                            className="MuiTouchRipple-root-105"
                                                                             component="span"
                                                                             enter={true}
                                                                             exit={true}
                                                                           >
                                                                             <span
-                                                                              className="MuiTouchRipple-root-100"
+                                                                              className="MuiTouchRipple-root-105"
                                                                             />
                                                                           </TransitionGroup>
                                                                         </TouchRipple>
@@ -8026,6 +8079,29 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                 </div>
               </StyledComponent>
             </styled.div>
+            <WithStyles(Divider)
+              light={true}
+            >
+              <Divider
+                absolute={false}
+                classes={
+                  Object {
+                    "absolute": "MuiDivider-absolute-96",
+                    "inset": "MuiDivider-inset-97",
+                    "light": "MuiDivider-light-98",
+                    "middle": "MuiDivider-middle-99",
+                    "root": "MuiDivider-root-95",
+                  }
+                }
+                component="hr"
+                light={true}
+                variant="fullWidth"
+              >
+                <hr
+                  className="MuiDivider-root-95 MuiDivider-light-98"
+                />
+              </Divider>
+            </WithStyles(Divider)>
             <styled.div>
               <StyledComponent
                 forwardedComponent={
@@ -8453,7 +8529,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                 "fontSize": "0.875rem",
                                                 "fontWeight": 500,
                                                 "letterSpacing": "0.02857em",
-                                                "lineHeight": 1.5,
+                                                "lineHeight": 1.3125,
                                                 "textTransform": "uppercase",
                                               },
                                               "caption": Object {
@@ -8758,6 +8834,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                       expand={true}
                                       history={null}
                                       interactive={true}
+                                      noWrap={true}
                                       place="晴海"
                                       title="タイトル0"
                                     >
@@ -8989,7 +9066,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                         "fontSize": "0.875rem",
                                                         "fontWeight": 500,
                                                         "letterSpacing": "0.02857em",
-                                                        "lineHeight": 1.5,
+                                                        "lineHeight": 1.3125,
                                                         "textTransform": "uppercase",
                                                       },
                                                       "caption": Object {
@@ -9175,7 +9252,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                 className="c7"
                                                 classes={
                                                   Object {
-                                                    "root": "MuiCard-root-95",
+                                                    "root": "MuiCard-root-100",
                                                   }
                                                 }
                                                 expand={1}
@@ -9183,13 +9260,13 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                 raised={false}
                                               >
                                                 <WithStyles(Paper)
-                                                  className="MuiCard-root-95 c7"
+                                                  className="MuiCard-root-100 c7"
                                                   elevation={1}
                                                   expand={1}
                                                   onClick={[Function]}
                                                 >
                                                   <Paper
-                                                    className="MuiCard-root-95 c7"
+                                                    className="MuiCard-root-100 c7"
                                                     classes={
                                                       Object {
                                                         "elevation0": "MuiPaper-elevation0-13",
@@ -9228,7 +9305,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                     square={false}
                                                   >
                                                     <div
-                                                      className="MuiPaper-root-11 MuiPaper-elevation1-14 MuiPaper-rounded-12 MuiCard-root-95 c7"
+                                                      className="MuiPaper-root-11 MuiPaper-elevation1-14 MuiPaper-rounded-12 MuiCard-root-100 c7"
                                                       expand={1}
                                                       onClick={[Function]}
                                                     >
@@ -9454,7 +9531,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                       "fontSize": "0.875rem",
                                                                       "fontWeight": 500,
                                                                       "letterSpacing": "0.02857em",
-                                                                      "lineHeight": 1.5,
+                                                                      "lineHeight": 1.3125,
                                                                       "textTransform": "uppercase",
                                                                     },
                                                                     "caption": Object {
@@ -9638,21 +9715,21 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                               className="c8"
                                                               classes={
                                                                 Object {
-                                                                  "focusHighlight": "MuiCardActionArea-focusHighlight-98",
-                                                                  "focusVisible": "MuiCardActionArea-focusVisible-97",
-                                                                  "root": "MuiCardActionArea-root-96",
+                                                                  "focusHighlight": "MuiCardActionArea-focusHighlight-103",
+                                                                  "focusVisible": "MuiCardActionArea-focusVisible-102",
+                                                                  "root": "MuiCardActionArea-root-101",
                                                                 }
                                                               }
                                                               expand={1}
                                                             >
                                                               <WithStyles(ButtonBase)
-                                                                className="MuiCardActionArea-root-96 c8"
+                                                                className="MuiCardActionArea-root-101 c8"
                                                                 expand={1}
-                                                                focusVisibleClassName="MuiCardActionArea-focusVisible-97"
+                                                                focusVisibleClassName="MuiCardActionArea-focusVisible-102"
                                                               >
                                                                 <ButtonBase
                                                                   centerRipple={false}
-                                                                  className="MuiCardActionArea-root-96 c8"
+                                                                  className="MuiCardActionArea-root-101 c8"
                                                                   classes={
                                                                     Object {
                                                                       "disabled": "MuiButtonBase-disabled-84",
@@ -9665,12 +9742,12 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                   disableTouchRipple={false}
                                                                   expand={1}
                                                                   focusRipple={false}
-                                                                  focusVisibleClassName="MuiCardActionArea-focusVisible-97"
+                                                                  focusVisibleClassName="MuiCardActionArea-focusVisible-102"
                                                                   tabIndex="0"
                                                                   type="button"
                                                                 >
                                                                   <button
-                                                                    className="MuiButtonBase-root-83 MuiCardActionArea-root-96 c8"
+                                                                    className="MuiButtonBase-root-83 MuiCardActionArea-root-101 c8"
                                                                     expand={1}
                                                                     onBlur={[Function]}
                                                                     onContextMenu={[Function]}
@@ -9690,16 +9767,16 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                       <CardContent
                                                                         classes={
                                                                           Object {
-                                                                            "root": "MuiCardContent-root-99",
+                                                                            "root": "MuiCardContent-root-104",
                                                                           }
                                                                         }
                                                                         component="div"
                                                                       >
                                                                         <div
-                                                                          className="MuiCardContent-root-99"
+                                                                          className="MuiCardContent-root-104"
                                                                         >
                                                                           <WithStyles(Typography)
-                                                                            color="primary"
+                                                                            noWrap={true}
                                                                             variant="h6"
                                                                           >
                                                                             <Typography
@@ -9743,7 +9820,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                                   "title": "MuiTypography-title-48",
                                                                                 }
                                                                               }
-                                                                              color="primary"
+                                                                              color="default"
                                                                               gutterBottom={false}
                                                                               headlineMapping={
                                                                                 Object {
@@ -9766,7 +9843,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                                   "title": "h2",
                                                                                 }
                                                                               }
-                                                                              noWrap={false}
+                                                                              noWrap={true}
                                                                               paragraph={false}
                                                                               theme={
                                                                                 Object {
@@ -9966,7 +10043,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                                       "fontSize": "0.875rem",
                                                                                       "fontWeight": 500,
                                                                                       "letterSpacing": "0.02857em",
-                                                                                      "lineHeight": 1.5,
+                                                                                      "lineHeight": 1.3125,
                                                                                       "textTransform": "uppercase",
                                                                                     },
                                                                                     "caption": Object {
@@ -10133,13 +10210,15 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                               variant="h6"
                                                                             >
                                                                               <h6
-                                                                                className="MuiTypography-root-42 MuiTypography-h6-59 MuiTypography-colorPrimary-72"
+                                                                                className="MuiTypography-root-42 MuiTypography-h6-59 MuiTypography-noWrap-68"
                                                                               >
                                                                                 タイトル0
                                                                               </h6>
                                                                             </Typography>
                                                                           </WithStyles(Typography)>
-                                                                          <WithStyles(Typography)>
+                                                                          <WithStyles(Typography)
+                                                                            noWrap={true}
+                                                                          >
                                                                             <Typography
                                                                               align="inherit"
                                                                               classes={
@@ -10204,7 +10283,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                                   "title": "h2",
                                                                                 }
                                                                               }
-                                                                              noWrap={false}
+                                                                              noWrap={true}
                                                                               paragraph={false}
                                                                               theme={
                                                                                 Object {
@@ -10404,7 +10483,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                                       "fontSize": "0.875rem",
                                                                                       "fontWeight": 500,
                                                                                       "letterSpacing": "0.02857em",
-                                                                                      "lineHeight": 1.5,
+                                                                                      "lineHeight": 1.3125,
                                                                                       "textTransform": "uppercase",
                                                                                     },
                                                                                     "caption": Object {
@@ -10570,13 +10649,15 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                               }
                                                                             >
                                                                               <p
-                                                                                className="MuiTypography-root-42 MuiTypography-body1-51"
+                                                                                className="MuiTypography-root-42 MuiTypography-body1-51 MuiTypography-noWrap-68"
                                                                               >
                                                                                 概要：説明です
                                                                               </p>
                                                                             </Typography>
                                                                           </WithStyles(Typography)>
-                                                                          <WithStyles(Typography)>
+                                                                          <WithStyles(Typography)
+                                                                            noWrap={true}
+                                                                          >
                                                                             <Typography
                                                                               align="inherit"
                                                                               classes={
@@ -10641,7 +10722,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                                   "title": "h2",
                                                                                 }
                                                                               }
-                                                                              noWrap={false}
+                                                                              noWrap={true}
                                                                               paragraph={false}
                                                                               theme={
                                                                                 Object {
@@ -10841,7 +10922,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                                       "fontSize": "0.875rem",
                                                                                       "fontWeight": 500,
                                                                                       "letterSpacing": "0.02857em",
-                                                                                      "lineHeight": 1.5,
+                                                                                      "lineHeight": 1.3125,
                                                                                       "textTransform": "uppercase",
                                                                                     },
                                                                                     "caption": Object {
@@ -11007,13 +11088,15 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                               }
                                                                             >
                                                                               <p
-                                                                                className="MuiTypography-root-42 MuiTypography-body1-51"
+                                                                                className="MuiTypography-root-42 MuiTypography-body1-51 MuiTypography-noWrap-68"
                                                                               >
                                                                                 場所：晴海
                                                                               </p>
                                                                             </Typography>
                                                                           </WithStyles(Typography)>
-                                                                          <WithStyles(Typography)>
+                                                                          <WithStyles(Typography)
+                                                                            noWrap={true}
+                                                                          >
                                                                             <Typography
                                                                               align="inherit"
                                                                               classes={
@@ -11078,7 +11161,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                                   "title": "h2",
                                                                                 }
                                                                               }
-                                                                              noWrap={false}
+                                                                              noWrap={true}
                                                                               paragraph={false}
                                                                               theme={
                                                                                 Object {
@@ -11278,7 +11361,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                                       "fontSize": "0.875rem",
                                                                                       "fontWeight": 500,
                                                                                       "letterSpacing": "0.02857em",
-                                                                                      "lineHeight": 1.5,
+                                                                                      "lineHeight": 1.3125,
                                                                                       "textTransform": "uppercase",
                                                                                     },
                                                                                     "caption": Object {
@@ -11444,7 +11527,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                               }
                                                                             >
                                                                               <p
-                                                                                className="MuiTypography-root-42 MuiTypography-body1-51"
+                                                                                className="MuiTypography-root-42 MuiTypography-body1-51 MuiTypography-noWrap-68"
                                                                               >
                                                                                 日時：2018/12/01 09:30 〜
                                                                               </p>
@@ -11454,7 +11537,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                       </CardContent>
                                                                     </WithStyles(CardContent)>
                                                                     <span
-                                                                      className="MuiCardActionArea-focusHighlight-98"
+                                                                      className="MuiCardActionArea-focusHighlight-103"
                                                                     />
                                                                     <NoSsr
                                                                       defer={false}
@@ -11468,25 +11551,25 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                           center={false}
                                                                           classes={
                                                                             Object {
-                                                                              "child": "MuiTouchRipple-child-104",
-                                                                              "childLeaving": "MuiTouchRipple-childLeaving-105",
-                                                                              "childPulsate": "MuiTouchRipple-childPulsate-106",
-                                                                              "ripple": "MuiTouchRipple-ripple-101",
-                                                                              "ripplePulsate": "MuiTouchRipple-ripplePulsate-103",
-                                                                              "rippleVisible": "MuiTouchRipple-rippleVisible-102",
-                                                                              "root": "MuiTouchRipple-root-100",
+                                                                              "child": "MuiTouchRipple-child-109",
+                                                                              "childLeaving": "MuiTouchRipple-childLeaving-110",
+                                                                              "childPulsate": "MuiTouchRipple-childPulsate-111",
+                                                                              "ripple": "MuiTouchRipple-ripple-106",
+                                                                              "ripplePulsate": "MuiTouchRipple-ripplePulsate-108",
+                                                                              "rippleVisible": "MuiTouchRipple-rippleVisible-107",
+                                                                              "root": "MuiTouchRipple-root-105",
                                                                             }
                                                                           }
                                                                         >
                                                                           <TransitionGroup
                                                                             childFactory={[Function]}
-                                                                            className="MuiTouchRipple-root-100"
+                                                                            className="MuiTouchRipple-root-105"
                                                                             component="span"
                                                                             enter={true}
                                                                             exit={true}
                                                                           >
                                                                             <span
-                                                                              className="MuiTouchRipple-root-100"
+                                                                              className="MuiTouchRipple-root-105"
                                                                             />
                                                                           </TransitionGroup>
                                                                         </TouchRipple>
@@ -11520,6 +11603,29 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                 </div>
               </StyledComponent>
             </styled.div>
+            <WithStyles(Divider)
+              light={true}
+            >
+              <Divider
+                absolute={false}
+                classes={
+                  Object {
+                    "absolute": "MuiDivider-absolute-96",
+                    "inset": "MuiDivider-inset-97",
+                    "light": "MuiDivider-light-98",
+                    "middle": "MuiDivider-middle-99",
+                    "root": "MuiDivider-root-95",
+                  }
+                }
+                component="hr"
+                light={true}
+                variant="fullWidth"
+              >
+                <hr
+                  className="MuiDivider-root-95 MuiDivider-light-98"
+                />
+              </Divider>
+            </WithStyles(Divider)>
             <styled.div>
               <StyledComponent
                 forwardedComponent={
@@ -11947,7 +12053,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                 "fontSize": "0.875rem",
                                                 "fontWeight": 500,
                                                 "letterSpacing": "0.02857em",
-                                                "lineHeight": 1.5,
+                                                "lineHeight": 1.3125,
                                                 "textTransform": "uppercase",
                                               },
                                               "caption": Object {
@@ -12473,7 +12579,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                       "fontSize": "0.875rem",
                                                       "fontWeight": 500,
                                                       "letterSpacing": "0.02857em",
-                                                      "lineHeight": 1.5,
+                                                      "lineHeight": 1.3125,
                                                       "textTransform": "uppercase",
                                                     },
                                                     "caption": Object {
@@ -12659,7 +12765,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                               className="c10"
                                               classes={
                                                 Object {
-                                                  "root": "MuiCard-root-95",
+                                                  "root": "MuiCard-root-100",
                                                 }
                                               }
                                               expand={0}
@@ -12667,13 +12773,13 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                               raised={false}
                                             >
                                               <WithStyles(Paper)
-                                                className="MuiCard-root-95 c10"
+                                                className="MuiCard-root-100 c10"
                                                 elevation={1}
                                                 expand={0}
                                                 onClick={[Function]}
                                               >
                                                 <Paper
-                                                  className="MuiCard-root-95 c10"
+                                                  className="MuiCard-root-100 c10"
                                                   classes={
                                                     Object {
                                                       "elevation0": "MuiPaper-elevation0-13",
@@ -12712,7 +12818,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                   square={false}
                                                 >
                                                   <div
-                                                    className="MuiPaper-root-11 MuiPaper-elevation1-14 MuiPaper-rounded-12 MuiCard-root-95 c10"
+                                                    className="MuiPaper-root-11 MuiPaper-elevation1-14 MuiPaper-rounded-12 MuiCard-root-100 c10"
                                                     expand={0}
                                                     onClick={[Function]}
                                                   >
@@ -12938,7 +13044,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                     "fontSize": "0.875rem",
                                                                     "fontWeight": 500,
                                                                     "letterSpacing": "0.02857em",
-                                                                    "lineHeight": 1.5,
+                                                                    "lineHeight": 1.3125,
                                                                     "textTransform": "uppercase",
                                                                   },
                                                                   "caption": Object {
@@ -13122,21 +13228,21 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                             className="c11"
                                                             classes={
                                                               Object {
-                                                                "focusHighlight": "MuiCardActionArea-focusHighlight-98",
-                                                                "focusVisible": "MuiCardActionArea-focusVisible-97",
-                                                                "root": "MuiCardActionArea-root-96",
+                                                                "focusHighlight": "MuiCardActionArea-focusHighlight-103",
+                                                                "focusVisible": "MuiCardActionArea-focusVisible-102",
+                                                                "root": "MuiCardActionArea-root-101",
                                                               }
                                                             }
                                                             expand={0}
                                                           >
                                                             <WithStyles(ButtonBase)
-                                                              className="MuiCardActionArea-root-96 c11"
+                                                              className="MuiCardActionArea-root-101 c11"
                                                               expand={0}
-                                                              focusVisibleClassName="MuiCardActionArea-focusVisible-97"
+                                                              focusVisibleClassName="MuiCardActionArea-focusVisible-102"
                                                             >
                                                               <ButtonBase
                                                                 centerRipple={false}
-                                                                className="MuiCardActionArea-root-96 c11"
+                                                                className="MuiCardActionArea-root-101 c11"
                                                                 classes={
                                                                   Object {
                                                                     "disabled": "MuiButtonBase-disabled-84",
@@ -13149,12 +13255,12 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                 disableTouchRipple={false}
                                                                 expand={0}
                                                                 focusRipple={false}
-                                                                focusVisibleClassName="MuiCardActionArea-focusVisible-97"
+                                                                focusVisibleClassName="MuiCardActionArea-focusVisible-102"
                                                                 tabIndex="0"
                                                                 type="button"
                                                               >
                                                                 <button
-                                                                  className="MuiButtonBase-root-83 MuiCardActionArea-root-96 c11"
+                                                                  className="MuiButtonBase-root-83 MuiCardActionArea-root-101 c11"
                                                                   expand={0}
                                                                   onBlur={[Function]}
                                                                   onContextMenu={[Function]}
@@ -13174,13 +13280,13 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                     <CardContent
                                                                       classes={
                                                                         Object {
-                                                                          "root": "MuiCardContent-root-99",
+                                                                          "root": "MuiCardContent-root-104",
                                                                         }
                                                                       }
                                                                       component="div"
                                                                     >
                                                                       <div
-                                                                        className="MuiCardContent-root-99"
+                                                                        className="MuiCardContent-root-104"
                                                                       >
                                                                         <IconWithText>
                                                                           <styled.div>
@@ -13525,7 +13631,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                                             "fontSize": "0.875rem",
                                                                                             "fontWeight": 500,
                                                                                             "letterSpacing": "0.02857em",
-                                                                                            "lineHeight": 1.5,
+                                                                                            "lineHeight": 1.3125,
                                                                                             "textTransform": "uppercase",
                                                                                           },
                                                                                           "caption": Object {
@@ -13706,7 +13812,7 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                     </CardContent>
                                                                   </WithStyles(CardContent)>
                                                                   <span
-                                                                    className="MuiCardActionArea-focusHighlight-98"
+                                                                    className="MuiCardActionArea-focusHighlight-103"
                                                                   />
                                                                   <NoSsr
                                                                     defer={false}
@@ -13720,25 +13826,25 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                                                                         center={false}
                                                                         classes={
                                                                           Object {
-                                                                            "child": "MuiTouchRipple-child-104",
-                                                                            "childLeaving": "MuiTouchRipple-childLeaving-105",
-                                                                            "childPulsate": "MuiTouchRipple-childPulsate-106",
-                                                                            "ripple": "MuiTouchRipple-ripple-101",
-                                                                            "ripplePulsate": "MuiTouchRipple-ripplePulsate-103",
-                                                                            "rippleVisible": "MuiTouchRipple-rippleVisible-102",
-                                                                            "root": "MuiTouchRipple-root-100",
+                                                                            "child": "MuiTouchRipple-child-109",
+                                                                            "childLeaving": "MuiTouchRipple-childLeaving-110",
+                                                                            "childPulsate": "MuiTouchRipple-childPulsate-111",
+                                                                            "ripple": "MuiTouchRipple-ripple-106",
+                                                                            "ripplePulsate": "MuiTouchRipple-ripplePulsate-108",
+                                                                            "rippleVisible": "MuiTouchRipple-rippleVisible-107",
+                                                                            "root": "MuiTouchRipple-root-105",
                                                                           }
                                                                         }
                                                                       >
                                                                         <TransitionGroup
                                                                           childFactory={[Function]}
-                                                                          className="MuiTouchRipple-root-100"
+                                                                          className="MuiTouchRipple-root-105"
                                                                           component="span"
                                                                           enter={true}
                                                                           exit={true}
                                                                         >
                                                                           <span
-                                                                            className="MuiTouchRipple-root-100"
+                                                                            className="MuiTouchRipple-root-105"
                                                                           />
                                                                         </TransitionGroup>
                                                                       </TouchRipple>
@@ -13771,6 +13877,29 @@ exports[`should match snapshot: Menu/nomal 1`] = `
                 </div>
               </StyledComponent>
             </styled.div>
+            <WithStyles(Divider)
+              light={true}
+            >
+              <Divider
+                absolute={false}
+                classes={
+                  Object {
+                    "absolute": "MuiDivider-absolute-96",
+                    "inset": "MuiDivider-inset-97",
+                    "light": "MuiDivider-light-98",
+                    "middle": "MuiDivider-middle-99",
+                    "root": "MuiDivider-root-95",
+                  }
+                }
+                component="hr"
+                light={true}
+                variant="fullWidth"
+              >
+                <hr
+                  className="MuiDivider-root-95 MuiDivider-light-98"
+                />
+              </Divider>
+            </WithStyles(Divider)>
           </div>
         </StyledComponent>
       </styled.div>
