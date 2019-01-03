@@ -2,6 +2,26 @@
   "name": "ippo",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "NODE_PATH=. REACT_APP_LOCAL=true react-scripts start",
+    "start:aws": "NODE_PATH=. react-scripts start",
+    "build": "NODE_PATH=. react-scripts build",
+    "test": "NODE_PATH=. react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "NODE_PATH=. start-storybook -p 9009 -s public",
+    "build-storybook": "NODE_PATH=. build-storybook -s public",
+    "deploy-storybook": "NODE_PATH=. build-storybook -s public && cd storybook-static && git init && git add -A && git commit -m 'deploy storybook' && git push -f git@github.com:ozaki25/ippo.git master:gh-pages",
+    "deploy": "yarn build && firebase deploy"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
   "dependencies": {
     "@material-ui/core": "^3.7.1",
     "@material-ui/icons": "^3.0.1",
@@ -24,26 +44,6 @@
     "styled-components": "^4.1.2",
     "typeface-roboto": "^0.0.54"
   },
-  "scripts": {
-    "start": "NODE_PATH=. REACT_APP_LOCAL=true react-scripts start",
-    "start:aws": "NODE_PATH=. react-scripts start",
-    "build": "NODE_PATH=. react-scripts build",
-    "test": "NODE_PATH=. react-scripts test",
-    "eject": "react-scripts eject",
-    "storybook": "NODE_PATH=. start-storybook -p 9009 -s public",
-    "build-storybook": "NODE_PATH=. build-storybook -s public",
-    "deploy-storybook": "NODE_PATH=. build-storybook -s public && cd storybook-static && git init && git add -A && git commit -m 'deploy storybook' && git push -f git@github.com:ozaki25/ippo.git master:gh-pages",
-    "deploy": "yarn build && firebase deploy"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
   "devDependencies": {
     "@babel/core": "^7.1.6",
     "@storybook/addon-actions": "^4.0.9",
