@@ -1,6 +1,7 @@
 import { addDecorator, configure } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
+import { configureViewport } from '@storybook/addon-viewport';
 import StoryRouter from 'storybook-react-router';
 import 'typeface-roboto';
 import '../src/index.css';
@@ -18,3 +19,7 @@ function loadStories() {
 }
 
 configure(loadStories, module);
+
+configureViewport({
+  defaultViewport: 'iphone8p',
+});
