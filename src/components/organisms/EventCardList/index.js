@@ -9,7 +9,7 @@ const EventCardContainer = styled.div`
   margin: ${({ horizontal }) => (horizontal ? '2px 0' : '8px 0')};
 `;
 
-const EventCardList = ({ events, expand, history, horizontal }) =>
+const EventCardList = ({ events, expand, noWrap, history, horizontal }) =>
   events && events.length ? (
     events.map(event => (
       <EventCardContainer key={event.id} horizontal={horizontal ? 1 : 0}>
@@ -21,6 +21,7 @@ const EventCardList = ({ events, expand, history, horizontal }) =>
           datetime={event.startedAt && `${dateFormat.datetimeJa(event.startedAt)} 〜`}
           interactive
           expand={expand}
+          noWrap={noWrap}
           history={history}
         />
       </EventCardContainer>
@@ -42,6 +43,7 @@ EventCardList.propTypes = {
     }),
   ).isRequired,
   expand: propTypes.bool,
+  noWrap: propTypes.bool,
   horizontal: propTypes.bool,
   history: propTypes.shape({
     push: propTypes.func,
@@ -51,6 +53,7 @@ EventCardList.propTypes = {
 EventCardList.defaultProps = {
   eventUrl: '',
   expand: false,
+  noWrap: false,
   horizontal: false,
   history: null,
 };

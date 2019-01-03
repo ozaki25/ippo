@@ -42,14 +42,14 @@ const Menu = ({ internal, external, authUser, history, firebase }) => (
     <EventsContainer>
       <LinkHeading linkTo={ROUTES.EnteredEvents}>参加イベント</LinkHeading>
       <AsyncSwipeable loading={false}>
-        {EventCardList({ events: [], expand: true, horizontal: true, history })}
+        {EventCardList({ events: [], expand: true, noWrap: true, horizontal: true, history })}
       </AsyncSwipeable>
     </EventsContainer>
     <Divider light />
     <EventsContainer>
       <LinkHeading linkTo={ROUTES.RecommendedEvents}>おすすめイベント</LinkHeading>
       <AsyncSwipeable loading={false}>
-        {EventCardList({ events: [], expand: true, horizontal: true, history })}
+        {EventCardList({ events: [], expand: true, noWrap: true, horizontal: true, history })}
       </AsyncSwipeable>
     </EventsContainer>
     <Divider light />
@@ -59,6 +59,7 @@ const Menu = ({ internal, external, authUser, history, firebase }) => (
         {EventCardList({
           events: eventFormat.internal(internal.internalEvents),
           expand: true,
+          noWrap: true,
           horizontal: true,
           history,
         })}
@@ -71,6 +72,7 @@ const Menu = ({ internal, external, authUser, history, firebase }) => (
         {EventCardList({
           events: eventFormat.external(external.connpass),
           expand: true,
+          noWrap: true,
           horizontal: true,
         })}
       </AsyncSwipeable>
@@ -87,7 +89,7 @@ const Menu = ({ internal, external, authUser, history, firebase }) => (
             </IconWithText>
           </CustomCard>
         </CardContainer>
-        {EventCardList({ events: [], expand: true, horizontal: true, history })}
+        {EventCardList({ events: [], expand: true, noWrap: true, horizontal: true, history })}
       </AsyncSwipeable>
     </EventsContainer>
     <Divider light />
