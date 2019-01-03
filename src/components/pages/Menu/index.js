@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography } from '@material-ui/core';
+import { Divider, Typography } from '@material-ui/core';
 import { AddRounded, NavigateNextRounded } from '@material-ui/icons';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
@@ -45,14 +45,14 @@ const Menu = ({ internal, external, authUser, history, firebase }) => (
         {EventCardList({ events: [], expand: true, horizontal: true, history })}
       </AsyncSwipeable>
     </EventsContainer>
-
+    <Divider />
     <EventsContainer>
       <LinkHeading linkTo={ROUTES.RecommendedEvents}>おすすめイベント</LinkHeading>
       <AsyncSwipeable loading={false}>
         {EventCardList({ events: [], expand: true, horizontal: true, history })}
       </AsyncSwipeable>
     </EventsContainer>
-
+    <Divider />
     <EventsContainer>
       <LinkHeading linkTo={ROUTES.InternalEvents}>社内イベント</LinkHeading>
       <AsyncSwipeable loading={internal.loading}>
@@ -64,7 +64,7 @@ const Menu = ({ internal, external, authUser, history, firebase }) => (
         })}
       </AsyncSwipeable>
     </EventsContainer>
-
+    <Divider />
     <EventsContainer>
       <LinkHeading linkTo={ROUTES.ExternalEvents}>社外イベント</LinkHeading>
       <AsyncSwipeable loading={external.loading}>
@@ -75,7 +75,7 @@ const Menu = ({ internal, external, authUser, history, firebase }) => (
         })}
       </AsyncSwipeable>
     </EventsContainer>
-
+    <Divider />
     <EventsContainer>
       <LinkHeading linkTo={ROUTES.OrganizedEvents}>主催イベント</LinkHeading>
       <AsyncSwipeable loading={false}>
@@ -90,6 +90,7 @@ const Menu = ({ internal, external, authUser, history, firebase }) => (
         {EventCardList({ events: [], expand: true, horizontal: true, history })}
       </AsyncSwipeable>
     </EventsContainer>
+    <Divider />
   </Container>
 );
 
