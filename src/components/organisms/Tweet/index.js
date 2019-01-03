@@ -1,6 +1,7 @@
 import React from 'react';
 import { IconButton } from '@material-ui/core';
 import { FavoriteBorder, ModeCommentOutlined, RepeatRounded } from '@material-ui/icons';
+import { withStyles } from '@material-ui/core/styles';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
 import IconImage from 'src/components/atoms/IconImage';
@@ -42,25 +43,31 @@ const TweetHeader = ({ name, time }) => (
   </>
 );
 
-const TweetFooter = ({ onClickReply, onClickRetweet, onClickLike }) => (
+const styles = {
+  smallIcon: {
+    fontSize: '15px',
+  },
+};
+
+const TweetFooter = withStyles(styles)(({ classes, onClickReply, onClickRetweet, onClickLike }) => (
   <>
     <TweetAction>
-      <IconButton onClick={onClickReply}>
-        <ModeCommentOutlined fontSize="small" color="action" />
+      <IconButton onClick={onClickReply} className={classes.smallIcon}>
+        <ModeCommentOutlined fontSize="inherit" color="action" />
       </IconButton>
     </TweetAction>
     <TweetAction>
-      <IconButton onClick={onClickRetweet}>
-        <RepeatRounded fontSize="small" color="action" />
+      <IconButton onClick={onClickRetweet} className={classes.smallIcon}>
+        <RepeatRounded fontSize="inherit" color="action" />
       </IconButton>
     </TweetAction>
     <TweetAction>
-      <IconButton onClick={onClickLike}>
-        <FavoriteBorder fontSize="small" color="action" />
+      <IconButton onClick={onClickLike} className={classes.smallIcon}>
+        <FavoriteBorder fontSize="inherit" color="action" />
       </IconButton>
     </TweetAction>
   </>
-);
+));
 
 const Tweet = ({ name, text, time }) => (
   <Container>
