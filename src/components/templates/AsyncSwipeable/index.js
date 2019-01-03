@@ -1,6 +1,6 @@
 import React from 'react';
-import { Spinner } from '@blueprintjs/core';
 import propTypes from 'prop-types';
+import Spinner from 'src/components/atoms/Spinner';
 import ShrinkSwipeable from 'src/components/templates/ShrinkSwipeable';
 
 const AsyncSwipeable = ({ loading, children }) =>

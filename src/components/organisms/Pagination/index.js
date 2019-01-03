@@ -1,23 +1,64 @@
 import React from 'react';
+import { withStyles } from '@material-ui/core/styles';
+import { Button } from '@material-ui/core';
+import {
+  ChevronLeftRounded,
+  ChevronRightRounded,
+  FirstPageRounded,
+  LastPageRounded,
+} from '@material-ui/icons';
+import classnames from 'classnames';
 import propTypes from 'prop-types';
-import { Button, ButtonGroup } from '@blueprintjs/core';
 
-const Pagination = ({ current, total, onClick, large }) => (
-  <ButtonGroup large={large}>
+const styles = {
+  nonCaps: {
+    textTransform: 'none',
+  },
+  buttonGroup: {
+    borderRadius: '0',
+    marginRight: '-1px',
+    minHeight: '40px',
+    minWidth: '40px',
+    padding: '5px',
+  },
+};
+
+const Pagination = ({ current, total, onClick, classes }) => (
+  <>
     {current > 1 && (
       <>
-        <Button icon="double-chevron-left" onClick={() => onClick(1)} />
-        <Button icon="chevron-left" onClick={() => onClick(current - 1)} />
+        <Button color="primary" className={classes.buttonGroup} onClick={() => onClick(1)}>
+          <FirstPageRounded />
+        </Button>
+        <Button
+          color="primary"
+          className={classes.buttonGroup}
+          onClick={() => onClick(current - 1)}
+        >
+          <ChevronLeftRounded />
+        </Button>
       </>
     )}
-    <Button text={`${current} of ${total}`} />
+    <Button
+      color="primary"
+      className={classnames(classes.nonCaps, classes.buttonGroup)}
+      disableRipple
+    >{`${current} of ${total}`}</Button>
     {current < total && (
       <>
-        <Button icon="chevron-right" onClick={() => onClick(current + 1)} />
-        <Button icon="double-chevron-right" onClick={() => onClick(total)} />
+        <Button
+          color="primary"
+          className={classes.buttonGroup}
+          onClick={() => onClick(current + 1)}
+        >
+          <ChevronRightRounded />
+        </Button>
+        <Button color="primary" className={classes.buttonGroup} onClick={() => onClick(total)}>
+          <LastPageRounded />
+        </Button>
       </>
     )}
-  </ButtonGroup>
+  </>
 );
 
 Pagination.displayName = 'Pagination';
@@ -26,11 +67,8 @@ Pagination.propTypes = {
   current: propTypes.number.isRequired,
   total: propTypes.number.isRequired,
   onClick: propTypes.func.isRequired,
-  large: propTypes.bool,
 };
 
-Pagination.defaultProps = {
-  large: false,
-};
+Pagination.defaultProps = {};
 
-export default Pagination;
+export default withStyles(styles)(Pagination);

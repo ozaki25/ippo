@@ -17,6 +17,15 @@ const props = ({ loading = false, internalEvents = null }) => ({
     loading,
     internalEvents,
   },
+  authUser: {
+    uid: '123',
+    displayName: 'テストユーザ',
+  },
+  history: {
+    push: jest.fn(),
+    goBack: jest.fn(),
+  },
+  firebase: {},
 });
 
 snapshot('InternalEvents/nomal', <InternalEvents {...props({ internalEvents })} />);

@@ -1,18 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
-import { Text } from '@blueprintjs/core';
+import { Typography } from '@material-ui/core';
 import EventCard from 'src/components/organisms/EventCard';
 import dateFormat from 'src/utils/dateFormat';
 
 const EventCardContainer = styled.div`
-  margin: 8px 0;
+  margin: ${({ horizontal }) => (horizontal ? '2px 0' : '8px 0')};
 `;
 
-const EventCardList = ({ events, expand, history }) =>
+const EventCardList = ({ events, expand, history, horizontal }) =>
   events && events.length ? (
     events.map(event => (
-      <EventCardContainer key={event.id}>
+      <EventCardContainer key={event.id} horizontal={horizontal ? 1 : 0}>
         <EventCard
           title={event.title}
           eventUrl={event.eventUrl}
@@ -26,7 +26,7 @@ const EventCardList = ({ events, expand, history }) =>
       </EventCardContainer>
     ))
   ) : (
-    <Text>該当するイベントがありません</Text>
+    <Typography>該当するイベントがありません</Typography>
   );
 EventCardList.displayName = 'EventCardList';
 
@@ -39,10 +39,10 @@ EventCardList.propTypes = {
       catchMessage: propTypes.string,
       place: propTypes.string,
       datetime: propTypes.string,
-      interactive: propTypes.bool,
     }),
   ).isRequired,
   expand: propTypes.bool,
+  horizontal: propTypes.bool,
   history: propTypes.shape({
     push: propTypes.func,
   }),
@@ -51,6 +51,7 @@ EventCardList.propTypes = {
 EventCardList.defaultProps = {
   eventUrl: '',
   expand: false,
+  horizontal: false,
   history: null,
 };
 

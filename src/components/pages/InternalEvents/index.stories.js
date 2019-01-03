@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
 import InternalEvents from '.';
 
 const stories = storiesOf('pages/InternalEvents', module);
@@ -19,6 +20,15 @@ const props = ({ loading = false, internalEvents = null }) => ({
     loading,
     internalEvents,
   },
+  authUser: {
+    uid: '123',
+    displayName: 'テストユーザ',
+  },
+  history: {
+    push: action('push'),
+    goBack: action('goBack'),
+  },
+  firebase: {},
 });
 
 stories.add('通常パターン', () => <InternalEvents {...props({ internalEvents })} />);

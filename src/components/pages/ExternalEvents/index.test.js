@@ -23,6 +23,15 @@ const props = ({ loading = false, connpass = null }) => ({
     connpass,
     refetch: jest.fn(),
   },
+  authUser: {
+    uid: '123',
+    displayName: 'テストユーザ',
+  },
+  history: {
+    push: jest.fn(),
+    goBack: jest.fn(),
+  },
+  firebase: {},
 });
 
 snapshot('ExternalEvents/nomal', <ExternalEvents {...props({ connpass })} />);

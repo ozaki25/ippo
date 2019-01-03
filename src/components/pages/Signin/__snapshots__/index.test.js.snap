@@ -1,26 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should match snapshot: Signin/nomal 1`] = `
-.c0 {
-  padding: 10px 15px;
-}
-
-.c2 {
+.c4 {
   cursor: pointer;
 }
 
-.c2:active {
+.c4:active {
   opacity: 0.4;
 }
 
-.c1 {
-  margin-top: 10px;
-  text-align: center;
+.c0 {
+  padding: 10px;
 }
 
 .c3 {
-  font-size: 120%;
+  margin: 8px 0;
   text-align: center;
+}
+
+.c1 {
+  text-align: center;
+  margin: 60px 0 30px;
+}
+
+.c2 {
+  max-width: 60%;
 }
 
 <MockRouter
@@ -46,131 +50,21 @@ exports[`should match snapshot: Signin/nomal 1`] = `
   >
     <Container
       authUser={null}
+      back={false}
+      firebase={
+        Object {
+          "doSignInWithEmailAndPassword": [MockFunction],
+        }
+      }
+      header={false}
+      history={
+        Object {
+          "push": [MockFunction],
+        }
+      }
       noPadding={false}
+      title=""
     >
-      <withRouter()
-        authUser={null}
-      >
-        <Route>
-          <Component
-            authUser={null}
-            history={
-              Object {
-                "createHref": [Function],
-                "path": "",
-                "push": [Function],
-                "replace": [Function],
-              }
-            }
-            location=""
-            match={
-              Object {
-                "params": Object {},
-                "path": "",
-                "url": "",
-              }
-            }
-          >
-            <NavigationBar
-              authUser={null}
-              firebase={null}
-              history={
-                Object {
-                  "createHref": [Function],
-                  "path": "",
-                  "push": [Function],
-                  "replace": [Function],
-                }
-              }
-              location=""
-              match={
-                Object {
-                  "params": Object {},
-                  "path": "",
-                  "url": "",
-                }
-              }
-            >
-              <Blueprint3.Navbar>
-                <div
-                  className="bp3-navbar"
-                >
-                  <Blueprint3.NavbarGroup
-                    align="left"
-                  >
-                    <div
-                      className="bp3-navbar-group bp3-align-left"
-                    >
-                      <Blueprint3.NavbarHeading>
-                        <div
-                          className="bp3-navbar-heading"
-                        >
-                          IPPO
-                        </div>
-                      </Blueprint3.NavbarHeading>
-                      <Blueprint3.NavbarDivider>
-                        <div
-                          className="bp3-navbar-divider"
-                        />
-                      </Blueprint3.NavbarDivider>
-                    </div>
-                  </Blueprint3.NavbarGroup>
-                  <Blueprint3.NavbarGroup
-                    align="right"
-                  >
-                    <div
-                      className="bp3-navbar-group bp3-align-right"
-                    >
-                      <Blueprint3.Button
-                        icon="notifications"
-                        minimal={true}
-                        onClick={[Function]}
-                      >
-                        <button
-                          className="bp3-button bp3-minimal"
-                          onClick={[Function]}
-                          onKeyDown={[Function]}
-                          onKeyUp={[Function]}
-                          type="button"
-                        >
-                          <Blueprint3.Icon
-                            icon="notifications"
-                            key="leftIcon"
-                          >
-                            <span
-                              className="bp3-icon bp3-icon-notifications"
-                              icon="notifications"
-                            >
-                              <svg
-                                data-icon="notifications"
-                                height={16}
-                                viewBox="0 0 16 16"
-                                width={16}
-                              >
-                                <desc>
-                                  notifications
-                                </desc>
-                                <path
-                                  d="M8 16c1.1 0 2-.9 2-2H6c0 1.1.9 2 2 2zm6-5c-.55 0-1-.45-1-1V6c0-2.43-1.73-4.45-4.02-4.9 0-.04.02-.06.02-.1 0-.55-.45-1-1-1S7 .45 7 1c0 .04.02.06.02.1A4.992 4.992 0 0 0 3 6v4c0 .55-.45 1-1 1s-1 .45-1 1 .45 1 1 1h12c.55 0 1-.45 1-1s-.45-1-1-1z"
-                                  fillRule="evenodd"
-                                  key="0"
-                                />
-                              </svg>
-                            </span>
-                          </Blueprint3.Icon>
-                          <Blueprint3.Icon
-                            key="rightIcon"
-                          />
-                        </button>
-                      </Blueprint3.Button>
-                    </div>
-                  </Blueprint3.NavbarGroup>
-                </div>
-              </Blueprint3.Navbar>
-            </NavigationBar>
-          </Component>
-        </Route>
-      </withRouter()>
       <styled.div
         noPadding={false}
       >
@@ -180,7 +74,7 @@ exports[`should match snapshot: Signin/nomal 1`] = `
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-bdVaJa",
+                "componentId": "sc-ifAKCX",
                 "isStatic": false,
                 "lastClassName": "c0",
                 "rules": Array [
@@ -194,7 +88,7 @@ exports[`should match snapshot: Signin/nomal 1`] = `
               "displayName": "styled.div",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-bdVaJa",
+              "styledComponentId": "sc-ifAKCX",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -207,141 +101,6 @@ exports[`should match snapshot: Signin/nomal 1`] = `
           <div
             className="c0"
           >
-            <SigninForm
-              onSubmit={[Function]}
-            >
-              <form>
-                <Blueprint3.FormGroup
-                  label="メールアドレス"
-                  labelFor="email"
-                >
-                  <div
-                    className="bp3-form-group"
-                  >
-                    <label
-                      className="bp3-label"
-                      htmlFor="email"
-                    >
-                      メールアドレス
-                       
-                      <span
-                        className="bp3-text-muted"
-                      />
-                    </label>
-                    <div
-                      className="bp3-form-content"
-                    >
-                      <Blueprint3.InputGroup
-                        id="email"
-                        large={true}
-                        name="email"
-                        onChange={[Function]}
-                        value=""
-                      >
-                        <div
-                          className="bp3-input-group bp3-large"
-                        >
-                          <Blueprint3.Icon />
-                          <input
-                            className="bp3-input"
-                            id="email"
-                            name="email"
-                            onChange={[Function]}
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                              }
-                            }
-                            type="text"
-                            value=""
-                          />
-                        </div>
-                      </Blueprint3.InputGroup>
-                    </div>
-                  </div>
-                </Blueprint3.FormGroup>
-                <Blueprint3.FormGroup
-                  label="パスワード"
-                  labelFor="pass"
-                >
-                  <div
-                    className="bp3-form-group"
-                  >
-                    <label
-                      className="bp3-label"
-                      htmlFor="pass"
-                    >
-                      パスワード
-                       
-                      <span
-                        className="bp3-text-muted"
-                      />
-                    </label>
-                    <div
-                      className="bp3-form-content"
-                    >
-                      <Blueprint3.InputGroup
-                        id="pass"
-                        large={true}
-                        name="pass"
-                        onChange={[Function]}
-                        type="password"
-                        value=""
-                      >
-                        <div
-                          className="bp3-input-group bp3-large"
-                        >
-                          <Blueprint3.Icon />
-                          <input
-                            className="bp3-input"
-                            id="pass"
-                            name="pass"
-                            onChange={[Function]}
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                              }
-                            }
-                            type="password"
-                            value=""
-                          />
-                        </div>
-                      </Blueprint3.InputGroup>
-                    </div>
-                  </div>
-                </Blueprint3.FormGroup>
-                <Blueprint3.Button
-                  disabled={true}
-                  fill={true}
-                  large={true}
-                  onClick={[Function]}
-                  text="ログイン"
-                  type="submit"
-                >
-                  <button
-                    className="bp3-button bp3-disabled bp3-fill bp3-large"
-                    disabled={true}
-                    onKeyDown={[Function]}
-                    onKeyUp={[Function]}
-                    tabIndex={-1}
-                    type="submit"
-                  >
-                    <Blueprint3.Icon
-                      key="leftIcon"
-                    />
-                    <span
-                      className="bp3-button-text"
-                      key="text"
-                    >
-                      ログイン
-                    </span>
-                    <Blueprint3.Icon
-                      key="rightIcon"
-                    />
-                  </button>
-                </Blueprint3.Button>
-              </form>
-            </SigninForm>
             <styled.div>
               <StyledComponent
                 forwardedComponent={
@@ -349,20 +108,20 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-bxivhb",
+                      "componentId": "sc-bZQynM",
                       "isStatic": true,
                       "lastClassName": "c1",
                       "rules": Array [
                         "
-  margin-top: 10px;
   text-align: center;
+  margin: 60px 0 30px;
 ",
                       ],
                     },
                     "displayName": "styled.div",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-bxivhb",
+                    "styledComponentId": "sc-bZQynM",
                     "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -374,6 +133,840 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                 <div
                   className="c1"
                 >
+                  <styled.img
+                    alt="IPPO"
+                    src="/images/ippo.png"
+                  >
+                    <StyledComponent
+                      alt="IPPO"
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-gzVnrw",
+                            "isStatic": true,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              "
+  max-width: 60%;
+",
+                            ],
+                          },
+                          "displayName": "styled.img",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-gzVnrw",
+                          "target": "img",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      src="/images/ippo.png"
+                    >
+                      <img
+                        alt="IPPO"
+                        className="c2"
+                        src="/images/ippo.png"
+                      />
+                    </StyledComponent>
+                  </styled.img>
+                </div>
+              </StyledComponent>
+            </styled.div>
+            <SigninForm
+              onSubmit={[Function]}
+            >
+              <form>
+                <TextField
+                  color="primary"
+                  fullWidth={true}
+                  label="メールアドレス"
+                  margin="normal"
+                  name="email"
+                  onChange={[Function]}
+                  required={false}
+                  select={false}
+                  value=""
+                  variant="standard"
+                >
+                  <WithStyles(FormControl)
+                    color="primary"
+                    fullWidth={true}
+                    margin="normal"
+                    required={false}
+                    variant="standard"
+                  >
+                    <FormControl
+                      classes={
+                        Object {
+                          "fullWidth": "MuiFormControl-fullWidth-4",
+                          "marginDense": "MuiFormControl-marginDense-3",
+                          "marginNormal": "MuiFormControl-marginNormal-2",
+                          "root": "MuiFormControl-root-1",
+                        }
+                      }
+                      color="primary"
+                      component="div"
+                      disabled={false}
+                      error={false}
+                      fullWidth={true}
+                      margin="normal"
+                      required={false}
+                      variant="standard"
+                    >
+                      <div
+                        className="MuiFormControl-root-1 MuiFormControl-marginNormal-2 MuiFormControl-fullWidth-4"
+                        color="primary"
+                      >
+                        <WithStyles(WithFormControlContext(InputLabel))>
+                          <WithFormControlContext(InputLabel)
+                            classes={
+                              Object {
+                                "animated": "MuiInputLabel-animated-13",
+                                "disabled": "MuiInputLabel-disabled-7",
+                                "error": "MuiInputLabel-error-8",
+                                "filled": "MuiInputLabel-filled-14",
+                                "focused": "MuiInputLabel-focused-6",
+                                "formControl": "MuiInputLabel-formControl-10",
+                                "marginDense": "MuiInputLabel-marginDense-11",
+                                "outlined": "MuiInputLabel-outlined-15",
+                                "required": "MuiInputLabel-required-9",
+                                "root": "MuiInputLabel-root-5",
+                                "shrink": "MuiInputLabel-shrink-12",
+                              }
+                            }
+                          >
+                            <InputLabel
+                              classes={
+                                Object {
+                                  "animated": "MuiInputLabel-animated-13",
+                                  "disabled": "MuiInputLabel-disabled-7",
+                                  "error": "MuiInputLabel-error-8",
+                                  "filled": "MuiInputLabel-filled-14",
+                                  "focused": "MuiInputLabel-focused-6",
+                                  "formControl": "MuiInputLabel-formControl-10",
+                                  "marginDense": "MuiInputLabel-marginDense-11",
+                                  "outlined": "MuiInputLabel-outlined-15",
+                                  "required": "MuiInputLabel-required-9",
+                                  "root": "MuiInputLabel-root-5",
+                                  "shrink": "MuiInputLabel-shrink-12",
+                                }
+                              }
+                              disableAnimation={false}
+                              muiFormControl={
+                                Object {
+                                  "adornedStart": false,
+                                  "disabled": false,
+                                  "error": false,
+                                  "filled": false,
+                                  "focused": false,
+                                  "margin": "normal",
+                                  "onBlur": [Function],
+                                  "onEmpty": [Function],
+                                  "onFilled": [Function],
+                                  "onFocus": [Function],
+                                  "required": false,
+                                  "variant": "standard",
+                                }
+                              }
+                            >
+                              <WithStyles(WithFormControlContext(FormLabel))
+                                className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                                classes={
+                                  Object {
+                                    "disabled": "MuiInputLabel-disabled-7",
+                                    "error": "MuiInputLabel-error-8",
+                                    "focused": "MuiInputLabel-focused-6",
+                                    "required": "MuiInputLabel-required-9",
+                                  }
+                                }
+                                data-shrink={false}
+                              >
+                                <WithFormControlContext(FormLabel)
+                                  className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                                  classes={
+                                    Object {
+                                      "asterisk": "MuiFormLabel-asterisk-22",
+                                      "disabled": "MuiFormLabel-disabled-18 MuiInputLabel-disabled-7",
+                                      "error": "MuiFormLabel-error-19 MuiInputLabel-error-8",
+                                      "filled": "MuiFormLabel-filled-20",
+                                      "focused": "MuiFormLabel-focused-17 MuiInputLabel-focused-6",
+                                      "required": "MuiFormLabel-required-21 MuiInputLabel-required-9",
+                                      "root": "MuiFormLabel-root-16",
+                                    }
+                                  }
+                                  data-shrink={false}
+                                >
+                                  <FormLabel
+                                    className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                                    classes={
+                                      Object {
+                                        "asterisk": "MuiFormLabel-asterisk-22",
+                                        "disabled": "MuiFormLabel-disabled-18 MuiInputLabel-disabled-7",
+                                        "error": "MuiFormLabel-error-19 MuiInputLabel-error-8",
+                                        "filled": "MuiFormLabel-filled-20",
+                                        "focused": "MuiFormLabel-focused-17 MuiInputLabel-focused-6",
+                                        "required": "MuiFormLabel-required-21 MuiInputLabel-required-9",
+                                        "root": "MuiFormLabel-root-16",
+                                      }
+                                    }
+                                    component="label"
+                                    data-shrink={false}
+                                    muiFormControl={
+                                      Object {
+                                        "adornedStart": false,
+                                        "disabled": false,
+                                        "error": false,
+                                        "filled": false,
+                                        "focused": false,
+                                        "margin": "normal",
+                                        "onBlur": [Function],
+                                        "onEmpty": [Function],
+                                        "onFilled": [Function],
+                                        "onFocus": [Function],
+                                        "required": false,
+                                        "variant": "standard",
+                                      }
+                                    }
+                                  >
+                                    <label
+                                      className="MuiFormLabel-root-16 MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                                      data-shrink={false}
+                                    >
+                                      メールアドレス
+                                    </label>
+                                  </FormLabel>
+                                </WithFormControlContext(FormLabel)>
+                              </WithStyles(WithFormControlContext(FormLabel))>
+                            </InputLabel>
+                          </WithFormControlContext(InputLabel)>
+                        </WithStyles(WithFormControlContext(InputLabel))>
+                        <WithStyles(Input)
+                          fullWidth={true}
+                          name="email"
+                          onChange={[Function]}
+                          value=""
+                        >
+                          <Input
+                            classes={
+                              Object {
+                                "disabled": "MuiInput-disabled-26",
+                                "error": "MuiInput-error-28",
+                                "focused": "MuiInput-focused-25",
+                                "formControl": "MuiInput-formControl-24",
+                                "fullWidth": "MuiInput-fullWidth-30",
+                                "input": "MuiInput-input-31",
+                                "inputMarginDense": "MuiInput-inputMarginDense-32",
+                                "inputMultiline": "MuiInput-inputMultiline-33",
+                                "inputType": "MuiInput-inputType-34",
+                                "inputTypeSearch": "MuiInput-inputTypeSearch-35",
+                                "multiline": "MuiInput-multiline-29",
+                                "root": "MuiInput-root-23",
+                                "underline": "MuiInput-underline-27",
+                              }
+                            }
+                            fullWidth={true}
+                            name="email"
+                            onChange={[Function]}
+                            value=""
+                          >
+                            <WithStyles(WithFormControlContext(InputBase))
+                              classes={
+                                Object {
+                                  "disabled": "MuiInput-disabled-26",
+                                  "error": "MuiInput-error-28",
+                                  "focused": "MuiInput-focused-25",
+                                  "formControl": "MuiInput-formControl-24",
+                                  "fullWidth": "MuiInput-fullWidth-30",
+                                  "input": "MuiInput-input-31",
+                                  "inputMarginDense": "MuiInput-inputMarginDense-32",
+                                  "inputMultiline": "MuiInput-inputMultiline-33",
+                                  "inputType": "MuiInput-inputType-34",
+                                  "inputTypeSearch": "MuiInput-inputTypeSearch-35",
+                                  "multiline": "MuiInput-multiline-29",
+                                  "root": "MuiInput-root-23 MuiInput-underline-27",
+                                  "underline": null,
+                                }
+                              }
+                              fullWidth={true}
+                              inputComponent="input"
+                              multiline={false}
+                              name="email"
+                              onChange={[Function]}
+                              type="text"
+                              value=""
+                            >
+                              <WithFormControlContext(InputBase)
+                                classes={
+                                  Object {
+                                    "adornedEnd": "MuiInputBase-adornedEnd-41",
+                                    "adornedStart": "MuiInputBase-adornedStart-40",
+                                    "disabled": "MuiInputBase-disabled-39 MuiInput-disabled-26",
+                                    "error": "MuiInputBase-error-42 MuiInput-error-28",
+                                    "focused": "MuiInputBase-focused-38 MuiInput-focused-25",
+                                    "formControl": "MuiInputBase-formControl-37 MuiInput-formControl-24",
+                                    "fullWidth": "MuiInputBase-fullWidth-45 MuiInput-fullWidth-30",
+                                    "input": "MuiInputBase-input-46 MuiInput-input-31",
+                                    "inputAdornedEnd": "MuiInputBase-inputAdornedEnd-52",
+                                    "inputAdornedStart": "MuiInputBase-inputAdornedStart-51",
+                                    "inputMarginDense": "MuiInputBase-inputMarginDense-47 MuiInput-inputMarginDense-32",
+                                    "inputMultiline": "MuiInputBase-inputMultiline-48 MuiInput-inputMultiline-33",
+                                    "inputType": "MuiInputBase-inputType-49 MuiInput-inputType-34",
+                                    "inputTypeSearch": "MuiInputBase-inputTypeSearch-50 MuiInput-inputTypeSearch-35",
+                                    "marginDense": "MuiInputBase-marginDense-43",
+                                    "multiline": "MuiInputBase-multiline-44 MuiInput-multiline-29",
+                                    "root": "MuiInputBase-root-36 MuiInput-root-23 MuiInput-underline-27",
+                                  }
+                                }
+                                fullWidth={true}
+                                inputComponent="input"
+                                multiline={false}
+                                name="email"
+                                onChange={[Function]}
+                                type="text"
+                                value=""
+                              >
+                                <InputBase
+                                  classes={
+                                    Object {
+                                      "adornedEnd": "MuiInputBase-adornedEnd-41",
+                                      "adornedStart": "MuiInputBase-adornedStart-40",
+                                      "disabled": "MuiInputBase-disabled-39 MuiInput-disabled-26",
+                                      "error": "MuiInputBase-error-42 MuiInput-error-28",
+                                      "focused": "MuiInputBase-focused-38 MuiInput-focused-25",
+                                      "formControl": "MuiInputBase-formControl-37 MuiInput-formControl-24",
+                                      "fullWidth": "MuiInputBase-fullWidth-45 MuiInput-fullWidth-30",
+                                      "input": "MuiInputBase-input-46 MuiInput-input-31",
+                                      "inputAdornedEnd": "MuiInputBase-inputAdornedEnd-52",
+                                      "inputAdornedStart": "MuiInputBase-inputAdornedStart-51",
+                                      "inputMarginDense": "MuiInputBase-inputMarginDense-47 MuiInput-inputMarginDense-32",
+                                      "inputMultiline": "MuiInputBase-inputMultiline-48 MuiInput-inputMultiline-33",
+                                      "inputType": "MuiInputBase-inputType-49 MuiInput-inputType-34",
+                                      "inputTypeSearch": "MuiInputBase-inputTypeSearch-50 MuiInput-inputTypeSearch-35",
+                                      "marginDense": "MuiInputBase-marginDense-43",
+                                      "multiline": "MuiInputBase-multiline-44 MuiInput-multiline-29",
+                                      "root": "MuiInputBase-root-36 MuiInput-root-23 MuiInput-underline-27",
+                                    }
+                                  }
+                                  fullWidth={true}
+                                  inputComponent="input"
+                                  muiFormControl={
+                                    Object {
+                                      "adornedStart": false,
+                                      "disabled": false,
+                                      "error": false,
+                                      "filled": false,
+                                      "focused": false,
+                                      "margin": "normal",
+                                      "onBlur": [Function],
+                                      "onEmpty": [Function],
+                                      "onFilled": [Function],
+                                      "onFocus": [Function],
+                                      "required": false,
+                                      "variant": "standard",
+                                    }
+                                  }
+                                  multiline={false}
+                                  name="email"
+                                  onChange={[Function]}
+                                  type="text"
+                                  value=""
+                                >
+                                  <div
+                                    className="MuiInputBase-root-36 MuiInput-root-23 MuiInput-underline-27 MuiInputBase-fullWidth-45 MuiInput-fullWidth-30 MuiInputBase-formControl-37 MuiInput-formControl-24"
+                                    onClick={[Function]}
+                                  >
+                                    <input
+                                      aria-invalid={false}
+                                      className="MuiInputBase-input-46 MuiInput-input-31"
+                                      disabled={false}
+                                      name="email"
+                                      onBlur={[Function]}
+                                      onChange={[Function]}
+                                      onFocus={[Function]}
+                                      required={false}
+                                      type="text"
+                                      value=""
+                                    />
+                                  </div>
+                                </InputBase>
+                              </WithFormControlContext(InputBase)>
+                            </WithStyles(WithFormControlContext(InputBase))>
+                          </Input>
+                        </WithStyles(Input)>
+                      </div>
+                    </FormControl>
+                  </WithStyles(FormControl)>
+                </TextField>
+                <br />
+                <TextField
+                  color="primary"
+                  fullWidth={true}
+                  label="パスワード"
+                  margin="normal"
+                  name="pass"
+                  onChange={[Function]}
+                  required={false}
+                  select={false}
+                  type="password"
+                  value=""
+                  variant="standard"
+                >
+                  <WithStyles(FormControl)
+                    color="primary"
+                    fullWidth={true}
+                    margin="normal"
+                    required={false}
+                    variant="standard"
+                  >
+                    <FormControl
+                      classes={
+                        Object {
+                          "fullWidth": "MuiFormControl-fullWidth-4",
+                          "marginDense": "MuiFormControl-marginDense-3",
+                          "marginNormal": "MuiFormControl-marginNormal-2",
+                          "root": "MuiFormControl-root-1",
+                        }
+                      }
+                      color="primary"
+                      component="div"
+                      disabled={false}
+                      error={false}
+                      fullWidth={true}
+                      margin="normal"
+                      required={false}
+                      variant="standard"
+                    >
+                      <div
+                        className="MuiFormControl-root-1 MuiFormControl-marginNormal-2 MuiFormControl-fullWidth-4"
+                        color="primary"
+                      >
+                        <WithStyles(WithFormControlContext(InputLabel))>
+                          <WithFormControlContext(InputLabel)
+                            classes={
+                              Object {
+                                "animated": "MuiInputLabel-animated-13",
+                                "disabled": "MuiInputLabel-disabled-7",
+                                "error": "MuiInputLabel-error-8",
+                                "filled": "MuiInputLabel-filled-14",
+                                "focused": "MuiInputLabel-focused-6",
+                                "formControl": "MuiInputLabel-formControl-10",
+                                "marginDense": "MuiInputLabel-marginDense-11",
+                                "outlined": "MuiInputLabel-outlined-15",
+                                "required": "MuiInputLabel-required-9",
+                                "root": "MuiInputLabel-root-5",
+                                "shrink": "MuiInputLabel-shrink-12",
+                              }
+                            }
+                          >
+                            <InputLabel
+                              classes={
+                                Object {
+                                  "animated": "MuiInputLabel-animated-13",
+                                  "disabled": "MuiInputLabel-disabled-7",
+                                  "error": "MuiInputLabel-error-8",
+                                  "filled": "MuiInputLabel-filled-14",
+                                  "focused": "MuiInputLabel-focused-6",
+                                  "formControl": "MuiInputLabel-formControl-10",
+                                  "marginDense": "MuiInputLabel-marginDense-11",
+                                  "outlined": "MuiInputLabel-outlined-15",
+                                  "required": "MuiInputLabel-required-9",
+                                  "root": "MuiInputLabel-root-5",
+                                  "shrink": "MuiInputLabel-shrink-12",
+                                }
+                              }
+                              disableAnimation={false}
+                              muiFormControl={
+                                Object {
+                                  "adornedStart": false,
+                                  "disabled": false,
+                                  "error": false,
+                                  "filled": false,
+                                  "focused": false,
+                                  "margin": "normal",
+                                  "onBlur": [Function],
+                                  "onEmpty": [Function],
+                                  "onFilled": [Function],
+                                  "onFocus": [Function],
+                                  "required": false,
+                                  "variant": "standard",
+                                }
+                              }
+                            >
+                              <WithStyles(WithFormControlContext(FormLabel))
+                                className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                                classes={
+                                  Object {
+                                    "disabled": "MuiInputLabel-disabled-7",
+                                    "error": "MuiInputLabel-error-8",
+                                    "focused": "MuiInputLabel-focused-6",
+                                    "required": "MuiInputLabel-required-9",
+                                  }
+                                }
+                                data-shrink={false}
+                              >
+                                <WithFormControlContext(FormLabel)
+                                  className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                                  classes={
+                                    Object {
+                                      "asterisk": "MuiFormLabel-asterisk-22",
+                                      "disabled": "MuiFormLabel-disabled-18 MuiInputLabel-disabled-7",
+                                      "error": "MuiFormLabel-error-19 MuiInputLabel-error-8",
+                                      "filled": "MuiFormLabel-filled-20",
+                                      "focused": "MuiFormLabel-focused-17 MuiInputLabel-focused-6",
+                                      "required": "MuiFormLabel-required-21 MuiInputLabel-required-9",
+                                      "root": "MuiFormLabel-root-16",
+                                    }
+                                  }
+                                  data-shrink={false}
+                                >
+                                  <FormLabel
+                                    className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                                    classes={
+                                      Object {
+                                        "asterisk": "MuiFormLabel-asterisk-22",
+                                        "disabled": "MuiFormLabel-disabled-18 MuiInputLabel-disabled-7",
+                                        "error": "MuiFormLabel-error-19 MuiInputLabel-error-8",
+                                        "filled": "MuiFormLabel-filled-20",
+                                        "focused": "MuiFormLabel-focused-17 MuiInputLabel-focused-6",
+                                        "required": "MuiFormLabel-required-21 MuiInputLabel-required-9",
+                                        "root": "MuiFormLabel-root-16",
+                                      }
+                                    }
+                                    component="label"
+                                    data-shrink={false}
+                                    muiFormControl={
+                                      Object {
+                                        "adornedStart": false,
+                                        "disabled": false,
+                                        "error": false,
+                                        "filled": false,
+                                        "focused": false,
+                                        "margin": "normal",
+                                        "onBlur": [Function],
+                                        "onEmpty": [Function],
+                                        "onFilled": [Function],
+                                        "onFocus": [Function],
+                                        "required": false,
+                                        "variant": "standard",
+                                      }
+                                    }
+                                  >
+                                    <label
+                                      className="MuiFormLabel-root-16 MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                                      data-shrink={false}
+                                    >
+                                      パスワード
+                                    </label>
+                                  </FormLabel>
+                                </WithFormControlContext(FormLabel)>
+                              </WithStyles(WithFormControlContext(FormLabel))>
+                            </InputLabel>
+                          </WithFormControlContext(InputLabel)>
+                        </WithStyles(WithFormControlContext(InputLabel))>
+                        <WithStyles(Input)
+                          fullWidth={true}
+                          name="pass"
+                          onChange={[Function]}
+                          type="password"
+                          value=""
+                        >
+                          <Input
+                            classes={
+                              Object {
+                                "disabled": "MuiInput-disabled-26",
+                                "error": "MuiInput-error-28",
+                                "focused": "MuiInput-focused-25",
+                                "formControl": "MuiInput-formControl-24",
+                                "fullWidth": "MuiInput-fullWidth-30",
+                                "input": "MuiInput-input-31",
+                                "inputMarginDense": "MuiInput-inputMarginDense-32",
+                                "inputMultiline": "MuiInput-inputMultiline-33",
+                                "inputType": "MuiInput-inputType-34",
+                                "inputTypeSearch": "MuiInput-inputTypeSearch-35",
+                                "multiline": "MuiInput-multiline-29",
+                                "root": "MuiInput-root-23",
+                                "underline": "MuiInput-underline-27",
+                              }
+                            }
+                            fullWidth={true}
+                            name="pass"
+                            onChange={[Function]}
+                            type="password"
+                            value=""
+                          >
+                            <WithStyles(WithFormControlContext(InputBase))
+                              classes={
+                                Object {
+                                  "disabled": "MuiInput-disabled-26",
+                                  "error": "MuiInput-error-28",
+                                  "focused": "MuiInput-focused-25",
+                                  "formControl": "MuiInput-formControl-24",
+                                  "fullWidth": "MuiInput-fullWidth-30",
+                                  "input": "MuiInput-input-31",
+                                  "inputMarginDense": "MuiInput-inputMarginDense-32",
+                                  "inputMultiline": "MuiInput-inputMultiline-33",
+                                  "inputType": "MuiInput-inputType-34",
+                                  "inputTypeSearch": "MuiInput-inputTypeSearch-35",
+                                  "multiline": "MuiInput-multiline-29",
+                                  "root": "MuiInput-root-23 MuiInput-underline-27",
+                                  "underline": null,
+                                }
+                              }
+                              fullWidth={true}
+                              inputComponent="input"
+                              multiline={false}
+                              name="pass"
+                              onChange={[Function]}
+                              type="password"
+                              value=""
+                            >
+                              <WithFormControlContext(InputBase)
+                                classes={
+                                  Object {
+                                    "adornedEnd": "MuiInputBase-adornedEnd-41",
+                                    "adornedStart": "MuiInputBase-adornedStart-40",
+                                    "disabled": "MuiInputBase-disabled-39 MuiInput-disabled-26",
+                                    "error": "MuiInputBase-error-42 MuiInput-error-28",
+                                    "focused": "MuiInputBase-focused-38 MuiInput-focused-25",
+                                    "formControl": "MuiInputBase-formControl-37 MuiInput-formControl-24",
+                                    "fullWidth": "MuiInputBase-fullWidth-45 MuiInput-fullWidth-30",
+                                    "input": "MuiInputBase-input-46 MuiInput-input-31",
+                                    "inputAdornedEnd": "MuiInputBase-inputAdornedEnd-52",
+                                    "inputAdornedStart": "MuiInputBase-inputAdornedStart-51",
+                                    "inputMarginDense": "MuiInputBase-inputMarginDense-47 MuiInput-inputMarginDense-32",
+                                    "inputMultiline": "MuiInputBase-inputMultiline-48 MuiInput-inputMultiline-33",
+                                    "inputType": "MuiInputBase-inputType-49 MuiInput-inputType-34",
+                                    "inputTypeSearch": "MuiInputBase-inputTypeSearch-50 MuiInput-inputTypeSearch-35",
+                                    "marginDense": "MuiInputBase-marginDense-43",
+                                    "multiline": "MuiInputBase-multiline-44 MuiInput-multiline-29",
+                                    "root": "MuiInputBase-root-36 MuiInput-root-23 MuiInput-underline-27",
+                                  }
+                                }
+                                fullWidth={true}
+                                inputComponent="input"
+                                multiline={false}
+                                name="pass"
+                                onChange={[Function]}
+                                type="password"
+                                value=""
+                              >
+                                <InputBase
+                                  classes={
+                                    Object {
+                                      "adornedEnd": "MuiInputBase-adornedEnd-41",
+                                      "adornedStart": "MuiInputBase-adornedStart-40",
+                                      "disabled": "MuiInputBase-disabled-39 MuiInput-disabled-26",
+                                      "error": "MuiInputBase-error-42 MuiInput-error-28",
+                                      "focused": "MuiInputBase-focused-38 MuiInput-focused-25",
+                                      "formControl": "MuiInputBase-formControl-37 MuiInput-formControl-24",
+                                      "fullWidth": "MuiInputBase-fullWidth-45 MuiInput-fullWidth-30",
+                                      "input": "MuiInputBase-input-46 MuiInput-input-31",
+                                      "inputAdornedEnd": "MuiInputBase-inputAdornedEnd-52",
+                                      "inputAdornedStart": "MuiInputBase-inputAdornedStart-51",
+                                      "inputMarginDense": "MuiInputBase-inputMarginDense-47 MuiInput-inputMarginDense-32",
+                                      "inputMultiline": "MuiInputBase-inputMultiline-48 MuiInput-inputMultiline-33",
+                                      "inputType": "MuiInputBase-inputType-49 MuiInput-inputType-34",
+                                      "inputTypeSearch": "MuiInputBase-inputTypeSearch-50 MuiInput-inputTypeSearch-35",
+                                      "marginDense": "MuiInputBase-marginDense-43",
+                                      "multiline": "MuiInputBase-multiline-44 MuiInput-multiline-29",
+                                      "root": "MuiInputBase-root-36 MuiInput-root-23 MuiInput-underline-27",
+                                    }
+                                  }
+                                  fullWidth={true}
+                                  inputComponent="input"
+                                  muiFormControl={
+                                    Object {
+                                      "adornedStart": false,
+                                      "disabled": false,
+                                      "error": false,
+                                      "filled": false,
+                                      "focused": false,
+                                      "margin": "normal",
+                                      "onBlur": [Function],
+                                      "onEmpty": [Function],
+                                      "onFilled": [Function],
+                                      "onFocus": [Function],
+                                      "required": false,
+                                      "variant": "standard",
+                                    }
+                                  }
+                                  multiline={false}
+                                  name="pass"
+                                  onChange={[Function]}
+                                  type="password"
+                                  value=""
+                                >
+                                  <div
+                                    className="MuiInputBase-root-36 MuiInput-root-23 MuiInput-underline-27 MuiInputBase-fullWidth-45 MuiInput-fullWidth-30 MuiInputBase-formControl-37 MuiInput-formControl-24"
+                                    onClick={[Function]}
+                                  >
+                                    <input
+                                      aria-invalid={false}
+                                      className="MuiInputBase-input-46 MuiInput-input-31 MuiInputBase-inputType-49 MuiInput-inputType-34"
+                                      disabled={false}
+                                      name="pass"
+                                      onBlur={[Function]}
+                                      onChange={[Function]}
+                                      onFocus={[Function]}
+                                      required={false}
+                                      type="password"
+                                      value=""
+                                    />
+                                  </div>
+                                </InputBase>
+                              </WithFormControlContext(InputBase)>
+                            </WithStyles(WithFormControlContext(InputBase))>
+                          </Input>
+                        </WithStyles(Input)>
+                      </div>
+                    </FormControl>
+                  </WithStyles(FormControl)>
+                </TextField>
+                <br />
+                <WithStyles(Button)
+                  color="primary"
+                  disabled={true}
+                  fullWidth={true}
+                  onClick={[Function]}
+                  variant="contained"
+                >
+                  <Button
+                    classes={
+                      Object {
+                        "colorInherit": "MuiButton-colorInherit-74",
+                        "contained": "MuiButton-contained-64",
+                        "containedPrimary": "MuiButton-containedPrimary-65",
+                        "containedSecondary": "MuiButton-containedSecondary-66",
+                        "disabled": "MuiButton-disabled-73",
+                        "extendedFab": "MuiButton-extendedFab-71",
+                        "fab": "MuiButton-fab-70",
+                        "flat": "MuiButton-flat-58",
+                        "flatPrimary": "MuiButton-flatPrimary-59",
+                        "flatSecondary": "MuiButton-flatSecondary-60",
+                        "focusVisible": "MuiButton-focusVisible-72",
+                        "fullWidth": "MuiButton-fullWidth-78",
+                        "label": "MuiButton-label-54",
+                        "mini": "MuiButton-mini-75",
+                        "outlined": "MuiButton-outlined-61",
+                        "outlinedPrimary": "MuiButton-outlinedPrimary-62",
+                        "outlinedSecondary": "MuiButton-outlinedSecondary-63",
+                        "raised": "MuiButton-raised-67",
+                        "raisedPrimary": "MuiButton-raisedPrimary-68",
+                        "raisedSecondary": "MuiButton-raisedSecondary-69",
+                        "root": "MuiButton-root-53",
+                        "sizeLarge": "MuiButton-sizeLarge-77",
+                        "sizeSmall": "MuiButton-sizeSmall-76",
+                        "text": "MuiButton-text-55",
+                        "textPrimary": "MuiButton-textPrimary-56",
+                        "textSecondary": "MuiButton-textSecondary-57",
+                      }
+                    }
+                    color="primary"
+                    component="button"
+                    disableFocusRipple={false}
+                    disabled={true}
+                    fullWidth={true}
+                    mini={false}
+                    onClick={[Function]}
+                    size="medium"
+                    type="button"
+                    variant="contained"
+                  >
+                    <WithStyles(ButtonBase)
+                      className="MuiButton-root-53 MuiButton-contained-64 MuiButton-containedPrimary-65 MuiButton-raised-67 MuiButton-raisedPrimary-68 MuiButton-disabled-73 MuiButton-fullWidth-78"
+                      component="button"
+                      disabled={true}
+                      focusRipple={true}
+                      focusVisibleClassName="MuiButton-focusVisible-72"
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      <ButtonBase
+                        centerRipple={false}
+                        className="MuiButton-root-53 MuiButton-contained-64 MuiButton-containedPrimary-65 MuiButton-raised-67 MuiButton-raisedPrimary-68 MuiButton-disabled-73 MuiButton-fullWidth-78"
+                        classes={
+                          Object {
+                            "disabled": "MuiButtonBase-disabled-80",
+                            "focusVisible": "MuiButtonBase-focusVisible-81",
+                            "root": "MuiButtonBase-root-79",
+                          }
+                        }
+                        component="button"
+                        disableRipple={false}
+                        disableTouchRipple={false}
+                        disabled={true}
+                        focusRipple={true}
+                        focusVisibleClassName="MuiButton-focusVisible-72"
+                        onClick={[Function]}
+                        tabIndex="0"
+                        type="button"
+                      >
+                        <button
+                          className="MuiButtonBase-root-79 MuiButtonBase-disabled-80 MuiButton-root-53 MuiButton-contained-64 MuiButton-containedPrimary-65 MuiButton-raised-67 MuiButton-raisedPrimary-68 MuiButton-disabled-73 MuiButton-fullWidth-78"
+                          disabled={true}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onContextMenu={[Function]}
+                          onFocus={[Function]}
+                          onKeyDown={[Function]}
+                          onKeyUp={[Function]}
+                          onMouseDown={[Function]}
+                          onMouseLeave={[Function]}
+                          onMouseUp={[Function]}
+                          onTouchEnd={[Function]}
+                          onTouchMove={[Function]}
+                          onTouchStart={[Function]}
+                          tabIndex="-1"
+                          type="button"
+                        >
+                          <span
+                            className="MuiButton-label-54"
+                          >
+                            ログイン
+                          </span>
+                        </button>
+                      </ButtonBase>
+                    </WithStyles(ButtonBase)>
+                  </Button>
+                </WithStyles(Button)>
+              </form>
+            </SigninForm>
+            <styled.div>
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-EHOje",
+                      "isStatic": true,
+                      "lastClassName": "c3",
+                      "rules": Array [
+                        "
+  margin: 8px 0;
+  text-align: center;
+",
+                      ],
+                    },
+                    "displayName": "styled.div",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-EHOje",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <div
+                  className="c3"
+                >
                   <GoogleButton
                     onClick={[Function]}
                   >
@@ -383,9 +976,9 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-htpNat",
+                            "componentId": "sc-bdVaJa",
                             "isStatic": true,
-                            "lastClassName": "c2",
+                            "lastClassName": "c4",
                             "rules": Array [
                               "
   cursor: pointer;
@@ -398,7 +991,7 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                           "displayName": "GoogleButton",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-htpNat",
+                          "styledComponentId": "sc-bdVaJa",
                           "target": [Function],
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -410,11 +1003,11 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                       onClick={[Function]}
                     >
                       <GoogleButton
-                        className="c2"
+                        className="c4"
                         onClick={[Function]}
                       >
                         <svg
-                          className="c2"
+                          className="c4"
                           height="3em"
                           onClick={[Function]}
                           viewBox="0 0 193 48"
@@ -548,12 +1141,12 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-ifAKCX",
+                      "componentId": "sc-EHOje",
                       "isStatic": true,
                       "lastClassName": "c3",
                       "rules": Array [
                         "
-  font-size: 120%;
+  margin: 8px 0;
   text-align: center;
 ",
                       ],
@@ -561,7 +1154,7 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                     "displayName": "styled.div",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-ifAKCX",
+                    "styledComponentId": "sc-EHOje",
                     "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -573,94 +1166,170 @@ exports[`should match snapshot: Signin/nomal 1`] = `
                 <div
                   className="c3"
                 >
-                  <Blueprint3.Button
-                    intent="primary"
-                    large={true}
-                    minimal={true}
-                    onClick={[Function]}
+                  <WithStyles(Button)
+                    color="primary"
+                    component={[Function]}
+                    to="/users/signup"
                   >
-                    <button
-                      className="bp3-button bp3-large bp3-minimal bp3-intent-primary"
-                      onClick={[Function]}
-                      onKeyDown={[Function]}
-                      onKeyUp={[Function]}
+                    <Button
+                      classes={
+                        Object {
+                          "colorInherit": "MuiButton-colorInherit-74",
+                          "contained": "MuiButton-contained-64",
+                          "containedPrimary": "MuiButton-containedPrimary-65",
+                          "containedSecondary": "MuiButton-containedSecondary-66",
+                          "disabled": "MuiButton-disabled-73",
+                          "extendedFab": "MuiButton-extendedFab-71",
+                          "fab": "MuiButton-fab-70",
+                          "flat": "MuiButton-flat-58",
+                          "flatPrimary": "MuiButton-flatPrimary-59",
+                          "flatSecondary": "MuiButton-flatSecondary-60",
+                          "focusVisible": "MuiButton-focusVisible-72",
+                          "fullWidth": "MuiButton-fullWidth-78",
+                          "label": "MuiButton-label-54",
+                          "mini": "MuiButton-mini-75",
+                          "outlined": "MuiButton-outlined-61",
+                          "outlinedPrimary": "MuiButton-outlinedPrimary-62",
+                          "outlinedSecondary": "MuiButton-outlinedSecondary-63",
+                          "raised": "MuiButton-raised-67",
+                          "raisedPrimary": "MuiButton-raisedPrimary-68",
+                          "raisedSecondary": "MuiButton-raisedSecondary-69",
+                          "root": "MuiButton-root-53",
+                          "sizeLarge": "MuiButton-sizeLarge-77",
+                          "sizeSmall": "MuiButton-sizeSmall-76",
+                          "text": "MuiButton-text-55",
+                          "textPrimary": "MuiButton-textPrimary-56",
+                          "textSecondary": "MuiButton-textSecondary-57",
+                        }
+                      }
+                      color="primary"
+                      component={[Function]}
+                      disableFocusRipple={false}
+                      disabled={false}
+                      fullWidth={false}
+                      mini={false}
+                      size="medium"
+                      to="/users/signup"
                       type="button"
+                      variant="text"
                     >
-                      <Blueprint3.Icon
-                        key="leftIcon"
-                      />
-                      <span
-                        className="bp3-button-text"
-                        key="text"
+                      <WithStyles(ButtonBase)
+                        className="MuiButton-root-53 MuiButton-text-55 MuiButton-textPrimary-56 MuiButton-flat-58 MuiButton-flatPrimary-59"
+                        component={[Function]}
+                        disabled={false}
+                        focusRipple={true}
+                        focusVisibleClassName="MuiButton-focusVisible-72"
+                        to="/users/signup"
+                        type="button"
                       >
-                        新規登録
-                      </span>
-                      <Blueprint3.Icon
-                        key="rightIcon"
-                      />
-                    </button>
-                  </Blueprint3.Button>
+                        <ButtonBase
+                          centerRipple={false}
+                          className="MuiButton-root-53 MuiButton-text-55 MuiButton-textPrimary-56 MuiButton-flat-58 MuiButton-flatPrimary-59"
+                          classes={
+                            Object {
+                              "disabled": "MuiButtonBase-disabled-80",
+                              "focusVisible": "MuiButtonBase-focusVisible-81",
+                              "root": "MuiButtonBase-root-79",
+                            }
+                          }
+                          component={[Function]}
+                          disableRipple={false}
+                          disableTouchRipple={false}
+                          disabled={false}
+                          focusRipple={true}
+                          focusVisibleClassName="MuiButton-focusVisible-72"
+                          tabIndex="0"
+                          to="/users/signup"
+                          type="button"
+                        >
+                          <Link
+                            className="MuiButtonBase-root-79 MuiButton-root-53 MuiButton-text-55 MuiButton-textPrimary-56 MuiButton-flat-58 MuiButton-flatPrimary-59"
+                            onBlur={[Function]}
+                            onContextMenu={[Function]}
+                            onFocus={[Function]}
+                            onKeyDown={[Function]}
+                            onKeyUp={[Function]}
+                            onMouseDown={[Function]}
+                            onMouseLeave={[Function]}
+                            onMouseUp={[Function]}
+                            onTouchEnd={[Function]}
+                            onTouchMove={[Function]}
+                            onTouchStart={[Function]}
+                            replace={false}
+                            role="button"
+                            tabIndex="0"
+                            to="/users/signup"
+                          >
+                            <a
+                              className="MuiButtonBase-root-79 MuiButton-root-53 MuiButton-text-55 MuiButton-textPrimary-56 MuiButton-flat-58 MuiButton-flatPrimary-59"
+                              onBlur={[Function]}
+                              onClick={[Function]}
+                              onContextMenu={[Function]}
+                              onFocus={[Function]}
+                              onKeyDown={[Function]}
+                              onKeyUp={[Function]}
+                              onMouseDown={[Function]}
+                              onMouseLeave={[Function]}
+                              onMouseUp={[Function]}
+                              onTouchEnd={[Function]}
+                              onTouchMove={[Function]}
+                              onTouchStart={[Function]}
+                              role="button"
+                              tabIndex="0"
+                            >
+                              <span
+                                className="MuiButton-label-54"
+                              >
+                                新規登録
+                              </span>
+                              <NoSsr
+                                defer={false}
+                                fallback={null}
+                              >
+                                <WithStyles(TouchRipple)
+                                  center={false}
+                                  innerRef={[Function]}
+                                >
+                                  <TouchRipple
+                                    center={false}
+                                    classes={
+                                      Object {
+                                        "child": "MuiTouchRipple-child-86",
+                                        "childLeaving": "MuiTouchRipple-childLeaving-87",
+                                        "childPulsate": "MuiTouchRipple-childPulsate-88",
+                                        "ripple": "MuiTouchRipple-ripple-83",
+                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate-85",
+                                        "rippleVisible": "MuiTouchRipple-rippleVisible-84",
+                                        "root": "MuiTouchRipple-root-82",
+                                      }
+                                    }
+                                  >
+                                    <TransitionGroup
+                                      childFactory={[Function]}
+                                      className="MuiTouchRipple-root-82"
+                                      component="span"
+                                      enter={true}
+                                      exit={true}
+                                    >
+                                      <span
+                                        className="MuiTouchRipple-root-82"
+                                      />
+                                    </TransitionGroup>
+                                  </TouchRipple>
+                                </WithStyles(TouchRipple)>
+                              </NoSsr>
+                            </a>
+                          </Link>
+                        </ButtonBase>
+                      </WithStyles(ButtonBase)>
+                    </Button>
+                  </WithStyles(Button)>
                 </div>
               </StyledComponent>
             </styled.div>
-            <SignupFormDialog
-              isOpen={false}
-              onClose={[Function]}
-              onSubmit={[Function]}
-            >
-              <Blueprint3.Dialog
-                canOutsideClickClose={true}
-                isCloseButtonShown={true}
-                isOpen={false}
-                onClose={[Function]}
-                style={
-                  Object {
-                    "margin": "0 15px",
-                  }
-                }
-                title="ユーザ登録"
-              >
-                <Blueprint3.Overlay
-                  autoFocus={true}
-                  backdropProps={Object {}}
-                  canEscapeKeyClose={true}
-                  canOutsideClickClose={true}
-                  className="bp3-overlay-scroll-container"
-                  enforceFocus={true}
-                  hasBackdrop={true}
-                  isCloseButtonShown={true}
-                  isOpen={false}
-                  lazy={true}
-                  onClose={[Function]}
-                  style={
-                    Object {
-                      "margin": "0 15px",
-                    }
-                  }
-                  title="ユーザ登録"
-                  transitionDuration={300}
-                  transitionName="bp3-overlay"
-                  usePortal={true}
-                />
-              </Blueprint3.Dialog>
-            </SignupFormDialog>
             <OverlaySpinner
-              loading={false}
-            >
-              <Blueprint3.Overlay
-                autoFocus={true}
-                backdropProps={Object {}}
-                canEscapeKeyClose={true}
-                canOutsideClickClose={true}
-                enforceFocus={true}
-                hasBackdrop={true}
-                isOpen={false}
-                lazy={true}
-                transitionDuration={300}
-                transitionName="bp3-overlay"
-                usePortal={true}
-              />
-            </OverlaySpinner>
+              visible={false}
+            />
           </div>
         </StyledComponent>
       </styled.div>

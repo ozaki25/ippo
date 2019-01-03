@@ -5,4 +5,18 @@ import NewEvent from '.';
 
 const stories = storiesOf('pages/NewEvent', module);
 
-stories.add('通常パターン', () => <NewEvent createEvent={action('createEvent')} />);
+const props = {
+  createEvent: action('createEvent'),
+  authUser: {
+    uid: '123',
+    displayName: 'テストユーザ',
+  },
+  history: {
+    push: action('push'),
+    goBack: action('goBack'),
+    replace: action('replace'),
+  },
+  firebase: {},
+};
+
+stories.add('通常パターン', () => <NewEvent {...props} />);

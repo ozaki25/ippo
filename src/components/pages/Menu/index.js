@@ -1,66 +1,95 @@
 import React from 'react';
+import { Typography } from '@material-ui/core';
+import { AddRounded, NavigateNextRounded } from '@material-ui/icons';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import { H3, Icon } from '@blueprintjs/core';
+
 import CustomCard from 'src/components/molecules/CustomCard';
 import EventCardList from 'src/components/organisms/EventCardList';
 import Container from 'src/components/templates/Container';
 import AsyncSwipeable from 'src/components/templates/AsyncSwipeable';
+import IconWithText from 'src/components/templates/IconWithText';
 import eventFormat from 'src/utils/eventFormat';
 import ROUTES from 'src/constants/routes';
 
 const CardContainer = styled.div`
-  margin: 8px 0;
+  margin: 2px 0;
   text-align: center;
 `;
 
-const Menu = ({ internal, external, authUser, history }) => (
-  <Container authUser={authUser}>
-    <H3>
-      <Link to={ROUTES.EnteredEvents}>参加イベント</Link>
-    </H3>
-    <AsyncSwipeable loading={false}>
-      {EventCardList({ events: [], expand: true, history })}
-    </AsyncSwipeable>
-    <H3>
-      <Link to={ROUTES.RecommendedEvents}>おすすめイベント</Link>
-    </H3>
-    <AsyncSwipeable loading={false}>
-      {EventCardList({ events: [], expand: true, history })}
-    </AsyncSwipeable>
-    <H3>
-      <Link to={ROUTES.InternalEvents}>社内イベント</Link>
-    </H3>
-    <AsyncSwipeable loading={internal.loading}>
-      {EventCardList({
-        events: eventFormat.internal(internal.internalEvents),
-        expand: true,
-        history,
-      })}
-    </AsyncSwipeable>
-    <H3>
-      <Link to={ROUTES.ExternalEvents}>社外イベント</Link>
-    </H3>
-    <AsyncSwipeable loading={external.loading}>
-      {EventCardList({
-        events: eventFormat.external(external.connpass),
-        expand: true,
-      })}
-    </AsyncSwipeable>
-    <H3>
-      <Link to={ROUTES.OrganizedEvents}>主催イベント</Link>
-    </H3>
-    <AsyncSwipeable loading={false}>
-      <CardContainer>
-        <CustomCard url={ROUTES.NewEvent} history={history}>
-          <H3>
-            <Icon icon="plus" iconSize={28} /> イベント作成
-          </H3>
-        </CustomCard>
-      </CardContainer>
-      {EventCardList({ events: [], expand: true, history })}
-    </AsyncSwipeable>
+const EventsContainer = styled.div`
+  margin: 8px 0;
+`;
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+`;
+
+const LinkHeading = ({ linkTo, children }) => (
+  <StyledLink to={linkTo}>
+    <IconWithText>
+      <NavigateNextRounded color="primary" />
+      <Typography variant="h6" color="primary">
+        {children}
+      </Typography>
+    </IconWithText>
+  </StyledLink>
+);
+
+const Menu = ({ internal, external, authUser, history, firebase }) => (
+  <Container title="IPPO" authUser={authUser} history={history} firebase={firebase} noPadding>
+    <EventsContainer>
+      <LinkHeading linkTo={ROUTES.EnteredEvents}>参加イベント</LinkHeading>
+      <AsyncSwipeable loading={false}>
+        {EventCardList({ events: [], expand: true, horizontal: true, history })}
+      </AsyncSwipeable>
+    </EventsContainer>
+
+    <EventsContainer>
+      <LinkHeading linkTo={ROUTES.RecommendedEvents}>おすすめイベント</LinkHeading>
+      <AsyncSwipeable loading={false}>
+        {EventCardList({ events: [], expand: true, horizontal: true, history })}
+      </AsyncSwipeable>
+    </EventsContainer>
+
+    <EventsContainer>
+      <LinkHeading linkTo={ROUTES.InternalEvents}>社内イベント</LinkHeading>
+      <AsyncSwipeable loading={internal.loading}>
+        {EventCardList({
+          events: eventFormat.internal(internal.internalEvents),
+          expand: true,
+          horizontal: true,
+          history,
+        })}
+      </AsyncSwipeable>
+    </EventsContainer>
+
+    <EventsContainer>
+      <LinkHeading linkTo={ROUTES.ExternalEvents}>社外イベント</LinkHeading>
+      <AsyncSwipeable loading={external.loading}>
+        {EventCardList({
+          events: eventFormat.external(external.connpass),
+          expand: true,
+          horizontal: true,
+        })}
+      </AsyncSwipeable>
+    </EventsContainer>
+
+    <EventsContainer>
+      <LinkHeading linkTo={ROUTES.OrganizedEvents}>主催イベント</LinkHeading>
+      <AsyncSwipeable loading={false}>
+        <CardContainer>
+          <CustomCard url={ROUTES.NewEvent} history={history}>
+            <IconWithText>
+              <AddRounded />
+              <Typography variant="h6">イベント作成</Typography>
+            </IconWithText>
+          </CustomCard>
+        </CardContainer>
+        {EventCardList({ events: [], expand: true, horizontal: true, history })}
+      </AsyncSwipeable>
+    </EventsContainer>
   </Container>
 );
 
@@ -94,11 +123,17 @@ Menu.propTypes = {
       ),
     }),
   }).isRequired,
-  authUser: propTypes.object,
+  authUser: propTypes.shape({
+    displayName: propTypes.string.isRequired,
+    uid: propTypes.string.isRequired,
+  }).isRequired,
+  history: propTypes.shape({
+    push: propTypes.func.isRequired,
+    goBack: propTypes.func.isRequired,
+  }).isRequired,
+  firebase: propTypes.object.isRequired,
 };
 
-Menu.defaultProps = {
-  authUser: null,
-};
+Menu.defaultProps = {};
 
 export default Menu;

@@ -1,50 +1,59 @@
 import React from 'react';
+import { Button, TextField, Typography } from '@material-ui/core';
 import propTypes from 'prop-types';
-import { Button, FormGroup, InputGroup } from '@blueprintjs/core';
 
 class SigninForm extends React.Component {
-  state = { email: '', pass: '' };
+  state = { email: '', pass: '', loading: false, error: '' };
 
-  onClick = event => {
+  onClick = async event => {
     event.preventDefault();
     const { email, pass } = this.state;
-    this.props.onSubmit({ data: { email, pass } });
+    this.setState({ loading: true });
+    try {
+      await this.props.onSubmit({ data: { email, pass } });
+    } catch (e) {
+      this.setState({ loading: false, error: e.toString() });
+    }
   };
 
   onChange = event => this.setState({ [event.target.name]: event.target.value });
 
   render() {
-    const { email, pass } = this.state;
+    const { email, pass, loading, error } = this.state;
     const invalid = email.trim() === '' || pass.trim() === '';
     return (
       <form>
-        <FormGroup label="メールアドレス" labelFor="email">
-          <InputGroup
-            id="email"
-            name="email"
-            value={this.state.email}
-            onChange={this.onChange}
-            large
-          />
-        </FormGroup>
-        <FormGroup label="パスワード" labelFor="pass">
-          <InputGroup
-            id="pass"
-            name="pass"
-            type="password"
-            value={this.state.pass}
-            onChange={this.onChange}
-            large
-          />
-        </FormGroup>
+        {error && <Typography color="error">{error}</Typography>}
+        <TextField
+          label="メールアドレス"
+          name="email"
+          value={email}
+          onChange={this.onChange}
+          margin="normal"
+          color="primary"
+          fullWidth
+        />
+        <br />
+        <TextField
+          label="パスワード"
+          name="pass"
+          type="password"
+          value={pass}
+          onChange={this.onChange}
+          margin="normal"
+          color="primary"
+          fullWidth
+        />
+        <br />
         <Button
           onClick={this.onClick}
-          text="ログイン"
-          type="submit"
-          disabled={invalid}
-          fill
-          large
-        />
+          disabled={invalid || loading}
+          color="primary"
+          variant="contained"
+          fullWidth
+        >
+          ログイン
+        </Button>
       </form>
     );
   }

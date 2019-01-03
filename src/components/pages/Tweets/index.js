@@ -1,15 +1,17 @@
 import React from 'react';
-import { Spinner } from '@blueprintjs/core';
 import propTypes from 'prop-types';
-import Container from 'src/components/templates/Container';
+import Spinner from 'src/components/atoms/Spinner';
+import FloatingButton from 'src/components/molecules/FloatingButton';
 import TweetsList from 'src/components/organisms/TweetList';
-import FloatingButtonList from 'src/components/organisms/FloatingButtonList';
-import NewTweet from 'src/hoc/WithNewTweet';
+import Container from 'src/components/templates/Container';
 import dateFormat from 'src/utils/dateFormat';
 import paging from 'src/constants/paging';
+import ROUTES from 'src/constants/routes';
 
 class Tweets extends React.Component {
-  state = { isOpenNewTweet: false };
+  componentDidMount() {
+    this.props.data.refetch();
+  }
 
   loadMore = () => {
     const {
@@ -38,16 +40,34 @@ class Tweets extends React.Component {
     });
   };
 
-  toggleNewTweet = () =>
-    this.setState(prevState => ({ isOpenNewTweet: !prevState.isOpenNewTweet }));
+  onClickNewTweet = () => {
+    const {
+      data: { variables },
+      history,
+    } = this.props;
+    history.push(`${ROUTES.NewTweet}?hashtag=${variables.hashtag}`);
+  };
 
   render() {
     const {
-      data: { tweets, loading, variables, refetch },
+      data: {
+        tweets,
+        loading,
+        variables: { hashtag },
+      },
       authUser,
+      history,
+      firebase,
     } = this.props;
     return (
-      <Container noPadding authUser={authUser}>
+      <Container
+        title={`#${hashtag}`}
+        back
+        noPadding
+        authUser={authUser}
+        history={history}
+        firebase={firebase}
+      >
         {loading ? (
           <Spinner />
         ) : (
@@ -60,13 +80,7 @@ class Tweets extends React.Component {
             }))}
           />
         )}
-        <FloatingButtonList items={[{ icon: 'edit', onClick: this.toggleNewTweet }]} />
-        <NewTweet
-          isOpen={this.state.isOpenNewTweet}
-          onClose={this.toggleNewTweet}
-          hashtag={variables.hashtag}
-          refetch={refetch}
-        />
+        <FloatingButton icon="edit" onClick={this.onClickNewTweet} />
       </Container>
     );
   }
@@ -87,17 +101,31 @@ Tweets.propTypes = {
           hashtag: propTypes.string.isRequired,
         }),
       ),
-      startId: propTypes.string.isRequired,
+      startId: propTypes.string,
     }),
     refetch: propTypes.func.isRequired,
     fetchMore: propTypes.func.isRequired,
+    variables: propTypes.shape({
+      hashtag: propTypes.string.isRequired,
+      limit: propTypes.number.isRequired,
+    }),
   }),
+  authUser: propTypes.shape({
+    displayName: propTypes.string.isRequired,
+    uid: propTypes.string.isRequired,
+  }).isRequired,
+  history: propTypes.shape({
+    push: propTypes.func.isRequired,
+    goBack: propTypes.func.isRequired,
+  }).isRequired,
+  firebase: propTypes.object.isRequired,
 };
 
 Tweets.defaultProps = {
   data: {
     tweets: {
       tweetList: [],
+      startId: null,
     },
   },
 };

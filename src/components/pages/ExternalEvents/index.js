@@ -1,9 +1,9 @@
 import React from 'react';
+import { Typography } from '@material-ui/core';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
-import { Spinner, Text } from '@blueprintjs/core';
+import Spinner from 'src/components/atoms/Spinner';
 import EventCard from 'src/components/organisms/EventCard';
-import SearchForm from 'src/components/organisms/SerchForm';
 import Pagination from 'src/components/organisms/Pagination';
 import Container from 'src/components/templates/Container';
 import dateFormat from 'src/utils/dateFormat';
@@ -18,7 +18,7 @@ const PaginationContainer = styled.div`
   text-align: center;
 `;
 
-const ExternalEvents = ({ data: { loading, connpass, refetch }, authUser }) => {
+const ExternalEvents = ({ data: { loading, connpass, refetch }, authUser, history, firebase }) => {
   const { events, results_available, results_start } = connpass || {};
 
   const { current, total } = pagination.paging(
@@ -28,12 +28,11 @@ const ExternalEvents = ({ data: { loading, connpass, refetch }, authUser }) => {
   );
 
   return (
-    <Container authUser={authUser}>
+    <Container title="社外イベント" back authUser={authUser} history={history} firebase={firebase}>
       {loading ? (
         <Spinner />
       ) : events && events.length ? (
         <>
-          <SearchForm search={searchQuery => refetch({ searchQuery })} />
           {connpass.events.map(event => (
             <EventCardContainer key={event.event_id}>
               <EventCard
@@ -51,7 +50,7 @@ const ExternalEvents = ({ data: { loading, connpass, refetch }, authUser }) => {
           </PaginationContainer>
         </>
       ) : (
-        <Text>No Contents</Text>
+        <Typography>No Contents</Typography>
       )}
     </Container>
   );
@@ -77,7 +76,15 @@ ExternalEvents.propTypes = {
     }),
     refetch: propTypes.func.isRequired,
   }),
-  authUser: propTypes.object,
+  authUser: propTypes.shape({
+    displayName: propTypes.string.isRequired,
+    uid: propTypes.string.isRequired,
+  }).isRequired,
+  history: propTypes.shape({
+    push: propTypes.func.isRequired,
+    goBack: propTypes.func.isRequired,
+  }).isRequired,
+  firebase: propTypes.object.isRequired,
 };
 
 ExternalEvents.defaultProps = {
@@ -87,7 +94,6 @@ ExternalEvents.defaultProps = {
       events: [],
     },
   },
-  authUser: null,
 };
 
 export default ExternalEvents;

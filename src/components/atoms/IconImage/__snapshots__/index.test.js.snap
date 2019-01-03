@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot: IconImage/nomal 1`] = `
+.c0 {
+  border-radius: 50%;
+  float: left;
+  height: 48px;
+  margin-top: 3px;
+  position: absolute;
+  width: 48px;
+}
+
+<MockRouter
+  createHref={[Function]}
+  location=""
+  params={Object {}}
+  path=""
+  push={[Function]}
+  replace={[Function]}
+  url=""
+>
+  <IconImage>
+    <styled.img>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bdVaJa",
+              "isStatic": true,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
+  border-radius: 50%;
+  float: left;
+  height: 48px;
+  margin-top: 3px;
+  position: absolute;
+  width: 48px;
+",
+              ],
+            },
+            "displayName": "styled.img",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bdVaJa",
+            "target": "img",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <img
+          className="c0"
+        />
+      </StyledComponent>
+    </styled.img>
+  </IconImage>
+</MockRouter>
+`;
