@@ -12,6 +12,7 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
+  font-size: 15px;
   margin-left: 58px;
 `;
 
