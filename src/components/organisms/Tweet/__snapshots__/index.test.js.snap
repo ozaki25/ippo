@@ -10,19 +10,6 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
   width: 48px;
 }
 
-.c0 {
-  border-bottom: 1px solid #e6ecf0;
-  padding: 9px 12px 0;
-}
-
-.c1 {
-  margin-left: 58px;
-}
-
-.c2 {
-  margin-left: -58px;
-}
-
 .c4 {
   margin: 0;
   white-space: pre-wrap;
@@ -31,7 +18,21 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
 
 .c5 {
   display: inline-block;
-  min-width: 80px;
+  margin: 4px 0;
+  min-width: 78px;
+}
+
+.c0 {
+  padding: 9px 12px 0;
+}
+
+.c1 {
+  font-size: 15px;
+  margin-left: 58px;
+}
+
+.c2 {
+  margin-left: -58px;
 }
 
 <MockRouter
@@ -59,12 +60,11 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
+              "componentId": "sc-ifAKCX",
               "isStatic": true,
               "lastClassName": "c0",
               "rules": Array [
                 "
-  border-bottom: 1px solid #e6ecf0;
   padding: 9px 12px 0;
 ",
               ],
@@ -72,7 +72,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
             "displayName": "styled.div",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
+            "styledComponentId": "sc-ifAKCX",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -91,11 +91,12 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-htpNat",
+                    "componentId": "sc-EHOje",
                     "isStatic": true,
                     "lastClassName": "c1",
                     "rules": Array [
                       "
+  font-size: 15px;
   margin-left: 58px;
 ",
                     ],
@@ -103,7 +104,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                   "displayName": "styled.div",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-htpNat",
+                  "styledComponentId": "sc-EHOje",
                   "target": "div",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -124,7 +125,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "sc-bxivhb",
+                          "componentId": "sc-bZQynM",
                           "isStatic": true,
                           "lastClassName": "c2",
                           "rules": Array [
@@ -136,7 +137,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                         "displayName": "Styled(IconImage)",
                         "foldedComponentIds": Array [],
                         "render": [Function],
-                        "styledComponentId": "sc-bxivhb",
+                        "styledComponentId": "sc-bZQynM",
                         "target": [Function],
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -212,15 +213,15 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-ifAKCX",
+                            "componentId": "sc-bwzfXH",
                             "isStatic": true,
-                            "lastClassName": "cFlEyZ",
+                            "lastClassName": "uTxCW",
                             "rules": Array [],
                           },
                           "displayName": "styled.small",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-ifAKCX",
+                          "styledComponentId": "sc-bwzfXH",
                           "target": "small",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -237,604 +238,654 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                     </StyledComponent>
                   </styled.small>
                 </TweetHeader>
-                <styled.p>
-                  <StyledComponent
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "sc-EHOje",
-                          "isStatic": true,
-                          "lastClassName": "c4",
-                          "rules": Array [
-                            "
+                <TweetBody
+                  text="Storybookいいところ
+  - どんなコンポーネントが存在してるか可視化できる
+  - コンポーネントの扱い方が分かる
+  - UIの修正デバッグが楽
+  #ThinkAtomicDesign"
+                >
+                  <styled.p>
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-htpNat",
+                            "isStatic": true,
+                            "lastClassName": "c4",
+                            "rules": Array [
+                              "
   margin: 0;
   white-space: pre-wrap;
   word-wrap: break-word;
 ",
-                          ],
-                        },
-                        "displayName": "styled.p",
-                        "foldedComponentIds": Array [],
-                        "render": [Function],
-                        "styledComponentId": "sc-EHOje",
-                        "target": "p",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
+                            ],
+                          },
+                          "displayName": "styled.p",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-htpNat",
+                          "target": "p",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
                       }
-                    }
-                    forwardedRef={null}
-                  >
-                    <p
-                      className="c4"
+                      forwardedRef={null}
                     >
-                      Storybookいいところ
+                      <p
+                        className="c4"
+                      >
+                        Storybookいいところ
   - どんなコンポーネントが存在してるか可視化できる
   - コンポーネントの扱い方が分かる
   - UIの修正デバッグが楽
   #ThinkAtomicDesign
-                    </p>
-                  </StyledComponent>
-                </styled.p>
-                <TweetFooter>
-                  <styled.div>
-                    <StyledComponent
-                      forwardedComponent={
-                        Object {
-                          "$$typeof": Symbol(react.forward_ref),
-                          "attrs": Array [],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "sc-bZQynM",
-                            "isStatic": true,
-                            "lastClassName": "c5",
-                            "rules": Array [
-                              "
-  display: inline-block;
-  min-width: 80px;
-",
-                            ],
-                          },
-                          "displayName": "styled.div",
-                          "foldedComponentIds": Array [],
-                          "render": [Function],
-                          "styledComponentId": "sc-bZQynM",
-                          "target": "div",
-                          "toString": [Function],
-                          "warnTooManyClasses": [Function],
-                          "withComponent": [Function],
-                        }
+                      </p>
+                    </StyledComponent>
+                  </styled.p>
+                </TweetBody>
+                <TweetFooter
+                  onClickLike={[Function]}
+                  onClickReply={[Function]}
+                  onClickRetweet={[Function]}
+                >
+                  <Component
+                    classes={
+                      Object {
+                        "smallIcon": "Component-smallIcon-1",
                       }
-                      forwardedRef={null}
-                    >
-                      <div
-                        className="c5"
+                    }
+                    onClickLike={[Function]}
+                    onClickReply={[Function]}
+                    onClickRetweet={[Function]}
+                  >
+                    <styled.div>
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": true,
+                              "lastClassName": "c5",
+                              "rules": Array [
+                                "
+  display: inline-block;
+  margin: 4px 0;
+  min-width: 78px;
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
                       >
-                        <WithStyles(IconButton)>
-                          <IconButton
-                            classes={
-                              Object {
-                                "colorInherit": "MuiIconButton-colorInherit-2",
-                                "colorPrimary": "MuiIconButton-colorPrimary-3",
-                                "colorSecondary": "MuiIconButton-colorSecondary-4",
-                                "disabled": "MuiIconButton-disabled-5",
-                                "label": "MuiIconButton-label-6",
-                                "root": "MuiIconButton-root-1",
-                              }
-                            }
-                            color="default"
-                            disabled={false}
+                        <div
+                          className="c5"
+                        >
+                          <WithStyles(IconButton)
+                            className="Component-smallIcon-1"
+                            onClick={[Function]}
                           >
-                            <WithStyles(ButtonBase)
-                              centerRipple={true}
-                              className="MuiIconButton-root-1"
-                              disabled={false}
-                              focusRipple={true}
-                            >
-                              <ButtonBase
-                                centerRipple={true}
-                                className="MuiIconButton-root-1"
-                                classes={
-                                  Object {
-                                    "disabled": "MuiButtonBase-disabled-8",
-                                    "focusVisible": "MuiButtonBase-focusVisible-9",
-                                    "root": "MuiButtonBase-root-7",
-                                  }
+                            <IconButton
+                              className="Component-smallIcon-1"
+                              classes={
+                                Object {
+                                  "colorInherit": "MuiIconButton-colorInherit-3",
+                                  "colorPrimary": "MuiIconButton-colorPrimary-4",
+                                  "colorSecondary": "MuiIconButton-colorSecondary-5",
+                                  "disabled": "MuiIconButton-disabled-6",
+                                  "label": "MuiIconButton-label-7",
+                                  "root": "MuiIconButton-root-2",
                                 }
-                                component="button"
-                                disableRipple={false}
-                                disableTouchRipple={false}
+                              }
+                              color="default"
+                              disabled={false}
+                              onClick={[Function]}
+                            >
+                              <WithStyles(ButtonBase)
+                                centerRipple={true}
+                                className="MuiIconButton-root-2 Component-smallIcon-1"
                                 disabled={false}
                                 focusRipple={true}
-                                tabIndex="0"
-                                type="button"
+                                onClick={[Function]}
                               >
-                                <button
-                                  className="MuiButtonBase-root-7 MuiIconButton-root-1"
+                                <ButtonBase
+                                  centerRipple={true}
+                                  className="MuiIconButton-root-2 Component-smallIcon-1"
+                                  classes={
+                                    Object {
+                                      "disabled": "MuiButtonBase-disabled-9",
+                                      "focusVisible": "MuiButtonBase-focusVisible-10",
+                                      "root": "MuiButtonBase-root-8",
+                                    }
+                                  }
+                                  component="button"
+                                  disableRipple={false}
+                                  disableTouchRipple={false}
                                   disabled={false}
-                                  onBlur={[Function]}
-                                  onContextMenu={[Function]}
-                                  onFocus={[Function]}
-                                  onKeyDown={[Function]}
-                                  onKeyUp={[Function]}
-                                  onMouseDown={[Function]}
-                                  onMouseLeave={[Function]}
-                                  onMouseUp={[Function]}
-                                  onTouchEnd={[Function]}
-                                  onTouchMove={[Function]}
-                                  onTouchStart={[Function]}
+                                  focusRipple={true}
+                                  onClick={[Function]}
                                   tabIndex="0"
                                   type="button"
                                 >
-                                  <span
-                                    className="MuiIconButton-label-6"
+                                  <button
+                                    className="MuiButtonBase-root-8 MuiIconButton-root-2 Component-smallIcon-1"
+                                    disabled={false}
+                                    onBlur={[Function]}
+                                    onClick={[Function]}
+                                    onContextMenu={[Function]}
+                                    onFocus={[Function]}
+                                    onKeyDown={[Function]}
+                                    onKeyUp={[Function]}
+                                    onMouseDown={[Function]}
+                                    onMouseLeave={[Function]}
+                                    onMouseUp={[Function]}
+                                    onTouchEnd={[Function]}
+                                    onTouchMove={[Function]}
+                                    onTouchStart={[Function]}
+                                    tabIndex="0"
+                                    type="button"
                                   >
-                                    <pure(ModeCommentOutlinedIcon)
-                                      color="action"
-                                      fontSize="small"
+                                    <span
+                                      className="MuiIconButton-label-7"
                                     >
-                                      <ModeCommentOutlinedIcon
+                                      <pure(ModeCommentOutlinedIcon)
                                         color="action"
-                                        fontSize="small"
+                                        fontSize="inherit"
                                       >
-                                        <WithStyles(SvgIcon)
+                                        <ModeCommentOutlinedIcon
                                           color="action"
-                                          fontSize="small"
+                                          fontSize="inherit"
                                         >
-                                          <SvgIcon
-                                            classes={
-                                              Object {
-                                                "colorAction": "MuiSvgIcon-colorAction-13",
-                                                "colorDisabled": "MuiSvgIcon-colorDisabled-15",
-                                                "colorError": "MuiSvgIcon-colorError-14",
-                                                "colorPrimary": "MuiSvgIcon-colorPrimary-11",
-                                                "colorSecondary": "MuiSvgIcon-colorSecondary-12",
-                                                "fontSizeInherit": "MuiSvgIcon-fontSizeInherit-16",
-                                                "fontSizeLarge": "MuiSvgIcon-fontSizeLarge-18",
-                                                "fontSizeSmall": "MuiSvgIcon-fontSizeSmall-17",
-                                                "root": "MuiSvgIcon-root-10",
-                                              }
-                                            }
+                                          <WithStyles(SvgIcon)
                                             color="action"
-                                            component="svg"
-                                            fontSize="small"
-                                            viewBox="0 0 24 24"
+                                            fontSize="inherit"
                                           >
-                                            <svg
-                                              aria-hidden="true"
-                                              className="MuiSvgIcon-root-10 MuiSvgIcon-colorAction-13 MuiSvgIcon-fontSizeSmall-17"
-                                              focusable="false"
-                                              role="presentation"
+                                            <SvgIcon
+                                              classes={
+                                                Object {
+                                                  "colorAction": "MuiSvgIcon-colorAction-14",
+                                                  "colorDisabled": "MuiSvgIcon-colorDisabled-16",
+                                                  "colorError": "MuiSvgIcon-colorError-15",
+                                                  "colorPrimary": "MuiSvgIcon-colorPrimary-12",
+                                                  "colorSecondary": "MuiSvgIcon-colorSecondary-13",
+                                                  "fontSizeInherit": "MuiSvgIcon-fontSizeInherit-17",
+                                                  "fontSizeLarge": "MuiSvgIcon-fontSizeLarge-19",
+                                                  "fontSizeSmall": "MuiSvgIcon-fontSizeSmall-18",
+                                                  "root": "MuiSvgIcon-root-11",
+                                                }
+                                              }
+                                              color="action"
+                                              component="svg"
+                                              fontSize="inherit"
                                               viewBox="0 0 24 24"
                                             >
-                                              <path
-                                                d="M0 0h24v24H0V0z"
-                                                fill="none"
-                                              />
-                                              <g>
+                                              <svg
+                                                aria-hidden="true"
+                                                className="MuiSvgIcon-root-11 MuiSvgIcon-colorAction-14 MuiSvgIcon-fontSizeInherit-17"
+                                                focusable="false"
+                                                role="presentation"
+                                                viewBox="0 0 24 24"
+                                              >
                                                 <path
-                                                  d="M20 17.17L18.83 16H4V4h16v13.17zM20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2z"
+                                                  d="M0 0h24v24H0V0z"
+                                                  fill="none"
                                                 />
-                                              </g>
-                                            </svg>
-                                          </SvgIcon>
-                                        </WithStyles(SvgIcon)>
-                                      </ModeCommentOutlinedIcon>
-                                    </pure(ModeCommentOutlinedIcon)>
-                                  </span>
-                                  <NoSsr
-                                    defer={false}
-                                    fallback={null}
-                                  >
-                                    <WithStyles(TouchRipple)
-                                      center={true}
-                                      innerRef={[Function]}
+                                                <g>
+                                                  <path
+                                                    d="M20 17.17L18.83 16H4V4h16v13.17zM20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2z"
+                                                  />
+                                                </g>
+                                              </svg>
+                                            </SvgIcon>
+                                          </WithStyles(SvgIcon)>
+                                        </ModeCommentOutlinedIcon>
+                                      </pure(ModeCommentOutlinedIcon)>
+                                    </span>
+                                    <NoSsr
+                                      defer={false}
+                                      fallback={null}
                                     >
-                                      <TouchRipple
+                                      <WithStyles(TouchRipple)
                                         center={true}
-                                        classes={
-                                          Object {
-                                            "child": "MuiTouchRipple-child-23",
-                                            "childLeaving": "MuiTouchRipple-childLeaving-24",
-                                            "childPulsate": "MuiTouchRipple-childPulsate-25",
-                                            "ripple": "MuiTouchRipple-ripple-20",
-                                            "ripplePulsate": "MuiTouchRipple-ripplePulsate-22",
-                                            "rippleVisible": "MuiTouchRipple-rippleVisible-21",
-                                            "root": "MuiTouchRipple-root-19",
-                                          }
-                                        }
+                                        innerRef={[Function]}
                                       >
-                                        <TransitionGroup
-                                          childFactory={[Function]}
-                                          className="MuiTouchRipple-root-19"
-                                          component="span"
-                                          enter={true}
-                                          exit={true}
+                                        <TouchRipple
+                                          center={true}
+                                          classes={
+                                            Object {
+                                              "child": "MuiTouchRipple-child-29",
+                                              "childLeaving": "MuiTouchRipple-childLeaving-30",
+                                              "childPulsate": "MuiTouchRipple-childPulsate-31",
+                                              "ripple": "MuiTouchRipple-ripple-26",
+                                              "ripplePulsate": "MuiTouchRipple-ripplePulsate-28",
+                                              "rippleVisible": "MuiTouchRipple-rippleVisible-27",
+                                              "root": "MuiTouchRipple-root-25",
+                                            }
+                                          }
                                         >
-                                          <span
-                                            className="MuiTouchRipple-root-19"
-                                          />
-                                        </TransitionGroup>
-                                      </TouchRipple>
-                                    </WithStyles(TouchRipple)>
-                                  </NoSsr>
-                                </button>
-                              </ButtonBase>
-                            </WithStyles(ButtonBase)>
-                          </IconButton>
-                        </WithStyles(IconButton)>
-                      </div>
-                    </StyledComponent>
-                  </styled.div>
-                  <styled.div>
-                    <StyledComponent
-                      forwardedComponent={
-                        Object {
-                          "$$typeof": Symbol(react.forward_ref),
-                          "attrs": Array [],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "sc-bZQynM",
-                            "isStatic": true,
-                            "lastClassName": "c5",
-                            "rules": Array [
-                              "
+                                          <TransitionGroup
+                                            childFactory={[Function]}
+                                            className="MuiTouchRipple-root-25"
+                                            component="span"
+                                            enter={true}
+                                            exit={true}
+                                          >
+                                            <span
+                                              className="MuiTouchRipple-root-25"
+                                            />
+                                          </TransitionGroup>
+                                        </TouchRipple>
+                                      </WithStyles(TouchRipple)>
+                                    </NoSsr>
+                                  </button>
+                                </ButtonBase>
+                              </WithStyles(ButtonBase)>
+                            </IconButton>
+                          </WithStyles(IconButton)>
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <styled.div>
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": true,
+                              "lastClassName": "c5",
+                              "rules": Array [
+                                "
   display: inline-block;
-  min-width: 80px;
+  margin: 4px 0;
+  min-width: 78px;
 ",
-                            ],
-                          },
-                          "displayName": "styled.div",
-                          "foldedComponentIds": Array [],
-                          "render": [Function],
-                          "styledComponentId": "sc-bZQynM",
-                          "target": "div",
-                          "toString": [Function],
-                          "warnTooManyClasses": [Function],
-                          "withComponent": [Function],
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
                         }
-                      }
-                      forwardedRef={null}
-                    >
-                      <div
-                        className="c5"
+                        forwardedRef={null}
                       >
-                        <WithStyles(IconButton)>
-                          <IconButton
-                            classes={
-                              Object {
-                                "colorInherit": "MuiIconButton-colorInherit-2",
-                                "colorPrimary": "MuiIconButton-colorPrimary-3",
-                                "colorSecondary": "MuiIconButton-colorSecondary-4",
-                                "disabled": "MuiIconButton-disabled-5",
-                                "label": "MuiIconButton-label-6",
-                                "root": "MuiIconButton-root-1",
-                              }
-                            }
-                            color="default"
-                            disabled={false}
+                        <div
+                          className="c5"
+                        >
+                          <WithStyles(IconButton)
+                            className="Component-smallIcon-1"
+                            onClick={[Function]}
                           >
-                            <WithStyles(ButtonBase)
-                              centerRipple={true}
-                              className="MuiIconButton-root-1"
-                              disabled={false}
-                              focusRipple={true}
-                            >
-                              <ButtonBase
-                                centerRipple={true}
-                                className="MuiIconButton-root-1"
-                                classes={
-                                  Object {
-                                    "disabled": "MuiButtonBase-disabled-8",
-                                    "focusVisible": "MuiButtonBase-focusVisible-9",
-                                    "root": "MuiButtonBase-root-7",
-                                  }
+                            <IconButton
+                              className="Component-smallIcon-1"
+                              classes={
+                                Object {
+                                  "colorInherit": "MuiIconButton-colorInherit-3",
+                                  "colorPrimary": "MuiIconButton-colorPrimary-4",
+                                  "colorSecondary": "MuiIconButton-colorSecondary-5",
+                                  "disabled": "MuiIconButton-disabled-6",
+                                  "label": "MuiIconButton-label-7",
+                                  "root": "MuiIconButton-root-2",
                                 }
-                                component="button"
-                                disableRipple={false}
-                                disableTouchRipple={false}
+                              }
+                              color="default"
+                              disabled={false}
+                              onClick={[Function]}
+                            >
+                              <WithStyles(ButtonBase)
+                                centerRipple={true}
+                                className="MuiIconButton-root-2 Component-smallIcon-1"
                                 disabled={false}
                                 focusRipple={true}
-                                tabIndex="0"
-                                type="button"
+                                onClick={[Function]}
                               >
-                                <button
-                                  className="MuiButtonBase-root-7 MuiIconButton-root-1"
+                                <ButtonBase
+                                  centerRipple={true}
+                                  className="MuiIconButton-root-2 Component-smallIcon-1"
+                                  classes={
+                                    Object {
+                                      "disabled": "MuiButtonBase-disabled-9",
+                                      "focusVisible": "MuiButtonBase-focusVisible-10",
+                                      "root": "MuiButtonBase-root-8",
+                                    }
+                                  }
+                                  component="button"
+                                  disableRipple={false}
+                                  disableTouchRipple={false}
                                   disabled={false}
-                                  onBlur={[Function]}
-                                  onContextMenu={[Function]}
-                                  onFocus={[Function]}
-                                  onKeyDown={[Function]}
-                                  onKeyUp={[Function]}
-                                  onMouseDown={[Function]}
-                                  onMouseLeave={[Function]}
-                                  onMouseUp={[Function]}
-                                  onTouchEnd={[Function]}
-                                  onTouchMove={[Function]}
-                                  onTouchStart={[Function]}
+                                  focusRipple={true}
+                                  onClick={[Function]}
                                   tabIndex="0"
                                   type="button"
                                 >
-                                  <span
-                                    className="MuiIconButton-label-6"
+                                  <button
+                                    className="MuiButtonBase-root-8 MuiIconButton-root-2 Component-smallIcon-1"
+                                    disabled={false}
+                                    onBlur={[Function]}
+                                    onClick={[Function]}
+                                    onContextMenu={[Function]}
+                                    onFocus={[Function]}
+                                    onKeyDown={[Function]}
+                                    onKeyUp={[Function]}
+                                    onMouseDown={[Function]}
+                                    onMouseLeave={[Function]}
+                                    onMouseUp={[Function]}
+                                    onTouchEnd={[Function]}
+                                    onTouchMove={[Function]}
+                                    onTouchStart={[Function]}
+                                    tabIndex="0"
+                                    type="button"
                                   >
-                                    <pure(RepeatRoundedIcon)
-                                      color="action"
-                                      fontSize="small"
+                                    <span
+                                      className="MuiIconButton-label-7"
                                     >
-                                      <RepeatRoundedIcon
+                                      <pure(RepeatRoundedIcon)
                                         color="action"
-                                        fontSize="small"
+                                        fontSize="inherit"
                                       >
-                                        <WithStyles(SvgIcon)
+                                        <RepeatRoundedIcon
                                           color="action"
-                                          fontSize="small"
+                                          fontSize="inherit"
                                         >
-                                          <SvgIcon
-                                            classes={
-                                              Object {
-                                                "colorAction": "MuiSvgIcon-colorAction-13",
-                                                "colorDisabled": "MuiSvgIcon-colorDisabled-15",
-                                                "colorError": "MuiSvgIcon-colorError-14",
-                                                "colorPrimary": "MuiSvgIcon-colorPrimary-11",
-                                                "colorSecondary": "MuiSvgIcon-colorSecondary-12",
-                                                "fontSizeInherit": "MuiSvgIcon-fontSizeInherit-16",
-                                                "fontSizeLarge": "MuiSvgIcon-fontSizeLarge-18",
-                                                "fontSizeSmall": "MuiSvgIcon-fontSizeSmall-17",
-                                                "root": "MuiSvgIcon-root-10",
-                                              }
-                                            }
+                                          <WithStyles(SvgIcon)
                                             color="action"
-                                            component="svg"
-                                            fontSize="small"
-                                            viewBox="0 0 24 24"
+                                            fontSize="inherit"
                                           >
-                                            <svg
-                                              aria-hidden="true"
-                                              className="MuiSvgIcon-root-10 MuiSvgIcon-colorAction-13 MuiSvgIcon-fontSizeSmall-17"
-                                              focusable="false"
-                                              role="presentation"
+                                            <SvgIcon
+                                              classes={
+                                                Object {
+                                                  "colorAction": "MuiSvgIcon-colorAction-14",
+                                                  "colorDisabled": "MuiSvgIcon-colorDisabled-16",
+                                                  "colorError": "MuiSvgIcon-colorError-15",
+                                                  "colorPrimary": "MuiSvgIcon-colorPrimary-12",
+                                                  "colorSecondary": "MuiSvgIcon-colorSecondary-13",
+                                                  "fontSizeInherit": "MuiSvgIcon-fontSizeInherit-17",
+                                                  "fontSizeLarge": "MuiSvgIcon-fontSizeLarge-19",
+                                                  "fontSizeSmall": "MuiSvgIcon-fontSizeSmall-18",
+                                                  "root": "MuiSvgIcon-root-11",
+                                                }
+                                              }
+                                              color="action"
+                                              component="svg"
+                                              fontSize="inherit"
                                               viewBox="0 0 24 24"
                                             >
-                                              <path
-                                                d="M7 7h10v1.79c0 .45.54.67.85.35l2.79-2.79c.2-.2.2-.51 0-.71l-2.79-2.79c-.31-.31-.85-.09-.85.36V5H6c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1V7zm10 10H7v-1.79c0-.45-.54-.67-.85-.35l-2.79 2.79c-.2.2-.2.51 0 .71l2.79 2.79c.31.31.85.09.85-.36V19h11c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v3z"
-                                              />
-                                            </svg>
-                                          </SvgIcon>
-                                        </WithStyles(SvgIcon)>
-                                      </RepeatRoundedIcon>
-                                    </pure(RepeatRoundedIcon)>
-                                  </span>
-                                  <NoSsr
-                                    defer={false}
-                                    fallback={null}
-                                  >
-                                    <WithStyles(TouchRipple)
-                                      center={true}
-                                      innerRef={[Function]}
+                                              <svg
+                                                aria-hidden="true"
+                                                className="MuiSvgIcon-root-11 MuiSvgIcon-colorAction-14 MuiSvgIcon-fontSizeInherit-17"
+                                                focusable="false"
+                                                role="presentation"
+                                                viewBox="0 0 24 24"
+                                              >
+                                                <path
+                                                  d="M7 7h10v1.79c0 .45.54.67.85.35l2.79-2.79c.2-.2.2-.51 0-.71l-2.79-2.79c-.31-.31-.85-.09-.85.36V5H6c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1V7zm10 10H7v-1.79c0-.45-.54-.67-.85-.35l-2.79 2.79c-.2.2-.2.51 0 .71l2.79 2.79c.31.31.85.09.85-.36V19h11c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v3z"
+                                                />
+                                              </svg>
+                                            </SvgIcon>
+                                          </WithStyles(SvgIcon)>
+                                        </RepeatRoundedIcon>
+                                      </pure(RepeatRoundedIcon)>
+                                    </span>
+                                    <NoSsr
+                                      defer={false}
+                                      fallback={null}
                                     >
-                                      <TouchRipple
+                                      <WithStyles(TouchRipple)
                                         center={true}
-                                        classes={
-                                          Object {
-                                            "child": "MuiTouchRipple-child-23",
-                                            "childLeaving": "MuiTouchRipple-childLeaving-24",
-                                            "childPulsate": "MuiTouchRipple-childPulsate-25",
-                                            "ripple": "MuiTouchRipple-ripple-20",
-                                            "ripplePulsate": "MuiTouchRipple-ripplePulsate-22",
-                                            "rippleVisible": "MuiTouchRipple-rippleVisible-21",
-                                            "root": "MuiTouchRipple-root-19",
-                                          }
-                                        }
+                                        innerRef={[Function]}
                                       >
-                                        <TransitionGroup
-                                          childFactory={[Function]}
-                                          className="MuiTouchRipple-root-19"
-                                          component="span"
-                                          enter={true}
-                                          exit={true}
+                                        <TouchRipple
+                                          center={true}
+                                          classes={
+                                            Object {
+                                              "child": "MuiTouchRipple-child-29",
+                                              "childLeaving": "MuiTouchRipple-childLeaving-30",
+                                              "childPulsate": "MuiTouchRipple-childPulsate-31",
+                                              "ripple": "MuiTouchRipple-ripple-26",
+                                              "ripplePulsate": "MuiTouchRipple-ripplePulsate-28",
+                                              "rippleVisible": "MuiTouchRipple-rippleVisible-27",
+                                              "root": "MuiTouchRipple-root-25",
+                                            }
+                                          }
                                         >
-                                          <span
-                                            className="MuiTouchRipple-root-19"
-                                          />
-                                        </TransitionGroup>
-                                      </TouchRipple>
-                                    </WithStyles(TouchRipple)>
-                                  </NoSsr>
-                                </button>
-                              </ButtonBase>
-                            </WithStyles(ButtonBase)>
-                          </IconButton>
-                        </WithStyles(IconButton)>
-                      </div>
-                    </StyledComponent>
-                  </styled.div>
-                  <styled.div>
-                    <StyledComponent
-                      forwardedComponent={
-                        Object {
-                          "$$typeof": Symbol(react.forward_ref),
-                          "attrs": Array [],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "sc-bZQynM",
-                            "isStatic": true,
-                            "lastClassName": "c5",
-                            "rules": Array [
-                              "
+                                          <TransitionGroup
+                                            childFactory={[Function]}
+                                            className="MuiTouchRipple-root-25"
+                                            component="span"
+                                            enter={true}
+                                            exit={true}
+                                          >
+                                            <span
+                                              className="MuiTouchRipple-root-25"
+                                            />
+                                          </TransitionGroup>
+                                        </TouchRipple>
+                                      </WithStyles(TouchRipple)>
+                                    </NoSsr>
+                                  </button>
+                                </ButtonBase>
+                              </WithStyles(ButtonBase)>
+                            </IconButton>
+                          </WithStyles(IconButton)>
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <styled.div>
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": true,
+                              "lastClassName": "c5",
+                              "rules": Array [
+                                "
   display: inline-block;
-  min-width: 80px;
+  margin: 4px 0;
+  min-width: 78px;
 ",
-                            ],
-                          },
-                          "displayName": "styled.div",
-                          "foldedComponentIds": Array [],
-                          "render": [Function],
-                          "styledComponentId": "sc-bZQynM",
-                          "target": "div",
-                          "toString": [Function],
-                          "warnTooManyClasses": [Function],
-                          "withComponent": [Function],
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
                         }
-                      }
-                      forwardedRef={null}
-                    >
-                      <div
-                        className="c5"
+                        forwardedRef={null}
                       >
-                        <WithStyles(IconButton)>
-                          <IconButton
-                            classes={
-                              Object {
-                                "colorInherit": "MuiIconButton-colorInherit-2",
-                                "colorPrimary": "MuiIconButton-colorPrimary-3",
-                                "colorSecondary": "MuiIconButton-colorSecondary-4",
-                                "disabled": "MuiIconButton-disabled-5",
-                                "label": "MuiIconButton-label-6",
-                                "root": "MuiIconButton-root-1",
-                              }
-                            }
-                            color="default"
-                            disabled={false}
+                        <div
+                          className="c5"
+                        >
+                          <WithStyles(IconButton)
+                            className="Component-smallIcon-1"
+                            onClick={[Function]}
                           >
-                            <WithStyles(ButtonBase)
-                              centerRipple={true}
-                              className="MuiIconButton-root-1"
-                              disabled={false}
-                              focusRipple={true}
-                            >
-                              <ButtonBase
-                                centerRipple={true}
-                                className="MuiIconButton-root-1"
-                                classes={
-                                  Object {
-                                    "disabled": "MuiButtonBase-disabled-8",
-                                    "focusVisible": "MuiButtonBase-focusVisible-9",
-                                    "root": "MuiButtonBase-root-7",
-                                  }
+                            <IconButton
+                              className="Component-smallIcon-1"
+                              classes={
+                                Object {
+                                  "colorInherit": "MuiIconButton-colorInherit-3",
+                                  "colorPrimary": "MuiIconButton-colorPrimary-4",
+                                  "colorSecondary": "MuiIconButton-colorSecondary-5",
+                                  "disabled": "MuiIconButton-disabled-6",
+                                  "label": "MuiIconButton-label-7",
+                                  "root": "MuiIconButton-root-2",
                                 }
-                                component="button"
-                                disableRipple={false}
-                                disableTouchRipple={false}
+                              }
+                              color="default"
+                              disabled={false}
+                              onClick={[Function]}
+                            >
+                              <WithStyles(ButtonBase)
+                                centerRipple={true}
+                                className="MuiIconButton-root-2 Component-smallIcon-1"
                                 disabled={false}
                                 focusRipple={true}
-                                tabIndex="0"
-                                type="button"
+                                onClick={[Function]}
                               >
-                                <button
-                                  className="MuiButtonBase-root-7 MuiIconButton-root-1"
+                                <ButtonBase
+                                  centerRipple={true}
+                                  className="MuiIconButton-root-2 Component-smallIcon-1"
+                                  classes={
+                                    Object {
+                                      "disabled": "MuiButtonBase-disabled-9",
+                                      "focusVisible": "MuiButtonBase-focusVisible-10",
+                                      "root": "MuiButtonBase-root-8",
+                                    }
+                                  }
+                                  component="button"
+                                  disableRipple={false}
+                                  disableTouchRipple={false}
                                   disabled={false}
-                                  onBlur={[Function]}
-                                  onContextMenu={[Function]}
-                                  onFocus={[Function]}
-                                  onKeyDown={[Function]}
-                                  onKeyUp={[Function]}
-                                  onMouseDown={[Function]}
-                                  onMouseLeave={[Function]}
-                                  onMouseUp={[Function]}
-                                  onTouchEnd={[Function]}
-                                  onTouchMove={[Function]}
-                                  onTouchStart={[Function]}
+                                  focusRipple={true}
+                                  onClick={[Function]}
                                   tabIndex="0"
                                   type="button"
                                 >
-                                  <span
-                                    className="MuiIconButton-label-6"
+                                  <button
+                                    className="MuiButtonBase-root-8 MuiIconButton-root-2 Component-smallIcon-1"
+                                    disabled={false}
+                                    onBlur={[Function]}
+                                    onClick={[Function]}
+                                    onContextMenu={[Function]}
+                                    onFocus={[Function]}
+                                    onKeyDown={[Function]}
+                                    onKeyUp={[Function]}
+                                    onMouseDown={[Function]}
+                                    onMouseLeave={[Function]}
+                                    onMouseUp={[Function]}
+                                    onTouchEnd={[Function]}
+                                    onTouchMove={[Function]}
+                                    onTouchStart={[Function]}
+                                    tabIndex="0"
+                                    type="button"
                                   >
-                                    <pure(FavoriteBorderIcon)
-                                      color="action"
-                                      fontSize="small"
+                                    <span
+                                      className="MuiIconButton-label-7"
                                     >
-                                      <FavoriteBorderIcon
+                                      <pure(FavoriteBorderIcon)
                                         color="action"
-                                        fontSize="small"
+                                        fontSize="inherit"
                                       >
-                                        <WithStyles(SvgIcon)
+                                        <FavoriteBorderIcon
                                           color="action"
-                                          fontSize="small"
+                                          fontSize="inherit"
                                         >
-                                          <SvgIcon
-                                            classes={
-                                              Object {
-                                                "colorAction": "MuiSvgIcon-colorAction-13",
-                                                "colorDisabled": "MuiSvgIcon-colorDisabled-15",
-                                                "colorError": "MuiSvgIcon-colorError-14",
-                                                "colorPrimary": "MuiSvgIcon-colorPrimary-11",
-                                                "colorSecondary": "MuiSvgIcon-colorSecondary-12",
-                                                "fontSizeInherit": "MuiSvgIcon-fontSizeInherit-16",
-                                                "fontSizeLarge": "MuiSvgIcon-fontSizeLarge-18",
-                                                "fontSizeSmall": "MuiSvgIcon-fontSizeSmall-17",
-                                                "root": "MuiSvgIcon-root-10",
-                                              }
-                                            }
+                                          <WithStyles(SvgIcon)
                                             color="action"
-                                            component="svg"
-                                            fontSize="small"
-                                            viewBox="0 0 24 24"
+                                            fontSize="inherit"
                                           >
-                                            <svg
-                                              aria-hidden="true"
-                                              className="MuiSvgIcon-root-10 MuiSvgIcon-colorAction-13 MuiSvgIcon-fontSizeSmall-17"
-                                              focusable="false"
-                                              role="presentation"
+                                            <SvgIcon
+                                              classes={
+                                                Object {
+                                                  "colorAction": "MuiSvgIcon-colorAction-14",
+                                                  "colorDisabled": "MuiSvgIcon-colorDisabled-16",
+                                                  "colorError": "MuiSvgIcon-colorError-15",
+                                                  "colorPrimary": "MuiSvgIcon-colorPrimary-12",
+                                                  "colorSecondary": "MuiSvgIcon-colorSecondary-13",
+                                                  "fontSizeInherit": "MuiSvgIcon-fontSizeInherit-17",
+                                                  "fontSizeLarge": "MuiSvgIcon-fontSizeLarge-19",
+                                                  "fontSizeSmall": "MuiSvgIcon-fontSizeSmall-18",
+                                                  "root": "MuiSvgIcon-root-11",
+                                                }
+                                              }
+                                              color="action"
+                                              component="svg"
+                                              fontSize="inherit"
                                               viewBox="0 0 24 24"
                                             >
-                                              <path
-                                                d="M0 0h24v24H0z"
-                                                fill="none"
-                                              />
-                                              <path
-                                                d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"
-                                              />
-                                            </svg>
-                                          </SvgIcon>
-                                        </WithStyles(SvgIcon)>
-                                      </FavoriteBorderIcon>
-                                    </pure(FavoriteBorderIcon)>
-                                  </span>
-                                  <NoSsr
-                                    defer={false}
-                                    fallback={null}
-                                  >
-                                    <WithStyles(TouchRipple)
-                                      center={true}
-                                      innerRef={[Function]}
+                                              <svg
+                                                aria-hidden="true"
+                                                className="MuiSvgIcon-root-11 MuiSvgIcon-colorAction-14 MuiSvgIcon-fontSizeInherit-17"
+                                                focusable="false"
+                                                role="presentation"
+                                                viewBox="0 0 24 24"
+                                              >
+                                                <path
+                                                  d="M0 0h24v24H0z"
+                                                  fill="none"
+                                                />
+                                                <path
+                                                  d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"
+                                                />
+                                              </svg>
+                                            </SvgIcon>
+                                          </WithStyles(SvgIcon)>
+                                        </FavoriteBorderIcon>
+                                      </pure(FavoriteBorderIcon)>
+                                    </span>
+                                    <NoSsr
+                                      defer={false}
+                                      fallback={null}
                                     >
-                                      <TouchRipple
+                                      <WithStyles(TouchRipple)
                                         center={true}
-                                        classes={
-                                          Object {
-                                            "child": "MuiTouchRipple-child-23",
-                                            "childLeaving": "MuiTouchRipple-childLeaving-24",
-                                            "childPulsate": "MuiTouchRipple-childPulsate-25",
-                                            "ripple": "MuiTouchRipple-ripple-20",
-                                            "ripplePulsate": "MuiTouchRipple-ripplePulsate-22",
-                                            "rippleVisible": "MuiTouchRipple-rippleVisible-21",
-                                            "root": "MuiTouchRipple-root-19",
-                                          }
-                                        }
+                                        innerRef={[Function]}
                                       >
-                                        <TransitionGroup
-                                          childFactory={[Function]}
-                                          className="MuiTouchRipple-root-19"
-                                          component="span"
-                                          enter={true}
-                                          exit={true}
+                                        <TouchRipple
+                                          center={true}
+                                          classes={
+                                            Object {
+                                              "child": "MuiTouchRipple-child-29",
+                                              "childLeaving": "MuiTouchRipple-childLeaving-30",
+                                              "childPulsate": "MuiTouchRipple-childPulsate-31",
+                                              "ripple": "MuiTouchRipple-ripple-26",
+                                              "ripplePulsate": "MuiTouchRipple-ripplePulsate-28",
+                                              "rippleVisible": "MuiTouchRipple-rippleVisible-27",
+                                              "root": "MuiTouchRipple-root-25",
+                                            }
+                                          }
                                         >
-                                          <span
-                                            className="MuiTouchRipple-root-19"
-                                          />
-                                        </TransitionGroup>
-                                      </TouchRipple>
-                                    </WithStyles(TouchRipple)>
-                                  </NoSsr>
-                                </button>
-                              </ButtonBase>
-                            </WithStyles(ButtonBase)>
-                          </IconButton>
-                        </WithStyles(IconButton)>
-                      </div>
-                    </StyledComponent>
-                  </styled.div>
+                                          <TransitionGroup
+                                            childFactory={[Function]}
+                                            className="MuiTouchRipple-root-25"
+                                            component="span"
+                                            enter={true}
+                                            exit={true}
+                                          >
+                                            <span
+                                              className="MuiTouchRipple-root-25"
+                                            />
+                                          </TransitionGroup>
+                                        </TouchRipple>
+                                      </WithStyles(TouchRipple)>
+                                    </NoSsr>
+                                  </button>
+                                </ButtonBase>
+                              </WithStyles(ButtonBase)>
+                            </IconButton>
+                          </WithStyles(IconButton)>
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                  </Component>
                 </TweetFooter>
               </div>
             </StyledComponent>
@@ -842,6 +893,29 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
         </div>
       </StyledComponent>
     </styled.div>
+    <WithStyles(Divider)
+      light={true}
+    >
+      <Divider
+        absolute={false}
+        classes={
+          Object {
+            "absolute": "MuiDivider-absolute-21",
+            "inset": "MuiDivider-inset-22",
+            "light": "MuiDivider-light-23",
+            "middle": "MuiDivider-middle-24",
+            "root": "MuiDivider-root-20",
+          }
+        }
+        component="hr"
+        light={true}
+        variant="fullWidth"
+      >
+        <hr
+          className="MuiDivider-root-20 MuiDivider-light-23"
+        />
+      </Divider>
+    </WithStyles(Divider)>
   </Tweet>
 </MockRouter>
 `;

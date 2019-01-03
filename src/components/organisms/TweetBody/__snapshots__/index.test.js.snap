@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot: TweetBody/nomal 1`] = `
+.c0 {
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+<MockRouter
+  createHref={[Function]}
+  location=""
+  params={Object {}}
+  path=""
+  push={[Function]}
+  replace={[Function]}
+  url=""
+>
+  <TweetBody
+    text="Storybookいいところ
+  - どんなコンポーネントが存在してるか可視化できる
+  - コンポーネントの扱い方が分かる
+  - UIの修正デバッグが楽
+  #ThinkAtomicDesign"
+  >
+    <styled.p>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bdVaJa",
+              "isStatic": true,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+",
+              ],
+            },
+            "displayName": "styled.p",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bdVaJa",
+            "target": "p",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <p
+          className="c0"
+        >
+          Storybookいいところ
+  - どんなコンポーネントが存在してるか可視化できる
+  - コンポーネントの扱い方が分かる
+  - UIの修正デバッグが楽
+  #ThinkAtomicDesign
+        </p>
+      </StyledComponent>
+    </styled.p>
+  </TweetBody>
+</MockRouter>
+`;
