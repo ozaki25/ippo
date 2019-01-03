@@ -35,7 +35,7 @@ const TweetBody = styled.p`
 const TweetAction = styled.div`
   display: inline-block;
   margin: 4px 0;
-  min-width: 80px;
+  min-width: 78px;
 `;
 
 const TweetHeader = ({ name, time }) => (
