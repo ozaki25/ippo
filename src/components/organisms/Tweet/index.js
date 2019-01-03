@@ -34,6 +34,7 @@ const TweetBody = styled.p`
 
 const TweetAction = styled.div`
   display: inline-block;
+  margin: 4px 0;
   min-width: 80px;
 `;
 
@@ -47,6 +48,7 @@ const TweetHeader = ({ name, time }) => (
 const styles = {
   smallIcon: {
     fontSize: '15px',
+    padding: '8px',
   },
 };
 
