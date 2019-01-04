@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import propTypes from 'prop-types';
 import { Typography } from '@material-ui/core';
 import EventCard from 'src/components/organisms/EventCard';
-import dateFormat from 'src/utils/dateFormat';
 
 const EventCardContainer = styled.div`
   margin: ${({ horizontal }) => (horizontal ? '2px 0' : '8px 0')};
@@ -18,7 +17,7 @@ const EventCardList = ({ events, expand, noWrap, history, horizontal }) =>
           eventUrl={event.eventUrl}
           catchMessage={event.catchMessage}
           place={event.place}
-          datetime={event.startedAt && `${dateFormat.datetimeJa(event.startedAt)} 〜`}
+          datetime={event.startedAt}
           interactive
           expand={expand}
           noWrap={noWrap}

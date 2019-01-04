@@ -5,7 +5,7 @@ import propTypes from 'prop-types';
 import Spinner from 'src/components/atoms/Spinner';
 import EventCard from 'src/components/organisms/EventCard';
 import Container from 'src/components/templates/Container';
-import dateFormat from 'src/utils/dateFormat';
+import eventFormat from 'src/utils/eventFormat';
 
 const EventCardContainer = styled.div`
   margin: 8px 0;
@@ -17,21 +17,19 @@ const InternalEvents = ({ data: { loading, internalEvents }, authUser, history, 
       {loading ? (
         <Spinner />
       ) : internalEvents && internalEvents.length ? (
-        <>
-          {internalEvents.map(event => (
-            <EventCardContainer key={event.id}>
-              <EventCard
-                title={event.title}
-                eventUrl=""
-                catchMessage={event.catchMessage}
-                place={event.place}
-                datetime={event.startedAt && `${dateFormat.datetimeJa(event.startedAt)}〜`}
-                interactive
-                history={history}
-              />
-            </EventCardContainer>
-          ))}
-        </>
+        eventFormat.internal(internalEvents).map(event => (
+          <EventCardContainer key={event.id}>
+            <EventCard
+              title={event.title}
+              eventUrl={event.eventUrl}
+              catchMessage={event.catchMessage}
+              place={event.place}
+              datetime={event.startedAt}
+              history={history}
+              interactive
+            />
+          </EventCardContainer>
+        ))
       ) : (
         <Typography>No Contents</Typography>
       )}
