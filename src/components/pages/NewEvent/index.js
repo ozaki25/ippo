@@ -24,7 +24,7 @@ const NewEvent = ({ createEvent, authUser, history, firebase }) => {
 NewEvent.displayName = 'NewEvent';
 
 NewEvent.propTypes = {
-  createEvent: propTypes.func,
+  createEvent: propTypes.func.isRequired,
   authUser: propTypes.shape({
     displayName: propTypes.string.isRequired,
     uid: propTypes.string.isRequired,

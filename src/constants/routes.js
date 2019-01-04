@@ -1,6 +1,7 @@
 const Signin = '/users/signin';
 const Signup = '/users/signup';
-const Menu = '/';
+const TabMenu = '/';
+const Menu = '/menu';
 const EnteredEvents = '/events/entry';
 const RecommendedEvents = '/events/recommended';
 const InternalEvents = '/events/internal';
@@ -14,6 +15,7 @@ const NewTweet = '/tweets/new';
 export default {
   Signin,
   Signup,
+  TabMenu,
   Menu,
   EnteredEvents,
   RecommendedEvents,
