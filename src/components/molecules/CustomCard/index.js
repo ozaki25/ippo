@@ -1,24 +1,47 @@
 import React from 'react';
 import styled from 'styled-components';
+import classnames from 'classnames';
 import propTypes from 'prop-types';
-import { Card, CardActionArea, CardContent } from '@material-ui/core';
+import { Button } from '@material-ui/core';
+import { withStyles } from '@material-ui/core/styles';
+
+const Contents = styled.div`
+  width: 100%;
+`;
+
+const styles = theme => ({
+  card: {
+    backgroundColor: theme.palette.primary[100],
+    justifyContent: 'normal',
+    padding: '12px',
+    textAlign: 'left',
+    textTransform: 'none',
+    '&:focus': {
+      backgroundColor: theme.palette.primary[100],
+      opacity: 0.6,
+    },
+    '&:hover': {
+      backgroundColor: theme.palette.primary[100],
+      opacity: 0.6,
+    },
+  },
+  expand: {
+    minHeight: '130px',
+  },
+});
 
 const onClick = (url, history) => (history ? history.push(url) : window.open(url, '_blank'));
 
-const StyledCard = styled(Card)`
-  min-height: ${({ expand }) => (expand ? '130px' : 'inherit')};
-`;
-
-const StyledCardActionArea = styled(CardActionArea)`
-  min-height: ${({ expand }) => (expand ? '130px' : 'inherit')};
-`;
-
-const CustomCard = ({ interactive, expand, url, history, children }) => (
-  <StyledCard expand={expand ? 1 : 0} onClick={() => onClick(url, history)}>
-    <StyledCardActionArea expand={expand ? 1 : 0}>
-      <CardContent>{children}</CardContent>
-    </StyledCardActionArea>
-  </StyledCard>
+const CustomCard = ({ classes, expand, url, history, children }) => (
+  <Button
+    onClick={() => onClick(url, history)}
+    className={classnames(classes.card, expand && classes.expand)}
+    variant="contained"
+    disableRipple
+    fullWidth
+  >
+    <Contents>{children}</Contents>
+  </Button>
 );
 
 CustomCard.displayName = 'CustomCard';
@@ -37,4 +60,4 @@ CustomCard.defaultProps = {
   history: null,
 };
 
-export default CustomCard;
+export default withStyles(styles)(CustomCard);

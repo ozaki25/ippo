@@ -3,16 +3,12 @@ import { Typography } from '@material-ui/core';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
 import Spinner from 'src/components/atoms/Spinner';
-import EventCard from 'src/components/organisms/EventCard';
+import EventCardList from 'src/components/organisms/EventCardList';
 import Pagination from 'src/components/organisms/Pagination';
 import Container from 'src/components/templates/Container';
 import eventFormat from 'src/utils/eventFormat';
 import pagination from 'src/utils/pagination';
 import paging from 'src/constants/paging';
-
-const EventCardContainer = styled.div`
-  margin: 8px 0;
-`;
 
 const PaginationContainer = styled.div`
   text-align: center;
@@ -33,20 +29,9 @@ const ExternalEvents = ({ data: { loading, connpass, refetch }, authUser, histor
         <Spinner />
       ) : events && events.length ? (
         <>
-          {eventFormat.external({ events }).map(event => (
-            <EventCardContainer key={event.id}>
-              <EventCard
-                title={event.title}
-                eventUrl={event.eventUrl}
-                catchMessage={event.catchMessage}
-                place={event.place}
-                datetime={event.startedAt}
-                interactive
-              />
-            </EventCardContainer>
-          ))}
+          <EventCardList events={eventFormat.external({ events })} />
           <PaginationContainer>
-            <Pagination current={current} total={total} onClick={page => refetch({ page })} large />
+            <Pagination current={current} total={total} onClick={page => refetch({ page })} />
           </PaginationContainer>
         </>
       ) : (
