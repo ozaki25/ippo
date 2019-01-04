@@ -33,7 +33,7 @@ const ExternalEvents = ({ data: { loading, connpass, refetch }, authUser, histor
         <Spinner />
       ) : events && events.length ? (
         <>
-          {eventFormat.external(connpass.events).map(event => (
+          {eventFormat.external({ events }).map(event => (
             <EventCardContainer key={event.id}>
               <EventCard
                 title={event.title}
