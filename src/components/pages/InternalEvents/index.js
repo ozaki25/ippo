@@ -1,15 +1,10 @@
 import React from 'react';
 import { Typography } from '@material-ui/core';
-import styled from 'styled-components';
 import propTypes from 'prop-types';
 import Spinner from 'src/components/atoms/Spinner';
-import EventCard from 'src/components/organisms/EventCard';
+import EventCardList from 'src/components/organisms/EventCardList';
 import Container from 'src/components/templates/Container';
 import eventFormat from 'src/utils/eventFormat';
-
-const EventCardContainer = styled.div`
-  margin: 8px 0;
-`;
 
 const InternalEvents = ({ data: { loading, internalEvents }, authUser, history, firebase }) => {
   return (
@@ -17,19 +12,7 @@ const InternalEvents = ({ data: { loading, internalEvents }, authUser, history, 
       {loading ? (
         <Spinner />
       ) : internalEvents && internalEvents.length ? (
-        eventFormat.internal(internalEvents).map(event => (
-          <EventCardContainer key={event.id}>
-            <EventCard
-              title={event.title}
-              eventUrl={event.eventUrl}
-              catchMessage={event.catchMessage}
-              place={event.place}
-              datetime={event.startedAt}
-              history={history}
-              interactive
-            />
-          </EventCardContainer>
-        ))
+        <EventCardList events={eventFormat.internal(internalEvents)} />
       ) : (
         <Typography>No Contents</Typography>
       )}
