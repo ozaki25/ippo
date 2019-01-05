@@ -42,7 +42,7 @@ const props = {
   history: {
     push: action('push'),
     goBack: action('goBack'),
-    replce: action('replace'),
+    replace: action('replace'),
   },
   firebase: {},
 };
