@@ -39,14 +39,14 @@ class Signin extends React.Component {
     const result = await this.props.firebase.auth.getRedirectResult();
     const authUser = result.user;
     if (authUser) {
-      this.props.history.push(ROUTES.Menu);
+      this.props.history.push(ROUTES.TabMenu);
     }
     this.setState({ loading: false });
   };
 
   signin = async ({ data: { email, pass } }) => {
     await this.props.firebase.doSignInWithEmailAndPassword(email, pass);
-    this.props.history.push(ROUTES.Menu);
+    this.props.history.push(ROUTES.TabMenu);
   };
 
   signinWithGoogle = async () => {
