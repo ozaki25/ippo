@@ -4,7 +4,7 @@ import propTypes from 'prop-types';
 import NavigationBar from 'src/components/organisms/NavigationBar';
 
 const StyledContainer = styled.div`
-  padding: ${({ noPadding }) => (noPadding ? 'inherit' : '10px')};
+  padding: ${({ noPadding }) => (noPadding ? 'inherit' : '5px 10px')};
 `;
 
 const Container = ({ children, title, authUser, noPadding, header, back, history, firebase }) => (
