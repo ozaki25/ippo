@@ -1,5 +1,4 @@
 import React from 'react';
-import SwipeableViews from 'react-swipeable-views';
 import { Tab, Tabs } from '@material-ui/core';
 import {
   AddBoxRounded,
@@ -8,22 +7,12 @@ import {
   SettingsRounded,
 } from '@material-ui/icons';
 import { withStyles } from '@material-ui/core/styles';
+import styled from 'styled-components';
 import propTypes from 'prop-types';
 import EventsOverview from 'src/components/organisms/EventsOverview';
 import EventCreateForm from 'src/components/organisms/EventCreateForm';
 import Container from 'src/components/templates/Container';
 import ROUTES from 'src/constants/routes';
-
-const styles = theme => ({
-  bottomBar: {
-    backgroundColor: theme.palette.primary[50],
-    bottom: 0,
-    marginLeft: '-10px',
-    position: 'fixed',
-    width: '100%',
-    zIndex: 1300,
-  },
-});
 
 const titleMap = {
   0: 'ホーム',
@@ -32,12 +21,24 @@ const titleMap = {
   3: '設定',
 };
 
+const styles = theme => ({
+  bottomBar: {
+    backgroundColor: theme.palette.primary[50],
+    bottom: 0,
+    position: 'fixed',
+    width: '100%',
+    zIndex: 1300,
+  },
+});
+
+const ContainerWithTabs = styled.div`
+  margin-bottom: 48px;
+`;
+
 class TabMenu extends React.Component {
   state = { value: 0 };
 
   handleChange = (event, value) => this.setState({ value });
-
-  handleChangeIndex = index => this.setState({ value: index });
 
   onSubmitCreateEvent = async event => {
     const {
@@ -56,7 +57,26 @@ class TabMenu extends React.Component {
     const { internal, external, classes, authUser, history, firebase } = this.props;
     const { value } = this.state;
     return (
-      <Container title={titleMap[value]} authUser={authUser} history={history} firebase={firebase}>
+      <>
+        <ContainerWithTabs>
+          <Container
+            title={titleMap[value]}
+            authUser={authUser}
+            history={history}
+            firebase={firebase}
+          >
+            {value === 0 && (
+              <EventsOverview internal={internal} external={external} history={history} />
+            )}
+            {value === 1 && <EventCreateForm onSubmit={this.onSubmitCreateEvent} />}
+            {value === 2 && (
+              <EventsOverview internal={internal} external={external} history={history} />
+            )}
+            {value === 3 && (
+              <EventsOverview internal={internal} external={external} history={history} />
+            )}
+          </Container>
+        </ContainerWithTabs>
         <Tabs
           value={this.state.value}
           onChange={this.handleChange}
@@ -70,17 +90,7 @@ class TabMenu extends React.Component {
           <Tab icon={<NotificationsRounded />} />
           <Tab icon={<SettingsRounded />} />
         </Tabs>
-        <SwipeableViews
-          index={this.state.value}
-          onChangeIndex={this.handleChangeIndex}
-          enableMouseEvents
-        >
-          <EventsOverview internal={internal} external={external} history={history} />
-          <EventCreateForm onSubmit={this.onSubmitCreateEvent} />
-          <EventsOverview internal={internal} external={external} history={history} />
-          <EventsOverview internal={internal} external={external} history={history} />
-        </SwipeableViews>
-      </Container>
+      </>
     );
   }
 }
