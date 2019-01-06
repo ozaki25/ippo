@@ -22,7 +22,7 @@ const TweetEventSummary = ({ id, hashtag, title, catchMessage, place, startedAt,
           <div>
             <IconWithText>
               <DescriptionOutlined fontSize="small" />
-              <Typography> {catchMessage}</Typography>
+              <Typography>{catchMessage}</Typography>
             </IconWithText>
           </div>
         )}
@@ -30,7 +30,7 @@ const TweetEventSummary = ({ id, hashtag, title, catchMessage, place, startedAt,
           <div>
             <IconWithText>
               <PlaceOutlined fontSize="small" />
-              <Typography> {place}</Typography>
+              <Typography>{place}</Typography>
             </IconWithText>
           </div>
         )}
@@ -38,7 +38,7 @@ const TweetEventSummary = ({ id, hashtag, title, catchMessage, place, startedAt,
           <div>
             <IconWithText>
               <AccessTimeRounded fontSize="small" />
-              <Typography> {startedAt}</Typography>
+              <Typography>{startedAt}</Typography>
             </IconWithText>
           </div>
         )}
