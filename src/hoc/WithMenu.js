@@ -3,7 +3,7 @@ import { compose } from 'recompose';
 import { withRouter } from 'react-router-dom';
 import { withFirebase } from 'src/context/firebase';
 import query from 'src/graphql/query';
-import Menu from 'src/components/pages/Menu/';
+import Menu from 'src/components/pages/Menu';
 import paging from 'src/constants/paging';
 import { withAuthorization } from 'src/hoc/Sessions';
 
@@ -16,4 +16,5 @@ export default compose(
     options: props => ({ variables: { page: 1, count: paging.eventsPerPage } }),
     name: 'external',
   }),
+  graphql(query.createEvent, { name: 'createEvent' }),
 )(Menu);

@@ -24,14 +24,15 @@ const externalEvent = i => ({
 });
 
 const props = {
+  createEvent: action('createEvent'),
   internal: {
     loading: false,
-    internalEvents: [...[...Array(5)].map((_, i) => internalEvent(i))],
+    internalEvents: [...[...Array(10)].map((_, i) => internalEvent(i))],
   },
   external: {
     loading: false,
     connpass: {
-      events: [...[...Array(5)].map((_, i) => externalEvent(i))],
+      events: [...[...Array(10)].map((_, i) => externalEvent(i))],
     },
   },
   authUser: {
@@ -41,6 +42,7 @@ const props = {
   history: {
     push: action('push'),
     goBack: action('goBack'),
+    replace: action('replace'),
   },
   firebase: {},
 };

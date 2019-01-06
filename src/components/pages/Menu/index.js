@@ -1,100 +1,99 @@
 import React from 'react';
-import { Divider, Typography } from '@material-ui/core';
-import { AddRounded, NavigateNextRounded } from '@material-ui/icons';
+import { Tab, Tabs } from '@material-ui/core';
+import {
+  AddBoxRounded,
+  HomeRounded,
+  NotificationsRounded,
+  SettingsRounded,
+} from '@material-ui/icons';
+import { withStyles } from '@material-ui/core/styles';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
-import { Link } from 'react-router-dom';
-
-import CustomCard from 'src/components/molecules/CustomCard';
-import EventCardList from 'src/components/organisms/EventCardList';
+import EventsOverview from 'src/components/organisms/EventsOverview';
+import EventCreateForm from 'src/components/organisms/EventCreateForm';
 import Container from 'src/components/templates/Container';
-import AsyncSwipeable from 'src/components/templates/AsyncSwipeable';
-import IconWithText from 'src/components/templates/IconWithText';
-import eventFormat from 'src/utils/eventFormat';
 import ROUTES from 'src/constants/routes';
 
-const CardContainer = styled.div`
-  margin: 2px 0;
-  text-align: center;
+const titleMap = {
+  0: 'ホーム',
+  1: 'イベント作成',
+  2: '通知',
+  3: '設定',
+};
+
+const styles = theme => ({
+  bottomBar: {
+    backgroundColor: theme.palette.primary[50],
+    bottom: 0,
+    position: 'fixed',
+    width: '100%',
+    zIndex: 1300,
+  },
+});
+
+const ContainerWithTabs = styled.div`
+  margin-bottom: 48px;
 `;
 
-const EventsContainer = styled.div`
-  margin: 8px 0;
-`;
+class Menu extends React.Component {
+  state = { value: 0 };
 
-const StyledLink = styled(Link)`
-  text-decoration: none;
-`;
+  handleChange = (event, value) => this.setState({ value });
 
-const LinkHeading = ({ linkTo, children }) => (
-  <StyledLink to={linkTo}>
-    <IconWithText>
-      <NavigateNextRounded color="primary" />
-      <Typography variant="h6" color="primary">
-        {children}
-      </Typography>
-    </IconWithText>
-  </StyledLink>
-);
+  onSubmitCreateEvent = async event => {
+    const {
+      createEvent,
+      authUser: { uid, displayName },
+      history,
+    } = this.props;
+    const result = await createEvent({
+      variables: { event: { ...event, uid, name: displayName } },
+    });
+    history.push(`${ROUTES.Tweets}?hashtag=${event.hashtag}`);
+    return result;
+  };
 
-const Menu = ({ internal, external, authUser, history, firebase }) => (
-  <Container title="IPPO" authUser={authUser} history={history} firebase={firebase} noPadding>
-    <EventsContainer>
-      <LinkHeading linkTo={ROUTES.EnteredEvents}>参加イベント</LinkHeading>
-      <AsyncSwipeable loading={false}>
-        {EventCardList({ events: [], expand: true, noWrap: true, horizontal: true, history })}
-      </AsyncSwipeable>
-    </EventsContainer>
-    <Divider light />
-    <EventsContainer>
-      <LinkHeading linkTo={ROUTES.RecommendedEvents}>おすすめイベント</LinkHeading>
-      <AsyncSwipeable loading={false}>
-        {EventCardList({ events: [], expand: true, noWrap: true, horizontal: true, history })}
-      </AsyncSwipeable>
-    </EventsContainer>
-    <Divider light />
-    <EventsContainer>
-      <LinkHeading linkTo={ROUTES.InternalEvents}>社内イベント</LinkHeading>
-      <AsyncSwipeable loading={internal.loading}>
-        {EventCardList({
-          events: eventFormat.internal(internal.internalEvents),
-          expand: true,
-          noWrap: true,
-          horizontal: true,
-          history,
-        })}
-      </AsyncSwipeable>
-    </EventsContainer>
-    <Divider light />
-    <EventsContainer>
-      <LinkHeading linkTo={ROUTES.ExternalEvents}>社外イベント</LinkHeading>
-      <AsyncSwipeable loading={external.loading}>
-        {EventCardList({
-          events: eventFormat.external(external.connpass),
-          expand: true,
-          noWrap: true,
-          horizontal: true,
-        })}
-      </AsyncSwipeable>
-    </EventsContainer>
-    <Divider light />
-    <EventsContainer>
-      <LinkHeading linkTo={ROUTES.OrganizedEvents}>主催イベント</LinkHeading>
-      <AsyncSwipeable loading={false}>
-        <CardContainer>
-          <CustomCard url={ROUTES.NewEvent} history={history}>
-            <IconWithText>
-              <AddRounded />
-              <Typography variant="h6">イベント作成</Typography>
-            </IconWithText>
-          </CustomCard>
-        </CardContainer>
-        {EventCardList({ events: [], expand: true, noWrap: true, horizontal: true, history })}
-      </AsyncSwipeable>
-    </EventsContainer>
-    <Divider light />
-  </Container>
-);
+  render() {
+    const { internal, external, classes, authUser, history, firebase } = this.props;
+    const { value } = this.state;
+    return (
+      <>
+        <ContainerWithTabs>
+          <Container
+            title={titleMap[value]}
+            authUser={authUser}
+            history={history}
+            firebase={firebase}
+          >
+            {value === 0 && (
+              <EventsOverview internal={internal} external={external} history={history} />
+            )}
+            {value === 1 && <EventCreateForm onSubmit={this.onSubmitCreateEvent} />}
+            {value === 2 && (
+              <EventsOverview internal={internal} external={external} history={history} />
+            )}
+            {value === 3 && (
+              <EventsOverview internal={internal} external={external} history={history} />
+            )}
+          </Container>
+        </ContainerWithTabs>
+        <Tabs
+          value={this.state.value}
+          onChange={this.handleChange}
+          className={classes.bottomBar}
+          variant="fullWidth"
+          indicatorColor="primary"
+          textColor="primary"
+        >
+          <Tab icon={<HomeRounded />} />
+          <Tab icon={<AddBoxRounded />} />
+          <Tab icon={<NotificationsRounded />} />
+          <Tab icon={<SettingsRounded />} />
+        </Tabs>
+      </>
+    );
+  }
+}
 
 Menu.displayName = 'Menu';
 
@@ -126,6 +125,7 @@ Menu.propTypes = {
       ),
     }),
   }).isRequired,
+  createEvent: propTypes.func.isRequired,
   authUser: propTypes.shape({
     displayName: propTypes.string.isRequired,
     uid: propTypes.string.isRequired,
@@ -133,10 +133,11 @@ Menu.propTypes = {
   history: propTypes.shape({
     push: propTypes.func.isRequired,
     goBack: propTypes.func.isRequired,
+    replace: propTypes.func.isRequired,
   }).isRequired,
   firebase: propTypes.object.isRequired,
 };
 
 Menu.defaultProps = {};
 
-export default Menu;
+export default withStyles(styles)(Menu);
