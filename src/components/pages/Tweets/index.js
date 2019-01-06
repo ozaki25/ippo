@@ -2,9 +2,11 @@ import React from 'react';
 import propTypes from 'prop-types';
 import Spinner from 'src/components/atoms/Spinner';
 import FloatingButton from 'src/components/molecules/FloatingButton';
+import TweetEventSummary from 'src/components/organisms/TweetEventSummary';
 import TweetsList from 'src/components/organisms/TweetList';
 import Container from 'src/components/templates/Container';
 import dateFormat from 'src/utils/dateFormat';
+import eventFormat from 'src/utils/eventFormat';
 import paging from 'src/constants/paging';
 import ROUTES from 'src/constants/routes';
 
@@ -55,6 +57,7 @@ class Tweets extends React.Component {
         loading,
         variables: { hashtag },
       },
+      event,
       authUser,
       history,
       firebase,
@@ -68,17 +71,20 @@ class Tweets extends React.Component {
         history={history}
         firebase={firebase}
       >
-        {loading ? (
+        {loading || event.loading ? (
           <Spinner />
         ) : (
-          <TweetsList
-            loadMore={this.loadMore}
-            hasMore={!!tweets.startId}
-            items={tweets.tweetList.map(tweet => ({
-              ...tweet,
-              time: dateFormat.datetimeJa(new Date(tweet.time)),
-            }))}
-          />
+          <>
+            <TweetEventSummary {...eventFormat.internal([event.internalEvent])[0]} />
+            <TweetsList
+              loadMore={this.loadMore}
+              hasMore={!!tweets.startId}
+              items={tweets.tweetList.map(tweet => ({
+                ...tweet,
+                time: dateFormat.datetimeJa(tweet.time),
+              }))}
+            />
+          </>
         )}
         <FloatingButton icon="edit" onClick={this.onClickNewTweet} />
       </Container>
@@ -110,6 +116,16 @@ Tweets.propTypes = {
       limit: propTypes.number.isRequired,
     }),
   }),
+  event: propTypes.shape({
+    internalEvent: propTypes.shape({
+      id: propTypes.string,
+      title: propTypes.string,
+      catchMessage: propTypes.string,
+      place: propTypes.string,
+      startedAt: propTypes.string,
+      name: propTypes.string,
+    }),
+  }),
   authUser: propTypes.shape({
     displayName: propTypes.string.isRequired,
     uid: propTypes.string.isRequired,
@@ -127,6 +143,7 @@ Tweets.defaultProps = {
       tweetList: [],
       startId: null,
     },
+    event: null,
   },
 };
 

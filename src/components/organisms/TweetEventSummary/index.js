@@ -45,6 +45,7 @@ const TweetEventSummary = ({ id, hashtag, title, catchMessage, place, startedAt,
         <Typography>{`#${hashtag}`}</Typography>
       </Container>
     }
+    fixed
   />
 );
 
