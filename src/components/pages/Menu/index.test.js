@@ -21,14 +21,15 @@ const externalEvent = i => ({
 });
 
 const props = {
+  createEvent: jest.fn(),
   internal: {
     loading: false,
-    internalEvents: [...[...Array(5)].map((_, i) => internalEvent(i))],
+    internalEvents: [...[...Array(10)].map((_, i) => internalEvent(i))],
   },
   external: {
     loading: false,
     connpass: {
-      events: [...[...Array(5)].map((_, i) => externalEvent(i))],
+      events: [...[...Array(10)].map((_, i) => externalEvent(i))],
     },
   },
   authUser: {
@@ -38,6 +39,7 @@ const props = {
   history: {
     push: jest.fn(),
     goBack: jest.fn(),
+    replace: jest.fn(),
   },
   firebase: {},
 };
