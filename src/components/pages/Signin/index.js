@@ -38,10 +38,10 @@ class Signin extends React.Component {
     this.setState({ loading: true });
     const result = await this.props.firebase.auth.getRedirectResult();
     const authUser = result.user;
+    this.setState({ loading: false });
     if (authUser) {
       this.props.history.push(ROUTES.Menu);
     }
-    this.setState({ loading: false });
   };
 
   signin = async ({ data: { email, pass } }) => {
