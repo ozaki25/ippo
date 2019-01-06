@@ -39,6 +39,21 @@ const internalEvents = gql`
   }
 `;
 
+const internalEvent = gql`
+  query($hashtag: String) {
+    internalEvent(hashtag: $hashtag) {
+      id
+      title
+      catchMessage
+      place
+      hashtag
+      startedAt
+      endedAt
+      name
+    }
+  }
+`;
+
 const tweets = gql`
   query($hashtag: String, $limit: Int, $startId: String) {
     tweets(hashtag: $hashtag, limit: $limit, startId: $startId) {
@@ -107,6 +122,7 @@ export default {
   hello,
   externalEvents,
   internalEvents,
+  internalEvent,
   tweets,
   registerNotification,
   publishNotification,

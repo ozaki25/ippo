@@ -19,3 +19,5 @@ const props = {
 };
 
 stories.add('通常パターン', () => <Tweet {...props} />);
+
+stories.add('固定', () => <Tweet {...props} fixed />);

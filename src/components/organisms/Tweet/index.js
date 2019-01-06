@@ -2,6 +2,7 @@ import React from 'react';
 import { Divider } from '@material-ui/core';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
+import TweetFixedText from 'src/components/organisms/TweetFixedText/index';
 import IconImage from 'src/components/atoms/IconImage';
 import TweetHeader from 'src/components/organisms/TweetHeader';
 import TweetBody from 'src/components/organisms/TweetBody';
@@ -22,9 +23,10 @@ const StyledIconImage = styled(IconImage)`
 
 const todo = () => console.log('TODO');
 
-const Tweet = ({ name, text, time }) => (
+const Tweet = ({ name, text, time, fixed }) => (
   <>
     <Container>
+      {fixed && <TweetFixedText />}
       <Wrapper>
         <StyledIconImage src="/icon.png" />
         <TweetHeader name={name} time={time} />
@@ -40,10 +42,13 @@ Tweet.displayName = 'Tweet';
 
 Tweet.propTypes = {
   name: propTypes.string.isRequired,
-  text: propTypes.string.isRequired,
+  text: propTypes.node.isRequired,
   time: propTypes.string.isRequired,
+  fixed: propTypes.bool,
 };
 
-Tweet.defaultProps = {};
+Tweet.defaultProps = {
+  fixed: false,
+};
 
 export default Tweet;
