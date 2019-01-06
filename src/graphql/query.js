@@ -49,6 +49,7 @@ const internalEvent = gql`
       hashtag
       startedAt
       endedAt
+      name
     }
   }
 `;
