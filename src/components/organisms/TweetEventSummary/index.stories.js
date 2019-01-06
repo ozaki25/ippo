@@ -1,9 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { text } from '@storybook/addon-knobs';
-import TweetFixedTop from '.';
+import TweetEventSummary from '.';
 
-const stories = storiesOf('organisms/TweetFixedTop', module);
+const stories = storiesOf('organisms/TweetEventSummary', module);
 
 const props = {
   hashtag: text('hashtag', 'react_handson'),
@@ -15,4 +15,4 @@ const props = {
   startedAt: text('startedAt', '2018-12-10T19:00'),
 };
 
-stories.add('通常パターン', () => <TweetFixedTop {...props} />);
+stories.add('通常パターン', () => <TweetEventSummary {...props} />);
