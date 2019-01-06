@@ -12,7 +12,7 @@ const InternalEvents = ({ data: { loading, internalEvents }, authUser, history, 
       {loading ? (
         <Spinner />
       ) : internalEvents && internalEvents.length ? (
-        <EventCardList events={eventFormat.internal(internalEvents)} />
+        <EventCardList events={eventFormat.internal(internalEvents)} history={history} />
       ) : (
         <Typography>No Contents</Typography>
       )}
