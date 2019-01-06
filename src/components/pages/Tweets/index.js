@@ -143,8 +143,8 @@ Tweets.defaultProps = {
       tweetList: [],
       startId: null,
     },
-    event: null,
   },
+  event: null,
 };
 
 export default Tweets;
