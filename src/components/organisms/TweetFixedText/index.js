@@ -18,7 +18,6 @@ const Container = styled.div`
   display: flex;
   font-size: 15px;
   flex-direction: row;
-  width: 100%;
 `;
 
 const IconContainer = styled.div`
