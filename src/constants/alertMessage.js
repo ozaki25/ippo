@@ -5,6 +5,12 @@ const subscribeNotification = {
   unsupported: 'このブラウザはプッシュ通知に対応しておりません。',
 };
 
+const tweetGuide = {
+  join: '「参加します」を含んだ投稿をすると申し込みが完了します！',
+  leave: '「キャンセルします」を含んだ投稿をするとキャンセルが完了します',
+};
+
 export default {
   subscribeNotification,
+  tweetGuide,
 };

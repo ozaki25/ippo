@@ -9,6 +9,7 @@ import dateFormat from 'src/utils/dateFormat';
 import eventFormat from 'src/utils/eventFormat';
 import paging from 'src/constants/paging';
 import ROUTES from 'src/constants/routes';
+import TWEET_WORD from 'src/constants/tweetWord';
 
 class Tweets extends React.Component {
   componentDidMount() {
@@ -50,6 +51,30 @@ class Tweets extends React.Component {
     history.push(`${ROUTES.NewTweet}?hashtag=${variables.hashtag}`);
   };
 
+  onClickJoin = () => {
+    const {
+      data: { variables },
+      history,
+    } = this.props;
+    history.push(
+      `${ROUTES.NewTweet}?hashtag=${variables.hashtag}&tweet=${TWEET_WORD.JOIN}&type=${
+        TWEET_WORD.JOIN_TYPE
+      }`,
+    );
+  };
+
+  onClickLeave = () => {
+    const {
+      data: { variables },
+      history,
+    } = this.props;
+    history.push(
+      `${ROUTES.NewTweet}?hashtag=${variables.hashtag}&tweet=${TWEET_WORD.LEAVE}&type=${
+        TWEET_WORD.LEAVE_TYPE
+      }`,
+    );
+  };
+
   render() {
     const {
       data: {
@@ -57,7 +82,6 @@ class Tweets extends React.Component {
         loading,
         variables: { hashtag },
       },
-      event,
       authUser,
       history,
       firebase,
@@ -71,11 +95,18 @@ class Tweets extends React.Component {
         history={history}
         firebase={firebase}
       >
-        {loading || event.loading ? (
+        {loading ? (
           <Spinner />
         ) : (
           <>
-            <TweetEventSummary {...eventFormat.internal([event.internalEvent])[0]} />
+            {tweets.event && (
+              <TweetEventSummary
+                {...eventFormat.internal([tweets.event])[0]}
+                onClickJoin={this.onClickJoin}
+                onClickLeave={this.onClickLeave}
+                joined={tweets.joined}
+              />
+            )}
             <TweetsList
               loadMore={this.loadMore}
               hasMore={!!tweets.startId}
@@ -108,22 +139,21 @@ Tweets.propTypes = {
         }),
       ),
       startId: propTypes.string,
+      event: propTypes.shape({
+        id: propTypes.string,
+        title: propTypes.string,
+        catchMessage: propTypes.string,
+        place: propTypes.string,
+        startedAt: propTypes.string,
+        name: propTypes.string,
+      }),
+      joined: propTypes.bool.isRequired,
     }),
     refetch: propTypes.func.isRequired,
     fetchMore: propTypes.func.isRequired,
     variables: propTypes.shape({
       hashtag: propTypes.string.isRequired,
       limit: propTypes.number.isRequired,
-    }),
-  }),
-  event: propTypes.shape({
-    internalEvent: propTypes.shape({
-      id: propTypes.string,
-      title: propTypes.string,
-      catchMessage: propTypes.string,
-      place: propTypes.string,
-      startedAt: propTypes.string,
-      name: propTypes.string,
     }),
   }),
   authUser: propTypes.shape({
@@ -142,9 +172,9 @@ Tweets.defaultProps = {
     tweets: {
       tweetList: [],
       startId: null,
+      event: null,
     },
   },
-  event: null,
 };
 
 export default Tweets;

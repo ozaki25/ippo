@@ -14,12 +14,8 @@ export default compose(
   withRouter,
   withFirebase,
   graphql(query.tweets, {
-    options: ({ location: { search } }) => ({
-      variables: { hashtag: getHashtag(search), limit: paging.tweetsPerPage },
+    options: ({ location: { search }, authUser: { uid } }) => ({
+      variables: { hashtag: getHashtag(search), limit: paging.tweetsPerPage, uid },
     }),
-  }),
-  graphql(query.internalEvent, {
-    name: 'event',
-    options: ({ location: { search } }) => ({ variables: { hashtag: getHashtag(search) } }),
   }),
 )(Tweets);

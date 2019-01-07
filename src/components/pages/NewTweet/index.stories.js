@@ -16,8 +16,39 @@ const props = {
   history: {
     push: action('push'),
     goBack: action('goBack'),
+    location: {},
   },
   firebase: {},
+};
+
+const defaultTweetProps = {
+  history: {
+    push: action('push'),
+    goBack: action('goBack'),
+    location: {
+      search: '?tweet=デフォルト',
+    },
+  },
+};
+
+const joinProps = {
+  history: {
+    push: action('push'),
+    goBack: action('goBack'),
+    location: {
+      search: '?tweet=参加します！&type=join',
+    },
+  },
+};
+
+const leaveProps = {
+  history: {
+    push: action('push'),
+    goBack: action('goBack'),
+    location: {
+      search: '?tweet=キャンセルします&type=leave',
+    },
+  },
 };
 
 stories.add('通常パターン', () => <NewTweet {...props} />);
@@ -30,3 +61,9 @@ stories.add('エラー', () => (
     }
   />
 ));
+
+stories.add('デフォルトツイート', () => <NewTweet {...props} {...defaultTweetProps} />);
+
+stories.add('参加', () => <NewTweet {...props} {...joinProps} />);
+
+stories.add('キャンセル', () => <NewTweet {...props} {...leaveProps} />);

@@ -4,7 +4,10 @@ import styled from 'styled-components';
 import propTypes from 'prop-types';
 import RoundedButton from 'src/components/atoms/RoundedButton';
 import IconImage from 'src/components/atoms/IconImage';
+import PopMessage from 'src/components/atoms/PopMessage';
 import Container from 'src/components/templates/Container';
+import TWEET_WORD from 'src/constants/tweetWord';
+import alertMessage from 'src/constants/alertMessage';
 
 const inputProps = {
   style: {
@@ -25,20 +28,42 @@ const Buttons = styled.div`
   text-align: right;
 `;
 
+const message = type => {
+  switch (type) {
+    case TWEET_WORD.JOIN_TYPE:
+      return alertMessage.tweetGuide.join;
+    case TWEET_WORD.LEAVE_TYPE:
+      return alertMessage.tweetGuide.leave;
+    default:
+      return '';
+  }
+};
+
 class NewTweet extends React.Component {
   constructor(props) {
     super(props);
+    const {
+      history: {
+        location: { search },
+      },
+    } = props;
+    const query = new URLSearchParams(search);
+    const defaultTweet = query.get('tweet') || '';
+    const type = query.get('type') || '';
     this.state = {
-      tweet: `
+      tweet: `${defaultTweet}
 #${this.props.hashtag}`,
       disabled: false,
       error: false,
+      anchorEl: null,
+      type,
     };
     this.tweet = React.createRef();
   }
 
   componentDidMount() {
     this.tweet.current.setSelectionRange(0, 0);
+    this.state.type && this.setState({ anchorEl: this.tweet.current });
   }
 
   onChange = event => this.setState({ [event.target.name]: event.target.value });
@@ -60,18 +85,19 @@ class NewTweet extends React.Component {
         variables: { tweet },
       });
       console.log(result);
+      this.setState({ disabled: false });
       history.goBack();
     } catch (e) {
-      this.setState({ error: e.toString() });
+      this.setState({ error: e.toString(), disabled: false });
       console.log(e);
-    } finally {
-      this.setState({ disabled: false });
     }
   };
 
+  handleClose = () => this.setState({ anchorEl: null });
+
   render() {
     const { authUser, history, firebase } = this.props;
-    const { disabled, error } = this.state;
+    const { disabled, error, anchorEl, type } = this.state;
     return (
       <Container title="ツイート" back authUser={authUser} history={history} firebase={firebase}>
         <Wrapper>
@@ -94,12 +120,15 @@ class NewTweet extends React.Component {
           <Buttons>
             <RoundedButton color="primary" variant="outlined" onClick={this.onClickUpload}>
               アップロード
-            </RoundedButton>
+            </RoundedButton>{' '}
             <RoundedButton color="primary" disabled={disabled} onClick={this.onClickTweet}>
               ツイート
             </RoundedButton>
           </Buttons>
         </Wrapper>
+        <PopMessage anchorEl={anchorEl} handleClose={this.handleClose}>
+          {message(type)}
+        </PopMessage>
       </Container>
     );
   }
@@ -117,6 +146,7 @@ NewTweet.propTypes = {
   history: propTypes.shape({
     push: propTypes.func.isRequired,
     goBack: propTypes.func.isRequired,
+    location: propTypes.object.isRequired,
   }).isRequired,
   firebase: propTypes.object.isRequired,
 };
