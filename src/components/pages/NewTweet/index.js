@@ -6,6 +6,7 @@ import propTypes from 'prop-types';
 import RoundedButton from 'src/components/atoms/RoundedButton';
 import IconImage from 'src/components/atoms/IconImage';
 import Container from 'src/components/templates/Container';
+import TWEET_WORD from 'src/constants/tweetWord';
 
 const styles = theme => ({
   typography: {
@@ -47,8 +48,9 @@ const Message = ({ anchorEl, handleClose, classes, type }) => (
     }}
   >
     <Typography className={classes.typography}>
-      {type === 'join' && '「参加します」を含んだ投稿をすると申し込みが完了します！'}
-      {type === 'leave' && '「キャンセルします」を含んだ投稿をするとキャンセルが完了します'}
+      {type === TWEET_WORD.JOIN_TYPE && '「参加します」を含んだ投稿をすると申し込みが完了します！'}
+      {type === TWEET_WORD.LEAVE_TYPE &&
+        '「キャンセルします」を含んだ投稿をするとキャンセルが完了します'}
     </Typography>
   </Popover>
 );

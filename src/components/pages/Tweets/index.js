@@ -9,6 +9,7 @@ import dateFormat from 'src/utils/dateFormat';
 import eventFormat from 'src/utils/eventFormat';
 import paging from 'src/constants/paging';
 import ROUTES from 'src/constants/routes';
+import TWEET_WORD from 'src/constants/tweetWord';
 
 class Tweets extends React.Component {
   componentDidMount() {
@@ -55,7 +56,11 @@ class Tweets extends React.Component {
       data: { variables },
       history,
     } = this.props;
-    history.push(`${ROUTES.NewTweet}?hashtag=${variables.hashtag}&tweet=参加します！&type=join`);
+    history.push(
+      `${ROUTES.NewTweet}?hashtag=${variables.hashtag}&tweet=${TWEET_WORD.JOIN}&type=${
+        TWEET_WORD.JOIN_TYPE
+      }`,
+    );
   };
 
   onClickLeave = () => {
@@ -64,7 +69,9 @@ class Tweets extends React.Component {
       history,
     } = this.props;
     history.push(
-      `${ROUTES.NewTweet}?hashtag=${variables.hashtag}&tweet=キャンセルします&type=leave`,
+      `${ROUTES.NewTweet}?hashtag=${variables.hashtag}&tweet=${TWEET_WORD.LEAVE}&type=${
+        TWEET_WORD.LEAVE_TYPE
+      }`,
     );
   };
 
