@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should match snapshot: TabMenu/nomal 1`] = `
+exports[`should match snapshot: Menu/nomal 1`] = `
 .c8 {
   width: 100%;
 }
@@ -62,7 +62,7 @@ exports[`should match snapshot: TabMenu/nomal 1`] = `
   replace={[Function]}
   url=""
 >
-  <WithStyles(TabMenu)
+  <WithStyles(Menu)
     authUser={
       Object {
         "displayName": "テストユーザ",
@@ -255,7 +255,7 @@ exports[`should match snapshot: TabMenu/nomal 1`] = `
       }
     }
   >
-    <TabMenu
+    <Menu
       authUser={
         Object {
           "displayName": "テストユーザ",
@@ -264,7 +264,7 @@ exports[`should match snapshot: TabMenu/nomal 1`] = `
       }
       classes={
         Object {
-          "bottomBar": "TabMenu-bottomBar-1",
+          "bottomBar": "Menu-bottomBar-1",
         }
       }
       createEvent={[MockFunction]}
@@ -11618,7 +11618,7 @@ exports[`should match snapshot: TabMenu/nomal 1`] = `
         </StyledComponent>
       </styled.div>
       <WithStyles(Tabs)
-        className="TabMenu-bottomBar-1"
+        className="Menu-bottomBar-1"
         indicatorColor="primary"
         onChange={[Function]}
         textColor="primary"
@@ -11628,7 +11628,7 @@ exports[`should match snapshot: TabMenu/nomal 1`] = `
         <Tabs
           ScrollButtonComponent={[Function]}
           centered={false}
-          className="TabMenu-bottomBar-1"
+          className="Menu-bottomBar-1"
           classes={
             Object {
               "centered": "MuiTabs-centered-131",
@@ -12013,7 +12013,7 @@ exports[`should match snapshot: TabMenu/nomal 1`] = `
           variant="fullWidth"
         >
           <div
-            className="MuiTabs-root-129 TabMenu-bottomBar-1"
+            className="MuiTabs-root-129 Menu-bottomBar-1"
           >
             <EventListener
               onResize={[Function]}
@@ -12767,7 +12767,7 @@ exports[`should match snapshot: TabMenu/nomal 1`] = `
           </div>
         </Tabs>
       </WithStyles(Tabs)>
-    </TabMenu>
-  </WithStyles(TabMenu)>
+    </Menu>
+  </WithStyles(Menu)>
 </MockRouter>
 `;
