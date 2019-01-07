@@ -54,6 +54,34 @@ const internalEvent = gql`
   }
 `;
 
+const joinedEvents = gql`
+  query($uid: String) {
+    joinedEvents(uid: $uid) {
+      id
+      title
+      catchMessage
+      place
+      hashtag
+      startedAt
+      endedAt
+    }
+  }
+`;
+
+const organizedEvents = gql`
+  query($uid: String) {
+    organizedEvents(uid: $uid) {
+      id
+      title
+      catchMessage
+      place
+      hashtag
+      startedAt
+      endedAt
+    }
+  }
+`;
+
 const tweets = gql`
   query($hashtag: String, $limit: Int, $startId: String, $uid: String) {
     tweets(hashtag: $hashtag, limit: $limit, startId: $startId, uid: $uid) {
@@ -134,6 +162,8 @@ export default {
   externalEvents,
   internalEvents,
   internalEvent,
+  joinedEvents,
+  organizedEvents,
   tweets,
   registerNotification,
   publishNotification,

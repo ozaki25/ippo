@@ -16,5 +16,13 @@ export default compose(
     options: props => ({ variables: { page: 1, count: paging.eventsPerPage } }),
     name: 'external',
   }),
+  graphql(query.joinedEvents, {
+    options: ({ authUser: { uid } }) => ({ variables: { uid } }),
+    name: 'joined',
+  }),
+  graphql(query.organizedEvents, {
+    options: ({ authUser: { uid } }) => ({ variables: { uid } }),
+    name: 'organized',
+  }),
   graphql(query.createEvent, { name: 'createEvent' }),
 )(Menu);
