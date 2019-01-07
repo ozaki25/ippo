@@ -1,10 +1,17 @@
 import React from 'react';
-import { TextField, Typography } from '@material-ui/core';
+import { Popover, TextField, Typography } from '@material-ui/core';
+import { withStyles } from '@material-ui/core/styles';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
 import RoundedButton from 'src/components/atoms/RoundedButton';
 import IconImage from 'src/components/atoms/IconImage';
 import Container from 'src/components/templates/Container';
+
+const styles = theme => ({
+  typography: {
+    margin: theme.spacing.unit * 2,
+  },
+});
 
 const inputProps = {
   style: {
@@ -25,6 +32,29 @@ const Buttons = styled.div`
   text-align: right;
 `;
 
+const Message = ({ anchorEl, handleClose, classes, type }) => (
+  <Popover
+    open={!!anchorEl}
+    anchorEl={anchorEl}
+    onClose={handleClose}
+    anchorOrigin={{
+      vertical: 'bottom',
+      horizontal: 'center',
+    }}
+    transformOrigin={{
+      vertical: 'top',
+      horizontal: 'center',
+    }}
+  >
+    <Typography className={classes.typography}>
+      {type === 'join' && '「参加します」を含んだ投稿をすると申し込みが完了します！'}
+      {type === 'leave' && '「キャンセルします」を含んだ投稿をするとキャンセルが完了します'}
+    </Typography>
+  </Popover>
+);
+
+const StyledMessage = withStyles(styles)(Message);
+
 class NewTweet extends React.Component {
   constructor(props) {
     super(props);
@@ -33,18 +63,23 @@ class NewTweet extends React.Component {
         location: { search },
       },
     } = props;
-    const defaultTweet = new URLSearchParams(search).get('tweet') || '';
+    const query = new URLSearchParams(search);
+    const defaultTweet = query.get('tweet') || '';
+    const type = query.get('type') || '';
     this.state = {
       tweet: `${defaultTweet}
 #${this.props.hashtag}`,
       disabled: false,
       error: false,
+      anchorEl: null,
+      type,
     };
     this.tweet = React.createRef();
   }
 
   componentDidMount() {
     this.tweet.current.setSelectionRange(0, 0);
+    this.state.type && this.setState({ anchorEl: this.tweet.current });
   }
 
   onChange = event => this.setState({ [event.target.name]: event.target.value });
@@ -75,9 +110,11 @@ class NewTweet extends React.Component {
     }
   };
 
+  handleClose = () => this.setState({ anchorEl: null });
+
   render() {
     const { authUser, history, firebase } = this.props;
-    const { disabled, error } = this.state;
+    const { disabled, error, anchorEl, type } = this.state;
     return (
       <Container title="ツイート" back authUser={authUser} history={history} firebase={firebase}>
         <Wrapper>
@@ -106,6 +143,7 @@ class NewTweet extends React.Component {
             </RoundedButton>
           </Buttons>
         </Wrapper>
+        <StyledMessage anchorEl={anchorEl} handleClose={this.handleClose} type={type} />
       </Container>
     );
   }

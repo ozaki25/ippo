@@ -55,7 +55,7 @@ class Tweets extends React.Component {
       data: { variables },
       history,
     } = this.props;
-    history.push(`${ROUTES.NewTweet}?hashtag=${variables.hashtag}&tweet=参加します！`);
+    history.push(`${ROUTES.NewTweet}?hashtag=${variables.hashtag}&tweet=参加します！&type=join`);
   };
 
   onClickLeave = () => {
@@ -63,7 +63,9 @@ class Tweets extends React.Component {
       data: { variables },
       history,
     } = this.props;
-    history.push(`${ROUTES.NewTweet}?hashtag=${variables.hashtag}&tweet=キャンセルします`);
+    history.push(
+      `${ROUTES.NewTweet}?hashtag=${variables.hashtag}&tweet=キャンセルします&type=leave`,
+    );
   };
 
   render() {

@@ -21,12 +21,32 @@ const props = {
   firebase: {},
 };
 
-const defaultTweet = {
+const defaultTweetProps = {
   history: {
     push: action('push'),
     goBack: action('goBack'),
     location: {
-      search: '?tweet=参加します！',
+      search: '?tweet=デフォルト',
+    },
+  },
+};
+
+const joinProps = {
+  history: {
+    push: action('push'),
+    goBack: action('goBack'),
+    location: {
+      search: '?tweet=参加します！&type=join',
+    },
+  },
+};
+
+const leaveProps = {
+  history: {
+    push: action('push'),
+    goBack: action('goBack'),
+    location: {
+      search: '?tweet=キャンセルします&type=leave',
     },
   },
 };
@@ -42,4 +62,8 @@ stories.add('エラー', () => (
   />
 ));
 
-stories.add('デフォルトツイート有', () => <NewTweet {...props} {...defaultTweet} />);
+stories.add('デフォルトツイート', () => <NewTweet {...props} {...defaultTweetProps} />);
+
+stories.add('参加', () => <NewTweet {...props} {...joinProps} />);
+
+stories.add('キャンセル', () => <NewTweet {...props} {...leaveProps} />);
