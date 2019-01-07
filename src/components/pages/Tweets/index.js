@@ -82,7 +82,6 @@ class Tweets extends React.Component {
         loading,
         variables: { hashtag },
       },
-      event,
       authUser,
       history,
       firebase,
@@ -96,12 +95,12 @@ class Tweets extends React.Component {
         history={history}
         firebase={firebase}
       >
-        {loading || event.loading ? (
+        {loading ? (
           <Spinner />
         ) : (
           <>
             <TweetEventSummary
-              {...eventFormat.internal([event.internalEvent])[0]}
+              {...eventFormat.internal([tweets.event])[0]}
               onClickJoin={this.onClickJoin}
               onClickLeave={this.onClickLeave}
             />
@@ -137,22 +136,20 @@ Tweets.propTypes = {
         }),
       ),
       startId: propTypes.string,
+      event: propTypes.shape({
+        id: propTypes.string,
+        title: propTypes.string,
+        catchMessage: propTypes.string,
+        place: propTypes.string,
+        startedAt: propTypes.string,
+        name: propTypes.string,
+      }),
     }),
     refetch: propTypes.func.isRequired,
     fetchMore: propTypes.func.isRequired,
     variables: propTypes.shape({
       hashtag: propTypes.string.isRequired,
       limit: propTypes.number.isRequired,
-    }),
-  }),
-  event: propTypes.shape({
-    internalEvent: propTypes.shape({
-      id: propTypes.string,
-      title: propTypes.string,
-      catchMessage: propTypes.string,
-      place: propTypes.string,
-      startedAt: propTypes.string,
-      name: propTypes.string,
     }),
   }),
   authUser: propTypes.shape({
@@ -171,9 +168,9 @@ Tweets.defaultProps = {
     tweets: {
       tweetList: [],
       startId: null,
+      event: null,
     },
   },
-  event: null,
 };
 
 export default Tweets;

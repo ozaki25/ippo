@@ -65,6 +65,16 @@ const tweets = gql`
         hashtag
       }
       startId
+      event {
+        id
+        title
+        catchMessage
+        place
+        hashtag
+        startedAt
+        endedAt
+        name
+      }
     }
   }
 `;

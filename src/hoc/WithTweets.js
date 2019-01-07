@@ -18,8 +18,4 @@ export default compose(
       variables: { hashtag: getHashtag(search), limit: paging.tweetsPerPage },
     }),
   }),
-  graphql(query.internalEvent, {
-    name: 'event',
-    options: ({ location: { search } }) => ({ variables: { hashtag: getHashtag(search) } }),
-  }),
 )(Tweets);
