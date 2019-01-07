@@ -1,18 +1,13 @@
 import React from 'react';
-import { Popover, TextField, Typography } from '@material-ui/core';
-import { withStyles } from '@material-ui/core/styles';
+import { TextField, Typography } from '@material-ui/core';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
 import RoundedButton from 'src/components/atoms/RoundedButton';
 import IconImage from 'src/components/atoms/IconImage';
+import PopMessage from 'src/components/atoms/PopMessage';
 import Container from 'src/components/templates/Container';
 import TWEET_WORD from 'src/constants/tweetWord';
-
-const styles = theme => ({
-  typography: {
-    margin: theme.spacing.unit * 2,
-  },
-});
+import alertMessage from 'src/constants/alertMessage';
 
 const inputProps = {
   style: {
@@ -33,29 +28,16 @@ const Buttons = styled.div`
   text-align: right;
 `;
 
-const Message = ({ anchorEl, handleClose, classes, type }) => (
-  <Popover
-    open={!!anchorEl}
-    anchorEl={anchorEl}
-    onClose={handleClose}
-    anchorOrigin={{
-      vertical: 'bottom',
-      horizontal: 'center',
-    }}
-    transformOrigin={{
-      vertical: 'top',
-      horizontal: 'center',
-    }}
-  >
-    <Typography className={classes.typography}>
-      {type === TWEET_WORD.JOIN_TYPE && '「参加します」を含んだ投稿をすると申し込みが完了します！'}
-      {type === TWEET_WORD.LEAVE_TYPE &&
-        '「キャンセルします」を含んだ投稿をするとキャンセルが完了します'}
-    </Typography>
-  </Popover>
-);
-
-const StyledMessage = withStyles(styles)(Message);
+const message = type => {
+  switch (type) {
+    case TWEET_WORD.JOIN_TYPE:
+      return alertMessage.tweetGuide.join;
+    case TWEET_WORD.LEAVE_TYPE:
+      return alertMessage.tweetGuide.leave;
+    default:
+      return '';
+  }
+};
 
 class NewTweet extends React.Component {
   constructor(props) {
@@ -103,12 +85,11 @@ class NewTweet extends React.Component {
         variables: { tweet },
       });
       console.log(result);
+      this.setState({ disabled: false });
       history.goBack();
     } catch (e) {
-      this.setState({ error: e.toString() });
+      this.setState({ error: e.toString(), disabled: false });
       console.log(e);
-    } finally {
-      this.setState({ disabled: false });
     }
   };
 
@@ -139,13 +120,15 @@ class NewTweet extends React.Component {
           <Buttons>
             <RoundedButton color="primary" variant="outlined" onClick={this.onClickUpload}>
               アップロード
-            </RoundedButton>
+            </RoundedButton>{' '}
             <RoundedButton color="primary" disabled={disabled} onClick={this.onClickTweet}>
               ツイート
             </RoundedButton>
           </Buttons>
         </Wrapper>
-        <StyledMessage anchorEl={anchorEl} handleClose={this.handleClose} type={type} />
+        <PopMessage anchorEl={anchorEl} handleClose={this.handleClose}>
+          {message(type)}
+        </PopMessage>
       </Container>
     );
   }
