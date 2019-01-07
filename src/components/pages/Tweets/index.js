@@ -50,6 +50,22 @@ class Tweets extends React.Component {
     history.push(`${ROUTES.NewTweet}?hashtag=${variables.hashtag}`);
   };
 
+  onClickJoin = () => {
+    const {
+      data: { variables },
+      history,
+    } = this.props;
+    history.push(`${ROUTES.NewTweet}?hashtag=${variables.hashtag}&tweet=参加します！`);
+  };
+
+  onClickLeave = () => {
+    const {
+      data: { variables },
+      history,
+    } = this.props;
+    history.push(`${ROUTES.NewTweet}?hashtag=${variables.hashtag}&tweet=キャンセルします`);
+  };
+
   render() {
     const {
       data: {
@@ -75,7 +91,11 @@ class Tweets extends React.Component {
           <Spinner />
         ) : (
           <>
-            <TweetEventSummary {...eventFormat.internal([event.internalEvent])[0]} />
+            <TweetEventSummary
+              {...eventFormat.internal([event.internalEvent])[0]}
+              onClickJoin={this.onClickJoin}
+              onClickLeave={this.onClickLeave}
+            />
             <TweetsList
               loadMore={this.loadMore}
               hasMore={!!tweets.startId}
