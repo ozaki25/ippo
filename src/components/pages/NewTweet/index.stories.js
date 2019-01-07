@@ -16,8 +16,19 @@ const props = {
   history: {
     push: action('push'),
     goBack: action('goBack'),
+    location: {},
   },
   firebase: {},
+};
+
+const defaultTweet = {
+  history: {
+    push: action('push'),
+    goBack: action('goBack'),
+    location: {
+      search: '?tweet=参加します！',
+    },
+  },
 };
 
 stories.add('通常パターン', () => <NewTweet {...props} />);
@@ -30,3 +41,5 @@ stories.add('エラー', () => (
     }
   />
 ));
+
+stories.add('デフォルトツイート有', () => <NewTweet {...props} {...defaultTweet} />);

@@ -28,8 +28,14 @@ const Buttons = styled.div`
 class NewTweet extends React.Component {
   constructor(props) {
     super(props);
+    const {
+      history: {
+        location: { search },
+      },
+    } = props;
+    const defaultTweet = new URLSearchParams(search).get('tweet') || '';
     this.state = {
-      tweet: `
+      tweet: `${defaultTweet}
 #${this.props.hashtag}`,
       disabled: false,
       error: false,
@@ -117,6 +123,7 @@ NewTweet.propTypes = {
   history: propTypes.shape({
     push: propTypes.func.isRequired,
     goBack: propTypes.func.isRequired,
+    location: propTypes.object.isRequired,
   }).isRequired,
   firebase: propTypes.object.isRequired,
 };
