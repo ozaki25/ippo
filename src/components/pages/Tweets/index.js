@@ -99,11 +99,14 @@ class Tweets extends React.Component {
           <Spinner />
         ) : (
           <>
-            <TweetEventSummary
-              {...eventFormat.internal([tweets.event])[0]}
-              onClickJoin={this.onClickJoin}
-              onClickLeave={this.onClickLeave}
-            />
+            {tweets.event && (
+              <TweetEventSummary
+                {...eventFormat.internal([tweets.event])[0]}
+                onClickJoin={this.onClickJoin}
+                onClickLeave={this.onClickLeave}
+                joined={tweets.joined}
+              />
+            )}
             <TweetsList
               loadMore={this.loadMore}
               hasMore={!!tweets.startId}
@@ -144,6 +147,7 @@ Tweets.propTypes = {
         startedAt: propTypes.string,
         name: propTypes.string,
       }),
+      joined: propTypes.bool.isRequired,
     }),
     refetch: propTypes.func.isRequired,
     fetchMore: propTypes.func.isRequired,

@@ -55,8 +55,8 @@ const internalEvent = gql`
 `;
 
 const tweets = gql`
-  query($hashtag: String, $limit: Int, $startId: String) {
-    tweets(hashtag: $hashtag, limit: $limit, startId: $startId) {
+  query($hashtag: String, $limit: Int, $startId: String, $uid: String) {
+    tweets(hashtag: $hashtag, limit: $limit, startId: $startId, uid: $uid) {
       tweetList {
         id
         name
@@ -75,6 +75,7 @@ const tweets = gql`
         endedAt
         name
       }
+      joined
     }
   }
 `;
