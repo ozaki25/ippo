@@ -16,6 +16,7 @@ const props = {
         },
       ],
       startId: null,
+      joined: true,
     },
     refetch: jest.fn(),
     fetchMore: jest.fn(),

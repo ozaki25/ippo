@@ -23,7 +23,7 @@ exports[`should match snapshot: TweetBody/nomal 1`] = `
   - UIの修正デバッグが楽
   #ThinkAtomicDesign"
   >
-    <styled.p>
+    <styled.div>
       <StyledComponent
         forwardedComponent={
           Object {
@@ -41,11 +41,11 @@ exports[`should match snapshot: TweetBody/nomal 1`] = `
 ",
               ],
             },
-            "displayName": "styled.p",
+            "displayName": "styled.div",
             "foldedComponentIds": Array [],
             "render": [Function],
             "styledComponentId": "sc-bdVaJa",
-            "target": "p",
+            "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
             "withComponent": [Function],
@@ -53,7 +53,7 @@ exports[`should match snapshot: TweetBody/nomal 1`] = `
         }
         forwardedRef={null}
       >
-        <p
+        <div
           className="c0"
         >
           Storybookいいところ
@@ -61,9 +61,9 @@ exports[`should match snapshot: TweetBody/nomal 1`] = `
   - コンポーネントの扱い方が分かる
   - UIの修正デバッグが楽
   #ThinkAtomicDesign
-        </p>
+        </div>
       </StyledComponent>
-    </styled.p>
+    </styled.div>
   </TweetBody>
 </MockRouter>
 `;

@@ -134,8 +134,8 @@ exports[`should match snapshot: AsyncSwipeable/nomal 1`] = `
         resistance={false}
         slideStyle={
           Object {
-            "padding": "0 5px",
-            "width": "calc(100% - 10px)",
+            "padding": "0 4px",
+            "width": "calc(100% - 8px)",
           }
         }
         springConfig={
@@ -147,7 +147,7 @@ exports[`should match snapshot: AsyncSwipeable/nomal 1`] = `
         }
         style={
           Object {
-            "padding": "0 15px",
+            "padding": "0 30px",
           }
         }
         threshold={5}
@@ -163,7 +163,7 @@ exports[`should match snapshot: AsyncSwipeable/nomal 1`] = `
           style={
             Object {
               "overflowX": "hidden",
-              "padding": "0 15px",
+              "padding": "0 30px",
             }
           }
         >
@@ -191,8 +191,8 @@ exports[`should match snapshot: AsyncSwipeable/nomal 1`] = `
                   "WebkitFlexShrink": 0,
                   "flexShrink": 0,
                   "overflow": "auto",
-                  "padding": "0 5px",
-                  "width": "calc(100% - 10px)",
+                  "padding": "0 4px",
+                  "width": "calc(100% - 8px)",
                 }
               }
             >

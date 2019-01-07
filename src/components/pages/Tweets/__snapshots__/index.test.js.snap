@@ -82,6 +82,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
           ],
         },
         "tweets": Object {
+          "joined": true,
           "startId": null,
           "tweetList": Array [
             Object {
@@ -287,7 +288,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                   "Naked": [Function],
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-dnqmqq",
+                                    "componentId": "sc-VigVT",
                                     "isStatic": false,
                                     "lastClassName": "c0",
                                     "rules": Array [
@@ -664,7 +665,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                     "name": "MuiToolbar",
                                   },
                                   "render": [Function],
-                                  "styledComponentId": "sc-dnqmqq",
+                                  "styledComponentId": "sc-VigVT",
                                   "target": [Function],
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -859,7 +860,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                             "Naked": [Function],
                                             "attrs": Array [],
                                             "componentStyle": ComponentStyle {
-                                              "componentId": "sc-htoDjs",
+                                              "componentId": "sc-gqjmRU",
                                               "isStatic": true,
                                               "lastClassName": "c1",
                                               "rules": Array [
@@ -1235,7 +1236,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                               "withTheme": true,
                                             },
                                             "render": [Function],
-                                            "styledComponentId": "sc-htoDjs",
+                                            "styledComponentId": "sc-gqjmRU",
                                             "target": [Function],
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
@@ -2298,7 +2299,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-iwsKbI",
+                "componentId": "sc-jTzLTM",
                 "isStatic": false,
                 "lastClassName": "c2",
                 "rules": Array [
@@ -2312,7 +2313,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
               "displayName": "styled.div",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-iwsKbI",
+              "styledComponentId": "sc-jTzLTM",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -2357,6 +2358,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
               >
                 <div>
                   <Tweet
+                    fixed={false}
                     hashtag="test"
                     id="1"
                     key="1"
@@ -2371,7 +2373,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-EHOje",
+                              "componentId": "sc-gzVnrw",
                               "isStatic": true,
                               "lastClassName": "c3",
                               "rules": Array [
@@ -2383,7 +2385,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                             "displayName": "styled.div",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "sc-EHOje",
+                            "styledComponentId": "sc-gzVnrw",
                             "target": "div",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -2402,7 +2404,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-bZQynM",
+                                    "componentId": "sc-htoDjs",
                                     "isStatic": true,
                                     "lastClassName": "c4",
                                     "rules": Array [
@@ -2415,7 +2417,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                   "displayName": "styled.div",
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
-                                  "styledComponentId": "sc-bZQynM",
+                                  "styledComponentId": "sc-htoDjs",
                                   "target": "div",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -2436,7 +2438,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                         "$$typeof": Symbol(react.forward_ref),
                                         "attrs": Array [],
                                         "componentStyle": ComponentStyle {
-                                          "componentId": "sc-gzVnrw",
+                                          "componentId": "sc-dnqmqq",
                                           "isStatic": true,
                                           "lastClassName": "c5",
                                           "rules": Array [
@@ -2448,7 +2450,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                         "displayName": "Styled(IconImage)",
                                         "foldedComponentIds": Array [],
                                         "render": [Function],
-                                        "styledComponentId": "sc-gzVnrw",
+                                        "styledComponentId": "sc-dnqmqq",
                                         "target": [Function],
                                         "toString": [Function],
                                         "warnTooManyClasses": [Function],
@@ -2474,7 +2476,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                               "$$typeof": Symbol(react.forward_ref),
                                               "attrs": Array [],
                                               "componentStyle": ComponentStyle {
-                                                "componentId": "sc-bwzfXH",
+                                                "componentId": "sc-bxivhb",
                                                 "isStatic": true,
                                                 "lastClassName": "c6",
                                                 "rules": Array [
@@ -2491,7 +2493,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                               "displayName": "styled.img",
                                               "foldedComponentIds": Array [],
                                               "render": [Function],
-                                              "styledComponentId": "sc-bwzfXH",
+                                              "styledComponentId": "sc-bxivhb",
                                               "target": "img",
                                               "toString": [Function],
                                               "warnTooManyClasses": [Function],
@@ -2524,15 +2526,15 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                           "$$typeof": Symbol(react.forward_ref),
                                           "attrs": Array [],
                                           "componentStyle": ComponentStyle {
-                                            "componentId": "sc-htpNat",
+                                            "componentId": "sc-ifAKCX",
                                             "isStatic": true,
-                                            "lastClassName": "KtFsv",
+                                            "lastClassName": "cFlEyZ",
                                             "rules": Array [],
                                           },
                                           "displayName": "styled.small",
                                           "foldedComponentIds": Array [],
                                           "render": [Function],
-                                          "styledComponentId": "sc-htpNat",
+                                          "styledComponentId": "sc-ifAKCX",
                                           "target": "small",
                                           "toString": [Function],
                                           "warnTooManyClasses": [Function],
@@ -2552,14 +2554,14 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                 <TweetBody
                                   text="投稿内容"
                                 >
-                                  <styled.p>
+                                  <styled.div>
                                     <StyledComponent
                                       forwardedComponent={
                                         Object {
                                           "$$typeof": Symbol(react.forward_ref),
                                           "attrs": Array [],
                                           "componentStyle": ComponentStyle {
-                                            "componentId": "sc-bxivhb",
+                                            "componentId": "sc-EHOje",
                                             "isStatic": true,
                                             "lastClassName": "c7",
                                             "rules": Array [
@@ -2570,11 +2572,11 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
 ",
                                             ],
                                           },
-                                          "displayName": "styled.p",
+                                          "displayName": "styled.div",
                                           "foldedComponentIds": Array [],
                                           "render": [Function],
-                                          "styledComponentId": "sc-bxivhb",
-                                          "target": "p",
+                                          "styledComponentId": "sc-EHOje",
+                                          "target": "div",
                                           "toString": [Function],
                                           "warnTooManyClasses": [Function],
                                           "withComponent": [Function],
@@ -2582,13 +2584,13 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                       }
                                       forwardedRef={null}
                                     >
-                                      <p
+                                      <div
                                         className="c7"
                                       >
                                         投稿内容
-                                      </p>
+                                      </div>
                                     </StyledComponent>
-                                  </styled.p>
+                                  </styled.div>
                                 </TweetBody>
                                 <TweetFooter
                                   onClickLike={[Function]}
@@ -2612,7 +2614,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                             "$$typeof": Symbol(react.forward_ref),
                                             "attrs": Array [],
                                             "componentStyle": ComponentStyle {
-                                              "componentId": "sc-ifAKCX",
+                                              "componentId": "sc-bZQynM",
                                               "isStatic": true,
                                               "lastClassName": "c8",
                                               "rules": Array [
@@ -2626,7 +2628,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                             "displayName": "styled.div",
                                             "foldedComponentIds": Array [],
                                             "render": [Function],
-                                            "styledComponentId": "sc-ifAKCX",
+                                            "styledComponentId": "sc-bZQynM",
                                             "target": "div",
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
@@ -2809,7 +2811,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                             "$$typeof": Symbol(react.forward_ref),
                                             "attrs": Array [],
                                             "componentStyle": ComponentStyle {
-                                              "componentId": "sc-ifAKCX",
+                                              "componentId": "sc-bZQynM",
                                               "isStatic": true,
                                               "lastClassName": "c8",
                                               "rules": Array [
@@ -2823,7 +2825,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                             "displayName": "styled.div",
                                             "foldedComponentIds": Array [],
                                             "render": [Function],
-                                            "styledComponentId": "sc-ifAKCX",
+                                            "styledComponentId": "sc-bZQynM",
                                             "target": "div",
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
@@ -3000,7 +3002,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                             "$$typeof": Symbol(react.forward_ref),
                                             "attrs": Array [],
                                             "componentStyle": ComponentStyle {
-                                              "componentId": "sc-ifAKCX",
+                                              "componentId": "sc-bZQynM",
                                               "isStatic": true,
                                               "lastClassName": "c8",
                                               "rules": Array [
@@ -3014,7 +3016,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                             "displayName": "styled.div",
                                             "foldedComponentIds": Array [],
                                             "render": [Function],
-                                            "styledComponentId": "sc-ifAKCX",
+                                            "styledComponentId": "sc-bZQynM",
                                             "target": "div",
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],

@@ -22,7 +22,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
 }
 
 .c2 {
-  padding: 10px;
+  padding: 5px 10px;
 }
 
 .c3 {
@@ -60,6 +60,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
     history={
       Object {
         "goBack": [MockFunction],
+        "location": Object {},
         "push": [MockFunction],
       }
     }
@@ -77,6 +78,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
       history={
         Object {
           "goBack": [MockFunction],
+          "location": Object {},
           "push": [MockFunction],
         }
       }
@@ -95,6 +97,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
         history={
           Object {
             "goBack": [MockFunction],
+            "location": Object {},
             "push": [MockFunction],
           }
         }
@@ -117,6 +120,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
           history={
             Object {
               "goBack": [MockFunction],
+              "location": Object {},
               "push": [MockFunction],
             }
           }
@@ -775,25 +779,25 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                                     center={true}
                                                     classes={
                                                       Object {
-                                                        "child": "MuiTouchRipple-child-160",
-                                                        "childLeaving": "MuiTouchRipple-childLeaving-161",
-                                                        "childPulsate": "MuiTouchRipple-childPulsate-162",
-                                                        "ripple": "MuiTouchRipple-ripple-157",
-                                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate-159",
-                                                        "rippleVisible": "MuiTouchRipple-rippleVisible-158",
-                                                        "root": "MuiTouchRipple-root-156",
+                                                        "child": "MuiTouchRipple-child-164",
+                                                        "childLeaving": "MuiTouchRipple-childLeaving-165",
+                                                        "childPulsate": "MuiTouchRipple-childPulsate-166",
+                                                        "ripple": "MuiTouchRipple-ripple-161",
+                                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate-163",
+                                                        "rippleVisible": "MuiTouchRipple-rippleVisible-162",
+                                                        "root": "MuiTouchRipple-root-160",
                                                       }
                                                     }
                                                   >
                                                     <TransitionGroup
                                                       childFactory={[Function]}
-                                                      className="MuiTouchRipple-root-156"
+                                                      className="MuiTouchRipple-root-160"
                                                       component="span"
                                                       enter={true}
                                                       exit={true}
                                                     >
                                                       <span
-                                                        className="MuiTouchRipple-root-156"
+                                                        className="MuiTouchRipple-root-160"
                                                       />
                                                     </TransitionGroup>
                                                   </TouchRipple>
@@ -2202,25 +2206,25 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                                     center={true}
                                                     classes={
                                                       Object {
-                                                        "child": "MuiTouchRipple-child-160",
-                                                        "childLeaving": "MuiTouchRipple-childLeaving-161",
-                                                        "childPulsate": "MuiTouchRipple-childPulsate-162",
-                                                        "ripple": "MuiTouchRipple-ripple-157",
-                                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate-159",
-                                                        "rippleVisible": "MuiTouchRipple-rippleVisible-158",
-                                                        "root": "MuiTouchRipple-root-156",
+                                                        "child": "MuiTouchRipple-child-164",
+                                                        "childLeaving": "MuiTouchRipple-childLeaving-165",
+                                                        "childPulsate": "MuiTouchRipple-childPulsate-166",
+                                                        "ripple": "MuiTouchRipple-ripple-161",
+                                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate-163",
+                                                        "rippleVisible": "MuiTouchRipple-rippleVisible-162",
+                                                        "root": "MuiTouchRipple-root-160",
                                                       }
                                                     }
                                                   >
                                                     <TransitionGroup
                                                       childFactory={[Function]}
-                                                      className="MuiTouchRipple-root-156"
+                                                      className="MuiTouchRipple-root-160"
                                                       component="span"
                                                       enter={true}
                                                       exit={true}
                                                     >
                                                       <span
-                                                        className="MuiTouchRipple-root-156"
+                                                        className="MuiTouchRipple-root-160"
                                                       />
                                                     </TransitionGroup>
                                                   </TouchRipple>
@@ -2900,25 +2904,25 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                             center={false}
                                             classes={
                                               Object {
-                                                "child": "MuiTouchRipple-child-160",
-                                                "childLeaving": "MuiTouchRipple-childLeaving-161",
-                                                "childPulsate": "MuiTouchRipple-childPulsate-162",
-                                                "ripple": "MuiTouchRipple-ripple-157",
-                                                "ripplePulsate": "MuiTouchRipple-ripplePulsate-159",
-                                                "rippleVisible": "MuiTouchRipple-rippleVisible-158",
-                                                "root": "MuiTouchRipple-root-156",
+                                                "child": "MuiTouchRipple-child-164",
+                                                "childLeaving": "MuiTouchRipple-childLeaving-165",
+                                                "childPulsate": "MuiTouchRipple-childPulsate-166",
+                                                "ripple": "MuiTouchRipple-ripple-161",
+                                                "ripplePulsate": "MuiTouchRipple-ripplePulsate-163",
+                                                "rippleVisible": "MuiTouchRipple-rippleVisible-162",
+                                                "root": "MuiTouchRipple-root-160",
                                               }
                                             }
                                           >
                                             <TransitionGroup
                                               childFactory={[Function]}
-                                              className="MuiTouchRipple-root-156"
+                                              className="MuiTouchRipple-root-160"
                                               component="span"
                                               enter={true}
                                               exit={true}
                                             >
                                               <span
-                                                className="MuiTouchRipple-root-156"
+                                                className="MuiTouchRipple-root-160"
                                               />
                                             </TransitionGroup>
                                           </TouchRipple>
@@ -2931,6 +2935,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                             </WithStyles(Button)>
                           </RoundedButton>
                         </WithStyles(RoundedButton)>
+                         
                         <WithStyles(RoundedButton)
                           color="primary"
                           disabled={false}
@@ -3060,25 +3065,25 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                             center={false}
                                             classes={
                                               Object {
-                                                "child": "MuiTouchRipple-child-160",
-                                                "childLeaving": "MuiTouchRipple-childLeaving-161",
-                                                "childPulsate": "MuiTouchRipple-childPulsate-162",
-                                                "ripple": "MuiTouchRipple-ripple-157",
-                                                "ripplePulsate": "MuiTouchRipple-ripplePulsate-159",
-                                                "rippleVisible": "MuiTouchRipple-rippleVisible-158",
-                                                "root": "MuiTouchRipple-root-156",
+                                                "child": "MuiTouchRipple-child-164",
+                                                "childLeaving": "MuiTouchRipple-childLeaving-165",
+                                                "childPulsate": "MuiTouchRipple-childPulsate-166",
+                                                "ripple": "MuiTouchRipple-ripple-161",
+                                                "ripplePulsate": "MuiTouchRipple-ripplePulsate-163",
+                                                "rippleVisible": "MuiTouchRipple-rippleVisible-162",
+                                                "root": "MuiTouchRipple-root-160",
                                               }
                                             }
                                           >
                                             <TransitionGroup
                                               childFactory={[Function]}
-                                              className="MuiTouchRipple-root-156"
+                                              className="MuiTouchRipple-root-160"
                                               component="span"
                                               enter={true}
                                               exit={true}
                                             >
                                               <span
-                                                className="MuiTouchRipple-root-156"
+                                                className="MuiTouchRipple-root-160"
                                               />
                                             </TransitionGroup>
                                           </TouchRipple>
@@ -3097,6 +3102,109 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                 </div>
               </StyledComponent>
             </styled.div>
+            <WithStyles(PopMessage)
+              anchorEl={null}
+              handleClose={[Function]}
+            >
+              <PopMessage
+                anchorEl={null}
+                classes={
+                  Object {
+                    "typography": "PopMessage-typography-156",
+                  }
+                }
+                handleClose={[Function]}
+              >
+                <WithStyles(Popover)
+                  anchorEl={null}
+                  anchorOrigin={
+                    Object {
+                      "horizontal": "center",
+                      "vertical": "bottom",
+                    }
+                  }
+                  onClose={[Function]}
+                  open={false}
+                  transformOrigin={
+                    Object {
+                      "horizontal": "center",
+                      "vertical": "top",
+                    }
+                  }
+                >
+                  <Popover
+                    TransitionComponent={[Function]}
+                    anchorEl={null}
+                    anchorOrigin={
+                      Object {
+                        "horizontal": "center",
+                        "vertical": "bottom",
+                      }
+                    }
+                    anchorReference="anchorEl"
+                    classes={
+                      Object {
+                        "paper": "MuiPopover-paper-157",
+                      }
+                    }
+                    elevation={8}
+                    marginThreshold={16}
+                    onClose={[Function]}
+                    open={false}
+                    transformOrigin={
+                      Object {
+                        "horizontal": "center",
+                        "vertical": "top",
+                      }
+                    }
+                    transitionDuration="auto"
+                  >
+                    <WithStyles(Modal)
+                      BackdropProps={
+                        Object {
+                          "invisible": true,
+                        }
+                      }
+                      onClose={[Function]}
+                      open={false}
+                    >
+                      <Modal
+                        BackdropComponent={[Function]}
+                        BackdropProps={
+                          Object {
+                            "invisible": true,
+                          }
+                        }
+                        classes={
+                          Object {
+                            "hidden": "MuiModal-hidden-159",
+                            "root": "MuiModal-root-158",
+                          }
+                        }
+                        disableAutoFocus={false}
+                        disableBackdropClick={false}
+                        disableEnforceFocus={false}
+                        disableEscapeKeyDown={false}
+                        disablePortal={false}
+                        disableRestoreFocus={false}
+                        hideBackdrop={false}
+                        keepMounted={false}
+                        manager={
+                          ModalManager {
+                            "data": Array [],
+                            "handleContainerOverflow": true,
+                            "hideSiblingNodes": true,
+                            "modals": Array [],
+                          }
+                        }
+                        onClose={[Function]}
+                        open={false}
+                      />
+                    </WithStyles(Modal)>
+                  </Popover>
+                </WithStyles(Popover)>
+              </PopMessage>
+            </WithStyles(PopMessage)>
           </div>
         </StyledComponent>
       </styled.div>
