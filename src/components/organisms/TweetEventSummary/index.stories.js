@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
 import { text } from '@storybook/addon-knobs';
 import TweetEventSummary from '.';
 
@@ -13,6 +14,10 @@ const props = {
   place: text('place', '晴海3階'),
   name: text('name', 'ozaki25'),
   startedAt: text('startedAt', '2018-12-10T19:00'),
+  onClickJoin: action('join'),
+  onClickLeave: action('leave'),
 };
 
-stories.add('通常パターン', () => <TweetEventSummary {...props} />);
+stories.add('申し込み前', () => <TweetEventSummary {...props} />);
+
+stories.add('申し込み後', () => <TweetEventSummary {...props} joined />);
