@@ -2,21 +2,12 @@
 
 exports[`should match snapshot: Tweets/nomal 1`] = `
 .c6 {
-  border-radius: 50%;
-  float: left;
-  height: 48px;
-  margin-top: 3px;
-  position: absolute;
-  width: 48px;
-}
-
-.c7 {
   margin: 0;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 
-.c8 {
+.c7 {
   display: inline-block;
   margin: 4px 0;
   min-width: 78px;
@@ -32,7 +23,9 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
 }
 
 .c5 {
+  float: left;
   margin-left: -58px;
+  position: absolute;
 }
 
 .c1 {
@@ -288,7 +281,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                   "Naked": [Function],
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-VigVT",
+                                    "componentId": "sc-gqjmRU",
                                     "isStatic": false,
                                     "lastClassName": "c0",
                                     "rules": Array [
@@ -665,7 +658,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                     "name": "MuiToolbar",
                                   },
                                   "render": [Function],
-                                  "styledComponentId": "sc-VigVT",
+                                  "styledComponentId": "sc-gqjmRU",
                                   "target": [Function],
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -819,25 +812,25 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                                     center={true}
                                                     classes={
                                                       Object {
-                                                        "child": "MuiTouchRipple-child-116",
-                                                        "childLeaving": "MuiTouchRipple-childLeaving-117",
-                                                        "childPulsate": "MuiTouchRipple-childPulsate-118",
-                                                        "ripple": "MuiTouchRipple-ripple-113",
-                                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate-115",
-                                                        "rippleVisible": "MuiTouchRipple-rippleVisible-114",
-                                                        "root": "MuiTouchRipple-root-112",
+                                                        "child": "MuiTouchRipple-child-139",
+                                                        "childLeaving": "MuiTouchRipple-childLeaving-140",
+                                                        "childPulsate": "MuiTouchRipple-childPulsate-141",
+                                                        "ripple": "MuiTouchRipple-ripple-136",
+                                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate-138",
+                                                        "rippleVisible": "MuiTouchRipple-rippleVisible-137",
+                                                        "root": "MuiTouchRipple-root-135",
                                                       }
                                                     }
                                                   >
                                                     <TransitionGroup
                                                       childFactory={[Function]}
-                                                      className="MuiTouchRipple-root-112"
+                                                      className="MuiTouchRipple-root-135"
                                                       component="span"
                                                       enter={true}
                                                       exit={true}
                                                     >
                                                       <span
-                                                        className="MuiTouchRipple-root-112"
+                                                        className="MuiTouchRipple-root-135"
                                                       />
                                                     </TransitionGroup>
                                                   </TouchRipple>
@@ -860,7 +853,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                             "Naked": [Function],
                                             "attrs": Array [],
                                             "componentStyle": ComponentStyle {
-                                              "componentId": "sc-gqjmRU",
+                                              "componentId": "sc-gZMcBi",
                                               "isStatic": true,
                                               "lastClassName": "c1",
                                               "rules": Array [
@@ -1236,7 +1229,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                               "withTheme": true,
                                             },
                                             "render": [Function],
-                                            "styledComponentId": "sc-gqjmRU",
+                                            "styledComponentId": "sc-gZMcBi",
                                             "target": [Function],
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
@@ -2246,25 +2239,25 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                                     center={true}
                                                     classes={
                                                       Object {
-                                                        "child": "MuiTouchRipple-child-116",
-                                                        "childLeaving": "MuiTouchRipple-childLeaving-117",
-                                                        "childPulsate": "MuiTouchRipple-childPulsate-118",
-                                                        "ripple": "MuiTouchRipple-ripple-113",
-                                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate-115",
-                                                        "rippleVisible": "MuiTouchRipple-rippleVisible-114",
-                                                        "root": "MuiTouchRipple-root-112",
+                                                        "child": "MuiTouchRipple-child-139",
+                                                        "childLeaving": "MuiTouchRipple-childLeaving-140",
+                                                        "childPulsate": "MuiTouchRipple-childPulsate-141",
+                                                        "ripple": "MuiTouchRipple-ripple-136",
+                                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate-138",
+                                                        "rippleVisible": "MuiTouchRipple-rippleVisible-137",
+                                                        "root": "MuiTouchRipple-root-135",
                                                       }
                                                     }
                                                   >
                                                     <TransitionGroup
                                                       childFactory={[Function]}
-                                                      className="MuiTouchRipple-root-112"
+                                                      className="MuiTouchRipple-root-135"
                                                       component="span"
                                                       enter={true}
                                                       exit={true}
                                                     >
                                                       <span
-                                                        className="MuiTouchRipple-root-112"
+                                                        className="MuiTouchRipple-root-135"
                                                       />
                                                     </TransitionGroup>
                                                   </TouchRipple>
@@ -2299,7 +2292,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-jTzLTM",
+                "componentId": "sc-VigVT",
                 "isStatic": false,
                 "lastClassName": "c2",
                 "rules": Array [
@@ -2313,7 +2306,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
               "displayName": "styled.div",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-jTzLTM",
+              "styledComponentId": "sc-VigVT",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -2373,7 +2366,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-gzVnrw",
+                              "componentId": "sc-bZQynM",
                               "isStatic": true,
                               "lastClassName": "c3",
                               "rules": Array [
@@ -2385,7 +2378,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                             "displayName": "styled.div",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "sc-gzVnrw",
+                            "styledComponentId": "sc-bZQynM",
                             "target": "div",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -2404,7 +2397,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-htoDjs",
+                                    "componentId": "sc-gzVnrw",
                                     "isStatic": true,
                                     "lastClassName": "c4",
                                     "rules": Array [
@@ -2417,7 +2410,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                   "displayName": "styled.div",
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
-                                  "styledComponentId": "sc-htoDjs",
+                                  "styledComponentId": "sc-gzVnrw",
                                   "target": "div",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -2429,89 +2422,95 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                               <div
                                 className="c4"
                               >
-                                <Styled(IconImage)
-                                  src="/icon.png"
-                                >
+                                <styled.div>
                                   <StyledComponent
                                     forwardedComponent={
                                       Object {
                                         "$$typeof": Symbol(react.forward_ref),
                                         "attrs": Array [],
                                         "componentStyle": ComponentStyle {
-                                          "componentId": "sc-dnqmqq",
+                                          "componentId": "sc-htoDjs",
                                           "isStatic": true,
                                           "lastClassName": "c5",
                                           "rules": Array [
                                             "
+  float: left;
   margin-left: -58px;
+  position: absolute;
 ",
                                           ],
                                         },
-                                        "displayName": "Styled(IconImage)",
+                                        "displayName": "styled.div",
                                         "foldedComponentIds": Array [],
                                         "render": [Function],
-                                        "styledComponentId": "sc-dnqmqq",
-                                        "target": [Function],
+                                        "styledComponentId": "sc-htoDjs",
+                                        "target": "div",
                                         "toString": [Function],
                                         "warnTooManyClasses": [Function],
                                         "withComponent": [Function],
-                                        Symbol(Symbol.hasInstance): [Function],
                                       }
                                     }
                                     forwardedRef={null}
-                                    src="/icon.png"
                                   >
-                                    <IconImage
+                                    <div
                                       className="c5"
-                                      src="/icon.png"
                                     >
-                                      <styled.img
-                                        className="c5"
-                                        src="/icon.png"
+                                      <WithStyles(CharIcon)
+                                        name="テストユーザ"
                                       >
-                                        <StyledComponent
-                                          className="c5"
-                                          forwardedComponent={
+                                        <CharIcon
+                                          classes={
                                             Object {
-                                              "$$typeof": Symbol(react.forward_ref),
-                                              "attrs": Array [],
-                                              "componentStyle": ComponentStyle {
-                                                "componentId": "sc-bxivhb",
-                                                "isStatic": true,
-                                                "lastClassName": "c6",
-                                                "rules": Array [
-                                                  "
-  border-radius: 50%;
-  float: left;
-  height: 48px;
-  margin-top: 3px;
-  position: absolute;
-  width: 48px;
-",
-                                                ],
-                                              },
-                                              "displayName": "styled.img",
-                                              "foldedComponentIds": Array [],
-                                              "render": [Function],
-                                              "styledComponentId": "sc-bxivhb",
-                                              "target": "img",
-                                              "toString": [Function],
-                                              "warnTooManyClasses": [Function],
-                                              "withComponent": [Function],
+                                              "amber": "CharIcon-amber-109",
+                                              "avatar": "CharIcon-avatar-95",
+                                              "blue": "CharIcon-blue-101",
+                                              "blueGrey": "CharIcon-blueGrey-114",
+                                              "brown": "CharIcon-brown-112",
+                                              "cyan": "CharIcon-cyan-103",
+                                              "deepOrange": "CharIcon-deepOrange-111",
+                                              "deepPurple": "CharIcon-deepPurple-99",
+                                              "green": "CharIcon-green-105",
+                                              "grey": "CharIcon-grey-113",
+                                              "indigo": "CharIcon-indigo-100",
+                                              "lightBlue": "CharIcon-lightBlue-102",
+                                              "lightGreen": "CharIcon-lightGreen-106",
+                                              "lime": "CharIcon-lime-107",
+                                              "orange": "CharIcon-orange-110",
+                                              "pink": "CharIcon-pink-97",
+                                              "purple": "CharIcon-purple-98",
+                                              "red": "CharIcon-red-96",
+                                              "teal": "CharIcon-teal-104",
+                                              "yellow": "CharIcon-yellow-108",
                                             }
                                           }
-                                          forwardedRef={null}
-                                          src="/icon.png"
+                                          name="テストユーザ"
                                         >
-                                          <img
-                                            className="c5 c6"
-                                            src="/icon.png"
-                                          />
-                                        </StyledComponent>
-                                      </styled.img>
-                                    </IconImage>
+                                          <WithStyles(Avatar)
+                                            className="CharIcon-avatar-95 CharIcon-deepPurple-99"
+                                          >
+                                            <Avatar
+                                              className="CharIcon-avatar-95 CharIcon-deepPurple-99"
+                                              classes={
+                                                Object {
+                                                  "colorDefault": "MuiAvatar-colorDefault-116",
+                                                  "img": "MuiAvatar-img-117",
+                                                  "root": "MuiAvatar-root-115",
+                                                }
+                                              }
+                                              component="div"
+                                            >
+                                              <div
+                                                className="MuiAvatar-root-115 MuiAvatar-colorDefault-116 CharIcon-avatar-95 CharIcon-deepPurple-99"
+                                              >
+                                                テ
+                                              </div>
+                                            </Avatar>
+                                          </WithStyles(Avatar)>
+                                        </CharIcon>
+                                      </WithStyles(CharIcon)>
+                                    </div>
                                   </StyledComponent>
-                                </Styled(IconImage)>
+                                </styled.div>
                                 <TweetHeader
                                   name="テストユーザ"
                                   time="2018/01/01 12:34"
@@ -2526,15 +2525,15 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                           "$$typeof": Symbol(react.forward_ref),
                                           "attrs": Array [],
                                           "componentStyle": ComponentStyle {
-                                            "componentId": "sc-ifAKCX",
+                                            "componentId": "sc-bxivhb",
                                             "isStatic": true,
-                                            "lastClassName": "cFlEyZ",
+                                            "lastClassName": "bUZGRr",
                                             "rules": Array [],
                                           },
                                           "displayName": "styled.small",
                                           "foldedComponentIds": Array [],
                                           "render": [Function],
-                                          "styledComponentId": "sc-ifAKCX",
+                                          "styledComponentId": "sc-bxivhb",
                                           "target": "small",
                                           "toString": [Function],
                                           "warnTooManyClasses": [Function],
@@ -2561,9 +2560,9 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                           "$$typeof": Symbol(react.forward_ref),
                                           "attrs": Array [],
                                           "componentStyle": ComponentStyle {
-                                            "componentId": "sc-EHOje",
+                                            "componentId": "sc-ifAKCX",
                                             "isStatic": true,
-                                            "lastClassName": "c7",
+                                            "lastClassName": "c6",
                                             "rules": Array [
                                               "
   margin: 0;
@@ -2575,7 +2574,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                           "displayName": "styled.div",
                                           "foldedComponentIds": Array [],
                                           "render": [Function],
-                                          "styledComponentId": "sc-EHOje",
+                                          "styledComponentId": "sc-ifAKCX",
                                           "target": "div",
                                           "toString": [Function],
                                           "warnTooManyClasses": [Function],
@@ -2585,7 +2584,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                       forwardedRef={null}
                                     >
                                       <div
-                                        className="c7"
+                                        className="c6"
                                       >
                                         投稿内容
                                       </div>
@@ -2600,7 +2599,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                   <Component
                                     classes={
                                       Object {
-                                        "smallIcon": "Component-smallIcon-95",
+                                        "smallIcon": "Component-smallIcon-118",
                                       }
                                     }
                                     onClickLike={[Function]}
@@ -2614,9 +2613,9 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                             "$$typeof": Symbol(react.forward_ref),
                                             "attrs": Array [],
                                             "componentStyle": ComponentStyle {
-                                              "componentId": "sc-bZQynM",
+                                              "componentId": "sc-EHOje",
                                               "isStatic": true,
-                                              "lastClassName": "c8",
+                                              "lastClassName": "c7",
                                               "rules": Array [
                                                 "
   display: inline-block;
@@ -2628,7 +2627,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                             "displayName": "styled.div",
                                             "foldedComponentIds": Array [],
                                             "render": [Function],
-                                            "styledComponentId": "sc-bZQynM",
+                                            "styledComponentId": "sc-EHOje",
                                             "target": "div",
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
@@ -2638,14 +2637,14 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                         forwardedRef={null}
                                       >
                                         <div
-                                          className="c8"
+                                          className="c7"
                                         >
                                           <WithStyles(IconButton)
-                                            className="Component-smallIcon-95"
+                                            className="Component-smallIcon-118"
                                             onClick={[Function]}
                                           >
                                             <IconButton
-                                              className="Component-smallIcon-95"
+                                              className="Component-smallIcon-118"
                                               classes={
                                                 Object {
                                                   "colorInherit": "MuiIconButton-colorInherit-43",
@@ -2662,14 +2661,14 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                             >
                                               <WithStyles(ButtonBase)
                                                 centerRipple={true}
-                                                className="MuiIconButton-root-42 Component-smallIcon-95"
+                                                className="MuiIconButton-root-42 Component-smallIcon-118"
                                                 disabled={false}
                                                 focusRipple={true}
                                                 onClick={[Function]}
                                               >
                                                 <ButtonBase
                                                   centerRipple={true}
-                                                  className="MuiIconButton-root-42 Component-smallIcon-95"
+                                                  className="MuiIconButton-root-42 Component-smallIcon-118"
                                                   classes={
                                                     Object {
                                                       "disabled": "MuiButtonBase-disabled-49",
@@ -2687,7 +2686,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                                   type="button"
                                                 >
                                                   <button
-                                                    className="MuiButtonBase-root-48 MuiIconButton-root-42 Component-smallIcon-95"
+                                                    className="MuiButtonBase-root-48 MuiIconButton-root-42 Component-smallIcon-118"
                                                     disabled={false}
                                                     onBlur={[Function]}
                                                     onClick={[Function]}
@@ -2772,25 +2771,25 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                                           center={true}
                                                           classes={
                                                             Object {
-                                                              "child": "MuiTouchRipple-child-116",
-                                                              "childLeaving": "MuiTouchRipple-childLeaving-117",
-                                                              "childPulsate": "MuiTouchRipple-childPulsate-118",
-                                                              "ripple": "MuiTouchRipple-ripple-113",
-                                                              "ripplePulsate": "MuiTouchRipple-ripplePulsate-115",
-                                                              "rippleVisible": "MuiTouchRipple-rippleVisible-114",
-                                                              "root": "MuiTouchRipple-root-112",
+                                                              "child": "MuiTouchRipple-child-139",
+                                                              "childLeaving": "MuiTouchRipple-childLeaving-140",
+                                                              "childPulsate": "MuiTouchRipple-childPulsate-141",
+                                                              "ripple": "MuiTouchRipple-ripple-136",
+                                                              "ripplePulsate": "MuiTouchRipple-ripplePulsate-138",
+                                                              "rippleVisible": "MuiTouchRipple-rippleVisible-137",
+                                                              "root": "MuiTouchRipple-root-135",
                                                             }
                                                           }
                                                         >
                                                           <TransitionGroup
                                                             childFactory={[Function]}
-                                                            className="MuiTouchRipple-root-112"
+                                                            className="MuiTouchRipple-root-135"
                                                             component="span"
                                                             enter={true}
                                                             exit={true}
                                                           >
                                                             <span
-                                                              className="MuiTouchRipple-root-112"
+                                                              className="MuiTouchRipple-root-135"
                                                             />
                                                           </TransitionGroup>
                                                         </TouchRipple>
@@ -2811,9 +2810,9 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                             "$$typeof": Symbol(react.forward_ref),
                                             "attrs": Array [],
                                             "componentStyle": ComponentStyle {
-                                              "componentId": "sc-bZQynM",
+                                              "componentId": "sc-EHOje",
                                               "isStatic": true,
-                                              "lastClassName": "c8",
+                                              "lastClassName": "c7",
                                               "rules": Array [
                                                 "
   display: inline-block;
@@ -2825,7 +2824,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                             "displayName": "styled.div",
                                             "foldedComponentIds": Array [],
                                             "render": [Function],
-                                            "styledComponentId": "sc-bZQynM",
+                                            "styledComponentId": "sc-EHOje",
                                             "target": "div",
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
@@ -2835,14 +2834,14 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                         forwardedRef={null}
                                       >
                                         <div
-                                          className="c8"
+                                          className="c7"
                                         >
                                           <WithStyles(IconButton)
-                                            className="Component-smallIcon-95"
+                                            className="Component-smallIcon-118"
                                             onClick={[Function]}
                                           >
                                             <IconButton
-                                              className="Component-smallIcon-95"
+                                              className="Component-smallIcon-118"
                                               classes={
                                                 Object {
                                                   "colorInherit": "MuiIconButton-colorInherit-43",
@@ -2859,14 +2858,14 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                             >
                                               <WithStyles(ButtonBase)
                                                 centerRipple={true}
-                                                className="MuiIconButton-root-42 Component-smallIcon-95"
+                                                className="MuiIconButton-root-42 Component-smallIcon-118"
                                                 disabled={false}
                                                 focusRipple={true}
                                                 onClick={[Function]}
                                               >
                                                 <ButtonBase
                                                   centerRipple={true}
-                                                  className="MuiIconButton-root-42 Component-smallIcon-95"
+                                                  className="MuiIconButton-root-42 Component-smallIcon-118"
                                                   classes={
                                                     Object {
                                                       "disabled": "MuiButtonBase-disabled-49",
@@ -2884,7 +2883,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                                   type="button"
                                                 >
                                                   <button
-                                                    className="MuiButtonBase-root-48 MuiIconButton-root-42 Component-smallIcon-95"
+                                                    className="MuiButtonBase-root-48 MuiIconButton-root-42 Component-smallIcon-118"
                                                     disabled={false}
                                                     onBlur={[Function]}
                                                     onClick={[Function]}
@@ -2963,25 +2962,25 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                                           center={true}
                                                           classes={
                                                             Object {
-                                                              "child": "MuiTouchRipple-child-116",
-                                                              "childLeaving": "MuiTouchRipple-childLeaving-117",
-                                                              "childPulsate": "MuiTouchRipple-childPulsate-118",
-                                                              "ripple": "MuiTouchRipple-ripple-113",
-                                                              "ripplePulsate": "MuiTouchRipple-ripplePulsate-115",
-                                                              "rippleVisible": "MuiTouchRipple-rippleVisible-114",
-                                                              "root": "MuiTouchRipple-root-112",
+                                                              "child": "MuiTouchRipple-child-139",
+                                                              "childLeaving": "MuiTouchRipple-childLeaving-140",
+                                                              "childPulsate": "MuiTouchRipple-childPulsate-141",
+                                                              "ripple": "MuiTouchRipple-ripple-136",
+                                                              "ripplePulsate": "MuiTouchRipple-ripplePulsate-138",
+                                                              "rippleVisible": "MuiTouchRipple-rippleVisible-137",
+                                                              "root": "MuiTouchRipple-root-135",
                                                             }
                                                           }
                                                         >
                                                           <TransitionGroup
                                                             childFactory={[Function]}
-                                                            className="MuiTouchRipple-root-112"
+                                                            className="MuiTouchRipple-root-135"
                                                             component="span"
                                                             enter={true}
                                                             exit={true}
                                                           >
                                                             <span
-                                                              className="MuiTouchRipple-root-112"
+                                                              className="MuiTouchRipple-root-135"
                                                             />
                                                           </TransitionGroup>
                                                         </TouchRipple>
@@ -3002,9 +3001,9 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                             "$$typeof": Symbol(react.forward_ref),
                                             "attrs": Array [],
                                             "componentStyle": ComponentStyle {
-                                              "componentId": "sc-bZQynM",
+                                              "componentId": "sc-EHOje",
                                               "isStatic": true,
-                                              "lastClassName": "c8",
+                                              "lastClassName": "c7",
                                               "rules": Array [
                                                 "
   display: inline-block;
@@ -3016,7 +3015,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                             "displayName": "styled.div",
                                             "foldedComponentIds": Array [],
                                             "render": [Function],
-                                            "styledComponentId": "sc-bZQynM",
+                                            "styledComponentId": "sc-EHOje",
                                             "target": "div",
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
@@ -3026,14 +3025,14 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                         forwardedRef={null}
                                       >
                                         <div
-                                          className="c8"
+                                          className="c7"
                                         >
                                           <WithStyles(IconButton)
-                                            className="Component-smallIcon-95"
+                                            className="Component-smallIcon-118"
                                             onClick={[Function]}
                                           >
                                             <IconButton
-                                              className="Component-smallIcon-95"
+                                              className="Component-smallIcon-118"
                                               classes={
                                                 Object {
                                                   "colorInherit": "MuiIconButton-colorInherit-43",
@@ -3050,14 +3049,14 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                             >
                                               <WithStyles(ButtonBase)
                                                 centerRipple={true}
-                                                className="MuiIconButton-root-42 Component-smallIcon-95"
+                                                className="MuiIconButton-root-42 Component-smallIcon-118"
                                                 disabled={false}
                                                 focusRipple={true}
                                                 onClick={[Function]}
                                               >
                                                 <ButtonBase
                                                   centerRipple={true}
-                                                  className="MuiIconButton-root-42 Component-smallIcon-95"
+                                                  className="MuiIconButton-root-42 Component-smallIcon-118"
                                                   classes={
                                                     Object {
                                                       "disabled": "MuiButtonBase-disabled-49",
@@ -3075,7 +3074,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                                   type="button"
                                                 >
                                                   <button
-                                                    className="MuiButtonBase-root-48 MuiIconButton-root-42 Component-smallIcon-95"
+                                                    className="MuiButtonBase-root-48 MuiIconButton-root-42 Component-smallIcon-118"
                                                     disabled={false}
                                                     onBlur={[Function]}
                                                     onClick={[Function]}
@@ -3158,25 +3157,25 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                                           center={true}
                                                           classes={
                                                             Object {
-                                                              "child": "MuiTouchRipple-child-116",
-                                                              "childLeaving": "MuiTouchRipple-childLeaving-117",
-                                                              "childPulsate": "MuiTouchRipple-childPulsate-118",
-                                                              "ripple": "MuiTouchRipple-ripple-113",
-                                                              "ripplePulsate": "MuiTouchRipple-ripplePulsate-115",
-                                                              "rippleVisible": "MuiTouchRipple-rippleVisible-114",
-                                                              "root": "MuiTouchRipple-root-112",
+                                                              "child": "MuiTouchRipple-child-139",
+                                                              "childLeaving": "MuiTouchRipple-childLeaving-140",
+                                                              "childPulsate": "MuiTouchRipple-childPulsate-141",
+                                                              "ripple": "MuiTouchRipple-ripple-136",
+                                                              "ripplePulsate": "MuiTouchRipple-ripplePulsate-138",
+                                                              "rippleVisible": "MuiTouchRipple-rippleVisible-137",
+                                                              "root": "MuiTouchRipple-root-135",
                                                             }
                                                           }
                                                         >
                                                           <TransitionGroup
                                                             childFactory={[Function]}
-                                                            className="MuiTouchRipple-root-112"
+                                                            className="MuiTouchRipple-root-135"
                                                             component="span"
                                                             enter={true}
                                                             exit={true}
                                                           >
                                                             <span
-                                                              className="MuiTouchRipple-root-112"
+                                                              className="MuiTouchRipple-root-135"
                                                             />
                                                           </TransitionGroup>
                                                         </TouchRipple>
@@ -3205,11 +3204,11 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                         absolute={false}
                         classes={
                           Object {
-                            "absolute": "MuiDivider-absolute-97",
-                            "inset": "MuiDivider-inset-98",
-                            "light": "MuiDivider-light-99",
-                            "middle": "MuiDivider-middle-100",
-                            "root": "MuiDivider-root-96",
+                            "absolute": "MuiDivider-absolute-120",
+                            "inset": "MuiDivider-inset-121",
+                            "light": "MuiDivider-light-122",
+                            "middle": "MuiDivider-middle-123",
+                            "root": "MuiDivider-root-119",
                           }
                         }
                         component="hr"
@@ -3217,7 +3216,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                         variant="fullWidth"
                       >
                         <hr
-                          className="MuiDivider-root-96 MuiDivider-light-99"
+                          className="MuiDivider-root-119 MuiDivider-light-122"
                         />
                       </Divider>
                     </WithStyles(Divider)>
@@ -3232,7 +3231,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
               <FloatingButton
                 classes={
                   Object {
-                    "fab": "FloatingButton-fab-101",
+                    "fab": "FloatingButton-fab-124",
                   }
                 }
                 icon="edit"
@@ -3601,24 +3600,24 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                 }
               >
                 <WithStyles(Fab)
-                  className="FloatingButton-fab-101"
+                  className="FloatingButton-fab-124"
                   color="primary"
                   onClick={[Function]}
                 >
                   <Fab
-                    className="FloatingButton-fab-101"
+                    className="FloatingButton-fab-124"
                     classes={
                       Object {
-                        "colorInherit": "MuiFab-colorInherit-109",
-                        "disabled": "MuiFab-disabled-108",
-                        "extended": "MuiFab-extended-106",
-                        "focusVisible": "MuiFab-focusVisible-107",
-                        "label": "MuiFab-label-103",
-                        "primary": "MuiFab-primary-104",
-                        "root": "MuiFab-root-102",
-                        "secondary": "MuiFab-secondary-105",
-                        "sizeMedium": "MuiFab-sizeMedium-111",
-                        "sizeSmall": "MuiFab-sizeSmall-110",
+                        "colorInherit": "MuiFab-colorInherit-132",
+                        "disabled": "MuiFab-disabled-131",
+                        "extended": "MuiFab-extended-129",
+                        "focusVisible": "MuiFab-focusVisible-130",
+                        "label": "MuiFab-label-126",
+                        "primary": "MuiFab-primary-127",
+                        "root": "MuiFab-root-125",
+                        "secondary": "MuiFab-secondary-128",
+                        "sizeMedium": "MuiFab-sizeMedium-134",
+                        "sizeSmall": "MuiFab-sizeSmall-133",
                       }
                     }
                     color="primary"
@@ -3631,17 +3630,17 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                     variant="round"
                   >
                     <WithStyles(ButtonBase)
-                      className="MuiFab-root-102 MuiFab-primary-104 FloatingButton-fab-101"
+                      className="MuiFab-root-125 MuiFab-primary-127 FloatingButton-fab-124"
                       component="button"
                       disabled={false}
                       focusRipple={true}
-                      focusVisibleClassName="MuiFab-focusVisible-107"
+                      focusVisibleClassName="MuiFab-focusVisible-130"
                       onClick={[Function]}
                       type="button"
                     >
                       <ButtonBase
                         centerRipple={false}
-                        className="MuiFab-root-102 MuiFab-primary-104 FloatingButton-fab-101"
+                        className="MuiFab-root-125 MuiFab-primary-127 FloatingButton-fab-124"
                         classes={
                           Object {
                             "disabled": "MuiButtonBase-disabled-49",
@@ -3654,13 +3653,13 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                         disableTouchRipple={false}
                         disabled={false}
                         focusRipple={true}
-                        focusVisibleClassName="MuiFab-focusVisible-107"
+                        focusVisibleClassName="MuiFab-focusVisible-130"
                         onClick={[Function]}
                         tabIndex="0"
                         type="button"
                       >
                         <button
-                          className="MuiButtonBase-root-48 MuiFab-root-102 MuiFab-primary-104 FloatingButton-fab-101"
+                          className="MuiButtonBase-root-48 MuiFab-root-125 MuiFab-primary-127 FloatingButton-fab-124"
                           disabled={false}
                           onBlur={[Function]}
                           onClick={[Function]}
@@ -3678,7 +3677,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                           type="button"
                         >
                           <span
-                            className="MuiFab-label-103"
+                            className="MuiFab-label-126"
                           >
                             <pure(EditIcon)>
                               <EditIcon>
@@ -3734,25 +3733,25 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                 center={false}
                                 classes={
                                   Object {
-                                    "child": "MuiTouchRipple-child-116",
-                                    "childLeaving": "MuiTouchRipple-childLeaving-117",
-                                    "childPulsate": "MuiTouchRipple-childPulsate-118",
-                                    "ripple": "MuiTouchRipple-ripple-113",
-                                    "ripplePulsate": "MuiTouchRipple-ripplePulsate-115",
-                                    "rippleVisible": "MuiTouchRipple-rippleVisible-114",
-                                    "root": "MuiTouchRipple-root-112",
+                                    "child": "MuiTouchRipple-child-139",
+                                    "childLeaving": "MuiTouchRipple-childLeaving-140",
+                                    "childPulsate": "MuiTouchRipple-childPulsate-141",
+                                    "ripple": "MuiTouchRipple-ripple-136",
+                                    "ripplePulsate": "MuiTouchRipple-ripplePulsate-138",
+                                    "rippleVisible": "MuiTouchRipple-rippleVisible-137",
+                                    "root": "MuiTouchRipple-root-135",
                                   }
                                 }
                               >
                                 <TransitionGroup
                                   childFactory={[Function]}
-                                  className="MuiTouchRipple-root-112"
+                                  className="MuiTouchRipple-root-135"
                                   component="span"
                                   enter={true}
                                   exit={true}
                                 >
                                   <span
-                                    className="MuiTouchRipple-root-112"
+                                    className="MuiTouchRipple-root-135"
                                   />
                                 </TransitionGroup>
                               </TouchRipple>

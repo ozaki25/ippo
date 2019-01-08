@@ -2,21 +2,12 @@
 
 exports[`should match snapshot: Tweet/nomal 1`] = `
 .c3 {
-  border-radius: 50%;
-  float: left;
-  height: 48px;
-  margin-top: 3px;
-  position: absolute;
-  width: 48px;
-}
-
-.c4 {
   margin: 0;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 
-.c5 {
+.c4 {
   display: inline-block;
   margin: 4px 0;
   min-width: 78px;
@@ -32,7 +23,9 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
 }
 
 .c2 {
+  float: left;
   margin-left: -58px;
+  position: absolute;
 }
 
 <MockRouter
@@ -61,7 +54,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bZQynM",
+              "componentId": "sc-EHOje",
               "isStatic": true,
               "lastClassName": "c0",
               "rules": Array [
@@ -73,7 +66,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
             "displayName": "styled.div",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bZQynM",
+            "styledComponentId": "sc-EHOje",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -92,7 +85,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-gzVnrw",
+                    "componentId": "sc-bZQynM",
                     "isStatic": true,
                     "lastClassName": "c1",
                     "rules": Array [
@@ -105,7 +98,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                   "displayName": "styled.div",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-gzVnrw",
+                  "styledComponentId": "sc-bZQynM",
                   "target": "div",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -117,89 +110,95 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
               <div
                 className="c1"
               >
-                <Styled(IconImage)
-                  src="/icon.png"
-                >
+                <styled.div>
                   <StyledComponent
                     forwardedComponent={
                       Object {
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "sc-htoDjs",
+                          "componentId": "sc-gzVnrw",
                           "isStatic": true,
                           "lastClassName": "c2",
                           "rules": Array [
                             "
+  float: left;
   margin-left: -58px;
+  position: absolute;
 ",
                           ],
                         },
-                        "displayName": "Styled(IconImage)",
+                        "displayName": "styled.div",
                         "foldedComponentIds": Array [],
                         "render": [Function],
-                        "styledComponentId": "sc-htoDjs",
-                        "target": [Function],
+                        "styledComponentId": "sc-gzVnrw",
+                        "target": "div",
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
                         "withComponent": [Function],
-                        Symbol(Symbol.hasInstance): [Function],
                       }
                     }
                     forwardedRef={null}
-                    src="/icon.png"
                   >
-                    <IconImage
+                    <div
                       className="c2"
-                      src="/icon.png"
                     >
-                      <styled.img
-                        className="c2"
-                        src="/icon.png"
+                      <WithStyles(CharIcon)
+                        name="ozaki25"
                       >
-                        <StyledComponent
-                          className="c2"
-                          forwardedComponent={
+                        <CharIcon
+                          classes={
                             Object {
-                              "$$typeof": Symbol(react.forward_ref),
-                              "attrs": Array [],
-                              "componentStyle": ComponentStyle {
-                                "componentId": "sc-htpNat",
-                                "isStatic": true,
-                                "lastClassName": "c3",
-                                "rules": Array [
-                                  "
-  border-radius: 50%;
-  float: left;
-  height: 48px;
-  margin-top: 3px;
-  position: absolute;
-  width: 48px;
-",
-                                ],
-                              },
-                              "displayName": "styled.img",
-                              "foldedComponentIds": Array [],
-                              "render": [Function],
-                              "styledComponentId": "sc-htpNat",
-                              "target": "img",
-                              "toString": [Function],
-                              "warnTooManyClasses": [Function],
-                              "withComponent": [Function],
+                              "amber": "CharIcon-amber-15",
+                              "avatar": "CharIcon-avatar-1",
+                              "blue": "CharIcon-blue-7",
+                              "blueGrey": "CharIcon-blueGrey-20",
+                              "brown": "CharIcon-brown-18",
+                              "cyan": "CharIcon-cyan-9",
+                              "deepOrange": "CharIcon-deepOrange-17",
+                              "deepPurple": "CharIcon-deepPurple-5",
+                              "green": "CharIcon-green-11",
+                              "grey": "CharIcon-grey-19",
+                              "indigo": "CharIcon-indigo-6",
+                              "lightBlue": "CharIcon-lightBlue-8",
+                              "lightGreen": "CharIcon-lightGreen-12",
+                              "lime": "CharIcon-lime-13",
+                              "orange": "CharIcon-orange-16",
+                              "pink": "CharIcon-pink-3",
+                              "purple": "CharIcon-purple-4",
+                              "red": "CharIcon-red-2",
+                              "teal": "CharIcon-teal-10",
+                              "yellow": "CharIcon-yellow-14",
                             }
                           }
-                          forwardedRef={null}
-                          src="/icon.png"
+                          name="ozaki25"
                         >
-                          <img
-                            className="c2 c3"
-                            src="/icon.png"
-                          />
-                        </StyledComponent>
-                      </styled.img>
-                    </IconImage>
+                          <WithStyles(Avatar)
+                            className="CharIcon-avatar-1 CharIcon-brown-18"
+                          >
+                            <Avatar
+                              className="CharIcon-avatar-1 CharIcon-brown-18"
+                              classes={
+                                Object {
+                                  "colorDefault": "MuiAvatar-colorDefault-22",
+                                  "img": "MuiAvatar-img-23",
+                                  "root": "MuiAvatar-root-21",
+                                }
+                              }
+                              component="div"
+                            >
+                              <div
+                                className="MuiAvatar-root-21 MuiAvatar-colorDefault-22 CharIcon-avatar-1 CharIcon-brown-18"
+                              >
+                                o
+                              </div>
+                            </Avatar>
+                          </WithStyles(Avatar)>
+                        </CharIcon>
+                      </WithStyles(CharIcon)>
+                    </div>
                   </StyledComponent>
-                </Styled(IconImage)>
+                </styled.div>
                 <TweetHeader
                   name="ozaki25"
                   time="12月10日"
@@ -214,15 +213,15 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-bxivhb",
+                            "componentId": "sc-htpNat",
                             "isStatic": true,
-                            "lastClassName": "bUZGRr",
+                            "lastClassName": "KtFsv",
                             "rules": Array [],
                           },
                           "displayName": "styled.small",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-bxivhb",
+                          "styledComponentId": "sc-htpNat",
                           "target": "small",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -253,9 +252,9 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-ifAKCX",
+                            "componentId": "sc-bxivhb",
                             "isStatic": true,
-                            "lastClassName": "c4",
+                            "lastClassName": "c3",
                             "rules": Array [
                               "
   margin: 0;
@@ -267,7 +266,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                           "displayName": "styled.div",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-ifAKCX",
+                          "styledComponentId": "sc-bxivhb",
                           "target": "div",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -277,7 +276,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                       forwardedRef={null}
                     >
                       <div
-                        className="c4"
+                        className="c3"
                       >
                         Storybookいいところ
   - どんなコンポーネントが存在してるか可視化できる
@@ -296,7 +295,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                   <Component
                     classes={
                       Object {
-                        "smallIcon": "Component-smallIcon-1",
+                        "smallIcon": "Component-smallIcon-24",
                       }
                     }
                     onClickLike={[Function]}
@@ -310,9 +309,9 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-EHOje",
+                              "componentId": "sc-ifAKCX",
                               "isStatic": true,
-                              "lastClassName": "c5",
+                              "lastClassName": "c4",
                               "rules": Array [
                                 "
   display: inline-block;
@@ -324,7 +323,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                             "displayName": "styled.div",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "sc-EHOje",
+                            "styledComponentId": "sc-ifAKCX",
                             "target": "div",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -334,22 +333,22 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                         forwardedRef={null}
                       >
                         <div
-                          className="c5"
+                          className="c4"
                         >
                           <WithStyles(IconButton)
-                            className="Component-smallIcon-1"
+                            className="Component-smallIcon-24"
                             onClick={[Function]}
                           >
                             <IconButton
-                              className="Component-smallIcon-1"
+                              className="Component-smallIcon-24"
                               classes={
                                 Object {
-                                  "colorInherit": "MuiIconButton-colorInherit-3",
-                                  "colorPrimary": "MuiIconButton-colorPrimary-4",
-                                  "colorSecondary": "MuiIconButton-colorSecondary-5",
-                                  "disabled": "MuiIconButton-disabled-6",
-                                  "label": "MuiIconButton-label-7",
-                                  "root": "MuiIconButton-root-2",
+                                  "colorInherit": "MuiIconButton-colorInherit-26",
+                                  "colorPrimary": "MuiIconButton-colorPrimary-27",
+                                  "colorSecondary": "MuiIconButton-colorSecondary-28",
+                                  "disabled": "MuiIconButton-disabled-29",
+                                  "label": "MuiIconButton-label-30",
+                                  "root": "MuiIconButton-root-25",
                                 }
                               }
                               color="default"
@@ -358,19 +357,19 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                             >
                               <WithStyles(ButtonBase)
                                 centerRipple={true}
-                                className="MuiIconButton-root-2 Component-smallIcon-1"
+                                className="MuiIconButton-root-25 Component-smallIcon-24"
                                 disabled={false}
                                 focusRipple={true}
                                 onClick={[Function]}
                               >
                                 <ButtonBase
                                   centerRipple={true}
-                                  className="MuiIconButton-root-2 Component-smallIcon-1"
+                                  className="MuiIconButton-root-25 Component-smallIcon-24"
                                   classes={
                                     Object {
-                                      "disabled": "MuiButtonBase-disabled-9",
-                                      "focusVisible": "MuiButtonBase-focusVisible-10",
-                                      "root": "MuiButtonBase-root-8",
+                                      "disabled": "MuiButtonBase-disabled-32",
+                                      "focusVisible": "MuiButtonBase-focusVisible-33",
+                                      "root": "MuiButtonBase-root-31",
                                     }
                                   }
                                   component="button"
@@ -383,7 +382,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                                   type="button"
                                 >
                                   <button
-                                    className="MuiButtonBase-root-8 MuiIconButton-root-2 Component-smallIcon-1"
+                                    className="MuiButtonBase-root-31 MuiIconButton-root-25 Component-smallIcon-24"
                                     disabled={false}
                                     onBlur={[Function]}
                                     onClick={[Function]}
@@ -401,7 +400,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                                     type="button"
                                   >
                                     <span
-                                      className="MuiIconButton-label-7"
+                                      className="MuiIconButton-label-30"
                                     >
                                       <pure(ModeCommentOutlinedIcon)
                                         color="action"
@@ -418,15 +417,15 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                                             <SvgIcon
                                               classes={
                                                 Object {
-                                                  "colorAction": "MuiSvgIcon-colorAction-14",
-                                                  "colorDisabled": "MuiSvgIcon-colorDisabled-16",
-                                                  "colorError": "MuiSvgIcon-colorError-15",
-                                                  "colorPrimary": "MuiSvgIcon-colorPrimary-12",
-                                                  "colorSecondary": "MuiSvgIcon-colorSecondary-13",
-                                                  "fontSizeInherit": "MuiSvgIcon-fontSizeInherit-17",
-                                                  "fontSizeLarge": "MuiSvgIcon-fontSizeLarge-19",
-                                                  "fontSizeSmall": "MuiSvgIcon-fontSizeSmall-18",
-                                                  "root": "MuiSvgIcon-root-11",
+                                                  "colorAction": "MuiSvgIcon-colorAction-37",
+                                                  "colorDisabled": "MuiSvgIcon-colorDisabled-39",
+                                                  "colorError": "MuiSvgIcon-colorError-38",
+                                                  "colorPrimary": "MuiSvgIcon-colorPrimary-35",
+                                                  "colorSecondary": "MuiSvgIcon-colorSecondary-36",
+                                                  "fontSizeInherit": "MuiSvgIcon-fontSizeInherit-40",
+                                                  "fontSizeLarge": "MuiSvgIcon-fontSizeLarge-42",
+                                                  "fontSizeSmall": "MuiSvgIcon-fontSizeSmall-41",
+                                                  "root": "MuiSvgIcon-root-34",
                                                 }
                                               }
                                               color="action"
@@ -436,7 +435,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                                             >
                                               <svg
                                                 aria-hidden="true"
-                                                className="MuiSvgIcon-root-11 MuiSvgIcon-colorAction-14 MuiSvgIcon-fontSizeInherit-17"
+                                                className="MuiSvgIcon-root-34 MuiSvgIcon-colorAction-37 MuiSvgIcon-fontSizeInherit-40"
                                                 focusable="false"
                                                 role="presentation"
                                                 viewBox="0 0 24 24"
@@ -468,25 +467,25 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                                           center={true}
                                           classes={
                                             Object {
-                                              "child": "MuiTouchRipple-child-29",
-                                              "childLeaving": "MuiTouchRipple-childLeaving-30",
-                                              "childPulsate": "MuiTouchRipple-childPulsate-31",
-                                              "ripple": "MuiTouchRipple-ripple-26",
-                                              "ripplePulsate": "MuiTouchRipple-ripplePulsate-28",
-                                              "rippleVisible": "MuiTouchRipple-rippleVisible-27",
-                                              "root": "MuiTouchRipple-root-25",
+                                              "child": "MuiTouchRipple-child-52",
+                                              "childLeaving": "MuiTouchRipple-childLeaving-53",
+                                              "childPulsate": "MuiTouchRipple-childPulsate-54",
+                                              "ripple": "MuiTouchRipple-ripple-49",
+                                              "ripplePulsate": "MuiTouchRipple-ripplePulsate-51",
+                                              "rippleVisible": "MuiTouchRipple-rippleVisible-50",
+                                              "root": "MuiTouchRipple-root-48",
                                             }
                                           }
                                         >
                                           <TransitionGroup
                                             childFactory={[Function]}
-                                            className="MuiTouchRipple-root-25"
+                                            className="MuiTouchRipple-root-48"
                                             component="span"
                                             enter={true}
                                             exit={true}
                                           >
                                             <span
-                                              className="MuiTouchRipple-root-25"
+                                              className="MuiTouchRipple-root-48"
                                             />
                                           </TransitionGroup>
                                         </TouchRipple>
@@ -507,9 +506,9 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-EHOje",
+                              "componentId": "sc-ifAKCX",
                               "isStatic": true,
-                              "lastClassName": "c5",
+                              "lastClassName": "c4",
                               "rules": Array [
                                 "
   display: inline-block;
@@ -521,7 +520,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                             "displayName": "styled.div",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "sc-EHOje",
+                            "styledComponentId": "sc-ifAKCX",
                             "target": "div",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -531,22 +530,22 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                         forwardedRef={null}
                       >
                         <div
-                          className="c5"
+                          className="c4"
                         >
                           <WithStyles(IconButton)
-                            className="Component-smallIcon-1"
+                            className="Component-smallIcon-24"
                             onClick={[Function]}
                           >
                             <IconButton
-                              className="Component-smallIcon-1"
+                              className="Component-smallIcon-24"
                               classes={
                                 Object {
-                                  "colorInherit": "MuiIconButton-colorInherit-3",
-                                  "colorPrimary": "MuiIconButton-colorPrimary-4",
-                                  "colorSecondary": "MuiIconButton-colorSecondary-5",
-                                  "disabled": "MuiIconButton-disabled-6",
-                                  "label": "MuiIconButton-label-7",
-                                  "root": "MuiIconButton-root-2",
+                                  "colorInherit": "MuiIconButton-colorInherit-26",
+                                  "colorPrimary": "MuiIconButton-colorPrimary-27",
+                                  "colorSecondary": "MuiIconButton-colorSecondary-28",
+                                  "disabled": "MuiIconButton-disabled-29",
+                                  "label": "MuiIconButton-label-30",
+                                  "root": "MuiIconButton-root-25",
                                 }
                               }
                               color="default"
@@ -555,19 +554,19 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                             >
                               <WithStyles(ButtonBase)
                                 centerRipple={true}
-                                className="MuiIconButton-root-2 Component-smallIcon-1"
+                                className="MuiIconButton-root-25 Component-smallIcon-24"
                                 disabled={false}
                                 focusRipple={true}
                                 onClick={[Function]}
                               >
                                 <ButtonBase
                                   centerRipple={true}
-                                  className="MuiIconButton-root-2 Component-smallIcon-1"
+                                  className="MuiIconButton-root-25 Component-smallIcon-24"
                                   classes={
                                     Object {
-                                      "disabled": "MuiButtonBase-disabled-9",
-                                      "focusVisible": "MuiButtonBase-focusVisible-10",
-                                      "root": "MuiButtonBase-root-8",
+                                      "disabled": "MuiButtonBase-disabled-32",
+                                      "focusVisible": "MuiButtonBase-focusVisible-33",
+                                      "root": "MuiButtonBase-root-31",
                                     }
                                   }
                                   component="button"
@@ -580,7 +579,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                                   type="button"
                                 >
                                   <button
-                                    className="MuiButtonBase-root-8 MuiIconButton-root-2 Component-smallIcon-1"
+                                    className="MuiButtonBase-root-31 MuiIconButton-root-25 Component-smallIcon-24"
                                     disabled={false}
                                     onBlur={[Function]}
                                     onClick={[Function]}
@@ -598,7 +597,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                                     type="button"
                                   >
                                     <span
-                                      className="MuiIconButton-label-7"
+                                      className="MuiIconButton-label-30"
                                     >
                                       <pure(RepeatRoundedIcon)
                                         color="action"
@@ -615,15 +614,15 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                                             <SvgIcon
                                               classes={
                                                 Object {
-                                                  "colorAction": "MuiSvgIcon-colorAction-14",
-                                                  "colorDisabled": "MuiSvgIcon-colorDisabled-16",
-                                                  "colorError": "MuiSvgIcon-colorError-15",
-                                                  "colorPrimary": "MuiSvgIcon-colorPrimary-12",
-                                                  "colorSecondary": "MuiSvgIcon-colorSecondary-13",
-                                                  "fontSizeInherit": "MuiSvgIcon-fontSizeInherit-17",
-                                                  "fontSizeLarge": "MuiSvgIcon-fontSizeLarge-19",
-                                                  "fontSizeSmall": "MuiSvgIcon-fontSizeSmall-18",
-                                                  "root": "MuiSvgIcon-root-11",
+                                                  "colorAction": "MuiSvgIcon-colorAction-37",
+                                                  "colorDisabled": "MuiSvgIcon-colorDisabled-39",
+                                                  "colorError": "MuiSvgIcon-colorError-38",
+                                                  "colorPrimary": "MuiSvgIcon-colorPrimary-35",
+                                                  "colorSecondary": "MuiSvgIcon-colorSecondary-36",
+                                                  "fontSizeInherit": "MuiSvgIcon-fontSizeInherit-40",
+                                                  "fontSizeLarge": "MuiSvgIcon-fontSizeLarge-42",
+                                                  "fontSizeSmall": "MuiSvgIcon-fontSizeSmall-41",
+                                                  "root": "MuiSvgIcon-root-34",
                                                 }
                                               }
                                               color="action"
@@ -633,7 +632,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                                             >
                                               <svg
                                                 aria-hidden="true"
-                                                className="MuiSvgIcon-root-11 MuiSvgIcon-colorAction-14 MuiSvgIcon-fontSizeInherit-17"
+                                                className="MuiSvgIcon-root-34 MuiSvgIcon-colorAction-37 MuiSvgIcon-fontSizeInherit-40"
                                                 focusable="false"
                                                 role="presentation"
                                                 viewBox="0 0 24 24"
@@ -659,25 +658,25 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                                           center={true}
                                           classes={
                                             Object {
-                                              "child": "MuiTouchRipple-child-29",
-                                              "childLeaving": "MuiTouchRipple-childLeaving-30",
-                                              "childPulsate": "MuiTouchRipple-childPulsate-31",
-                                              "ripple": "MuiTouchRipple-ripple-26",
-                                              "ripplePulsate": "MuiTouchRipple-ripplePulsate-28",
-                                              "rippleVisible": "MuiTouchRipple-rippleVisible-27",
-                                              "root": "MuiTouchRipple-root-25",
+                                              "child": "MuiTouchRipple-child-52",
+                                              "childLeaving": "MuiTouchRipple-childLeaving-53",
+                                              "childPulsate": "MuiTouchRipple-childPulsate-54",
+                                              "ripple": "MuiTouchRipple-ripple-49",
+                                              "ripplePulsate": "MuiTouchRipple-ripplePulsate-51",
+                                              "rippleVisible": "MuiTouchRipple-rippleVisible-50",
+                                              "root": "MuiTouchRipple-root-48",
                                             }
                                           }
                                         >
                                           <TransitionGroup
                                             childFactory={[Function]}
-                                            className="MuiTouchRipple-root-25"
+                                            className="MuiTouchRipple-root-48"
                                             component="span"
                                             enter={true}
                                             exit={true}
                                           >
                                             <span
-                                              className="MuiTouchRipple-root-25"
+                                              className="MuiTouchRipple-root-48"
                                             />
                                           </TransitionGroup>
                                         </TouchRipple>
@@ -698,9 +697,9 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-EHOje",
+                              "componentId": "sc-ifAKCX",
                               "isStatic": true,
-                              "lastClassName": "c5",
+                              "lastClassName": "c4",
                               "rules": Array [
                                 "
   display: inline-block;
@@ -712,7 +711,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                             "displayName": "styled.div",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "sc-EHOje",
+                            "styledComponentId": "sc-ifAKCX",
                             "target": "div",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -722,22 +721,22 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                         forwardedRef={null}
                       >
                         <div
-                          className="c5"
+                          className="c4"
                         >
                           <WithStyles(IconButton)
-                            className="Component-smallIcon-1"
+                            className="Component-smallIcon-24"
                             onClick={[Function]}
                           >
                             <IconButton
-                              className="Component-smallIcon-1"
+                              className="Component-smallIcon-24"
                               classes={
                                 Object {
-                                  "colorInherit": "MuiIconButton-colorInherit-3",
-                                  "colorPrimary": "MuiIconButton-colorPrimary-4",
-                                  "colorSecondary": "MuiIconButton-colorSecondary-5",
-                                  "disabled": "MuiIconButton-disabled-6",
-                                  "label": "MuiIconButton-label-7",
-                                  "root": "MuiIconButton-root-2",
+                                  "colorInherit": "MuiIconButton-colorInherit-26",
+                                  "colorPrimary": "MuiIconButton-colorPrimary-27",
+                                  "colorSecondary": "MuiIconButton-colorSecondary-28",
+                                  "disabled": "MuiIconButton-disabled-29",
+                                  "label": "MuiIconButton-label-30",
+                                  "root": "MuiIconButton-root-25",
                                 }
                               }
                               color="default"
@@ -746,19 +745,19 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                             >
                               <WithStyles(ButtonBase)
                                 centerRipple={true}
-                                className="MuiIconButton-root-2 Component-smallIcon-1"
+                                className="MuiIconButton-root-25 Component-smallIcon-24"
                                 disabled={false}
                                 focusRipple={true}
                                 onClick={[Function]}
                               >
                                 <ButtonBase
                                   centerRipple={true}
-                                  className="MuiIconButton-root-2 Component-smallIcon-1"
+                                  className="MuiIconButton-root-25 Component-smallIcon-24"
                                   classes={
                                     Object {
-                                      "disabled": "MuiButtonBase-disabled-9",
-                                      "focusVisible": "MuiButtonBase-focusVisible-10",
-                                      "root": "MuiButtonBase-root-8",
+                                      "disabled": "MuiButtonBase-disabled-32",
+                                      "focusVisible": "MuiButtonBase-focusVisible-33",
+                                      "root": "MuiButtonBase-root-31",
                                     }
                                   }
                                   component="button"
@@ -771,7 +770,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                                   type="button"
                                 >
                                   <button
-                                    className="MuiButtonBase-root-8 MuiIconButton-root-2 Component-smallIcon-1"
+                                    className="MuiButtonBase-root-31 MuiIconButton-root-25 Component-smallIcon-24"
                                     disabled={false}
                                     onBlur={[Function]}
                                     onClick={[Function]}
@@ -789,7 +788,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                                     type="button"
                                   >
                                     <span
-                                      className="MuiIconButton-label-7"
+                                      className="MuiIconButton-label-30"
                                     >
                                       <pure(FavoriteBorderIcon)
                                         color="action"
@@ -806,15 +805,15 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                                             <SvgIcon
                                               classes={
                                                 Object {
-                                                  "colorAction": "MuiSvgIcon-colorAction-14",
-                                                  "colorDisabled": "MuiSvgIcon-colorDisabled-16",
-                                                  "colorError": "MuiSvgIcon-colorError-15",
-                                                  "colorPrimary": "MuiSvgIcon-colorPrimary-12",
-                                                  "colorSecondary": "MuiSvgIcon-colorSecondary-13",
-                                                  "fontSizeInherit": "MuiSvgIcon-fontSizeInherit-17",
-                                                  "fontSizeLarge": "MuiSvgIcon-fontSizeLarge-19",
-                                                  "fontSizeSmall": "MuiSvgIcon-fontSizeSmall-18",
-                                                  "root": "MuiSvgIcon-root-11",
+                                                  "colorAction": "MuiSvgIcon-colorAction-37",
+                                                  "colorDisabled": "MuiSvgIcon-colorDisabled-39",
+                                                  "colorError": "MuiSvgIcon-colorError-38",
+                                                  "colorPrimary": "MuiSvgIcon-colorPrimary-35",
+                                                  "colorSecondary": "MuiSvgIcon-colorSecondary-36",
+                                                  "fontSizeInherit": "MuiSvgIcon-fontSizeInherit-40",
+                                                  "fontSizeLarge": "MuiSvgIcon-fontSizeLarge-42",
+                                                  "fontSizeSmall": "MuiSvgIcon-fontSizeSmall-41",
+                                                  "root": "MuiSvgIcon-root-34",
                                                 }
                                               }
                                               color="action"
@@ -824,7 +823,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                                             >
                                               <svg
                                                 aria-hidden="true"
-                                                className="MuiSvgIcon-root-11 MuiSvgIcon-colorAction-14 MuiSvgIcon-fontSizeInherit-17"
+                                                className="MuiSvgIcon-root-34 MuiSvgIcon-colorAction-37 MuiSvgIcon-fontSizeInherit-40"
                                                 focusable="false"
                                                 role="presentation"
                                                 viewBox="0 0 24 24"
@@ -854,25 +853,25 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                                           center={true}
                                           classes={
                                             Object {
-                                              "child": "MuiTouchRipple-child-29",
-                                              "childLeaving": "MuiTouchRipple-childLeaving-30",
-                                              "childPulsate": "MuiTouchRipple-childPulsate-31",
-                                              "ripple": "MuiTouchRipple-ripple-26",
-                                              "ripplePulsate": "MuiTouchRipple-ripplePulsate-28",
-                                              "rippleVisible": "MuiTouchRipple-rippleVisible-27",
-                                              "root": "MuiTouchRipple-root-25",
+                                              "child": "MuiTouchRipple-child-52",
+                                              "childLeaving": "MuiTouchRipple-childLeaving-53",
+                                              "childPulsate": "MuiTouchRipple-childPulsate-54",
+                                              "ripple": "MuiTouchRipple-ripple-49",
+                                              "ripplePulsate": "MuiTouchRipple-ripplePulsate-51",
+                                              "rippleVisible": "MuiTouchRipple-rippleVisible-50",
+                                              "root": "MuiTouchRipple-root-48",
                                             }
                                           }
                                         >
                                           <TransitionGroup
                                             childFactory={[Function]}
-                                            className="MuiTouchRipple-root-25"
+                                            className="MuiTouchRipple-root-48"
                                             component="span"
                                             enter={true}
                                             exit={true}
                                           >
                                             <span
-                                              className="MuiTouchRipple-root-25"
+                                              className="MuiTouchRipple-root-48"
                                             />
                                           </TransitionGroup>
                                         </TouchRipple>
@@ -901,11 +900,11 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
         absolute={false}
         classes={
           Object {
-            "absolute": "MuiDivider-absolute-21",
-            "inset": "MuiDivider-inset-22",
-            "light": "MuiDivider-light-23",
-            "middle": "MuiDivider-middle-24",
-            "root": "MuiDivider-root-20",
+            "absolute": "MuiDivider-absolute-44",
+            "inset": "MuiDivider-inset-45",
+            "light": "MuiDivider-light-46",
+            "middle": "MuiDivider-middle-47",
+            "root": "MuiDivider-root-43",
           }
         }
         component="hr"
@@ -913,7 +912,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
         variant="fullWidth"
       >
         <hr
-          className="MuiDivider-root-20 MuiDivider-light-23"
+          className="MuiDivider-root-43 MuiDivider-light-46"
         />
       </Divider>
     </WithStyles(Divider)>
