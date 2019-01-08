@@ -1,5 +1,5 @@
 import React from 'react';
-import { Avatar } from '@material-ui/core';
+import { Avatar, IconButton } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import {
   red,
@@ -30,6 +30,14 @@ const styles = {
     fontSize: '24px',
     height: '48px',
     width: '48px',
+  },
+  smallAvatar: {
+    fontSize: '18px',
+    height: '36px',
+    width: '36px',
+  },
+  wrapper: {
+    padding: 0,
   },
   red: {
     backgroundColor: red[500],
@@ -68,7 +76,8 @@ const styles = {
     backgroundColor: lime[500],
   },
   yellow: {
-    backgroundColor: yellow[500],
+    // 明るすぎて字が見えないからyellowだけ600
+    backgroundColor: yellow[600],
   },
   amber: {
     backgroundColor: amber[500],
@@ -112,17 +121,30 @@ const colorMap = {
   18: 'blueGrey',
 };
 
-const CharIcon = ({ name, classes }) => {
+const CharIcon = ({ name, small, onClick, classes }) => {
   const size = Object.keys(colorMap).length;
   const code = name.charCodeAt();
   const color = colorMap[code % size];
-  return <Avatar className={classnames(classes.avatar, classes[color])}>{name.charAt(0)}</Avatar>;
+  return (
+    <IconButton onClick={onClick} className={classes.wrapper} disableRipple>
+      <Avatar className={classnames(classes.avatar, small && classes.smallAvatar, classes[color])}>
+        {name.charAt(0)}
+      </Avatar>
+    </IconButton>
+  );
 };
 
 CharIcon.displayName = 'CharIcon';
 
 CharIcon.propTypes = {
   name: propTypes.string.isRequired,
+  small: propTypes.bool,
+  onClick: propTypes.func,
+};
+
+CharIcon.defaultProps = {
+  small: false,
+  onClick: null,
 };
 
 export default withStyles(styles)(CharIcon);
