@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot: CharIcon/nomal 1`] = `
+<MockRouter
+  createHref={[Function]}
+  location=""
+  params={Object {}}
+  path=""
+  push={[Function]}
+  replace={[Function]}
+  url=""
+>
+  <WithStyles(CharIcon)
+    name="ozaki25"
+  >
+    <CharIcon
+      classes={
+        Object {
+          "amber": "CharIcon-amber-15",
+          "avatar": "CharIcon-avatar-1",
+          "blue": "CharIcon-blue-7",
+          "blueGrey": "CharIcon-blueGrey-20",
+          "brown": "CharIcon-brown-18",
+          "cyan": "CharIcon-cyan-9",
+          "deepOrange": "CharIcon-deepOrange-17",
+          "deepPurple": "CharIcon-deepPurple-5",
+          "green": "CharIcon-green-11",
+          "grey": "CharIcon-grey-19",
+          "indigo": "CharIcon-indigo-6",
+          "lightBlue": "CharIcon-lightBlue-8",
+          "lightGreen": "CharIcon-lightGreen-12",
+          "lime": "CharIcon-lime-13",
+          "orange": "CharIcon-orange-16",
+          "pink": "CharIcon-pink-3",
+          "purple": "CharIcon-purple-4",
+          "red": "CharIcon-red-2",
+          "teal": "CharIcon-teal-10",
+          "yellow": "CharIcon-yellow-14",
+        }
+      }
+      name="ozaki25"
+    >
+      <WithStyles(Avatar)
+        className="CharIcon-avatar-1 CharIcon-brown-18"
+      >
+        <Avatar
+          className="CharIcon-avatar-1 CharIcon-brown-18"
+          classes={
+            Object {
+              "colorDefault": "MuiAvatar-colorDefault-22",
+              "img": "MuiAvatar-img-23",
+              "root": "MuiAvatar-root-21",
+            }
+          }
+          component="div"
+        >
+          <div
+            className="MuiAvatar-root-21 MuiAvatar-colorDefault-22 CharIcon-avatar-1 CharIcon-brown-18"
+          >
+            o
+          </div>
+        </Avatar>
+      </WithStyles(Avatar)>
+    </CharIcon>
+  </WithStyles(CharIcon)>
+</MockRouter>
+`;
