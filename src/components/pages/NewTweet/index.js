@@ -3,7 +3,7 @@ import { TextField, Typography } from '@material-ui/core';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
 import RoundedButton from 'src/components/atoms/RoundedButton';
-import IconImage from 'src/components/atoms/IconImage';
+import CharIcon from 'src/components/atoms/CharIcon';
 import PopMessage from 'src/components/atoms/PopMessage';
 import Container from 'src/components/templates/Container';
 import TWEET_WORD from 'src/constants/tweetWord';
@@ -19,8 +19,10 @@ const Wrapper = styled.div`
   margin-left: 58px;
 `;
 
-const StyledIconImage = styled(IconImage)`
+const IconContainer = styled.div`
+  float: left;
   margin-left: -58px;
+  position: absolute;
 `;
 
 const Buttons = styled.div`
@@ -101,7 +103,9 @@ class NewTweet extends React.Component {
     return (
       <Container title="ツイート" back authUser={authUser} history={history} firebase={firebase}>
         <Wrapper>
-          <StyledIconImage src="/icon.png" />
+          <IconContainer>
+            <CharIcon name={authUser.displayName} />
+          </IconContainer>
           {error && <Typography color="error">{error}</Typography>}
           <TextField
             name="tweet"

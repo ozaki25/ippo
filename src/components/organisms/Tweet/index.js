@@ -3,7 +3,7 @@ import { Divider } from '@material-ui/core';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
 import TweetFixedText from 'src/components/organisms/TweetFixedText/index';
-import IconImage from 'src/components/atoms/IconImage';
+import CharIcon from 'src/components/atoms/CharIcon';
 import TweetHeader from 'src/components/organisms/TweetHeader';
 import TweetBody from 'src/components/organisms/TweetBody';
 import TweetFooter from 'src/components/organisms/TweetFooter';
@@ -17,8 +17,10 @@ const Wrapper = styled.div`
   margin-left: 58px;
 `;
 
-const StyledIconImage = styled(IconImage)`
+const IconContainer = styled.div`
+  float: left;
   margin-left: -58px;
+  position: absolute;
 `;
 
 const todo = () => console.log('TODO');
@@ -28,7 +30,9 @@ const Tweet = ({ name, text, time, fixed }) => (
     <Container>
       {fixed && <TweetFixedText />}
       <Wrapper>
-        <StyledIconImage src="/icon.png" />
+        <IconContainer>
+          <CharIcon name={name} />
+        </IconContainer>
         <TweetHeader name={name} time={time} />
         <TweetBody text={text} />
         <TweetFooter onClickReply={todo} onClickRetweet={todo} onClickLike={todo} />
