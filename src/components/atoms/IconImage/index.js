@@ -3,9 +3,7 @@ import styled from 'styled-components';
 
 const StyledIconImage = styled.img`
   border-radius: 50%;
-  float: left;
   height: 48px;
-  position: absolute;
   width: 48px;
 `;
 

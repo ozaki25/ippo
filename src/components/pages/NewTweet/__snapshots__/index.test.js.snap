@@ -1,14 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should match snapshot: NewTweet/nomal 1`] = `
-.c5 {
-  border-radius: 50%;
-  float: left;
-  height: 48px;
-  position: absolute;
-  width: 48px;
-}
-
 .c1 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -29,10 +21,12 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
 }
 
 .c4 {
+  float: left;
   margin-left: -58px;
+  position: absolute;
 }
 
-.c6 {
+.c5 {
   margin: 8px 0;
   text-align: right;
 }
@@ -247,7 +241,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                   "Naked": [Function],
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-htpNat",
+                                    "componentId": "sc-bwzfXH",
                                     "isStatic": false,
                                     "lastClassName": "c0",
                                     "rules": Array [
@@ -624,7 +618,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                     "name": "MuiToolbar",
                                   },
                                   "render": [Function],
-                                  "styledComponentId": "sc-htpNat",
+                                  "styledComponentId": "sc-bwzfXH",
                                   "target": [Function],
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -778,25 +772,25 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                                     center={true}
                                                     classes={
                                                       Object {
-                                                        "child": "MuiTouchRipple-child-164",
-                                                        "childLeaving": "MuiTouchRipple-childLeaving-165",
-                                                        "childPulsate": "MuiTouchRipple-childPulsate-166",
-                                                        "ripple": "MuiTouchRipple-ripple-161",
-                                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate-163",
-                                                        "rippleVisible": "MuiTouchRipple-rippleVisible-162",
-                                                        "root": "MuiTouchRipple-root-160",
+                                                        "child": "MuiTouchRipple-child-187",
+                                                        "childLeaving": "MuiTouchRipple-childLeaving-188",
+                                                        "childPulsate": "MuiTouchRipple-childPulsate-189",
+                                                        "ripple": "MuiTouchRipple-ripple-184",
+                                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate-186",
+                                                        "rippleVisible": "MuiTouchRipple-rippleVisible-185",
+                                                        "root": "MuiTouchRipple-root-183",
                                                       }
                                                     }
                                                   >
                                                     <TransitionGroup
                                                       childFactory={[Function]}
-                                                      className="MuiTouchRipple-root-160"
+                                                      className="MuiTouchRipple-root-183"
                                                       component="span"
                                                       enter={true}
                                                       exit={true}
                                                     >
                                                       <span
-                                                        className="MuiTouchRipple-root-160"
+                                                        className="MuiTouchRipple-root-183"
                                                       />
                                                     </TransitionGroup>
                                                   </TouchRipple>
@@ -819,7 +813,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                             "Naked": [Function],
                                             "attrs": Array [],
                                             "componentStyle": ComponentStyle {
-                                              "componentId": "sc-bwzfXH",
+                                              "componentId": "sc-bdVaJa",
                                               "isStatic": true,
                                               "lastClassName": "c1",
                                               "rules": Array [
@@ -1195,7 +1189,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                               "withTheme": true,
                                             },
                                             "render": [Function],
-                                            "styledComponentId": "sc-bwzfXH",
+                                            "styledComponentId": "sc-bdVaJa",
                                             "target": [Function],
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
@@ -2205,25 +2199,25 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                                     center={true}
                                                     classes={
                                                       Object {
-                                                        "child": "MuiTouchRipple-child-164",
-                                                        "childLeaving": "MuiTouchRipple-childLeaving-165",
-                                                        "childPulsate": "MuiTouchRipple-childPulsate-166",
-                                                        "ripple": "MuiTouchRipple-ripple-161",
-                                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate-163",
-                                                        "rippleVisible": "MuiTouchRipple-rippleVisible-162",
-                                                        "root": "MuiTouchRipple-root-160",
+                                                        "child": "MuiTouchRipple-child-187",
+                                                        "childLeaving": "MuiTouchRipple-childLeaving-188",
+                                                        "childPulsate": "MuiTouchRipple-childPulsate-189",
+                                                        "ripple": "MuiTouchRipple-ripple-184",
+                                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate-186",
+                                                        "rippleVisible": "MuiTouchRipple-rippleVisible-185",
+                                                        "root": "MuiTouchRipple-root-183",
                                                       }
                                                     }
                                                   >
                                                     <TransitionGroup
                                                       childFactory={[Function]}
-                                                      className="MuiTouchRipple-root-160"
+                                                      className="MuiTouchRipple-root-183"
                                                       component="span"
                                                       enter={true}
                                                       exit={true}
                                                     >
                                                       <span
-                                                        className="MuiTouchRipple-root-160"
+                                                        className="MuiTouchRipple-root-183"
                                                       />
                                                     </TransitionGroup>
                                                   </TouchRipple>
@@ -2258,7 +2252,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-bxivhb",
+                "componentId": "sc-htpNat",
                 "isStatic": false,
                 "lastClassName": "c2",
                 "rules": Array [
@@ -2272,7 +2266,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
               "displayName": "styled.div",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-bxivhb",
+              "styledComponentId": "sc-htpNat",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -2292,7 +2286,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-ifAKCX",
+                      "componentId": "sc-bxivhb",
                       "isStatic": true,
                       "lastClassName": "c3",
                       "rules": Array [
@@ -2304,7 +2298,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                     "displayName": "styled.div",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-ifAKCX",
+                    "styledComponentId": "sc-bxivhb",
                     "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -2316,88 +2310,95 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                 <div
                   className="c3"
                 >
-                  <Styled(IconImage)
-                    src="/icon.png"
-                  >
+                  <styled.div>
                     <StyledComponent
                       forwardedComponent={
                         Object {
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-EHOje",
+                            "componentId": "sc-ifAKCX",
                             "isStatic": true,
                             "lastClassName": "c4",
                             "rules": Array [
                               "
+  float: left;
   margin-left: -58px;
+  position: absolute;
 ",
                             ],
                           },
-                          "displayName": "Styled(IconImage)",
+                          "displayName": "styled.div",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-EHOje",
-                          "target": [Function],
+                          "styledComponentId": "sc-ifAKCX",
+                          "target": "div",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
                           "withComponent": [Function],
-                          Symbol(Symbol.hasInstance): [Function],
                         }
                       }
                       forwardedRef={null}
-                      src="/icon.png"
                     >
-                      <IconImage
+                      <div
                         className="c4"
-                        src="/icon.png"
                       >
-                        <styled.img
-                          className="c4"
-                          src="/icon.png"
+                        <WithStyles(CharIcon)
+                          name="テストユーザ"
                         >
-                          <StyledComponent
-                            className="c4"
-                            forwardedComponent={
+                          <CharIcon
+                            classes={
                               Object {
-                                "$$typeof": Symbol(react.forward_ref),
-                                "attrs": Array [],
-                                "componentStyle": ComponentStyle {
-                                  "componentId": "sc-bdVaJa",
-                                  "isStatic": true,
-                                  "lastClassName": "c5",
-                                  "rules": Array [
-                                    "
-  border-radius: 50%;
-  float: left;
-  height: 48px;
-  position: absolute;
-  width: 48px;
-",
-                                  ],
-                                },
-                                "displayName": "styled.img",
-                                "foldedComponentIds": Array [],
-                                "render": [Function],
-                                "styledComponentId": "sc-bdVaJa",
-                                "target": "img",
-                                "toString": [Function],
-                                "warnTooManyClasses": [Function],
-                                "withComponent": [Function],
+                                "amber": "CharIcon-amber-109",
+                                "avatar": "CharIcon-avatar-95",
+                                "blue": "CharIcon-blue-101",
+                                "blueGrey": "CharIcon-blueGrey-114",
+                                "brown": "CharIcon-brown-112",
+                                "cyan": "CharIcon-cyan-103",
+                                "deepOrange": "CharIcon-deepOrange-111",
+                                "deepPurple": "CharIcon-deepPurple-99",
+                                "green": "CharIcon-green-105",
+                                "grey": "CharIcon-grey-113",
+                                "indigo": "CharIcon-indigo-100",
+                                "lightBlue": "CharIcon-lightBlue-102",
+                                "lightGreen": "CharIcon-lightGreen-106",
+                                "lime": "CharIcon-lime-107",
+                                "orange": "CharIcon-orange-110",
+                                "pink": "CharIcon-pink-97",
+                                "purple": "CharIcon-purple-98",
+                                "red": "CharIcon-red-96",
+                                "teal": "CharIcon-teal-104",
+                                "yellow": "CharIcon-yellow-108",
                               }
                             }
-                            forwardedRef={null}
-                            src="/icon.png"
+                            name="テストユーザ"
                           >
-                            <img
-                              className="c4 c5"
-                              src="/icon.png"
-                            />
-                          </StyledComponent>
-                        </styled.img>
-                      </IconImage>
+                            <WithStyles(Avatar)
+                              className="CharIcon-avatar-95 CharIcon-deepPurple-99"
+                            >
+                              <Avatar
+                                className="CharIcon-avatar-95 CharIcon-deepPurple-99"
+                                classes={
+                                  Object {
+                                    "colorDefault": "MuiAvatar-colorDefault-116",
+                                    "img": "MuiAvatar-img-117",
+                                    "root": "MuiAvatar-root-115",
+                                  }
+                                }
+                                component="div"
+                              >
+                                <div
+                                  className="MuiAvatar-root-115 MuiAvatar-colorDefault-116 CharIcon-avatar-95 CharIcon-deepPurple-99"
+                                >
+                                  テ
+                                </div>
+                              </Avatar>
+                            </WithStyles(Avatar)>
+                          </CharIcon>
+                        </WithStyles(CharIcon)>
+                      </div>
                     </StyledComponent>
-                  </Styled(IconImage)>
+                  </styled.div>
                   <TextField
                     InputProps={
                       Object {
@@ -2412,7 +2413,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                       Object {
                         "current": <textarea
                           aria-invalid="false"
-                          class="MuiInputBase-input-122 MuiFilledInput-input-107 MuiInputBase-inputMultiline-124 MuiFilledInput-inputMultiline-109"
+                          class="MuiInputBase-input-145 MuiFilledInput-input-130 MuiInputBase-inputMultiline-147 MuiFilledInput-inputMultiline-132"
                           name="tweet"
                           placeholder="いまどうしてる？"
                           rows="4"
@@ -2443,10 +2444,10 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                       <FormControl
                         classes={
                           Object {
-                            "fullWidth": "MuiFormControl-fullWidth-98",
-                            "marginDense": "MuiFormControl-marginDense-97",
-                            "marginNormal": "MuiFormControl-marginNormal-96",
-                            "root": "MuiFormControl-root-95",
+                            "fullWidth": "MuiFormControl-fullWidth-121",
+                            "marginDense": "MuiFormControl-marginDense-120",
+                            "marginNormal": "MuiFormControl-marginNormal-119",
+                            "root": "MuiFormControl-root-118",
                           }
                         }
                         component="div"
@@ -2458,7 +2459,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                         variant="filled"
                       >
                         <div
-                          className="MuiFormControl-root-95 MuiFormControl-fullWidth-98"
+                          className="MuiFormControl-root-118 MuiFormControl-fullWidth-121"
                         >
                           <WithStyles(FilledInput)
                             autoFocus={true}
@@ -2467,7 +2468,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                               Object {
                                 "current": <textarea
                                   aria-invalid="false"
-                                  class="MuiInputBase-input-122 MuiFilledInput-input-107 MuiInputBase-inputMultiline-124 MuiFilledInput-inputMultiline-109"
+                                  class="MuiInputBase-input-145 MuiFilledInput-input-130 MuiInputBase-inputMultiline-147 MuiFilledInput-inputMultiline-132"
                                   name="tweet"
                                   placeholder="いまどうしてる？"
                                   rows="4"
@@ -2494,19 +2495,19 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                               autoFocus={true}
                               classes={
                                 Object {
-                                  "adornedEnd": "MuiFilledInput-adornedEnd-104",
-                                  "adornedStart": "MuiFilledInput-adornedStart-103",
-                                  "disabled": "MuiFilledInput-disabled-102",
-                                  "error": "MuiFilledInput-error-105",
-                                  "focused": "MuiFilledInput-focused-101",
-                                  "input": "MuiFilledInput-input-107",
-                                  "inputAdornedEnd": "MuiFilledInput-inputAdornedEnd-111",
-                                  "inputAdornedStart": "MuiFilledInput-inputAdornedStart-110",
-                                  "inputMarginDense": "MuiFilledInput-inputMarginDense-108",
-                                  "inputMultiline": "MuiFilledInput-inputMultiline-109",
-                                  "multiline": "MuiFilledInput-multiline-106",
-                                  "root": "MuiFilledInput-root-99",
-                                  "underline": "MuiFilledInput-underline-100",
+                                  "adornedEnd": "MuiFilledInput-adornedEnd-127",
+                                  "adornedStart": "MuiFilledInput-adornedStart-126",
+                                  "disabled": "MuiFilledInput-disabled-125",
+                                  "error": "MuiFilledInput-error-128",
+                                  "focused": "MuiFilledInput-focused-124",
+                                  "input": "MuiFilledInput-input-130",
+                                  "inputAdornedEnd": "MuiFilledInput-inputAdornedEnd-134",
+                                  "inputAdornedStart": "MuiFilledInput-inputAdornedStart-133",
+                                  "inputMarginDense": "MuiFilledInput-inputMarginDense-131",
+                                  "inputMultiline": "MuiFilledInput-inputMultiline-132",
+                                  "multiline": "MuiFilledInput-multiline-129",
+                                  "root": "MuiFilledInput-root-122",
+                                  "underline": "MuiFilledInput-underline-123",
                                 }
                               }
                               fullWidth={true}
@@ -2514,7 +2515,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                 Object {
                                   "current": <textarea
                                     aria-invalid="false"
-                                    class="MuiInputBase-input-122 MuiFilledInput-input-107 MuiInputBase-inputMultiline-124 MuiFilledInput-inputMultiline-109"
+                                    class="MuiInputBase-input-145 MuiFilledInput-input-130 MuiInputBase-inputMultiline-147 MuiFilledInput-inputMultiline-132"
                                     name="tweet"
                                     placeholder="いまどうしてる？"
                                     rows="4"
@@ -2541,18 +2542,18 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                 autoFocus={true}
                                 classes={
                                   Object {
-                                    "adornedEnd": "MuiFilledInput-adornedEnd-104",
-                                    "adornedStart": "MuiFilledInput-adornedStart-103",
-                                    "disabled": "MuiFilledInput-disabled-102",
-                                    "error": "MuiFilledInput-error-105",
-                                    "focused": "MuiFilledInput-focused-101",
-                                    "input": "MuiFilledInput-input-107",
-                                    "inputAdornedEnd": "MuiFilledInput-inputAdornedEnd-111",
-                                    "inputAdornedStart": "MuiFilledInput-inputAdornedStart-110",
-                                    "inputMarginDense": "MuiFilledInput-inputMarginDense-108",
-                                    "inputMultiline": "MuiFilledInput-inputMultiline-109",
-                                    "multiline": "MuiFilledInput-multiline-106",
-                                    "root": "MuiFilledInput-root-99 MuiFilledInput-underline-100",
+                                    "adornedEnd": "MuiFilledInput-adornedEnd-127",
+                                    "adornedStart": "MuiFilledInput-adornedStart-126",
+                                    "disabled": "MuiFilledInput-disabled-125",
+                                    "error": "MuiFilledInput-error-128",
+                                    "focused": "MuiFilledInput-focused-124",
+                                    "input": "MuiFilledInput-input-130",
+                                    "inputAdornedEnd": "MuiFilledInput-inputAdornedEnd-134",
+                                    "inputAdornedStart": "MuiFilledInput-inputAdornedStart-133",
+                                    "inputMarginDense": "MuiFilledInput-inputMarginDense-131",
+                                    "inputMultiline": "MuiFilledInput-inputMultiline-132",
+                                    "multiline": "MuiFilledInput-multiline-129",
+                                    "root": "MuiFilledInput-root-122 MuiFilledInput-underline-123",
                                     "underline": null,
                                   }
                                 }
@@ -2562,7 +2563,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                   Object {
                                     "current": <textarea
                                       aria-invalid="false"
-                                      class="MuiInputBase-input-122 MuiFilledInput-input-107 MuiInputBase-inputMultiline-124 MuiFilledInput-inputMultiline-109"
+                                      class="MuiInputBase-input-145 MuiFilledInput-input-130 MuiInputBase-inputMultiline-147 MuiFilledInput-inputMultiline-132"
                                       name="tweet"
                                       placeholder="いまどうしてる？"
                                       rows="4"
@@ -2590,23 +2591,23 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                   autoFocus={true}
                                   classes={
                                     Object {
-                                      "adornedEnd": "MuiInputBase-adornedEnd-117 MuiFilledInput-adornedEnd-104",
-                                      "adornedStart": "MuiInputBase-adornedStart-116 MuiFilledInput-adornedStart-103",
-                                      "disabled": "MuiInputBase-disabled-115 MuiFilledInput-disabled-102",
-                                      "error": "MuiInputBase-error-118 MuiFilledInput-error-105",
-                                      "focused": "MuiInputBase-focused-114 MuiFilledInput-focused-101",
-                                      "formControl": "MuiInputBase-formControl-113",
-                                      "fullWidth": "MuiInputBase-fullWidth-121",
-                                      "input": "MuiInputBase-input-122 MuiFilledInput-input-107",
-                                      "inputAdornedEnd": "MuiInputBase-inputAdornedEnd-128 MuiFilledInput-inputAdornedEnd-111",
-                                      "inputAdornedStart": "MuiInputBase-inputAdornedStart-127 MuiFilledInput-inputAdornedStart-110",
-                                      "inputMarginDense": "MuiInputBase-inputMarginDense-123 MuiFilledInput-inputMarginDense-108",
-                                      "inputMultiline": "MuiInputBase-inputMultiline-124 MuiFilledInput-inputMultiline-109",
-                                      "inputType": "MuiInputBase-inputType-125",
-                                      "inputTypeSearch": "MuiInputBase-inputTypeSearch-126",
-                                      "marginDense": "MuiInputBase-marginDense-119",
-                                      "multiline": "MuiInputBase-multiline-120 MuiFilledInput-multiline-106",
-                                      "root": "MuiInputBase-root-112 MuiFilledInput-root-99 MuiFilledInput-underline-100",
+                                      "adornedEnd": "MuiInputBase-adornedEnd-140 MuiFilledInput-adornedEnd-127",
+                                      "adornedStart": "MuiInputBase-adornedStart-139 MuiFilledInput-adornedStart-126",
+                                      "disabled": "MuiInputBase-disabled-138 MuiFilledInput-disabled-125",
+                                      "error": "MuiInputBase-error-141 MuiFilledInput-error-128",
+                                      "focused": "MuiInputBase-focused-137 MuiFilledInput-focused-124",
+                                      "formControl": "MuiInputBase-formControl-136",
+                                      "fullWidth": "MuiInputBase-fullWidth-144",
+                                      "input": "MuiInputBase-input-145 MuiFilledInput-input-130",
+                                      "inputAdornedEnd": "MuiInputBase-inputAdornedEnd-151 MuiFilledInput-inputAdornedEnd-134",
+                                      "inputAdornedStart": "MuiInputBase-inputAdornedStart-150 MuiFilledInput-inputAdornedStart-133",
+                                      "inputMarginDense": "MuiInputBase-inputMarginDense-146 MuiFilledInput-inputMarginDense-131",
+                                      "inputMultiline": "MuiInputBase-inputMultiline-147 MuiFilledInput-inputMultiline-132",
+                                      "inputType": "MuiInputBase-inputType-148",
+                                      "inputTypeSearch": "MuiInputBase-inputTypeSearch-149",
+                                      "marginDense": "MuiInputBase-marginDense-142",
+                                      "multiline": "MuiInputBase-multiline-143 MuiFilledInput-multiline-129",
+                                      "root": "MuiInputBase-root-135 MuiFilledInput-root-122 MuiFilledInput-underline-123",
                                     }
                                   }
                                   fullWidth={true}
@@ -2615,7 +2616,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                     Object {
                                       "current": <textarea
                                         aria-invalid="false"
-                                        class="MuiInputBase-input-122 MuiFilledInput-input-107 MuiInputBase-inputMultiline-124 MuiFilledInput-inputMultiline-109"
+                                        class="MuiInputBase-input-145 MuiFilledInput-input-130 MuiInputBase-inputMultiline-147 MuiFilledInput-inputMultiline-132"
                                         name="tweet"
                                         placeholder="いまどうしてる？"
                                         rows="4"
@@ -2643,23 +2644,23 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                     autoFocus={true}
                                     classes={
                                       Object {
-                                        "adornedEnd": "MuiInputBase-adornedEnd-117 MuiFilledInput-adornedEnd-104",
-                                        "adornedStart": "MuiInputBase-adornedStart-116 MuiFilledInput-adornedStart-103",
-                                        "disabled": "MuiInputBase-disabled-115 MuiFilledInput-disabled-102",
-                                        "error": "MuiInputBase-error-118 MuiFilledInput-error-105",
-                                        "focused": "MuiInputBase-focused-114 MuiFilledInput-focused-101",
-                                        "formControl": "MuiInputBase-formControl-113",
-                                        "fullWidth": "MuiInputBase-fullWidth-121",
-                                        "input": "MuiInputBase-input-122 MuiFilledInput-input-107",
-                                        "inputAdornedEnd": "MuiInputBase-inputAdornedEnd-128 MuiFilledInput-inputAdornedEnd-111",
-                                        "inputAdornedStart": "MuiInputBase-inputAdornedStart-127 MuiFilledInput-inputAdornedStart-110",
-                                        "inputMarginDense": "MuiInputBase-inputMarginDense-123 MuiFilledInput-inputMarginDense-108",
-                                        "inputMultiline": "MuiInputBase-inputMultiline-124 MuiFilledInput-inputMultiline-109",
-                                        "inputType": "MuiInputBase-inputType-125",
-                                        "inputTypeSearch": "MuiInputBase-inputTypeSearch-126",
-                                        "marginDense": "MuiInputBase-marginDense-119",
-                                        "multiline": "MuiInputBase-multiline-120 MuiFilledInput-multiline-106",
-                                        "root": "MuiInputBase-root-112 MuiFilledInput-root-99 MuiFilledInput-underline-100",
+                                        "adornedEnd": "MuiInputBase-adornedEnd-140 MuiFilledInput-adornedEnd-127",
+                                        "adornedStart": "MuiInputBase-adornedStart-139 MuiFilledInput-adornedStart-126",
+                                        "disabled": "MuiInputBase-disabled-138 MuiFilledInput-disabled-125",
+                                        "error": "MuiInputBase-error-141 MuiFilledInput-error-128",
+                                        "focused": "MuiInputBase-focused-137 MuiFilledInput-focused-124",
+                                        "formControl": "MuiInputBase-formControl-136",
+                                        "fullWidth": "MuiInputBase-fullWidth-144",
+                                        "input": "MuiInputBase-input-145 MuiFilledInput-input-130",
+                                        "inputAdornedEnd": "MuiInputBase-inputAdornedEnd-151 MuiFilledInput-inputAdornedEnd-134",
+                                        "inputAdornedStart": "MuiInputBase-inputAdornedStart-150 MuiFilledInput-inputAdornedStart-133",
+                                        "inputMarginDense": "MuiInputBase-inputMarginDense-146 MuiFilledInput-inputMarginDense-131",
+                                        "inputMultiline": "MuiInputBase-inputMultiline-147 MuiFilledInput-inputMultiline-132",
+                                        "inputType": "MuiInputBase-inputType-148",
+                                        "inputTypeSearch": "MuiInputBase-inputTypeSearch-149",
+                                        "marginDense": "MuiInputBase-marginDense-142",
+                                        "multiline": "MuiInputBase-multiline-143 MuiFilledInput-multiline-129",
+                                        "root": "MuiInputBase-root-135 MuiFilledInput-root-122 MuiFilledInput-underline-123",
                                       }
                                     }
                                     fullWidth={true}
@@ -2668,7 +2669,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                       Object {
                                         "current": <textarea
                                           aria-invalid="false"
-                                          class="MuiInputBase-input-122 MuiFilledInput-input-107 MuiInputBase-inputMultiline-124 MuiFilledInput-inputMultiline-109"
+                                          class="MuiInputBase-input-145 MuiFilledInput-input-130 MuiInputBase-inputMultiline-147 MuiFilledInput-inputMultiline-132"
                                           name="tweet"
                                           placeholder="いまどうしてる？"
                                           rows="4"
@@ -2709,7 +2710,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
 #test_event"
                                   >
                                     <div
-                                      className="MuiInputBase-root-112 MuiFilledInput-root-99 MuiFilledInput-underline-100 MuiInputBase-fullWidth-121 MuiInputBase-formControl-113 MuiInputBase-multiline-120 MuiFilledInput-multiline-106"
+                                      className="MuiInputBase-root-135 MuiFilledInput-root-122 MuiFilledInput-underline-123 MuiInputBase-fullWidth-144 MuiInputBase-formControl-136 MuiInputBase-multiline-143 MuiFilledInput-multiline-129"
                                       onClick={[Function]}
                                       style={
                                         Object {
@@ -2720,7 +2721,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                       <textarea
                                         aria-invalid={false}
                                         autoFocus={true}
-                                        className="MuiInputBase-input-122 MuiFilledInput-input-107 MuiInputBase-inputMultiline-124 MuiFilledInput-inputMultiline-109"
+                                        className="MuiInputBase-input-145 MuiFilledInput-input-130 MuiInputBase-inputMultiline-147 MuiFilledInput-inputMultiline-132"
                                         disabled={false}
                                         name="tweet"
                                         onBlur={[Function]}
@@ -2749,9 +2750,9 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-bZQynM",
+                            "componentId": "sc-EHOje",
                             "isStatic": true,
-                            "lastClassName": "c6",
+                            "lastClassName": "c5",
                             "rules": Array [
                               "
   margin: 8px 0;
@@ -2762,7 +2763,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                           "displayName": "styled.div",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-bZQynM",
+                          "styledComponentId": "sc-EHOje",
                           "target": "div",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -2772,7 +2773,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                       forwardedRef={null}
                     >
                       <div
-                        className="c6"
+                        className="c5"
                       >
                         <WithStyles(RoundedButton)
                           color="primary"
@@ -2782,7 +2783,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                           <RoundedButton
                             classes={
                               Object {
-                                "rounded": "RoundedButton-rounded-129",
+                                "rounded": "RoundedButton-rounded-152",
                               }
                             }
                             color="primary"
@@ -2790,41 +2791,41 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                             variant="outlined"
                           >
                             <WithStyles(Button)
-                              className="RoundedButton-rounded-129"
+                              className="RoundedButton-rounded-152"
                               color="primary"
                               onClick={[Function]}
                               variant="outlined"
                             >
                               <Button
-                                className="RoundedButton-rounded-129"
+                                className="RoundedButton-rounded-152"
                                 classes={
                                   Object {
-                                    "colorInherit": "MuiButton-colorInherit-151",
-                                    "contained": "MuiButton-contained-141",
-                                    "containedPrimary": "MuiButton-containedPrimary-142",
-                                    "containedSecondary": "MuiButton-containedSecondary-143",
-                                    "disabled": "MuiButton-disabled-150",
-                                    "extendedFab": "MuiButton-extendedFab-148",
-                                    "fab": "MuiButton-fab-147",
-                                    "flat": "MuiButton-flat-135",
-                                    "flatPrimary": "MuiButton-flatPrimary-136",
-                                    "flatSecondary": "MuiButton-flatSecondary-137",
-                                    "focusVisible": "MuiButton-focusVisible-149",
-                                    "fullWidth": "MuiButton-fullWidth-155",
-                                    "label": "MuiButton-label-131",
-                                    "mini": "MuiButton-mini-152",
-                                    "outlined": "MuiButton-outlined-138",
-                                    "outlinedPrimary": "MuiButton-outlinedPrimary-139",
-                                    "outlinedSecondary": "MuiButton-outlinedSecondary-140",
-                                    "raised": "MuiButton-raised-144",
-                                    "raisedPrimary": "MuiButton-raisedPrimary-145",
-                                    "raisedSecondary": "MuiButton-raisedSecondary-146",
-                                    "root": "MuiButton-root-130",
-                                    "sizeLarge": "MuiButton-sizeLarge-154",
-                                    "sizeSmall": "MuiButton-sizeSmall-153",
-                                    "text": "MuiButton-text-132",
-                                    "textPrimary": "MuiButton-textPrimary-133",
-                                    "textSecondary": "MuiButton-textSecondary-134",
+                                    "colorInherit": "MuiButton-colorInherit-174",
+                                    "contained": "MuiButton-contained-164",
+                                    "containedPrimary": "MuiButton-containedPrimary-165",
+                                    "containedSecondary": "MuiButton-containedSecondary-166",
+                                    "disabled": "MuiButton-disabled-173",
+                                    "extendedFab": "MuiButton-extendedFab-171",
+                                    "fab": "MuiButton-fab-170",
+                                    "flat": "MuiButton-flat-158",
+                                    "flatPrimary": "MuiButton-flatPrimary-159",
+                                    "flatSecondary": "MuiButton-flatSecondary-160",
+                                    "focusVisible": "MuiButton-focusVisible-172",
+                                    "fullWidth": "MuiButton-fullWidth-178",
+                                    "label": "MuiButton-label-154",
+                                    "mini": "MuiButton-mini-175",
+                                    "outlined": "MuiButton-outlined-161",
+                                    "outlinedPrimary": "MuiButton-outlinedPrimary-162",
+                                    "outlinedSecondary": "MuiButton-outlinedSecondary-163",
+                                    "raised": "MuiButton-raised-167",
+                                    "raisedPrimary": "MuiButton-raisedPrimary-168",
+                                    "raisedSecondary": "MuiButton-raisedSecondary-169",
+                                    "root": "MuiButton-root-153",
+                                    "sizeLarge": "MuiButton-sizeLarge-177",
+                                    "sizeSmall": "MuiButton-sizeSmall-176",
+                                    "text": "MuiButton-text-155",
+                                    "textPrimary": "MuiButton-textPrimary-156",
+                                    "textSecondary": "MuiButton-textSecondary-157",
                                   }
                                 }
                                 color="primary"
@@ -2839,17 +2840,17 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                 variant="outlined"
                               >
                                 <WithStyles(ButtonBase)
-                                  className="MuiButton-root-130 MuiButton-outlined-138 MuiButton-outlinedPrimary-139 RoundedButton-rounded-129"
+                                  className="MuiButton-root-153 MuiButton-outlined-161 MuiButton-outlinedPrimary-162 RoundedButton-rounded-152"
                                   component="button"
                                   disabled={false}
                                   focusRipple={true}
-                                  focusVisibleClassName="MuiButton-focusVisible-149"
+                                  focusVisibleClassName="MuiButton-focusVisible-172"
                                   onClick={[Function]}
                                   type="button"
                                 >
                                   <ButtonBase
                                     centerRipple={false}
-                                    className="MuiButton-root-130 MuiButton-outlined-138 MuiButton-outlinedPrimary-139 RoundedButton-rounded-129"
+                                    className="MuiButton-root-153 MuiButton-outlined-161 MuiButton-outlinedPrimary-162 RoundedButton-rounded-152"
                                     classes={
                                       Object {
                                         "disabled": "MuiButtonBase-disabled-49",
@@ -2862,13 +2863,13 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                     disableTouchRipple={false}
                                     disabled={false}
                                     focusRipple={true}
-                                    focusVisibleClassName="MuiButton-focusVisible-149"
+                                    focusVisibleClassName="MuiButton-focusVisible-172"
                                     onClick={[Function]}
                                     tabIndex="0"
                                     type="button"
                                   >
                                     <button
-                                      className="MuiButtonBase-root-48 MuiButton-root-130 MuiButton-outlined-138 MuiButton-outlinedPrimary-139 RoundedButton-rounded-129"
+                                      className="MuiButtonBase-root-48 MuiButton-root-153 MuiButton-outlined-161 MuiButton-outlinedPrimary-162 RoundedButton-rounded-152"
                                       disabled={false}
                                       onBlur={[Function]}
                                       onClick={[Function]}
@@ -2886,7 +2887,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                       type="button"
                                     >
                                       <span
-                                        className="MuiButton-label-131"
+                                        className="MuiButton-label-154"
                                       >
                                         アップロード
                                       </span>
@@ -2902,25 +2903,25 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                             center={false}
                                             classes={
                                               Object {
-                                                "child": "MuiTouchRipple-child-164",
-                                                "childLeaving": "MuiTouchRipple-childLeaving-165",
-                                                "childPulsate": "MuiTouchRipple-childPulsate-166",
-                                                "ripple": "MuiTouchRipple-ripple-161",
-                                                "ripplePulsate": "MuiTouchRipple-ripplePulsate-163",
-                                                "rippleVisible": "MuiTouchRipple-rippleVisible-162",
-                                                "root": "MuiTouchRipple-root-160",
+                                                "child": "MuiTouchRipple-child-187",
+                                                "childLeaving": "MuiTouchRipple-childLeaving-188",
+                                                "childPulsate": "MuiTouchRipple-childPulsate-189",
+                                                "ripple": "MuiTouchRipple-ripple-184",
+                                                "ripplePulsate": "MuiTouchRipple-ripplePulsate-186",
+                                                "rippleVisible": "MuiTouchRipple-rippleVisible-185",
+                                                "root": "MuiTouchRipple-root-183",
                                               }
                                             }
                                           >
                                             <TransitionGroup
                                               childFactory={[Function]}
-                                              className="MuiTouchRipple-root-160"
+                                              className="MuiTouchRipple-root-183"
                                               component="span"
                                               enter={true}
                                               exit={true}
                                             >
                                               <span
-                                                className="MuiTouchRipple-root-160"
+                                                className="MuiTouchRipple-root-183"
                                               />
                                             </TransitionGroup>
                                           </TouchRipple>
@@ -2942,7 +2943,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                           <RoundedButton
                             classes={
                               Object {
-                                "rounded": "RoundedButton-rounded-129",
+                                "rounded": "RoundedButton-rounded-152",
                               }
                             }
                             color="primary"
@@ -2950,42 +2951,42 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                             onClick={[Function]}
                           >
                             <WithStyles(Button)
-                              className="RoundedButton-rounded-129"
+                              className="RoundedButton-rounded-152"
                               color="primary"
                               disabled={false}
                               onClick={[Function]}
                               variant="contained"
                             >
                               <Button
-                                className="RoundedButton-rounded-129"
+                                className="RoundedButton-rounded-152"
                                 classes={
                                   Object {
-                                    "colorInherit": "MuiButton-colorInherit-151",
-                                    "contained": "MuiButton-contained-141",
-                                    "containedPrimary": "MuiButton-containedPrimary-142",
-                                    "containedSecondary": "MuiButton-containedSecondary-143",
-                                    "disabled": "MuiButton-disabled-150",
-                                    "extendedFab": "MuiButton-extendedFab-148",
-                                    "fab": "MuiButton-fab-147",
-                                    "flat": "MuiButton-flat-135",
-                                    "flatPrimary": "MuiButton-flatPrimary-136",
-                                    "flatSecondary": "MuiButton-flatSecondary-137",
-                                    "focusVisible": "MuiButton-focusVisible-149",
-                                    "fullWidth": "MuiButton-fullWidth-155",
-                                    "label": "MuiButton-label-131",
-                                    "mini": "MuiButton-mini-152",
-                                    "outlined": "MuiButton-outlined-138",
-                                    "outlinedPrimary": "MuiButton-outlinedPrimary-139",
-                                    "outlinedSecondary": "MuiButton-outlinedSecondary-140",
-                                    "raised": "MuiButton-raised-144",
-                                    "raisedPrimary": "MuiButton-raisedPrimary-145",
-                                    "raisedSecondary": "MuiButton-raisedSecondary-146",
-                                    "root": "MuiButton-root-130",
-                                    "sizeLarge": "MuiButton-sizeLarge-154",
-                                    "sizeSmall": "MuiButton-sizeSmall-153",
-                                    "text": "MuiButton-text-132",
-                                    "textPrimary": "MuiButton-textPrimary-133",
-                                    "textSecondary": "MuiButton-textSecondary-134",
+                                    "colorInherit": "MuiButton-colorInherit-174",
+                                    "contained": "MuiButton-contained-164",
+                                    "containedPrimary": "MuiButton-containedPrimary-165",
+                                    "containedSecondary": "MuiButton-containedSecondary-166",
+                                    "disabled": "MuiButton-disabled-173",
+                                    "extendedFab": "MuiButton-extendedFab-171",
+                                    "fab": "MuiButton-fab-170",
+                                    "flat": "MuiButton-flat-158",
+                                    "flatPrimary": "MuiButton-flatPrimary-159",
+                                    "flatSecondary": "MuiButton-flatSecondary-160",
+                                    "focusVisible": "MuiButton-focusVisible-172",
+                                    "fullWidth": "MuiButton-fullWidth-178",
+                                    "label": "MuiButton-label-154",
+                                    "mini": "MuiButton-mini-175",
+                                    "outlined": "MuiButton-outlined-161",
+                                    "outlinedPrimary": "MuiButton-outlinedPrimary-162",
+                                    "outlinedSecondary": "MuiButton-outlinedSecondary-163",
+                                    "raised": "MuiButton-raised-167",
+                                    "raisedPrimary": "MuiButton-raisedPrimary-168",
+                                    "raisedSecondary": "MuiButton-raisedSecondary-169",
+                                    "root": "MuiButton-root-153",
+                                    "sizeLarge": "MuiButton-sizeLarge-177",
+                                    "sizeSmall": "MuiButton-sizeSmall-176",
+                                    "text": "MuiButton-text-155",
+                                    "textPrimary": "MuiButton-textPrimary-156",
+                                    "textSecondary": "MuiButton-textSecondary-157",
                                   }
                                 }
                                 color="primary"
@@ -3000,17 +3001,17 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                 variant="contained"
                               >
                                 <WithStyles(ButtonBase)
-                                  className="MuiButton-root-130 MuiButton-contained-141 MuiButton-containedPrimary-142 MuiButton-raised-144 MuiButton-raisedPrimary-145 RoundedButton-rounded-129"
+                                  className="MuiButton-root-153 MuiButton-contained-164 MuiButton-containedPrimary-165 MuiButton-raised-167 MuiButton-raisedPrimary-168 RoundedButton-rounded-152"
                                   component="button"
                                   disabled={false}
                                   focusRipple={true}
-                                  focusVisibleClassName="MuiButton-focusVisible-149"
+                                  focusVisibleClassName="MuiButton-focusVisible-172"
                                   onClick={[Function]}
                                   type="button"
                                 >
                                   <ButtonBase
                                     centerRipple={false}
-                                    className="MuiButton-root-130 MuiButton-contained-141 MuiButton-containedPrimary-142 MuiButton-raised-144 MuiButton-raisedPrimary-145 RoundedButton-rounded-129"
+                                    className="MuiButton-root-153 MuiButton-contained-164 MuiButton-containedPrimary-165 MuiButton-raised-167 MuiButton-raisedPrimary-168 RoundedButton-rounded-152"
                                     classes={
                                       Object {
                                         "disabled": "MuiButtonBase-disabled-49",
@@ -3023,13 +3024,13 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                     disableTouchRipple={false}
                                     disabled={false}
                                     focusRipple={true}
-                                    focusVisibleClassName="MuiButton-focusVisible-149"
+                                    focusVisibleClassName="MuiButton-focusVisible-172"
                                     onClick={[Function]}
                                     tabIndex="0"
                                     type="button"
                                   >
                                     <button
-                                      className="MuiButtonBase-root-48 MuiButton-root-130 MuiButton-contained-141 MuiButton-containedPrimary-142 MuiButton-raised-144 MuiButton-raisedPrimary-145 RoundedButton-rounded-129"
+                                      className="MuiButtonBase-root-48 MuiButton-root-153 MuiButton-contained-164 MuiButton-containedPrimary-165 MuiButton-raised-167 MuiButton-raisedPrimary-168 RoundedButton-rounded-152"
                                       disabled={false}
                                       onBlur={[Function]}
                                       onClick={[Function]}
@@ -3047,7 +3048,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                       type="button"
                                     >
                                       <span
-                                        className="MuiButton-label-131"
+                                        className="MuiButton-label-154"
                                       >
                                         ツイート
                                       </span>
@@ -3063,25 +3064,25 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                             center={false}
                                             classes={
                                               Object {
-                                                "child": "MuiTouchRipple-child-164",
-                                                "childLeaving": "MuiTouchRipple-childLeaving-165",
-                                                "childPulsate": "MuiTouchRipple-childPulsate-166",
-                                                "ripple": "MuiTouchRipple-ripple-161",
-                                                "ripplePulsate": "MuiTouchRipple-ripplePulsate-163",
-                                                "rippleVisible": "MuiTouchRipple-rippleVisible-162",
-                                                "root": "MuiTouchRipple-root-160",
+                                                "child": "MuiTouchRipple-child-187",
+                                                "childLeaving": "MuiTouchRipple-childLeaving-188",
+                                                "childPulsate": "MuiTouchRipple-childPulsate-189",
+                                                "ripple": "MuiTouchRipple-ripple-184",
+                                                "ripplePulsate": "MuiTouchRipple-ripplePulsate-186",
+                                                "rippleVisible": "MuiTouchRipple-rippleVisible-185",
+                                                "root": "MuiTouchRipple-root-183",
                                               }
                                             }
                                           >
                                             <TransitionGroup
                                               childFactory={[Function]}
-                                              className="MuiTouchRipple-root-160"
+                                              className="MuiTouchRipple-root-183"
                                               component="span"
                                               enter={true}
                                               exit={true}
                                             >
                                               <span
-                                                className="MuiTouchRipple-root-160"
+                                                className="MuiTouchRipple-root-183"
                                               />
                                             </TransitionGroup>
                                           </TouchRipple>
@@ -3108,7 +3109,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                 anchorEl={null}
                 classes={
                   Object {
-                    "typography": "PopMessage-typography-156",
+                    "typography": "PopMessage-typography-179",
                   }
                 }
                 handleClose={[Function]}
@@ -3142,7 +3143,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                     anchorReference="anchorEl"
                     classes={
                       Object {
-                        "paper": "MuiPopover-paper-157",
+                        "paper": "MuiPopover-paper-180",
                       }
                     }
                     elevation={8}
@@ -3175,8 +3176,8 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                         }
                         classes={
                           Object {
-                            "hidden": "MuiModal-hidden-159",
-                            "root": "MuiModal-root-158",
+                            "hidden": "MuiModal-hidden-182",
+                            "root": "MuiModal-root-181",
                           }
                         }
                         disableAutoFocus={false}
