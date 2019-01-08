@@ -29,12 +29,18 @@ const LinkHeading = ({ linkTo, children }) => (
   </StyledLink>
 );
 
-const EventsOverview = ({ internal, external, history }) => (
+const EventsOverview = ({ joined, organized, internal, external, history }) => (
   <>
     <EventsContainer>
       <LinkHeading linkTo={ROUTES.EnteredEvents}>参加イベント</LinkHeading>
-      <AsyncSwipeable loading={false}>
-        {EventCardList({ events: [], expand: true, noWrap: true, horizontal: true, history })}
+      <AsyncSwipeable loading={joined.loading}>
+        {EventCardList({
+          events: eventFormat.internal(joined.joinedEvents),
+          expand: true,
+          noWrap: true,
+          horizontal: true,
+          history,
+        })}
       </AsyncSwipeable>
     </EventsContainer>
     <Divider light />
@@ -72,8 +78,14 @@ const EventsOverview = ({ internal, external, history }) => (
     <Divider light />
     <EventsContainer>
       <LinkHeading linkTo={ROUTES.OrganizedEvents}>主催イベント</LinkHeading>
-      <AsyncSwipeable loading={false}>
-        {EventCardList({ events: [], expand: true, noWrap: true, horizontal: true, history })}
+      <AsyncSwipeable loading={organized.loading}>
+        {EventCardList({
+          events: eventFormat.internal(organized.organizedEvents),
+          expand: true,
+          noWrap: true,
+          horizontal: true,
+          history,
+        })}
       </AsyncSwipeable>
     </EventsContainer>
     <Divider light />
@@ -83,6 +95,31 @@ const EventsOverview = ({ internal, external, history }) => (
 EventsOverview.displayName = 'EventsOverview';
 
 EventsOverview.propTypes = {
+  joined: propTypes.shape({
+    loading: propTypes.bool.isRequired,
+    joinedEvents: propTypes.arrayOf(
+      propTypes.shape({
+        id: propTypes.string,
+        title: propTypes.string,
+        catchMessage: propTypes.string,
+        place: propTypes.string,
+        startedAt: propTypes.string,
+      }),
+    ),
+  }).isRequired,
+  organized: propTypes.shape({
+    loading: propTypes.bool.isRequired,
+    organizedEvents: propTypes.arrayOf(
+      propTypes.shape({
+        id: propTypes.string,
+        title: propTypes.string,
+        catchMessage: propTypes.string,
+        place: propTypes.string,
+        startedAt: propTypes.string,
+      }),
+    ),
+  }).isRequired,
+
   internal: propTypes.shape({
     loading: propTypes.bool.isRequired,
     internalEvents: propTypes.arrayOf(

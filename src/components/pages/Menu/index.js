@@ -54,7 +54,16 @@ class Menu extends React.Component {
   };
 
   render() {
-    const { internal, external, classes, authUser, history, firebase } = this.props;
+    const {
+      joined,
+      organized,
+      internal,
+      external,
+      classes,
+      authUser,
+      history,
+      firebase,
+    } = this.props;
     const { value } = this.state;
     return (
       <>
@@ -66,14 +75,32 @@ class Menu extends React.Component {
             firebase={firebase}
           >
             {value === 0 && (
-              <EventsOverview internal={internal} external={external} history={history} />
+              <EventsOverview
+                joined={joined}
+                organized={organized}
+                internal={internal}
+                external={external}
+                history={history}
+              />
             )}
             {value === 1 && <EventCreateForm onSubmit={this.onSubmitCreateEvent} />}
             {value === 2 && (
-              <EventsOverview internal={internal} external={external} history={history} />
+              <EventsOverview
+                joined={joined}
+                organized={organized}
+                internal={internal}
+                external={external}
+                history={history}
+              />
             )}
             {value === 3 && (
-              <EventsOverview internal={internal} external={external} history={history} />
+              <EventsOverview
+                joined={joined}
+                organized={organized}
+                internal={internal}
+                external={external}
+                history={history}
+              />
             )}
           </Container>
         </ContainerWithTabs>
@@ -98,6 +125,30 @@ class Menu extends React.Component {
 Menu.displayName = 'Menu';
 
 Menu.propTypes = {
+  joined: propTypes.shape({
+    loading: propTypes.bool.isRequired,
+    joinedEvents: propTypes.arrayOf(
+      propTypes.shape({
+        id: propTypes.string,
+        title: propTypes.string,
+        catchMessage: propTypes.string,
+        place: propTypes.string,
+        startedAt: propTypes.string,
+      }),
+    ),
+  }).isRequired,
+  organized: propTypes.shape({
+    loading: propTypes.bool.isRequired,
+    organizedEvents: propTypes.arrayOf(
+      propTypes.shape({
+        id: propTypes.string,
+        title: propTypes.string,
+        catchMessage: propTypes.string,
+        place: propTypes.string,
+        startedAt: propTypes.string,
+      }),
+    ),
+  }).isRequired,
   internal: propTypes.shape({
     loading: propTypes.bool.isRequired,
     internalEvents: propTypes.arrayOf(
