@@ -26,7 +26,6 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
   border-radius: 50%;
   float: left;
   height: 48px;
-  margin-top: 3px;
   position: absolute;
   width: 48px;
 }
@@ -845,7 +844,6 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
   border-radius: 50%;
   float: left;
   height: 48px;
-  margin-top: 3px;
   position: absolute;
   width: 48px;
 ",
@@ -4451,7 +4449,6 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
   border-radius: 50%;
   float: left;
   height: 48px;
-  margin-top: 3px;
   position: absolute;
   width: 48px;
 }
@@ -5270,7 +5267,6 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
   border-radius: 50%;
   float: left;
   height: 48px;
-  margin-top: 3px;
   position: absolute;
   width: 48px;
 ",
