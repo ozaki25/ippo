@@ -822,51 +822,131 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
                           <CharIcon
                             classes={
                               Object {
-                                "amber": "CharIcon-amber-61",
+                                "amber": "CharIcon-amber-63",
                                 "avatar": "CharIcon-avatar-47",
-                                "blue": "CharIcon-blue-53",
-                                "blueGrey": "CharIcon-blueGrey-66",
-                                "brown": "CharIcon-brown-64",
-                                "cyan": "CharIcon-cyan-55",
-                                "deepOrange": "CharIcon-deepOrange-63",
-                                "deepPurple": "CharIcon-deepPurple-51",
-                                "green": "CharIcon-green-57",
-                                "grey": "CharIcon-grey-65",
-                                "indigo": "CharIcon-indigo-52",
-                                "lightBlue": "CharIcon-lightBlue-54",
-                                "lightGreen": "CharIcon-lightGreen-58",
-                                "lime": "CharIcon-lime-59",
-                                "orange": "CharIcon-orange-62",
-                                "pink": "CharIcon-pink-49",
-                                "purple": "CharIcon-purple-50",
-                                "red": "CharIcon-red-48",
-                                "teal": "CharIcon-teal-56",
-                                "yellow": "CharIcon-yellow-60",
+                                "blue": "CharIcon-blue-55",
+                                "blueGrey": "CharIcon-blueGrey-68",
+                                "brown": "CharIcon-brown-66",
+                                "cyan": "CharIcon-cyan-57",
+                                "deepOrange": "CharIcon-deepOrange-65",
+                                "deepPurple": "CharIcon-deepPurple-53",
+                                "green": "CharIcon-green-59",
+                                "grey": "CharIcon-grey-67",
+                                "indigo": "CharIcon-indigo-54",
+                                "lightBlue": "CharIcon-lightBlue-56",
+                                "lightGreen": "CharIcon-lightGreen-60",
+                                "lime": "CharIcon-lime-61",
+                                "orange": "CharIcon-orange-64",
+                                "pink": "CharIcon-pink-51",
+                                "purple": "CharIcon-purple-52",
+                                "red": "CharIcon-red-50",
+                                "smallAvatar": "CharIcon-smallAvatar-48",
+                                "teal": "CharIcon-teal-58",
+                                "wrapper": "CharIcon-wrapper-49",
+                                "yellow": "CharIcon-yellow-62",
                               }
                             }
                             name="ozaki25"
+                            onClick={null}
+                            small={false}
                           >
-                            <WithStyles(Avatar)
-                              className="CharIcon-avatar-47 CharIcon-brown-64"
+                            <WithStyles(IconButton)
+                              className="CharIcon-wrapper-49"
+                              disableRipple={true}
+                              onClick={null}
                             >
-                              <Avatar
-                                className="CharIcon-avatar-47 CharIcon-brown-64"
+                              <IconButton
+                                className="CharIcon-wrapper-49"
                                 classes={
                                   Object {
-                                    "colorDefault": "MuiAvatar-colorDefault-68",
-                                    "img": "MuiAvatar-img-69",
-                                    "root": "MuiAvatar-root-67",
+                                    "colorInherit": "MuiIconButton-colorInherit-70",
+                                    "colorPrimary": "MuiIconButton-colorPrimary-71",
+                                    "colorSecondary": "MuiIconButton-colorSecondary-72",
+                                    "disabled": "MuiIconButton-disabled-73",
+                                    "label": "MuiIconButton-label-74",
+                                    "root": "MuiIconButton-root-69",
                                   }
                                 }
-                                component="div"
+                                color="default"
+                                disableRipple={true}
+                                disabled={false}
+                                onClick={null}
                               >
-                                <div
-                                  className="MuiAvatar-root-67 MuiAvatar-colorDefault-68 CharIcon-avatar-47 CharIcon-brown-64"
+                                <WithStyles(ButtonBase)
+                                  centerRipple={true}
+                                  className="MuiIconButton-root-69 CharIcon-wrapper-49"
+                                  disableRipple={true}
+                                  disabled={false}
+                                  focusRipple={true}
+                                  onClick={null}
                                 >
-                                  o
-                                </div>
-                              </Avatar>
-                            </WithStyles(Avatar)>
+                                  <ButtonBase
+                                    centerRipple={true}
+                                    className="MuiIconButton-root-69 CharIcon-wrapper-49"
+                                    classes={
+                                      Object {
+                                        "disabled": "MuiButtonBase-disabled-76",
+                                        "focusVisible": "MuiButtonBase-focusVisible-77",
+                                        "root": "MuiButtonBase-root-75",
+                                      }
+                                    }
+                                    component="button"
+                                    disableRipple={true}
+                                    disableTouchRipple={false}
+                                    disabled={false}
+                                    focusRipple={true}
+                                    onClick={null}
+                                    tabIndex="0"
+                                    type="button"
+                                  >
+                                    <button
+                                      className="MuiButtonBase-root-75 MuiIconButton-root-69 CharIcon-wrapper-49"
+                                      disabled={false}
+                                      onBlur={[Function]}
+                                      onClick={null}
+                                      onContextMenu={[Function]}
+                                      onFocus={[Function]}
+                                      onKeyDown={[Function]}
+                                      onKeyUp={[Function]}
+                                      onMouseDown={[Function]}
+                                      onMouseLeave={[Function]}
+                                      onMouseUp={[Function]}
+                                      onTouchEnd={[Function]}
+                                      onTouchMove={[Function]}
+                                      onTouchStart={[Function]}
+                                      tabIndex="0"
+                                      type="button"
+                                    >
+                                      <span
+                                        className="MuiIconButton-label-74"
+                                      >
+                                        <WithStyles(Avatar)
+                                          className="CharIcon-avatar-47 CharIcon-brown-66"
+                                        >
+                                          <Avatar
+                                            className="CharIcon-avatar-47 CharIcon-brown-66"
+                                            classes={
+                                              Object {
+                                                "colorDefault": "MuiAvatar-colorDefault-79",
+                                                "img": "MuiAvatar-img-80",
+                                                "root": "MuiAvatar-root-78",
+                                              }
+                                            }
+                                            component="div"
+                                          >
+                                            <div
+                                              className="MuiAvatar-root-78 MuiAvatar-colorDefault-79 CharIcon-avatar-47 CharIcon-brown-66"
+                                            >
+                                              o
+                                            </div>
+                                          </Avatar>
+                                        </WithStyles(Avatar)>
+                                      </span>
+                                    </button>
+                                  </ButtonBase>
+                                </WithStyles(ButtonBase)>
+                              </IconButton>
+                            </WithStyles(IconButton)>
                           </CharIcon>
                         </WithStyles(CharIcon)>
                       </div>
@@ -3508,7 +3588,7 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
                                   <RoundedButton
                                     classes={
                                       Object {
-                                        "rounded": "RoundedButton-rounded-70",
+                                        "rounded": "RoundedButton-rounded-81",
                                       }
                                     }
                                     color="primary"
@@ -3516,42 +3596,42 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
                                     onClick={[MockFunction]}
                                   >
                                     <WithStyles(Button)
-                                      className="RoundedButton-rounded-70"
+                                      className="RoundedButton-rounded-81"
                                       color="primary"
                                       disabled={true}
                                       onClick={[MockFunction]}
                                       variant="contained"
                                     >
                                       <Button
-                                        className="RoundedButton-rounded-70"
+                                        className="RoundedButton-rounded-81"
                                         classes={
                                           Object {
-                                            "colorInherit": "MuiButton-colorInherit-92",
-                                            "contained": "MuiButton-contained-82",
-                                            "containedPrimary": "MuiButton-containedPrimary-83",
-                                            "containedSecondary": "MuiButton-containedSecondary-84",
-                                            "disabled": "MuiButton-disabled-91",
-                                            "extendedFab": "MuiButton-extendedFab-89",
-                                            "fab": "MuiButton-fab-88",
-                                            "flat": "MuiButton-flat-76",
-                                            "flatPrimary": "MuiButton-flatPrimary-77",
-                                            "flatSecondary": "MuiButton-flatSecondary-78",
-                                            "focusVisible": "MuiButton-focusVisible-90",
-                                            "fullWidth": "MuiButton-fullWidth-96",
-                                            "label": "MuiButton-label-72",
-                                            "mini": "MuiButton-mini-93",
-                                            "outlined": "MuiButton-outlined-79",
-                                            "outlinedPrimary": "MuiButton-outlinedPrimary-80",
-                                            "outlinedSecondary": "MuiButton-outlinedSecondary-81",
-                                            "raised": "MuiButton-raised-85",
-                                            "raisedPrimary": "MuiButton-raisedPrimary-86",
-                                            "raisedSecondary": "MuiButton-raisedSecondary-87",
-                                            "root": "MuiButton-root-71",
-                                            "sizeLarge": "MuiButton-sizeLarge-95",
-                                            "sizeSmall": "MuiButton-sizeSmall-94",
-                                            "text": "MuiButton-text-73",
-                                            "textPrimary": "MuiButton-textPrimary-74",
-                                            "textSecondary": "MuiButton-textSecondary-75",
+                                            "colorInherit": "MuiButton-colorInherit-103",
+                                            "contained": "MuiButton-contained-93",
+                                            "containedPrimary": "MuiButton-containedPrimary-94",
+                                            "containedSecondary": "MuiButton-containedSecondary-95",
+                                            "disabled": "MuiButton-disabled-102",
+                                            "extendedFab": "MuiButton-extendedFab-100",
+                                            "fab": "MuiButton-fab-99",
+                                            "flat": "MuiButton-flat-87",
+                                            "flatPrimary": "MuiButton-flatPrimary-88",
+                                            "flatSecondary": "MuiButton-flatSecondary-89",
+                                            "focusVisible": "MuiButton-focusVisible-101",
+                                            "fullWidth": "MuiButton-fullWidth-107",
+                                            "label": "MuiButton-label-83",
+                                            "mini": "MuiButton-mini-104",
+                                            "outlined": "MuiButton-outlined-90",
+                                            "outlinedPrimary": "MuiButton-outlinedPrimary-91",
+                                            "outlinedSecondary": "MuiButton-outlinedSecondary-92",
+                                            "raised": "MuiButton-raised-96",
+                                            "raisedPrimary": "MuiButton-raisedPrimary-97",
+                                            "raisedSecondary": "MuiButton-raisedSecondary-98",
+                                            "root": "MuiButton-root-82",
+                                            "sizeLarge": "MuiButton-sizeLarge-106",
+                                            "sizeSmall": "MuiButton-sizeSmall-105",
+                                            "text": "MuiButton-text-84",
+                                            "textPrimary": "MuiButton-textPrimary-85",
+                                            "textSecondary": "MuiButton-textSecondary-86",
                                           }
                                         }
                                         color="primary"
@@ -3566,22 +3646,22 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
                                         variant="contained"
                                       >
                                         <WithStyles(ButtonBase)
-                                          className="MuiButton-root-71 MuiButton-contained-82 MuiButton-containedPrimary-83 MuiButton-raised-85 MuiButton-raisedPrimary-86 MuiButton-disabled-91 RoundedButton-rounded-70"
+                                          className="MuiButton-root-82 MuiButton-contained-93 MuiButton-containedPrimary-94 MuiButton-raised-96 MuiButton-raisedPrimary-97 MuiButton-disabled-102 RoundedButton-rounded-81"
                                           component="button"
                                           disabled={true}
                                           focusRipple={true}
-                                          focusVisibleClassName="MuiButton-focusVisible-90"
+                                          focusVisibleClassName="MuiButton-focusVisible-101"
                                           onClick={[MockFunction]}
                                           type="button"
                                         >
                                           <ButtonBase
                                             centerRipple={false}
-                                            className="MuiButton-root-71 MuiButton-contained-82 MuiButton-containedPrimary-83 MuiButton-raised-85 MuiButton-raisedPrimary-86 MuiButton-disabled-91 RoundedButton-rounded-70"
+                                            className="MuiButton-root-82 MuiButton-contained-93 MuiButton-containedPrimary-94 MuiButton-raised-96 MuiButton-raisedPrimary-97 MuiButton-disabled-102 RoundedButton-rounded-81"
                                             classes={
                                               Object {
-                                                "disabled": "MuiButtonBase-disabled-98",
-                                                "focusVisible": "MuiButtonBase-focusVisible-99",
-                                                "root": "MuiButtonBase-root-97",
+                                                "disabled": "MuiButtonBase-disabled-76",
+                                                "focusVisible": "MuiButtonBase-focusVisible-77",
+                                                "root": "MuiButtonBase-root-75",
                                               }
                                             }
                                             component="button"
@@ -3589,13 +3669,13 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
                                             disableTouchRipple={false}
                                             disabled={true}
                                             focusRipple={true}
-                                            focusVisibleClassName="MuiButton-focusVisible-90"
+                                            focusVisibleClassName="MuiButton-focusVisible-101"
                                             onClick={[MockFunction]}
                                             tabIndex="0"
                                             type="button"
                                           >
                                             <button
-                                              className="MuiButtonBase-root-97 MuiButtonBase-disabled-98 MuiButton-root-71 MuiButton-contained-82 MuiButton-containedPrimary-83 MuiButton-raised-85 MuiButton-raisedPrimary-86 MuiButton-disabled-91 RoundedButton-rounded-70"
+                                              className="MuiButtonBase-root-75 MuiButtonBase-disabled-76 MuiButton-root-82 MuiButton-contained-93 MuiButton-containedPrimary-94 MuiButton-raised-96 MuiButton-raisedPrimary-97 MuiButton-disabled-102 RoundedButton-rounded-81"
                                               disabled={true}
                                               onBlur={[Function]}
                                               onClick={[MockFunction]}
@@ -3613,7 +3693,7 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
                                               type="button"
                                             >
                                               <span
-                                                className="MuiButton-label-72"
+                                                className="MuiButton-label-83"
                                               >
                                                 参加する
                                               </span>
@@ -3632,49 +3712,49 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
                                   <RoundedButton
                                     classes={
                                       Object {
-                                        "rounded": "RoundedButton-rounded-70",
+                                        "rounded": "RoundedButton-rounded-81",
                                       }
                                     }
                                     disabled={false}
                                     onClick={[MockFunction]}
                                   >
                                     <WithStyles(Button)
-                                      className="RoundedButton-rounded-70"
+                                      className="RoundedButton-rounded-81"
                                       color="inherit"
                                       disabled={false}
                                       onClick={[MockFunction]}
                                       variant="contained"
                                     >
                                       <Button
-                                        className="RoundedButton-rounded-70"
+                                        className="RoundedButton-rounded-81"
                                         classes={
                                           Object {
-                                            "colorInherit": "MuiButton-colorInherit-92",
-                                            "contained": "MuiButton-contained-82",
-                                            "containedPrimary": "MuiButton-containedPrimary-83",
-                                            "containedSecondary": "MuiButton-containedSecondary-84",
-                                            "disabled": "MuiButton-disabled-91",
-                                            "extendedFab": "MuiButton-extendedFab-89",
-                                            "fab": "MuiButton-fab-88",
-                                            "flat": "MuiButton-flat-76",
-                                            "flatPrimary": "MuiButton-flatPrimary-77",
-                                            "flatSecondary": "MuiButton-flatSecondary-78",
-                                            "focusVisible": "MuiButton-focusVisible-90",
-                                            "fullWidth": "MuiButton-fullWidth-96",
-                                            "label": "MuiButton-label-72",
-                                            "mini": "MuiButton-mini-93",
-                                            "outlined": "MuiButton-outlined-79",
-                                            "outlinedPrimary": "MuiButton-outlinedPrimary-80",
-                                            "outlinedSecondary": "MuiButton-outlinedSecondary-81",
-                                            "raised": "MuiButton-raised-85",
-                                            "raisedPrimary": "MuiButton-raisedPrimary-86",
-                                            "raisedSecondary": "MuiButton-raisedSecondary-87",
-                                            "root": "MuiButton-root-71",
-                                            "sizeLarge": "MuiButton-sizeLarge-95",
-                                            "sizeSmall": "MuiButton-sizeSmall-94",
-                                            "text": "MuiButton-text-73",
-                                            "textPrimary": "MuiButton-textPrimary-74",
-                                            "textSecondary": "MuiButton-textSecondary-75",
+                                            "colorInherit": "MuiButton-colorInherit-103",
+                                            "contained": "MuiButton-contained-93",
+                                            "containedPrimary": "MuiButton-containedPrimary-94",
+                                            "containedSecondary": "MuiButton-containedSecondary-95",
+                                            "disabled": "MuiButton-disabled-102",
+                                            "extendedFab": "MuiButton-extendedFab-100",
+                                            "fab": "MuiButton-fab-99",
+                                            "flat": "MuiButton-flat-87",
+                                            "flatPrimary": "MuiButton-flatPrimary-88",
+                                            "flatSecondary": "MuiButton-flatSecondary-89",
+                                            "focusVisible": "MuiButton-focusVisible-101",
+                                            "fullWidth": "MuiButton-fullWidth-107",
+                                            "label": "MuiButton-label-83",
+                                            "mini": "MuiButton-mini-104",
+                                            "outlined": "MuiButton-outlined-90",
+                                            "outlinedPrimary": "MuiButton-outlinedPrimary-91",
+                                            "outlinedSecondary": "MuiButton-outlinedSecondary-92",
+                                            "raised": "MuiButton-raised-96",
+                                            "raisedPrimary": "MuiButton-raisedPrimary-97",
+                                            "raisedSecondary": "MuiButton-raisedSecondary-98",
+                                            "root": "MuiButton-root-82",
+                                            "sizeLarge": "MuiButton-sizeLarge-106",
+                                            "sizeSmall": "MuiButton-sizeSmall-105",
+                                            "text": "MuiButton-text-84",
+                                            "textPrimary": "MuiButton-textPrimary-85",
+                                            "textSecondary": "MuiButton-textSecondary-86",
                                           }
                                         }
                                         color="inherit"
@@ -3689,22 +3769,22 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
                                         variant="contained"
                                       >
                                         <WithStyles(ButtonBase)
-                                          className="MuiButton-root-71 MuiButton-contained-82 MuiButton-raised-85 MuiButton-colorInherit-92 RoundedButton-rounded-70"
+                                          className="MuiButton-root-82 MuiButton-contained-93 MuiButton-raised-96 MuiButton-colorInherit-103 RoundedButton-rounded-81"
                                           component="button"
                                           disabled={false}
                                           focusRipple={true}
-                                          focusVisibleClassName="MuiButton-focusVisible-90"
+                                          focusVisibleClassName="MuiButton-focusVisible-101"
                                           onClick={[MockFunction]}
                                           type="button"
                                         >
                                           <ButtonBase
                                             centerRipple={false}
-                                            className="MuiButton-root-71 MuiButton-contained-82 MuiButton-raised-85 MuiButton-colorInherit-92 RoundedButton-rounded-70"
+                                            className="MuiButton-root-82 MuiButton-contained-93 MuiButton-raised-96 MuiButton-colorInherit-103 RoundedButton-rounded-81"
                                             classes={
                                               Object {
-                                                "disabled": "MuiButtonBase-disabled-98",
-                                                "focusVisible": "MuiButtonBase-focusVisible-99",
-                                                "root": "MuiButtonBase-root-97",
+                                                "disabled": "MuiButtonBase-disabled-76",
+                                                "focusVisible": "MuiButtonBase-focusVisible-77",
+                                                "root": "MuiButtonBase-root-75",
                                               }
                                             }
                                             component="button"
@@ -3712,13 +3792,13 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
                                             disableTouchRipple={false}
                                             disabled={false}
                                             focusRipple={true}
-                                            focusVisibleClassName="MuiButton-focusVisible-90"
+                                            focusVisibleClassName="MuiButton-focusVisible-101"
                                             onClick={[MockFunction]}
                                             tabIndex="0"
                                             type="button"
                                           >
                                             <button
-                                              className="MuiButtonBase-root-97 MuiButton-root-71 MuiButton-contained-82 MuiButton-raised-85 MuiButton-colorInherit-92 RoundedButton-rounded-70"
+                                              className="MuiButtonBase-root-75 MuiButton-root-82 MuiButton-contained-93 MuiButton-raised-96 MuiButton-colorInherit-103 RoundedButton-rounded-81"
                                               disabled={false}
                                               onBlur={[Function]}
                                               onClick={[MockFunction]}
@@ -3736,7 +3816,7 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
                                               type="button"
                                             >
                                               <span
-                                                className="MuiButton-label-72"
+                                                className="MuiButton-label-83"
                                               >
                                                 キャンセルする
                                               </span>
@@ -3752,25 +3832,25 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
                                                     center={false}
                                                     classes={
                                                       Object {
-                                                        "child": "MuiTouchRipple-child-116",
-                                                        "childLeaving": "MuiTouchRipple-childLeaving-117",
-                                                        "childPulsate": "MuiTouchRipple-childPulsate-118",
-                                                        "ripple": "MuiTouchRipple-ripple-113",
-                                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate-115",
-                                                        "rippleVisible": "MuiTouchRipple-rippleVisible-114",
-                                                        "root": "MuiTouchRipple-root-112",
+                                                        "child": "MuiTouchRipple-child-118",
+                                                        "childLeaving": "MuiTouchRipple-childLeaving-119",
+                                                        "childPulsate": "MuiTouchRipple-childPulsate-120",
+                                                        "ripple": "MuiTouchRipple-ripple-115",
+                                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate-117",
+                                                        "rippleVisible": "MuiTouchRipple-rippleVisible-116",
+                                                        "root": "MuiTouchRipple-root-114",
                                                       }
                                                     }
                                                   >
                                                     <TransitionGroup
                                                       childFactory={[Function]}
-                                                      className="MuiTouchRipple-root-112"
+                                                      className="MuiTouchRipple-root-114"
                                                       component="span"
                                                       enter={true}
                                                       exit={true}
                                                     >
                                                       <span
-                                                        className="MuiTouchRipple-root-112"
+                                                        className="MuiTouchRipple-root-114"
                                                       />
                                                     </TransitionGroup>
                                                   </TouchRipple>
@@ -3798,7 +3878,7 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
                     <Component
                       classes={
                         Object {
-                          "smallIcon": "Component-smallIcon-100",
+                          "smallIcon": "Component-smallIcon-108",
                         }
                       }
                       onClickLike={[Function]}
@@ -3839,19 +3919,19 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
                             className="c8"
                           >
                             <WithStyles(IconButton)
-                              className="Component-smallIcon-100"
+                              className="Component-smallIcon-108"
                               onClick={[Function]}
                             >
                               <IconButton
-                                className="Component-smallIcon-100"
+                                className="Component-smallIcon-108"
                                 classes={
                                   Object {
-                                    "colorInherit": "MuiIconButton-colorInherit-102",
-                                    "colorPrimary": "MuiIconButton-colorPrimary-103",
-                                    "colorSecondary": "MuiIconButton-colorSecondary-104",
-                                    "disabled": "MuiIconButton-disabled-105",
-                                    "label": "MuiIconButton-label-106",
-                                    "root": "MuiIconButton-root-101",
+                                    "colorInherit": "MuiIconButton-colorInherit-70",
+                                    "colorPrimary": "MuiIconButton-colorPrimary-71",
+                                    "colorSecondary": "MuiIconButton-colorSecondary-72",
+                                    "disabled": "MuiIconButton-disabled-73",
+                                    "label": "MuiIconButton-label-74",
+                                    "root": "MuiIconButton-root-69",
                                   }
                                 }
                                 color="default"
@@ -3860,19 +3940,19 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
                               >
                                 <WithStyles(ButtonBase)
                                   centerRipple={true}
-                                  className="MuiIconButton-root-101 Component-smallIcon-100"
+                                  className="MuiIconButton-root-69 Component-smallIcon-108"
                                   disabled={false}
                                   focusRipple={true}
                                   onClick={[Function]}
                                 >
                                   <ButtonBase
                                     centerRipple={true}
-                                    className="MuiIconButton-root-101 Component-smallIcon-100"
+                                    className="MuiIconButton-root-69 Component-smallIcon-108"
                                     classes={
                                       Object {
-                                        "disabled": "MuiButtonBase-disabled-98",
-                                        "focusVisible": "MuiButtonBase-focusVisible-99",
-                                        "root": "MuiButtonBase-root-97",
+                                        "disabled": "MuiButtonBase-disabled-76",
+                                        "focusVisible": "MuiButtonBase-focusVisible-77",
+                                        "root": "MuiButtonBase-root-75",
                                       }
                                     }
                                     component="button"
@@ -3885,7 +3965,7 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
                                     type="button"
                                   >
                                     <button
-                                      className="MuiButtonBase-root-97 MuiIconButton-root-101 Component-smallIcon-100"
+                                      className="MuiButtonBase-root-75 MuiIconButton-root-69 Component-smallIcon-108"
                                       disabled={false}
                                       onBlur={[Function]}
                                       onClick={[Function]}
@@ -3903,7 +3983,7 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
                                       type="button"
                                     >
                                       <span
-                                        className="MuiIconButton-label-106"
+                                        className="MuiIconButton-label-74"
                                       >
                                         <pure(ModeCommentOutlinedIcon)
                                           color="action"
@@ -3970,25 +4050,25 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
                                             center={true}
                                             classes={
                                               Object {
-                                                "child": "MuiTouchRipple-child-116",
-                                                "childLeaving": "MuiTouchRipple-childLeaving-117",
-                                                "childPulsate": "MuiTouchRipple-childPulsate-118",
-                                                "ripple": "MuiTouchRipple-ripple-113",
-                                                "ripplePulsate": "MuiTouchRipple-ripplePulsate-115",
-                                                "rippleVisible": "MuiTouchRipple-rippleVisible-114",
-                                                "root": "MuiTouchRipple-root-112",
+                                                "child": "MuiTouchRipple-child-118",
+                                                "childLeaving": "MuiTouchRipple-childLeaving-119",
+                                                "childPulsate": "MuiTouchRipple-childPulsate-120",
+                                                "ripple": "MuiTouchRipple-ripple-115",
+                                                "ripplePulsate": "MuiTouchRipple-ripplePulsate-117",
+                                                "rippleVisible": "MuiTouchRipple-rippleVisible-116",
+                                                "root": "MuiTouchRipple-root-114",
                                               }
                                             }
                                           >
                                             <TransitionGroup
                                               childFactory={[Function]}
-                                              className="MuiTouchRipple-root-112"
+                                              className="MuiTouchRipple-root-114"
                                               component="span"
                                               enter={true}
                                               exit={true}
                                             >
                                               <span
-                                                className="MuiTouchRipple-root-112"
+                                                className="MuiTouchRipple-root-114"
                                               />
                                             </TransitionGroup>
                                           </TouchRipple>
@@ -4036,19 +4116,19 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
                             className="c8"
                           >
                             <WithStyles(IconButton)
-                              className="Component-smallIcon-100"
+                              className="Component-smallIcon-108"
                               onClick={[Function]}
                             >
                               <IconButton
-                                className="Component-smallIcon-100"
+                                className="Component-smallIcon-108"
                                 classes={
                                   Object {
-                                    "colorInherit": "MuiIconButton-colorInherit-102",
-                                    "colorPrimary": "MuiIconButton-colorPrimary-103",
-                                    "colorSecondary": "MuiIconButton-colorSecondary-104",
-                                    "disabled": "MuiIconButton-disabled-105",
-                                    "label": "MuiIconButton-label-106",
-                                    "root": "MuiIconButton-root-101",
+                                    "colorInherit": "MuiIconButton-colorInherit-70",
+                                    "colorPrimary": "MuiIconButton-colorPrimary-71",
+                                    "colorSecondary": "MuiIconButton-colorSecondary-72",
+                                    "disabled": "MuiIconButton-disabled-73",
+                                    "label": "MuiIconButton-label-74",
+                                    "root": "MuiIconButton-root-69",
                                   }
                                 }
                                 color="default"
@@ -4057,19 +4137,19 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
                               >
                                 <WithStyles(ButtonBase)
                                   centerRipple={true}
-                                  className="MuiIconButton-root-101 Component-smallIcon-100"
+                                  className="MuiIconButton-root-69 Component-smallIcon-108"
                                   disabled={false}
                                   focusRipple={true}
                                   onClick={[Function]}
                                 >
                                   <ButtonBase
                                     centerRipple={true}
-                                    className="MuiIconButton-root-101 Component-smallIcon-100"
+                                    className="MuiIconButton-root-69 Component-smallIcon-108"
                                     classes={
                                       Object {
-                                        "disabled": "MuiButtonBase-disabled-98",
-                                        "focusVisible": "MuiButtonBase-focusVisible-99",
-                                        "root": "MuiButtonBase-root-97",
+                                        "disabled": "MuiButtonBase-disabled-76",
+                                        "focusVisible": "MuiButtonBase-focusVisible-77",
+                                        "root": "MuiButtonBase-root-75",
                                       }
                                     }
                                     component="button"
@@ -4082,7 +4162,7 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
                                     type="button"
                                   >
                                     <button
-                                      className="MuiButtonBase-root-97 MuiIconButton-root-101 Component-smallIcon-100"
+                                      className="MuiButtonBase-root-75 MuiIconButton-root-69 Component-smallIcon-108"
                                       disabled={false}
                                       onBlur={[Function]}
                                       onClick={[Function]}
@@ -4100,7 +4180,7 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
                                       type="button"
                                     >
                                       <span
-                                        className="MuiIconButton-label-106"
+                                        className="MuiIconButton-label-74"
                                       >
                                         <pure(RepeatRoundedIcon)
                                           color="action"
@@ -4161,25 +4241,25 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
                                             center={true}
                                             classes={
                                               Object {
-                                                "child": "MuiTouchRipple-child-116",
-                                                "childLeaving": "MuiTouchRipple-childLeaving-117",
-                                                "childPulsate": "MuiTouchRipple-childPulsate-118",
-                                                "ripple": "MuiTouchRipple-ripple-113",
-                                                "ripplePulsate": "MuiTouchRipple-ripplePulsate-115",
-                                                "rippleVisible": "MuiTouchRipple-rippleVisible-114",
-                                                "root": "MuiTouchRipple-root-112",
+                                                "child": "MuiTouchRipple-child-118",
+                                                "childLeaving": "MuiTouchRipple-childLeaving-119",
+                                                "childPulsate": "MuiTouchRipple-childPulsate-120",
+                                                "ripple": "MuiTouchRipple-ripple-115",
+                                                "ripplePulsate": "MuiTouchRipple-ripplePulsate-117",
+                                                "rippleVisible": "MuiTouchRipple-rippleVisible-116",
+                                                "root": "MuiTouchRipple-root-114",
                                               }
                                             }
                                           >
                                             <TransitionGroup
                                               childFactory={[Function]}
-                                              className="MuiTouchRipple-root-112"
+                                              className="MuiTouchRipple-root-114"
                                               component="span"
                                               enter={true}
                                               exit={true}
                                             >
                                               <span
-                                                className="MuiTouchRipple-root-112"
+                                                className="MuiTouchRipple-root-114"
                                               />
                                             </TransitionGroup>
                                           </TouchRipple>
@@ -4227,19 +4307,19 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
                             className="c8"
                           >
                             <WithStyles(IconButton)
-                              className="Component-smallIcon-100"
+                              className="Component-smallIcon-108"
                               onClick={[Function]}
                             >
                               <IconButton
-                                className="Component-smallIcon-100"
+                                className="Component-smallIcon-108"
                                 classes={
                                   Object {
-                                    "colorInherit": "MuiIconButton-colorInherit-102",
-                                    "colorPrimary": "MuiIconButton-colorPrimary-103",
-                                    "colorSecondary": "MuiIconButton-colorSecondary-104",
-                                    "disabled": "MuiIconButton-disabled-105",
-                                    "label": "MuiIconButton-label-106",
-                                    "root": "MuiIconButton-root-101",
+                                    "colorInherit": "MuiIconButton-colorInherit-70",
+                                    "colorPrimary": "MuiIconButton-colorPrimary-71",
+                                    "colorSecondary": "MuiIconButton-colorSecondary-72",
+                                    "disabled": "MuiIconButton-disabled-73",
+                                    "label": "MuiIconButton-label-74",
+                                    "root": "MuiIconButton-root-69",
                                   }
                                 }
                                 color="default"
@@ -4248,19 +4328,19 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
                               >
                                 <WithStyles(ButtonBase)
                                   centerRipple={true}
-                                  className="MuiIconButton-root-101 Component-smallIcon-100"
+                                  className="MuiIconButton-root-69 Component-smallIcon-108"
                                   disabled={false}
                                   focusRipple={true}
                                   onClick={[Function]}
                                 >
                                   <ButtonBase
                                     centerRipple={true}
-                                    className="MuiIconButton-root-101 Component-smallIcon-100"
+                                    className="MuiIconButton-root-69 Component-smallIcon-108"
                                     classes={
                                       Object {
-                                        "disabled": "MuiButtonBase-disabled-98",
-                                        "focusVisible": "MuiButtonBase-focusVisible-99",
-                                        "root": "MuiButtonBase-root-97",
+                                        "disabled": "MuiButtonBase-disabled-76",
+                                        "focusVisible": "MuiButtonBase-focusVisible-77",
+                                        "root": "MuiButtonBase-root-75",
                                       }
                                     }
                                     component="button"
@@ -4273,7 +4353,7 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
                                     type="button"
                                   >
                                     <button
-                                      className="MuiButtonBase-root-97 MuiIconButton-root-101 Component-smallIcon-100"
+                                      className="MuiButtonBase-root-75 MuiIconButton-root-69 Component-smallIcon-108"
                                       disabled={false}
                                       onBlur={[Function]}
                                       onClick={[Function]}
@@ -4291,7 +4371,7 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
                                       type="button"
                                     >
                                       <span
-                                        className="MuiIconButton-label-106"
+                                        className="MuiIconButton-label-74"
                                       >
                                         <pure(FavoriteBorderIcon)
                                           color="action"
@@ -4356,25 +4436,25 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
                                             center={true}
                                             classes={
                                               Object {
-                                                "child": "MuiTouchRipple-child-116",
-                                                "childLeaving": "MuiTouchRipple-childLeaving-117",
-                                                "childPulsate": "MuiTouchRipple-childPulsate-118",
-                                                "ripple": "MuiTouchRipple-ripple-113",
-                                                "ripplePulsate": "MuiTouchRipple-ripplePulsate-115",
-                                                "rippleVisible": "MuiTouchRipple-rippleVisible-114",
-                                                "root": "MuiTouchRipple-root-112",
+                                                "child": "MuiTouchRipple-child-118",
+                                                "childLeaving": "MuiTouchRipple-childLeaving-119",
+                                                "childPulsate": "MuiTouchRipple-childPulsate-120",
+                                                "ripple": "MuiTouchRipple-ripple-115",
+                                                "ripplePulsate": "MuiTouchRipple-ripplePulsate-117",
+                                                "rippleVisible": "MuiTouchRipple-rippleVisible-116",
+                                                "root": "MuiTouchRipple-root-114",
                                               }
                                             }
                                           >
                                             <TransitionGroup
                                               childFactory={[Function]}
-                                              className="MuiTouchRipple-root-112"
+                                              className="MuiTouchRipple-root-114"
                                               component="span"
                                               enter={true}
                                               exit={true}
                                             >
                                               <span
-                                                className="MuiTouchRipple-root-112"
+                                                className="MuiTouchRipple-root-114"
                                               />
                                             </TransitionGroup>
                                           </TouchRipple>
@@ -4403,11 +4483,11 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
           absolute={false}
           classes={
             Object {
-              "absolute": "MuiDivider-absolute-108",
-              "inset": "MuiDivider-inset-109",
-              "light": "MuiDivider-light-110",
-              "middle": "MuiDivider-middle-111",
-              "root": "MuiDivider-root-107",
+              "absolute": "MuiDivider-absolute-110",
+              "inset": "MuiDivider-inset-111",
+              "light": "MuiDivider-light-112",
+              "middle": "MuiDivider-middle-113",
+              "root": "MuiDivider-root-109",
             }
           }
           component="hr"
@@ -4415,7 +4495,7 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
           variant="fullWidth"
         >
           <hr
-            className="MuiDivider-root-107 MuiDivider-light-110"
+            className="MuiDivider-root-109 MuiDivider-light-112"
           />
         </Divider>
       </WithStyles(Divider)>
@@ -5246,51 +5326,131 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
                           <CharIcon
                             classes={
                               Object {
-                                "amber": "CharIcon-amber-61",
+                                "amber": "CharIcon-amber-63",
                                 "avatar": "CharIcon-avatar-47",
-                                "blue": "CharIcon-blue-53",
-                                "blueGrey": "CharIcon-blueGrey-66",
-                                "brown": "CharIcon-brown-64",
-                                "cyan": "CharIcon-cyan-55",
-                                "deepOrange": "CharIcon-deepOrange-63",
-                                "deepPurple": "CharIcon-deepPurple-51",
-                                "green": "CharIcon-green-57",
-                                "grey": "CharIcon-grey-65",
-                                "indigo": "CharIcon-indigo-52",
-                                "lightBlue": "CharIcon-lightBlue-54",
-                                "lightGreen": "CharIcon-lightGreen-58",
-                                "lime": "CharIcon-lime-59",
-                                "orange": "CharIcon-orange-62",
-                                "pink": "CharIcon-pink-49",
-                                "purple": "CharIcon-purple-50",
-                                "red": "CharIcon-red-48",
-                                "teal": "CharIcon-teal-56",
-                                "yellow": "CharIcon-yellow-60",
+                                "blue": "CharIcon-blue-55",
+                                "blueGrey": "CharIcon-blueGrey-68",
+                                "brown": "CharIcon-brown-66",
+                                "cyan": "CharIcon-cyan-57",
+                                "deepOrange": "CharIcon-deepOrange-65",
+                                "deepPurple": "CharIcon-deepPurple-53",
+                                "green": "CharIcon-green-59",
+                                "grey": "CharIcon-grey-67",
+                                "indigo": "CharIcon-indigo-54",
+                                "lightBlue": "CharIcon-lightBlue-56",
+                                "lightGreen": "CharIcon-lightGreen-60",
+                                "lime": "CharIcon-lime-61",
+                                "orange": "CharIcon-orange-64",
+                                "pink": "CharIcon-pink-51",
+                                "purple": "CharIcon-purple-52",
+                                "red": "CharIcon-red-50",
+                                "smallAvatar": "CharIcon-smallAvatar-48",
+                                "teal": "CharIcon-teal-58",
+                                "wrapper": "CharIcon-wrapper-49",
+                                "yellow": "CharIcon-yellow-62",
                               }
                             }
                             name="ozaki25"
+                            onClick={null}
+                            small={false}
                           >
-                            <WithStyles(Avatar)
-                              className="CharIcon-avatar-47 CharIcon-brown-64"
+                            <WithStyles(IconButton)
+                              className="CharIcon-wrapper-49"
+                              disableRipple={true}
+                              onClick={null}
                             >
-                              <Avatar
-                                className="CharIcon-avatar-47 CharIcon-brown-64"
+                              <IconButton
+                                className="CharIcon-wrapper-49"
                                 classes={
                                   Object {
-                                    "colorDefault": "MuiAvatar-colorDefault-68",
-                                    "img": "MuiAvatar-img-69",
-                                    "root": "MuiAvatar-root-67",
+                                    "colorInherit": "MuiIconButton-colorInherit-70",
+                                    "colorPrimary": "MuiIconButton-colorPrimary-71",
+                                    "colorSecondary": "MuiIconButton-colorSecondary-72",
+                                    "disabled": "MuiIconButton-disabled-73",
+                                    "label": "MuiIconButton-label-74",
+                                    "root": "MuiIconButton-root-69",
                                   }
                                 }
-                                component="div"
+                                color="default"
+                                disableRipple={true}
+                                disabled={false}
+                                onClick={null}
                               >
-                                <div
-                                  className="MuiAvatar-root-67 MuiAvatar-colorDefault-68 CharIcon-avatar-47 CharIcon-brown-64"
+                                <WithStyles(ButtonBase)
+                                  centerRipple={true}
+                                  className="MuiIconButton-root-69 CharIcon-wrapper-49"
+                                  disableRipple={true}
+                                  disabled={false}
+                                  focusRipple={true}
+                                  onClick={null}
                                 >
-                                  o
-                                </div>
-                              </Avatar>
-                            </WithStyles(Avatar)>
+                                  <ButtonBase
+                                    centerRipple={true}
+                                    className="MuiIconButton-root-69 CharIcon-wrapper-49"
+                                    classes={
+                                      Object {
+                                        "disabled": "MuiButtonBase-disabled-76",
+                                        "focusVisible": "MuiButtonBase-focusVisible-77",
+                                        "root": "MuiButtonBase-root-75",
+                                      }
+                                    }
+                                    component="button"
+                                    disableRipple={true}
+                                    disableTouchRipple={false}
+                                    disabled={false}
+                                    focusRipple={true}
+                                    onClick={null}
+                                    tabIndex="0"
+                                    type="button"
+                                  >
+                                    <button
+                                      className="MuiButtonBase-root-75 MuiIconButton-root-69 CharIcon-wrapper-49"
+                                      disabled={false}
+                                      onBlur={[Function]}
+                                      onClick={null}
+                                      onContextMenu={[Function]}
+                                      onFocus={[Function]}
+                                      onKeyDown={[Function]}
+                                      onKeyUp={[Function]}
+                                      onMouseDown={[Function]}
+                                      onMouseLeave={[Function]}
+                                      onMouseUp={[Function]}
+                                      onTouchEnd={[Function]}
+                                      onTouchMove={[Function]}
+                                      onTouchStart={[Function]}
+                                      tabIndex="0"
+                                      type="button"
+                                    >
+                                      <span
+                                        className="MuiIconButton-label-74"
+                                      >
+                                        <WithStyles(Avatar)
+                                          className="CharIcon-avatar-47 CharIcon-brown-66"
+                                        >
+                                          <Avatar
+                                            className="CharIcon-avatar-47 CharIcon-brown-66"
+                                            classes={
+                                              Object {
+                                                "colorDefault": "MuiAvatar-colorDefault-79",
+                                                "img": "MuiAvatar-img-80",
+                                                "root": "MuiAvatar-root-78",
+                                              }
+                                            }
+                                            component="div"
+                                          >
+                                            <div
+                                              className="MuiAvatar-root-78 MuiAvatar-colorDefault-79 CharIcon-avatar-47 CharIcon-brown-66"
+                                            >
+                                              o
+                                            </div>
+                                          </Avatar>
+                                        </WithStyles(Avatar)>
+                                      </span>
+                                    </button>
+                                  </ButtonBase>
+                                </WithStyles(ButtonBase)>
+                              </IconButton>
+                            </WithStyles(IconButton)>
                           </CharIcon>
                         </WithStyles(CharIcon)>
                       </div>
@@ -7932,7 +8092,7 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
                                   <RoundedButton
                                     classes={
                                       Object {
-                                        "rounded": "RoundedButton-rounded-70",
+                                        "rounded": "RoundedButton-rounded-81",
                                       }
                                     }
                                     color="primary"
@@ -7940,42 +8100,42 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
                                     onClick={[MockFunction]}
                                   >
                                     <WithStyles(Button)
-                                      className="RoundedButton-rounded-70"
+                                      className="RoundedButton-rounded-81"
                                       color="primary"
                                       disabled={false}
                                       onClick={[MockFunction]}
                                       variant="contained"
                                     >
                                       <Button
-                                        className="RoundedButton-rounded-70"
+                                        className="RoundedButton-rounded-81"
                                         classes={
                                           Object {
-                                            "colorInherit": "MuiButton-colorInherit-92",
-                                            "contained": "MuiButton-contained-82",
-                                            "containedPrimary": "MuiButton-containedPrimary-83",
-                                            "containedSecondary": "MuiButton-containedSecondary-84",
-                                            "disabled": "MuiButton-disabled-91",
-                                            "extendedFab": "MuiButton-extendedFab-89",
-                                            "fab": "MuiButton-fab-88",
-                                            "flat": "MuiButton-flat-76",
-                                            "flatPrimary": "MuiButton-flatPrimary-77",
-                                            "flatSecondary": "MuiButton-flatSecondary-78",
-                                            "focusVisible": "MuiButton-focusVisible-90",
-                                            "fullWidth": "MuiButton-fullWidth-96",
-                                            "label": "MuiButton-label-72",
-                                            "mini": "MuiButton-mini-93",
-                                            "outlined": "MuiButton-outlined-79",
-                                            "outlinedPrimary": "MuiButton-outlinedPrimary-80",
-                                            "outlinedSecondary": "MuiButton-outlinedSecondary-81",
-                                            "raised": "MuiButton-raised-85",
-                                            "raisedPrimary": "MuiButton-raisedPrimary-86",
-                                            "raisedSecondary": "MuiButton-raisedSecondary-87",
-                                            "root": "MuiButton-root-71",
-                                            "sizeLarge": "MuiButton-sizeLarge-95",
-                                            "sizeSmall": "MuiButton-sizeSmall-94",
-                                            "text": "MuiButton-text-73",
-                                            "textPrimary": "MuiButton-textPrimary-74",
-                                            "textSecondary": "MuiButton-textSecondary-75",
+                                            "colorInherit": "MuiButton-colorInherit-103",
+                                            "contained": "MuiButton-contained-93",
+                                            "containedPrimary": "MuiButton-containedPrimary-94",
+                                            "containedSecondary": "MuiButton-containedSecondary-95",
+                                            "disabled": "MuiButton-disabled-102",
+                                            "extendedFab": "MuiButton-extendedFab-100",
+                                            "fab": "MuiButton-fab-99",
+                                            "flat": "MuiButton-flat-87",
+                                            "flatPrimary": "MuiButton-flatPrimary-88",
+                                            "flatSecondary": "MuiButton-flatSecondary-89",
+                                            "focusVisible": "MuiButton-focusVisible-101",
+                                            "fullWidth": "MuiButton-fullWidth-107",
+                                            "label": "MuiButton-label-83",
+                                            "mini": "MuiButton-mini-104",
+                                            "outlined": "MuiButton-outlined-90",
+                                            "outlinedPrimary": "MuiButton-outlinedPrimary-91",
+                                            "outlinedSecondary": "MuiButton-outlinedSecondary-92",
+                                            "raised": "MuiButton-raised-96",
+                                            "raisedPrimary": "MuiButton-raisedPrimary-97",
+                                            "raisedSecondary": "MuiButton-raisedSecondary-98",
+                                            "root": "MuiButton-root-82",
+                                            "sizeLarge": "MuiButton-sizeLarge-106",
+                                            "sizeSmall": "MuiButton-sizeSmall-105",
+                                            "text": "MuiButton-text-84",
+                                            "textPrimary": "MuiButton-textPrimary-85",
+                                            "textSecondary": "MuiButton-textSecondary-86",
                                           }
                                         }
                                         color="primary"
@@ -7990,22 +8150,22 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
                                         variant="contained"
                                       >
                                         <WithStyles(ButtonBase)
-                                          className="MuiButton-root-71 MuiButton-contained-82 MuiButton-containedPrimary-83 MuiButton-raised-85 MuiButton-raisedPrimary-86 RoundedButton-rounded-70"
+                                          className="MuiButton-root-82 MuiButton-contained-93 MuiButton-containedPrimary-94 MuiButton-raised-96 MuiButton-raisedPrimary-97 RoundedButton-rounded-81"
                                           component="button"
                                           disabled={false}
                                           focusRipple={true}
-                                          focusVisibleClassName="MuiButton-focusVisible-90"
+                                          focusVisibleClassName="MuiButton-focusVisible-101"
                                           onClick={[MockFunction]}
                                           type="button"
                                         >
                                           <ButtonBase
                                             centerRipple={false}
-                                            className="MuiButton-root-71 MuiButton-contained-82 MuiButton-containedPrimary-83 MuiButton-raised-85 MuiButton-raisedPrimary-86 RoundedButton-rounded-70"
+                                            className="MuiButton-root-82 MuiButton-contained-93 MuiButton-containedPrimary-94 MuiButton-raised-96 MuiButton-raisedPrimary-97 RoundedButton-rounded-81"
                                             classes={
                                               Object {
-                                                "disabled": "MuiButtonBase-disabled-98",
-                                                "focusVisible": "MuiButtonBase-focusVisible-99",
-                                                "root": "MuiButtonBase-root-97",
+                                                "disabled": "MuiButtonBase-disabled-76",
+                                                "focusVisible": "MuiButtonBase-focusVisible-77",
+                                                "root": "MuiButtonBase-root-75",
                                               }
                                             }
                                             component="button"
@@ -8013,13 +8173,13 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
                                             disableTouchRipple={false}
                                             disabled={false}
                                             focusRipple={true}
-                                            focusVisibleClassName="MuiButton-focusVisible-90"
+                                            focusVisibleClassName="MuiButton-focusVisible-101"
                                             onClick={[MockFunction]}
                                             tabIndex="0"
                                             type="button"
                                           >
                                             <button
-                                              className="MuiButtonBase-root-97 MuiButton-root-71 MuiButton-contained-82 MuiButton-containedPrimary-83 MuiButton-raised-85 MuiButton-raisedPrimary-86 RoundedButton-rounded-70"
+                                              className="MuiButtonBase-root-75 MuiButton-root-82 MuiButton-contained-93 MuiButton-containedPrimary-94 MuiButton-raised-96 MuiButton-raisedPrimary-97 RoundedButton-rounded-81"
                                               disabled={false}
                                               onBlur={[Function]}
                                               onClick={[MockFunction]}
@@ -8037,7 +8197,7 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
                                               type="button"
                                             >
                                               <span
-                                                className="MuiButton-label-72"
+                                                className="MuiButton-label-83"
                                               >
                                                 参加する
                                               </span>
@@ -8053,25 +8213,25 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
                                                     center={false}
                                                     classes={
                                                       Object {
-                                                        "child": "MuiTouchRipple-child-116",
-                                                        "childLeaving": "MuiTouchRipple-childLeaving-117",
-                                                        "childPulsate": "MuiTouchRipple-childPulsate-118",
-                                                        "ripple": "MuiTouchRipple-ripple-113",
-                                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate-115",
-                                                        "rippleVisible": "MuiTouchRipple-rippleVisible-114",
-                                                        "root": "MuiTouchRipple-root-112",
+                                                        "child": "MuiTouchRipple-child-118",
+                                                        "childLeaving": "MuiTouchRipple-childLeaving-119",
+                                                        "childPulsate": "MuiTouchRipple-childPulsate-120",
+                                                        "ripple": "MuiTouchRipple-ripple-115",
+                                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate-117",
+                                                        "rippleVisible": "MuiTouchRipple-rippleVisible-116",
+                                                        "root": "MuiTouchRipple-root-114",
                                                       }
                                                     }
                                                   >
                                                     <TransitionGroup
                                                       childFactory={[Function]}
-                                                      className="MuiTouchRipple-root-112"
+                                                      className="MuiTouchRipple-root-114"
                                                       component="span"
                                                       enter={true}
                                                       exit={true}
                                                     >
                                                       <span
-                                                        className="MuiTouchRipple-root-112"
+                                                        className="MuiTouchRipple-root-114"
                                                       />
                                                     </TransitionGroup>
                                                   </TouchRipple>
@@ -8092,49 +8252,49 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
                                   <RoundedButton
                                     classes={
                                       Object {
-                                        "rounded": "RoundedButton-rounded-70",
+                                        "rounded": "RoundedButton-rounded-81",
                                       }
                                     }
                                     disabled={true}
                                     onClick={[MockFunction]}
                                   >
                                     <WithStyles(Button)
-                                      className="RoundedButton-rounded-70"
+                                      className="RoundedButton-rounded-81"
                                       color="inherit"
                                       disabled={true}
                                       onClick={[MockFunction]}
                                       variant="contained"
                                     >
                                       <Button
-                                        className="RoundedButton-rounded-70"
+                                        className="RoundedButton-rounded-81"
                                         classes={
                                           Object {
-                                            "colorInherit": "MuiButton-colorInherit-92",
-                                            "contained": "MuiButton-contained-82",
-                                            "containedPrimary": "MuiButton-containedPrimary-83",
-                                            "containedSecondary": "MuiButton-containedSecondary-84",
-                                            "disabled": "MuiButton-disabled-91",
-                                            "extendedFab": "MuiButton-extendedFab-89",
-                                            "fab": "MuiButton-fab-88",
-                                            "flat": "MuiButton-flat-76",
-                                            "flatPrimary": "MuiButton-flatPrimary-77",
-                                            "flatSecondary": "MuiButton-flatSecondary-78",
-                                            "focusVisible": "MuiButton-focusVisible-90",
-                                            "fullWidth": "MuiButton-fullWidth-96",
-                                            "label": "MuiButton-label-72",
-                                            "mini": "MuiButton-mini-93",
-                                            "outlined": "MuiButton-outlined-79",
-                                            "outlinedPrimary": "MuiButton-outlinedPrimary-80",
-                                            "outlinedSecondary": "MuiButton-outlinedSecondary-81",
-                                            "raised": "MuiButton-raised-85",
-                                            "raisedPrimary": "MuiButton-raisedPrimary-86",
-                                            "raisedSecondary": "MuiButton-raisedSecondary-87",
-                                            "root": "MuiButton-root-71",
-                                            "sizeLarge": "MuiButton-sizeLarge-95",
-                                            "sizeSmall": "MuiButton-sizeSmall-94",
-                                            "text": "MuiButton-text-73",
-                                            "textPrimary": "MuiButton-textPrimary-74",
-                                            "textSecondary": "MuiButton-textSecondary-75",
+                                            "colorInherit": "MuiButton-colorInherit-103",
+                                            "contained": "MuiButton-contained-93",
+                                            "containedPrimary": "MuiButton-containedPrimary-94",
+                                            "containedSecondary": "MuiButton-containedSecondary-95",
+                                            "disabled": "MuiButton-disabled-102",
+                                            "extendedFab": "MuiButton-extendedFab-100",
+                                            "fab": "MuiButton-fab-99",
+                                            "flat": "MuiButton-flat-87",
+                                            "flatPrimary": "MuiButton-flatPrimary-88",
+                                            "flatSecondary": "MuiButton-flatSecondary-89",
+                                            "focusVisible": "MuiButton-focusVisible-101",
+                                            "fullWidth": "MuiButton-fullWidth-107",
+                                            "label": "MuiButton-label-83",
+                                            "mini": "MuiButton-mini-104",
+                                            "outlined": "MuiButton-outlined-90",
+                                            "outlinedPrimary": "MuiButton-outlinedPrimary-91",
+                                            "outlinedSecondary": "MuiButton-outlinedSecondary-92",
+                                            "raised": "MuiButton-raised-96",
+                                            "raisedPrimary": "MuiButton-raisedPrimary-97",
+                                            "raisedSecondary": "MuiButton-raisedSecondary-98",
+                                            "root": "MuiButton-root-82",
+                                            "sizeLarge": "MuiButton-sizeLarge-106",
+                                            "sizeSmall": "MuiButton-sizeSmall-105",
+                                            "text": "MuiButton-text-84",
+                                            "textPrimary": "MuiButton-textPrimary-85",
+                                            "textSecondary": "MuiButton-textSecondary-86",
                                           }
                                         }
                                         color="inherit"
@@ -8149,22 +8309,22 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
                                         variant="contained"
                                       >
                                         <WithStyles(ButtonBase)
-                                          className="MuiButton-root-71 MuiButton-contained-82 MuiButton-raised-85 MuiButton-disabled-91 MuiButton-colorInherit-92 RoundedButton-rounded-70"
+                                          className="MuiButton-root-82 MuiButton-contained-93 MuiButton-raised-96 MuiButton-disabled-102 MuiButton-colorInherit-103 RoundedButton-rounded-81"
                                           component="button"
                                           disabled={true}
                                           focusRipple={true}
-                                          focusVisibleClassName="MuiButton-focusVisible-90"
+                                          focusVisibleClassName="MuiButton-focusVisible-101"
                                           onClick={[MockFunction]}
                                           type="button"
                                         >
                                           <ButtonBase
                                             centerRipple={false}
-                                            className="MuiButton-root-71 MuiButton-contained-82 MuiButton-raised-85 MuiButton-disabled-91 MuiButton-colorInherit-92 RoundedButton-rounded-70"
+                                            className="MuiButton-root-82 MuiButton-contained-93 MuiButton-raised-96 MuiButton-disabled-102 MuiButton-colorInherit-103 RoundedButton-rounded-81"
                                             classes={
                                               Object {
-                                                "disabled": "MuiButtonBase-disabled-98",
-                                                "focusVisible": "MuiButtonBase-focusVisible-99",
-                                                "root": "MuiButtonBase-root-97",
+                                                "disabled": "MuiButtonBase-disabled-76",
+                                                "focusVisible": "MuiButtonBase-focusVisible-77",
+                                                "root": "MuiButtonBase-root-75",
                                               }
                                             }
                                             component="button"
@@ -8172,13 +8332,13 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
                                             disableTouchRipple={false}
                                             disabled={true}
                                             focusRipple={true}
-                                            focusVisibleClassName="MuiButton-focusVisible-90"
+                                            focusVisibleClassName="MuiButton-focusVisible-101"
                                             onClick={[MockFunction]}
                                             tabIndex="0"
                                             type="button"
                                           >
                                             <button
-                                              className="MuiButtonBase-root-97 MuiButtonBase-disabled-98 MuiButton-root-71 MuiButton-contained-82 MuiButton-raised-85 MuiButton-disabled-91 MuiButton-colorInherit-92 RoundedButton-rounded-70"
+                                              className="MuiButtonBase-root-75 MuiButtonBase-disabled-76 MuiButton-root-82 MuiButton-contained-93 MuiButton-raised-96 MuiButton-disabled-102 MuiButton-colorInherit-103 RoundedButton-rounded-81"
                                               disabled={true}
                                               onBlur={[Function]}
                                               onClick={[MockFunction]}
@@ -8196,7 +8356,7 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
                                               type="button"
                                             >
                                               <span
-                                                className="MuiButton-label-72"
+                                                className="MuiButton-label-83"
                                               >
                                                 キャンセルする
                                               </span>
@@ -8222,7 +8382,7 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
                     <Component
                       classes={
                         Object {
-                          "smallIcon": "Component-smallIcon-100",
+                          "smallIcon": "Component-smallIcon-108",
                         }
                       }
                       onClickLike={[Function]}
@@ -8263,19 +8423,19 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
                             className="c8"
                           >
                             <WithStyles(IconButton)
-                              className="Component-smallIcon-100"
+                              className="Component-smallIcon-108"
                               onClick={[Function]}
                             >
                               <IconButton
-                                className="Component-smallIcon-100"
+                                className="Component-smallIcon-108"
                                 classes={
                                   Object {
-                                    "colorInherit": "MuiIconButton-colorInherit-102",
-                                    "colorPrimary": "MuiIconButton-colorPrimary-103",
-                                    "colorSecondary": "MuiIconButton-colorSecondary-104",
-                                    "disabled": "MuiIconButton-disabled-105",
-                                    "label": "MuiIconButton-label-106",
-                                    "root": "MuiIconButton-root-101",
+                                    "colorInherit": "MuiIconButton-colorInherit-70",
+                                    "colorPrimary": "MuiIconButton-colorPrimary-71",
+                                    "colorSecondary": "MuiIconButton-colorSecondary-72",
+                                    "disabled": "MuiIconButton-disabled-73",
+                                    "label": "MuiIconButton-label-74",
+                                    "root": "MuiIconButton-root-69",
                                   }
                                 }
                                 color="default"
@@ -8284,19 +8444,19 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
                               >
                                 <WithStyles(ButtonBase)
                                   centerRipple={true}
-                                  className="MuiIconButton-root-101 Component-smallIcon-100"
+                                  className="MuiIconButton-root-69 Component-smallIcon-108"
                                   disabled={false}
                                   focusRipple={true}
                                   onClick={[Function]}
                                 >
                                   <ButtonBase
                                     centerRipple={true}
-                                    className="MuiIconButton-root-101 Component-smallIcon-100"
+                                    className="MuiIconButton-root-69 Component-smallIcon-108"
                                     classes={
                                       Object {
-                                        "disabled": "MuiButtonBase-disabled-98",
-                                        "focusVisible": "MuiButtonBase-focusVisible-99",
-                                        "root": "MuiButtonBase-root-97",
+                                        "disabled": "MuiButtonBase-disabled-76",
+                                        "focusVisible": "MuiButtonBase-focusVisible-77",
+                                        "root": "MuiButtonBase-root-75",
                                       }
                                     }
                                     component="button"
@@ -8309,7 +8469,7 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
                                     type="button"
                                   >
                                     <button
-                                      className="MuiButtonBase-root-97 MuiIconButton-root-101 Component-smallIcon-100"
+                                      className="MuiButtonBase-root-75 MuiIconButton-root-69 Component-smallIcon-108"
                                       disabled={false}
                                       onBlur={[Function]}
                                       onClick={[Function]}
@@ -8327,7 +8487,7 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
                                       type="button"
                                     >
                                       <span
-                                        className="MuiIconButton-label-106"
+                                        className="MuiIconButton-label-74"
                                       >
                                         <pure(ModeCommentOutlinedIcon)
                                           color="action"
@@ -8394,25 +8554,25 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
                                             center={true}
                                             classes={
                                               Object {
-                                                "child": "MuiTouchRipple-child-116",
-                                                "childLeaving": "MuiTouchRipple-childLeaving-117",
-                                                "childPulsate": "MuiTouchRipple-childPulsate-118",
-                                                "ripple": "MuiTouchRipple-ripple-113",
-                                                "ripplePulsate": "MuiTouchRipple-ripplePulsate-115",
-                                                "rippleVisible": "MuiTouchRipple-rippleVisible-114",
-                                                "root": "MuiTouchRipple-root-112",
+                                                "child": "MuiTouchRipple-child-118",
+                                                "childLeaving": "MuiTouchRipple-childLeaving-119",
+                                                "childPulsate": "MuiTouchRipple-childPulsate-120",
+                                                "ripple": "MuiTouchRipple-ripple-115",
+                                                "ripplePulsate": "MuiTouchRipple-ripplePulsate-117",
+                                                "rippleVisible": "MuiTouchRipple-rippleVisible-116",
+                                                "root": "MuiTouchRipple-root-114",
                                               }
                                             }
                                           >
                                             <TransitionGroup
                                               childFactory={[Function]}
-                                              className="MuiTouchRipple-root-112"
+                                              className="MuiTouchRipple-root-114"
                                               component="span"
                                               enter={true}
                                               exit={true}
                                             >
                                               <span
-                                                className="MuiTouchRipple-root-112"
+                                                className="MuiTouchRipple-root-114"
                                               />
                                             </TransitionGroup>
                                           </TouchRipple>
@@ -8460,19 +8620,19 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
                             className="c8"
                           >
                             <WithStyles(IconButton)
-                              className="Component-smallIcon-100"
+                              className="Component-smallIcon-108"
                               onClick={[Function]}
                             >
                               <IconButton
-                                className="Component-smallIcon-100"
+                                className="Component-smallIcon-108"
                                 classes={
                                   Object {
-                                    "colorInherit": "MuiIconButton-colorInherit-102",
-                                    "colorPrimary": "MuiIconButton-colorPrimary-103",
-                                    "colorSecondary": "MuiIconButton-colorSecondary-104",
-                                    "disabled": "MuiIconButton-disabled-105",
-                                    "label": "MuiIconButton-label-106",
-                                    "root": "MuiIconButton-root-101",
+                                    "colorInherit": "MuiIconButton-colorInherit-70",
+                                    "colorPrimary": "MuiIconButton-colorPrimary-71",
+                                    "colorSecondary": "MuiIconButton-colorSecondary-72",
+                                    "disabled": "MuiIconButton-disabled-73",
+                                    "label": "MuiIconButton-label-74",
+                                    "root": "MuiIconButton-root-69",
                                   }
                                 }
                                 color="default"
@@ -8481,19 +8641,19 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
                               >
                                 <WithStyles(ButtonBase)
                                   centerRipple={true}
-                                  className="MuiIconButton-root-101 Component-smallIcon-100"
+                                  className="MuiIconButton-root-69 Component-smallIcon-108"
                                   disabled={false}
                                   focusRipple={true}
                                   onClick={[Function]}
                                 >
                                   <ButtonBase
                                     centerRipple={true}
-                                    className="MuiIconButton-root-101 Component-smallIcon-100"
+                                    className="MuiIconButton-root-69 Component-smallIcon-108"
                                     classes={
                                       Object {
-                                        "disabled": "MuiButtonBase-disabled-98",
-                                        "focusVisible": "MuiButtonBase-focusVisible-99",
-                                        "root": "MuiButtonBase-root-97",
+                                        "disabled": "MuiButtonBase-disabled-76",
+                                        "focusVisible": "MuiButtonBase-focusVisible-77",
+                                        "root": "MuiButtonBase-root-75",
                                       }
                                     }
                                     component="button"
@@ -8506,7 +8666,7 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
                                     type="button"
                                   >
                                     <button
-                                      className="MuiButtonBase-root-97 MuiIconButton-root-101 Component-smallIcon-100"
+                                      className="MuiButtonBase-root-75 MuiIconButton-root-69 Component-smallIcon-108"
                                       disabled={false}
                                       onBlur={[Function]}
                                       onClick={[Function]}
@@ -8524,7 +8684,7 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
                                       type="button"
                                     >
                                       <span
-                                        className="MuiIconButton-label-106"
+                                        className="MuiIconButton-label-74"
                                       >
                                         <pure(RepeatRoundedIcon)
                                           color="action"
@@ -8585,25 +8745,25 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
                                             center={true}
                                             classes={
                                               Object {
-                                                "child": "MuiTouchRipple-child-116",
-                                                "childLeaving": "MuiTouchRipple-childLeaving-117",
-                                                "childPulsate": "MuiTouchRipple-childPulsate-118",
-                                                "ripple": "MuiTouchRipple-ripple-113",
-                                                "ripplePulsate": "MuiTouchRipple-ripplePulsate-115",
-                                                "rippleVisible": "MuiTouchRipple-rippleVisible-114",
-                                                "root": "MuiTouchRipple-root-112",
+                                                "child": "MuiTouchRipple-child-118",
+                                                "childLeaving": "MuiTouchRipple-childLeaving-119",
+                                                "childPulsate": "MuiTouchRipple-childPulsate-120",
+                                                "ripple": "MuiTouchRipple-ripple-115",
+                                                "ripplePulsate": "MuiTouchRipple-ripplePulsate-117",
+                                                "rippleVisible": "MuiTouchRipple-rippleVisible-116",
+                                                "root": "MuiTouchRipple-root-114",
                                               }
                                             }
                                           >
                                             <TransitionGroup
                                               childFactory={[Function]}
-                                              className="MuiTouchRipple-root-112"
+                                              className="MuiTouchRipple-root-114"
                                               component="span"
                                               enter={true}
                                               exit={true}
                                             >
                                               <span
-                                                className="MuiTouchRipple-root-112"
+                                                className="MuiTouchRipple-root-114"
                                               />
                                             </TransitionGroup>
                                           </TouchRipple>
@@ -8651,19 +8811,19 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
                             className="c8"
                           >
                             <WithStyles(IconButton)
-                              className="Component-smallIcon-100"
+                              className="Component-smallIcon-108"
                               onClick={[Function]}
                             >
                               <IconButton
-                                className="Component-smallIcon-100"
+                                className="Component-smallIcon-108"
                                 classes={
                                   Object {
-                                    "colorInherit": "MuiIconButton-colorInherit-102",
-                                    "colorPrimary": "MuiIconButton-colorPrimary-103",
-                                    "colorSecondary": "MuiIconButton-colorSecondary-104",
-                                    "disabled": "MuiIconButton-disabled-105",
-                                    "label": "MuiIconButton-label-106",
-                                    "root": "MuiIconButton-root-101",
+                                    "colorInherit": "MuiIconButton-colorInherit-70",
+                                    "colorPrimary": "MuiIconButton-colorPrimary-71",
+                                    "colorSecondary": "MuiIconButton-colorSecondary-72",
+                                    "disabled": "MuiIconButton-disabled-73",
+                                    "label": "MuiIconButton-label-74",
+                                    "root": "MuiIconButton-root-69",
                                   }
                                 }
                                 color="default"
@@ -8672,19 +8832,19 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
                               >
                                 <WithStyles(ButtonBase)
                                   centerRipple={true}
-                                  className="MuiIconButton-root-101 Component-smallIcon-100"
+                                  className="MuiIconButton-root-69 Component-smallIcon-108"
                                   disabled={false}
                                   focusRipple={true}
                                   onClick={[Function]}
                                 >
                                   <ButtonBase
                                     centerRipple={true}
-                                    className="MuiIconButton-root-101 Component-smallIcon-100"
+                                    className="MuiIconButton-root-69 Component-smallIcon-108"
                                     classes={
                                       Object {
-                                        "disabled": "MuiButtonBase-disabled-98",
-                                        "focusVisible": "MuiButtonBase-focusVisible-99",
-                                        "root": "MuiButtonBase-root-97",
+                                        "disabled": "MuiButtonBase-disabled-76",
+                                        "focusVisible": "MuiButtonBase-focusVisible-77",
+                                        "root": "MuiButtonBase-root-75",
                                       }
                                     }
                                     component="button"
@@ -8697,7 +8857,7 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
                                     type="button"
                                   >
                                     <button
-                                      className="MuiButtonBase-root-97 MuiIconButton-root-101 Component-smallIcon-100"
+                                      className="MuiButtonBase-root-75 MuiIconButton-root-69 Component-smallIcon-108"
                                       disabled={false}
                                       onBlur={[Function]}
                                       onClick={[Function]}
@@ -8715,7 +8875,7 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
                                       type="button"
                                     >
                                       <span
-                                        className="MuiIconButton-label-106"
+                                        className="MuiIconButton-label-74"
                                       >
                                         <pure(FavoriteBorderIcon)
                                           color="action"
@@ -8780,25 +8940,25 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
                                             center={true}
                                             classes={
                                               Object {
-                                                "child": "MuiTouchRipple-child-116",
-                                                "childLeaving": "MuiTouchRipple-childLeaving-117",
-                                                "childPulsate": "MuiTouchRipple-childPulsate-118",
-                                                "ripple": "MuiTouchRipple-ripple-113",
-                                                "ripplePulsate": "MuiTouchRipple-ripplePulsate-115",
-                                                "rippleVisible": "MuiTouchRipple-rippleVisible-114",
-                                                "root": "MuiTouchRipple-root-112",
+                                                "child": "MuiTouchRipple-child-118",
+                                                "childLeaving": "MuiTouchRipple-childLeaving-119",
+                                                "childPulsate": "MuiTouchRipple-childPulsate-120",
+                                                "ripple": "MuiTouchRipple-ripple-115",
+                                                "ripplePulsate": "MuiTouchRipple-ripplePulsate-117",
+                                                "rippleVisible": "MuiTouchRipple-rippleVisible-116",
+                                                "root": "MuiTouchRipple-root-114",
                                               }
                                             }
                                           >
                                             <TransitionGroup
                                               childFactory={[Function]}
-                                              className="MuiTouchRipple-root-112"
+                                              className="MuiTouchRipple-root-114"
                                               component="span"
                                               enter={true}
                                               exit={true}
                                             >
                                               <span
-                                                className="MuiTouchRipple-root-112"
+                                                className="MuiTouchRipple-root-114"
                                               />
                                             </TransitionGroup>
                                           </TouchRipple>
@@ -8827,11 +8987,11 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
           absolute={false}
           classes={
             Object {
-              "absolute": "MuiDivider-absolute-108",
-              "inset": "MuiDivider-inset-109",
-              "light": "MuiDivider-light-110",
-              "middle": "MuiDivider-middle-111",
-              "root": "MuiDivider-root-107",
+              "absolute": "MuiDivider-absolute-110",
+              "inset": "MuiDivider-inset-111",
+              "light": "MuiDivider-light-112",
+              "middle": "MuiDivider-middle-113",
+              "root": "MuiDivider-root-109",
             }
           }
           component="hr"
@@ -8839,7 +8999,7 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
           variant="fullWidth"
         >
           <hr
-            className="MuiDivider-root-107 MuiDivider-light-110"
+            className="MuiDivider-root-109 MuiDivider-light-112"
           />
         </Divider>
       </WithStyles(Divider)>

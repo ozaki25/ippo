@@ -49,7 +49,9 @@ const props = {
     goBack: jest.fn(),
     replace: jest.fn(),
   },
-  firebase: {},
+  firebase: {
+    doSignOut: jest.fn(),
+  },
 };
 
 snapshot('Menu/nomal', <Menu {...props} />);

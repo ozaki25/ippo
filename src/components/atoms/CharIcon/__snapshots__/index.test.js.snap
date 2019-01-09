@@ -12,55 +12,136 @@ exports[`should match snapshot: CharIcon/nomal 1`] = `
 >
   <WithStyles(CharIcon)
     name="ozaki25"
+    onClick={[MockFunction]}
   >
     <CharIcon
       classes={
         Object {
-          "amber": "CharIcon-amber-15",
+          "amber": "CharIcon-amber-17",
           "avatar": "CharIcon-avatar-1",
-          "blue": "CharIcon-blue-7",
-          "blueGrey": "CharIcon-blueGrey-20",
-          "brown": "CharIcon-brown-18",
-          "cyan": "CharIcon-cyan-9",
-          "deepOrange": "CharIcon-deepOrange-17",
-          "deepPurple": "CharIcon-deepPurple-5",
-          "green": "CharIcon-green-11",
-          "grey": "CharIcon-grey-19",
-          "indigo": "CharIcon-indigo-6",
-          "lightBlue": "CharIcon-lightBlue-8",
-          "lightGreen": "CharIcon-lightGreen-12",
-          "lime": "CharIcon-lime-13",
-          "orange": "CharIcon-orange-16",
-          "pink": "CharIcon-pink-3",
-          "purple": "CharIcon-purple-4",
-          "red": "CharIcon-red-2",
-          "teal": "CharIcon-teal-10",
-          "yellow": "CharIcon-yellow-14",
+          "blue": "CharIcon-blue-9",
+          "blueGrey": "CharIcon-blueGrey-22",
+          "brown": "CharIcon-brown-20",
+          "cyan": "CharIcon-cyan-11",
+          "deepOrange": "CharIcon-deepOrange-19",
+          "deepPurple": "CharIcon-deepPurple-7",
+          "green": "CharIcon-green-13",
+          "grey": "CharIcon-grey-21",
+          "indigo": "CharIcon-indigo-8",
+          "lightBlue": "CharIcon-lightBlue-10",
+          "lightGreen": "CharIcon-lightGreen-14",
+          "lime": "CharIcon-lime-15",
+          "orange": "CharIcon-orange-18",
+          "pink": "CharIcon-pink-5",
+          "purple": "CharIcon-purple-6",
+          "red": "CharIcon-red-4",
+          "smallAvatar": "CharIcon-smallAvatar-2",
+          "teal": "CharIcon-teal-12",
+          "wrapper": "CharIcon-wrapper-3",
+          "yellow": "CharIcon-yellow-16",
         }
       }
       name="ozaki25"
+      onClick={[MockFunction]}
+      small={false}
     >
-      <WithStyles(Avatar)
-        className="CharIcon-avatar-1 CharIcon-brown-18"
+      <WithStyles(IconButton)
+        className="CharIcon-wrapper-3"
+        disableRipple={true}
+        onClick={[MockFunction]}
       >
-        <Avatar
-          className="CharIcon-avatar-1 CharIcon-brown-18"
+        <IconButton
+          className="CharIcon-wrapper-3"
           classes={
             Object {
-              "colorDefault": "MuiAvatar-colorDefault-22",
-              "img": "MuiAvatar-img-23",
-              "root": "MuiAvatar-root-21",
+              "colorInherit": "MuiIconButton-colorInherit-24",
+              "colorPrimary": "MuiIconButton-colorPrimary-25",
+              "colorSecondary": "MuiIconButton-colorSecondary-26",
+              "disabled": "MuiIconButton-disabled-27",
+              "label": "MuiIconButton-label-28",
+              "root": "MuiIconButton-root-23",
             }
           }
-          component="div"
+          color="default"
+          disableRipple={true}
+          disabled={false}
+          onClick={[MockFunction]}
         >
-          <div
-            className="MuiAvatar-root-21 MuiAvatar-colorDefault-22 CharIcon-avatar-1 CharIcon-brown-18"
+          <WithStyles(ButtonBase)
+            centerRipple={true}
+            className="MuiIconButton-root-23 CharIcon-wrapper-3"
+            disableRipple={true}
+            disabled={false}
+            focusRipple={true}
+            onClick={[MockFunction]}
           >
-            o
-          </div>
-        </Avatar>
-      </WithStyles(Avatar)>
+            <ButtonBase
+              centerRipple={true}
+              className="MuiIconButton-root-23 CharIcon-wrapper-3"
+              classes={
+                Object {
+                  "disabled": "MuiButtonBase-disabled-30",
+                  "focusVisible": "MuiButtonBase-focusVisible-31",
+                  "root": "MuiButtonBase-root-29",
+                }
+              }
+              component="button"
+              disableRipple={true}
+              disableTouchRipple={false}
+              disabled={false}
+              focusRipple={true}
+              onClick={[MockFunction]}
+              tabIndex="0"
+              type="button"
+            >
+              <button
+                className="MuiButtonBase-root-29 MuiIconButton-root-23 CharIcon-wrapper-3"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[MockFunction]}
+                onContextMenu={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="0"
+                type="button"
+              >
+                <span
+                  className="MuiIconButton-label-28"
+                >
+                  <WithStyles(Avatar)
+                    className="CharIcon-avatar-1 CharIcon-brown-20"
+                  >
+                    <Avatar
+                      className="CharIcon-avatar-1 CharIcon-brown-20"
+                      classes={
+                        Object {
+                          "colorDefault": "MuiAvatar-colorDefault-33",
+                          "img": "MuiAvatar-img-34",
+                          "root": "MuiAvatar-root-32",
+                        }
+                      }
+                      component="div"
+                    >
+                      <div
+                        className="MuiAvatar-root-32 MuiAvatar-colorDefault-33 CharIcon-avatar-1 CharIcon-brown-20"
+                      >
+                        o
+                      </div>
+                    </Avatar>
+                  </WithStyles(Avatar)>
+                </span>
+              </button>
+            </ButtonBase>
+          </WithStyles(ButtonBase)>
+        </IconButton>
+      </WithStyles(IconButton)>
     </CharIcon>
   </WithStyles(CharIcon)>
 </MockRouter>

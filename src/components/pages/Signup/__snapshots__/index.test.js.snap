@@ -10,6 +10,7 @@ exports[`should match snapshot: Signup/nomal 1`] = `
 
 .c0 {
   padding-left: 0;
+  padding-right: 16px;
 }
 
 .c2 {
@@ -219,6 +220,7 @@ exports[`should match snapshot: Signup/nomal 1`] = `
   padding-left: ",
                                       [Function],
                                       ";
+  padding-right: 16px;
 ",
                                     ],
                                   },

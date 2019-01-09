@@ -25,7 +25,9 @@ const props = ({ loading = false, internalEvents = null }) => ({
     push: jest.fn(),
     goBack: jest.fn(),
   },
-  firebase: {},
+  firebase: {
+    doSignOut:jest.fn()
+  },
 });
 
 snapshot('InternalEvents/nomal', <InternalEvents {...props({ internalEvents })} />);

@@ -53,9 +53,11 @@ SideMenu.propTypes = {
   name: propTypes.string.isRequired,
   onOpen: propTypes.func.isRequired,
   onClose: propTypes.func.isRequired,
-  signout: propTypes.func.isRequired,
+  signout: propTypes.func,
 };
 
-SideMenu.defaultProps = {};
+SideMenu.defaultProps = {
+  signout: null,
+};
 
 export default withStyles(styles)(SideMenu);
