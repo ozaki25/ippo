@@ -10,6 +10,7 @@ const NewEvent = '/events/new';
 const Admin = '/admin';
 const Tweets = '/tweets';
 const NewTweet = '/tweets/new';
+const SettingsNotification = '/settings/notification';
 
 export default {
   Signin,
@@ -23,5 +24,6 @@ export default {
   NewEvent,
   Tweets,
   NewTweet,
+  SettingsNotification,
   Admin,
 };
