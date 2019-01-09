@@ -10,6 +10,7 @@ import ExternalEvents from 'src/hoc/WithExternalEvents';
 import NewEvent from 'src/hoc/WithNewEvent';
 import Tweets from 'src/hoc/WithTweets';
 import NewTweet from 'src/hoc/WithNewTweet';
+import SettingsNotification from 'src/hoc/WithSettingsNotification';
 import ROUTES from 'src/constants/routes';
 
 const EnteredEvents = () => <p>tmp...</p>;
@@ -32,6 +33,7 @@ const Router = () => (
         <Route path={ROUTES.NewEvent} exact component={NewEvent} />
         <Route path={ROUTES.Tweets} exact component={Tweets} />
         <Route path={ROUTES.NewTweet} exact component={NewTweet} />
+        <Route path={ROUTES.SettingsNotification} exact component={SettingsNotification} />
         <Route path={ROUTES.Admin} exact component={Admin} />
       </>
     </Switch>
