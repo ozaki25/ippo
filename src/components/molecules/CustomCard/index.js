@@ -18,11 +18,11 @@ const styles = theme => ({
     textTransform: 'none',
     '&:focus': {
       backgroundColor: theme.palette.primary[100],
-      opacity: 0.6,
+      opacity: 0.8,
     },
     '&:hover': {
       backgroundColor: theme.palette.primary[100],
-      opacity: 0.6,
+      opacity: 0.8,
     },
   },
   expand: {
