@@ -73,6 +73,7 @@ class Menu extends React.Component {
             authUser={authUser}
             history={history}
             firebase={firebase}
+            noPadding={[0, 2, 3].includes(value)}
           >
             {value === 0 && (
               <EventsOverview
