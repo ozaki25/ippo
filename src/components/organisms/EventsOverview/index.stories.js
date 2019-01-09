@@ -24,6 +24,14 @@ const externalEvent = i => ({
 });
 
 const props = {
+  joined: {
+    loading: false,
+    joinedEvents: [...[...Array(5)].map((_, i) => internalEvent(i))],
+  },
+  organized: {
+    loading: false,
+    organizedEvents: [...[...Array(5)].map((_, i) => internalEvent(i))],
+  },
   internal: {
     loading: false,
     internalEvents: [...[...Array(5)].map((_, i) => internalEvent(i))],
