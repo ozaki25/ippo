@@ -31,7 +31,9 @@ const props = ({ loading = false, connpass = null }) => ({
     push: jest.fn(),
     goBack: jest.fn(),
   },
-  firebase: {},
+  firebase: {
+    doSignOut:jest.fn()
+  },
 });
 
 snapshot('ExternalEvents/nomal', <ExternalEvents {...props({ connpass })} />);

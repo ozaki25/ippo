@@ -22,6 +22,14 @@ const externalEvent = i => ({
 
 const props = {
   createEvent: jest.fn(),
+  joined: {
+    loading: false,
+    joinedEvents: [...[...Array(10)].map((_, i) => internalEvent(i))],
+  },
+  organized: {
+    loading: false,
+    organizedEvents: [...[...Array(10)].map((_, i) => internalEvent(i))],
+  },
   internal: {
     loading: false,
     internalEvents: [...[...Array(10)].map((_, i) => internalEvent(i))],
@@ -41,7 +49,9 @@ const props = {
     goBack: jest.fn(),
     replace: jest.fn(),
   },
-  firebase: {},
+  firebase: {
+    doSignOut: jest.fn(),
+  },
 };
 
 snapshot('Menu/nomal', <Menu {...props} />);

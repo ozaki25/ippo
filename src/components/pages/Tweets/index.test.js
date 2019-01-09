@@ -33,7 +33,9 @@ const props = {
     push: jest.fn(),
     goBack: jest.fn(),
   },
-  firebase: {},
+  firebase: {
+    doSignOut:jest.fn()
+  },
 };
 
 snapshot('Tweets/nomal', <Tweets {...props} />);
