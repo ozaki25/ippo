@@ -32,6 +32,8 @@ class NavigationBar extends React.Component {
 
   openSideMenu = () => this.setState({ open: true });
 
+  closeSideMenu = () => this.setState({ open: false });
+
   render() {
     const { title, history, firebase, authUser, back, classes } = this.props;
     const { open } = this.state;
@@ -54,7 +56,13 @@ class NavigationBar extends React.Component {
             </StyledToolbar>
           </AppBar>
         </Headroom>
-        <SideMenu open={open} />
+        <SideMenu
+          open={open}
+          onOpen={this.openSideMenu}
+          onClose={this.closeSideMenu}
+          name={authUser.displayName}
+          signout={firebase.doSignOut}
+        />
       </>
     );
   }

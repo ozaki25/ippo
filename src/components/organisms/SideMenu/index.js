@@ -1,65 +1,59 @@
 import React from 'react';
-import { Divider, List, ListItem, ListItemText, SwipeableDrawer } from '@material-ui/core';
+import {
+  Divider,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+  SwipeableDrawer,
+} from '@material-ui/core';
+import { ExitToApp } from '@material-ui/icons';
 import { withStyles } from '@material-ui/core/styles';
 import propTypes from 'prop-types';
+import CharIcon from 'src/components/atoms/CharIcon';
 
 const styles = {
   list: {
-    width: 250,
+    width: '250px',
   },
 };
 
-class SideMenu extends React.Component {
-  constructor(props) {
-    super(props);
-    console.log(props);
-    this.state = { open: props.open };
-  }
-
-  toggleDrawer = open => () => {
-    this.setState({ open });
-  };
-
-  render() {
-    const { classes } = this.props;
-    const { open } = this.state;
-
-    return (
-      <SwipeableDrawer
-        anchor="right"
-        open={open}
-        onClose={this.toggleDrawer(false)}
-        onOpen={this.toggleDrawer(true)}
-        disableSwipeToOpen
-      >
-        <div tabIndex={0} onClick={this.toggleDrawer(false)} onKeyDown={this.toggleDrawer(false)}>
-          <div className={classes.list}>
-            <List>
-              {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-                <ListItem button key={text}>
-                  <ListItemText primary={text} />
-                </ListItem>
-              ))}
-            </List>
-            <Divider />
-            <List>
-              {['All mail', 'Trash', 'Spam'].map((text, index) => (
-                <ListItem button key={text}>
-                  <ListItemText primary={text} />
-                </ListItem>
-              ))}
-            </List>
-          </div>
-        </div>
-      </SwipeableDrawer>
-    );
-  }
-}
+const SideMenu = ({ open, name, onOpen, onClose, signout, classes }) => (
+  <SwipeableDrawer anchor="right" open={open} onClose={onClose} onOpen={onOpen}>
+    <div tabIndex={0} onClick={onClose} onKeyDown={onClose}>
+      <div className={classes.list}>
+        <List>
+          <ListItem>
+            <ListItemIcon>
+              <CharIcon name={name} />
+            </ListItemIcon>
+          </ListItem>
+          <ListItem>
+            <ListItemText primary={name} />
+          </ListItem>
+        </List>
+        <Divider />
+        <List>
+          <ListItem onClick={signout} button>
+            <ListItemIcon>
+              <ExitToApp />
+            </ListItemIcon>
+            <ListItemText primary="ログアウト" />
+          </ListItem>
+        </List>
+      </div>
+    </div>
+  </SwipeableDrawer>
+);
 
 SideMenu.displayName = 'SideMenu';
 
 SideMenu.propTypes = {
   open: propTypes.bool.isRequired,
+  name: propTypes.string.isRequired,
+  onOpen: propTypes.func.isRequired,
+  onClose: propTypes.func.isRequired,
+  signout: propTypes.func.isRequired,
 };
 
 SideMenu.defaultProps = {};
