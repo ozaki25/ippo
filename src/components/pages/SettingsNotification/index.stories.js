@@ -15,7 +15,9 @@ const props = ({ granted, supported }) => ({
     goBack: action('goBack'),
     replace: action('replace'),
   },
-  firebase: {},
+  firebase: {
+    askForPermissionToReceiveNotifications: action('askForPermissionToReceiveNotifications'),
+  },
   notifications: {
     isGranted: () => granted,
     isSupported: () => supported,
