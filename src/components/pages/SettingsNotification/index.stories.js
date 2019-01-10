@@ -5,7 +5,7 @@ import SettingsNotification from '.';
 
 const stories = storiesOf('pages/SettingsNotification', module);
 
-const props = {
+const props = ({ granted, supported }) => ({
   authUser: {
     uid: '123',
     displayName: 'テストユーザ',
@@ -16,6 +16,20 @@ const props = {
     replace: action('replace'),
   },
   firebase: {},
-};
+  notifications: {
+    isGranted: () => granted,
+    isSupported: () => supported,
+  },
+});
 
-stories.add('通常パターン', () => <SettingsNotification {...props} />);
+stories.add('通知未対応端末', () => (
+  <SettingsNotification {...props({ granted: false, supported: false })} />
+));
+
+stories.add('通知対応端末で未許可', () => (
+  <SettingsNotification {...props({ granted: false, supported: true })} />
+));
+
+stories.add('通知対応端末で許可済み', () => (
+  <SettingsNotification {...props({ granted: true, supported: true })} />
+));

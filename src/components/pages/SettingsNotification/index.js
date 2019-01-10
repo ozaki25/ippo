@@ -1,12 +1,22 @@
 import React from 'react';
-import { List, ListItem, ListItemSecondaryAction, ListItemText, Switch } from '@material-ui/core';
+import {
+  List,
+  ListItem,
+  ListItemSecondaryAction,
+  ListItemText,
+  Switch,
+  Typography,
+} from '@material-ui/core';
 import propTypes from 'prop-types';
 import Container from 'src/components/templates/Container';
 
 class SettingsNotification extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { checked: false };
+    const { notifications } = props;
+    const allowNotification = notifications.isGranted();
+    const unsuppored = !notifications.isSupported();
+    this.state = { checked: allowNotification, unsuppored };
   }
 
   toggleNotificationPermission = () =>
@@ -14,23 +24,29 @@ class SettingsNotification extends React.Component {
 
   render() {
     const { authUser, history, firebase } = this.props;
-    const { checked } = this.state;
+    const { checked, unsuppored } = this.state;
     return (
       <Container title="通知設定" back authUser={authUser} history={history} firebase={firebase}>
         <List>
           <ListItem>
             <ListItemText
               primary="プッシュ通知"
-              secondary="おすすめのイベントや参加イベントのリマインドの通知を受け取ることができます"
+              secondary="おすすめのイベントや参加イベントのリマインドを受け取ることができます"
             />
             <ListItemSecondaryAction>
               <Switch
                 onChange={this.toggleNotificationPermission}
                 checked={checked}
                 color="primary"
+                disabled={unsuppored}
               />
             </ListItemSecondaryAction>
           </ListItem>
+          {unsuppored && (
+            <Typography color="error">
+              お使いのブラウザはプッシュ通知に対応しておりません。
+            </Typography>
+          )}
         </List>
       </Container>
     );
@@ -49,6 +65,7 @@ SettingsNotification.propTypes = {
     replace: propTypes.func.isRequired,
   }).isRequired,
   firebase: propTypes.object.isRequired,
+  notifications: propTypes.object.isRequired,
 };
 
 SettingsNotification.defaultProps = {};
