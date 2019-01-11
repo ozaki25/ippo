@@ -28,12 +28,11 @@ class SettingsNotification extends React.Component {
       const token = await firebase.askForPermissionToReceiveNotifications();
       if (granted) {
         // ON -> OFFの場合
-        console.log('ON -> OFF');
         this.setState({ granted: false });
         await unregisterNotification({ variables: { token } });
       } else {
         // OFF -> ONの場合
-        console.log('OFF -> ON');
+        // ブラウザの通知許可ダイアログの結果次第で状態が変わっているので改めて取得
         const granted = notifications.isGranted();
         const denied = notifications.isDenied();
         this.setState({ granted, denied });
