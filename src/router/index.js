@@ -1,16 +1,16 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import ScrollToTop from 'src/router/ScrollToTop';
-import Menu from 'src/hoc/WithMenu';
-import Signin from 'src/hoc/WithSignin';
-import Signup from 'src/hoc/WithSignup';
-import Admin from 'src/hoc/WithAdmin';
-import InternalEvents from 'src/hoc/WithInternalEvents';
-import ExternalEvents from 'src/hoc/WithExternalEvents';
-import NewEvent from 'src/hoc/WithNewEvent';
-import Tweets from 'src/hoc/WithTweets';
-import NewTweet from 'src/hoc/WithNewTweet';
-import SettingsNotification from 'src/hoc/WithSettingsNotification';
+import Menu from 'src/containers/Menu';
+import Signin from 'src/containers/Signin';
+import Signup from 'src/containers/Signup';
+import Admin from 'src/containers/Admin';
+import InternalEvents from 'src/containers/InternalEvents';
+import ExternalEvents from 'src/containers/ExternalEvents';
+import NewEvent from 'src/containers/NewEvent';
+import Tweets from 'src/containers/Tweets';
+import NewTweet from 'src/containers/NewTweet';
+import SettingsNotification from 'src/containers/SettingsNotification';
 import ROUTES from 'src/constants/routes';
 
 const EnteredEvents = () => <p>tmp...</p>;
