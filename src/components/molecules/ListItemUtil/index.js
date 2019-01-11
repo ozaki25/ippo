@@ -11,14 +11,14 @@ import {
 const ListItemUtil = ({ primary, secondary, onChange, checked, disabled, toggle, checkbox }) => (
   <ListItem>
     <ListItemText primary={primary} secondary={secondary} />
-    {(toggle || checkbox) && (
+    {checkbox && (
       <ListItemSecondaryAction>
-        {checkbox && (
-          <Checkbox color="primary" onChange={onChange} checked={checked} disabled={disabled} />
-        )}
-        {toggle && (
-          <Switch color="primary" onChange={onChange} checked={checked} disabled={disabled} />
-        )}
+        <Checkbox color="primary" onChange={onChange} checked={checked} disabled={disabled} />
+      </ListItemSecondaryAction>
+    )}
+    {toggle && (
+      <ListItemSecondaryAction>
+        <Switch color="primary" onChange={onChange} checked={checked} disabled={disabled} />
       </ListItemSecondaryAction>
     )}
   </ListItem>
