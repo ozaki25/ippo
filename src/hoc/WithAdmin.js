@@ -9,4 +9,5 @@ export default compose(
   withFirebase,
   withRouter,
   graphql(query.publishNotification, { name: 'publishNotification' }),
+  graphql(query.registerNotification, { name: 'registerNotification' }),
 )(Admin);
