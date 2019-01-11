@@ -40,13 +40,9 @@ class Firebase {
     this.auth.onAuthStateChanged(authUser => (authUser ? next(authUser) : fallback()));
 
   askForPermissionToReceiveNotifications = async () => {
-    try {
-      const messaging = app.messaging();
-      await messaging.requestPermission();
-      return messaging.getToken();
-    } catch (error) {
-      console.error(error);
-    }
+    const messaging = app.messaging();
+    await messaging.requestPermission();
+    return messaging.getToken();
   };
 }
 

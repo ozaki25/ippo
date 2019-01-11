@@ -116,6 +116,14 @@ const registerNotification = gql`
   }
 `;
 
+const unregisterNotification = gql`
+  mutation unregisterNotification($token: String) {
+    unregisterNotification(token: $token) {
+      result
+    }
+  }
+`;
+
 const publishNotification = gql`
   mutation publishNotification($target: String) {
     publishNotification(target: $target) {
@@ -166,6 +174,7 @@ export default {
   organizedEvents,
   tweets,
   registerNotification,
+  unregisterNotification,
   publishNotification,
   createEvent,
   createTweet,
