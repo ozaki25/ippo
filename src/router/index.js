@@ -5,6 +5,7 @@ import Menu from 'src/containers/Menu';
 import Signin from 'src/containers/Signin';
 import Signup from 'src/containers/Signup';
 import Admin from 'src/containers/Admin';
+import JoinedEvents from 'src/containers/JoinedEvents';
 import InternalEvents from 'src/containers/InternalEvents';
 import ExternalEvents from 'src/containers/ExternalEvents';
 import NewEvent from 'src/containers/NewEvent';
@@ -13,7 +14,6 @@ import NewTweet from 'src/containers/NewTweet';
 import SettingsNotification from 'src/containers/SettingsNotification';
 import ROUTES from 'src/constants/routes';
 
-const EnteredEvents = () => <p>tmp...</p>;
 const RecommendedEvents = () => <p>tmp...</p>;
 const OrganizedEvents = () => <p>tmp...</p>;
 
@@ -25,7 +25,7 @@ const Router = () => (
         <Route path={ROUTES.Signin} exact component={Signin} />
         <Route path={ROUTES.Signup} exact component={Signup} />
         <Route path={ROUTES.Menu} exact component={Menu} />
-        <Route path={ROUTES.EnteredEvents} exact component={EnteredEvents} />
+        <Route path={ROUTES.JoinedEvents} exact component={JoinedEvents} />
         <Route path={ROUTES.RecommendedEvents} exact component={RecommendedEvents} />
         <Route path={ROUTES.InternalEvents} exact component={InternalEvents} />
         <Route path={ROUTES.ExternalEvents} exact component={ExternalEvents} />
