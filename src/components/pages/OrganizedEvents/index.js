@@ -8,7 +8,7 @@ import eventFormat from 'src/utils/eventFormat';
 
 const OrganizedEvents = ({ data: { loading, organizedEvents }, authUser, history, firebase }) => {
   return (
-    <Container title="参加イベント" back authUser={authUser} history={history} firebase={firebase}>
+    <Container title="主催イベント" back authUser={authUser} history={history} firebase={firebase}>
       {loading ? (
         <Spinner />
       ) : organizedEvents && organizedEvents.length ? (
