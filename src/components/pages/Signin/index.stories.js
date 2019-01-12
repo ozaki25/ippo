@@ -8,6 +8,7 @@ const stories = storiesOf('pages/Signin', module);
 const props = {
   history: {
     push: action('push'),
+    replace: action('replace'),
     goBack: action('goBack'),
   },
   firebase: {
