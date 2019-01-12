@@ -5,6 +5,7 @@ import Signup from '.';
 const props = {
   history: {
     push: jest.fn(),
+    replace: jest.fn(),
   },
   firebase: {
     doSignInWithEmailAndPassword: jest.fn(),

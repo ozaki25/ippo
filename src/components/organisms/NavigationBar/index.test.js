@@ -5,6 +5,8 @@ import NavigationBar from '.';
 const props = {
   title: 'タイトル',
   history: {
+    push: jest.fn(),
+    replace: jest.fn(),
     goBack: jest.fn(),
   },
   firebase: {

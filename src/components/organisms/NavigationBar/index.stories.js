@@ -9,6 +9,8 @@ const stories = storiesOf('organisms/NavigationBar', module);
 const props = {
   title: text('title', 'タイトル'),
   history: {
+    push: action('push'),
+    replace: action('replace'),
     goBack: action('back'),
   },
   firebase: {

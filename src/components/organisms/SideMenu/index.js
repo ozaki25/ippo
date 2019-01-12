@@ -5,12 +5,14 @@ import {
   ListItem,
   ListItemIcon,
   ListItemText,
+  ListSubheader,
   SwipeableDrawer,
 } from '@material-ui/core';
-import { ExitToApp } from '@material-ui/icons';
+import { AccountBox, ExitToApp, NotificationsNoneRounded } from '@material-ui/icons';
 import { withStyles } from '@material-ui/core/styles';
 import propTypes from 'prop-types';
 import CharIcon from 'src/components/atoms/CharIcon';
+import ROUTES from 'src/constants/routes';
 
 const styles = {
   list: {
@@ -18,7 +20,7 @@ const styles = {
   },
 };
 
-const SideMenu = ({ open, name, onOpen, onClose, signout, classes }) => (
+const SideMenu = ({ open, name, onOpen, onClose, signout, history, classes }) => (
   <SwipeableDrawer anchor="right" open={open} onClose={onClose} onOpen={onOpen}>
     <div tabIndex={0} onClick={onClose} onKeyDown={onClose}>
       <div className={classes.list}>
@@ -30,6 +32,21 @@ const SideMenu = ({ open, name, onOpen, onClose, signout, classes }) => (
           </ListItem>
           <ListItem>
             <ListItemText primary={name} />
+          </ListItem>
+        </List>
+        <Divider />
+        <List subheader={<ListSubheader>設定</ListSubheader>}>
+          <ListItem onClick={() => {}} button>
+            <ListItemIcon>
+              <AccountBox />
+            </ListItemIcon>
+            <ListItemText primary="アカウント" />
+          </ListItem>
+          <ListItem onClick={() => history.push(ROUTES.SettingsNotification)} button>
+            <ListItemIcon>
+              <NotificationsNoneRounded />
+            </ListItemIcon>
+            <ListItemText primary="通知" />
           </ListItem>
         </List>
         <Divider />
@@ -54,6 +71,11 @@ SideMenu.propTypes = {
   onOpen: propTypes.func.isRequired,
   onClose: propTypes.func.isRequired,
   signout: propTypes.func,
+  history: propTypes.shape({
+    push: propTypes.func,
+    replace: propTypes.func,
+    goBack: propTypes.func,
+  }).isRequired,
 };
 
 SideMenu.defaultProps = {

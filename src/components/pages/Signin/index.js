@@ -40,13 +40,13 @@ class Signin extends React.Component {
     const authUser = result.user;
     this.setState({ loading: false });
     if (authUser) {
-      this.props.history.push(ROUTES.Menu);
+      this.props.history.replace(ROUTES.Menu);
     }
   };
 
   signin = async ({ data: { email, pass } }) => {
     await this.props.firebase.doSignInWithEmailAndPassword(email, pass);
-    this.props.history.push(ROUTES.Menu);
+    this.props.history.replace(ROUTES.Menu);
   };
 
   signinWithGoogle = async () => {
@@ -87,6 +87,7 @@ Signin.displayName = 'Signin';
 Signin.propTypes = {
   history: propTypes.shape({
     push: propTypes.func.isRequired,
+    replace: propTypes.func.isRequired,
   }).isRequired,
   firebase: propTypes.shape({
     doSignInWithEmailAndPassword: propTypes.func.isRequired,

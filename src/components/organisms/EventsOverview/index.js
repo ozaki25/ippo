@@ -32,7 +32,7 @@ const LinkHeading = ({ linkTo, children }) => (
 const EventsOverview = ({ joined, organized, internal, external, history }) => (
   <>
     <EventsContainer>
-      <LinkHeading linkTo={ROUTES.EnteredEvents}>参加イベント</LinkHeading>
+      <LinkHeading linkTo={ROUTES.JoinedEvents}>参加イベント</LinkHeading>
       <AsyncSwipeable loading={joined.loading}>
         {EventCardList({
           events: eventFormat.internal(joined.joinedEvents),

@@ -1,7 +1,7 @@
 const Signin = '/users/signin';
 const Signup = '/users/signup';
 const Menu = '/';
-const EnteredEvents = '/events/entry';
+const JoinedEvents = '/events/joined';
 const RecommendedEvents = '/events/recommended';
 const InternalEvents = '/events/internal';
 const ExternalEvents = '/events/external';
@@ -16,7 +16,7 @@ export default {
   Signin,
   Signup,
   Menu,
-  EnteredEvents,
+  JoinedEvents,
   RecommendedEvents,
   InternalEvents,
   ExternalEvents,
