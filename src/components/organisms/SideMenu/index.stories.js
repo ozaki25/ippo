@@ -11,6 +11,11 @@ const props = {
   onOpen: action('open'),
   onClose: action('close'),
   signout: action('signout'),
+  history: {
+    push: action('push'),
+    replace: action('replace'),
+    goBack: action('goBack'),
+  },
 };
 
 stories.add('open', () => <SideMenu {...props} open />);
