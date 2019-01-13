@@ -1,12 +1,5 @@
 import gql from 'graphql-tag';
 
-const hello = gql`
-  query {
-    hello
-    count
-  }
-`;
-
 const externalEvents = gql`
   query($searchQuery: String, $page: Int, $count: Int) {
     connpass(searchQuery: $searchQuery, page: $page, count: $count) {
@@ -166,7 +159,6 @@ const fetchUser = gql`
 `;
 
 export default {
-  hello,
   externalEvents,
   internalEvents,
   internalEvent,
