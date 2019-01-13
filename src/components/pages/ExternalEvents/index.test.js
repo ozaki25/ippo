@@ -3,24 +3,18 @@ import { snapshot } from 'test/helpers';
 import ExternalEvents from '.';
 
 const event = i => ({
-  event_id: i,
+  id: String(i),
   title: `イベントのタイトル${i}`,
-  event_url: 'https://connpass.com/',
-  catch: 'イベントの説明です',
+  eventUrl: 'https://connpass.com/',
+  catchMessage: 'イベントの説明です',
   place: '東京都千代田区丸の内',
-  started_at: '2012-04-17T18:30:00+09:00',
+  startedAt: '2012-04-17T18:30:00+09:00',
 });
 
-const connpass = {
-  events: [...new Array(10)].map((_, i) => event(i)),
-  results_available: 100,
-  results_start: 11,
-};
-
-const props = ({ loading = false, connpass = null }) => ({
+const props = ({ loading = false, empty = false }) => ({
   data: {
     loading,
-    connpass,
+    events: empty ? [] : [...new Array(10)].map((_, i) => event(i)),
     refetch: jest.fn(),
   },
   authUser: {
@@ -32,12 +26,12 @@ const props = ({ loading = false, connpass = null }) => ({
     goBack: jest.fn(),
   },
   firebase: {
-    doSignOut:jest.fn()
+    doSignOut: jest.fn(),
   },
 });
 
-snapshot('ExternalEvents/nomal', <ExternalEvents {...props({ connpass })} />);
+snapshot('ExternalEvents/nomal', <ExternalEvents {...props({})} />);
 
-snapshot('ExternalEvents/loading', <ExternalEvents {...props({ loading: true })} />);
+snapshot('ExternalEvents/loading', <ExternalEvents {...props({ loading: true, empty: true })} />);
 
-snapshot('ExternalEvents/nocontents', <ExternalEvents {...props({})} />);
+snapshot('ExternalEvents/nocontents', <ExternalEvents {...props({ empty: true })} />);
