@@ -141,18 +141,16 @@ Menu.propTypes = {
   }).isRequired,
   external: propTypes.shape({
     loading: propTypes.bool.isRequired,
-    connpass: propTypes.shape({
-      events: propTypes.arrayOf(
-        propTypes.shape({
-          event_id: propTypes.number,
-          title: propTypes.string,
-          event_url: propTypes.string,
-          catch: propTypes.string,
-          place: propTypes.string,
-          started_at: propTypes.string,
-        }),
-      ),
-    }),
+    externalEvents: propTypes.arrayOf(
+      propTypes.shape({
+        id: propTypes.string,
+        title: propTypes.string,
+        eventUrl: propTypes.string,
+        catchMessage: propTypes.string,
+        place: propTypes.string,
+        startedAt: propTypes.string,
+      }),
+    ),
   }).isRequired,
   createEvent: propTypes.func.isRequired,
   authUser: propTypes.shape({

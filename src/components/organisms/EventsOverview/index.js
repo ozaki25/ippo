@@ -68,7 +68,7 @@ const EventsOverview = ({ joined, organized, internal, external, history }) => (
       <LinkHeading linkTo={ROUTES.ExternalEvents}>社外イベント</LinkHeading>
       <AsyncSwipeable loading={external.loading}>
         {EventCardList({
-          events: eventFormat.external(external.connpass),
+          events: eventFormat.external(external.externalEvents),
           expand: true,
           noWrap: true,
           horizontal: true,
@@ -133,18 +133,16 @@ EventsOverview.propTypes = {
   }).isRequired,
   external: propTypes.shape({
     loading: propTypes.bool.isRequired,
-    connpass: propTypes.shape({
-      events: propTypes.arrayOf(
-        propTypes.shape({
-          event_id: propTypes.number,
-          title: propTypes.string,
-          event_url: propTypes.string,
-          catch: propTypes.string,
-          place: propTypes.string,
-          started_at: propTypes.string,
-        }),
-      ),
-    }),
+    externalEvents: propTypes.arrayOf(
+      propTypes.shape({
+        id: propTypes.string,
+        title: propTypes.string,
+        eventUrl: propTypes.string,
+        catchMessage: propTypes.string,
+        place: propTypes.string,
+        startedAt: propTypes.string,
+      }),
+    ),
   }).isRequired,
   history: propTypes.shape({
     push: propTypes.func.isRequired,
