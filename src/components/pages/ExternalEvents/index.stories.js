@@ -6,24 +6,18 @@ import ExternalEvents from '.';
 const stories = storiesOf('pages/ExternalEvents', module);
 
 const event = i => ({
-  event_id: i,
+  id: String(i),
   title: `イベントのタイトル${i}`,
-  event_url: 'https://connpass.com/',
+  eventUrl: 'https://connpass.com/',
   catch: 'イベントの説明です',
   place: '東京都千代田区丸の内',
-  started_at: '2012-04-17T18:30:00+09:00',
+  startedAt: '2012-04-17T18:30:00+09:00',
 });
 
-const connpass = {
-  events: [...new Array(10)].map((_, i) => event(i)),
-  results_available: 100,
-  results_start: 11,
-};
-
-const props = ({ loading = false, connpass = null }) => ({
+const props = ({ loading = false, empty = false }) => ({
   data: {
     loading,
-    connpass,
+    externalEvents: empty ? [] : [...new Array(10)].map((_, i) => event(i)),
     refetch: action('refetch'),
   },
   authUser: {
@@ -37,8 +31,8 @@ const props = ({ loading = false, connpass = null }) => ({
   firebase: {},
 });
 
-stories.add('通常パターン', () => <ExternalEvents {...props({ connpass })} />);
+stories.add('通常パターン', () => <ExternalEvents {...props({})} />);
 
-stories.add('ロード中', () => <ExternalEvents {...props({ loading: true })} />);
+stories.add('ロード中', () => <ExternalEvents {...props({ loading: true, empty: true })} />);
 
-stories.add('データなし', () => <ExternalEvents {...props({})} />);
+stories.add('データなし', () => <ExternalEvents {...props({ empty: true })} />);

@@ -12,12 +12,12 @@ const internalEvent = i => ({
 });
 
 const externalEvent = i => ({
-  event_id: i,
+  id: String(i),
   title: `タイトル${i}`,
-  event_url: 'https://connpass.com/',
-  catch: '説明です',
+  eventUrl: 'https://connpass.com/',
+  catchMessage: '説明です',
   place: '晴海',
-  started_at: '2018/12/1 9:30',
+  startedAt: '2018/12/1 9:30',
 });
 
 const props = {
@@ -36,9 +36,7 @@ const props = {
   },
   external: {
     loading: false,
-    connpass: {
-      events: [...[...Array(10)].map((_, i) => externalEvent(i))],
-    },
+    events: [...[...Array(10)].map((_, i) => externalEvent(i))],
   },
   authUser: {
     uid: '123',
