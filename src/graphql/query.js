@@ -1,16 +1,19 @@
 import gql from 'graphql-tag';
 
 const externalEvents = gql`
-  query {
-    externalEvents {
-      id
-      connpassId
-      title
-      eventUrl
-      catchMessage
-      place
-      startedAt
-      endedAt
+  query($limit: Int, $startId: String) {
+    externalEvents(limit: $limit, startId: $startId) {
+      items {
+        id
+        connpassId
+        title
+        eventUrl
+        catchMessage
+        place
+        startedAt
+        endedAt
+      }
+      startId
     }
   }
 `;
