@@ -1,19 +1,16 @@
 import gql from 'graphql-tag';
 
 const externalEvents = gql`
-  query($searchQuery: String, $page: Int, $count: Int) {
-    connpass(searchQuery: $searchQuery, page: $page, count: $count) {
-      events {
-        event_id
-        title
-        event_url
-        catch
-        place
-        started_at
-        ended_at
-      }
-      results_available
-      results_start
+  query {
+    externalEvents {
+      id
+      connpassId
+      title
+      eventUrl
+      catchMessage
+      place
+      startedAt
+      endedAt
     }
   }
 `;

@@ -119,7 +119,6 @@ EventsOverview.propTypes = {
       }),
     ),
   }).isRequired,
-
   internal: propTypes.shape({
     loading: propTypes.bool.isRequired,
     internalEvents: propTypes.arrayOf(
