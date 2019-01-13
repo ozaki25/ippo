@@ -141,16 +141,18 @@ Menu.propTypes = {
   }).isRequired,
   external: propTypes.shape({
     loading: propTypes.bool.isRequired,
-    externalEvents: propTypes.arrayOf(
-      propTypes.shape({
-        id: propTypes.string,
-        title: propTypes.string,
-        eventUrl: propTypes.string,
-        catchMessage: propTypes.string,
-        place: propTypes.string,
-        startedAt: propTypes.string,
-      }),
-    ),
+    externalEvents: propTypes.shape({
+      items: propTypes.arrayOf(
+        propTypes.shape({
+          id: propTypes.string,
+          title: propTypes.string,
+          eventUrl: propTypes.string,
+          catchMessage: propTypes.string,
+          place: propTypes.string,
+          startedAt: propTypes.string,
+        }),
+      ),
+    }),
   }).isRequired,
   createEvent: propTypes.func.isRequired,
   authUser: propTypes.shape({

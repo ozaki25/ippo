@@ -11,7 +11,10 @@ export default compose(
   withRouter,
   withFirebase,
   graphql(query.internalEvents, { name: 'internal' }),
-  graphql(query.externalEvents, { name: 'external' }),
+  graphql(query.externalEvents, {
+    name: 'external',
+    options: () => ({ variables: { limit: 10 } }),
+  }),
   graphql(query.joinedEvents, {
     options: ({ authUser: { uid } }) => ({ variables: { uid } }),
     name: 'joined',

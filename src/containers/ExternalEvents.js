@@ -5,10 +5,13 @@ import { withFirebase } from 'src/context/firebase';
 import query from 'src/graphql/query';
 import ExternalEvents from 'src/components/pages/ExternalEvents/';
 import { withAuthorization } from 'src/hoc/Sessions';
+import paging from 'src/constants/paging';
 
 export default compose(
   withAuthorization,
   withRouter,
   withFirebase,
-  graphql(query.externalEvents),
+  graphql(query.externalEvents, {
+    options: () => ({ variables: { limit: paging.eventsPerPage } }),
+  }),
 )(ExternalEvents);
