@@ -36,7 +36,7 @@ const SideMenu = ({ open, name, onOpen, onClose, signout, history, classes }) =>
         </List>
         <Divider />
         <List subheader={<ListSubheader>設定</ListSubheader>}>
-          <ListItem onClick={() => {}} button>
+          <ListItem onClick={() => history.push(ROUTES.SettingsAccount)} button>
             <ListItemIcon>
               <AccountBox />
             </ListItemIcon>

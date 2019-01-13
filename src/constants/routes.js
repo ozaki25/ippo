@@ -11,6 +11,7 @@ const Admin = '/admin';
 const Tweets = '/tweets';
 const NewTweet = '/tweets/new';
 const SettingsNotification = '/settings/notification';
+const SettingsAccount = '/settings/account';
 
 export default {
   Signin,
@@ -25,5 +26,6 @@ export default {
   Tweets,
   NewTweet,
   SettingsNotification,
+  SettingsAccount,
   Admin,
 };

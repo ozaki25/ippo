@@ -13,6 +13,7 @@ import NewEvent from 'src/containers/NewEvent';
 import Tweets from 'src/containers/Tweets';
 import NewTweet from 'src/containers/NewTweet';
 import SettingsNotification from 'src/containers/SettingsNotification';
+import SettingsAccount from 'src/containers/SettingsAccount';
 import ROUTES from 'src/constants/routes';
 
 const RecommendedEvents = () => <p>tmp...</p>;
@@ -34,6 +35,7 @@ const Router = () => (
         <Route path={ROUTES.Tweets} exact component={Tweets} />
         <Route path={ROUTES.NewTweet} exact component={NewTweet} />
         <Route path={ROUTES.SettingsNotification} exact component={SettingsNotification} />
+        <Route path={ROUTES.SettingsAccount} exact component={SettingsAccount} />
         <Route path={ROUTES.Admin} exact component={Admin} />
       </>
     </Switch>
