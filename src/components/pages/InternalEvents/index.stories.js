@@ -13,12 +13,14 @@ const event = i => ({
   startedAt: '2018/12/1 10:30',
 });
 
-const internalEvents = [...new Array(10)].map((_, i) => event(i));
+const events = [...new Array(10)].map((_, i) => event(i));
 
-const props = ({ loading = false, internalEvents = null }) => ({
+const props = ({ loading = false, empty = false }) => ({
   data: {
     loading,
-    internalEvents,
+    internalEvents: {
+      items: empty ? [] : events,
+    },
   },
   authUser: {
     uid: '123',
@@ -31,8 +33,8 @@ const props = ({ loading = false, internalEvents = null }) => ({
   firebase: {},
 });
 
-stories.add('通常パターン', () => <InternalEvents {...props({ internalEvents })} />);
+stories.add('通常パターン', () => <InternalEvents {...props({})} />);
 
-stories.add('ロード中', () => <InternalEvents {...props({ loading: true })} />);
+stories.add('ロード中', () => <InternalEvents {...props({ loading: true, empty: true })} />);
 
-stories.add('データなし', () => <InternalEvents {...props({})} />);
+stories.add('データなし', () => <InternalEvents {...props({ empty: true })} />);

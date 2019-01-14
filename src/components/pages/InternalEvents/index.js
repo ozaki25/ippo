@@ -11,8 +11,8 @@ const InternalEvents = ({ data: { loading, internalEvents }, authUser, history, 
     <Container title="社内イベント" back authUser={authUser} history={history} firebase={firebase}>
       {loading ? (
         <Spinner />
-      ) : internalEvents && internalEvents.length ? (
-        <EventCardList events={eventFormat.internal(internalEvents)} history={history} />
+      ) : internalEvents.items && internalEvents.items.length ? (
+        <EventCardList events={eventFormat.internal(internalEvents.items)} history={history} />
       ) : (
         <Typography>No Contents</Typography>
       )}
@@ -25,15 +25,18 @@ InternalEvents.displayName = 'InternalEvents';
 InternalEvents.propTypes = {
   data: propTypes.shape({
     loading: propTypes.bool.isRequired,
-    internalEvents: propTypes.arrayOf(
-      propTypes.shape({
-        id: propTypes.string,
-        title: propTypes.string,
-        catchMessage: propTypes.string,
-        place: propTypes.string,
-        startedAt: propTypes.string,
-      }),
-    ),
+    internalEvents: propTypes.shape({
+      items: propTypes.arrayOf(
+        propTypes.shape({
+          id: propTypes.string,
+          title: propTypes.string,
+          catchMessage: propTypes.string,
+          place: propTypes.string,
+          startedAt: propTypes.string,
+        }),
+      ),
+    }),
+    fetchMore: propTypes.func.isRequired,
   }),
   authUser: propTypes.shape({
     displayName: propTypes.string.isRequired,
@@ -49,7 +52,9 @@ InternalEvents.propTypes = {
 InternalEvents.defaultProps = {
   data: {
     loading: false,
-    internalEvents: [],
+    internalEvents: {
+      items: [],
+    },
   },
 };
 

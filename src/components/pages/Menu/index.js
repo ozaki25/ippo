@@ -130,15 +130,17 @@ Menu.propTypes = {
   }).isRequired,
   internal: propTypes.shape({
     loading: propTypes.bool.isRequired,
-    internalEvents: propTypes.arrayOf(
-      propTypes.shape({
-        id: propTypes.string,
-        title: propTypes.string,
-        catchMessage: propTypes.string,
-        place: propTypes.string,
-        startedAt: propTypes.string,
-      }),
-    ),
+    internalEvents: propTypes.shape({
+      items: propTypes.arrayOf(
+        propTypes.shape({
+          id: propTypes.string,
+          title: propTypes.string,
+          catchMessage: propTypes.string,
+          place: propTypes.string,
+          startedAt: propTypes.string,
+        }),
+      ),
+    }),
   }).isRequired,
   external: propTypes.shape({
     loading: propTypes.bool.isRequired,

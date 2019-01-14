@@ -11,7 +11,10 @@ export default compose(
   withAuthorization,
   withRouter,
   withFirebase,
-  graphql(query.internalEvents, { name: 'internal' }),
+  graphql(query.internalEvents, {
+    name: 'internal',
+    options: () => ({ variables: { limit: paging.eventsPerPageForMenu } }),
+  }),
   graphql(query.externalEvents, {
     name: 'external',
     options: () => ({ variables: { limit: paging.eventsPerPageForMenu } }),

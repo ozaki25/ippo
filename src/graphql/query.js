@@ -19,15 +19,17 @@ const externalEvents = gql`
 `;
 
 const internalEvents = gql`
-  query {
-    internalEvents {
-      id
-      title
-      catchMessage
-      place
-      hashtag
-      startedAt
-      endedAt
+  query($limit: Int) {
+    internalEvents(limit: $limit) {
+      items {
+        id
+        title
+        catchMessage
+        place
+        hashtag
+        startedAt
+        endedAt
+      }
     }
   }
 `;

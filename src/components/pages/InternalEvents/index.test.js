@@ -10,12 +10,14 @@ const event = i => ({
   startedAt: '2018/12/1 10:30',
 });
 
-const internalEvents = [...new Array(10)].map((_, i) => event(i));
+const events = [...new Array(10)].map((_, i) => event(i));
 
-const props = ({ loading = false, internalEvents = null }) => ({
+const props = ({ loading = false, empty = false }) => ({
   data: {
     loading,
-    internalEvents,
+    internalEvents: {
+      items: empty ? [] : events,
+    },
   },
   authUser: {
     uid: '123',
@@ -26,12 +28,12 @@ const props = ({ loading = false, internalEvents = null }) => ({
     goBack: jest.fn(),
   },
   firebase: {
-    doSignOut:jest.fn()
+    doSignOut: jest.fn(),
   },
 });
 
-snapshot('InternalEvents/nomal', <InternalEvents {...props({ internalEvents })} />);
+snapshot('InternalEvents/nomal', <InternalEvents {...props({})} />);
 
-snapshot('InternalEvents/loading', <InternalEvents {...props({ loading: true })} />);
+snapshot('InternalEvents/loading', <InternalEvents {...props({ loading: true, empty: true })} />);
 
-snapshot('InternalEvents/nocontents', <InternalEvents {...props({})} />);
+snapshot('InternalEvents/nocontents', <InternalEvents {...props({ empty: true })} />);
