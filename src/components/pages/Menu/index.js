@@ -81,7 +81,7 @@ class Menu extends React.Component {
           </Container>
         </ContainerWithTabs>
         <Tabs
-          value={this.state.value}
+          value={value}
           onChange={this.handleChange}
           className={classes.bottomBar}
           variant="fullWidth"
