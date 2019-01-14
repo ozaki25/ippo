@@ -24,19 +24,27 @@ const props = {
   createEvent: jest.fn(),
   joined: {
     loading: false,
-    joinedEvents: [...[...Array(10)].map((_, i) => internalEvent(i))],
+    joinedEvents: {
+      items: [...[...Array(10)].map((_, i) => internalEvent(i))],
+    },
   },
   organized: {
     loading: false,
-    organizedEvents: [...[...Array(10)].map((_, i) => internalEvent(i))],
+    organizedEvents: {
+      items: [...[...Array(10)].map((_, i) => internalEvent(i))],
+    },
   },
   internal: {
     loading: false,
-    internalEvents: [...[...Array(10)].map((_, i) => internalEvent(i))],
+    internalEvents: {
+      items: [...[...Array(10)].map((_, i) => internalEvent(i))],
+    },
   },
   external: {
     loading: false,
-    events: [...[...Array(10)].map((_, i) => externalEvent(i))],
+    externalEvents: {
+      items: [...[...Array(10)].map((_, i) => externalEvent(i))],
+    },
   },
   authUser: {
     uid: '123',

@@ -9,12 +9,7 @@ import EventCreateForm from 'src/components/organisms/EventCreateForm';
 import NotificationList from 'src/components/organisms/NotificationList';
 import Container from 'src/components/templates/Container';
 import ROUTES from 'src/constants/routes';
-
-const titleMap = {
-  0: 'ホーム',
-  1: 'イベント作成',
-  2: '通知',
-};
+import MENU_ITEMS from 'src/constants/menuItems';
 
 const styles = theme => ({
   bottomBar: {
@@ -31,7 +26,7 @@ const ContainerWithTabs = styled.div`
 `;
 
 class Menu extends React.Component {
-  state = { value: 0 };
+  state = { value: MENU_ITEMS.HOME.value };
 
   handleChange = (event, value) => this.setState({ value });
 
@@ -64,13 +59,13 @@ class Menu extends React.Component {
       <>
         <ContainerWithTabs>
           <Container
-            title={titleMap[value]}
+            title={MENU_ITEMS.findItem(value).title}
             authUser={authUser}
             history={history}
             firebase={firebase}
-            noPadding={[0].includes(value)}
+            noPadding={[MENU_ITEMS.HOME.value].includes(value)}
           >
-            {value === 0 && (
+            {value === MENU_ITEMS.HOME.value && (
               <EventsOverview
                 joined={joined}
                 organized={organized}
@@ -79,12 +74,14 @@ class Menu extends React.Component {
                 history={history}
               />
             )}
-            {value === 1 && <EventCreateForm onSubmit={this.onSubmitCreateEvent} />}
-            {value === 2 && <NotificationList history={history} />}
+            {value === MENU_ITEMS.NEW_EVENT.value && (
+              <EventCreateForm onSubmit={this.onSubmitCreateEvent} />
+            )}
+            {value === MENU_ITEMS.NOTIFICATION.value && <NotificationList history={history} />}
           </Container>
         </ContainerWithTabs>
         <Tabs
-          value={this.state.value}
+          value={value}
           onChange={this.handleChange}
           className={classes.bottomBar}
           variant="fullWidth"
@@ -105,52 +102,60 @@ Menu.displayName = 'Menu';
 Menu.propTypes = {
   joined: propTypes.shape({
     loading: propTypes.bool.isRequired,
-    joinedEvents: propTypes.arrayOf(
-      propTypes.shape({
-        id: propTypes.string,
-        title: propTypes.string,
-        catchMessage: propTypes.string,
-        place: propTypes.string,
-        startedAt: propTypes.string,
-      }),
-    ),
+    joinedEvents: propTypes.shape({
+      items: propTypes.arrayOf(
+        propTypes.shape({
+          id: propTypes.string,
+          title: propTypes.string,
+          catchMessage: propTypes.string,
+          place: propTypes.string,
+          startedAt: propTypes.string,
+        }),
+      ),
+    }),
   }).isRequired,
   organized: propTypes.shape({
     loading: propTypes.bool.isRequired,
-    organizedEvents: propTypes.arrayOf(
-      propTypes.shape({
-        id: propTypes.string,
-        title: propTypes.string,
-        catchMessage: propTypes.string,
-        place: propTypes.string,
-        startedAt: propTypes.string,
-      }),
-    ),
+    organizedEvents: propTypes.shape({
+      items: propTypes.arrayOf(
+        propTypes.shape({
+          id: propTypes.string,
+          title: propTypes.string,
+          catchMessage: propTypes.string,
+          place: propTypes.string,
+          startedAt: propTypes.string,
+        }),
+      ),
+    }),
   }).isRequired,
   internal: propTypes.shape({
     loading: propTypes.bool.isRequired,
-    internalEvents: propTypes.arrayOf(
-      propTypes.shape({
-        id: propTypes.string,
-        title: propTypes.string,
-        catchMessage: propTypes.string,
-        place: propTypes.string,
-        startedAt: propTypes.string,
-      }),
-    ),
+    internalEvents: propTypes.shape({
+      items: propTypes.arrayOf(
+        propTypes.shape({
+          id: propTypes.string,
+          title: propTypes.string,
+          catchMessage: propTypes.string,
+          place: propTypes.string,
+          startedAt: propTypes.string,
+        }),
+      ),
+    }),
   }).isRequired,
   external: propTypes.shape({
     loading: propTypes.bool.isRequired,
-    externalEvents: propTypes.arrayOf(
-      propTypes.shape({
-        id: propTypes.string,
-        title: propTypes.string,
-        eventUrl: propTypes.string,
-        catchMessage: propTypes.string,
-        place: propTypes.string,
-        startedAt: propTypes.string,
-      }),
-    ),
+    externalEvents: propTypes.shape({
+      items: propTypes.arrayOf(
+        propTypes.shape({
+          id: propTypes.string,
+          title: propTypes.string,
+          eventUrl: propTypes.string,
+          catchMessage: propTypes.string,
+          place: propTypes.string,
+          startedAt: propTypes.string,
+        }),
+      ),
+    }),
   }).isRequired,
   createEvent: propTypes.func.isRequired,
   authUser: propTypes.shape({

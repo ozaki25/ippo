@@ -10,12 +10,15 @@ const event = i => ({
   startedAt: '2018/12/1 10:30',
 });
 
-const organizedEvents = [...new Array(10)].map((_, i) => event(i));
+const events = [...new Array(10)].map((_, i) => event(i));
 
-const props = ({ loading = false, organizedEvents = null }) => ({
+const props = ({ loading = false, empty = false }) => ({
   data: {
     loading,
-    organizedEvents,
+    organizedEvents: {
+      items: empty ? [] : events,
+    },
+    fetchMore: jest.fn(),
   },
   authUser: {
     uid: '123',
@@ -30,8 +33,8 @@ const props = ({ loading = false, organizedEvents = null }) => ({
   },
 });
 
-snapshot('OrganizedEvents/nomal', <OrganizedEvents {...props({ organizedEvents })} />);
+snapshot('OrganizedEvents/nomal', <OrganizedEvents {...props({})} />);
 
-snapshot('OrganizedEvents/loading', <OrganizedEvents {...props({ loading: true })} />);
+snapshot('OrganizedEvents/loading', <OrganizedEvents {...props({ loading: true, empty: true })} />);
 
-snapshot('OrganizedEvents/nocontents', <OrganizedEvents {...props({})} />);
+snapshot('OrganizedEvents/nocontents', <OrganizedEvents {...props({ empty: true })} />);

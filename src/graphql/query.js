@@ -1,30 +1,35 @@
 import gql from 'graphql-tag';
 
 const externalEvents = gql`
-  query {
-    externalEvents {
-      id
-      connpassId
-      title
-      eventUrl
-      catchMessage
-      place
-      startedAt
-      endedAt
+  query($limit: Int, $startId: String) {
+    externalEvents(limit: $limit, startId: $startId) {
+      items {
+        id
+        connpassId
+        title
+        eventUrl
+        catchMessage
+        place
+        startedAt
+        endedAt
+      }
+      startId
     }
   }
 `;
 
 const internalEvents = gql`
-  query {
-    internalEvents {
-      id
-      title
-      catchMessage
-      place
-      hashtag
-      startedAt
-      endedAt
+  query($limit: Int) {
+    internalEvents(limit: $limit) {
+      items {
+        id
+        title
+        catchMessage
+        place
+        hashtag
+        startedAt
+        endedAt
+      }
     }
   }
 `;
@@ -45,29 +50,35 @@ const internalEvent = gql`
 `;
 
 const joinedEvents = gql`
-  query($uid: String) {
-    joinedEvents(uid: $uid) {
-      id
-      title
-      catchMessage
-      place
-      hashtag
-      startedAt
-      endedAt
+  query($uid: String, $limit: Int, $startId: String) {
+    joinedEvents(uid: $uid, limit: $limit, startId: $startId) {
+      items {
+        id
+        title
+        catchMessage
+        place
+        hashtag
+        startedAt
+        endedAt
+      }
+      startId
     }
   }
 `;
 
 const organizedEvents = gql`
-  query($uid: String) {
-    organizedEvents(uid: $uid) {
-      id
-      title
-      catchMessage
-      place
-      hashtag
-      startedAt
-      endedAt
+  query($uid: String, $limit: Int, $startId: String) {
+    organizedEvents(uid: $uid, limit: $limit, startId: $startId) {
+      items {
+        id
+        title
+        catchMessage
+        place
+        hashtag
+        startedAt
+        endedAt
+      }
+      startId
     }
   }
 `;
