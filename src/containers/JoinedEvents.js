@@ -5,12 +5,13 @@ import { withFirebase } from 'src/context/firebase';
 import query from 'src/graphql/query';
 import JoinedEvents from 'src/components/pages/JoinedEvents/';
 import { withAuthorization } from 'src/hoc/Sessions';
+import paging from 'src/constants/paging';
 
 export default compose(
   withAuthorization,
   withRouter,
   withFirebase,
   graphql(query.joinedEvents, {
-    options: ({ authUser: { uid } }) => ({ variables: { uid } }),
+    options: ({ authUser: { uid } }) => ({ variables: { uid, limit: paging.eventsPerPage } }),
   }),
 )(JoinedEvents);
