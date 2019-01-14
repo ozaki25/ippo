@@ -39,7 +39,12 @@ class EventCreateForm extends React.Component {
   onChange = event => this.setState({ [event.target.name]: event.target.value });
 
   onBlurHashtag = event =>
-    this.setState({ hashtag: event.target.value.replace(/ /g, '_').replace(/#/g, '') });
+    this.setState({
+      hashtag: event.target.value
+        .trim()
+        .replace(/#/g, '')
+        .replace(/\s/g, '_'),
+    });
 
   handleAdd = chip => this.setState(prevState => ({ categories: [...prevState.categories, chip] }));
 
