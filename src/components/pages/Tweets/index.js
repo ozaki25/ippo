@@ -20,27 +20,24 @@ class Tweets extends React.Component {
     const {
       data: {
         tweets: { startId },
-        variables,
+        variables: { hashtag },
         fetchMore,
       },
     } = this.props;
-    fetchMore({
-      variables: {
-        hashtag: variables.hashtag,
-        limit: paging.tweetsPerPage,
-        startId: startId,
-      },
-      updateQuery: (prev, { fetchMoreResult }) => {
-        return {
-          ...prev,
-          tweets: {
-            ...prev.tweets,
-            tweetList: [...prev.tweets.tweetList, ...fetchMoreResult.tweets.tweetList],
-            startId: fetchMoreResult.tweets.startId,
-          },
-        };
+    const variables = {
+      hashtag,
+      limit: paging.tweetsPerPage,
+      startId: startId,
+    };
+    const updateQuery = (prev, { fetchMoreResult }) => ({
+      ...prev,
+      tweets: {
+        ...prev.tweets,
+        tweetList: [...prev.tweets.tweetList, ...fetchMoreResult.tweets.tweetList],
+        startId: fetchMoreResult.tweets.startId,
       },
     });
+    fetchMore({ variables, updateQuery });
   };
 
   onClickNewTweet = () => {
