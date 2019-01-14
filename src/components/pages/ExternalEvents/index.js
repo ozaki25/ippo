@@ -9,7 +9,7 @@ import eventFormat from 'src/utils/eventFormat';
 import paging from 'src/constants/paging';
 
 const ExternalEvents = ({
-  data: { loading, externalEvents, variables, fetchMore },
+  data: { loading, externalEvents, fetchMore },
   authUser,
   history,
   firebase,
@@ -73,9 +73,6 @@ ExternalEvents.propTypes = {
         }),
       ),
       startId: propTypes.string,
-    }),
-    variables: propTypes.shape({
-      limit: propTypes.number.isRequired,
     }),
     fetchMore: propTypes.func.isRequired,
   }),

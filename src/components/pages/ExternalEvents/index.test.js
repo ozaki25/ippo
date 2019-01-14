@@ -14,8 +14,10 @@ const event = i => ({
 const props = ({ loading = false, empty = false }) => ({
   data: {
     loading,
-    events: empty ? [] : [...new Array(10)].map((_, i) => event(i)),
-    refetch: jest.fn(),
+    externalEvents: {
+      items: empty ? [] : [...new Array(10)].map((_, i) => event(i)),
+    },
+    fetchMore: jest.fn(),
   },
   authUser: {
     uid: '123',

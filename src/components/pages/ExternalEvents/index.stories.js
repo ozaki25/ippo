@@ -17,8 +17,10 @@ const event = i => ({
 const props = ({ loading = false, empty = false }) => ({
   data: {
     loading,
-    externalEvents: empty ? [] : [...new Array(10)].map((_, i) => event(i)),
-    refetch: action('refetch'),
+    externalEvents: {
+      items: empty ? [] : [...new Array(10)].map((_, i) => event(i)),
+    },
+    fetchMore: action('fetchMore'),
   },
   authUser: {
     uid: '123',
