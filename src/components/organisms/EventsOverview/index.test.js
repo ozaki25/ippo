@@ -23,11 +23,15 @@ const externalEvent = i => ({
 const props = {
   joined: {
     loading: false,
-    joinedEvents: [...[...Array(5)].map((_, i) => internalEvent(i))],
+    joinedEvents: {
+      items: [...[...Array(5)].map((_, i) => internalEvent(i))],
+    },
   },
   organized: {
     loading: false,
-    organizedEvents: [...[...Array(5)].map((_, i) => internalEvent(i))],
+    organizedEvents: {
+      items: [...[...Array(5)].map((_, i) => internalEvent(i))],
+    },
   },
   internal: {
     loading: false,
@@ -35,7 +39,9 @@ const props = {
   },
   external: {
     loading: false,
-    externalEvents: [...[...Array(5)].map((_, i) => externalEvent(i))],
+    externalEvents: {
+      items: [...[...Array(5)].map((_, i) => externalEvent(i))],
+    },
   },
   history: {
     push: jest.fn(),

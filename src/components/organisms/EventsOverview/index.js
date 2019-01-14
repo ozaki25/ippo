@@ -35,7 +35,7 @@ const EventsOverview = ({ joined, organized, internal, external, history }) => (
       <LinkHeading linkTo={ROUTES.JoinedEvents}>参加イベント</LinkHeading>
       <AsyncSwipeable loading={joined.loading}>
         {EventCardList({
-          events: eventFormat.internal(joined.joinedEvents),
+          events: joined.loading ? [] : eventFormat.internal(joined.joinedEvents.items),
           expand: true,
           noWrap: true,
           horizontal: true,
@@ -80,7 +80,7 @@ const EventsOverview = ({ joined, organized, internal, external, history }) => (
       <LinkHeading linkTo={ROUTES.OrganizedEvents}>主催イベント</LinkHeading>
       <AsyncSwipeable loading={organized.loading}>
         {EventCardList({
-          events: eventFormat.internal(organized.organizedEvents),
+          events: organized.loading ? [] : eventFormat.internal(organized.organizedEvents.items),
           expand: true,
           noWrap: true,
           horizontal: true,
@@ -97,27 +97,31 @@ EventsOverview.displayName = 'EventsOverview';
 EventsOverview.propTypes = {
   joined: propTypes.shape({
     loading: propTypes.bool.isRequired,
-    joinedEvents: propTypes.arrayOf(
-      propTypes.shape({
-        id: propTypes.string,
-        title: propTypes.string,
-        catchMessage: propTypes.string,
-        place: propTypes.string,
-        startedAt: propTypes.string,
-      }),
-    ),
+    joinedEvents: propTypes.shape({
+      items: propTypes.arrayOf(
+        propTypes.shape({
+          id: propTypes.string,
+          title: propTypes.string,
+          catchMessage: propTypes.string,
+          place: propTypes.string,
+          startedAt: propTypes.string,
+        }),
+      ),
+    }),
   }).isRequired,
   organized: propTypes.shape({
     loading: propTypes.bool.isRequired,
-    organizedEvents: propTypes.arrayOf(
-      propTypes.shape({
-        id: propTypes.string,
-        title: propTypes.string,
-        catchMessage: propTypes.string,
-        place: propTypes.string,
-        startedAt: propTypes.string,
-      }),
-    ),
+    organizedEvents: propTypes.shape({
+      items: propTypes.arrayOf(
+        propTypes.shape({
+          id: propTypes.string,
+          title: propTypes.string,
+          catchMessage: propTypes.string,
+          place: propTypes.string,
+          startedAt: propTypes.string,
+        }),
+      ),
+    }),
   }).isRequired,
   internal: propTypes.shape({
     loading: propTypes.bool.isRequired,
