@@ -13,12 +13,15 @@ const event = i => ({
   startedAt: '2018/12/1 10:30',
 });
 
-const organizedEvents = [...new Array(10)].map((_, i) => event(i));
+const events = [...new Array(10)].map((_, i) => event(i));
 
-const props = ({ loading = false, organizedEvents = null }) => ({
+const props = ({ loading = false, empty = false }) => ({
   data: {
     loading,
-    organizedEvents,
+    organizedEvents: {
+      items: empty ? [] : events,
+    },
+    fetchMore: action('fetchMore'),
   },
   authUser: {
     uid: '123',
@@ -31,8 +34,8 @@ const props = ({ loading = false, organizedEvents = null }) => ({
   firebase: {},
 });
 
-stories.add('通常パターン', () => <OrganizedEvents {...props({ organizedEvents })} />);
+stories.add('通常パターン', () => <OrganizedEvents {...props({})} />);
 
-stories.add('ロード中', () => <OrganizedEvents {...props({ loading: true })} />);
+stories.add('ロード中', () => <OrganizedEvents {...props({ loading: true, empty: true })} />);
 
-stories.add('データなし', () => <OrganizedEvents {...props({})} />);
+stories.add('データなし', () => <OrganizedEvents {...props({ empty: true })} />);
