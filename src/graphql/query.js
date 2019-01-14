@@ -167,7 +167,9 @@ const fetchUser = gql`
 `;
 
 const excuteUpdateExternalEvents = gql`
-  mutation excuteUpdateExternalEvents
+  mutation excuteUpdateExternalEvents {
+    excuteUpdateExternalEvents
+  }
 `;
 
 export default {
