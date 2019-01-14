@@ -15,23 +15,19 @@ const ExternalEvents = ({
   firebase,
 }) => {
   const loadMore = () => {
-    const { startId } = externalEvents;
-    fetchMore({
-      variables: {
-        limit: paging.eventsPerPage,
-        startId,
-      },
-      updateQuery: (prev, { fetchMoreResult }) => {
-        return {
-          ...prev,
-          externalEvents: {
-            ...prev.externalEvents,
-            items: [...prev.externalEvents.items, ...fetchMoreResult.externalEvents.items],
-            startId: fetchMoreResult.externalEvents.startId,
-          },
-        };
+    const variables = {
+      limit: paging.eventsPerPage,
+      startId: externalEvents.startId,
+    };
+    const updateQuery = (prev, { fetchMoreResult }) => ({
+      ...prev,
+      externalEvents: {
+        ...prev.externalEvents,
+        items: [...prev.externalEvents.items, ...fetchMoreResult.externalEvents.items],
+        startId: fetchMoreResult.externalEvents.startId,
       },
     });
+    fetchMore({ variables, updateQuery });
   };
 
   return (

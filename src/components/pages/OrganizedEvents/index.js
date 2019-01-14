@@ -15,24 +15,20 @@ const OrganizedEvents = ({
   firebase,
 }) => {
   const loadMore = () => {
-    const { startId } = organizedEvents;
-    fetchMore({
-      variables: {
-        uid: authUser.uid,
-        limit: paging.eventsPerPage,
-        startId,
-      },
-      updateQuery: (prev, { fetchMoreResult }) => {
-        return {
-          ...prev,
-          organizedEvents: {
-            ...prev.organizedEvents,
-            items: [...prev.organizedEvents.items, ...fetchMoreResult.organizedEvents.items],
-            startId: fetchMoreResult.organizedEvents.startId,
-          },
-        };
+    const variables = {
+      uid: authUser.uid,
+      limit: paging.eventsPerPage,
+      startId: organizedEvents.startId,
+    };
+    const updateQuery = (prev, { fetchMoreResult }) => ({
+      ...prev,
+      organizedEvents: {
+        ...prev.organizedEvents,
+        items: [...prev.organizedEvents.items, ...fetchMoreResult.organizedEvents.items],
+        startId: fetchMoreResult.organizedEvents.startId,
       },
     });
+    fetchMore({ variables, updateQuery });
   };
 
   return (

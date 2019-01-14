@@ -15,24 +15,20 @@ const JoinedEvents = ({
   firebase,
 }) => {
   const loadMore = () => {
-    const { startId } = joinedEvents;
-    fetchMore({
-      variables: {
-        uid: authUser.uid,
-        limit: paging.eventsPerPage,
-        startId,
-      },
-      updateQuery: (prev, { fetchMoreResult }) => {
-        return {
-          ...prev,
-          joinedEvents: {
-            ...prev.joinedEvents,
-            items: [...prev.joinedEvents.items, ...fetchMoreResult.joinedEvents.items],
-            startId: fetchMoreResult.joinedEvents.startId,
-          },
-        };
+    const variables = {
+      uid: authUser.uid,
+      limit: paging.eventsPerPage,
+      startId: joinedEvents.startId,
+    };
+    const updateQuery = (prev, { fetchMoreResult }) => ({
+      ...prev,
+      joinedEvents: {
+        ...prev.joinedEvents,
+        items: [...prev.joinedEvents.items, ...fetchMoreResult.joinedEvents.items],
+        startId: fetchMoreResult.joinedEvents.startId,
       },
     });
+    fetchMore({ variables, updateQuery });
   };
 
   return (
