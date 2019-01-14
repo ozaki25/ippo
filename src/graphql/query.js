@@ -166,6 +166,10 @@ const fetchUser = gql`
   }
 `;
 
+const excuteUpdateExternalEvents = gql`
+  mutation excuteUpdateExternalEvents
+`;
+
 export default {
   externalEvents,
   internalEvents,
@@ -180,4 +184,5 @@ export default {
   createTweet,
   createUser,
   fetchUser,
+  excuteUpdateExternalEvents,
 };

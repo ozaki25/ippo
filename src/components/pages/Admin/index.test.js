@@ -5,6 +5,7 @@ import Admin from '.';
 const props = {
   publishNotification: jest.fn(),
   registerNotification: jest.fn(),
+  excuteUpdateExternalEvents: jest.fn(),
   authUser: {
     uid: '123',
     displayName: 'テストユーザ',
