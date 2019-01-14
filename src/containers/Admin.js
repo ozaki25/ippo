@@ -10,4 +10,5 @@ export default compose(
   withRouter,
   graphql(query.publishNotification, { name: 'publishNotification' }),
   graphql(query.registerNotification, { name: 'registerNotification' }),
+  graphql(query.excuteUpdateExternalEvents, { name: 'excuteUpdateExternalEvents' }),
 )(Admin);

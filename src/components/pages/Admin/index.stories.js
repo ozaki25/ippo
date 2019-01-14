@@ -8,6 +8,7 @@ const stories = storiesOf('pages/Admin', module);
 const props = {
   publishNotification: action('publish'),
   registerNotification: action('register'),
+  excuteUpdateExternalEvents: action('excuteUpdateExternalEvents'),
   authUser: {
     uid: '123',
     displayName: 'テストユーザ',
