@@ -21,6 +21,7 @@ const props = ({ loading = false, empty = false }) => ({
     internalEvents: {
       items: empty ? [] : events,
     },
+    fetchMore: action('fetchMore'),
   },
   authUser: {
     uid: '123',

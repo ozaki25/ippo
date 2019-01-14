@@ -18,6 +18,7 @@ const props = ({ loading = false, empty = false }) => ({
     internalEvents: {
       items: empty ? [] : events,
     },
+    fetchMore: jest.fn(),
   },
   authUser: {
     uid: '123',
