@@ -35,7 +35,9 @@ const props = {
   },
   internal: {
     loading: false,
-    internalEvents: [...[...Array(5)].map((_, i) => internalEvent(i))],
+    internalEvents: {
+      items: [...[...Array(5)].map((_, i) => internalEvent(i))],
+    },
   },
   external: {
     loading: false,
