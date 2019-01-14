@@ -35,6 +35,7 @@ const withAuthentication = Component => {
             if (storage && storage.name) {
               // emailで新規登録直後
               user.displayName = storage.name;
+              user.categories = storage.categories;
               this.props.createUser({ variables: { user } });
               localStorage.setItem('authUser', JSON.stringify(user));
               this.props.onSetAuthUser(user);

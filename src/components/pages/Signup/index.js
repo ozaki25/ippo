@@ -8,8 +8,8 @@ import ROUTES from 'src/constants/routes';
 class Signup extends React.Component {
   state = { loading: false };
 
-  signup = async ({ data: { email, pass, name } }) => {
-    sessionStorage.setItem('authUser', JSON.stringify({ name }));
+  signup = async ({ data: { email, pass, name, categories } }) => {
+    sessionStorage.setItem('authUser', JSON.stringify({ name, categories }));
     await this.props.firebase.doCreateUserWithEmailAndPassword(email, pass);
     this.props.history.replace(ROUTES.Menu);
   };

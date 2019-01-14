@@ -1,16 +1,17 @@
 import React from 'react';
 import { Button, TextField, Typography } from '@material-ui/core';
+import ChipInput from 'material-ui-chip-input';
 import propTypes from 'prop-types';
 
 class SignupForm extends React.Component {
-  state = { email: '', pass: '', name: '', loading: false, error: '' };
+  state = { email: '', pass: '', name: '', categories: [], loading: false, error: '' };
 
   onClick = async event => {
     event.preventDefault();
-    const { email, pass, name } = this.state;
+    const { email, pass, name, categories } = this.state;
     this.setState({ loading: true });
     try {
-      await this.props.onSubmit({ data: { email, pass, name } });
+      await this.props.onSubmit({ data: { email, pass, name, categories: categories.join(',') } });
     } catch (e) {
       this.setState({ loading: false, error: e.toString() });
     }
@@ -18,8 +19,15 @@ class SignupForm extends React.Component {
 
   onChange = event => this.setState({ [event.target.name]: event.target.value });
 
+  handleAdd = chip => this.setState(prevState => ({ categories: [...prevState.categories, chip] }));
+
+  handleDelete = deletedChip =>
+    this.setState(prevState => ({
+      categories: prevState.categories.filter(c => c !== deletedChip),
+    }));
+
   render() {
-    const { email, pass, name, loading, error } = this.state;
+    const { email, pass, name, categories, loading, error } = this.state;
     const invalid = email.trim() === '' || pass.trim() === '' || name.trim() === '';
     return (
       <form>
@@ -29,7 +37,7 @@ class SignupForm extends React.Component {
           name="name"
           value={name}
           onChange={this.onChange}
-          margin="normal"
+          margin="dense"
           color="primary"
           fullWidth
           required
@@ -40,7 +48,7 @@ class SignupForm extends React.Component {
           name="email"
           value={email}
           onChange={this.onChange}
-          margin="normal"
+          margin="dense"
           color="primary"
           fullWidth
           required
@@ -52,10 +60,20 @@ class SignupForm extends React.Component {
           type="password"
           value={pass}
           onChange={this.onChange}
-          margin="normal"
+          margin="dense"
           color="primary"
           fullWidth
           required
+        />
+        <br />
+        <ChipInput
+          label="興味のあるカテゴリ"
+          name="categories"
+          value={categories}
+          color="primary"
+          onAdd={this.handleAdd}
+          onDelete={this.handleDelete}
+          fullWidth
         />
         <br />
         <Button
