@@ -48,29 +48,35 @@ const internalEvent = gql`
 `;
 
 const joinedEvents = gql`
-  query($uid: String) {
-    joinedEvents(uid: $uid) {
-      id
-      title
-      catchMessage
-      place
-      hashtag
-      startedAt
-      endedAt
+  query($uid: String, $limit: Int, $startId: String) {
+    joinedEvents(uid: $uid, limit: $limit, startId: $startId) {
+      items {
+        id
+        title
+        catchMessage
+        place
+        hashtag
+        startedAt
+        endedAt
+      }
+      startId
     }
   }
 `;
 
 const organizedEvents = gql`
-  query($uid: String) {
-    organizedEvents(uid: $uid) {
-      id
-      title
-      catchMessage
-      place
-      hashtag
-      startedAt
-      endedAt
+  query($uid: String, $limit: Int, $startId: String) {
+    organizedEvents(uid: $uid, limit: $limit, startId: $startId) {
+      items {
+        id
+        title
+        catchMessage
+        place
+        hashtag
+        startedAt
+        endedAt
+      }
+      startId
     }
   }
 `;
