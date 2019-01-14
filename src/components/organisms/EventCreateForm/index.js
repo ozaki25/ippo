@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, TextField, Typography } from '@material-ui/core';
+import { Button, InputAdornment, TextField, Typography } from '@material-ui/core';
 import ChipInput from 'material-ui-chip-input';
 import propTypes from 'prop-types';
 
@@ -37,6 +37,14 @@ class EventCreateForm extends React.Component {
   };
 
   onChange = event => this.setState({ [event.target.name]: event.target.value });
+
+  onBlurHashtag = event =>
+    this.setState({
+      hashtag: event.target.value
+        .trim()
+        .replace(/#/g, '')
+        .replace(/\s/g, '_'),
+    });
 
   handleAdd = chip => this.setState(prevState => ({ categories: [...prevState.categories, chip] }));
 
@@ -101,6 +109,10 @@ class EventCreateForm extends React.Component {
           color="primary"
           fullWidth
           required
+          onBlur={this.onBlurHashtag}
+          InputProps={{
+            startAdornment: <InputAdornment position="start">#</InputAdornment>,
+          }}
         />
         <ChipInput
           label="カテゴリ"
