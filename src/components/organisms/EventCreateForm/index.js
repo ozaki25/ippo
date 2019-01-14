@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, TextField, Typography } from '@material-ui/core';
+import ChipInput from 'material-ui-chip-input';
 import propTypes from 'prop-types';
 
 class EventCreateForm extends React.Component {
@@ -8,6 +9,7 @@ class EventCreateForm extends React.Component {
     catchMessage: '',
     place: '',
     hashtag: '',
+    categories: [],
     startedAt: '',
     endedAt: '',
     loading: false,
@@ -16,7 +18,7 @@ class EventCreateForm extends React.Component {
 
   onClick = async event => {
     event.preventDefault();
-    const { title, catchMessage, place, hashtag, startedAt, endedAt } = this.state;
+    const { title, catchMessage, place, hashtag, categories, startedAt, endedAt } = this.state;
     this.setState({ loading: true });
     try {
       const { data } = await this.props.onSubmit({
@@ -24,6 +26,7 @@ class EventCreateForm extends React.Component {
         catchMessage,
         place,
         hashtag,
+        categories: categories.join(','),
         startedAt,
         endedAt,
       });
@@ -35,8 +38,25 @@ class EventCreateForm extends React.Component {
 
   onChange = event => this.setState({ [event.target.name]: event.target.value });
 
+  handleAdd = chip => this.setState(prevState => ({ categories: [...prevState.categories, chip] }));
+
+  handleDelete = deletedChip =>
+    this.setState(prevState => ({
+      categories: prevState.categories.filter(c => c !== deletedChip),
+    }));
+
   render() {
-    const { title, catchMessage, place, hashtag, startedAt, endedAt, loading, error } = this.state;
+    const {
+      title,
+      catchMessage,
+      place,
+      hashtag,
+      categories,
+      startedAt,
+      endedAt,
+      loading,
+      error,
+    } = this.state;
     const invalid = this.state.title.trim() === '' || this.state.hashtag.trim() === '';
     return (
       <form>
@@ -46,7 +66,7 @@ class EventCreateForm extends React.Component {
           name="title"
           value={title}
           onChange={this.onChange}
-          margin="normal"
+          margin="dense"
           color="primary"
           fullWidth
           required
@@ -57,7 +77,7 @@ class EventCreateForm extends React.Component {
           name="catchMessage"
           value={catchMessage}
           onChange={this.onChange}
-          margin="normal"
+          margin="dense"
           color="primary"
           fullWidth
         />
@@ -67,7 +87,7 @@ class EventCreateForm extends React.Component {
           name="place"
           value={place}
           onChange={this.onChange}
-          margin="normal"
+          margin="dense"
           color="primary"
           fullWidth
         />
@@ -77,10 +97,19 @@ class EventCreateForm extends React.Component {
           name="hashtag"
           value={hashtag}
           onChange={this.onChange}
-          margin="normal"
+          margin="dense"
           color="primary"
           fullWidth
           required
+        />
+        <ChipInput
+          label="カテゴリ"
+          name="categories"
+          value={categories}
+          color="primary"
+          onAdd={this.handleAdd}
+          onDelete={this.handleDelete}
+          fullWidth
         />
         <br />
         <TextField
@@ -92,7 +121,7 @@ class EventCreateForm extends React.Component {
           InputLabelProps={{
             shrink: true,
           }}
-          margin="normal"
+          margin="dense"
           color="primary"
           fullWidth
         />
@@ -106,7 +135,7 @@ class EventCreateForm extends React.Component {
           InputLabelProps={{
             shrink: true,
           }}
-          margin="normal"
+          margin="dense"
           color="primary"
           fullWidth
         />
