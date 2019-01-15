@@ -37,6 +37,12 @@ const props = {
       items: [...[...Array(10)].map((_, i) => internalEvent(i))],
     },
   },
+  recommended: {
+    loading: false,
+    recommendedEvents: {
+      items: [...[...Array(10)].map((_, i) => internalEvent(i))],
+    },
+  },
   internal: {
     loading: false,
     internalEvents: {

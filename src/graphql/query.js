@@ -83,6 +83,23 @@ const organizedEvents = gql`
   }
 `;
 
+const recommendedEvents = gql`
+  query($uid: String, $limit: Int, $startId: String) {
+    recommendedEvents(uid: $uid, limit: $limit, startId: $startId) {
+      items {
+        id
+        title
+        catchMessage
+        place
+        hashtag
+        startedAt
+        endedAt
+      }
+      startId
+    }
+  }
+`;
+
 const tweets = gql`
   query($hashtag: String, $limit: Int, $startId: String, $uid: String) {
     tweets(hashtag: $hashtag, limit: $limit, startId: $startId, uid: $uid) {
@@ -178,6 +195,7 @@ export default {
   internalEvent,
   joinedEvents,
   organizedEvents,
+  recommendedEvents,
   tweets,
   registerNotification,
   unregisterNotification,

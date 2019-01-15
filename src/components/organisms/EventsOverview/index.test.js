@@ -33,6 +33,13 @@ const props = {
       items: [...[...Array(5)].map((_, i) => internalEvent(i))],
     },
   },
+  recommended: {
+    loading: false,
+    recommendedEvents: {
+      items: [...[...Array(5)].map((_, i) => internalEvent(i))],
+    },
+  },
+
   internal: {
     loading: false,
     internalEvents: {
