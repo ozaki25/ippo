@@ -44,7 +44,10 @@ const Admin = ({
     }
   };
 
-  const onClickUpdateConnpass = () => excuteUpdateExternalEvents();
+  const onClickUpdateConnpass = async () => {
+    const { data } = await excuteUpdateExternalEvents();
+    alert(JSON.stringify(data));
+  };
 
   return (
     <Container title="Adminエリア" authUser={authUser} history={history} firebase={firebase}>
