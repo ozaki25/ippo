@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button, InputAdornment, TextField, Typography } from '@material-ui/core';
-import ChipInput from 'material-ui-chip-input';
 import propTypes from 'prop-types';
 import InputCategoriesAutoSuggest from 'src/components/organisms/InputCategoriesAutoSuggest';
 
