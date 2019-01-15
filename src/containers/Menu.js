@@ -31,5 +31,11 @@ export default compose(
     }),
     name: 'organized',
   }),
+  graphql(query.recommendedEvents, {
+    options: ({ authUser: { uid } }) => ({
+      variables: { uid, limit: paging.eventsPerPageForMenu },
+    }),
+    name: 'recommended',
+  }),
   graphql(query.createEvent, { name: 'createEvent' }),
 )(Menu);

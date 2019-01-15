@@ -29,7 +29,7 @@ const LinkHeading = ({ linkTo, children }) => (
   </StyledLink>
 );
 
-const EventsOverview = ({ joined, organized, internal, external, history }) => (
+const EventsOverview = ({ joined, organized, recommended, internal, external, history }) => (
   <>
     <EventsContainer>
       <LinkHeading linkTo={ROUTES.JoinedEvents}>参加イベント</LinkHeading>
@@ -46,8 +46,16 @@ const EventsOverview = ({ joined, organized, internal, external, history }) => (
     <Divider light />
     <EventsContainer>
       <LinkHeading linkTo={ROUTES.RecommendedEvents}>おすすめイベント</LinkHeading>
-      <AsyncSwipeable loading={false}>
-        {EventCardList({ events: [], expand: true, noWrap: true, horizontal: true, history })}
+      <AsyncSwipeable loading={recommended.loading}>
+        {EventCardList({
+          events: recommended.loading
+            ? []
+            : eventFormat.internal(recommended.recommendedEvents.items),
+          expand: true,
+          noWrap: true,
+          horizontal: true,
+          history,
+        })}
       </AsyncSwipeable>
     </EventsContainer>
     <Divider light />
@@ -112,6 +120,20 @@ EventsOverview.propTypes = {
   organized: propTypes.shape({
     loading: propTypes.bool.isRequired,
     organizedEvents: propTypes.shape({
+      items: propTypes.arrayOf(
+        propTypes.shape({
+          id: propTypes.string,
+          title: propTypes.string,
+          catchMessage: propTypes.string,
+          place: propTypes.string,
+          startedAt: propTypes.string,
+        }),
+      ),
+    }),
+  }).isRequired,
+  recommended: propTypes.shape({
+    loading: propTypes.bool.isRequired,
+    recommendedEvents: propTypes.shape({
       items: propTypes.arrayOf(
         propTypes.shape({
           id: propTypes.string,

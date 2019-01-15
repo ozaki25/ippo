@@ -47,6 +47,7 @@ class Menu extends React.Component {
     const {
       joined,
       organized,
+      recommended,
       internal,
       external,
       classes,
@@ -69,6 +70,7 @@ class Menu extends React.Component {
               <EventsOverview
                 joined={joined}
                 organized={organized}
+                recommended={recommended}
                 internal={internal}
                 external={external}
                 history={history}
@@ -117,6 +119,20 @@ Menu.propTypes = {
   organized: propTypes.shape({
     loading: propTypes.bool.isRequired,
     organizedEvents: propTypes.shape({
+      items: propTypes.arrayOf(
+        propTypes.shape({
+          id: propTypes.string,
+          title: propTypes.string,
+          catchMessage: propTypes.string,
+          place: propTypes.string,
+          startedAt: propTypes.string,
+        }),
+      ),
+    }),
+  }).isRequired,
+  recommended: propTypes.shape({
+    loading: propTypes.bool.isRequired,
+    recommendedEvents: propTypes.shape({
       items: propTypes.arrayOf(
         propTypes.shape({
           id: propTypes.string,
