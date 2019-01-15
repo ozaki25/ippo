@@ -110,12 +110,6 @@ class InputCategoriesAutoSuggest extends React.Component {
 
   handletextFieldInputChange = (event, { newValue }) => this.setState({ textFieldInput: newValue });
 
-  // handleAddChip = chip =>
-  //   this.setState(prevState => ({ value: [...prevState.value, chip], textFieldInput: '' }));
-
-  // handleDeleteChip = (chip, index) =>
-  //   this.setState(prevState => ({ value: prevState.value.slice(index, 1) }));
-
   render() {
     const { classes, value, handleAddChip, handleDeleteChip } = this.props;
     const { suggestions, textFieldInput } = this.state;
