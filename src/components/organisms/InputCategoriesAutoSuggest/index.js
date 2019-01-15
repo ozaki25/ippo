@@ -54,7 +54,6 @@ const renderSuggestionsContainer = ({ containerProps, children }) => (
 const getSuggestionValue = suggestion => suggestion;
 
 const getSuggestions = ({ value, selected }) => {
-  console.log({ value, selected });
   const inputValue = value.trim().toLowerCase();
   const inputLength = inputValue.length;
   let count = 0;
@@ -99,12 +98,11 @@ const styles = theme => ({
 class InputCategoriesAutoSuggest extends React.Component {
   state = {
     suggestions: [],
-    value: [],
     textFieldInput: '',
   };
 
   handleSuggestionsFetchRequested = ({ value }) => {
-    const suggestions = getSuggestions({ value, selected: this.state.value });
+    const suggestions = getSuggestions({ value, selected: this.props.value });
     this.setState({ suggestions });
   };
 
@@ -112,15 +110,15 @@ class InputCategoriesAutoSuggest extends React.Component {
 
   handletextFieldInputChange = (event, { newValue }) => this.setState({ textFieldInput: newValue });
 
-  handleAddChip = chip =>
-    this.setState(prevState => ({ value: [...prevState.value, chip], textFieldInput: '' }));
+  // handleAddChip = chip =>
+  //   this.setState(prevState => ({ value: [...prevState.value, chip], textFieldInput: '' }));
 
-  handleDeleteChip = (chip, index) =>
-    this.setState(prevState => ({ value: prevState.value.slice(index, 1) }));
+  // handleDeleteChip = (chip, index) =>
+  //   this.setState(prevState => ({ value: prevState.value.slice(index, 1) }));
 
   render() {
-    const { classes } = this.props;
-    const { suggestions, value, textFieldInput } = this.state;
+    const { classes, value, handleAddChip, handleDeleteChip } = this.props;
+    const { suggestions, textFieldInput } = this.state;
     return (
       <Autosuggest
         theme={{
@@ -137,7 +135,7 @@ class InputCategoriesAutoSuggest extends React.Component {
         getSuggestionValue={getSuggestionValue}
         renderSuggestion={renderSuggestion}
         onSuggestionSelected={(e, { suggestionValue }) => {
-          this.handleAddChip(suggestionValue);
+          handleAddChip(suggestionValue);
           e.preventDefault();
         }}
         inputProps={{
@@ -145,8 +143,8 @@ class InputCategoriesAutoSuggest extends React.Component {
           chips: value,
           onChange: this.handletextFieldInputChange,
           value: textFieldInput,
-          onAdd: this.handleAddChip,
-          onDelete: this.handleDeleteChip,
+          onAdd: handleAddChip,
+          onDelete: handleDeleteChip,
         }}
       />
     );
@@ -154,7 +152,10 @@ class InputCategoriesAutoSuggest extends React.Component {
 }
 InputCategoriesAutoSuggest.displayName = 'InputCategoriesAutoSuggest';
 
-InputCategoriesAutoSuggest.propTypes = {};
+InputCategoriesAutoSuggest.propTypes = {
+  handleAddChip: propTypes.func.isRequired,
+  handleDeleteChip: propTypes.func.isRequired,
+};
 
 InputCategoriesAutoSuggest.defaultProps = {};
 
