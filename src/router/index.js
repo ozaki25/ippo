@@ -7,6 +7,7 @@ import Signup from 'src/containers/Signup';
 import Admin from 'src/containers/Admin';
 import JoinedEvents from 'src/containers/JoinedEvents';
 import OrganizedEvents from 'src/containers/OrganizedEvents';
+import RecommendedEvents from 'src/containers/RecommendedEvents';
 import InternalEvents from 'src/containers/InternalEvents';
 import ExternalEvents from 'src/containers/ExternalEvents';
 import NewEvent from 'src/containers/NewEvent';
@@ -15,8 +16,6 @@ import NewTweet from 'src/containers/NewTweet';
 import SettingsNotification from 'src/containers/SettingsNotification';
 import SettingsAccount from 'src/containers/SettingsAccount';
 import ROUTES from 'src/constants/routes';
-
-const RecommendedEvents = () => <p>tmp...</p>;
 
 const Router = () => (
   <BrowserRouter>
