@@ -6,6 +6,7 @@ import InputCategoriesAutoSuggest from '.';
 const props = {
   handleAddChip: action('add'),
   handleDeleteChip: action('delete'),
+  label: 'カテゴリ',
   value: [],
 };
 

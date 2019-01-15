@@ -114,6 +114,7 @@ class EventCreateForm extends React.Component {
           }}
         />
         <InputCategoriesAutoSuggest
+          label="カテゴリ"
           value={categories}
           handleAddChip={this.handleAddChip}
           handleDeleteChip={this.handleDeleteChip}

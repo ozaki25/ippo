@@ -8,9 +8,19 @@ import { withStyles } from '@material-ui/core/styles';
 import propTypes from 'prop-types';
 import CATEGORIES from 'src/constants/categories';
 
-const renderInput = ({ onChange, onAdd, onDelete, onFocus, onBlur, onKeyDown, chips, ref }) => (
+const renderInput = ({
+  onChange,
+  onAdd,
+  onDelete,
+  onFocus,
+  onBlur,
+  onKeyDown,
+  chips,
+  ref,
+  label,
+}) => (
   <ChipInput
-    label="カテゴリ"
+    label={label}
     color="primary"
     onUpdateInput={onChange}
     onAdd={onAdd}
@@ -111,7 +121,7 @@ class InputCategoriesAutoSuggest extends React.Component {
   handletextFieldInputChange = (event, { newValue }) => this.setState({ textFieldInput: newValue });
 
   render() {
-    const { classes, value, handleAddChip, handleDeleteChip } = this.props;
+    const { classes, label, value, handleAddChip, handleDeleteChip } = this.props;
     const { suggestions, textFieldInput } = this.state;
     return (
       <Autosuggest
@@ -139,6 +149,7 @@ class InputCategoriesAutoSuggest extends React.Component {
           value: textFieldInput,
           onAdd: handleAddChip,
           onDelete: handleDeleteChip,
+          label: label,
         }}
       />
     );
@@ -149,6 +160,8 @@ InputCategoriesAutoSuggest.displayName = 'InputCategoriesAutoSuggest';
 InputCategoriesAutoSuggest.propTypes = {
   handleAddChip: propTypes.func.isRequired,
   handleDeleteChip: propTypes.func.isRequired,
+  label: propTypes.string.isRequired,
+  value: propTypes.array.isRequired,
 };
 
 InputCategoriesAutoSuggest.defaultProps = {};

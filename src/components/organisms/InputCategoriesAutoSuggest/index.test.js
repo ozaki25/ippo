@@ -5,6 +5,7 @@ import InputCategoriesAutoSuggest from '.';
 const props = {
   handleAddChip: jest.fn(),
   handleDeleteChip: jest.fn(),
+  label: 'カテゴリ',
   value: [],
 };
 
