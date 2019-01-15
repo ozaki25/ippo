@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, InputAdornment, TextField, Typography } from '@material-ui/core';
 import ChipInput from 'material-ui-chip-input';
 import propTypes from 'prop-types';
+import InputCategoriesAutoSuggest from 'src/components/organisms/InputCategoriesAutoSuggest';
 
 class EventCreateForm extends React.Component {
   state = {
@@ -46,12 +47,11 @@ class EventCreateForm extends React.Component {
         .replace(/\s/g, '_'),
     });
 
-  handleAdd = chip => this.setState(prevState => ({ categories: [...prevState.categories, chip] }));
+  handleAddChip = chip =>
+    this.setState(prevState => ({ categories: [...prevState.categories, chip] }));
 
-  handleDelete = deletedChip =>
-    this.setState(prevState => ({
-      categories: prevState.categories.filter(c => c !== deletedChip),
-    }));
+  handleDeleteChip = chip =>
+    this.setState(prevState => ({ categories: prevState.categories.filter(c => c !== chip) }));
 
   render() {
     const {
@@ -114,14 +114,10 @@ class EventCreateForm extends React.Component {
             startAdornment: <InputAdornment position="start">#</InputAdornment>,
           }}
         />
-        <ChipInput
-          label="カテゴリ"
-          name="categories"
+        <InputCategoriesAutoSuggest
           value={categories}
-          color="primary"
-          onAdd={this.handleAdd}
-          onDelete={this.handleDelete}
-          fullWidth
+          handleAddChip={this.handleAddChip}
+          handleDeleteChip={this.handleDeleteChip}
         />
         <br />
         <TextField

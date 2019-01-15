@@ -73,7 +73,6 @@ const styles = theme => ({
   container: {
     flexGrow: 1,
     position: 'relative',
-    height: 200,
   },
   suggestionsContainerOpen: {
     position: 'absolute',
@@ -81,6 +80,7 @@ const styles = theme => ({
     marginBottom: theme.spacing.unit * 3,
     left: 0,
     right: 0,
+    zIndex: 1,
   },
   suggestion: {
     display: 'block',
