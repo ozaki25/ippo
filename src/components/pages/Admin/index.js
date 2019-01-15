@@ -45,8 +45,8 @@ const Admin = ({
   };
 
   const onClickUpdateConnpass = async () => {
-    const result = await excuteUpdateExternalEvents();
-    alert(result);
+    const { data } = await excuteUpdateExternalEvents();
+    alert(JSON.stringify(data));
   };
 
   return (
