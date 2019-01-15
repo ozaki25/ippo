@@ -8,76 +8,67 @@ import { withStyles } from '@material-ui/core/styles';
 import propTypes from 'prop-types';
 import CATEGORIES from 'src/constants/categories';
 
-function renderInput(inputProps) {
-  const { classes, autoFocus, value, onChange, onAdd, onDelete, chips, ref, ...other } = inputProps;
+const renderInput = ({ onChange, onAdd, onDelete, onFocus, onBlur, onKeyDown, chips, ref }) => (
+  <ChipInput
+    label="カテゴリ"
+    color="primary"
+    onUpdateInput={onChange}
+    onAdd={onAdd}
+    onDelete={onDelete}
+    onFocus={onFocus}
+    onBlur={onBlur}
+    onKeyDown={onKeyDown}
+    value={chips}
+    inputRef={ref}
+    fullWidth
+    clearInputValueOnChange
+  />
+);
 
-  return (
-    <ChipInput
-      clearInputValueOnChange
-      onUpdateInput={onChange}
-      onAdd={onAdd}
-      onDelete={onDelete}
-      value={chips}
-      inputRef={ref}
-      label="カテゴリ"
-      color="primary"
-      fullWidth
-      {...other}
-    />
-  );
-}
-
-function renderSuggestion(suggestion, { query, isHighlighted }) {
+const renderSuggestion = (suggestion, { query, isHighlighted }) => {
   const matches = match(suggestion, query);
   const parts = parse(suggestion, matches);
-
   return (
-    <MenuItem
-      selected={isHighlighted}
-      component="div"
-      onMouseDown={e => e.preventDefault()} // prevent the click causing the input to be blurred
-    >
-      <div>
-        {parts.map((part, index) => {
-          return part.highlight ? (
-            <span key={index} style={{ fontWeight: 300 }}>
-              {part.text}
-            </span>
-          ) : (
-            <strong key={index} style={{ fontWeight: 500 }}>
-              {part.text}
-            </strong>
-          );
-        })}
-      </div>
+    <MenuItem selected={isHighlighted} component="div" onMouseDown={e => e.preventDefault()}>
+      {parts.map((part, index) =>
+        part.highlight ? (
+          <span key={index} style={{ fontWeight: 300 }}>
+            {part.text}
+          </span>
+        ) : (
+          <strong key={index} style={{ fontWeight: 500 }}>
+            {part.text}
+          </strong>
+        ),
+      )}
     </MenuItem>
   );
-}
+};
 
-function renderSuggestionsContainer({ containerProps, children }) {
-  return (
-    <Paper {...containerProps} square>
-      {children}
-    </Paper>
-  );
-}
+const renderSuggestionsContainer = ({ containerProps, children }) => (
+  <Paper {...containerProps} square>
+    {children}
+  </Paper>
+);
 
-function getSuggestionValue(suggestion) {
-  return suggestion;
-}
+const getSuggestionValue = suggestion => suggestion;
 
-function getSuggestions(value) {
+const getSuggestions = ({ value, selected }) => {
+  console.log({ value, selected });
   const inputValue = value.trim().toLowerCase();
   const inputLength = inputValue.length;
   let count = 0;
   return inputLength === 0
     ? []
     : CATEGORIES.filter(suggestion => {
-        const keep = count < 5 && suggestion.toLowerCase().slice(0, inputLength) === inputValue;
+        const keep =
+          count < 5 &&
+          !selected.includes(suggestion) &&
+          suggestion.toLowerCase().slice(0, inputLength) === inputValue;
         if (keep) count += 1;
         return keep;
       });
-}
+};
 
 const styles = theme => ({
   container: {
@@ -112,20 +103,24 @@ class InputCategoriesAutoSuggest extends React.Component {
     textFieldInput: '',
   };
 
-  handleSuggestionsFetchRequested = ({ value }) =>
-    this.setState({ suggestions: getSuggestions(value) });
+  handleSuggestionsFetchRequested = ({ value }) => {
+    const suggestions = getSuggestions({ value, selected: this.state.value });
+    this.setState({ suggestions });
+  };
 
   handleSuggestionsClearRequested = () => this.setState({ suggestions: [] });
 
   handletextFieldInputChange = (event, { newValue }) => this.setState({ textFieldInput: newValue });
 
-  handleAddChip = chip => this.setState({ value: [...this.state.value, chip], textFieldInput: '' });
+  handleAddChip = chip =>
+    this.setState(prevState => ({ value: [...prevState.value, chip], textFieldInput: '' }));
 
   handleDeleteChip = (chip, index) =>
     this.setState(prevState => ({ value: prevState.value.slice(index, 1) }));
 
   render() {
-    const { classes, ...rest } = this.props;
+    const { classes } = this.props;
+    const { suggestions, value, textFieldInput } = this.state;
     return (
       <Autosuggest
         theme={{
@@ -135,7 +130,7 @@ class InputCategoriesAutoSuggest extends React.Component {
           suggestion: classes.suggestion,
         }}
         renderInputComponent={renderInput}
-        suggestions={this.state.suggestions}
+        suggestions={suggestions}
         onSuggestionsFetchRequested={this.handleSuggestionsFetchRequested}
         onSuggestionsClearRequested={this.handleSuggestionsClearRequested}
         renderSuggestionsContainer={renderSuggestionsContainer}
@@ -145,15 +140,13 @@ class InputCategoriesAutoSuggest extends React.Component {
           this.handleAddChip(suggestionValue);
           e.preventDefault();
         }}
-        focusInputOnSuggestionClick={false}
         inputProps={{
           classes,
-          chips: this.state.value,
+          chips: value,
           onChange: this.handletextFieldInputChange,
-          value: this.state.textFieldInput,
-          onAdd: chip => this.handleAddChip(chip),
-          onDelete: (chip, index) => this.handleDeleteChip(chip, index),
-          ...rest,
+          value: textFieldInput,
+          onAdd: this.handleAddChip,
+          onDelete: this.handleDeleteChip,
         }}
       />
     );
