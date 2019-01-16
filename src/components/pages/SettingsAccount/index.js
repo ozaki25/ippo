@@ -88,6 +88,7 @@ class SettingsAccount extends React.Component {
         firebase={firebase}
       >
         <OverlaySpinner visible={loading} />
+        {error && <Typography color="error">{error}</Typography>}
         <List>
           <ListItem>
             <ListItemIcon>
@@ -96,7 +97,6 @@ class SettingsAccount extends React.Component {
           </ListItem>
         </List>
         <form>
-          {error && <Typography color="error">{error}</Typography>}
           <TextField
             label="名前"
             name="name"
@@ -139,6 +139,7 @@ SettingsAccount.propTypes = {
       categories: propTypes.string,
     }),
     loading: propTypes.bool.isRequired,
+    refetch: propTypes.func.isRequired,
   }).isRequired,
   updateUser: propTypes.func.isRequired,
   authUser: propTypes.shape({

@@ -5,10 +5,11 @@ import SettingsAccount from '.';
 const props = {
   data: {
     fetchUser: {
-      displayName: '名前',
-      categories: ['test1', 'test2'],
+      displayName: 'テストユーザ',
+      categories: 'test1,test2',
     },
     loading: false,
+    refetch: jest.fn(),
   },
   updateUser: jest.fn(),
   authUser: {
@@ -21,6 +22,7 @@ const props = {
     replace: jest.fn(),
   },
   firebase: {},
+  onSetAuthUser: jest.fn(),
 };
 
 snapshot('SettingsAccount/nomal', <SettingsAccount {...props} />);

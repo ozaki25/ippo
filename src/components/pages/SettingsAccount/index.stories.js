@@ -5,13 +5,14 @@ import SettingsAccount from '.';
 
 const stories = storiesOf('pages/SettingsAccount', module);
 
-const props = {
+const props = ({ loading = false }) => ({
   data: {
     fetchUser: {
-      displayName: '名前',
-      categories: ['test1', 'test2'],
+      displayName: 'テストユーザ',
+      categories: 'test1,test2',
     },
-    loading: false,
+    loading,
+    refetch: action('refetch'),
   },
   updateUser: action('updateUser'),
   authUser: {
@@ -24,6 +25,18 @@ const props = {
     replace: action('replace'),
   },
   firebase: {},
-};
+  onSetAuthUser: action('onSetAuthUser'),
+});
 
-stories.add('通常パターン', () => <SettingsAccount {...props} />);
+stories.add('通常パターン', () => <SettingsAccount {...props({})} />);
+
+stories.add('ローディング', () => <SettingsAccount {...props({ loading: true })} />);
+
+stories.add('エラー', () => (
+  <SettingsAccount
+    {...props({})}
+    updateUser={() =>
+      new Promise((resolve, reject) => reject(new Error('Network error: Failed to fetch')))
+    }
+  />
+));
