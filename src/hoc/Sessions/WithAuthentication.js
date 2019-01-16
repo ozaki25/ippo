@@ -15,7 +15,7 @@ const withAuthentication = Component => {
     }
 
     componentDidMount() {
-      const saveAuthUser = user => {
+      const saveUserToLocal = user => {
         localStorage.setItem('authUser', JSON.stringify(user));
         this.props.onSetAuthUser(user);
       };
@@ -28,12 +28,12 @@ const withAuthentication = Component => {
 
         // 新規ユーザであればDB登録
         if (!fetchUser) this.props.createUser({ variables: { user } });
-        saveAuthUser(user);
+        saveUserToLocal(user);
       };
 
       const signupWithEmail = async ({ uid, name, categories }) => {
         const user = { uid, displayName: name, categories };
-        saveAuthUser(user);
+        saveUserToLocal(user);
         await this.props.createUser({ variables: { user } });
       };
 
@@ -41,7 +41,7 @@ const withAuthentication = Component => {
         const {
           data: { fetchUser },
         } = await this.props.fetchUser.refetch({ uid });
-        saveAuthUser(fetchUser);
+        saveUserToLocal(fetchUser);
       };
 
       this.listener = this.props.firebase.onAuthUserListener(

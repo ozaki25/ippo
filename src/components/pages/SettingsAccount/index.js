@@ -29,7 +29,7 @@ class SettingsAccount extends React.Component {
     if (!fetchUser) refetch({ variables: { uid } });
   }
 
-  componentDidUpdate(prevProps, prevState, snapshot) {
+  componentDidUpdate(prevProps, prevState) {
     const { loading, fetchUser } = this.props.data;
     if (prevProps.data.loading && !loading) {
       const { displayName, categories } = fetchUser;
