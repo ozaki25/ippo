@@ -8,7 +8,12 @@ const props = {
     replace: jest.fn(),
   },
   firebase: {
+    auth: {
+      getRedirectResult: jest.fn(),
+    },
     doSignInWithEmailAndPassword: jest.fn(),
+    doSignInWithGoogle: jest.fn(),
+    doSignOut: jest.fn(),
   },
 };
 

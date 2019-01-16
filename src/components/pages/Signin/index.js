@@ -92,7 +92,12 @@ Signin.propTypes = {
     replace: propTypes.func.isRequired,
   }).isRequired,
   firebase: propTypes.shape({
+    auth: propTypes.shape({
+      getRedirectResult: propTypes.func.isRequired,
+    }),
     doSignInWithEmailAndPassword: propTypes.func.isRequired,
+    doSignInWithGoogle: propTypes.func.isRequired,
+    doSignOut: propTypes.func.isRequired,
   }).isRequired,
 };
 
