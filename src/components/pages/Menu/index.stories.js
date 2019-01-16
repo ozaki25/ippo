@@ -23,36 +23,16 @@ const externalEvent = i => ({
   startedAt: '2018/12/1 9:30',
 });
 
-const props = {
+const props = ({ loading = false }) => ({
   createEvent: action('createEvent'),
-  joined: {
-    loading: false,
-    joinedEvents: {
-      items: [...[...Array(10)].map((_, i) => internalEvent(i))],
-    },
-  },
-  organized: {
-    loading: false,
-    organizedEvents: {
-      items: [...[...Array(10)].map((_, i) => internalEvent(i))],
-    },
-  },
-  recommended: {
-    loading: false,
-    recommendedEvents: {
-      items: [...[...Array(10)].map((_, i) => internalEvent(i))],
-    },
-  },
-  internal: {
-    loading: false,
-    internalEvents: {
-      items: [...[...Array(10)].map((_, i) => internalEvent(i))],
-    },
-  },
-  external: {
-    loading: false,
-    externalEvents: {
-      items: [...[...Array(10)].map((_, i) => externalEvent(i))],
+  data: {
+    loading,
+    allEvents: {
+      joined: [...[...Array(10)].map((_, i) => internalEvent(i))],
+      organized: [...[...Array(10)].map((_, i) => internalEvent(i))],
+      recommended: [...[...Array(10)].map((_, i) => internalEvent(i))],
+      internal: [...[...Array(10)].map((_, i) => internalEvent(i))],
+      external: [...[...Array(10)].map((_, i) => externalEvent(i))],
     },
   },
   authUser: {
@@ -65,6 +45,8 @@ const props = {
     replace: action('replace'),
   },
   firebase: {},
-};
+});
 
-stories.add('通常パターン', () => <Menu {...props} />);
+stories.add('通常パターン', () => <Menu {...props({})} />);
+
+stories.add('ロード中', () => <Menu {...props({ loading: true })} />);

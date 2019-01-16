@@ -22,34 +22,14 @@ const externalEvent = i => ({
 
 const props = {
   createEvent: jest.fn(),
-  joined: {
+  data: {
     loading: false,
-    joinedEvents: {
-      items: [...[...Array(10)].map((_, i) => internalEvent(i))],
-    },
-  },
-  organized: {
-    loading: false,
-    organizedEvents: {
-      items: [...[...Array(10)].map((_, i) => internalEvent(i))],
-    },
-  },
-  recommended: {
-    loading: false,
-    recommendedEvents: {
-      items: [...[...Array(10)].map((_, i) => internalEvent(i))],
-    },
-  },
-  internal: {
-    loading: false,
-    internalEvents: {
-      items: [...[...Array(10)].map((_, i) => internalEvent(i))],
-    },
-  },
-  external: {
-    loading: false,
-    externalEvents: {
-      items: [...[...Array(10)].map((_, i) => externalEvent(i))],
+    allEvents: {
+      joined: [...[...Array(10)].map((_, i) => internalEvent(i))],
+      organized: [...[...Array(10)].map((_, i) => internalEvent(i))],
+      recommended: [...[...Array(10)].map((_, i) => internalEvent(i))],
+      internal: [...[...Array(10)].map((_, i) => internalEvent(i))],
+      external: [...[...Array(10)].map((_, i) => externalEvent(i))],
     },
   },
   authUser: {
