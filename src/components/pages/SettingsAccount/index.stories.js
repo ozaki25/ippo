@@ -6,6 +6,14 @@ import SettingsAccount from '.';
 const stories = storiesOf('pages/SettingsAccount', module);
 
 const props = {
+  data: {
+    fetchUser: {
+      displayName: '名前',
+      categories: ['test1', 'test2'],
+    },
+    loading: false,
+  },
+  updateUser: action('updateUser'),
   authUser: {
     uid: '123',
     displayName: 'テストユーザ',
