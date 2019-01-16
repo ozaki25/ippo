@@ -143,6 +143,7 @@ Tweets.propTypes = {
         place: propTypes.string,
         startedAt: propTypes.string,
         name: propTypes.string,
+        timestamp: propTypes.string,
       }),
       joined: propTypes.bool.isRequired,
     }),

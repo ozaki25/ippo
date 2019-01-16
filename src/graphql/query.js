@@ -173,6 +173,7 @@ const tweets = gql`
         startedAt
         endedAt
         name
+        timestamp
       }
       joined
     }
