@@ -11,31 +11,10 @@ export default compose(
   withAuthorization,
   withRouter,
   withFirebase,
-  graphql(query.internalEvents, {
-    name: 'internal',
-    options: () => ({ variables: { limit: paging.eventsPerPageForMenu } }),
-  }),
-  graphql(query.externalEvents, {
-    name: 'external',
-    options: () => ({ variables: { limit: paging.eventsPerPageForMenu } }),
-  }),
-  graphql(query.joinedEvents, {
+  graphql(query.allEvents, {
     options: ({ authUser: { uid } }) => ({
       variables: { uid, limit: paging.eventsPerPageForMenu },
     }),
-    name: 'joined',
-  }),
-  graphql(query.organizedEvents, {
-    options: ({ authUser: { uid } }) => ({
-      variables: { uid, limit: paging.eventsPerPageForMenu },
-    }),
-    name: 'organized',
-  }),
-  graphql(query.recommendedEvents, {
-    options: ({ authUser: { uid } }) => ({
-      variables: { uid, limit: paging.eventsPerPageForMenu },
-    }),
-    name: 'recommended',
   }),
   graphql(query.createEvent, { name: 'createEvent' }),
 )(Menu);

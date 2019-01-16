@@ -24,36 +24,11 @@ const externalEvent = i => ({
 });
 
 const props = {
-  joined: {
-    loading: false,
-    joinedEvents: {
-      items: [...[...Array(5)].map((_, i) => internalEvent(i))],
-    },
-  },
-  organized: {
-    loading: false,
-    organizedEvents: {
-      items: [...[...Array(5)].map((_, i) => internalEvent(i))],
-    },
-  },
-  recommended: {
-    loading: false,
-    recommendedEvents: {
-      items: [...[...Array(5)].map((_, i) => internalEvent(i))],
-    },
-  },
-  internal: {
-    loading: false,
-    internalEvents: {
-      items: [...[...Array(5)].map((_, i) => internalEvent(i))],
-    },
-  },
-  external: {
-    loading: false,
-    externalEvents: {
-      items: [...[...Array(5)].map((_, i) => externalEvent(i))],
-    },
-  },
+  joined: [...[...Array(5)].map((_, i) => internalEvent(i))],
+  organized: [...[...Array(5)].map((_, i) => internalEvent(i))],
+  recommended: [...[...Array(5)].map((_, i) => internalEvent(i))],
+  internal: [...[...Array(5)].map((_, i) => internalEvent(i))],
+  external: [...[...Array(5)].map((_, i) => externalEvent(i))],
   history: {
     push: action('push'),
     goBack: action('goBack'),

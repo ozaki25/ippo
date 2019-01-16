@@ -1,5 +1,58 @@
 import gql from 'graphql-tag';
 
+const allEvents = gql`
+  query($uid: String, $limit: Int) {
+    allEvents(uid: $uid, limit: $limit) {
+      joined {
+        id
+        title
+        catchMessage
+        place
+        hashtag
+        startedAt
+        endedAt
+      }
+      recommended {
+        id
+        title
+        catchMessage
+        place
+        hashtag
+        startedAt
+        endedAt
+      }
+      internal {
+        id
+        title
+        catchMessage
+        place
+        hashtag
+        startedAt
+        endedAt
+      }
+      external {
+        id
+        connpassId
+        title
+        eventUrl
+        catchMessage
+        place
+        startedAt
+        endedAt
+      }
+      organized {
+        id
+        title
+        catchMessage
+        place
+        hashtag
+        startedAt
+        endedAt
+      }
+    }
+  }
+`;
+
 const externalEvents = gql`
   query($limit: Int, $startId: String) {
     externalEvents(limit: $limit, startId: $startId) {
@@ -191,6 +244,7 @@ const excuteUpdateExternalEvents = gql`
 `;
 
 export default {
+  allEvents,
   externalEvents,
   internalEvents,
   internalEvent,

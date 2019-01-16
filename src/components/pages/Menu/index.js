@@ -4,6 +4,7 @@ import { AddBoxRounded, HomeRounded, NotificationsRounded } from '@material-ui/i
 import { withStyles } from '@material-ui/core/styles';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
+import OverlaySpinner from 'src/components/molecules/OverlaySpinner';
 import EventsOverview from 'src/components/organisms/EventsOverview';
 import EventCreateForm from 'src/components/organisms/EventCreateForm';
 import NotificationList from 'src/components/organisms/NotificationList';
@@ -45,11 +46,7 @@ class Menu extends React.Component {
 
   render() {
     const {
-      joined,
-      organized,
-      recommended,
-      internal,
-      external,
+      data: { allEvents, loading },
       classes,
       authUser,
       history,
@@ -66,16 +63,19 @@ class Menu extends React.Component {
             firebase={firebase}
             noPadding={[MENU_ITEMS.HOME.value].includes(value)}
           >
-            {value === MENU_ITEMS.HOME.value && (
-              <EventsOverview
-                joined={joined}
-                organized={organized}
-                recommended={recommended}
-                internal={internal}
-                external={external}
-                history={history}
-              />
-            )}
+            {value === MENU_ITEMS.HOME.value &&
+              (loading ? (
+                <OverlaySpinner visible={loading} />
+              ) : (
+                <EventsOverview
+                  joined={allEvents.joined}
+                  organized={allEvents.organized}
+                  recommended={allEvents.recommended}
+                  internal={allEvents.internal}
+                  external={allEvents.external}
+                  history={history}
+                />
+              ))}
             {value === MENU_ITEMS.NEW_EVENT.value && (
               <EventCreateForm onSubmit={this.onSubmitCreateEvent} />
             )}
@@ -102,10 +102,10 @@ class Menu extends React.Component {
 Menu.displayName = 'Menu';
 
 Menu.propTypes = {
-  joined: propTypes.shape({
+  data: propTypes.shape({
     loading: propTypes.bool.isRequired,
-    joinedEvents: propTypes.shape({
-      items: propTypes.arrayOf(
+    allEvents: propTypes.shape({
+      joined: propTypes.arrayOf(
         propTypes.shape({
           id: propTypes.string,
           title: propTypes.string,
@@ -114,12 +114,7 @@ Menu.propTypes = {
           startedAt: propTypes.string,
         }),
       ),
-    }),
-  }).isRequired,
-  organized: propTypes.shape({
-    loading: propTypes.bool.isRequired,
-    organizedEvents: propTypes.shape({
-      items: propTypes.arrayOf(
+      recommended: propTypes.arrayOf(
         propTypes.shape({
           id: propTypes.string,
           title: propTypes.string,
@@ -128,12 +123,7 @@ Menu.propTypes = {
           startedAt: propTypes.string,
         }),
       ),
-    }),
-  }).isRequired,
-  recommended: propTypes.shape({
-    loading: propTypes.bool.isRequired,
-    recommendedEvents: propTypes.shape({
-      items: propTypes.arrayOf(
+      internal: propTypes.arrayOf(
         propTypes.shape({
           id: propTypes.string,
           title: propTypes.string,
@@ -142,30 +132,20 @@ Menu.propTypes = {
           startedAt: propTypes.string,
         }),
       ),
-    }),
-  }).isRequired,
-  internal: propTypes.shape({
-    loading: propTypes.bool.isRequired,
-    internalEvents: propTypes.shape({
-      items: propTypes.arrayOf(
-        propTypes.shape({
-          id: propTypes.string,
-          title: propTypes.string,
-          catchMessage: propTypes.string,
-          place: propTypes.string,
-          startedAt: propTypes.string,
-        }),
-      ),
-    }),
-  }).isRequired,
-  external: propTypes.shape({
-    loading: propTypes.bool.isRequired,
-    externalEvents: propTypes.shape({
-      items: propTypes.arrayOf(
+      external: propTypes.arrayOf(
         propTypes.shape({
           id: propTypes.string,
           title: propTypes.string,
           eventUrl: propTypes.string,
+          catchMessage: propTypes.string,
+          place: propTypes.string,
+          startedAt: propTypes.string,
+        }),
+      ),
+      organized: propTypes.arrayOf(
+        propTypes.shape({
+          id: propTypes.string,
+          title: propTypes.string,
           catchMessage: propTypes.string,
           place: propTypes.string,
           startedAt: propTypes.string,
