@@ -20,13 +20,14 @@ const TweetEventSummary = ({
   place,
   startedAt,
   name,
+  timestamp,
   joined,
   onClickJoin,
   onClickLeave,
 }) => (
   <Tweet
     name={name}
-    time={dateFormat.datetimeJa(+id)}
+    time={dateFormat.datetimeJa(+timestamp)}
     text={
       <Container>
         <Typography variant="h5">{title}</Typography>
