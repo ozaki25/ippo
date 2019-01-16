@@ -15,37 +15,46 @@ const withAuthentication = Component => {
     }
 
     componentDidMount() {
+      const saveUserToLocal = user => {
+        localStorage.setItem('authUser', JSON.stringify(user));
+        this.props.onSetAuthUser(user);
+      };
+
+      const signinWithGoogle = async ({ uid, displayName }) => {
+        const {
+          data: { fetchUser },
+        } = await this.props.fetchUser.refetch({ uid });
+        const user = fetchUser || { uid, displayName };
+
+        // 新規ユーザであればDB登録
+        if (!fetchUser) this.props.createUser({ variables: { user } });
+        saveUserToLocal(user);
+      };
+
+      const signupWithEmail = async ({ uid, name, categories }) => {
+        const user = { uid, displayName: name, categories };
+        saveUserToLocal(user);
+        await this.props.createUser({ variables: { user } });
+      };
+
+      const signinWithEmail = async ({ uid }) => {
+        const {
+          data: { fetchUser },
+        } = await this.props.fetchUser.refetch({ uid });
+        saveUserToLocal(fetchUser);
+      };
+
       this.listener = this.props.firebase.onAuthUserListener(
-        async authUser => {
+        async ({ uid, displayName }) => {
           if (this.props.authUser) return;
-
-          const { uid, displayName } = authUser;
-          const user = { uid, displayName };
-
-          if (uid && displayName) {
-            // googleでログイン
-            this.props.createUser({ variables: { user } });
-            localStorage.setItem('authUser', JSON.stringify(user));
-            this.props.onSetAuthUser(user);
-          }
+          if (uid && displayName) signinWithGoogle({ uid, displayName });
           if (!displayName) {
             const storage = JSON.parse(sessionStorage.getItem('authUser'));
             sessionStorage.removeItem('authUser');
-
             if (storage && storage.name) {
-              // emailで新規登録直後
-              user.displayName = storage.name;
-              user.categories = storage.categories;
-              this.props.createUser({ variables: { user } });
-              localStorage.setItem('authUser', JSON.stringify(user));
-              this.props.onSetAuthUser(user);
+              signupWithEmail({ ...storage, uid });
             } else {
-              // ログイン直後
-              const {
-                data: { fetchUser },
-              } = await this.props.fetchUser({ variables: { uid } });
-              localStorage.setItem('authUser', JSON.stringify(fetchUser));
-              this.props.onSetAuthUser({ uid: fetchUser.uid, displayName: fetchUser.displayName });
+              signinWithEmail({ uid });
             }
           }
         },

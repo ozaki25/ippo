@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, TextField, Typography } from '@material-ui/core';
-import ChipInput from 'material-ui-chip-input';
 import propTypes from 'prop-types';
+import InputCategoriesAutoSuggest from 'src/components/organisms/InputCategoriesAutoSuggest';
 
 class SignupForm extends React.Component {
   state = { email: '', pass: '', name: '', categories: [], loading: false, error: '' };
@@ -19,12 +19,11 @@ class SignupForm extends React.Component {
 
   onChange = event => this.setState({ [event.target.name]: event.target.value });
 
-  handleAdd = chip => this.setState(prevState => ({ categories: [...prevState.categories, chip] }));
+  handleAddChip = chip =>
+    this.setState(prevState => ({ categories: [...prevState.categories, chip] }));
 
-  handleDelete = deletedChip =>
-    this.setState(prevState => ({
-      categories: prevState.categories.filter(c => c !== deletedChip),
-    }));
+  handleDeleteChip = chip =>
+    this.setState(prevState => ({ categories: prevState.categories.filter(c => c !== chip) }));
 
   render() {
     const { email, pass, name, categories, loading, error } = this.state;
@@ -66,14 +65,11 @@ class SignupForm extends React.Component {
           required
         />
         <br />
-        <ChipInput
+        <InputCategoriesAutoSuggest
           label="興味のあるカテゴリ"
-          name="categories"
           value={categories}
-          color="primary"
-          onAdd={this.handleAdd}
-          onDelete={this.handleDelete}
-          fullWidth
+          handleAddChip={this.handleAddChip}
+          handleDeleteChip={this.handleDeleteChip}
         />
         <br />
         <Button

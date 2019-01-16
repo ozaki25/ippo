@@ -12,7 +12,12 @@ const props = {
     goBack: action('goBack'),
   },
   firebase: {
-    doSignInWithEmailAndPassword: action('signin', 'signin'),
+    auth: {
+      getRedirectResult: action('getRedirectResult'),
+    },
+    doSignInWithEmailAndPassword: action('signin'),
+    doSignInWithGoogle: action('sigin with google'),
+    doSignOut: action('signout'),
   },
 };
 
