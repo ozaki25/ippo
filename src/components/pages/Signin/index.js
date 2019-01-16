@@ -31,6 +31,8 @@ class Signin extends React.Component {
     if (key) {
       sessionStorage.removeItem('willRedirect');
       this.redirectResult();
+    } else {
+      this.props.firebase.doSignOut();
     }
   }
 

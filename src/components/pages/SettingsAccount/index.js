@@ -11,18 +11,27 @@ import Container from 'src/components/templates/Container';
 class SettingsAccount extends React.Component {
   constructor(props) {
     super(props);
+    const {
+      data: { fetchUser },
+    } = props;
     this.state = {
-      name: '',
-      categories: [],
+      name: fetchUser ? fetchUser.displayName : '',
+      categories: fetchUser && fetchUser.categories ? fetchUser.categories.split(',') : [],
       error: '',
     };
   }
 
-  componentDidUpdate(prevProps, prevState, snapshot) {
+  componentDidMount() {
     const {
-      data: { fetchUser },
+      data: { refetch, fetchUser },
+      authUser: { uid },
     } = this.props;
-    if (prevProps.data.loading && fetchUser) {
+    if (!fetchUser) refetch({ variables: { uid } });
+  }
+
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    const { loading, fetchUser } = this.props.data;
+    if (prevProps.data.loading && !loading) {
       const { displayName, categories } = fetchUser;
       this.setState({
         name: displayName,
@@ -34,11 +43,20 @@ class SettingsAccount extends React.Component {
   onClick = async event => {
     event.preventDefault();
     const { name, categories } = this.state;
-    const { updateUser } = this.props;
+    const {
+      updateUser,
+      authUser: { uid },
+      data,
+    } = this.props;
     this.setState({ loading: true });
     try {
-      await updateUser({ variables: { name, categories: categories.join(',') } });
+      const user = { uid, displayName: name, categories: categories.join(',') };
+      await updateUser({ variables: { user } });
+      localStorage.setItem('authUser', JSON.stringify(user));
+      this.props.onSetAuthUser(user);
       this.setState({ loading: false });
+      alert('更新しました');
+      data.refetch({ variables: { uid } });
     } catch (e) {
       this.setState({ loading: false, error: e.toString() });
     }
@@ -117,7 +135,7 @@ SettingsAccount.displayName = 'SettingsAccount';
 SettingsAccount.propTypes = {
   data: propTypes.shape({
     fetchUser: propTypes.shape({
-      displayName: propTypes.string.isRequired,
+      displayName: propTypes.string,
       categories: propTypes.string,
     }),
     loading: propTypes.bool.isRequired,
@@ -133,6 +151,7 @@ SettingsAccount.propTypes = {
     replace: propTypes.func.isRequired,
   }).isRequired,
   firebase: propTypes.object.isRequired,
+  onSetAuthUser: propTypes.func.isRequired,
 };
 
 SettingsAccount.defaultProps = {};
