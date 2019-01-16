@@ -43,7 +43,7 @@ const withAuthentication = Component => {
               // ログイン直後
               const {
                 data: { fetchUser },
-              } = await this.props.fetchUser({ variables: { uid } });
+              } = await this.props.fetchUser.refetch({ uid });
               localStorage.setItem('authUser', JSON.stringify(fetchUser));
               this.props.onSetAuthUser({ uid: fetchUser.uid, displayName: fetchUser.displayName });
             }

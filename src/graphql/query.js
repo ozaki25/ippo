@@ -126,6 +126,16 @@ const tweets = gql`
   }
 `;
 
+const fetchUser = gql`
+  query($uid: String) {
+    fetchUser(uid: $uid) {
+      uid
+      displayName
+      categories
+    }
+  }
+`;
+
 const registerNotification = gql`
   mutation registerNotification($token: String) {
     registerNotification(token: $token) {
@@ -170,15 +180,6 @@ const createUser = gql`
   mutation createUser($user: inputUser) {
     createUser(user: $user) {
       result
-    }
-  }
-`;
-
-const fetchUser = gql`
-  mutation fetchUser($uid: String) {
-    fetchUser(uid: $uid) {
-      uid
-      displayName
     }
   }
 `;
