@@ -6,6 +6,7 @@ import query from 'src/graphql/query';
 import Tweets from 'src/components/pages/Tweets/';
 import { withAuthorization } from 'src/hoc/Sessions';
 import paging from 'src/constants/paging';
+import tweetPolling from 'src/constants/tweetPolling';
 
 const getHashtag = search => new URLSearchParams(search).get('hashtag') || 'none';
 
@@ -15,6 +16,7 @@ export default compose(
   withFirebase,
   graphql(query.tweets, {
     options: ({ location: { search }, authUser: { uid } }) => ({
+      pollInterval: tweetPolling.duration,
       variables: { hashtag: getHashtag(search), limit: paging.tweetsPerPage, uid },
     }),
   }),
