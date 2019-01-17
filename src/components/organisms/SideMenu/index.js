@@ -8,7 +8,7 @@ import {
   ListSubheader,
   SwipeableDrawer,
 } from '@material-ui/core';
-import { AccountBox, ExitToApp, NotificationsNoneRounded } from '@material-ui/icons';
+import { AccountBox, ExitToApp, HomeRounded, NotificationsNoneRounded } from '@material-ui/icons';
 import { withStyles } from '@material-ui/core/styles';
 import propTypes from 'prop-types';
 import CharIcon from 'src/components/atoms/CharIcon';
@@ -32,6 +32,15 @@ const SideMenu = ({ open, name, onOpen, onClose, signout, history, classes }) =>
           </ListItem>
           <ListItem>
             <ListItemText primary={name} />
+          </ListItem>
+        </List>
+        <Divider />
+        <List subheader={<ListSubheader>メニュー</ListSubheader>}>
+          <ListItem onClick={() => history.push(ROUTES.Menu)} button>
+            <ListItemIcon>
+              <HomeRounded />
+            </ListItemIcon>
+            <ListItemText primary="ホーム" />
           </ListItem>
         </List>
         <Divider />
