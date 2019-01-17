@@ -1,6 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
+import tweetFormat from 'src/utils/tweetFormat';
+import ROUTES from 'src/constants/routes';
 
 const StyledTweetBody = styled.div`
   margin: 0;
@@ -8,7 +11,29 @@ const StyledTweetBody = styled.div`
   word-wrap: break-word;
 `;
 
-const TweetBody = ({ text }) => <StyledTweetBody>{text}</StyledTweetBody>;
+const StyledLink = styled(Link)`
+  text-decoration: none;
+`;
+
+const TweetBody = ({ text }) => {
+  if (typeof text !== 'string') return <StyledTweetBody>{text}</StyledTweetBody>;
+  const hashtagList = tweetFormat.detectHashtag(text);
+  let tmp = text;
+  const result = hashtagList.map((hashtag, i) => {
+    const [before, ...after] = tmp.split(hashtag);
+    tmp = after.join(hashtag);
+    return [
+      before,
+      <StyledLink
+        to={`${ROUTES.Tweets}?hashtag=${hashtag.replace('#', '')}`}
+        key={`${hashtag}${i}`}
+      >
+        {hashtag}
+      </StyledLink>,
+    ];
+  });
+  return <StyledTweetBody>{[...result, tmp].flat()}</StyledTweetBody>;
+};
 
 TweetBody.displayName = 'TweetBody';
 
