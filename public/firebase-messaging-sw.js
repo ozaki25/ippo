@@ -6,3 +6,9 @@ firebase.initializeApp({
 });
 
 const messaging = firebase.messaging();
+
+messaging.onMessage(function(payload) {
+  console.log('Message received. ', payload);
+  const { title, body, icon } = payload;
+  const notification = new Notification(title, { body, icon });
+});
