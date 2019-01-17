@@ -17,13 +17,14 @@ class SettingsNotification extends React.Component {
       unsuppored,
       allowRecommendedEvent: true,
       allowJoinedEvent: true,
+      loading: false,
     };
   }
 
   toggleNotificationPermission = async () => {
     const { firebase, notifications, registerNotification, unregisterNotification } = this.props;
     const { granted } = this.state;
-
+    this.setState({ loading: true });
     try {
       const token = await firebase.askForPermissionToReceiveNotifications();
       if (granted) {
@@ -44,6 +45,8 @@ class SettingsNotification extends React.Component {
         this.setState({ granted: false, denied: true });
       }
       console.log(e);
+    } finally {
+      this.setState({ loading: false });
     }
   };
 
@@ -55,7 +58,14 @@ class SettingsNotification extends React.Component {
 
   render() {
     const { authUser, history, firebase } = this.props;
-    const { granted, denied, unsuppored, allowRecommendedEvent, allowJoinedEvent } = this.state;
+    const {
+      granted,
+      denied,
+      unsuppored,
+      allowRecommendedEvent,
+      allowJoinedEvent,
+      loading,
+    } = this.state;
     return (
       <Container title="通知設定" back authUser={authUser} history={history} firebase={firebase}>
         <List>
@@ -70,7 +80,7 @@ class SettingsNotification extends React.Component {
                 primary="プッシュ通知"
                 onChange={this.toggleNotificationPermission}
                 checked={granted}
-                disabled={unsuppored}
+                disabled={unsuppored || loading}
                 toggle
               />
               {granted && !unsuppored && (
