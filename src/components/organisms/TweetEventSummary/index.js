@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Typography } from '@material-ui/core';
 import { AccessTimeRounded, DescriptionOutlined, PlaceOutlined } from '@material-ui/icons';
 import styled from 'styled-components';
@@ -7,9 +8,16 @@ import RoundedButton from 'src/components/atoms/RoundedButton';
 import Tweet from 'src/components/organisms/Tweet';
 import IconWithText from 'src/components/templates/IconWithText';
 import dateFormat from 'src/utils/dateFormat';
+import ROUTES from 'src/constants/routes';
 
 const Container = styled.div`
   padding-top: 8px;
+`;
+
+const StyledLink = styled(Link)`
+  display: block;
+  text-decoration: none;
+  margin: 3px 0 8px;
 `;
 
 const TweetEventSummary = ({
@@ -55,7 +63,7 @@ const TweetEventSummary = ({
             </IconWithText>
           </div>
         )}
-        <Typography>{`#${hashtag}`}</Typography>
+        <StyledLink to={`${ROUTES.Tweets}?hashtag=${hashtag}`}>{`#${hashtag}`} </StyledLink>
         <RoundedButton color="primary" disabled={joined} onClick={onClickJoin}>
           参加する
         </RoundedButton>{' '}
