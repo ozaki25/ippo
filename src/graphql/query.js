@@ -153,6 +153,18 @@ const recommendedEvents = gql`
   }
 `;
 
+const tweet = gql`
+  query($hashtag: String, $id: String) {
+    tweet(hashtag: $hashtag, id: $id) {
+      id
+      name
+      text
+      time
+      hashtag
+    }
+  }
+`;
+
 const tweets = gql`
   query($hashtag: String, $limit: Int, $startId: String, $uid: String) {
     tweets(hashtag: $hashtag, limit: $limit, startId: $startId, uid: $uid) {
@@ -252,6 +264,7 @@ export default {
   joinedEvents,
   organizedEvents,
   recommendedEvents,
+  tweet,
   tweets,
   registerNotification,
   unregisterNotification,
