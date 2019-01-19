@@ -59,12 +59,6 @@ Tweet.propTypes = {
       time: propTypes.string.isRequired,
       hashtag: propTypes.string.isRequired,
     }),
-    refetch: propTypes.func.isRequired,
-    fetchMore: propTypes.func.isRequired,
-    variables: propTypes.shape({
-      hashtag: propTypes.string.isRequired,
-      limit: propTypes.number.isRequired,
-    }),
   }),
   authUser: propTypes.shape({
     displayName: propTypes.string.isRequired,
