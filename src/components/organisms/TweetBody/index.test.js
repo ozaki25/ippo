@@ -11,3 +11,5 @@ const props = {
 };
 
 snapshot('TweetBody/nomal', <TweetBody {...props} />);
+
+snapshot('TweetBody/big', <TweetBody {...props} bigText />);

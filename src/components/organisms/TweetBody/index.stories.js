@@ -17,3 +17,5 @@ const props = {
 };
 
 stories.add('通常パターン', () => <TweetBody {...props} />);
+
+stories.add('文字サイズ大きめ', () => <TweetBody {...props} bigText />);
