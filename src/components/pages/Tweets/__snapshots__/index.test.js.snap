@@ -5,6 +5,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
   margin: 0;
   white-space: pre-wrap;
   word-wrap: break-word;
+  font-size: inherit;
 }
 
 .c7 {
@@ -3504,23 +3505,30 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                   </styled.small>
                                 </TweetHeader>
                                 <TweetBody
+                                  bigText={false}
                                   text="投稿内容"
                                 >
-                                  <styled.div>
+                                  <styled.div
+                                    bigText={0}
+                                  >
                                     <StyledComponent
+                                      bigText={0}
                                       forwardedComponent={
                                         Object {
                                           "$$typeof": Symbol(react.forward_ref),
                                           "attrs": Array [],
                                           "componentStyle": ComponentStyle {
                                             "componentId": "sc-ifAKCX",
-                                            "isStatic": true,
+                                            "isStatic": false,
                                             "lastClassName": "c6",
                                             "rules": Array [
                                               "
   margin: 0;
   white-space: pre-wrap;
   word-wrap: break-word;
+  font-size: ",
+                                              [Function],
+                                              ";
 ",
                                             ],
                                           },
