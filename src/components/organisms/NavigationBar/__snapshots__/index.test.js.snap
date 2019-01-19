@@ -38,6 +38,8 @@ exports[`should match snapshot: NavigationBar/all 1`] = `
     history={
       Object {
         "goBack": [MockFunction],
+        "push": [MockFunction],
+        "replace": [MockFunction],
       }
     }
     title="タイトル"
@@ -63,6 +65,8 @@ exports[`should match snapshot: NavigationBar/all 1`] = `
       history={
         Object {
           "goBack": [MockFunction],
+          "push": [MockFunction],
+          "replace": [MockFunction],
         }
       }
       title="タイトル"
@@ -1743,6 +1747,13 @@ exports[`should match snapshot: NavigationBar/all 1`] = `
         </div>
       </Headroom>
       <WithStyles(SideMenu)
+        history={
+          Object {
+            "goBack": [MockFunction],
+            "push": [MockFunction],
+            "replace": [MockFunction],
+          }
+        }
         name="テストユーザ"
         onClose={[Function]}
         onOpen={[Function]}
@@ -1753,6 +1764,13 @@ exports[`should match snapshot: NavigationBar/all 1`] = `
           classes={
             Object {
               "list": "SideMenu-list-111",
+            }
+          }
+          history={
+            Object {
+              "goBack": [MockFunction],
+              "push": [MockFunction],
+              "replace": [MockFunction],
             }
           }
           name="テストユーザ"
@@ -3070,6 +3088,8 @@ exports[`should match snapshot: NavigationBar/back 1`] = `
     history={
       Object {
         "goBack": [MockFunction],
+        "push": [MockFunction],
+        "replace": [MockFunction],
       }
     }
     title="タイトル"
@@ -3090,6 +3110,8 @@ exports[`should match snapshot: NavigationBar/back 1`] = `
       history={
         Object {
           "goBack": [MockFunction],
+          "push": [MockFunction],
+          "replace": [MockFunction],
         }
       }
       title="タイトル"
@@ -4676,6 +4698,8 @@ exports[`should match snapshot: NavigationBar/login 1`] = `
     history={
       Object {
         "goBack": [MockFunction],
+        "push": [MockFunction],
+        "replace": [MockFunction],
       }
     }
     title="タイトル"
@@ -4701,6 +4725,8 @@ exports[`should match snapshot: NavigationBar/login 1`] = `
       history={
         Object {
           "goBack": [MockFunction],
+          "push": [MockFunction],
+          "replace": [MockFunction],
         }
       }
       title="タイトル"
@@ -6231,6 +6257,13 @@ exports[`should match snapshot: NavigationBar/login 1`] = `
         </div>
       </Headroom>
       <WithStyles(SideMenu)
+        history={
+          Object {
+            "goBack": [MockFunction],
+            "push": [MockFunction],
+            "replace": [MockFunction],
+          }
+        }
         name="テストユーザ"
         onClose={[Function]}
         onOpen={[Function]}
@@ -6241,6 +6274,13 @@ exports[`should match snapshot: NavigationBar/login 1`] = `
           classes={
             Object {
               "list": "SideMenu-list-111",
+            }
+          }
+          history={
+            Object {
+              "goBack": [MockFunction],
+              "push": [MockFunction],
+              "replace": [MockFunction],
             }
           }
           name="テストユーザ"
@@ -7557,6 +7597,8 @@ exports[`should match snapshot: NavigationBar/nologin 1`] = `
     history={
       Object {
         "goBack": [MockFunction],
+        "push": [MockFunction],
+        "replace": [MockFunction],
       }
     }
     title="タイトル"
@@ -7577,6 +7619,8 @@ exports[`should match snapshot: NavigationBar/nologin 1`] = `
       history={
         Object {
           "goBack": [MockFunction],
+          "push": [MockFunction],
+          "replace": [MockFunction],
         }
       }
       title="タイトル"

@@ -1758,6 +1758,12 @@ exports[`should match snapshot: Container/back 1`] = `
           </div>
         </Headroom>
         <WithStyles(SideMenu)
+          history={
+            Object {
+              "goBack": [MockFunction],
+              "push": [MockFunction],
+            }
+          }
           name="テストユーザ"
           onClose={[Function]}
           onOpen={[Function]}
@@ -1767,6 +1773,12 @@ exports[`should match snapshot: Container/back 1`] = `
             classes={
               Object {
                 "list": "SideMenu-list-111",
+              }
+            }
+            history={
+              Object {
+                "goBack": [MockFunction],
+                "push": [MockFunction],
               }
             }
             name="テストユーザ"
@@ -4778,6 +4790,12 @@ exports[`should match snapshot: Container/nopadding 1`] = `
           </div>
         </Headroom>
         <WithStyles(SideMenu)
+          history={
+            Object {
+              "goBack": [MockFunction],
+              "push": [MockFunction],
+            }
+          }
           name="テストユーザ"
           onClose={[Function]}
           onOpen={[Function]}
@@ -4787,6 +4805,12 @@ exports[`should match snapshot: Container/nopadding 1`] = `
             classes={
               Object {
                 "list": "SideMenu-list-111",
+              }
+            }
+            history={
+              Object {
+                "goBack": [MockFunction],
+                "push": [MockFunction],
               }
             }
             name="テストユーザ"
@@ -7721,6 +7745,12 @@ exports[`should match snapshot: Container/padding 1`] = `
           </div>
         </Headroom>
         <WithStyles(SideMenu)
+          history={
+            Object {
+              "goBack": [MockFunction],
+              "push": [MockFunction],
+            }
+          }
           name="テストユーザ"
           onClose={[Function]}
           onOpen={[Function]}
@@ -7730,6 +7760,12 @@ exports[`should match snapshot: Container/padding 1`] = `
             classes={
               Object {
                 "list": "SideMenu-list-111",
+              }
+            }
+            history={
+              Object {
+                "goBack": [MockFunction],
+                "push": [MockFunction],
               }
             }
             name="テストユーザ"

@@ -39,7 +39,10 @@ exports[`should match snapshot: InternalEvents/loading 1`] = `
     }
     data={
       Object {
-        "internalEvents": null,
+        "fetchMore": [MockFunction],
+        "internalEvents": Object {
+          "items": Array [],
+        },
         "loading": true,
       }
     }
@@ -1801,6 +1804,12 @@ exports[`should match snapshot: InternalEvents/loading 1`] = `
             </div>
           </Headroom>
           <WithStyles(SideMenu)
+            history={
+              Object {
+                "goBack": [MockFunction],
+                "push": [MockFunction],
+              }
+            }
             name="テストユーザ"
             onClose={[Function]}
             onOpen={[Function]}
@@ -1811,6 +1820,12 @@ exports[`should match snapshot: InternalEvents/loading 1`] = `
               classes={
                 Object {
                   "list": "SideMenu-list-120",
+                }
+              }
+              history={
+                Object {
+                  "goBack": [MockFunction],
+                  "push": [MockFunction],
                 }
               }
               name="テストユーザ"
@@ -3258,7 +3273,10 @@ exports[`should match snapshot: InternalEvents/nocontents 1`] = `
     }
     data={
       Object {
-        "internalEvents": null,
+        "fetchMore": [MockFunction],
+        "internalEvents": Object {
+          "items": Array [],
+        },
         "loading": false,
       }
     }
@@ -5020,6 +5038,12 @@ exports[`should match snapshot: InternalEvents/nocontents 1`] = `
             </div>
           </Headroom>
           <WithStyles(SideMenu)
+            history={
+              Object {
+                "goBack": [MockFunction],
+                "push": [MockFunction],
+              }
+            }
             name="テストユーザ"
             onClose={[Function]}
             onOpen={[Function]}
@@ -5030,6 +5054,12 @@ exports[`should match snapshot: InternalEvents/nocontents 1`] = `
               classes={
                 Object {
                   "list": "SideMenu-list-120",
+                }
+              }
+              history={
+                Object {
+                  "goBack": [MockFunction],
+                  "push": [MockFunction],
                 }
               }
               name="テストユーザ"
@@ -6836,78 +6866,81 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
     }
     data={
       Object {
-        "internalEvents": Array [
-          Object {
-            "catchMessage": "イベントの説明です",
-            "id": "0",
-            "place": "東京都千代田区丸の内",
-            "startedAt": "2018/12/1 10:30",
-            "title": "イベントのタイトル0",
-          },
-          Object {
-            "catchMessage": "イベントの説明です",
-            "id": "1",
-            "place": "東京都千代田区丸の内",
-            "startedAt": "2018/12/1 10:30",
-            "title": "イベントのタイトル1",
-          },
-          Object {
-            "catchMessage": "イベントの説明です",
-            "id": "2",
-            "place": "東京都千代田区丸の内",
-            "startedAt": "2018/12/1 10:30",
-            "title": "イベントのタイトル2",
-          },
-          Object {
-            "catchMessage": "イベントの説明です",
-            "id": "3",
-            "place": "東京都千代田区丸の内",
-            "startedAt": "2018/12/1 10:30",
-            "title": "イベントのタイトル3",
-          },
-          Object {
-            "catchMessage": "イベントの説明です",
-            "id": "4",
-            "place": "東京都千代田区丸の内",
-            "startedAt": "2018/12/1 10:30",
-            "title": "イベントのタイトル4",
-          },
-          Object {
-            "catchMessage": "イベントの説明です",
-            "id": "5",
-            "place": "東京都千代田区丸の内",
-            "startedAt": "2018/12/1 10:30",
-            "title": "イベントのタイトル5",
-          },
-          Object {
-            "catchMessage": "イベントの説明です",
-            "id": "6",
-            "place": "東京都千代田区丸の内",
-            "startedAt": "2018/12/1 10:30",
-            "title": "イベントのタイトル6",
-          },
-          Object {
-            "catchMessage": "イベントの説明です",
-            "id": "7",
-            "place": "東京都千代田区丸の内",
-            "startedAt": "2018/12/1 10:30",
-            "title": "イベントのタイトル7",
-          },
-          Object {
-            "catchMessage": "イベントの説明です",
-            "id": "8",
-            "place": "東京都千代田区丸の内",
-            "startedAt": "2018/12/1 10:30",
-            "title": "イベントのタイトル8",
-          },
-          Object {
-            "catchMessage": "イベントの説明です",
-            "id": "9",
-            "place": "東京都千代田区丸の内",
-            "startedAt": "2018/12/1 10:30",
-            "title": "イベントのタイトル9",
-          },
-        ],
+        "fetchMore": [MockFunction],
+        "internalEvents": Object {
+          "items": Array [
+            Object {
+              "catchMessage": "イベントの説明です",
+              "id": "0",
+              "place": "東京都千代田区丸の内",
+              "startedAt": "2018/12/1 10:30",
+              "title": "イベントのタイトル0",
+            },
+            Object {
+              "catchMessage": "イベントの説明です",
+              "id": "1",
+              "place": "東京都千代田区丸の内",
+              "startedAt": "2018/12/1 10:30",
+              "title": "イベントのタイトル1",
+            },
+            Object {
+              "catchMessage": "イベントの説明です",
+              "id": "2",
+              "place": "東京都千代田区丸の内",
+              "startedAt": "2018/12/1 10:30",
+              "title": "イベントのタイトル2",
+            },
+            Object {
+              "catchMessage": "イベントの説明です",
+              "id": "3",
+              "place": "東京都千代田区丸の内",
+              "startedAt": "2018/12/1 10:30",
+              "title": "イベントのタイトル3",
+            },
+            Object {
+              "catchMessage": "イベントの説明です",
+              "id": "4",
+              "place": "東京都千代田区丸の内",
+              "startedAt": "2018/12/1 10:30",
+              "title": "イベントのタイトル4",
+            },
+            Object {
+              "catchMessage": "イベントの説明です",
+              "id": "5",
+              "place": "東京都千代田区丸の内",
+              "startedAt": "2018/12/1 10:30",
+              "title": "イベントのタイトル5",
+            },
+            Object {
+              "catchMessage": "イベントの説明です",
+              "id": "6",
+              "place": "東京都千代田区丸の内",
+              "startedAt": "2018/12/1 10:30",
+              "title": "イベントのタイトル6",
+            },
+            Object {
+              "catchMessage": "イベントの説明です",
+              "id": "7",
+              "place": "東京都千代田区丸の内",
+              "startedAt": "2018/12/1 10:30",
+              "title": "イベントのタイトル7",
+            },
+            Object {
+              "catchMessage": "イベントの説明です",
+              "id": "8",
+              "place": "東京都千代田区丸の内",
+              "startedAt": "2018/12/1 10:30",
+              "title": "イベントのタイトル8",
+            },
+            Object {
+              "catchMessage": "イベントの説明です",
+              "id": "9",
+              "place": "東京都千代田区丸の内",
+              "startedAt": "2018/12/1 10:30",
+              "title": "イベントのタイトル9",
+            },
+          ],
+        },
         "loading": false,
       }
     }
@@ -8669,6 +8702,12 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
             </div>
           </Headroom>
           <WithStyles(SideMenu)
+            history={
+              Object {
+                "goBack": [MockFunction],
+                "push": [MockFunction],
+              }
+            }
             name="テストユーザ"
             onClose={[Function]}
             onOpen={[Function]}
@@ -8679,6 +8718,12 @@ exports[`should match snapshot: InternalEvents/nomal 1`] = `
               classes={
                 Object {
                   "list": "SideMenu-list-120",
+                }
+              }
+              history={
+                Object {
+                  "goBack": [MockFunction],
+                  "push": [MockFunction],
                 }
               }
               name="テストユーザ"

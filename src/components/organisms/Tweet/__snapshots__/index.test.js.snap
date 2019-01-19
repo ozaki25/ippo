@@ -8,6 +8,11 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
 }
 
 .c4 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5 {
   display: inline-block;
   margin: 4px 0;
   min-width: 78px;
@@ -54,7 +59,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-EHOje",
+              "componentId": "sc-bZQynM",
               "isStatic": true,
               "lastClassName": "c0",
               "rules": Array [
@@ -66,7 +71,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
             "displayName": "styled.div",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-EHOje",
+            "styledComponentId": "sc-bZQynM",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -85,7 +90,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-bZQynM",
+                    "componentId": "sc-gzVnrw",
                     "isStatic": true,
                     "lastClassName": "c1",
                     "rules": Array [
@@ -98,7 +103,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                   "displayName": "styled.div",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-bZQynM",
+                  "styledComponentId": "sc-gzVnrw",
                   "target": "div",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -117,7 +122,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "sc-gzVnrw",
+                          "componentId": "sc-htoDjs",
                           "isStatic": true,
                           "lastClassName": "c2",
                           "rules": Array [
@@ -131,7 +136,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                         "displayName": "styled.div",
                         "foldedComponentIds": Array [],
                         "render": [Function],
-                        "styledComponentId": "sc-gzVnrw",
+                        "styledComponentId": "sc-htoDjs",
                         "target": "div",
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -362,7 +367,54 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
   - どんなコンポーネントが存在してるか可視化できる
   - コンポーネントの扱い方が分かる
   - UIの修正デバッグが楽
-  #ThinkAtomicDesign
+  
+                        <Styled(Link)
+                          key="#ThinkAtomicDesign0"
+                          to="/tweets?hashtag=ThinkAtomicDesign"
+                        >
+                          <StyledComponent
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "sc-ifAKCX",
+                                  "isStatic": true,
+                                  "lastClassName": "c4",
+                                  "rules": Array [
+                                    "
+  text-decoration: none;
+",
+                                  ],
+                                },
+                                "displayName": "Styled(Link)",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "sc-ifAKCX",
+                                "target": [Function],
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                                Symbol(Symbol.hasInstance): [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                            to="/tweets?hashtag=ThinkAtomicDesign"
+                          >
+                            <Link
+                              className="c4"
+                              replace={false}
+                              to="/tweets?hashtag=ThinkAtomicDesign"
+                            >
+                              <a
+                                className="c4"
+                                onClick={[Function]}
+                              >
+                                #ThinkAtomicDesign
+                              </a>
+                            </Link>
+                          </StyledComponent>
+                        </Styled(Link)>
                       </div>
                     </StyledComponent>
                   </styled.div>
@@ -389,9 +441,9 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-ifAKCX",
+                              "componentId": "sc-EHOje",
                               "isStatic": true,
-                              "lastClassName": "c4",
+                              "lastClassName": "c5",
                               "rules": Array [
                                 "
   display: inline-block;
@@ -403,7 +455,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                             "displayName": "styled.div",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "sc-ifAKCX",
+                            "styledComponentId": "sc-EHOje",
                             "target": "div",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -413,7 +465,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                         forwardedRef={null}
                       >
                         <div
-                          className="c4"
+                          className="c5"
                         >
                           <WithStyles(IconButton)
                             className="Component-smallIcon-35"
@@ -586,9 +638,9 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-ifAKCX",
+                              "componentId": "sc-EHOje",
                               "isStatic": true,
-                              "lastClassName": "c4",
+                              "lastClassName": "c5",
                               "rules": Array [
                                 "
   display: inline-block;
@@ -600,7 +652,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                             "displayName": "styled.div",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "sc-ifAKCX",
+                            "styledComponentId": "sc-EHOje",
                             "target": "div",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -610,7 +662,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                         forwardedRef={null}
                       >
                         <div
-                          className="c4"
+                          className="c5"
                         >
                           <WithStyles(IconButton)
                             className="Component-smallIcon-35"
@@ -777,9 +829,9 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-ifAKCX",
+                              "componentId": "sc-EHOje",
                               "isStatic": true,
-                              "lastClassName": "c4",
+                              "lastClassName": "c5",
                               "rules": Array [
                                 "
   display: inline-block;
@@ -791,7 +843,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                             "displayName": "styled.div",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "sc-ifAKCX",
+                            "styledComponentId": "sc-EHOje",
                             "target": "div",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -801,7 +853,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                         forwardedRef={null}
                       >
                         <div
-                          className="c4"
+                          className="c5"
                         >
                           <WithStyles(IconButton)
                             className="Component-smallIcon-35"

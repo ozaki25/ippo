@@ -14,6 +14,7 @@ const props = {
   place: text('place', '晴海3階'),
   name: text('name', 'ozaki25'),
   startedAt: text('startedAt', '2018-12-10T19:00'),
+  timestamp: text('timestamp', '1546779693296'),
   onClickJoin: action('join'),
   onClickLeave: action('leave'),
 };

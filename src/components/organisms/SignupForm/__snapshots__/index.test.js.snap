@@ -18,7 +18,7 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
         color="primary"
         fullWidth={true}
         label="名前"
-        margin="normal"
+        margin="dense"
         name="name"
         onChange={[Function]}
         required={true}
@@ -29,7 +29,7 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
         <WithStyles(FormControl)
           color="primary"
           fullWidth={true}
-          margin="normal"
+          margin="dense"
           required={true}
           variant="standard"
         >
@@ -47,12 +47,12 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
             disabled={false}
             error={false}
             fullWidth={true}
-            margin="normal"
+            margin="dense"
             required={true}
             variant="standard"
           >
             <div
-              className="MuiFormControl-root-1 MuiFormControl-marginNormal-2 MuiFormControl-fullWidth-4"
+              className="MuiFormControl-root-1 MuiFormControl-marginDense-3 MuiFormControl-fullWidth-4"
               color="primary"
             >
               <WithStyles(WithFormControlContext(InputLabel))>
@@ -97,7 +97,7 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
                         "error": false,
                         "filled": false,
                         "focused": false,
-                        "margin": "normal",
+                        "margin": "dense",
                         "onBlur": [Function],
                         "onEmpty": [Function],
                         "onFilled": [Function],
@@ -108,7 +108,7 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
                     }
                   >
                     <WithStyles(WithFormControlContext(FormLabel))
-                      className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                      className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-marginDense-11"
                       classes={
                         Object {
                           "disabled": "MuiInputLabel-disabled-7",
@@ -120,7 +120,7 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
                       data-shrink={false}
                     >
                       <WithFormControlContext(FormLabel)
-                        className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                        className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-marginDense-11"
                         classes={
                           Object {
                             "asterisk": "MuiFormLabel-asterisk-22",
@@ -135,7 +135,7 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
                         data-shrink={false}
                       >
                         <FormLabel
-                          className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                          className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-marginDense-11"
                           classes={
                             Object {
                               "asterisk": "MuiFormLabel-asterisk-22",
@@ -156,7 +156,7 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
                               "error": false,
                               "filled": false,
                               "focused": false,
-                              "margin": "normal",
+                              "margin": "dense",
                               "onBlur": [Function],
                               "onEmpty": [Function],
                               "onFilled": [Function],
@@ -167,7 +167,7 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
                           }
                         >
                           <label
-                            className="MuiFormLabel-root-16 MuiFormLabel-required-21 MuiInputLabel-required-9 MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                            className="MuiFormLabel-root-16 MuiFormLabel-required-21 MuiInputLabel-required-9 MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-marginDense-11"
                             data-shrink={false}
                           >
                             名前
@@ -299,7 +299,7 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
                             "error": false,
                             "filled": false,
                             "focused": false,
-                            "margin": "normal",
+                            "margin": "dense",
                             "onBlur": [Function],
                             "onEmpty": [Function],
                             "onFilled": [Function],
@@ -315,12 +315,12 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
                         value=""
                       >
                         <div
-                          className="MuiInputBase-root-36 MuiInput-root-23 MuiInput-underline-27 MuiInputBase-fullWidth-45 MuiInput-fullWidth-30 MuiInputBase-formControl-37 MuiInput-formControl-24"
+                          className="MuiInputBase-root-36 MuiInput-root-23 MuiInput-underline-27 MuiInputBase-fullWidth-45 MuiInput-fullWidth-30 MuiInputBase-formControl-37 MuiInput-formControl-24 MuiInputBase-marginDense-43"
                           onClick={[Function]}
                         >
                           <input
                             aria-invalid={false}
-                            className="MuiInputBase-input-46 MuiInput-input-31"
+                            className="MuiInputBase-input-46 MuiInput-input-31 MuiInputBase-inputMarginDense-47 MuiInput-inputMarginDense-32"
                             disabled={false}
                             name="name"
                             onBlur={[Function]}
@@ -345,7 +345,7 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
         color="primary"
         fullWidth={true}
         label="メールアドレス"
-        margin="normal"
+        margin="dense"
         name="email"
         onChange={[Function]}
         required={true}
@@ -356,7 +356,7 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
         <WithStyles(FormControl)
           color="primary"
           fullWidth={true}
-          margin="normal"
+          margin="dense"
           required={true}
           variant="standard"
         >
@@ -374,12 +374,12 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
             disabled={false}
             error={false}
             fullWidth={true}
-            margin="normal"
+            margin="dense"
             required={true}
             variant="standard"
           >
             <div
-              className="MuiFormControl-root-1 MuiFormControl-marginNormal-2 MuiFormControl-fullWidth-4"
+              className="MuiFormControl-root-1 MuiFormControl-marginDense-3 MuiFormControl-fullWidth-4"
               color="primary"
             >
               <WithStyles(WithFormControlContext(InputLabel))>
@@ -424,7 +424,7 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
                         "error": false,
                         "filled": false,
                         "focused": false,
-                        "margin": "normal",
+                        "margin": "dense",
                         "onBlur": [Function],
                         "onEmpty": [Function],
                         "onFilled": [Function],
@@ -435,7 +435,7 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
                     }
                   >
                     <WithStyles(WithFormControlContext(FormLabel))
-                      className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                      className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-marginDense-11"
                       classes={
                         Object {
                           "disabled": "MuiInputLabel-disabled-7",
@@ -447,7 +447,7 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
                       data-shrink={false}
                     >
                       <WithFormControlContext(FormLabel)
-                        className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                        className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-marginDense-11"
                         classes={
                           Object {
                             "asterisk": "MuiFormLabel-asterisk-22",
@@ -462,7 +462,7 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
                         data-shrink={false}
                       >
                         <FormLabel
-                          className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                          className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-marginDense-11"
                           classes={
                             Object {
                               "asterisk": "MuiFormLabel-asterisk-22",
@@ -483,7 +483,7 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
                               "error": false,
                               "filled": false,
                               "focused": false,
-                              "margin": "normal",
+                              "margin": "dense",
                               "onBlur": [Function],
                               "onEmpty": [Function],
                               "onFilled": [Function],
@@ -494,7 +494,7 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
                           }
                         >
                           <label
-                            className="MuiFormLabel-root-16 MuiFormLabel-required-21 MuiInputLabel-required-9 MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                            className="MuiFormLabel-root-16 MuiFormLabel-required-21 MuiInputLabel-required-9 MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-marginDense-11"
                             data-shrink={false}
                           >
                             メールアドレス
@@ -626,7 +626,7 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
                             "error": false,
                             "filled": false,
                             "focused": false,
-                            "margin": "normal",
+                            "margin": "dense",
                             "onBlur": [Function],
                             "onEmpty": [Function],
                             "onFilled": [Function],
@@ -642,12 +642,12 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
                         value=""
                       >
                         <div
-                          className="MuiInputBase-root-36 MuiInput-root-23 MuiInput-underline-27 MuiInputBase-fullWidth-45 MuiInput-fullWidth-30 MuiInputBase-formControl-37 MuiInput-formControl-24"
+                          className="MuiInputBase-root-36 MuiInput-root-23 MuiInput-underline-27 MuiInputBase-fullWidth-45 MuiInput-fullWidth-30 MuiInputBase-formControl-37 MuiInput-formControl-24 MuiInputBase-marginDense-43"
                           onClick={[Function]}
                         >
                           <input
                             aria-invalid={false}
-                            className="MuiInputBase-input-46 MuiInput-input-31"
+                            className="MuiInputBase-input-46 MuiInput-input-31 MuiInputBase-inputMarginDense-47 MuiInput-inputMarginDense-32"
                             disabled={false}
                             name="email"
                             onBlur={[Function]}
@@ -672,7 +672,7 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
         color="primary"
         fullWidth={true}
         label="パスワード"
-        margin="normal"
+        margin="dense"
         name="pass"
         onChange={[Function]}
         required={true}
@@ -684,7 +684,7 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
         <WithStyles(FormControl)
           color="primary"
           fullWidth={true}
-          margin="normal"
+          margin="dense"
           required={true}
           variant="standard"
         >
@@ -702,12 +702,12 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
             disabled={false}
             error={false}
             fullWidth={true}
-            margin="normal"
+            margin="dense"
             required={true}
             variant="standard"
           >
             <div
-              className="MuiFormControl-root-1 MuiFormControl-marginNormal-2 MuiFormControl-fullWidth-4"
+              className="MuiFormControl-root-1 MuiFormControl-marginDense-3 MuiFormControl-fullWidth-4"
               color="primary"
             >
               <WithStyles(WithFormControlContext(InputLabel))>
@@ -752,7 +752,7 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
                         "error": false,
                         "filled": false,
                         "focused": false,
-                        "margin": "normal",
+                        "margin": "dense",
                         "onBlur": [Function],
                         "onEmpty": [Function],
                         "onFilled": [Function],
@@ -763,7 +763,7 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
                     }
                   >
                     <WithStyles(WithFormControlContext(FormLabel))
-                      className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                      className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-marginDense-11"
                       classes={
                         Object {
                           "disabled": "MuiInputLabel-disabled-7",
@@ -775,7 +775,7 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
                       data-shrink={false}
                     >
                       <WithFormControlContext(FormLabel)
-                        className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                        className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-marginDense-11"
                         classes={
                           Object {
                             "asterisk": "MuiFormLabel-asterisk-22",
@@ -790,7 +790,7 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
                         data-shrink={false}
                       >
                         <FormLabel
-                          className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                          className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-marginDense-11"
                           classes={
                             Object {
                               "asterisk": "MuiFormLabel-asterisk-22",
@@ -811,7 +811,7 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
                               "error": false,
                               "filled": false,
                               "focused": false,
-                              "margin": "normal",
+                              "margin": "dense",
                               "onBlur": [Function],
                               "onEmpty": [Function],
                               "onFilled": [Function],
@@ -822,7 +822,7 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
                           }
                         >
                           <label
-                            className="MuiFormLabel-root-16 MuiFormLabel-required-21 MuiInputLabel-required-9 MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                            className="MuiFormLabel-root-16 MuiFormLabel-required-21 MuiInputLabel-required-9 MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-marginDense-11"
                             data-shrink={false}
                           >
                             パスワード
@@ -956,7 +956,7 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
                             "error": false,
                             "filled": false,
                             "focused": false,
-                            "margin": "normal",
+                            "margin": "dense",
                             "onBlur": [Function],
                             "onEmpty": [Function],
                             "onFilled": [Function],
@@ -972,12 +972,12 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
                         value=""
                       >
                         <div
-                          className="MuiInputBase-root-36 MuiInput-root-23 MuiInput-underline-27 MuiInputBase-fullWidth-45 MuiInput-fullWidth-30 MuiInputBase-formControl-37 MuiInput-formControl-24"
+                          className="MuiInputBase-root-36 MuiInput-root-23 MuiInput-underline-27 MuiInputBase-fullWidth-45 MuiInput-fullWidth-30 MuiInputBase-formControl-37 MuiInput-formControl-24 MuiInputBase-marginDense-43"
                           onClick={[Function]}
                         >
                           <input
                             aria-invalid={false}
-                            className="MuiInputBase-input-46 MuiInput-input-31 MuiInputBase-inputType-49 MuiInput-inputType-34"
+                            className="MuiInputBase-input-46 MuiInput-input-31 MuiInputBase-inputType-49 MuiInput-inputType-34 MuiInputBase-inputMarginDense-47 MuiInput-inputMarginDense-32"
                             disabled={false}
                             name="pass"
                             onBlur={[Function]}
@@ -998,6 +998,616 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
         </WithStyles(FormControl)>
       </TextField>
       <br />
+      <WithStyles(InputCategoriesAutoSuggest)
+        handleAddChip={[Function]}
+        handleDeleteChip={[Function]}
+        label="興味のあるカテゴリ"
+        value={Array []}
+      >
+        <InputCategoriesAutoSuggest
+          classes={
+            Object {
+              "container": "InputCategoriesAutoSuggest-container-53",
+              "suggestion": "InputCategoriesAutoSuggest-suggestion-55",
+              "suggestionsContainerOpen": "InputCategoriesAutoSuggest-suggestionsContainerOpen-54",
+              "suggestionsList": "InputCategoriesAutoSuggest-suggestionsList-56",
+              "textField": "InputCategoriesAutoSuggest-textField-57",
+            }
+          }
+          handleAddChip={[Function]}
+          handleDeleteChip={[Function]}
+          label="興味のあるカテゴリ"
+          value={Array []}
+        >
+          <Autosuggest
+            alwaysRenderSuggestions={false}
+            focusInputOnSuggestionClick={true}
+            getSuggestionValue={[Function]}
+            highlightFirstSuggestion={false}
+            id="1"
+            inputProps={
+              Object {
+                "chips": Array [],
+                "classes": Object {
+                  "container": "InputCategoriesAutoSuggest-container-53",
+                  "suggestion": "InputCategoriesAutoSuggest-suggestion-55",
+                  "suggestionsContainerOpen": "InputCategoriesAutoSuggest-suggestionsContainerOpen-54",
+                  "suggestionsList": "InputCategoriesAutoSuggest-suggestionsList-56",
+                  "textField": "InputCategoriesAutoSuggest-textField-57",
+                },
+                "label": "興味のあるカテゴリ",
+                "onAdd": [Function],
+                "onChange": [Function],
+                "onDelete": [Function],
+                "value": "",
+              }
+            }
+            multiSection={false}
+            onSuggestionSelected={[Function]}
+            onSuggestionsClearRequested={[Function]}
+            onSuggestionsFetchRequested={[Function]}
+            renderInputComponent={[Function]}
+            renderSuggestion={[Function]}
+            renderSuggestionsContainer={[Function]}
+            shouldRenderSuggestions={[Function]}
+            suggestions={Array []}
+            theme={
+              Object {
+                "container": "InputCategoriesAutoSuggest-container-53",
+                "suggestion": "InputCategoriesAutoSuggest-suggestion-55",
+                "suggestionsContainerOpen": "InputCategoriesAutoSuggest-suggestionsContainerOpen-54",
+                "suggestionsList": "InputCategoriesAutoSuggest-suggestionsList-56",
+              }
+            }
+          >
+            <Autowhatever
+              containerProps={Object {}}
+              getSectionItems={[Function]}
+              highlightedItemIndex={null}
+              highlightedSectionIndex={null}
+              id="1"
+              inputProps={
+                Object {
+                  "chips": Array [],
+                  "classes": Object {
+                    "container": "InputCategoriesAutoSuggest-container-53",
+                    "suggestion": "InputCategoriesAutoSuggest-suggestion-55",
+                    "suggestionsContainerOpen": "InputCategoriesAutoSuggest-suggestionsContainerOpen-54",
+                    "suggestionsList": "InputCategoriesAutoSuggest-suggestionsList-56",
+                    "textField": "InputCategoriesAutoSuggest-textField-57",
+                  },
+                  "label": "興味のあるカテゴリ",
+                  "onAdd": [Function],
+                  "onBlur": [Function],
+                  "onChange": [Function],
+                  "onDelete": [Function],
+                  "onFocus": [Function],
+                  "onKeyDown": [Function],
+                  "value": "",
+                }
+              }
+              itemProps={[Function]}
+              items={Array []}
+              multiSection={false}
+              renderInputComponent={[Function]}
+              renderItem={[Function]}
+              renderItemData={
+                Object {
+                  "query": "",
+                }
+              }
+              renderItemsContainer={[Function]}
+              renderSectionTitle={[Function]}
+              theme={
+                Object {
+                  "container": "InputCategoriesAutoSuggest-container-53",
+                  "item": "InputCategoriesAutoSuggest-suggestion-55",
+                  "itemsContainerOpen": "InputCategoriesAutoSuggest-suggestionsContainerOpen-54",
+                  "itemsList": "InputCategoriesAutoSuggest-suggestionsList-56",
+                }
+              }
+            >
+              <div
+                aria-expanded={false}
+                aria-haspopup="listbox"
+                aria-owns="react-autowhatever-1"
+                className="InputCategoriesAutoSuggest-container-53"
+                key="react-autowhatever-1-container"
+                role="combobox"
+              >
+                <WithStyles(ChipInput)
+                  clearInputValueOnChange={true}
+                  color="primary"
+                  fullWidth={true}
+                  inputRef={[Function]}
+                  label="興味のあるカテゴリ"
+                  onAdd={[Function]}
+                  onBlur={[Function]}
+                  onDelete={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onUpdateInput={[Function]}
+                  value={Array []}
+                >
+                  <ChipInput
+                    allowDuplicates={false}
+                    blurBehavior="clear"
+                    classes={
+                      Object {
+                        "chip": "ChipInput-chip-74",
+                        "chipContainer": "ChipInput-chipContainer-61",
+                        "disabled": "ChipInput-disabled-71",
+                        "error": "ChipInput-error-73",
+                        "filled": "ChipInput-filled-64",
+                        "focused": "ChipInput-focused-70",
+                        "helperText": "ChipInput-helperText-68",
+                        "inkbar": "ChipInput-inkbar-69",
+                        "input": "ChipInput-input-60",
+                        "inputRoot": "ChipInput-inputRoot-59",
+                        "label": "ChipInput-label-66",
+                        "labelShrink": "ChipInput-labelShrink-67",
+                        "labeled": "ChipInput-labeled-65",
+                        "outlined": "ChipInput-outlined-62",
+                        "root": "ChipInput-root-58",
+                        "standard": "ChipInput-standard-63",
+                        "underline": "ChipInput-underline-72",
+                      }
+                    }
+                    clearInputValueOnChange={true}
+                    color="primary"
+                    disableUnderline={false}
+                    fullWidth={true}
+                    inputRef={[Function]}
+                    label="興味のあるカテゴリ"
+                    newChipKeyCodes={
+                      Array [
+                        13,
+                      ]
+                    }
+                    onAdd={[Function]}
+                    onBlur={[Function]}
+                    onDelete={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onUpdateInput={[Function]}
+                    value={Array []}
+                    variant="standard"
+                  >
+                    <WithStyles(FormControl)
+                      className="ChipInput-root-58"
+                      color="primary"
+                      fullWidth={true}
+                      onClick={[Function]}
+                      variant="standard"
+                    >
+                      <FormControl
+                        className="ChipInput-root-58"
+                        classes={
+                          Object {
+                            "fullWidth": "MuiFormControl-fullWidth-4",
+                            "marginDense": "MuiFormControl-marginDense-3",
+                            "marginNormal": "MuiFormControl-marginNormal-2",
+                            "root": "MuiFormControl-root-1",
+                          }
+                        }
+                        color="primary"
+                        component="div"
+                        disabled={false}
+                        error={false}
+                        fullWidth={true}
+                        margin="none"
+                        onClick={[Function]}
+                        required={false}
+                        variant="standard"
+                      >
+                        <div
+                          className="MuiFormControl-root-1 MuiFormControl-fullWidth-4 ChipInput-root-58"
+                          color="primary"
+                          onClick={[Function]}
+                        >
+                          <WithStyles(WithFormControlContext(InputLabel))
+                            classes={
+                              Object {
+                                "root": "ChipInput-standard-63 ChipInput-label-66",
+                                "shrink": "ChipInput-labelShrink-67",
+                              }
+                            }
+                            focused={false}
+                            shrink={false}
+                            variant="standard"
+                          >
+                            <WithFormControlContext(InputLabel)
+                              classes={
+                                Object {
+                                  "animated": "MuiInputLabel-animated-13",
+                                  "disabled": "MuiInputLabel-disabled-7",
+                                  "error": "MuiInputLabel-error-8",
+                                  "filled": "MuiInputLabel-filled-14",
+                                  "focused": "MuiInputLabel-focused-6",
+                                  "formControl": "MuiInputLabel-formControl-10",
+                                  "marginDense": "MuiInputLabel-marginDense-11",
+                                  "outlined": "MuiInputLabel-outlined-15",
+                                  "required": "MuiInputLabel-required-9",
+                                  "root": "MuiInputLabel-root-5 ChipInput-standard-63 ChipInput-label-66",
+                                  "shrink": "MuiInputLabel-shrink-12 ChipInput-labelShrink-67",
+                                }
+                              }
+                              focused={false}
+                              shrink={false}
+                              variant="standard"
+                            >
+                              <InputLabel
+                                classes={
+                                  Object {
+                                    "animated": "MuiInputLabel-animated-13",
+                                    "disabled": "MuiInputLabel-disabled-7",
+                                    "error": "MuiInputLabel-error-8",
+                                    "filled": "MuiInputLabel-filled-14",
+                                    "focused": "MuiInputLabel-focused-6",
+                                    "formControl": "MuiInputLabel-formControl-10",
+                                    "marginDense": "MuiInputLabel-marginDense-11",
+                                    "outlined": "MuiInputLabel-outlined-15",
+                                    "required": "MuiInputLabel-required-9",
+                                    "root": "MuiInputLabel-root-5 ChipInput-standard-63 ChipInput-label-66",
+                                    "shrink": "MuiInputLabel-shrink-12 ChipInput-labelShrink-67",
+                                  }
+                                }
+                                disableAnimation={false}
+                                focused={false}
+                                muiFormControl={
+                                  Object {
+                                    "adornedStart": false,
+                                    "disabled": false,
+                                    "error": false,
+                                    "filled": false,
+                                    "focused": false,
+                                    "margin": "none",
+                                    "onBlur": [Function],
+                                    "onEmpty": [Function],
+                                    "onFilled": [Function],
+                                    "onFocus": [Function],
+                                    "required": false,
+                                    "variant": "standard",
+                                  }
+                                }
+                                shrink={false}
+                                variant="standard"
+                              >
+                                <WithStyles(WithFormControlContext(FormLabel))
+                                  className="MuiInputLabel-root-5 ChipInput-standard-63 ChipInput-label-66 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                                  classes={
+                                    Object {
+                                      "disabled": "MuiInputLabel-disabled-7",
+                                      "error": "MuiInputLabel-error-8",
+                                      "focused": "MuiInputLabel-focused-6",
+                                      "required": "MuiInputLabel-required-9",
+                                    }
+                                  }
+                                  data-shrink={false}
+                                  focused={false}
+                                >
+                                  <WithFormControlContext(FormLabel)
+                                    className="MuiInputLabel-root-5 ChipInput-standard-63 ChipInput-label-66 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                                    classes={
+                                      Object {
+                                        "asterisk": "MuiFormLabel-asterisk-22",
+                                        "disabled": "MuiFormLabel-disabled-18 MuiInputLabel-disabled-7",
+                                        "error": "MuiFormLabel-error-19 MuiInputLabel-error-8",
+                                        "filled": "MuiFormLabel-filled-20",
+                                        "focused": "MuiFormLabel-focused-17 MuiInputLabel-focused-6",
+                                        "required": "MuiFormLabel-required-21 MuiInputLabel-required-9",
+                                        "root": "MuiFormLabel-root-16",
+                                      }
+                                    }
+                                    data-shrink={false}
+                                    focused={false}
+                                  >
+                                    <FormLabel
+                                      className="MuiInputLabel-root-5 ChipInput-standard-63 ChipInput-label-66 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                                      classes={
+                                        Object {
+                                          "asterisk": "MuiFormLabel-asterisk-22",
+                                          "disabled": "MuiFormLabel-disabled-18 MuiInputLabel-disabled-7",
+                                          "error": "MuiFormLabel-error-19 MuiInputLabel-error-8",
+                                          "filled": "MuiFormLabel-filled-20",
+                                          "focused": "MuiFormLabel-focused-17 MuiInputLabel-focused-6",
+                                          "required": "MuiFormLabel-required-21 MuiInputLabel-required-9",
+                                          "root": "MuiFormLabel-root-16",
+                                        }
+                                      }
+                                      component="label"
+                                      data-shrink={false}
+                                      focused={false}
+                                      muiFormControl={
+                                        Object {
+                                          "adornedStart": false,
+                                          "disabled": false,
+                                          "error": false,
+                                          "filled": false,
+                                          "focused": false,
+                                          "margin": "none",
+                                          "onBlur": [Function],
+                                          "onEmpty": [Function],
+                                          "onFilled": [Function],
+                                          "onFocus": [Function],
+                                          "required": false,
+                                          "variant": "standard",
+                                        }
+                                      }
+                                    >
+                                      <label
+                                        className="MuiFormLabel-root-16 MuiInputLabel-root-5 ChipInput-standard-63 ChipInput-label-66 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                                        data-shrink={false}
+                                      >
+                                        興味のあるカテゴリ
+                                      </label>
+                                    </FormLabel>
+                                  </WithFormControlContext(FormLabel)>
+                                </WithStyles(WithFormControlContext(FormLabel))>
+                              </InputLabel>
+                            </WithFormControlContext(InputLabel)>
+                          </WithStyles(WithFormControlContext(InputLabel))>
+                          <div
+                            className="ChipInput-standard-63 ChipInput-chipContainer-61 ChipInput-inkbar-69 ChipInput-underline-72 ChipInput-labeled-65"
+                          >
+                            <WithStyles(Input)
+                              classes={
+                                Object {
+                                  "input": "ChipInput-input-60 ChipInput-standard-63",
+                                  "root": "ChipInput-inputRoot-59 ChipInput-standard-63",
+                                }
+                              }
+                              disableUnderline={true}
+                              inputRef={[Function]}
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              onFocus={[Function]}
+                              onKeyDown={[Function]}
+                              onKeyPress={[Function]}
+                              onKeyUp={[Function]}
+                              placeholder={null}
+                              value=""
+                            >
+                              <Input
+                                classes={
+                                  Object {
+                                    "disabled": "MuiInput-disabled-26",
+                                    "error": "MuiInput-error-28",
+                                    "focused": "MuiInput-focused-25",
+                                    "formControl": "MuiInput-formControl-24",
+                                    "fullWidth": "MuiInput-fullWidth-30",
+                                    "input": "MuiInput-input-31 ChipInput-input-60 ChipInput-standard-63",
+                                    "inputMarginDense": "MuiInput-inputMarginDense-32",
+                                    "inputMultiline": "MuiInput-inputMultiline-33",
+                                    "inputType": "MuiInput-inputType-34",
+                                    "inputTypeSearch": "MuiInput-inputTypeSearch-35",
+                                    "multiline": "MuiInput-multiline-29",
+                                    "root": "MuiInput-root-23 ChipInput-inputRoot-59 ChipInput-standard-63",
+                                    "underline": "MuiInput-underline-27",
+                                  }
+                                }
+                                disableUnderline={true}
+                                inputRef={[Function]}
+                                onBlur={[Function]}
+                                onChange={[Function]}
+                                onFocus={[Function]}
+                                onKeyDown={[Function]}
+                                onKeyPress={[Function]}
+                                onKeyUp={[Function]}
+                                placeholder={null}
+                                value=""
+                              >
+                                <WithStyles(WithFormControlContext(InputBase))
+                                  classes={
+                                    Object {
+                                      "disabled": "MuiInput-disabled-26",
+                                      "error": "MuiInput-error-28",
+                                      "focused": "MuiInput-focused-25",
+                                      "formControl": "MuiInput-formControl-24",
+                                      "fullWidth": "MuiInput-fullWidth-30",
+                                      "input": "MuiInput-input-31 ChipInput-input-60 ChipInput-standard-63",
+                                      "inputMarginDense": "MuiInput-inputMarginDense-32",
+                                      "inputMultiline": "MuiInput-inputMultiline-33",
+                                      "inputType": "MuiInput-inputType-34",
+                                      "inputTypeSearch": "MuiInput-inputTypeSearch-35",
+                                      "multiline": "MuiInput-multiline-29",
+                                      "root": "MuiInput-root-23 ChipInput-inputRoot-59 ChipInput-standard-63",
+                                      "underline": null,
+                                    }
+                                  }
+                                  fullWidth={false}
+                                  inputComponent="input"
+                                  inputRef={[Function]}
+                                  multiline={false}
+                                  onBlur={[Function]}
+                                  onChange={[Function]}
+                                  onFocus={[Function]}
+                                  onKeyDown={[Function]}
+                                  onKeyPress={[Function]}
+                                  onKeyUp={[Function]}
+                                  placeholder={null}
+                                  type="text"
+                                  value=""
+                                >
+                                  <WithFormControlContext(InputBase)
+                                    classes={
+                                      Object {
+                                        "adornedEnd": "MuiInputBase-adornedEnd-41",
+                                        "adornedStart": "MuiInputBase-adornedStart-40",
+                                        "disabled": "MuiInputBase-disabled-39 MuiInput-disabled-26",
+                                        "error": "MuiInputBase-error-42 MuiInput-error-28",
+                                        "focused": "MuiInputBase-focused-38 MuiInput-focused-25",
+                                        "formControl": "MuiInputBase-formControl-37 MuiInput-formControl-24",
+                                        "fullWidth": "MuiInputBase-fullWidth-45 MuiInput-fullWidth-30",
+                                        "input": "MuiInputBase-input-46 MuiInput-input-31 ChipInput-input-60 ChipInput-standard-63",
+                                        "inputAdornedEnd": "MuiInputBase-inputAdornedEnd-52",
+                                        "inputAdornedStart": "MuiInputBase-inputAdornedStart-51",
+                                        "inputMarginDense": "MuiInputBase-inputMarginDense-47 MuiInput-inputMarginDense-32",
+                                        "inputMultiline": "MuiInputBase-inputMultiline-48 MuiInput-inputMultiline-33",
+                                        "inputType": "MuiInputBase-inputType-49 MuiInput-inputType-34",
+                                        "inputTypeSearch": "MuiInputBase-inputTypeSearch-50 MuiInput-inputTypeSearch-35",
+                                        "marginDense": "MuiInputBase-marginDense-43",
+                                        "multiline": "MuiInputBase-multiline-44 MuiInput-multiline-29",
+                                        "root": "MuiInputBase-root-36 MuiInput-root-23 ChipInput-inputRoot-59 ChipInput-standard-63",
+                                      }
+                                    }
+                                    fullWidth={false}
+                                    inputComponent="input"
+                                    inputRef={[Function]}
+                                    multiline={false}
+                                    onBlur={[Function]}
+                                    onChange={[Function]}
+                                    onFocus={[Function]}
+                                    onKeyDown={[Function]}
+                                    onKeyPress={[Function]}
+                                    onKeyUp={[Function]}
+                                    placeholder={null}
+                                    type="text"
+                                    value=""
+                                  >
+                                    <InputBase
+                                      classes={
+                                        Object {
+                                          "adornedEnd": "MuiInputBase-adornedEnd-41",
+                                          "adornedStart": "MuiInputBase-adornedStart-40",
+                                          "disabled": "MuiInputBase-disabled-39 MuiInput-disabled-26",
+                                          "error": "MuiInputBase-error-42 MuiInput-error-28",
+                                          "focused": "MuiInputBase-focused-38 MuiInput-focused-25",
+                                          "formControl": "MuiInputBase-formControl-37 MuiInput-formControl-24",
+                                          "fullWidth": "MuiInputBase-fullWidth-45 MuiInput-fullWidth-30",
+                                          "input": "MuiInputBase-input-46 MuiInput-input-31 ChipInput-input-60 ChipInput-standard-63",
+                                          "inputAdornedEnd": "MuiInputBase-inputAdornedEnd-52",
+                                          "inputAdornedStart": "MuiInputBase-inputAdornedStart-51",
+                                          "inputMarginDense": "MuiInputBase-inputMarginDense-47 MuiInput-inputMarginDense-32",
+                                          "inputMultiline": "MuiInputBase-inputMultiline-48 MuiInput-inputMultiline-33",
+                                          "inputType": "MuiInputBase-inputType-49 MuiInput-inputType-34",
+                                          "inputTypeSearch": "MuiInputBase-inputTypeSearch-50 MuiInput-inputTypeSearch-35",
+                                          "marginDense": "MuiInputBase-marginDense-43",
+                                          "multiline": "MuiInputBase-multiline-44 MuiInput-multiline-29",
+                                          "root": "MuiInputBase-root-36 MuiInput-root-23 ChipInput-inputRoot-59 ChipInput-standard-63",
+                                        }
+                                      }
+                                      fullWidth={false}
+                                      inputComponent="input"
+                                      inputRef={[Function]}
+                                      muiFormControl={
+                                        Object {
+                                          "adornedStart": false,
+                                          "disabled": false,
+                                          "error": false,
+                                          "filled": false,
+                                          "focused": false,
+                                          "margin": "none",
+                                          "onBlur": [Function],
+                                          "onEmpty": [Function],
+                                          "onFilled": [Function],
+                                          "onFocus": [Function],
+                                          "required": false,
+                                          "variant": "standard",
+                                        }
+                                      }
+                                      multiline={false}
+                                      onBlur={[Function]}
+                                      onChange={[Function]}
+                                      onFocus={[Function]}
+                                      onKeyDown={[Function]}
+                                      onKeyPress={[Function]}
+                                      onKeyUp={[Function]}
+                                      placeholder={null}
+                                      type="text"
+                                      value=""
+                                    >
+                                      <div
+                                        className="MuiInputBase-root-36 MuiInput-root-23 ChipInput-inputRoot-59 ChipInput-standard-63 MuiInputBase-formControl-37 MuiInput-formControl-24"
+                                        onClick={[Function]}
+                                        onKeyPress={[Function]}
+                                      >
+                                        <input
+                                          aria-invalid={false}
+                                          className="MuiInputBase-input-46 MuiInput-input-31 ChipInput-input-60 ChipInput-standard-63"
+                                          disabled={false}
+                                          onBlur={[Function]}
+                                          onChange={[Function]}
+                                          onFocus={[Function]}
+                                          onKeyDown={[Function]}
+                                          onKeyUp={[Function]}
+                                          placeholder={null}
+                                          required={false}
+                                          type="text"
+                                          value=""
+                                        />
+                                      </div>
+                                    </InputBase>
+                                  </WithFormControlContext(InputBase)>
+                                </WithStyles(WithFormControlContext(InputBase))>
+                              </Input>
+                            </WithStyles(Input)>
+                          </div>
+                        </div>
+                      </FormControl>
+                    </WithStyles(FormControl)>
+                  </ChipInput>
+                </WithStyles(ChipInput)>
+                <WithStyles(Paper)
+                  id="react-autowhatever-1"
+                  key="react-autowhatever-1-items-container"
+                  role="listbox"
+                  square={true}
+                  style={Object {}}
+                >
+                  <Paper
+                    classes={
+                      Object {
+                        "elevation0": "MuiPaper-elevation0-77",
+                        "elevation1": "MuiPaper-elevation1-78",
+                        "elevation10": "MuiPaper-elevation10-87",
+                        "elevation11": "MuiPaper-elevation11-88",
+                        "elevation12": "MuiPaper-elevation12-89",
+                        "elevation13": "MuiPaper-elevation13-90",
+                        "elevation14": "MuiPaper-elevation14-91",
+                        "elevation15": "MuiPaper-elevation15-92",
+                        "elevation16": "MuiPaper-elevation16-93",
+                        "elevation17": "MuiPaper-elevation17-94",
+                        "elevation18": "MuiPaper-elevation18-95",
+                        "elevation19": "MuiPaper-elevation19-96",
+                        "elevation2": "MuiPaper-elevation2-79",
+                        "elevation20": "MuiPaper-elevation20-97",
+                        "elevation21": "MuiPaper-elevation21-98",
+                        "elevation22": "MuiPaper-elevation22-99",
+                        "elevation23": "MuiPaper-elevation23-100",
+                        "elevation24": "MuiPaper-elevation24-101",
+                        "elevation3": "MuiPaper-elevation3-80",
+                        "elevation4": "MuiPaper-elevation4-81",
+                        "elevation5": "MuiPaper-elevation5-82",
+                        "elevation6": "MuiPaper-elevation6-83",
+                        "elevation7": "MuiPaper-elevation7-84",
+                        "elevation8": "MuiPaper-elevation8-85",
+                        "elevation9": "MuiPaper-elevation9-86",
+                        "root": "MuiPaper-root-75",
+                        "rounded": "MuiPaper-rounded-76",
+                      }
+                    }
+                    component="div"
+                    elevation={2}
+                    id="react-autowhatever-1"
+                    role="listbox"
+                    square={true}
+                    style={Object {}}
+                  >
+                    <div
+                      className="MuiPaper-root-75 MuiPaper-elevation2-79"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                      style={Object {}}
+                    />
+                  </Paper>
+                </WithStyles(Paper)>
+              </div>
+            </Autowhatever>
+          </Autosuggest>
+        </InputCategoriesAutoSuggest>
+      </WithStyles(InputCategoriesAutoSuggest)>
+      <br />
       <WithStyles(Button)
         color="primary"
         disabled={true}
@@ -1008,32 +1618,32 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
         <Button
           classes={
             Object {
-              "colorInherit": "MuiButton-colorInherit-74",
-              "contained": "MuiButton-contained-64",
-              "containedPrimary": "MuiButton-containedPrimary-65",
-              "containedSecondary": "MuiButton-containedSecondary-66",
-              "disabled": "MuiButton-disabled-73",
-              "extendedFab": "MuiButton-extendedFab-71",
-              "fab": "MuiButton-fab-70",
-              "flat": "MuiButton-flat-58",
-              "flatPrimary": "MuiButton-flatPrimary-59",
-              "flatSecondary": "MuiButton-flatSecondary-60",
-              "focusVisible": "MuiButton-focusVisible-72",
-              "fullWidth": "MuiButton-fullWidth-78",
-              "label": "MuiButton-label-54",
-              "mini": "MuiButton-mini-75",
-              "outlined": "MuiButton-outlined-61",
-              "outlinedPrimary": "MuiButton-outlinedPrimary-62",
-              "outlinedSecondary": "MuiButton-outlinedSecondary-63",
-              "raised": "MuiButton-raised-67",
-              "raisedPrimary": "MuiButton-raisedPrimary-68",
-              "raisedSecondary": "MuiButton-raisedSecondary-69",
-              "root": "MuiButton-root-53",
-              "sizeLarge": "MuiButton-sizeLarge-77",
-              "sizeSmall": "MuiButton-sizeSmall-76",
-              "text": "MuiButton-text-55",
-              "textPrimary": "MuiButton-textPrimary-56",
-              "textSecondary": "MuiButton-textSecondary-57",
+              "colorInherit": "MuiButton-colorInherit-123",
+              "contained": "MuiButton-contained-113",
+              "containedPrimary": "MuiButton-containedPrimary-114",
+              "containedSecondary": "MuiButton-containedSecondary-115",
+              "disabled": "MuiButton-disabled-122",
+              "extendedFab": "MuiButton-extendedFab-120",
+              "fab": "MuiButton-fab-119",
+              "flat": "MuiButton-flat-107",
+              "flatPrimary": "MuiButton-flatPrimary-108",
+              "flatSecondary": "MuiButton-flatSecondary-109",
+              "focusVisible": "MuiButton-focusVisible-121",
+              "fullWidth": "MuiButton-fullWidth-127",
+              "label": "MuiButton-label-103",
+              "mini": "MuiButton-mini-124",
+              "outlined": "MuiButton-outlined-110",
+              "outlinedPrimary": "MuiButton-outlinedPrimary-111",
+              "outlinedSecondary": "MuiButton-outlinedSecondary-112",
+              "raised": "MuiButton-raised-116",
+              "raisedPrimary": "MuiButton-raisedPrimary-117",
+              "raisedSecondary": "MuiButton-raisedSecondary-118",
+              "root": "MuiButton-root-102",
+              "sizeLarge": "MuiButton-sizeLarge-126",
+              "sizeSmall": "MuiButton-sizeSmall-125",
+              "text": "MuiButton-text-104",
+              "textPrimary": "MuiButton-textPrimary-105",
+              "textSecondary": "MuiButton-textSecondary-106",
             }
           }
           color="primary"
@@ -1048,22 +1658,22 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
           variant="contained"
         >
           <WithStyles(ButtonBase)
-            className="MuiButton-root-53 MuiButton-contained-64 MuiButton-containedPrimary-65 MuiButton-raised-67 MuiButton-raisedPrimary-68 MuiButton-disabled-73 MuiButton-fullWidth-78"
+            className="MuiButton-root-102 MuiButton-contained-113 MuiButton-containedPrimary-114 MuiButton-raised-116 MuiButton-raisedPrimary-117 MuiButton-disabled-122 MuiButton-fullWidth-127"
             component="button"
             disabled={true}
             focusRipple={true}
-            focusVisibleClassName="MuiButton-focusVisible-72"
+            focusVisibleClassName="MuiButton-focusVisible-121"
             onClick={[Function]}
             type="button"
           >
             <ButtonBase
               centerRipple={false}
-              className="MuiButton-root-53 MuiButton-contained-64 MuiButton-containedPrimary-65 MuiButton-raised-67 MuiButton-raisedPrimary-68 MuiButton-disabled-73 MuiButton-fullWidth-78"
+              className="MuiButton-root-102 MuiButton-contained-113 MuiButton-containedPrimary-114 MuiButton-raised-116 MuiButton-raisedPrimary-117 MuiButton-disabled-122 MuiButton-fullWidth-127"
               classes={
                 Object {
-                  "disabled": "MuiButtonBase-disabled-80",
-                  "focusVisible": "MuiButtonBase-focusVisible-81",
-                  "root": "MuiButtonBase-root-79",
+                  "disabled": "MuiButtonBase-disabled-129",
+                  "focusVisible": "MuiButtonBase-focusVisible-130",
+                  "root": "MuiButtonBase-root-128",
                 }
               }
               component="button"
@@ -1071,13 +1681,13 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
               disableTouchRipple={false}
               disabled={true}
               focusRipple={true}
-              focusVisibleClassName="MuiButton-focusVisible-72"
+              focusVisibleClassName="MuiButton-focusVisible-121"
               onClick={[Function]}
               tabIndex="0"
               type="button"
             >
               <button
-                className="MuiButtonBase-root-79 MuiButtonBase-disabled-80 MuiButton-root-53 MuiButton-contained-64 MuiButton-containedPrimary-65 MuiButton-raised-67 MuiButton-raisedPrimary-68 MuiButton-disabled-73 MuiButton-fullWidth-78"
+                className="MuiButtonBase-root-128 MuiButtonBase-disabled-129 MuiButton-root-102 MuiButton-contained-113 MuiButton-containedPrimary-114 MuiButton-raised-116 MuiButton-raisedPrimary-117 MuiButton-disabled-122 MuiButton-fullWidth-127"
                 disabled={true}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -1095,7 +1705,7 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
                 type="button"
               >
                 <span
-                  className="MuiButton-label-54"
+                  className="MuiButton-label-103"
                 >
                   登録
                 </span>

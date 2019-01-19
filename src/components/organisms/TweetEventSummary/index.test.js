@@ -10,6 +10,7 @@ const props = {
   place: '晴海3階',
   name: 'ozaki25',
   startedAt: '2018-12-10T19:00',
+  timestamp: '1546779693296',
   onClickJoin: jest.fn(),
   onClickLeave: jest.fn(),
 };

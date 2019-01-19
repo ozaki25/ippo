@@ -12,7 +12,14 @@ const props = {
     goBack: jest.fn(),
     replace: jest.fn(),
   },
-  firebase: {},
+  firebase: { askForPermissionToReceiveNotifications: jest.fn() },
+  notifications: {
+    isGranted: () => jest.fn(),
+    isDenied: () => jest.fn(),
+    isSupported: () => jest.fn(),
+  },
+  registerNotification: jest.fn(),
+  unregisterNotification: jest.fn(),
 };
 
 snapshot('SettingsNotification/nomal', <SettingsNotification {...props} />);
