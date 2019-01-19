@@ -7,6 +7,11 @@ exports[`should match snapshot: TweetBody/nomal 1`] = `
   word-wrap: break-word;
 }
 
+.c1 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
 <MockRouter
   createHref={[Function]}
   location=""
@@ -60,7 +65,54 @@ exports[`should match snapshot: TweetBody/nomal 1`] = `
   - どんなコンポーネントが存在してるか可視化できる
   - コンポーネントの扱い方が分かる
   - UIの修正デバッグが楽
-  #ThinkAtomicDesign
+  
+          <Styled(Link)
+            key="#ThinkAtomicDesign0"
+            to="/tweets?hashtag=ThinkAtomicDesign"
+          >
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bwzfXH",
+                    "isStatic": true,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
+  text-decoration: none;
+",
+                    ],
+                  },
+                  "displayName": "Styled(Link)",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bwzfXH",
+                  "target": [Function],
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                  Symbol(Symbol.hasInstance): [Function],
+                }
+              }
+              forwardedRef={null}
+              to="/tweets?hashtag=ThinkAtomicDesign"
+            >
+              <Link
+                className="c1"
+                replace={false}
+                to="/tweets?hashtag=ThinkAtomicDesign"
+              >
+                <a
+                  className="c1"
+                  onClick={[Function]}
+                >
+                  #ThinkAtomicDesign
+                </a>
+              </Link>
+            </StyledComponent>
+          </Styled(Link)>
         </div>
       </StyledComponent>
     </styled.div>

@@ -18,7 +18,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
         color="primary"
         fullWidth={true}
         label="イベント名"
-        margin="normal"
+        margin="dense"
         name="title"
         onChange={[Function]}
         required={true}
@@ -29,7 +29,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
         <WithStyles(FormControl)
           color="primary"
           fullWidth={true}
-          margin="normal"
+          margin="dense"
           required={true}
           variant="standard"
         >
@@ -47,12 +47,12 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
             disabled={false}
             error={false}
             fullWidth={true}
-            margin="normal"
+            margin="dense"
             required={true}
             variant="standard"
           >
             <div
-              className="MuiFormControl-root-1 MuiFormControl-marginNormal-2 MuiFormControl-fullWidth-4"
+              className="MuiFormControl-root-1 MuiFormControl-marginDense-3 MuiFormControl-fullWidth-4"
               color="primary"
             >
               <WithStyles(WithFormControlContext(InputLabel))>
@@ -97,7 +97,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                         "error": false,
                         "filled": false,
                         "focused": false,
-                        "margin": "normal",
+                        "margin": "dense",
                         "onBlur": [Function],
                         "onEmpty": [Function],
                         "onFilled": [Function],
@@ -108,7 +108,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                     }
                   >
                     <WithStyles(WithFormControlContext(FormLabel))
-                      className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                      className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-marginDense-11"
                       classes={
                         Object {
                           "disabled": "MuiInputLabel-disabled-7",
@@ -120,7 +120,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                       data-shrink={false}
                     >
                       <WithFormControlContext(FormLabel)
-                        className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                        className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-marginDense-11"
                         classes={
                           Object {
                             "asterisk": "MuiFormLabel-asterisk-22",
@@ -135,7 +135,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                         data-shrink={false}
                       >
                         <FormLabel
-                          className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                          className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-marginDense-11"
                           classes={
                             Object {
                               "asterisk": "MuiFormLabel-asterisk-22",
@@ -156,7 +156,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                               "error": false,
                               "filled": false,
                               "focused": false,
-                              "margin": "normal",
+                              "margin": "dense",
                               "onBlur": [Function],
                               "onEmpty": [Function],
                               "onFilled": [Function],
@@ -167,7 +167,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                           }
                         >
                           <label
-                            className="MuiFormLabel-root-16 MuiFormLabel-required-21 MuiInputLabel-required-9 MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                            className="MuiFormLabel-root-16 MuiFormLabel-required-21 MuiInputLabel-required-9 MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-marginDense-11"
                             data-shrink={false}
                           >
                             イベント名
@@ -299,7 +299,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                             "error": false,
                             "filled": false,
                             "focused": false,
-                            "margin": "normal",
+                            "margin": "dense",
                             "onBlur": [Function],
                             "onEmpty": [Function],
                             "onFilled": [Function],
@@ -315,12 +315,12 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                         value=""
                       >
                         <div
-                          className="MuiInputBase-root-36 MuiInput-root-23 MuiInput-underline-27 MuiInputBase-fullWidth-45 MuiInput-fullWidth-30 MuiInputBase-formControl-37 MuiInput-formControl-24"
+                          className="MuiInputBase-root-36 MuiInput-root-23 MuiInput-underline-27 MuiInputBase-fullWidth-45 MuiInput-fullWidth-30 MuiInputBase-formControl-37 MuiInput-formControl-24 MuiInputBase-marginDense-43"
                           onClick={[Function]}
                         >
                           <input
                             aria-invalid={false}
-                            className="MuiInputBase-input-46 MuiInput-input-31"
+                            className="MuiInputBase-input-46 MuiInput-input-31 MuiInputBase-inputMarginDense-47 MuiInput-inputMarginDense-32"
                             disabled={false}
                             name="title"
                             onBlur={[Function]}
@@ -345,7 +345,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
         color="primary"
         fullWidth={true}
         label="概要"
-        margin="normal"
+        margin="dense"
         name="catchMessage"
         onChange={[Function]}
         required={false}
@@ -356,7 +356,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
         <WithStyles(FormControl)
           color="primary"
           fullWidth={true}
-          margin="normal"
+          margin="dense"
           required={false}
           variant="standard"
         >
@@ -374,12 +374,12 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
             disabled={false}
             error={false}
             fullWidth={true}
-            margin="normal"
+            margin="dense"
             required={false}
             variant="standard"
           >
             <div
-              className="MuiFormControl-root-1 MuiFormControl-marginNormal-2 MuiFormControl-fullWidth-4"
+              className="MuiFormControl-root-1 MuiFormControl-marginDense-3 MuiFormControl-fullWidth-4"
               color="primary"
             >
               <WithStyles(WithFormControlContext(InputLabel))>
@@ -424,7 +424,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                         "error": false,
                         "filled": false,
                         "focused": false,
-                        "margin": "normal",
+                        "margin": "dense",
                         "onBlur": [Function],
                         "onEmpty": [Function],
                         "onFilled": [Function],
@@ -435,7 +435,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                     }
                   >
                     <WithStyles(WithFormControlContext(FormLabel))
-                      className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                      className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-marginDense-11"
                       classes={
                         Object {
                           "disabled": "MuiInputLabel-disabled-7",
@@ -447,7 +447,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                       data-shrink={false}
                     >
                       <WithFormControlContext(FormLabel)
-                        className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                        className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-marginDense-11"
                         classes={
                           Object {
                             "asterisk": "MuiFormLabel-asterisk-22",
@@ -462,7 +462,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                         data-shrink={false}
                       >
                         <FormLabel
-                          className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                          className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-marginDense-11"
                           classes={
                             Object {
                               "asterisk": "MuiFormLabel-asterisk-22",
@@ -483,7 +483,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                               "error": false,
                               "filled": false,
                               "focused": false,
-                              "margin": "normal",
+                              "margin": "dense",
                               "onBlur": [Function],
                               "onEmpty": [Function],
                               "onFilled": [Function],
@@ -494,7 +494,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                           }
                         >
                           <label
-                            className="MuiFormLabel-root-16 MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                            className="MuiFormLabel-root-16 MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-marginDense-11"
                             data-shrink={false}
                           >
                             概要
@@ -621,7 +621,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                             "error": false,
                             "filled": false,
                             "focused": false,
-                            "margin": "normal",
+                            "margin": "dense",
                             "onBlur": [Function],
                             "onEmpty": [Function],
                             "onFilled": [Function],
@@ -637,12 +637,12 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                         value=""
                       >
                         <div
-                          className="MuiInputBase-root-36 MuiInput-root-23 MuiInput-underline-27 MuiInputBase-fullWidth-45 MuiInput-fullWidth-30 MuiInputBase-formControl-37 MuiInput-formControl-24"
+                          className="MuiInputBase-root-36 MuiInput-root-23 MuiInput-underline-27 MuiInputBase-fullWidth-45 MuiInput-fullWidth-30 MuiInputBase-formControl-37 MuiInput-formControl-24 MuiInputBase-marginDense-43"
                           onClick={[Function]}
                         >
                           <input
                             aria-invalid={false}
-                            className="MuiInputBase-input-46 MuiInput-input-31"
+                            className="MuiInputBase-input-46 MuiInput-input-31 MuiInputBase-inputMarginDense-47 MuiInput-inputMarginDense-32"
                             disabled={false}
                             name="catchMessage"
                             onBlur={[Function]}
@@ -667,7 +667,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
         color="primary"
         fullWidth={true}
         label="場所"
-        margin="normal"
+        margin="dense"
         name="place"
         onChange={[Function]}
         required={false}
@@ -678,7 +678,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
         <WithStyles(FormControl)
           color="primary"
           fullWidth={true}
-          margin="normal"
+          margin="dense"
           required={false}
           variant="standard"
         >
@@ -696,12 +696,12 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
             disabled={false}
             error={false}
             fullWidth={true}
-            margin="normal"
+            margin="dense"
             required={false}
             variant="standard"
           >
             <div
-              className="MuiFormControl-root-1 MuiFormControl-marginNormal-2 MuiFormControl-fullWidth-4"
+              className="MuiFormControl-root-1 MuiFormControl-marginDense-3 MuiFormControl-fullWidth-4"
               color="primary"
             >
               <WithStyles(WithFormControlContext(InputLabel))>
@@ -746,7 +746,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                         "error": false,
                         "filled": false,
                         "focused": false,
-                        "margin": "normal",
+                        "margin": "dense",
                         "onBlur": [Function],
                         "onEmpty": [Function],
                         "onFilled": [Function],
@@ -757,7 +757,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                     }
                   >
                     <WithStyles(WithFormControlContext(FormLabel))
-                      className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                      className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-marginDense-11"
                       classes={
                         Object {
                           "disabled": "MuiInputLabel-disabled-7",
@@ -769,7 +769,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                       data-shrink={false}
                     >
                       <WithFormControlContext(FormLabel)
-                        className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                        className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-marginDense-11"
                         classes={
                           Object {
                             "asterisk": "MuiFormLabel-asterisk-22",
@@ -784,7 +784,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                         data-shrink={false}
                       >
                         <FormLabel
-                          className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                          className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-marginDense-11"
                           classes={
                             Object {
                               "asterisk": "MuiFormLabel-asterisk-22",
@@ -805,7 +805,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                               "error": false,
                               "filled": false,
                               "focused": false,
-                              "margin": "normal",
+                              "margin": "dense",
                               "onBlur": [Function],
                               "onEmpty": [Function],
                               "onFilled": [Function],
@@ -816,7 +816,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                           }
                         >
                           <label
-                            className="MuiFormLabel-root-16 MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                            className="MuiFormLabel-root-16 MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-marginDense-11"
                             data-shrink={false}
                           >
                             場所
@@ -943,7 +943,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                             "error": false,
                             "filled": false,
                             "focused": false,
-                            "margin": "normal",
+                            "margin": "dense",
                             "onBlur": [Function],
                             "onEmpty": [Function],
                             "onFilled": [Function],
@@ -959,12 +959,12 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                         value=""
                       >
                         <div
-                          className="MuiInputBase-root-36 MuiInput-root-23 MuiInput-underline-27 MuiInputBase-fullWidth-45 MuiInput-fullWidth-30 MuiInputBase-formControl-37 MuiInput-formControl-24"
+                          className="MuiInputBase-root-36 MuiInput-root-23 MuiInput-underline-27 MuiInputBase-fullWidth-45 MuiInput-fullWidth-30 MuiInputBase-formControl-37 MuiInput-formControl-24 MuiInputBase-marginDense-43"
                           onClick={[Function]}
                         >
                           <input
                             aria-invalid={false}
-                            className="MuiInputBase-input-46 MuiInput-input-31"
+                            className="MuiInputBase-input-46 MuiInput-input-31 MuiInputBase-inputMarginDense-47 MuiInput-inputMarginDense-32"
                             disabled={false}
                             name="place"
                             onBlur={[Function]}
@@ -986,11 +986,21 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
       </TextField>
       <br />
       <TextField
+        InputProps={
+          Object {
+            "startAdornment": <WithStyles(InputAdornment)
+              position="start"
+            >
+              #
+            </WithStyles(InputAdornment)>,
+          }
+        }
         color="primary"
         fullWidth={true}
         label="ハッシュタグ"
-        margin="normal"
+        margin="dense"
         name="hashtag"
+        onBlur={[Function]}
         onChange={[Function]}
         required={true}
         select={false}
@@ -1000,7 +1010,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
         <WithStyles(FormControl)
           color="primary"
           fullWidth={true}
-          margin="normal"
+          margin="dense"
           required={true}
           variant="standard"
         >
@@ -1018,12 +1028,12 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
             disabled={false}
             error={false}
             fullWidth={true}
-            margin="normal"
+            margin="dense"
             required={true}
             variant="standard"
           >
             <div
-              className="MuiFormControl-root-1 MuiFormControl-marginNormal-2 MuiFormControl-fullWidth-4"
+              className="MuiFormControl-root-1 MuiFormControl-marginDense-3 MuiFormControl-fullWidth-4"
               color="primary"
             >
               <WithStyles(WithFormControlContext(InputLabel))>
@@ -1063,12 +1073,12 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                     disableAnimation={false}
                     muiFormControl={
                       Object {
-                        "adornedStart": false,
+                        "adornedStart": true,
                         "disabled": false,
                         "error": false,
                         "filled": false,
                         "focused": false,
-                        "margin": "normal",
+                        "margin": "dense",
                         "onBlur": [Function],
                         "onEmpty": [Function],
                         "onFilled": [Function],
@@ -1079,7 +1089,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                     }
                   >
                     <WithStyles(WithFormControlContext(FormLabel))
-                      className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                      className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-shrink-12 MuiInputLabel-marginDense-11"
                       classes={
                         Object {
                           "disabled": "MuiInputLabel-disabled-7",
@@ -1088,10 +1098,10 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                           "required": "MuiInputLabel-required-9",
                         }
                       }
-                      data-shrink={false}
+                      data-shrink={true}
                     >
                       <WithFormControlContext(FormLabel)
-                        className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                        className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-shrink-12 MuiInputLabel-marginDense-11"
                         classes={
                           Object {
                             "asterisk": "MuiFormLabel-asterisk-22",
@@ -1103,10 +1113,10 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                             "root": "MuiFormLabel-root-16",
                           }
                         }
-                        data-shrink={false}
+                        data-shrink={true}
                       >
                         <FormLabel
-                          className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                          className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-shrink-12 MuiInputLabel-marginDense-11"
                           classes={
                             Object {
                               "asterisk": "MuiFormLabel-asterisk-22",
@@ -1119,15 +1129,15 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                             }
                           }
                           component="label"
-                          data-shrink={false}
+                          data-shrink={true}
                           muiFormControl={
                             Object {
-                              "adornedStart": false,
+                              "adornedStart": true,
                               "disabled": false,
                               "error": false,
                               "filled": false,
                               "focused": false,
-                              "margin": "normal",
+                              "margin": "dense",
                               "onBlur": [Function],
                               "onEmpty": [Function],
                               "onFilled": [Function],
@@ -1138,8 +1148,8 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                           }
                         >
                           <label
-                            className="MuiFormLabel-root-16 MuiFormLabel-required-21 MuiInputLabel-required-9 MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
-                            data-shrink={false}
+                            className="MuiFormLabel-root-16 MuiFormLabel-required-21 MuiInputLabel-required-9 MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-shrink-12 MuiInputLabel-marginDense-11"
+                            data-shrink={true}
                           >
                             ハッシュタグ
                             <span
@@ -1157,7 +1167,15 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
               <WithStyles(Input)
                 fullWidth={true}
                 name="hashtag"
+                onBlur={[Function]}
                 onChange={[Function]}
+                startAdornment={
+                  <WithStyles(InputAdornment)
+                    position="start"
+                  >
+                    #
+                  </WithStyles(InputAdornment)>
+                }
                 value=""
               >
                 <Input
@@ -1180,7 +1198,15 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                   }
                   fullWidth={true}
                   name="hashtag"
+                  onBlur={[Function]}
                   onChange={[Function]}
+                  startAdornment={
+                    <WithStyles(InputAdornment)
+                      position="start"
+                    >
+                      #
+                    </WithStyles(InputAdornment)>
+                  }
                   value=""
                 >
                   <WithStyles(WithFormControlContext(InputBase))
@@ -1205,7 +1231,15 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                     inputComponent="input"
                     multiline={false}
                     name="hashtag"
+                    onBlur={[Function]}
                     onChange={[Function]}
+                    startAdornment={
+                      <WithStyles(InputAdornment)
+                        position="start"
+                      >
+                        #
+                      </WithStyles(InputAdornment)>
+                    }
                     type="text"
                     value=""
                   >
@@ -1235,7 +1269,15 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                       inputComponent="input"
                       multiline={false}
                       name="hashtag"
+                      onBlur={[Function]}
                       onChange={[Function]}
+                      startAdornment={
+                        <WithStyles(InputAdornment)
+                          position="start"
+                        >
+                          #
+                        </WithStyles(InputAdornment)>
+                      }
                       type="text"
                       value=""
                     >
@@ -1265,12 +1307,12 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                         inputComponent="input"
                         muiFormControl={
                           Object {
-                            "adornedStart": false,
+                            "adornedStart": true,
                             "disabled": false,
                             "error": false,
                             "filled": false,
                             "focused": false,
-                            "margin": "normal",
+                            "margin": "dense",
                             "onBlur": [Function],
                             "onEmpty": [Function],
                             "onFilled": [Function],
@@ -1281,17 +1323,486 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                         }
                         multiline={false}
                         name="hashtag"
+                        onBlur={[Function]}
                         onChange={[Function]}
+                        startAdornment={
+                          <WithStyles(InputAdornment)
+                            position="start"
+                          >
+                            #
+                          </WithStyles(InputAdornment)>
+                        }
                         type="text"
                         value=""
                       >
                         <div
-                          className="MuiInputBase-root-36 MuiInput-root-23 MuiInput-underline-27 MuiInputBase-fullWidth-45 MuiInput-fullWidth-30 MuiInputBase-formControl-37 MuiInput-formControl-24"
+                          className="MuiInputBase-root-36 MuiInput-root-23 MuiInput-underline-27 MuiInputBase-fullWidth-45 MuiInput-fullWidth-30 MuiInputBase-formControl-37 MuiInput-formControl-24 MuiInputBase-marginDense-43 MuiInputBase-adornedStart-40"
                           onClick={[Function]}
                         >
+                          <WithStyles(InputAdornment)
+                            position="start"
+                          >
+                            <InputAdornment
+                              classes={
+                                Object {
+                                  "filled": "MuiInputAdornment-filled-54",
+                                  "positionEnd": "MuiInputAdornment-positionEnd-56",
+                                  "positionStart": "MuiInputAdornment-positionStart-55",
+                                  "root": "MuiInputAdornment-root-53",
+                                }
+                              }
+                              component="div"
+                              disableTypography={false}
+                              position="start"
+                            >
+                              <div
+                                className="MuiInputAdornment-root-53 MuiInputAdornment-positionStart-55"
+                              >
+                                <WithStyles(Typography)
+                                  color="textSecondary"
+                                >
+                                  <Typography
+                                    align="inherit"
+                                    classes={
+                                      Object {
+                                        "alignCenter": "MuiTypography-alignCenter-80",
+                                        "alignJustify": "MuiTypography-alignJustify-82",
+                                        "alignLeft": "MuiTypography-alignLeft-79",
+                                        "alignRight": "MuiTypography-alignRight-81",
+                                        "body1": "MuiTypography-body1-66",
+                                        "body2": "MuiTypography-body2-65",
+                                        "button": "MuiTypography-button-68",
+                                        "caption": "MuiTypography-caption-67",
+                                        "colorError": "MuiTypography-colorError-91",
+                                        "colorInherit": "MuiTypography-colorInherit-86",
+                                        "colorPrimary": "MuiTypography-colorPrimary-87",
+                                        "colorSecondary": "MuiTypography-colorSecondary-88",
+                                        "colorTextPrimary": "MuiTypography-colorTextPrimary-89",
+                                        "colorTextSecondary": "MuiTypography-colorTextSecondary-90",
+                                        "display1": "MuiTypography-display1-61",
+                                        "display2": "MuiTypography-display2-60",
+                                        "display3": "MuiTypography-display3-59",
+                                        "display4": "MuiTypography-display4-58",
+                                        "gutterBottom": "MuiTypography-gutterBottom-84",
+                                        "h1": "MuiTypography-h1-69",
+                                        "h2": "MuiTypography-h2-70",
+                                        "h3": "MuiTypography-h3-71",
+                                        "h4": "MuiTypography-h4-72",
+                                        "h5": "MuiTypography-h5-73",
+                                        "h6": "MuiTypography-h6-74",
+                                        "headline": "MuiTypography-headline-62",
+                                        "noWrap": "MuiTypography-noWrap-83",
+                                        "overline": "MuiTypography-overline-77",
+                                        "paragraph": "MuiTypography-paragraph-85",
+                                        "root": "MuiTypography-root-57",
+                                        "srOnly": "MuiTypography-srOnly-78",
+                                        "subheading": "MuiTypography-subheading-64",
+                                        "subtitle1": "MuiTypography-subtitle1-75",
+                                        "subtitle2": "MuiTypography-subtitle2-76",
+                                        "title": "MuiTypography-title-63",
+                                      }
+                                    }
+                                    color="textSecondary"
+                                    gutterBottom={false}
+                                    headlineMapping={
+                                      Object {
+                                        "body1": "p",
+                                        "body2": "p",
+                                        "display1": "h1",
+                                        "display2": "h1",
+                                        "display3": "h1",
+                                        "display4": "h1",
+                                        "h1": "h1",
+                                        "h2": "h2",
+                                        "h3": "h3",
+                                        "h4": "h4",
+                                        "h5": "h5",
+                                        "h6": "h6",
+                                        "headline": "h1",
+                                        "subheading": "h3",
+                                        "subtitle1": "h6",
+                                        "subtitle2": "h6",
+                                        "title": "h2",
+                                      }
+                                    }
+                                    noWrap={false}
+                                    paragraph={false}
+                                    theme={
+                                      Object {
+                                        "breakpoints": Object {
+                                          "between": [Function],
+                                          "down": [Function],
+                                          "keys": Array [
+                                            "xs",
+                                            "sm",
+                                            "md",
+                                            "lg",
+                                            "xl",
+                                          ],
+                                          "only": [Function],
+                                          "up": [Function],
+                                          "values": Object {
+                                            "lg": 1280,
+                                            "md": 960,
+                                            "sm": 600,
+                                            "xl": 1920,
+                                            "xs": 0,
+                                          },
+                                          "width": [Function],
+                                        },
+                                        "direction": "ltr",
+                                        "mixins": Object {
+                                          "gutters": [Function],
+                                          "toolbar": Object {
+                                            "@media (min-width:0px) and (orientation: landscape)": Object {
+                                              "minHeight": 48,
+                                            },
+                                            "@media (min-width:600px)": Object {
+                                              "minHeight": 64,
+                                            },
+                                            "minHeight": 56,
+                                          },
+                                        },
+                                        "overrides": Object {},
+                                        "palette": Object {
+                                          "action": Object {
+                                            "active": "rgba(0, 0, 0, 0.54)",
+                                            "disabled": "rgba(0, 0, 0, 0.26)",
+                                            "disabledBackground": "rgba(0, 0, 0, 0.12)",
+                                            "hover": "rgba(0, 0, 0, 0.08)",
+                                            "hoverOpacity": 0.08,
+                                            "selected": "rgba(0, 0, 0, 0.14)",
+                                          },
+                                          "augmentColor": [Function],
+                                          "background": Object {
+                                            "default": "#fafafa",
+                                            "paper": "#fff",
+                                          },
+                                          "common": Object {
+                                            "black": "#000",
+                                            "white": "#fff",
+                                          },
+                                          "contrastThreshold": 3,
+                                          "divider": "rgba(0, 0, 0, 0.12)",
+                                          "error": Object {
+                                            "contrastText": "#fff",
+                                            "dark": "#d32f2f",
+                                            "light": "#e57373",
+                                            "main": "#f44336",
+                                          },
+                                          "getContrastText": [Function],
+                                          "grey": Object {
+                                            "100": "#f5f5f5",
+                                            "200": "#eeeeee",
+                                            "300": "#e0e0e0",
+                                            "400": "#bdbdbd",
+                                            "50": "#fafafa",
+                                            "500": "#9e9e9e",
+                                            "600": "#757575",
+                                            "700": "#616161",
+                                            "800": "#424242",
+                                            "900": "#212121",
+                                            "A100": "#d5d5d5",
+                                            "A200": "#aaaaaa",
+                                            "A400": "#303030",
+                                            "A700": "#616161",
+                                          },
+                                          "primary": Object {
+                                            "contrastText": "#fff",
+                                            "dark": "#303f9f",
+                                            "light": "#7986cb",
+                                            "main": "#3f51b5",
+                                          },
+                                          "secondary": Object {
+                                            "contrastText": "#fff",
+                                            "dark": "#c51162",
+                                            "light": "#ff4081",
+                                            "main": "#f50057",
+                                          },
+                                          "text": Object {
+                                            "disabled": "rgba(0, 0, 0, 0.38)",
+                                            "hint": "rgba(0, 0, 0, 0.38)",
+                                            "primary": "rgba(0, 0, 0, 0.87)",
+                                            "secondary": "rgba(0, 0, 0, 0.54)",
+                                          },
+                                          "tonalOffset": 0.2,
+                                          "type": "light",
+                                        },
+                                        "props": Object {},
+                                        "shadows": Array [
+                                          "none",
+                                          "0px 1px 3px 0px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 2px 1px -1px rgba(0,0,0,0.12)",
+                                          "0px 1px 5px 0px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 3px 1px -2px rgba(0,0,0,0.12)",
+                                          "0px 1px 8px 0px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 3px 3px -2px rgba(0,0,0,0.12)",
+                                          "0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12)",
+                                          "0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12)",
+                                          "0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12)",
+                                          "0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12)",
+                                          "0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12)",
+                                          "0px 5px 6px -3px rgba(0,0,0,0.2),0px 9px 12px 1px rgba(0,0,0,0.14),0px 3px 16px 2px rgba(0,0,0,0.12)",
+                                          "0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12)",
+                                          "0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12)",
+                                          "0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12)",
+                                          "0px 7px 8px -4px rgba(0,0,0,0.2),0px 13px 19px 2px rgba(0,0,0,0.14),0px 5px 24px 4px rgba(0,0,0,0.12)",
+                                          "0px 7px 9px -4px rgba(0,0,0,0.2),0px 14px 21px 2px rgba(0,0,0,0.14),0px 5px 26px 4px rgba(0,0,0,0.12)",
+                                          "0px 8px 9px -5px rgba(0,0,0,0.2),0px 15px 22px 2px rgba(0,0,0,0.14),0px 6px 28px 5px rgba(0,0,0,0.12)",
+                                          "0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12)",
+                                          "0px 8px 11px -5px rgba(0,0,0,0.2),0px 17px 26px 2px rgba(0,0,0,0.14),0px 6px 32px 5px rgba(0,0,0,0.12)",
+                                          "0px 9px 11px -5px rgba(0,0,0,0.2),0px 18px 28px 2px rgba(0,0,0,0.14),0px 7px 34px 6px rgba(0,0,0,0.12)",
+                                          "0px 9px 12px -6px rgba(0,0,0,0.2),0px 19px 29px 2px rgba(0,0,0,0.14),0px 7px 36px 6px rgba(0,0,0,0.12)",
+                                          "0px 10px 13px -6px rgba(0,0,0,0.2),0px 20px 31px 3px rgba(0,0,0,0.14),0px 8px 38px 7px rgba(0,0,0,0.12)",
+                                          "0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12)",
+                                          "0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12)",
+                                          "0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12)",
+                                          "0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12)",
+                                        ],
+                                        "shape": Object {
+                                          "borderRadius": 4,
+                                        },
+                                        "spacing": Object {
+                                          "unit": 8,
+                                        },
+                                        "transitions": Object {
+                                          "create": [Function],
+                                          "duration": Object {
+                                            "complex": 375,
+                                            "enteringScreen": 225,
+                                            "leavingScreen": 195,
+                                            "short": 250,
+                                            "shorter": 200,
+                                            "shortest": 150,
+                                            "standard": 300,
+                                          },
+                                          "easing": Object {
+                                            "easeIn": "cubic-bezier(0.4, 0, 1, 1)",
+                                            "easeInOut": "cubic-bezier(0.4, 0, 0.2, 1)",
+                                            "easeOut": "cubic-bezier(0.0, 0, 0.2, 1)",
+                                            "sharp": "cubic-bezier(0.4, 0, 0.6, 1)",
+                                          },
+                                          "getAutoHeightDuration": [Function],
+                                        },
+                                        "typography": Object {
+                                          "body1": Object {
+                                            "color": "rgba(0, 0, 0, 0.87)",
+                                            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                            "fontSize": "0.875rem",
+                                            "fontWeight": 400,
+                                            "lineHeight": "1.46429em",
+                                          },
+                                          "body1Next": Object {
+                                            "color": "rgba(0, 0, 0, 0.87)",
+                                            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                            "fontSize": "1rem",
+                                            "fontWeight": 400,
+                                            "letterSpacing": "0.00938em",
+                                            "lineHeight": 1.5,
+                                          },
+                                          "body2": Object {
+                                            "color": "rgba(0, 0, 0, 0.87)",
+                                            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                            "fontSize": "0.875rem",
+                                            "fontWeight": 500,
+                                            "lineHeight": "1.71429em",
+                                          },
+                                          "body2Next": Object {
+                                            "color": "rgba(0, 0, 0, 0.87)",
+                                            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                            "fontSize": "0.875rem",
+                                            "fontWeight": 400,
+                                            "letterSpacing": "0.01071em",
+                                            "lineHeight": 1.5,
+                                          },
+                                          "button": Object {
+                                            "color": "rgba(0, 0, 0, 0.87)",
+                                            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                            "fontSize": "0.875rem",
+                                            "fontWeight": 500,
+                                            "textTransform": "uppercase",
+                                          },
+                                          "buttonNext": Object {
+                                            "color": "rgba(0, 0, 0, 0.87)",
+                                            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                            "fontSize": "0.875rem",
+                                            "fontWeight": 500,
+                                            "letterSpacing": "0.02857em",
+                                            "lineHeight": 1.3125,
+                                            "textTransform": "uppercase",
+                                          },
+                                          "caption": Object {
+                                            "color": "rgba(0, 0, 0, 0.54)",
+                                            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                            "fontSize": "0.75rem",
+                                            "fontWeight": 400,
+                                            "lineHeight": "1.375em",
+                                          },
+                                          "captionNext": Object {
+                                            "color": "rgba(0, 0, 0, 0.87)",
+                                            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                            "fontSize": "0.75rem",
+                                            "fontWeight": 400,
+                                            "letterSpacing": "0.03333em",
+                                            "lineHeight": 1.66,
+                                          },
+                                          "display1": Object {
+                                            "color": "rgba(0, 0, 0, 0.54)",
+                                            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                            "fontSize": "2.125rem",
+                                            "fontWeight": 400,
+                                            "lineHeight": "1.20588em",
+                                          },
+                                          "display2": Object {
+                                            "color": "rgba(0, 0, 0, 0.54)",
+                                            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                            "fontSize": "2.8125rem",
+                                            "fontWeight": 400,
+                                            "lineHeight": "1.13333em",
+                                            "marginLeft": "-.02em",
+                                          },
+                                          "display3": Object {
+                                            "color": "rgba(0, 0, 0, 0.54)",
+                                            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                            "fontSize": "3.5rem",
+                                            "fontWeight": 400,
+                                            "letterSpacing": "-.02em",
+                                            "lineHeight": "1.30357em",
+                                            "marginLeft": "-.02em",
+                                          },
+                                          "display4": Object {
+                                            "color": "rgba(0, 0, 0, 0.54)",
+                                            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                            "fontSize": "7rem",
+                                            "fontWeight": 300,
+                                            "letterSpacing": "-.04em",
+                                            "lineHeight": "1.14286em",
+                                            "marginLeft": "-.04em",
+                                          },
+                                          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                          "fontSize": 14,
+                                          "fontWeightLight": 300,
+                                          "fontWeightMedium": 500,
+                                          "fontWeightRegular": 400,
+                                          "h1": Object {
+                                            "color": "rgba(0, 0, 0, 0.87)",
+                                            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                            "fontSize": "6rem",
+                                            "fontWeight": 300,
+                                            "letterSpacing": "-0.01562em",
+                                            "lineHeight": 1,
+                                          },
+                                          "h2": Object {
+                                            "color": "rgba(0, 0, 0, 0.87)",
+                                            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                            "fontSize": "3.75rem",
+                                            "fontWeight": 300,
+                                            "letterSpacing": "-0.00833em",
+                                            "lineHeight": 1,
+                                          },
+                                          "h3": Object {
+                                            "color": "rgba(0, 0, 0, 0.87)",
+                                            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                            "fontSize": "3rem",
+                                            "fontWeight": 400,
+                                            "letterSpacing": "0em",
+                                            "lineHeight": 1.04,
+                                          },
+                                          "h4": Object {
+                                            "color": "rgba(0, 0, 0, 0.87)",
+                                            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                            "fontSize": "2.125rem",
+                                            "fontWeight": 400,
+                                            "letterSpacing": "0.00735em",
+                                            "lineHeight": 1.17,
+                                          },
+                                          "h5": Object {
+                                            "color": "rgba(0, 0, 0, 0.87)",
+                                            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                            "fontSize": "1.5rem",
+                                            "fontWeight": 400,
+                                            "letterSpacing": "0em",
+                                            "lineHeight": 1.33,
+                                          },
+                                          "h6": Object {
+                                            "color": "rgba(0, 0, 0, 0.87)",
+                                            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                            "fontSize": "1.25rem",
+                                            "fontWeight": 500,
+                                            "letterSpacing": "0.0075em",
+                                            "lineHeight": 1.6,
+                                          },
+                                          "headline": Object {
+                                            "color": "rgba(0, 0, 0, 0.87)",
+                                            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                            "fontSize": "1.5rem",
+                                            "fontWeight": 400,
+                                            "lineHeight": "1.35417em",
+                                          },
+                                          "overline": Object {
+                                            "color": "rgba(0, 0, 0, 0.87)",
+                                            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                            "fontSize": "0.75rem",
+                                            "fontWeight": 400,
+                                            "letterSpacing": "0.08333em",
+                                            "lineHeight": 2.66,
+                                            "textTransform": "uppercase",
+                                          },
+                                          "pxToRem": [Function],
+                                          "round": [Function],
+                                          "subheading": Object {
+                                            "color": "rgba(0, 0, 0, 0.87)",
+                                            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                            "fontSize": "1rem",
+                                            "fontWeight": 400,
+                                            "lineHeight": "1.5em",
+                                          },
+                                          "subtitle1": Object {
+                                            "color": "rgba(0, 0, 0, 0.87)",
+                                            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                            "fontSize": "1rem",
+                                            "fontWeight": 400,
+                                            "letterSpacing": "0.00938em",
+                                            "lineHeight": 1.75,
+                                          },
+                                          "subtitle2": Object {
+                                            "color": "rgba(0, 0, 0, 0.87)",
+                                            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                            "fontSize": "0.875rem",
+                                            "fontWeight": 500,
+                                            "letterSpacing": "0.00714em",
+                                            "lineHeight": 1.57,
+                                          },
+                                          "title": Object {
+                                            "color": "rgba(0, 0, 0, 0.87)",
+                                            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                            "fontSize": "1.3125rem",
+                                            "fontWeight": 500,
+                                            "lineHeight": "1.16667em",
+                                          },
+                                          "useNextVariants": false,
+                                        },
+                                        "zIndex": Object {
+                                          "appBar": 1100,
+                                          "drawer": 1200,
+                                          "mobileStepper": 1000,
+                                          "modal": 1300,
+                                          "snackbar": 1400,
+                                          "tooltip": 1500,
+                                        },
+                                      }
+                                    }
+                                  >
+                                    <p
+                                      className="MuiTypography-root-57 MuiTypography-body1-66 MuiTypography-colorTextSecondary-90"
+                                    >
+                                      #
+                                    </p>
+                                  </Typography>
+                                </WithStyles(Typography)>
+                              </div>
+                            </InputAdornment>
+                          </WithStyles(InputAdornment)>
                           <input
                             aria-invalid={false}
-                            className="MuiInputBase-input-46 MuiInput-input-31"
+                            className="MuiInputBase-input-46 MuiInput-input-31 MuiInputBase-inputMarginDense-47 MuiInput-inputMarginDense-32 MuiInputBase-inputAdornedStart-51"
                             disabled={false}
                             name="hashtag"
                             onBlur={[Function]}
@@ -1311,6 +1822,615 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
           </FormControl>
         </WithStyles(FormControl)>
       </TextField>
+      <WithStyles(InputCategoriesAutoSuggest)
+        handleAddChip={[Function]}
+        handleDeleteChip={[Function]}
+        label="カテゴリ"
+        value={Array []}
+      >
+        <InputCategoriesAutoSuggest
+          classes={
+            Object {
+              "container": "InputCategoriesAutoSuggest-container-92",
+              "suggestion": "InputCategoriesAutoSuggest-suggestion-94",
+              "suggestionsContainerOpen": "InputCategoriesAutoSuggest-suggestionsContainerOpen-93",
+              "suggestionsList": "InputCategoriesAutoSuggest-suggestionsList-95",
+              "textField": "InputCategoriesAutoSuggest-textField-96",
+            }
+          }
+          handleAddChip={[Function]}
+          handleDeleteChip={[Function]}
+          label="カテゴリ"
+          value={Array []}
+        >
+          <Autosuggest
+            alwaysRenderSuggestions={false}
+            focusInputOnSuggestionClick={true}
+            getSuggestionValue={[Function]}
+            highlightFirstSuggestion={false}
+            id="1"
+            inputProps={
+              Object {
+                "chips": Array [],
+                "classes": Object {
+                  "container": "InputCategoriesAutoSuggest-container-92",
+                  "suggestion": "InputCategoriesAutoSuggest-suggestion-94",
+                  "suggestionsContainerOpen": "InputCategoriesAutoSuggest-suggestionsContainerOpen-93",
+                  "suggestionsList": "InputCategoriesAutoSuggest-suggestionsList-95",
+                  "textField": "InputCategoriesAutoSuggest-textField-96",
+                },
+                "label": "カテゴリ",
+                "onAdd": [Function],
+                "onChange": [Function],
+                "onDelete": [Function],
+                "value": "",
+              }
+            }
+            multiSection={false}
+            onSuggestionSelected={[Function]}
+            onSuggestionsClearRequested={[Function]}
+            onSuggestionsFetchRequested={[Function]}
+            renderInputComponent={[Function]}
+            renderSuggestion={[Function]}
+            renderSuggestionsContainer={[Function]}
+            shouldRenderSuggestions={[Function]}
+            suggestions={Array []}
+            theme={
+              Object {
+                "container": "InputCategoriesAutoSuggest-container-92",
+                "suggestion": "InputCategoriesAutoSuggest-suggestion-94",
+                "suggestionsContainerOpen": "InputCategoriesAutoSuggest-suggestionsContainerOpen-93",
+                "suggestionsList": "InputCategoriesAutoSuggest-suggestionsList-95",
+              }
+            }
+          >
+            <Autowhatever
+              containerProps={Object {}}
+              getSectionItems={[Function]}
+              highlightedItemIndex={null}
+              highlightedSectionIndex={null}
+              id="1"
+              inputProps={
+                Object {
+                  "chips": Array [],
+                  "classes": Object {
+                    "container": "InputCategoriesAutoSuggest-container-92",
+                    "suggestion": "InputCategoriesAutoSuggest-suggestion-94",
+                    "suggestionsContainerOpen": "InputCategoriesAutoSuggest-suggestionsContainerOpen-93",
+                    "suggestionsList": "InputCategoriesAutoSuggest-suggestionsList-95",
+                    "textField": "InputCategoriesAutoSuggest-textField-96",
+                  },
+                  "label": "カテゴリ",
+                  "onAdd": [Function],
+                  "onBlur": [Function],
+                  "onChange": [Function],
+                  "onDelete": [Function],
+                  "onFocus": [Function],
+                  "onKeyDown": [Function],
+                  "value": "",
+                }
+              }
+              itemProps={[Function]}
+              items={Array []}
+              multiSection={false}
+              renderInputComponent={[Function]}
+              renderItem={[Function]}
+              renderItemData={
+                Object {
+                  "query": "",
+                }
+              }
+              renderItemsContainer={[Function]}
+              renderSectionTitle={[Function]}
+              theme={
+                Object {
+                  "container": "InputCategoriesAutoSuggest-container-92",
+                  "item": "InputCategoriesAutoSuggest-suggestion-94",
+                  "itemsContainerOpen": "InputCategoriesAutoSuggest-suggestionsContainerOpen-93",
+                  "itemsList": "InputCategoriesAutoSuggest-suggestionsList-95",
+                }
+              }
+            >
+              <div
+                aria-expanded={false}
+                aria-haspopup="listbox"
+                aria-owns="react-autowhatever-1"
+                className="InputCategoriesAutoSuggest-container-92"
+                key="react-autowhatever-1-container"
+                role="combobox"
+              >
+                <WithStyles(ChipInput)
+                  clearInputValueOnChange={true}
+                  color="primary"
+                  fullWidth={true}
+                  inputRef={[Function]}
+                  label="カテゴリ"
+                  onAdd={[Function]}
+                  onBlur={[Function]}
+                  onDelete={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onUpdateInput={[Function]}
+                  value={Array []}
+                >
+                  <ChipInput
+                    allowDuplicates={false}
+                    blurBehavior="clear"
+                    classes={
+                      Object {
+                        "chip": "ChipInput-chip-113",
+                        "chipContainer": "ChipInput-chipContainer-100",
+                        "disabled": "ChipInput-disabled-110",
+                        "error": "ChipInput-error-112",
+                        "filled": "ChipInput-filled-103",
+                        "focused": "ChipInput-focused-109",
+                        "helperText": "ChipInput-helperText-107",
+                        "inkbar": "ChipInput-inkbar-108",
+                        "input": "ChipInput-input-99",
+                        "inputRoot": "ChipInput-inputRoot-98",
+                        "label": "ChipInput-label-105",
+                        "labelShrink": "ChipInput-labelShrink-106",
+                        "labeled": "ChipInput-labeled-104",
+                        "outlined": "ChipInput-outlined-101",
+                        "root": "ChipInput-root-97",
+                        "standard": "ChipInput-standard-102",
+                        "underline": "ChipInput-underline-111",
+                      }
+                    }
+                    clearInputValueOnChange={true}
+                    color="primary"
+                    disableUnderline={false}
+                    fullWidth={true}
+                    inputRef={[Function]}
+                    label="カテゴリ"
+                    newChipKeyCodes={
+                      Array [
+                        13,
+                      ]
+                    }
+                    onAdd={[Function]}
+                    onBlur={[Function]}
+                    onDelete={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onUpdateInput={[Function]}
+                    value={Array []}
+                    variant="standard"
+                  >
+                    <WithStyles(FormControl)
+                      className="ChipInput-root-97"
+                      color="primary"
+                      fullWidth={true}
+                      onClick={[Function]}
+                      variant="standard"
+                    >
+                      <FormControl
+                        className="ChipInput-root-97"
+                        classes={
+                          Object {
+                            "fullWidth": "MuiFormControl-fullWidth-4",
+                            "marginDense": "MuiFormControl-marginDense-3",
+                            "marginNormal": "MuiFormControl-marginNormal-2",
+                            "root": "MuiFormControl-root-1",
+                          }
+                        }
+                        color="primary"
+                        component="div"
+                        disabled={false}
+                        error={false}
+                        fullWidth={true}
+                        margin="none"
+                        onClick={[Function]}
+                        required={false}
+                        variant="standard"
+                      >
+                        <div
+                          className="MuiFormControl-root-1 MuiFormControl-fullWidth-4 ChipInput-root-97"
+                          color="primary"
+                          onClick={[Function]}
+                        >
+                          <WithStyles(WithFormControlContext(InputLabel))
+                            classes={
+                              Object {
+                                "root": "ChipInput-standard-102 ChipInput-label-105",
+                                "shrink": "ChipInput-labelShrink-106",
+                              }
+                            }
+                            focused={false}
+                            shrink={false}
+                            variant="standard"
+                          >
+                            <WithFormControlContext(InputLabel)
+                              classes={
+                                Object {
+                                  "animated": "MuiInputLabel-animated-13",
+                                  "disabled": "MuiInputLabel-disabled-7",
+                                  "error": "MuiInputLabel-error-8",
+                                  "filled": "MuiInputLabel-filled-14",
+                                  "focused": "MuiInputLabel-focused-6",
+                                  "formControl": "MuiInputLabel-formControl-10",
+                                  "marginDense": "MuiInputLabel-marginDense-11",
+                                  "outlined": "MuiInputLabel-outlined-15",
+                                  "required": "MuiInputLabel-required-9",
+                                  "root": "MuiInputLabel-root-5 ChipInput-standard-102 ChipInput-label-105",
+                                  "shrink": "MuiInputLabel-shrink-12 ChipInput-labelShrink-106",
+                                }
+                              }
+                              focused={false}
+                              shrink={false}
+                              variant="standard"
+                            >
+                              <InputLabel
+                                classes={
+                                  Object {
+                                    "animated": "MuiInputLabel-animated-13",
+                                    "disabled": "MuiInputLabel-disabled-7",
+                                    "error": "MuiInputLabel-error-8",
+                                    "filled": "MuiInputLabel-filled-14",
+                                    "focused": "MuiInputLabel-focused-6",
+                                    "formControl": "MuiInputLabel-formControl-10",
+                                    "marginDense": "MuiInputLabel-marginDense-11",
+                                    "outlined": "MuiInputLabel-outlined-15",
+                                    "required": "MuiInputLabel-required-9",
+                                    "root": "MuiInputLabel-root-5 ChipInput-standard-102 ChipInput-label-105",
+                                    "shrink": "MuiInputLabel-shrink-12 ChipInput-labelShrink-106",
+                                  }
+                                }
+                                disableAnimation={false}
+                                focused={false}
+                                muiFormControl={
+                                  Object {
+                                    "adornedStart": false,
+                                    "disabled": false,
+                                    "error": false,
+                                    "filled": false,
+                                    "focused": false,
+                                    "margin": "none",
+                                    "onBlur": [Function],
+                                    "onEmpty": [Function],
+                                    "onFilled": [Function],
+                                    "onFocus": [Function],
+                                    "required": false,
+                                    "variant": "standard",
+                                  }
+                                }
+                                shrink={false}
+                                variant="standard"
+                              >
+                                <WithStyles(WithFormControlContext(FormLabel))
+                                  className="MuiInputLabel-root-5 ChipInput-standard-102 ChipInput-label-105 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                                  classes={
+                                    Object {
+                                      "disabled": "MuiInputLabel-disabled-7",
+                                      "error": "MuiInputLabel-error-8",
+                                      "focused": "MuiInputLabel-focused-6",
+                                      "required": "MuiInputLabel-required-9",
+                                    }
+                                  }
+                                  data-shrink={false}
+                                  focused={false}
+                                >
+                                  <WithFormControlContext(FormLabel)
+                                    className="MuiInputLabel-root-5 ChipInput-standard-102 ChipInput-label-105 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                                    classes={
+                                      Object {
+                                        "asterisk": "MuiFormLabel-asterisk-22",
+                                        "disabled": "MuiFormLabel-disabled-18 MuiInputLabel-disabled-7",
+                                        "error": "MuiFormLabel-error-19 MuiInputLabel-error-8",
+                                        "filled": "MuiFormLabel-filled-20",
+                                        "focused": "MuiFormLabel-focused-17 MuiInputLabel-focused-6",
+                                        "required": "MuiFormLabel-required-21 MuiInputLabel-required-9",
+                                        "root": "MuiFormLabel-root-16",
+                                      }
+                                    }
+                                    data-shrink={false}
+                                    focused={false}
+                                  >
+                                    <FormLabel
+                                      className="MuiInputLabel-root-5 ChipInput-standard-102 ChipInput-label-105 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                                      classes={
+                                        Object {
+                                          "asterisk": "MuiFormLabel-asterisk-22",
+                                          "disabled": "MuiFormLabel-disabled-18 MuiInputLabel-disabled-7",
+                                          "error": "MuiFormLabel-error-19 MuiInputLabel-error-8",
+                                          "filled": "MuiFormLabel-filled-20",
+                                          "focused": "MuiFormLabel-focused-17 MuiInputLabel-focused-6",
+                                          "required": "MuiFormLabel-required-21 MuiInputLabel-required-9",
+                                          "root": "MuiFormLabel-root-16",
+                                        }
+                                      }
+                                      component="label"
+                                      data-shrink={false}
+                                      focused={false}
+                                      muiFormControl={
+                                        Object {
+                                          "adornedStart": false,
+                                          "disabled": false,
+                                          "error": false,
+                                          "filled": false,
+                                          "focused": false,
+                                          "margin": "none",
+                                          "onBlur": [Function],
+                                          "onEmpty": [Function],
+                                          "onFilled": [Function],
+                                          "onFocus": [Function],
+                                          "required": false,
+                                          "variant": "standard",
+                                        }
+                                      }
+                                    >
+                                      <label
+                                        className="MuiFormLabel-root-16 MuiInputLabel-root-5 ChipInput-standard-102 ChipInput-label-105 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+                                        data-shrink={false}
+                                      >
+                                        カテゴリ
+                                      </label>
+                                    </FormLabel>
+                                  </WithFormControlContext(FormLabel)>
+                                </WithStyles(WithFormControlContext(FormLabel))>
+                              </InputLabel>
+                            </WithFormControlContext(InputLabel)>
+                          </WithStyles(WithFormControlContext(InputLabel))>
+                          <div
+                            className="ChipInput-standard-102 ChipInput-chipContainer-100 ChipInput-inkbar-108 ChipInput-underline-111 ChipInput-labeled-104"
+                          >
+                            <WithStyles(Input)
+                              classes={
+                                Object {
+                                  "input": "ChipInput-input-99 ChipInput-standard-102",
+                                  "root": "ChipInput-inputRoot-98 ChipInput-standard-102",
+                                }
+                              }
+                              disableUnderline={true}
+                              inputRef={[Function]}
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              onFocus={[Function]}
+                              onKeyDown={[Function]}
+                              onKeyPress={[Function]}
+                              onKeyUp={[Function]}
+                              placeholder={null}
+                              value=""
+                            >
+                              <Input
+                                classes={
+                                  Object {
+                                    "disabled": "MuiInput-disabled-26",
+                                    "error": "MuiInput-error-28",
+                                    "focused": "MuiInput-focused-25",
+                                    "formControl": "MuiInput-formControl-24",
+                                    "fullWidth": "MuiInput-fullWidth-30",
+                                    "input": "MuiInput-input-31 ChipInput-input-99 ChipInput-standard-102",
+                                    "inputMarginDense": "MuiInput-inputMarginDense-32",
+                                    "inputMultiline": "MuiInput-inputMultiline-33",
+                                    "inputType": "MuiInput-inputType-34",
+                                    "inputTypeSearch": "MuiInput-inputTypeSearch-35",
+                                    "multiline": "MuiInput-multiline-29",
+                                    "root": "MuiInput-root-23 ChipInput-inputRoot-98 ChipInput-standard-102",
+                                    "underline": "MuiInput-underline-27",
+                                  }
+                                }
+                                disableUnderline={true}
+                                inputRef={[Function]}
+                                onBlur={[Function]}
+                                onChange={[Function]}
+                                onFocus={[Function]}
+                                onKeyDown={[Function]}
+                                onKeyPress={[Function]}
+                                onKeyUp={[Function]}
+                                placeholder={null}
+                                value=""
+                              >
+                                <WithStyles(WithFormControlContext(InputBase))
+                                  classes={
+                                    Object {
+                                      "disabled": "MuiInput-disabled-26",
+                                      "error": "MuiInput-error-28",
+                                      "focused": "MuiInput-focused-25",
+                                      "formControl": "MuiInput-formControl-24",
+                                      "fullWidth": "MuiInput-fullWidth-30",
+                                      "input": "MuiInput-input-31 ChipInput-input-99 ChipInput-standard-102",
+                                      "inputMarginDense": "MuiInput-inputMarginDense-32",
+                                      "inputMultiline": "MuiInput-inputMultiline-33",
+                                      "inputType": "MuiInput-inputType-34",
+                                      "inputTypeSearch": "MuiInput-inputTypeSearch-35",
+                                      "multiline": "MuiInput-multiline-29",
+                                      "root": "MuiInput-root-23 ChipInput-inputRoot-98 ChipInput-standard-102",
+                                      "underline": null,
+                                    }
+                                  }
+                                  fullWidth={false}
+                                  inputComponent="input"
+                                  inputRef={[Function]}
+                                  multiline={false}
+                                  onBlur={[Function]}
+                                  onChange={[Function]}
+                                  onFocus={[Function]}
+                                  onKeyDown={[Function]}
+                                  onKeyPress={[Function]}
+                                  onKeyUp={[Function]}
+                                  placeholder={null}
+                                  type="text"
+                                  value=""
+                                >
+                                  <WithFormControlContext(InputBase)
+                                    classes={
+                                      Object {
+                                        "adornedEnd": "MuiInputBase-adornedEnd-41",
+                                        "adornedStart": "MuiInputBase-adornedStart-40",
+                                        "disabled": "MuiInputBase-disabled-39 MuiInput-disabled-26",
+                                        "error": "MuiInputBase-error-42 MuiInput-error-28",
+                                        "focused": "MuiInputBase-focused-38 MuiInput-focused-25",
+                                        "formControl": "MuiInputBase-formControl-37 MuiInput-formControl-24",
+                                        "fullWidth": "MuiInputBase-fullWidth-45 MuiInput-fullWidth-30",
+                                        "input": "MuiInputBase-input-46 MuiInput-input-31 ChipInput-input-99 ChipInput-standard-102",
+                                        "inputAdornedEnd": "MuiInputBase-inputAdornedEnd-52",
+                                        "inputAdornedStart": "MuiInputBase-inputAdornedStart-51",
+                                        "inputMarginDense": "MuiInputBase-inputMarginDense-47 MuiInput-inputMarginDense-32",
+                                        "inputMultiline": "MuiInputBase-inputMultiline-48 MuiInput-inputMultiline-33",
+                                        "inputType": "MuiInputBase-inputType-49 MuiInput-inputType-34",
+                                        "inputTypeSearch": "MuiInputBase-inputTypeSearch-50 MuiInput-inputTypeSearch-35",
+                                        "marginDense": "MuiInputBase-marginDense-43",
+                                        "multiline": "MuiInputBase-multiline-44 MuiInput-multiline-29",
+                                        "root": "MuiInputBase-root-36 MuiInput-root-23 ChipInput-inputRoot-98 ChipInput-standard-102",
+                                      }
+                                    }
+                                    fullWidth={false}
+                                    inputComponent="input"
+                                    inputRef={[Function]}
+                                    multiline={false}
+                                    onBlur={[Function]}
+                                    onChange={[Function]}
+                                    onFocus={[Function]}
+                                    onKeyDown={[Function]}
+                                    onKeyPress={[Function]}
+                                    onKeyUp={[Function]}
+                                    placeholder={null}
+                                    type="text"
+                                    value=""
+                                  >
+                                    <InputBase
+                                      classes={
+                                        Object {
+                                          "adornedEnd": "MuiInputBase-adornedEnd-41",
+                                          "adornedStart": "MuiInputBase-adornedStart-40",
+                                          "disabled": "MuiInputBase-disabled-39 MuiInput-disabled-26",
+                                          "error": "MuiInputBase-error-42 MuiInput-error-28",
+                                          "focused": "MuiInputBase-focused-38 MuiInput-focused-25",
+                                          "formControl": "MuiInputBase-formControl-37 MuiInput-formControl-24",
+                                          "fullWidth": "MuiInputBase-fullWidth-45 MuiInput-fullWidth-30",
+                                          "input": "MuiInputBase-input-46 MuiInput-input-31 ChipInput-input-99 ChipInput-standard-102",
+                                          "inputAdornedEnd": "MuiInputBase-inputAdornedEnd-52",
+                                          "inputAdornedStart": "MuiInputBase-inputAdornedStart-51",
+                                          "inputMarginDense": "MuiInputBase-inputMarginDense-47 MuiInput-inputMarginDense-32",
+                                          "inputMultiline": "MuiInputBase-inputMultiline-48 MuiInput-inputMultiline-33",
+                                          "inputType": "MuiInputBase-inputType-49 MuiInput-inputType-34",
+                                          "inputTypeSearch": "MuiInputBase-inputTypeSearch-50 MuiInput-inputTypeSearch-35",
+                                          "marginDense": "MuiInputBase-marginDense-43",
+                                          "multiline": "MuiInputBase-multiline-44 MuiInput-multiline-29",
+                                          "root": "MuiInputBase-root-36 MuiInput-root-23 ChipInput-inputRoot-98 ChipInput-standard-102",
+                                        }
+                                      }
+                                      fullWidth={false}
+                                      inputComponent="input"
+                                      inputRef={[Function]}
+                                      muiFormControl={
+                                        Object {
+                                          "adornedStart": false,
+                                          "disabled": false,
+                                          "error": false,
+                                          "filled": false,
+                                          "focused": false,
+                                          "margin": "none",
+                                          "onBlur": [Function],
+                                          "onEmpty": [Function],
+                                          "onFilled": [Function],
+                                          "onFocus": [Function],
+                                          "required": false,
+                                          "variant": "standard",
+                                        }
+                                      }
+                                      multiline={false}
+                                      onBlur={[Function]}
+                                      onChange={[Function]}
+                                      onFocus={[Function]}
+                                      onKeyDown={[Function]}
+                                      onKeyPress={[Function]}
+                                      onKeyUp={[Function]}
+                                      placeholder={null}
+                                      type="text"
+                                      value=""
+                                    >
+                                      <div
+                                        className="MuiInputBase-root-36 MuiInput-root-23 ChipInput-inputRoot-98 ChipInput-standard-102 MuiInputBase-formControl-37 MuiInput-formControl-24"
+                                        onClick={[Function]}
+                                        onKeyPress={[Function]}
+                                      >
+                                        <input
+                                          aria-invalid={false}
+                                          className="MuiInputBase-input-46 MuiInput-input-31 ChipInput-input-99 ChipInput-standard-102"
+                                          disabled={false}
+                                          onBlur={[Function]}
+                                          onChange={[Function]}
+                                          onFocus={[Function]}
+                                          onKeyDown={[Function]}
+                                          onKeyUp={[Function]}
+                                          placeholder={null}
+                                          required={false}
+                                          type="text"
+                                          value=""
+                                        />
+                                      </div>
+                                    </InputBase>
+                                  </WithFormControlContext(InputBase)>
+                                </WithStyles(WithFormControlContext(InputBase))>
+                              </Input>
+                            </WithStyles(Input)>
+                          </div>
+                        </div>
+                      </FormControl>
+                    </WithStyles(FormControl)>
+                  </ChipInput>
+                </WithStyles(ChipInput)>
+                <WithStyles(Paper)
+                  id="react-autowhatever-1"
+                  key="react-autowhatever-1-items-container"
+                  role="listbox"
+                  square={true}
+                  style={Object {}}
+                >
+                  <Paper
+                    classes={
+                      Object {
+                        "elevation0": "MuiPaper-elevation0-116",
+                        "elevation1": "MuiPaper-elevation1-117",
+                        "elevation10": "MuiPaper-elevation10-126",
+                        "elevation11": "MuiPaper-elevation11-127",
+                        "elevation12": "MuiPaper-elevation12-128",
+                        "elevation13": "MuiPaper-elevation13-129",
+                        "elevation14": "MuiPaper-elevation14-130",
+                        "elevation15": "MuiPaper-elevation15-131",
+                        "elevation16": "MuiPaper-elevation16-132",
+                        "elevation17": "MuiPaper-elevation17-133",
+                        "elevation18": "MuiPaper-elevation18-134",
+                        "elevation19": "MuiPaper-elevation19-135",
+                        "elevation2": "MuiPaper-elevation2-118",
+                        "elevation20": "MuiPaper-elevation20-136",
+                        "elevation21": "MuiPaper-elevation21-137",
+                        "elevation22": "MuiPaper-elevation22-138",
+                        "elevation23": "MuiPaper-elevation23-139",
+                        "elevation24": "MuiPaper-elevation24-140",
+                        "elevation3": "MuiPaper-elevation3-119",
+                        "elevation4": "MuiPaper-elevation4-120",
+                        "elevation5": "MuiPaper-elevation5-121",
+                        "elevation6": "MuiPaper-elevation6-122",
+                        "elevation7": "MuiPaper-elevation7-123",
+                        "elevation8": "MuiPaper-elevation8-124",
+                        "elevation9": "MuiPaper-elevation9-125",
+                        "root": "MuiPaper-root-114",
+                        "rounded": "MuiPaper-rounded-115",
+                      }
+                    }
+                    component="div"
+                    elevation={2}
+                    id="react-autowhatever-1"
+                    role="listbox"
+                    square={true}
+                    style={Object {}}
+                  >
+                    <div
+                      className="MuiPaper-root-114 MuiPaper-elevation2-118"
+                      id="react-autowhatever-1"
+                      role="listbox"
+                      style={Object {}}
+                    />
+                  </Paper>
+                </WithStyles(Paper)>
+              </div>
+            </Autowhatever>
+          </Autosuggest>
+        </InputCategoriesAutoSuggest>
+      </WithStyles(InputCategoriesAutoSuggest)>
       <br />
       <TextField
         InputLabelProps={
@@ -1321,7 +2441,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
         color="primary"
         fullWidth={true}
         label="開始日時"
-        margin="normal"
+        margin="dense"
         name="startedAt"
         onChange={[Function]}
         required={false}
@@ -1333,7 +2453,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
         <WithStyles(FormControl)
           color="primary"
           fullWidth={true}
-          margin="normal"
+          margin="dense"
           required={false}
           variant="standard"
         >
@@ -1351,12 +2471,12 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
             disabled={false}
             error={false}
             fullWidth={true}
-            margin="normal"
+            margin="dense"
             required={false}
             variant="standard"
           >
             <div
-              className="MuiFormControl-root-1 MuiFormControl-marginNormal-2 MuiFormControl-fullWidth-4"
+              className="MuiFormControl-root-1 MuiFormControl-marginDense-3 MuiFormControl-fullWidth-4"
               color="primary"
             >
               <WithStyles(WithFormControlContext(InputLabel))
@@ -1404,7 +2524,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                         "error": false,
                         "filled": false,
                         "focused": false,
-                        "margin": "normal",
+                        "margin": "dense",
                         "onBlur": [Function],
                         "onEmpty": [Function],
                         "onFilled": [Function],
@@ -1416,7 +2536,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                     shrink={true}
                   >
                     <WithStyles(WithFormControlContext(FormLabel))
-                      className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-shrink-12"
+                      className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-shrink-12 MuiInputLabel-marginDense-11"
                       classes={
                         Object {
                           "disabled": "MuiInputLabel-disabled-7",
@@ -1428,7 +2548,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                       data-shrink={true}
                     >
                       <WithFormControlContext(FormLabel)
-                        className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-shrink-12"
+                        className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-shrink-12 MuiInputLabel-marginDense-11"
                         classes={
                           Object {
                             "asterisk": "MuiFormLabel-asterisk-22",
@@ -1443,7 +2563,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                         data-shrink={true}
                       >
                         <FormLabel
-                          className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-shrink-12"
+                          className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-shrink-12 MuiInputLabel-marginDense-11"
                           classes={
                             Object {
                               "asterisk": "MuiFormLabel-asterisk-22",
@@ -1464,7 +2584,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                               "error": false,
                               "filled": false,
                               "focused": false,
-                              "margin": "normal",
+                              "margin": "dense",
                               "onBlur": [Function],
                               "onEmpty": [Function],
                               "onFilled": [Function],
@@ -1475,7 +2595,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                           }
                         >
                           <label
-                            className="MuiFormLabel-root-16 MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-shrink-12"
+                            className="MuiFormLabel-root-16 MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-shrink-12 MuiInputLabel-marginDense-11"
                             data-shrink={true}
                           >
                             開始日時
@@ -1604,7 +2724,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                             "error": false,
                             "filled": false,
                             "focused": false,
-                            "margin": "normal",
+                            "margin": "dense",
                             "onBlur": [Function],
                             "onEmpty": [Function],
                             "onFilled": [Function],
@@ -1620,12 +2740,12 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                         value=""
                       >
                         <div
-                          className="MuiInputBase-root-36 MuiInput-root-23 MuiInput-underline-27 MuiInputBase-fullWidth-45 MuiInput-fullWidth-30 MuiInputBase-formControl-37 MuiInput-formControl-24"
+                          className="MuiInputBase-root-36 MuiInput-root-23 MuiInput-underline-27 MuiInputBase-fullWidth-45 MuiInput-fullWidth-30 MuiInputBase-formControl-37 MuiInput-formControl-24 MuiInputBase-marginDense-43"
                           onClick={[Function]}
                         >
                           <input
                             aria-invalid={false}
-                            className="MuiInputBase-input-46 MuiInput-input-31 MuiInputBase-inputType-49 MuiInput-inputType-34"
+                            className="MuiInputBase-input-46 MuiInput-input-31 MuiInputBase-inputType-49 MuiInput-inputType-34 MuiInputBase-inputMarginDense-47 MuiInput-inputMarginDense-32"
                             disabled={false}
                             name="startedAt"
                             onBlur={[Function]}
@@ -1655,7 +2775,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
         color="primary"
         fullWidth={true}
         label="終了日時"
-        margin="normal"
+        margin="dense"
         name="endedAt"
         onChange={[Function]}
         required={false}
@@ -1667,7 +2787,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
         <WithStyles(FormControl)
           color="primary"
           fullWidth={true}
-          margin="normal"
+          margin="dense"
           required={false}
           variant="standard"
         >
@@ -1685,12 +2805,12 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
             disabled={false}
             error={false}
             fullWidth={true}
-            margin="normal"
+            margin="dense"
             required={false}
             variant="standard"
           >
             <div
-              className="MuiFormControl-root-1 MuiFormControl-marginNormal-2 MuiFormControl-fullWidth-4"
+              className="MuiFormControl-root-1 MuiFormControl-marginDense-3 MuiFormControl-fullWidth-4"
               color="primary"
             >
               <WithStyles(WithFormControlContext(InputLabel))
@@ -1738,7 +2858,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                         "error": false,
                         "filled": false,
                         "focused": false,
-                        "margin": "normal",
+                        "margin": "dense",
                         "onBlur": [Function],
                         "onEmpty": [Function],
                         "onFilled": [Function],
@@ -1750,7 +2870,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                     shrink={true}
                   >
                     <WithStyles(WithFormControlContext(FormLabel))
-                      className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-shrink-12"
+                      className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-shrink-12 MuiInputLabel-marginDense-11"
                       classes={
                         Object {
                           "disabled": "MuiInputLabel-disabled-7",
@@ -1762,7 +2882,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                       data-shrink={true}
                     >
                       <WithFormControlContext(FormLabel)
-                        className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-shrink-12"
+                        className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-shrink-12 MuiInputLabel-marginDense-11"
                         classes={
                           Object {
                             "asterisk": "MuiFormLabel-asterisk-22",
@@ -1777,7 +2897,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                         data-shrink={true}
                       >
                         <FormLabel
-                          className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-shrink-12"
+                          className="MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-shrink-12 MuiInputLabel-marginDense-11"
                           classes={
                             Object {
                               "asterisk": "MuiFormLabel-asterisk-22",
@@ -1798,7 +2918,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                               "error": false,
                               "filled": false,
                               "focused": false,
-                              "margin": "normal",
+                              "margin": "dense",
                               "onBlur": [Function],
                               "onEmpty": [Function],
                               "onFilled": [Function],
@@ -1809,7 +2929,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                           }
                         >
                           <label
-                            className="MuiFormLabel-root-16 MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-shrink-12"
+                            className="MuiFormLabel-root-16 MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-shrink-12 MuiInputLabel-marginDense-11"
                             data-shrink={true}
                           >
                             終了日時
@@ -1938,7 +3058,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                             "error": false,
                             "filled": false,
                             "focused": false,
-                            "margin": "normal",
+                            "margin": "dense",
                             "onBlur": [Function],
                             "onEmpty": [Function],
                             "onFilled": [Function],
@@ -1954,12 +3074,12 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                         value=""
                       >
                         <div
-                          className="MuiInputBase-root-36 MuiInput-root-23 MuiInput-underline-27 MuiInputBase-fullWidth-45 MuiInput-fullWidth-30 MuiInputBase-formControl-37 MuiInput-formControl-24"
+                          className="MuiInputBase-root-36 MuiInput-root-23 MuiInput-underline-27 MuiInputBase-fullWidth-45 MuiInput-fullWidth-30 MuiInputBase-formControl-37 MuiInput-formControl-24 MuiInputBase-marginDense-43"
                           onClick={[Function]}
                         >
                           <input
                             aria-invalid={false}
-                            className="MuiInputBase-input-46 MuiInput-input-31 MuiInputBase-inputType-49 MuiInput-inputType-34"
+                            className="MuiInputBase-input-46 MuiInput-input-31 MuiInputBase-inputType-49 MuiInput-inputType-34 MuiInputBase-inputMarginDense-47 MuiInput-inputMarginDense-32"
                             disabled={false}
                             name="endedAt"
                             onBlur={[Function]}
@@ -1989,32 +3109,32 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
         <Button
           classes={
             Object {
-              "colorInherit": "MuiButton-colorInherit-74",
-              "contained": "MuiButton-contained-64",
-              "containedPrimary": "MuiButton-containedPrimary-65",
-              "containedSecondary": "MuiButton-containedSecondary-66",
-              "disabled": "MuiButton-disabled-73",
-              "extendedFab": "MuiButton-extendedFab-71",
-              "fab": "MuiButton-fab-70",
-              "flat": "MuiButton-flat-58",
-              "flatPrimary": "MuiButton-flatPrimary-59",
-              "flatSecondary": "MuiButton-flatSecondary-60",
-              "focusVisible": "MuiButton-focusVisible-72",
-              "fullWidth": "MuiButton-fullWidth-78",
-              "label": "MuiButton-label-54",
-              "mini": "MuiButton-mini-75",
-              "outlined": "MuiButton-outlined-61",
-              "outlinedPrimary": "MuiButton-outlinedPrimary-62",
-              "outlinedSecondary": "MuiButton-outlinedSecondary-63",
-              "raised": "MuiButton-raised-67",
-              "raisedPrimary": "MuiButton-raisedPrimary-68",
-              "raisedSecondary": "MuiButton-raisedSecondary-69",
-              "root": "MuiButton-root-53",
-              "sizeLarge": "MuiButton-sizeLarge-77",
-              "sizeSmall": "MuiButton-sizeSmall-76",
-              "text": "MuiButton-text-55",
-              "textPrimary": "MuiButton-textPrimary-56",
-              "textSecondary": "MuiButton-textSecondary-57",
+              "colorInherit": "MuiButton-colorInherit-162",
+              "contained": "MuiButton-contained-152",
+              "containedPrimary": "MuiButton-containedPrimary-153",
+              "containedSecondary": "MuiButton-containedSecondary-154",
+              "disabled": "MuiButton-disabled-161",
+              "extendedFab": "MuiButton-extendedFab-159",
+              "fab": "MuiButton-fab-158",
+              "flat": "MuiButton-flat-146",
+              "flatPrimary": "MuiButton-flatPrimary-147",
+              "flatSecondary": "MuiButton-flatSecondary-148",
+              "focusVisible": "MuiButton-focusVisible-160",
+              "fullWidth": "MuiButton-fullWidth-166",
+              "label": "MuiButton-label-142",
+              "mini": "MuiButton-mini-163",
+              "outlined": "MuiButton-outlined-149",
+              "outlinedPrimary": "MuiButton-outlinedPrimary-150",
+              "outlinedSecondary": "MuiButton-outlinedSecondary-151",
+              "raised": "MuiButton-raised-155",
+              "raisedPrimary": "MuiButton-raisedPrimary-156",
+              "raisedSecondary": "MuiButton-raisedSecondary-157",
+              "root": "MuiButton-root-141",
+              "sizeLarge": "MuiButton-sizeLarge-165",
+              "sizeSmall": "MuiButton-sizeSmall-164",
+              "text": "MuiButton-text-143",
+              "textPrimary": "MuiButton-textPrimary-144",
+              "textSecondary": "MuiButton-textSecondary-145",
             }
           }
           color="primary"
@@ -2029,22 +3149,22 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
           variant="contained"
         >
           <WithStyles(ButtonBase)
-            className="MuiButton-root-53 MuiButton-contained-64 MuiButton-containedPrimary-65 MuiButton-raised-67 MuiButton-raisedPrimary-68 MuiButton-disabled-73 MuiButton-fullWidth-78"
+            className="MuiButton-root-141 MuiButton-contained-152 MuiButton-containedPrimary-153 MuiButton-raised-155 MuiButton-raisedPrimary-156 MuiButton-disabled-161 MuiButton-fullWidth-166"
             component="button"
             disabled={true}
             focusRipple={true}
-            focusVisibleClassName="MuiButton-focusVisible-72"
+            focusVisibleClassName="MuiButton-focusVisible-160"
             onClick={[Function]}
             type="button"
           >
             <ButtonBase
               centerRipple={false}
-              className="MuiButton-root-53 MuiButton-contained-64 MuiButton-containedPrimary-65 MuiButton-raised-67 MuiButton-raisedPrimary-68 MuiButton-disabled-73 MuiButton-fullWidth-78"
+              className="MuiButton-root-141 MuiButton-contained-152 MuiButton-containedPrimary-153 MuiButton-raised-155 MuiButton-raisedPrimary-156 MuiButton-disabled-161 MuiButton-fullWidth-166"
               classes={
                 Object {
-                  "disabled": "MuiButtonBase-disabled-80",
-                  "focusVisible": "MuiButtonBase-focusVisible-81",
-                  "root": "MuiButtonBase-root-79",
+                  "disabled": "MuiButtonBase-disabled-168",
+                  "focusVisible": "MuiButtonBase-focusVisible-169",
+                  "root": "MuiButtonBase-root-167",
                 }
               }
               component="button"
@@ -2052,13 +3172,13 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
               disableTouchRipple={false}
               disabled={true}
               focusRipple={true}
-              focusVisibleClassName="MuiButton-focusVisible-72"
+              focusVisibleClassName="MuiButton-focusVisible-160"
               onClick={[Function]}
               tabIndex="0"
               type="button"
             >
               <button
-                className="MuiButtonBase-root-79 MuiButtonBase-disabled-80 MuiButton-root-53 MuiButton-contained-64 MuiButton-containedPrimary-65 MuiButton-raised-67 MuiButton-raisedPrimary-68 MuiButton-disabled-73 MuiButton-fullWidth-78"
+                className="MuiButtonBase-root-167 MuiButtonBase-disabled-168 MuiButton-root-141 MuiButton-contained-152 MuiButton-containedPrimary-153 MuiButton-raised-155 MuiButton-raisedPrimary-156 MuiButton-disabled-161 MuiButton-fullWidth-166"
                 disabled={true}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -2076,7 +3196,7 @@ exports[`should match snapshot: EventCreateForm/nomal 1`] = `
                 type="button"
               >
                 <span
-                  className="MuiButton-label-54"
+                  className="MuiButton-label-142"
                 >
                   作成
                 </span>

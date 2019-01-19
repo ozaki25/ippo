@@ -298,7 +298,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                   "Naked": [Function],
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-gqjmRU",
+                                    "componentId": "sc-jTzLTM",
                                     "isStatic": false,
                                     "lastClassName": "c0",
                                     "rules": Array [
@@ -676,7 +676,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                     "name": "MuiToolbar",
                                   },
                                   "render": [Function],
-                                  "styledComponentId": "sc-gqjmRU",
+                                  "styledComponentId": "sc-jTzLTM",
                                   "target": [Function],
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -871,7 +871,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                             "Naked": [Function],
                                             "attrs": Array [],
                                             "componentStyle": ComponentStyle {
-                                              "componentId": "sc-gZMcBi",
+                                              "componentId": "sc-VigVT",
                                               "isStatic": true,
                                               "lastClassName": "c1",
                                               "rules": Array [
@@ -1247,7 +1247,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                               "withTheme": true,
                                             },
                                             "render": [Function],
-                                            "styledComponentId": "sc-gZMcBi",
+                                            "styledComponentId": "sc-VigVT",
                                             "target": [Function],
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
@@ -1852,6 +1852,12 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
             </div>
           </Headroom>
           <WithStyles(SideMenu)
+            history={
+              Object {
+                "goBack": [MockFunction],
+                "push": [MockFunction],
+              }
+            }
             name="テストユーザ"
             onClose={[Function]}
             onOpen={[Function]}
@@ -1862,6 +1868,12 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
               classes={
                 Object {
                   "list": "SideMenu-list-120",
+                }
+              }
+              history={
+                Object {
+                  "goBack": [MockFunction],
+                  "push": [MockFunction],
                 }
               }
               name="テストユーザ"
@@ -3153,7 +3165,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-VigVT",
+                "componentId": "sc-fjdhpX",
                 "isStatic": false,
                 "lastClassName": "c2",
                 "rules": Array [
@@ -3167,7 +3179,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
               "displayName": "styled.div",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-VigVT",
+              "styledComponentId": "sc-fjdhpX",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -3206,7 +3218,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                 loader={<Spinner />}
                 pageStart={0}
                 ref={null}
-                threshold={100}
+                threshold={300}
                 useCapture={false}
                 useWindow={true}
               >
@@ -3227,7 +3239,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-bZQynM",
+                              "componentId": "sc-gzVnrw",
                               "isStatic": true,
                               "lastClassName": "c3",
                               "rules": Array [
@@ -3239,7 +3251,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                             "displayName": "styled.div",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "sc-bZQynM",
+                            "styledComponentId": "sc-gzVnrw",
                             "target": "div",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -3258,7 +3270,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-gzVnrw",
+                                    "componentId": "sc-htoDjs",
                                     "isStatic": true,
                                     "lastClassName": "c4",
                                     "rules": Array [
@@ -3271,7 +3283,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                   "displayName": "styled.div",
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
-                                  "styledComponentId": "sc-gzVnrw",
+                                  "styledComponentId": "sc-htoDjs",
                                   "target": "div",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -3290,7 +3302,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                         "$$typeof": Symbol(react.forward_ref),
                                         "attrs": Array [],
                                         "componentStyle": ComponentStyle {
-                                          "componentId": "sc-htoDjs",
+                                          "componentId": "sc-dnqmqq",
                                           "isStatic": true,
                                           "lastClassName": "c5",
                                           "rules": Array [
@@ -3304,7 +3316,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                         "displayName": "styled.div",
                                         "foldedComponentIds": Array [],
                                         "render": [Function],
-                                        "styledComponentId": "sc-htoDjs",
+                                        "styledComponentId": "sc-dnqmqq",
                                         "target": "div",
                                         "toString": [Function],
                                         "warnTooManyClasses": [Function],
@@ -3554,7 +3566,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                             "$$typeof": Symbol(react.forward_ref),
                                             "attrs": Array [],
                                             "componentStyle": ComponentStyle {
-                                              "componentId": "sc-EHOje",
+                                              "componentId": "sc-bZQynM",
                                               "isStatic": true,
                                               "lastClassName": "c7",
                                               "rules": Array [
@@ -3568,7 +3580,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                             "displayName": "styled.div",
                                             "foldedComponentIds": Array [],
                                             "render": [Function],
-                                            "styledComponentId": "sc-EHOje",
+                                            "styledComponentId": "sc-bZQynM",
                                             "target": "div",
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
@@ -3751,7 +3763,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                             "$$typeof": Symbol(react.forward_ref),
                                             "attrs": Array [],
                                             "componentStyle": ComponentStyle {
-                                              "componentId": "sc-EHOje",
+                                              "componentId": "sc-bZQynM",
                                               "isStatic": true,
                                               "lastClassName": "c7",
                                               "rules": Array [
@@ -3765,7 +3777,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                             "displayName": "styled.div",
                                             "foldedComponentIds": Array [],
                                             "render": [Function],
-                                            "styledComponentId": "sc-EHOje",
+                                            "styledComponentId": "sc-bZQynM",
                                             "target": "div",
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
@@ -3942,7 +3954,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                             "$$typeof": Symbol(react.forward_ref),
                                             "attrs": Array [],
                                             "componentStyle": ComponentStyle {
-                                              "componentId": "sc-EHOje",
+                                              "componentId": "sc-bZQynM",
                                               "isStatic": true,
                                               "lastClassName": "c7",
                                               "rules": Array [
@@ -3956,7 +3968,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                             "displayName": "styled.div",
                                             "foldedComponentIds": Array [],
                                             "render": [Function],
-                                            "styledComponentId": "sc-EHOje",
+                                            "styledComponentId": "sc-bZQynM",
                                             "target": "div",
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],

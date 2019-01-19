@@ -39,12 +39,28 @@ exports[`should match snapshot: Signin/nomal 1`] = `
   <Signin
     firebase={
       Object {
+        "auth": Object {
+          "getRedirectResult": [MockFunction],
+        },
         "doSignInWithEmailAndPassword": [MockFunction],
+        "doSignInWithGoogle": [MockFunction],
+        "doSignOut": [MockFunction] {
+          "calls": Array [
+            Array [],
+          ],
+          "results": Array [
+            Object {
+              "isThrow": false,
+              "value": undefined,
+            },
+          ],
+        },
       }
     }
     history={
       Object {
         "push": [MockFunction],
+        "replace": [MockFunction],
       }
     }
   >
@@ -53,13 +69,29 @@ exports[`should match snapshot: Signin/nomal 1`] = `
       back={false}
       firebase={
         Object {
+          "auth": Object {
+            "getRedirectResult": [MockFunction],
+          },
           "doSignInWithEmailAndPassword": [MockFunction],
+          "doSignInWithGoogle": [MockFunction],
+          "doSignOut": [MockFunction] {
+            "calls": Array [
+              Array [],
+            ],
+            "results": Array [
+              Object {
+                "isThrow": false,
+                "value": undefined,
+              },
+            ],
+          },
         }
       }
       header={false}
       history={
         Object {
           "push": [MockFunction],
+          "replace": [MockFunction],
         }
       }
       noPadding={false}
