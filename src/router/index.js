@@ -11,6 +11,7 @@ import RecommendedEvents from 'src/containers/RecommendedEvents';
 import InternalEvents from 'src/containers/InternalEvents';
 import ExternalEvents from 'src/containers/ExternalEvents';
 import NewEvent from 'src/containers/NewEvent';
+import Tweet from 'src/containers/Tweet';
 import Tweets from 'src/containers/Tweets';
 import NewTweet from 'src/containers/NewTweet';
 import SettingsNotification from 'src/containers/SettingsNotification';
@@ -31,6 +32,7 @@ const Router = () => (
         <Route path={ROUTES.ExternalEvents} exact component={ExternalEvents} />
         <Route path={ROUTES.OrganizedEvents} exact component={OrganizedEvents} />
         <Route path={ROUTES.NewEvent} exact component={NewEvent} />
+        <Route path={ROUTES.Tweet} exact component={Tweet} />
         <Route path={ROUTES.Tweets} exact component={Tweets} />
         <Route path={ROUTES.NewTweet} exact component={NewTweet} />
         <Route path={ROUTES.SettingsNotification} exact component={SettingsNotification} />
