@@ -25,7 +25,7 @@ const IconContainer = styled.div`
 
 const todo = () => console.log('TODO');
 
-const Tweet = ({ name, text, time, fixed, onClick, onClickReply }) => (
+const Tweet = ({ name, text, time, comments, fixed, onClick, onClickReply }) => (
   <>
     <Container onClick={onClick}>
       {fixed && <TweetFixedText />}
@@ -35,7 +35,12 @@ const Tweet = ({ name, text, time, fixed, onClick, onClickReply }) => (
         </IconContainer>
         <TweetHeader name={name} time={time} />
         <TweetBody text={text} />
-        <TweetFooter onClickReply={onClickReply} onClickRetweet={todo} onClickLike={todo} />
+        <TweetFooter
+          replyCount={comments ? comments.length : 0}
+          onClickReply={onClickReply}
+          onClickRetweet={todo}
+          onClickLike={todo}
+        />
       </Wrapper>
     </Container>
     <Divider light />
@@ -48,12 +53,14 @@ Tweet.propTypes = {
   name: propTypes.string.isRequired,
   text: propTypes.node.isRequired,
   time: propTypes.string.isRequired,
+  comments: propTypes.array,
   fixed: propTypes.bool,
   onClick: propTypes.func,
   onClickReply: propTypes.func,
 };
 
 Tweet.defaultProps = {
+  comments: [],
   fixed: false,
   onClick: null,
   onClickReply: null,
