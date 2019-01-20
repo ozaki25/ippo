@@ -80,12 +80,14 @@ class NewTweet extends React.Component {
   onClickUpload = () => console.log('TODO');
 
   onClickTweet = async () => {
-    const { createTweet, authUser, history } = this.props;
+    const { createTweet, authUser, history, hashtag, parentTweet } = this.props;
     const tweet = {
       text: this.state.tweet,
       name: authUser.displayName,
       uid: authUser.uid,
       time: new Date().toString(),
+      parentId: parentTweet.tweet && parentTweet.tweet.id ? parentTweet.tweet.id : null,
+      parentHashtag: hashtag,
     };
     this.setState({ disabled: true });
     try {
