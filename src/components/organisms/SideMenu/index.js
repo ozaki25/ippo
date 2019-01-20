@@ -42,6 +42,18 @@ const SideMenu = ({ open, name, onOpen, onClose, signout, history, classes }) =>
             </ListItemIcon>
             <ListItemText primary="ホーム" />
           </ListItem>
+　        <ListItem onClick={() => history.push(ROUTES.Menu)} button>
+            <ListItemIcon>
+              <HomeRounded />
+            </ListItemIcon>
+            <ListItemText primary="イベント作成" />
+          </ListItem>
+      　  <ListItem onClick={() => history.push(ROUTES.Menu)} button>
+            <ListItemIcon>
+              <HomeRounded />
+            </ListItemIcon>
+            <ListItemText primary="通知一覧" />
+          </ListItem>
         </List>
         <Divider />
         <List subheader={<ListSubheader>設定</ListSubheader>}>
