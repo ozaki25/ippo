@@ -41,11 +41,13 @@ const TweetFooter = withStyles(styles)(({ classes, onClickReply, onClickRetweet,
 TweetFooter.displayName = 'TweetFooter';
 
 TweetFooter.propTypes = {
-  onClickReply: propTypes.func.isRequired,
+  onClickReply: propTypes.func,
   onClickRetweet: propTypes.func.isRequired,
   onClickLike: propTypes.func.isRequired,
 };
 
-TweetFooter.defaultProps = {};
+TweetFooter.defaultProps = {
+  onClickReply: null,
+};
 
 export default TweetFooter;

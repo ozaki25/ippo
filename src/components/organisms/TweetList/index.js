@@ -22,6 +22,9 @@ const TweetList = ({ items, loadMore, hasMore, history }) => (
           if (['a', 'svg', 'path'].includes(e.target.tagName.toLowerCase())) return;
           history.push(`${ROUTES.Tweet.replace(':id', item.id)}?hashtag=${item.hashtag}`);
         }}
+        onClickReply={() =>
+          history.push(`${ROUTES.NewTweet}?hashtag=${item.hashtag}&parent=${item.id}`)
+        }
       />
     ))}
   </InfiniteScroll>

@@ -18,7 +18,7 @@ class Tweet extends React.Component {
 
   render() {
     const {
-      data: { tweet, loading },
+      data: { tweet, loading, variables },
       authUser,
       history,
       firebase,
@@ -39,6 +39,9 @@ class Tweet extends React.Component {
             name={tweet.name}
             text={tweet.text}
             time={dateFormat.datetimeJa(tweet.timestamp)}
+            onClickReply={() =>
+              history.push(`${ROUTES.NewTweet}?hashtag=${variables.hashtag}&parent=${tweet.id}`)
+            }
           />
         )}
         <FloatingButton icon="edit" onClick={this.onClickNewTweet} />
