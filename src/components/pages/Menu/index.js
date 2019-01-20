@@ -61,7 +61,7 @@ class Menu extends React.Component {
       <>
         <ContainerWithTabs>
           <Container
-            title={MENU_ITEMS.findItem(value).title}
+            title={MENU_ITEMS.findItemByValue(value).title}
             authUser={authUser}
             history={history}
             firebase={firebase}
