@@ -27,7 +27,13 @@ const ContainerWithTabs = styled.div`
 `;
 
 class Menu extends React.Component {
-  state = { value: MENU_ITEMS.HOME.value };
+  constructor(props) {
+    super(props);
+    const { tab } = props;
+    const item = MENU_ITEMS.findItemByTitle(tab);
+    const value = item ? item.value : MENU_ITEMS.HOME.value;
+    this.state = { value };
+  }
 
   componentDidMount() {
     this.props.data.refetch();
