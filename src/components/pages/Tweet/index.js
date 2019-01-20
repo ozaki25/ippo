@@ -42,7 +42,7 @@ class Tweet extends React.Component {
           <TweetDetail
             name={tweet.name}
             text={tweet.text}
-            time={dateFormat.datetimeJa(tweet.timestamp)}
+            time={dateFormat.datetimeJa(tweet.time)}
             comments={tweet.comments}
             onClickReply={() =>
               history.push(`${ROUTES.NewTweet}?hashtag=${variables.hashtag}&parent=${tweet.id}`)
