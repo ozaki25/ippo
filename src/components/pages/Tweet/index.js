@@ -8,6 +8,10 @@ import ROUTES from 'src/constants/routes';
 import dateFormat from 'src/utils/dateFormat';
 
 class Tweet extends React.Component {
+  componentDidMount() {
+    this.props.data.refetch();
+  }
+
   onClickNewTweet = () => {
     const {
       data: { variables },
@@ -64,6 +68,7 @@ Tweet.propTypes = {
       hashtag: propTypes.string.isRequired,
       comments: propTypes.arrayOf(propTypes.object),
     }),
+    refetch: propTypes.func,
   }),
   authUser: propTypes.shape({
     displayName: propTypes.string.isRequired,
