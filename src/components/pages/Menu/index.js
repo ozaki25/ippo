@@ -27,19 +27,12 @@ const ContainerWithTabs = styled.div`
 `;
 
 class Menu extends React.Component {
-  constructor(props) {
-    super(props);
-    const { tab } = props;
-    const item = MENU_ITEMS.findItemByTitle(tab);
-    const value = item ? item.value : MENU_ITEMS.HOME.value;
-    this.state = { value };
-  }
-
   componentDidMount() {
     this.props.data.refetch();
   }
 
-  handleChange = (event, value) => this.setState({ value });
+  handleChange = (event, value) =>
+    this.props.history.replace(`${ROUTES.Menu}?tab=${MENU_ITEMS.findItemByValue(value).title}`);
 
   onSubmitCreateEvent = async event => {
     const {
@@ -57,12 +50,14 @@ class Menu extends React.Component {
   render() {
     const {
       data: { allEvents, loading },
+      tab,
       classes,
       authUser,
       history,
       firebase,
     } = this.props;
-    const { value } = this.state;
+    const item = MENU_ITEMS.findItemByTitle(tab);
+    const value = item ? item.value : MENU_ITEMS.HOME.value;
     return (
       <>
         <ContainerWithTabs>
