@@ -83,6 +83,9 @@ http://atomicdesign.bradfrost.com/chapter-4/
       time: '12月10日',
     },
   ],
+  history: {
+    push: action('push'),
+  },
 };
 
 stories.add('通常パターン', () => <TweetList {...props} />);
