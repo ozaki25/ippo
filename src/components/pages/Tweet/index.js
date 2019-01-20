@@ -39,6 +39,7 @@ class Tweet extends React.Component {
             name={tweet.name}
             text={tweet.text}
             time={dateFormat.datetimeJa(tweet.timestamp)}
+            comments={tweet.comments}
             onClickReply={() =>
               history.push(`${ROUTES.NewTweet}?hashtag=${variables.hashtag}&parent=${tweet.id}`)
             }
@@ -61,6 +62,7 @@ Tweet.propTypes = {
       text: propTypes.string.isRequired,
       time: propTypes.string.isRequired,
       hashtag: propTypes.string.isRequired,
+      comments: propTypes.arrayOf(propTypes.object),
     }),
   }),
   authUser: propTypes.shape({
