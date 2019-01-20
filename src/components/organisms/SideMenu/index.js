@@ -20,6 +20,7 @@ import { withStyles } from '@material-ui/core/styles';
 import propTypes from 'prop-types';
 import CharIcon from 'src/components/atoms/CharIcon';
 import ROUTES from 'src/constants/routes';
+import MENU_ITEMS from 'src/constants/menuItems';
 
 const styles = {
   list: {
@@ -49,13 +50,19 @@ const SideMenu = ({ open, name, onOpen, onClose, signout, history, classes }) =>
             </ListItemIcon>
             <ListItemText primary="ホーム" />
           </ListItem>
-          <ListItem onClick={() => history.push(`${ROUTES.Menu}?tab=イベント作成`)} button>
+          <ListItem
+            onClick={() => history.push(`${ROUTES.Menu}?tab=${MENU_ITEMS.NEW_EVENT.title}`)}
+            button
+          >
             <ListItemIcon>
               <AddBoxRounded />
             </ListItemIcon>
             <ListItemText primary="イベント作成" />
           </ListItem>
-          <ListItem onClick={() => history.push(`${ROUTES.Menu}?tab=通知`)} button>
+          <ListItem
+            onClick={() => history.push(`${ROUTES.Menu}?tab=${MENU_ITEMS.NOTIFICATION.title}`)}
+            button
+          >
             <ListItemIcon>
               <NotificationsRounded />
             </ListItemIcon>
