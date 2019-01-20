@@ -29,6 +29,10 @@ const ContainerWithTabs = styled.div`
 class Menu extends React.Component {
   state = { value: MENU_ITEMS.HOME.value };
 
+  componentDidMount() {
+    this.props.data.refetch();
+  }
+
   handleChange = (event, value) => this.setState({ value });
 
   onSubmitCreateEvent = async event => {
@@ -152,6 +156,7 @@ Menu.propTypes = {
         }),
       ),
     }),
+    refetch: propTypes.func,
   }).isRequired,
   createEvent: propTypes.func.isRequired,
   authUser: propTypes.shape({
