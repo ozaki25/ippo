@@ -33,7 +33,7 @@ const Item = styled.div`
 
 const todo = () => console.log('TODO');
 
-const TweetDetail = ({ name, text, time, onClickReply }) => (
+const TweetDetail = ({ name, text, time, comments, onClickReply }) => (
   <>
     <Container>
       <TweetHeader>
@@ -51,7 +51,12 @@ const TweetDetail = ({ name, text, time, onClickReply }) => (
         <Typography color="textSecondary">{time}</Typography>
       </Item>
       <Divider light />
-      <TweetFooter onClickReply={onClickReply} onClickRetweet={todo} onClickLike={todo} />
+      <TweetFooter
+        replyCount={comments ? comments.length : 0}
+        onClickReply={onClickReply}
+        onClickRetweet={todo}
+        onClickLike={todo}
+      />
     </Container>
     <Divider light />
   </>
@@ -63,10 +68,12 @@ TweetDetail.propTypes = {
   name: propTypes.string.isRequired,
   text: propTypes.node.isRequired,
   time: propTypes.string.isRequired,
+  comments: propTypes.array,
   onClickReply: propTypes.func,
 };
 
 TweetDetail.defaultProps = {
+  comments: [],
   onClickReply: null,
 };
 
