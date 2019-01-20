@@ -21,5 +21,6 @@ const findItemByTitle = title =>
 
 export default {
   ...menuItems,
-  findItem,
+  findItemByValue,
+  findItemByTitle,
 };
