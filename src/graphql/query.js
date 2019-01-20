@@ -161,6 +161,13 @@ const tweet = gql`
       text
       time
       hashtag
+      comments {
+        id
+        name
+        text
+        time
+        hashtag
+      }
     }
   }
 `;
@@ -174,6 +181,13 @@ const tweets = gql`
         text
         time
         hashtag
+        comments {
+          id
+          name
+          text
+          time
+          hashtag
+        }
       }
       startId
       event {
