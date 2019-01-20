@@ -68,6 +68,7 @@ const TweetDetail = ({ name, text, time, comments, onClickReply }) => (
           name={comment.name}
           text={comment.text}
           time={dateFormat.datetimeJa(comment.time)}
+          noFooter
         />
       ))}
   </>

@@ -6,7 +6,7 @@ import tweetFormat from 'src/utils/tweetFormat';
 import ROUTES from 'src/constants/routes';
 
 const StyledTweetBody = styled.div`
-  margin: 0;
+  margin: 0 0 5px;
   white-space: pre-wrap;
   word-wrap: break-word;
   font-size: ${({ bigText }) => (bigText ? '22px' : 'inherit')};

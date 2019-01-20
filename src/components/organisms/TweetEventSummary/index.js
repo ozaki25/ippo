@@ -73,6 +73,7 @@ const TweetEventSummary = ({
       </Container>
     }
     fixed
+    noFooter
   />
 );
 
