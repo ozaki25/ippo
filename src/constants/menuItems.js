@@ -13,8 +13,11 @@ const menuItems = {
   },
 };
 
-const findItem = value =>
+const findItemByValue = value =>
   menuItems[Object.keys(menuItems).find(key => menuItems[key].value === value)];
+
+const findItemByTitle = title =>
+  menuItems[Object.keys(menuItems).find(key => menuItems[key].title === title)];
 
 export default {
   ...menuItems,
