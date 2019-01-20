@@ -27,13 +27,12 @@ const ContainerWithTabs = styled.div`
 `;
 
 class Menu extends React.Component {
-  state = { value: MENU_ITEMS.HOME.value };
-
   componentDidMount() {
     this.props.data.refetch();
   }
 
-  handleChange = (event, value) => this.setState({ value });
+  handleChange = (event, value) =>
+    this.props.history.replace(`${ROUTES.Menu}?tab=${MENU_ITEMS.findItemByValue(value).title}`);
 
   onSubmitCreateEvent = async event => {
     const {
@@ -51,17 +50,19 @@ class Menu extends React.Component {
   render() {
     const {
       data: { allEvents, loading },
+      tab,
       classes,
       authUser,
       history,
       firebase,
     } = this.props;
-    const { value } = this.state;
+    const item = MENU_ITEMS.findItemByTitle(tab);
+    const value = item ? item.value : MENU_ITEMS.HOME.value;
     return (
       <>
         <ContainerWithTabs>
           <Container
-            title={MENU_ITEMS.findItem(value).title}
+            title={MENU_ITEMS.findItemByValue(value).title}
             authUser={authUser}
             history={history}
             firebase={firebase}
@@ -158,6 +159,7 @@ Menu.propTypes = {
     }),
     refetch: propTypes.func,
   }).isRequired,
+  tab: propTypes.string,
   createEvent: propTypes.func.isRequired,
   authUser: propTypes.shape({
     displayName: propTypes.string.isRequired,
@@ -171,6 +173,8 @@ Menu.propTypes = {
   firebase: propTypes.object.isRequired,
 };
 
-Menu.defaultProps = {};
+Menu.defaultProps = {
+  tab: null,
+};
 
 export default withStyles(styles)(Menu);

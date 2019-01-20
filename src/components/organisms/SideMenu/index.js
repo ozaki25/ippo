@@ -8,11 +8,19 @@ import {
   ListSubheader,
   SwipeableDrawer,
 } from '@material-ui/core';
-import { AccountBox, ExitToApp, HomeRounded, NotificationsNoneRounded } from '@material-ui/icons';
+import {
+  AccountBox,
+  AddBoxRounded,
+  ExitToApp,
+  HomeRounded,
+  NotificationsRounded,
+  NotificationsNoneRounded,
+} from '@material-ui/icons';
 import { withStyles } from '@material-ui/core/styles';
 import propTypes from 'prop-types';
 import CharIcon from 'src/components/atoms/CharIcon';
 import ROUTES from 'src/constants/routes';
+import MENU_ITEMS from 'src/constants/menuItems';
 
 const styles = {
   list: {
@@ -42,6 +50,24 @@ const SideMenu = ({ open, name, onOpen, onClose, signout, history, classes }) =>
             </ListItemIcon>
             <ListItemText primary="ホーム" />
           </ListItem>
+          <ListItem
+            onClick={() => history.push(`${ROUTES.Menu}?tab=${MENU_ITEMS.NEW_EVENT.title}`)}
+            button
+          >
+            <ListItemIcon>
+              <AddBoxRounded />
+            </ListItemIcon>
+            <ListItemText primary="イベント作成" />
+          </ListItem>
+          <ListItem
+            onClick={() => history.push(`${ROUTES.Menu}?tab=${MENU_ITEMS.NOTIFICATION.title}`)}
+            button
+          >
+            <ListItemIcon>
+              <NotificationsRounded />
+            </ListItemIcon>
+            <ListItemText primary="通知一覧" />
+          </ListItem>
         </List>
         <Divider />
         <List subheader={<ListSubheader>設定</ListSubheader>}>
@@ -49,13 +75,13 @@ const SideMenu = ({ open, name, onOpen, onClose, signout, history, classes }) =>
             <ListItemIcon>
               <AccountBox />
             </ListItemIcon>
-            <ListItemText primary="アカウント" />
+            <ListItemText primary="アカウント設定" />
           </ListItem>
           <ListItem onClick={() => history.push(ROUTES.SettingsNotification)} button>
             <ListItemIcon>
               <NotificationsNoneRounded />
             </ListItemIcon>
-            <ListItemText primary="通知" />
+            <ListItemText primary="通知設定" />
           </ListItem>
         </List>
         <Divider />
