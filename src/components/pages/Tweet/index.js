@@ -8,6 +8,10 @@ import ROUTES from 'src/constants/routes';
 import dateFormat from 'src/utils/dateFormat';
 
 class Tweet extends React.Component {
+  componentDidMount() {
+    this.props.data.refetch();
+  }
+
   onClickNewTweet = () => {
     const {
       data: { variables },
@@ -18,7 +22,7 @@ class Tweet extends React.Component {
 
   render() {
     const {
-      data: { tweet, loading },
+      data: { tweet, loading, variables },
       authUser,
       history,
       firebase,
@@ -39,6 +43,10 @@ class Tweet extends React.Component {
             name={tweet.name}
             text={tweet.text}
             time={dateFormat.datetimeJa(tweet.timestamp)}
+            comments={tweet.comments}
+            onClickReply={() =>
+              history.push(`${ROUTES.NewTweet}?hashtag=${variables.hashtag}&parent=${tweet.id}`)
+            }
           />
         )}
         <FloatingButton icon="edit" onClick={this.onClickNewTweet} />
@@ -58,7 +66,9 @@ Tweet.propTypes = {
       text: propTypes.string.isRequired,
       time: propTypes.string.isRequired,
       hashtag: propTypes.string.isRequired,
+      comments: propTypes.arrayOf(propTypes.object),
     }),
+    refetch: propTypes.func,
   }),
   authUser: propTypes.shape({
     displayName: propTypes.string.isRequired,

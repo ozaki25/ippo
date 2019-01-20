@@ -5,9 +5,12 @@ import propTypes from 'prop-types';
 import RoundedButton from 'src/components/atoms/RoundedButton';
 import CharIcon from 'src/components/atoms/CharIcon';
 import PopMessage from 'src/components/atoms/PopMessage';
+import TweetHeader from 'src/components/organisms/TweetHeader';
+import TweetBody from 'src/components/organisms/TweetBody';
 import Container from 'src/components/templates/Container';
 import TWEET_WORD from 'src/constants/tweetWord';
 import alertMessage from 'src/constants/alertMessage';
+import dateFormat from 'src/utils/dateFormat';
 
 const inputProps = {
   style: {
@@ -17,6 +20,10 @@ const inputProps = {
 
 const Wrapper = styled.div`
   margin-left: 58px;
+`;
+
+const ReplyNameContainer = styled.div`
+  padding: 8px 0 2px;
 `;
 
 const IconContainer = styled.div`
@@ -73,12 +80,14 @@ class NewTweet extends React.Component {
   onClickUpload = () => console.log('TODO');
 
   onClickTweet = async () => {
-    const { createTweet, authUser, history } = this.props;
+    const { createTweet, authUser, history, hashtag, parentTweet } = this.props;
     const tweet = {
       text: this.state.tweet,
       name: authUser.displayName,
       uid: authUser.uid,
       time: new Date().toString(),
+      parentId: parentTweet.tweet && parentTweet.tweet.id ? parentTweet.tweet.id : null,
+      parentHashtag: hashtag,
     };
     this.setState({ disabled: true });
     try {
@@ -97,10 +106,27 @@ class NewTweet extends React.Component {
   handleClose = () => this.setState({ anchorEl: null });
 
   render() {
-    const { authUser, history, firebase } = this.props;
+    const {
+      authUser,
+      history,
+      firebase,
+      parentTweet: { tweet },
+    } = this.props;
     const { disabled, error, anchorEl, type } = this.state;
     return (
       <Container title="ツイート" back authUser={authUser} history={history} firebase={firebase}>
+        {tweet && tweet.id && (
+          <Wrapper>
+            <IconContainer>
+              <CharIcon name={tweet.name} />
+            </IconContainer>
+            <TweetHeader name={tweet.name} time={dateFormat.datetimeJa(tweet.time)} />
+            <TweetBody text={tweet.text} />
+            <ReplyNameContainer>
+              <Typography color="textSecondary">返信先：@{tweet.name}さん</Typography>
+            </ReplyNameContainer>
+          </Wrapper>
+        )}
         <Wrapper>
           <IconContainer>
             <CharIcon name={authUser.displayName} />
@@ -141,6 +167,13 @@ NewTweet.displayName = 'NewTweet';
 
 NewTweet.propTypes = {
   hashtag: propTypes.string.isRequired,
+  parentTweet: propTypes.shape({
+    id: propTypes.string,
+    name: propTypes.string,
+    text: propTypes.string,
+    time: propTypes.string,
+    hashtag: propTypes.string,
+  }),
   createTweet: propTypes.func.isRequired,
   authUser: propTypes.shape({
     displayName: propTypes.string.isRequired,

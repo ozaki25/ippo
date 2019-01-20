@@ -73,6 +73,7 @@ const TweetEventSummary = ({
       </Container>
     }
     fixed
+    noFooter
   />
 );
 
@@ -87,7 +88,7 @@ TweetEventSummary.propTypes = {
   startedAt: propTypes.string,
   name: propTypes.string,
   joined: propTypes.bool,
-  timestamp:propTypes.string,
+  timestamp: propTypes.string,
   onClickJoin: propTypes.func.isRequired,
   onClickLeave: propTypes.func.isRequired,
 };
