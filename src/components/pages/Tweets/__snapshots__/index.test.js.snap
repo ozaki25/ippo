@@ -3195,6 +3195,12 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
           >
             <TweetList
               hasMore={false}
+              history={
+                Object {
+                  "goBack": [MockFunction],
+                  "push": [MockFunction],
+                }
+              }
               items={
                 Array [
                   Object {
@@ -3230,10 +3236,13 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                     id="1"
                     key="1"
                     name="テストユーザ"
+                    onClick={[Function]}
                     text="投稿内容"
                     time="2018/01/01 12:34"
                   >
-                    <styled.div>
+                    <styled.div
+                      onClick={[Function]}
+                    >
                       <StyledComponent
                         forwardedComponent={
                           Object {
@@ -3260,9 +3269,11 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                           }
                         }
                         forwardedRef={null}
+                        onClick={[Function]}
                       >
                         <div
                           className="c3"
+                          onClick={[Function]}
                         >
                           <styled.div>
                             <StyledComponent

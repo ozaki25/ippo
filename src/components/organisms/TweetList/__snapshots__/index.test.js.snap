@@ -49,6 +49,7 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
 >
   <TweetList
     hasMore={true}
+    history={[MockFunction]}
     items={
       Array [
         Object {
@@ -149,13 +150,16 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
           id="1"
           key="1"
           name="ozaki25"
+          onClick={[Function]}
           text="PagesとOrganisms以外は状態を持たせない
   - それ以外のコンポーネントはステートレスなので簡単に作れる
   - Reduxみたいなところはフロントエンドエンジニアにまかせる
   #ThinkAtomicDesign"
           time="12月10日"
         >
-          <styled.div>
+          <styled.div
+            onClick={[Function]}
+          >
             <StyledComponent
               forwardedComponent={
                 Object {
@@ -182,9 +186,11 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                 }
               }
               forwardedRef={null}
+              onClick={[Function]}
             >
               <div
                 className="c0"
+                onClick={[Function]}
               >
                 <styled.div>
                   <StyledComponent
@@ -1162,12 +1168,15 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
           id="2"
           key="2"
           name="ozaki25"
+          onClick={[Function]}
           text="コンポーネントマネージャー
   - コンポーネントの管理に責任を持つ人
   #ThinkAtomicDesign"
           time="12月10日"
         >
-          <styled.div>
+          <styled.div
+            onClick={[Function]}
+          >
             <StyledComponent
               forwardedComponent={
                 Object {
@@ -1194,9 +1203,11 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                 }
               }
               forwardedRef={null}
+              onClick={[Function]}
             >
               <div
                 className="c0"
+                onClick={[Function]}
               >
                 <styled.div>
                   <StyledComponent
@@ -2172,6 +2183,7 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
           id="3"
           key="3"
           name="ozaki25"
+          onClick={[Function]}
           text="Storybookいいところ
   - どんなコンポーネントが存在してるか可視化できる
   - コンポーネントの扱い方が分かる
@@ -2179,7 +2191,9 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
   #ThinkAtomicDesign"
           time="12月10日"
         >
-          <styled.div>
+          <styled.div
+            onClick={[Function]}
+          >
             <StyledComponent
               forwardedComponent={
                 Object {
@@ -2206,9 +2220,11 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                 }
               }
               forwardedRef={null}
+              onClick={[Function]}
             >
               <div
                 className="c0"
+                onClick={[Function]}
               >
                 <styled.div>
                   <StyledComponent
@@ -3188,12 +3204,15 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
           id="4"
           key="4"
           name="ozaki25"
+          onClick={[Function]}
           text="不必要にコンポーネント化しすぎた
   AtomicDesignあるあるだと思う
   #ThinkAtomicDesign"
           time="12月10日"
         >
-          <styled.div>
+          <styled.div
+            onClick={[Function]}
+          >
             <StyledComponent
               forwardedComponent={
                 Object {
@@ -3220,9 +3239,11 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                 }
               }
               forwardedRef={null}
+              onClick={[Function]}
             >
               <div
                 className="c0"
+                onClick={[Function]}
               >
                 <styled.div>
                   <StyledComponent
@@ -4198,12 +4219,15 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
           id="5"
           key="5"
           name="ozaki25"
+          onClick={[Function]}
           text="これかな
   http://atomicdesign.bradfrost.com/chapter-4/ 
   #ThinkAtomicDesign"
           time="12月10日"
         >
-          <styled.div>
+          <styled.div
+            onClick={[Function]}
+          >
             <StyledComponent
               forwardedComponent={
                 Object {
@@ -4230,9 +4254,11 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                 }
               }
               forwardedRef={null}
+              onClick={[Function]}
             >
               <div
                 className="c0"
+                onClick={[Function]}
               >
                 <styled.div>
                   <StyledComponent
@@ -5208,11 +5234,14 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
           id="6"
           key="6"
           name="ozaki25"
+          onClick={[Function]}
           text="AtomicDesignはベースにすぎなくてプロジェクトごとに柔軟に変えていくことも必要
   #ThinkAtomicDesign"
           time="12月10日"
         >
-          <styled.div>
+          <styled.div
+            onClick={[Function]}
+          >
             <StyledComponent
               forwardedComponent={
                 Object {
@@ -5239,9 +5268,11 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                 }
               }
               forwardedRef={null}
+              onClick={[Function]}
             >
               <div
                 className="c0"
+                onClick={[Function]}
               >
                 <styled.div>
                   <StyledComponent
@@ -6215,11 +6246,14 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
           id="7"
           key="7"
           name="ozaki25"
+          onClick={[Function]}
           text="PagesとOrganismsどの単位でReduxをConnectするか
   #ThinkAtomicDesign"
           time="12月10日"
         >
-          <styled.div>
+          <styled.div
+            onClick={[Function]}
+          >
             <StyledComponent
               forwardedComponent={
                 Object {
@@ -6246,9 +6280,11 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                 }
               }
               forwardedRef={null}
+              onClick={[Function]}
             >
               <div
                 className="c0"
+                onClick={[Function]}
               >
                 <styled.div>
                   <StyledComponent
@@ -7222,12 +7258,15 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
           id="8"
           key="8"
           name="ozaki25"
+          onClick={[Function]}
           text="コンポーネント指向
   - 見た目と機能をカプセル化
   #ThinkAtomicDesign"
           time="12月10日"
         >
-          <styled.div>
+          <styled.div
+            onClick={[Function]}
+          >
             <StyledComponent
               forwardedComponent={
                 Object {
@@ -7254,9 +7293,11 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                 }
               }
               forwardedRef={null}
+              onClick={[Function]}
             >
               <div
                 className="c0"
+                onClick={[Function]}
               >
                 <styled.div>
                   <StyledComponent
@@ -8232,12 +8273,15 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
           id="9"
           key="9"
           name="ozaki25"
+          onClick={[Function]}
           text="Template必要なのか
   たしかに使ってない
   #ThinkAtomicDesign"
           time="12月10日"
         >
-          <styled.div>
+          <styled.div
+            onClick={[Function]}
+          >
             <StyledComponent
               forwardedComponent={
                 Object {
@@ -8264,9 +8308,11 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                 }
               }
               forwardedRef={null}
+              onClick={[Function]}
             >
               <div
                 className="c0"
+                onClick={[Function]}
               >
                 <styled.div>
                   <StyledComponent

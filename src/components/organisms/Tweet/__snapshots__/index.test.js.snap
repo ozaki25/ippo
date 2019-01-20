@@ -46,6 +46,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
   <Tweet
     fixed={false}
     name="ozaki25"
+    onClick={null}
     text="Storybookいいところ
   - どんなコンポーネントが存在してるか可視化できる
   - コンポーネントの扱い方が分かる
@@ -53,7 +54,9 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
   #ThinkAtomicDesign"
     time="12月10日"
   >
-    <styled.div>
+    <styled.div
+      onClick={null}
+    >
       <StyledComponent
         forwardedComponent={
           Object {
@@ -80,9 +83,11 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
           }
         }
         forwardedRef={null}
+        onClick={null}
       >
         <div
           className="c0"
+          onClick={null}
         >
           <styled.div>
             <StyledComponent
