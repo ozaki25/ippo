@@ -9,6 +9,7 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
   margin: 0;
   white-space: pre-wrap;
   word-wrap: break-word;
+  font-size: inherit;
 }
 
 .c4 {
@@ -426,26 +427,33 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                         </styled.small>
                       </TweetHeader>
                       <TweetBody
+                        bigText={false}
                         text="PagesとOrganisms以外は状態を持たせない
   - それ以外のコンポーネントはステートレスなので簡単に作れる
   - Reduxみたいなところはフロントエンドエンジニアにまかせる
   #ThinkAtomicDesign"
                       >
-                        <styled.div>
+                        <styled.div
+                          bigText={0}
+                        >
                           <StyledComponent
+                            bigText={0}
                             forwardedComponent={
                               Object {
                                 "$$typeof": Symbol(react.forward_ref),
                                 "attrs": Array [],
                                 "componentStyle": ComponentStyle {
                                   "componentId": "sc-ifAKCX",
-                                  "isStatic": true,
+                                  "isStatic": false,
                                   "lastClassName": "c3",
                                   "rules": Array [
                                     "
   margin: 0;
   white-space: pre-wrap;
   word-wrap: break-word;
+  font-size: ",
+                                    [Function],
+                                    ";
 ",
                                   ],
                                 },
@@ -1431,25 +1439,32 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                         </styled.small>
                       </TweetHeader>
                       <TweetBody
+                        bigText={false}
                         text="コンポーネントマネージャー
   - コンポーネントの管理に責任を持つ人
   #ThinkAtomicDesign"
                       >
-                        <styled.div>
+                        <styled.div
+                          bigText={0}
+                        >
                           <StyledComponent
+                            bigText={0}
                             forwardedComponent={
                               Object {
                                 "$$typeof": Symbol(react.forward_ref),
                                 "attrs": Array [],
                                 "componentStyle": ComponentStyle {
                                   "componentId": "sc-ifAKCX",
-                                  "isStatic": true,
+                                  "isStatic": false,
                                   "lastClassName": "c3",
                                   "rules": Array [
                                     "
   margin: 0;
   white-space: pre-wrap;
   word-wrap: break-word;
+  font-size: ",
+                                    [Function],
+                                    ";
 ",
                                   ],
                                 },
@@ -2436,27 +2451,34 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                         </styled.small>
                       </TweetHeader>
                       <TweetBody
+                        bigText={false}
                         text="Storybookいいところ
   - どんなコンポーネントが存在してるか可視化できる
   - コンポーネントの扱い方が分かる
   - UIの修正デバッグが楽
   #ThinkAtomicDesign"
                       >
-                        <styled.div>
+                        <styled.div
+                          bigText={0}
+                        >
                           <StyledComponent
+                            bigText={0}
                             forwardedComponent={
                               Object {
                                 "$$typeof": Symbol(react.forward_ref),
                                 "attrs": Array [],
                                 "componentStyle": ComponentStyle {
                                   "componentId": "sc-ifAKCX",
-                                  "isStatic": true,
+                                  "isStatic": false,
                                   "lastClassName": "c3",
                                   "rules": Array [
                                     "
   margin: 0;
   white-space: pre-wrap;
   word-wrap: break-word;
+  font-size: ",
+                                    [Function],
+                                    ";
 ",
                                   ],
                                 },
@@ -3443,25 +3465,32 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                         </styled.small>
                       </TweetHeader>
                       <TweetBody
+                        bigText={false}
                         text="不必要にコンポーネント化しすぎた
   AtomicDesignあるあるだと思う
   #ThinkAtomicDesign"
                       >
-                        <styled.div>
+                        <styled.div
+                          bigText={0}
+                        >
                           <StyledComponent
+                            bigText={0}
                             forwardedComponent={
                               Object {
                                 "$$typeof": Symbol(react.forward_ref),
                                 "attrs": Array [],
                                 "componentStyle": ComponentStyle {
                                   "componentId": "sc-ifAKCX",
-                                  "isStatic": true,
+                                  "isStatic": false,
                                   "lastClassName": "c3",
                                   "rules": Array [
                                     "
   margin: 0;
   white-space: pre-wrap;
   word-wrap: break-word;
+  font-size: ",
+                                    [Function],
+                                    ";
 ",
                                   ],
                                 },
@@ -4446,25 +4475,32 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                         </styled.small>
                       </TweetHeader>
                       <TweetBody
+                        bigText={false}
                         text="これかな
   http://atomicdesign.bradfrost.com/chapter-4/ 
   #ThinkAtomicDesign"
                       >
-                        <styled.div>
+                        <styled.div
+                          bigText={0}
+                        >
                           <StyledComponent
+                            bigText={0}
                             forwardedComponent={
                               Object {
                                 "$$typeof": Symbol(react.forward_ref),
                                 "attrs": Array [],
                                 "componentStyle": ComponentStyle {
                                   "componentId": "sc-ifAKCX",
-                                  "isStatic": true,
+                                  "isStatic": false,
                                   "lastClassName": "c3",
                                   "rules": Array [
                                     "
   margin: 0;
   white-space: pre-wrap;
   word-wrap: break-word;
+  font-size: ",
+                                    [Function],
+                                    ";
 ",
                                   ],
                                 },
@@ -5448,24 +5484,31 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                         </styled.small>
                       </TweetHeader>
                       <TweetBody
+                        bigText={false}
                         text="AtomicDesignはベースにすぎなくてプロジェクトごとに柔軟に変えていくことも必要
   #ThinkAtomicDesign"
                       >
-                        <styled.div>
+                        <styled.div
+                          bigText={0}
+                        >
                           <StyledComponent
+                            bigText={0}
                             forwardedComponent={
                               Object {
                                 "$$typeof": Symbol(react.forward_ref),
                                 "attrs": Array [],
                                 "componentStyle": ComponentStyle {
                                   "componentId": "sc-ifAKCX",
-                                  "isStatic": true,
+                                  "isStatic": false,
                                   "lastClassName": "c3",
                                   "rules": Array [
                                     "
   margin: 0;
   white-space: pre-wrap;
   word-wrap: break-word;
+  font-size: ",
+                                    [Function],
+                                    ";
 ",
                                   ],
                                 },
@@ -6448,24 +6491,31 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                         </styled.small>
                       </TweetHeader>
                       <TweetBody
+                        bigText={false}
                         text="PagesとOrganismsどの単位でReduxをConnectするか
   #ThinkAtomicDesign"
                       >
-                        <styled.div>
+                        <styled.div
+                          bigText={0}
+                        >
                           <StyledComponent
+                            bigText={0}
                             forwardedComponent={
                               Object {
                                 "$$typeof": Symbol(react.forward_ref),
                                 "attrs": Array [],
                                 "componentStyle": ComponentStyle {
                                   "componentId": "sc-ifAKCX",
-                                  "isStatic": true,
+                                  "isStatic": false,
                                   "lastClassName": "c3",
                                   "rules": Array [
                                     "
   margin: 0;
   white-space: pre-wrap;
   word-wrap: break-word;
+  font-size: ",
+                                    [Function],
+                                    ";
 ",
                                   ],
                                 },
@@ -7449,25 +7499,32 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                         </styled.small>
                       </TweetHeader>
                       <TweetBody
+                        bigText={false}
                         text="コンポーネント指向
   - 見た目と機能をカプセル化
   #ThinkAtomicDesign"
                       >
-                        <styled.div>
+                        <styled.div
+                          bigText={0}
+                        >
                           <StyledComponent
+                            bigText={0}
                             forwardedComponent={
                               Object {
                                 "$$typeof": Symbol(react.forward_ref),
                                 "attrs": Array [],
                                 "componentStyle": ComponentStyle {
                                   "componentId": "sc-ifAKCX",
-                                  "isStatic": true,
+                                  "isStatic": false,
                                   "lastClassName": "c3",
                                   "rules": Array [
                                     "
   margin: 0;
   white-space: pre-wrap;
   word-wrap: break-word;
+  font-size: ",
+                                    [Function],
+                                    ";
 ",
                                   ],
                                 },
@@ -8452,25 +8509,32 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                         </styled.small>
                       </TweetHeader>
                       <TweetBody
+                        bigText={false}
                         text="Template必要なのか
   たしかに使ってない
   #ThinkAtomicDesign"
                       >
-                        <styled.div>
+                        <styled.div
+                          bigText={0}
+                        >
                           <StyledComponent
+                            bigText={0}
                             forwardedComponent={
                               Object {
                                 "$$typeof": Symbol(react.forward_ref),
                                 "attrs": Array [],
                                 "componentStyle": ComponentStyle {
                                   "componentId": "sc-ifAKCX",
-                                  "isStatic": true,
+                                  "isStatic": false,
                                   "lastClassName": "c3",
                                   "rules": Array [
                                     "
   margin: 0;
   white-space: pre-wrap;
   word-wrap: break-word;
+  font-size: ",
+                                    [Function],
+                                    ";
 ",
                                   ],
                                 },

@@ -111,6 +111,7 @@ class Tweets extends React.Component {
                 ...tweet,
                 time: dateFormat.datetimeJa(tweet.time),
               }))}
+              history={history}
             />
           </>
         )}

@@ -25,9 +25,9 @@ const IconContainer = styled.div`
 
 const todo = () => console.log('TODO');
 
-const Tweet = ({ name, text, time, fixed }) => (
+const Tweet = ({ name, text, time, fixed, onClick }) => (
   <>
-    <Container>
+    <Container onClick={onClick}>
       {fixed && <TweetFixedText />}
       <Wrapper>
         <IconContainer>
@@ -49,10 +49,12 @@ Tweet.propTypes = {
   text: propTypes.node.isRequired,
   time: propTypes.string.isRequired,
   fixed: propTypes.bool,
+  onClick: propTypes.func,
 };
 
 Tweet.defaultProps = {
   fixed: false,
+  onClick: null,
 };
 
 export default Tweet;

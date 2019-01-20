@@ -8,6 +8,7 @@ const ExternalEvents = '/events/external';
 const OrganizedEvents = '/events/organized';
 const NewEvent = '/events/new';
 const Admin = '/admin';
+const Tweet = '/tweets/detail/:id';
 const Tweets = '/tweets';
 const NewTweet = '/tweets/new';
 const SettingsNotification = '/settings/notification';
@@ -23,6 +24,7 @@ export default {
   ExternalEvents,
   OrganizedEvents,
   NewEvent,
+  Tweet,
   Tweets,
   NewTweet,
   SettingsNotification,

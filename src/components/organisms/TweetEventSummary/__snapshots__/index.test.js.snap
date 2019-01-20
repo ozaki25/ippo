@@ -26,6 +26,7 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
   margin: 0;
   white-space: pre-wrap;
   word-wrap: break-word;
+  font-size: inherit;
 }
 
 .c9 {
@@ -1003,6 +1004,7 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
                     </styled.small>
                   </TweetHeader>
                   <TweetBody
+                    bigText={false}
                     text={
                       <ForwardRef>
                         <WithStyles(Typography)
@@ -1063,21 +1065,27 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
                       </ForwardRef>
                     }
                   >
-                    <styled.div>
+                    <styled.div
+                      bigText={0}
+                    >
                       <StyledComponent
+                        bigText={0}
                         forwardedComponent={
                           Object {
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
                               "componentId": "sc-bxivhb",
-                              "isStatic": true,
+                              "isStatic": false,
                               "lastClassName": "c5",
                               "rules": Array [
                                 "
   margin: 0;
   white-space: pre-wrap;
   word-wrap: break-word;
+  font-size: ",
+                                [Function],
+                                ";
 ",
                               ],
                             },
@@ -4156,6 +4164,7 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
   margin: 0;
   white-space: pre-wrap;
   word-wrap: break-word;
+  font-size: inherit;
 }
 
 .c9 {
@@ -5133,6 +5142,7 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
                     </styled.small>
                   </TweetHeader>
                   <TweetBody
+                    bigText={false}
                     text={
                       <ForwardRef>
                         <WithStyles(Typography)
@@ -5193,21 +5203,27 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
                       </ForwardRef>
                     }
                   >
-                    <styled.div>
+                    <styled.div
+                      bigText={0}
+                    >
                       <StyledComponent
+                        bigText={0}
                         forwardedComponent={
                           Object {
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
                               "componentId": "sc-bxivhb",
-                              "isStatic": true,
+                              "isStatic": false,
                               "lastClassName": "c5",
                               "rules": Array [
                                 "
   margin: 0;
   white-space: pre-wrap;
   word-wrap: break-word;
+  font-size: ",
+                                [Function],
+                                ";
 ",
                               ],
                             },
