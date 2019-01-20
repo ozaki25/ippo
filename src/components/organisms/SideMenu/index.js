@@ -8,7 +8,14 @@ import {
   ListSubheader,
   SwipeableDrawer,
 } from '@material-ui/core';
-import { AccountBox, ExitToApp, HomeRounded, NotificationsNoneRounded } from '@material-ui/icons';
+import {
+  AccountBox,
+  AddBoxRounded,
+  ExitToApp,
+  HomeRounded,
+  NotificationsRounded,
+  NotificationsNoneRounded,
+} from '@material-ui/icons';
 import { withStyles } from '@material-ui/core/styles';
 import propTypes from 'prop-types';
 import CharIcon from 'src/components/atoms/CharIcon';
@@ -42,15 +49,15 @@ const SideMenu = ({ open, name, onOpen, onClose, signout, history, classes }) =>
             </ListItemIcon>
             <ListItemText primary="ホーム" />
           </ListItem>
-　        <ListItem onClick={() => history.push(ROUTES.Menu)} button>
+          <ListItem onClick={() => history.push(`${ROUTES.Menu}?tab=イベント作成`)} button>
             <ListItemIcon>
-              <HomeRounded />
+              <AddBoxRounded />
             </ListItemIcon>
             <ListItemText primary="イベント作成" />
           </ListItem>
-      　  <ListItem onClick={() => history.push(ROUTES.Menu)} button>
+          <ListItem onClick={() => history.push(`${ROUTES.Menu}?tab=通知`)} button>
             <ListItemIcon>
-              <HomeRounded />
+              <NotificationsRounded />
             </ListItemIcon>
             <ListItemText primary="通知一覧" />
           </ListItem>
@@ -61,13 +68,13 @@ const SideMenu = ({ open, name, onOpen, onClose, signout, history, classes }) =>
             <ListItemIcon>
               <AccountBox />
             </ListItemIcon>
-            <ListItemText primary="アカウント" />
+            <ListItemText primary="アカウント設定" />
           </ListItem>
           <ListItem onClick={() => history.push(ROUTES.SettingsNotification)} button>
             <ListItemIcon>
               <NotificationsNoneRounded />
             </ListItemIcon>
-            <ListItemText primary="通知" />
+            <ListItemText primary="通知設定" />
           </ListItem>
         </List>
         <Divider />
