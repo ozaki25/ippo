@@ -158,6 +158,7 @@ Menu.propTypes = {
     }),
     refetch: propTypes.func,
   }).isRequired,
+  tab: propTypes.string,
   createEvent: propTypes.func.isRequired,
   authUser: propTypes.shape({
     displayName: propTypes.string.isRequired,
@@ -171,6 +172,8 @@ Menu.propTypes = {
   firebase: propTypes.object.isRequired,
 };
 
-Menu.defaultProps = {};
+Menu.defaultProps = {
+  tab: null,
+};
 
 export default withStyles(styles)(Menu);
