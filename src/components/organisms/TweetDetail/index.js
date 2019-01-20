@@ -3,8 +3,10 @@ import { Divider, Typography } from '@material-ui/core';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
 import CharIcon from 'src/components/atoms/CharIcon';
+import Tweet from 'src/components/organisms/Tweet';
 import TweetBody from 'src/components/organisms/TweetBody';
 import TweetFooter from 'src/components/organisms/TweetFooter';
+import dateFormat from 'src/utils/dateFormat';
 
 const Container = styled.div`
   padding: 9px 12px 0;
@@ -59,6 +61,15 @@ const TweetDetail = ({ name, text, time, comments, onClickReply }) => (
       />
     </Container>
     <Divider light />
+    {comments &&
+      comments.map(comment => (
+        <Tweet
+          key={comment.id}
+          name={comment.name}
+          text={comment.text}
+          time={dateFormat.datetimeJa(comment.time)}
+        />
+      ))}
   </>
 );
 
