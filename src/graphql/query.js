@@ -212,6 +212,12 @@ const fetchUser = gql`
       uid
       displayName
       categories
+      notifications {
+        id
+        checked
+        content
+        timestamp
+      }
     }
   }
 `;
