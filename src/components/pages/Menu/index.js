@@ -176,7 +176,7 @@ Menu.propTypes = {
         }),
       ),
     }),
-    refetch: propTypes.func,
+    refetch: propTypes.func.isRequired,
   }).isRequired,
   tab: propTypes.string,
   user: propTypes.shape({
