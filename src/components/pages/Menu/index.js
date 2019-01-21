@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tab, Tabs } from '@material-ui/core';
+import { Badge, Tab, Tabs } from '@material-ui/core';
 import { AddBoxRounded, HomeRounded, NotificationsRounded } from '@material-ui/icons';
 import { withStyles } from '@material-ui/core/styles';
 import styled from 'styled-components';
@@ -50,6 +50,7 @@ class Menu extends React.Component {
   render() {
     const {
       data: { allEvents, loading },
+      user: { fetchUser },
       tab,
       classes,
       authUser,
@@ -58,6 +59,9 @@ class Menu extends React.Component {
     } = this.props;
     const item = MENU_ITEMS.findItemByTitle(tab);
     const value = item ? item.value : MENU_ITEMS.HOME.value;
+    const uncheckedNotificationCount = fetchUser
+      ? fetchUser.notifications.filter(n => !n.checked).length
+      : 0;
     return (
       <>
         <ContainerWithTabs>
@@ -97,7 +101,17 @@ class Menu extends React.Component {
         >
           <Tab icon={<HomeRounded />} />
           <Tab icon={<AddBoxRounded />} />
-          <Tab icon={<NotificationsRounded />} />
+          <Tab
+            icon={
+              <Badge
+                className={classes.badge}
+                badgeContent={uncheckedNotificationCount}
+                color="primary"
+              >
+                <NotificationsRounded />
+              </Badge>
+            }
+          />
         </Tabs>
       </>
     );
@@ -160,6 +174,14 @@ Menu.propTypes = {
     refetch: propTypes.func,
   }).isRequired,
   tab: propTypes.string,
+  user: propTypes.shape({
+    fetchUser: propTypes.shape({
+      uid: propTypes.string,
+      displayName: propTypes.string,
+      categories: propTypes.string,
+      notifications: propTypes.arrayOf(propTypes.object),
+    }),
+  }),
   createEvent: propTypes.func.isRequired,
   authUser: propTypes.shape({
     displayName: propTypes.string.isRequired,
