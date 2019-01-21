@@ -24,7 +24,6 @@ const externalEvent = i => ({
 });
 
 const props = ({ loading = false }) => ({
-  createEvent: action('createEvent'),
   data: {
     loading,
     allEvents: {
@@ -34,7 +33,25 @@ const props = ({ loading = false }) => ({
       internal: [...[...Array(10)].map((_, i) => internalEvent(i))],
       external: [...[...Array(10)].map((_, i) => externalEvent(i))],
     },
+    refetch: action('refetch'),
   },
+  user: {
+    fetchUser: {
+      uid: '123',
+      displayName: 'テストユーザ',
+      categories: 'test,test2',
+      notifications: [
+        {
+          id: '1',
+          title: '通知のタイトル',
+          content: '通知の内容',
+          checked: false,
+        },
+      ],
+    },
+    refetch: action('refetch'),
+  },
+  createEvent: action('createEvent'),
   authUser: {
     uid: '123',
     displayName: 'テストユーザ',
@@ -47,6 +64,10 @@ const props = ({ loading = false }) => ({
   firebase: {},
 });
 
-stories.add('通常パターン', () => <Menu {...props({})} />);
+stories.add('ホーム', () => <Menu {...props({})} />);
+
+stories.add('イベント作成', () => <Menu {...props({})} tab="イベント作成" />);
+
+stories.add('通知一覧', () => <Menu {...props({})} tab="通知" />);
 
 stories.add('ロード中', () => <Menu {...props({ loading: true })} />);

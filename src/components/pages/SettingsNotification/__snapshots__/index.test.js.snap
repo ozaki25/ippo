@@ -462,7 +462,7 @@ exports[`should match snapshot: SettingsNotification/nomal 1`] = `
                                           "fontSize": "0.875rem",
                                           "fontWeight": 500,
                                           "letterSpacing": "0.02857em",
-                                          "lineHeight": 1.3125,
+                                          "lineHeight": 1.75,
                                           "textTransform": "uppercase",
                                         },
                                         "caption": Object {
@@ -782,25 +782,25 @@ exports[`should match snapshot: SettingsNotification/nomal 1`] = `
                                                     center={true}
                                                     classes={
                                                       Object {
-                                                        "child": "MuiTouchRipple-child-161",
-                                                        "childLeaving": "MuiTouchRipple-childLeaving-162",
-                                                        "childPulsate": "MuiTouchRipple-childPulsate-163",
-                                                        "ripple": "MuiTouchRipple-ripple-158",
-                                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate-160",
-                                                        "rippleVisible": "MuiTouchRipple-rippleVisible-159",
-                                                        "root": "MuiTouchRipple-root-157",
+                                                        "child": "MuiTouchRipple-child-162",
+                                                        "childLeaving": "MuiTouchRipple-childLeaving-163",
+                                                        "childPulsate": "MuiTouchRipple-childPulsate-164",
+                                                        "ripple": "MuiTouchRipple-ripple-159",
+                                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate-161",
+                                                        "rippleVisible": "MuiTouchRipple-rippleVisible-160",
+                                                        "root": "MuiTouchRipple-root-158",
                                                       }
                                                     }
                                                   >
                                                     <TransitionGroup
                                                       childFactory={[Function]}
-                                                      className="MuiTouchRipple-root-157"
+                                                      className="MuiTouchRipple-root-158"
                                                       component="span"
                                                       enter={true}
                                                       exit={true}
                                                     >
                                                       <span
-                                                        className="MuiTouchRipple-root-157"
+                                                        className="MuiTouchRipple-root-158"
                                                       />
                                                     </TransitionGroup>
                                                   </TouchRipple>
@@ -1032,7 +1032,7 @@ exports[`should match snapshot: SettingsNotification/nomal 1`] = `
                                                     "fontSize": "0.875rem",
                                                     "fontWeight": 500,
                                                     "letterSpacing": "0.02857em",
-                                                    "lineHeight": 1.3125,
+                                                    "lineHeight": 1.75,
                                                     "textTransform": "uppercase",
                                                   },
                                                   "caption": Object {
@@ -1246,6 +1246,7 @@ exports[`should match snapshot: SettingsNotification/nomal 1`] = `
                                                 "h5": "MuiTypography-h5-76",
                                                 "h6": "MuiTypography-h6-77",
                                                 "headline": "MuiTypography-headline-65",
+                                                "inline": "MuiTypography-inline-95",
                                                 "noWrap": "MuiTypography-noWrap-86",
                                                 "overline": "MuiTypography-overline-80",
                                                 "paragraph": "MuiTypography-paragraph-88",
@@ -1280,6 +1281,7 @@ exports[`should match snapshot: SettingsNotification/nomal 1`] = `
                                                 "title": "h2",
                                               }
                                             }
+                                            inline={false}
                                             noWrap={false}
                                             paragraph={false}
                                             theme={
@@ -1480,7 +1482,7 @@ exports[`should match snapshot: SettingsNotification/nomal 1`] = `
                                                     "fontSize": "0.875rem",
                                                     "fontWeight": 500,
                                                     "letterSpacing": "0.02857em",
-                                                    "lineHeight": 1.3125,
+                                                    "lineHeight": 1.75,
                                                     "textTransform": "uppercase",
                                                   },
                                                   "caption": Object {
@@ -1663,28 +1665,28 @@ exports[`should match snapshot: SettingsNotification/nomal 1`] = `
                                       <CharIcon
                                         classes={
                                           Object {
-                                            "amber": "CharIcon-amber-111",
-                                            "avatar": "CharIcon-avatar-95",
-                                            "blue": "CharIcon-blue-103",
-                                            "blueGrey": "CharIcon-blueGrey-116",
-                                            "brown": "CharIcon-brown-114",
-                                            "cyan": "CharIcon-cyan-105",
-                                            "deepOrange": "CharIcon-deepOrange-113",
-                                            "deepPurple": "CharIcon-deepPurple-101",
-                                            "green": "CharIcon-green-107",
-                                            "grey": "CharIcon-grey-115",
-                                            "indigo": "CharIcon-indigo-102",
-                                            "lightBlue": "CharIcon-lightBlue-104",
-                                            "lightGreen": "CharIcon-lightGreen-108",
-                                            "lime": "CharIcon-lime-109",
-                                            "orange": "CharIcon-orange-112",
-                                            "pink": "CharIcon-pink-99",
-                                            "purple": "CharIcon-purple-100",
-                                            "red": "CharIcon-red-98",
-                                            "smallAvatar": "CharIcon-smallAvatar-96",
-                                            "teal": "CharIcon-teal-106",
-                                            "wrapper": "CharIcon-wrapper-97",
-                                            "yellow": "CharIcon-yellow-110",
+                                            "amber": "CharIcon-amber-112",
+                                            "avatar": "CharIcon-avatar-96",
+                                            "blue": "CharIcon-blue-104",
+                                            "blueGrey": "CharIcon-blueGrey-117",
+                                            "brown": "CharIcon-brown-115",
+                                            "cyan": "CharIcon-cyan-106",
+                                            "deepOrange": "CharIcon-deepOrange-114",
+                                            "deepPurple": "CharIcon-deepPurple-102",
+                                            "green": "CharIcon-green-108",
+                                            "grey": "CharIcon-grey-116",
+                                            "indigo": "CharIcon-indigo-103",
+                                            "lightBlue": "CharIcon-lightBlue-105",
+                                            "lightGreen": "CharIcon-lightGreen-109",
+                                            "lime": "CharIcon-lime-110",
+                                            "orange": "CharIcon-orange-113",
+                                            "pink": "CharIcon-pink-100",
+                                            "purple": "CharIcon-purple-101",
+                                            "red": "CharIcon-red-99",
+                                            "smallAvatar": "CharIcon-smallAvatar-97",
+                                            "teal": "CharIcon-teal-107",
+                                            "wrapper": "CharIcon-wrapper-98",
+                                            "yellow": "CharIcon-yellow-111",
                                           }
                                         }
                                         name="テストユーザ"
@@ -1692,12 +1694,12 @@ exports[`should match snapshot: SettingsNotification/nomal 1`] = `
                                         small={true}
                                       >
                                         <WithStyles(IconButton)
-                                          className="CharIcon-wrapper-97"
+                                          className="CharIcon-wrapper-98"
                                           disableRipple={true}
                                           onClick={[Function]}
                                         >
                                           <IconButton
-                                            className="CharIcon-wrapper-97"
+                                            className="CharIcon-wrapper-98"
                                             classes={
                                               Object {
                                                 "colorInherit": "MuiIconButton-colorInherit-43",
@@ -1715,7 +1717,7 @@ exports[`should match snapshot: SettingsNotification/nomal 1`] = `
                                           >
                                             <WithStyles(ButtonBase)
                                               centerRipple={true}
-                                              className="MuiIconButton-root-42 CharIcon-wrapper-97"
+                                              className="MuiIconButton-root-42 CharIcon-wrapper-98"
                                               disableRipple={true}
                                               disabled={false}
                                               focusRipple={true}
@@ -1723,7 +1725,7 @@ exports[`should match snapshot: SettingsNotification/nomal 1`] = `
                                             >
                                               <ButtonBase
                                                 centerRipple={true}
-                                                className="MuiIconButton-root-42 CharIcon-wrapper-97"
+                                                className="MuiIconButton-root-42 CharIcon-wrapper-98"
                                                 classes={
                                                   Object {
                                                     "disabled": "MuiButtonBase-disabled-49",
@@ -1741,7 +1743,7 @@ exports[`should match snapshot: SettingsNotification/nomal 1`] = `
                                                 type="button"
                                               >
                                                 <button
-                                                  className="MuiButtonBase-root-48 MuiIconButton-root-42 CharIcon-wrapper-97"
+                                                  className="MuiButtonBase-root-48 MuiIconButton-root-42 CharIcon-wrapper-98"
                                                   disabled={false}
                                                   onBlur={[Function]}
                                                   onClick={[Function]}
@@ -1762,21 +1764,21 @@ exports[`should match snapshot: SettingsNotification/nomal 1`] = `
                                                     className="MuiIconButton-label-47"
                                                   >
                                                     <WithStyles(Avatar)
-                                                      className="CharIcon-avatar-95 CharIcon-smallAvatar-96 CharIcon-deepPurple-101"
+                                                      className="CharIcon-avatar-96 CharIcon-smallAvatar-97 CharIcon-deepPurple-102"
                                                     >
                                                       <Avatar
-                                                        className="CharIcon-avatar-95 CharIcon-smallAvatar-96 CharIcon-deepPurple-101"
+                                                        className="CharIcon-avatar-96 CharIcon-smallAvatar-97 CharIcon-deepPurple-102"
                                                         classes={
                                                           Object {
-                                                            "colorDefault": "MuiAvatar-colorDefault-118",
-                                                            "img": "MuiAvatar-img-119",
-                                                            "root": "MuiAvatar-root-117",
+                                                            "colorDefault": "MuiAvatar-colorDefault-119",
+                                                            "img": "MuiAvatar-img-120",
+                                                            "root": "MuiAvatar-root-118",
                                                           }
                                                         }
                                                         component="div"
                                                       >
                                                         <div
-                                                          className="MuiAvatar-root-117 MuiAvatar-colorDefault-118 CharIcon-avatar-95 CharIcon-smallAvatar-96 CharIcon-deepPurple-101"
+                                                          className="MuiAvatar-root-118 MuiAvatar-colorDefault-119 CharIcon-avatar-96 CharIcon-smallAvatar-97 CharIcon-deepPurple-102"
                                                         >
                                                           テ
                                                         </div>
@@ -1819,7 +1821,7 @@ exports[`should match snapshot: SettingsNotification/nomal 1`] = `
             <SideMenu
               classes={
                 Object {
-                  "list": "SideMenu-list-120",
+                  "list": "SideMenu-list-121",
                 }
               }
               history={
@@ -2050,7 +2052,7 @@ exports[`should match snapshot: SettingsNotification/nomal 1`] = `
                           "fontSize": "0.875rem",
                           "fontWeight": 500,
                           "letterSpacing": "0.02857em",
-                          "lineHeight": 1.3125,
+                          "lineHeight": 1.75,
                           "textTransform": "uppercase",
                         },
                         "caption": Object {
@@ -2439,7 +2441,7 @@ exports[`should match snapshot: SettingsNotification/nomal 1`] = `
                             "fontSize": "0.875rem",
                             "fontWeight": 500,
                             "letterSpacing": "0.02857em",
-                            "lineHeight": 1.3125,
+                            "lineHeight": 1.75,
                             "textTransform": "uppercase",
                           },
                           "caption": Object {
@@ -2630,18 +2632,18 @@ exports[`should match snapshot: SettingsNotification/nomal 1`] = `
                       anchor="right"
                       classes={
                         Object {
-                          "docked": "MuiDrawer-docked-122",
-                          "modal": "MuiDrawer-modal-132",
-                          "paper": "MuiDrawer-paper-123",
-                          "paperAnchorBottom": "MuiDrawer-paperAnchorBottom-127",
-                          "paperAnchorDockedBottom": "MuiDrawer-paperAnchorDockedBottom-131",
-                          "paperAnchorDockedLeft": "MuiDrawer-paperAnchorDockedLeft-128",
-                          "paperAnchorDockedRight": "MuiDrawer-paperAnchorDockedRight-130",
-                          "paperAnchorDockedTop": "MuiDrawer-paperAnchorDockedTop-129",
-                          "paperAnchorLeft": "MuiDrawer-paperAnchorLeft-124",
-                          "paperAnchorRight": "MuiDrawer-paperAnchorRight-125",
-                          "paperAnchorTop": "MuiDrawer-paperAnchorTop-126",
-                          "root": "MuiDrawer-root-121",
+                          "docked": "MuiDrawer-docked-123",
+                          "modal": "MuiDrawer-modal-133",
+                          "paper": "MuiDrawer-paper-124",
+                          "paperAnchorBottom": "MuiDrawer-paperAnchorBottom-128",
+                          "paperAnchorDockedBottom": "MuiDrawer-paperAnchorDockedBottom-132",
+                          "paperAnchorDockedLeft": "MuiDrawer-paperAnchorDockedLeft-129",
+                          "paperAnchorDockedRight": "MuiDrawer-paperAnchorDockedRight-131",
+                          "paperAnchorDockedTop": "MuiDrawer-paperAnchorDockedTop-130",
+                          "paperAnchorLeft": "MuiDrawer-paperAnchorLeft-125",
+                          "paperAnchorRight": "MuiDrawer-paperAnchorRight-126",
+                          "paperAnchorTop": "MuiDrawer-paperAnchorTop-127",
+                          "root": "MuiDrawer-root-122",
                         }
                       }
                       elevation={16}
@@ -2845,7 +2847,7 @@ exports[`should match snapshot: SettingsNotification/nomal 1`] = `
                               "fontSize": "0.875rem",
                               "fontWeight": 500,
                               "letterSpacing": "0.02857em",
-                              "lineHeight": 1.3125,
+                              "lineHeight": 1.75,
                               "textTransform": "uppercase",
                             },
                             "caption": Object {
@@ -3027,7 +3029,7 @@ exports[`should match snapshot: SettingsNotification/nomal 1`] = `
                             },
                           }
                         }
-                        className="MuiDrawer-root-121 MuiDrawer-modal-132"
+                        className="MuiDrawer-root-122 MuiDrawer-modal-133"
                         onClose={[Function]}
                         open={false}
                       >
@@ -3042,11 +3044,11 @@ exports[`should match snapshot: SettingsNotification/nomal 1`] = `
                               },
                             }
                           }
-                          className="MuiDrawer-root-121 MuiDrawer-modal-132"
+                          className="MuiDrawer-root-122 MuiDrawer-modal-133"
                           classes={
                             Object {
-                              "hidden": "MuiModal-hidden-134",
-                              "root": "MuiModal-root-133",
+                              "hidden": "MuiModal-hidden-135",
+                              "root": "MuiModal-root-134",
                             }
                           }
                           disableAutoFocus={false}
@@ -3083,17 +3085,17 @@ exports[`should match snapshot: SettingsNotification/nomal 1`] = `
                         anchor="right"
                         classes={
                           Object {
-                            "anchorBottom": "MuiPrivateSwipeArea-anchorBottom-168",
-                            "anchorLeft": "MuiPrivateSwipeArea-anchorLeft-165",
-                            "anchorRight": "MuiPrivateSwipeArea-anchorRight-166",
-                            "anchorTop": "MuiPrivateSwipeArea-anchorTop-167",
-                            "root": "MuiPrivateSwipeArea-root-164",
+                            "anchorBottom": "MuiPrivateSwipeArea-anchorBottom-169",
+                            "anchorLeft": "MuiPrivateSwipeArea-anchorLeft-166",
+                            "anchorRight": "MuiPrivateSwipeArea-anchorRight-167",
+                            "anchorTop": "MuiPrivateSwipeArea-anchorTop-168",
+                            "root": "MuiPrivateSwipeArea-root-165",
                           }
                         }
                         width={20}
                       >
                         <div
-                          className="MuiPrivateSwipeArea-root-164 MuiPrivateSwipeArea-anchorRight-166"
+                          className="MuiPrivateSwipeArea-root-165 MuiPrivateSwipeArea-anchorRight-167"
                           style={
                             Object {
                               "width": 20,
@@ -3149,10 +3151,10 @@ exports[`should match snapshot: SettingsNotification/nomal 1`] = `
               <List
                 classes={
                   Object {
-                    "dense": "MuiList-dense-137",
-                    "padding": "MuiList-padding-136",
-                    "root": "MuiList-root-135",
-                    "subheader": "MuiList-subheader-138",
+                    "dense": "MuiList-dense-138",
+                    "padding": "MuiList-padding-137",
+                    "root": "MuiList-root-136",
+                    "subheader": "MuiList-subheader-139",
                   }
                 }
                 component="ul"
@@ -3160,7 +3162,7 @@ exports[`should match snapshot: SettingsNotification/nomal 1`] = `
                 disablePadding={false}
               >
                 <ul
-                  className="MuiList-root-135 MuiList-padding-136"
+                  className="MuiList-root-136 MuiList-padding-137"
                 >
                   <ListItemUtil
                     checkbox={false}
@@ -3178,18 +3180,18 @@ exports[`should match snapshot: SettingsNotification/nomal 1`] = `
                         button={false}
                         classes={
                           Object {
-                            "alignItemsFlexStart": "MuiListItem-alignItemsFlexStart-144",
-                            "button": "MuiListItem-button-148",
-                            "container": "MuiListItem-container-140",
-                            "default": "MuiListItem-default-142",
-                            "dense": "MuiListItem-dense-143",
-                            "disabled": "MuiListItem-disabled-145",
-                            "divider": "MuiListItem-divider-146",
-                            "focusVisible": "MuiListItem-focusVisible-141",
-                            "gutters": "MuiListItem-gutters-147",
-                            "root": "MuiListItem-root-139",
-                            "secondaryAction": "MuiListItem-secondaryAction-149",
-                            "selected": "MuiListItem-selected-150",
+                            "alignItemsFlexStart": "MuiListItem-alignItemsFlexStart-145",
+                            "button": "MuiListItem-button-149",
+                            "container": "MuiListItem-container-141",
+                            "default": "MuiListItem-default-143",
+                            "dense": "MuiListItem-dense-144",
+                            "disabled": "MuiListItem-disabled-146",
+                            "divider": "MuiListItem-divider-147",
+                            "focusVisible": "MuiListItem-focusVisible-142",
+                            "gutters": "MuiListItem-gutters-148",
+                            "root": "MuiListItem-root-140",
+                            "secondaryAction": "MuiListItem-secondaryAction-150",
+                            "selected": "MuiListItem-selected-151",
                           }
                         }
                         dense={false}
@@ -3203,7 +3205,7 @@ exports[`should match snapshot: SettingsNotification/nomal 1`] = `
                           dense={false}
                         >
                           <li
-                            className="MuiListItem-root-139 MuiListItem-default-142 MuiListItem-gutters-147"
+                            className="MuiListItem-root-140 MuiListItem-default-143 MuiListItem-gutters-148"
                             disabled={false}
                           >
                             <WithStyles(ListItemText)
@@ -3214,12 +3216,12 @@ exports[`should match snapshot: SettingsNotification/nomal 1`] = `
                               <ListItemText
                                 classes={
                                   Object {
-                                    "dense": "MuiListItemText-dense-153",
-                                    "inset": "MuiListItemText-inset-152",
-                                    "primary": "MuiListItemText-primary-154",
-                                    "root": "MuiListItemText-root-151",
-                                    "secondary": "MuiListItemText-secondary-155",
-                                    "textDense": "MuiListItemText-textDense-156",
+                                    "dense": "MuiListItemText-dense-154",
+                                    "inset": "MuiListItemText-inset-153",
+                                    "primary": "MuiListItemText-primary-155",
+                                    "root": "MuiListItemText-root-152",
+                                    "secondary": "MuiListItemText-secondary-156",
+                                    "textDense": "MuiListItemText-textDense-157",
                                   }
                                 }
                                 disableTypography={false}
@@ -3424,7 +3426,7 @@ exports[`should match snapshot: SettingsNotification/nomal 1`] = `
                                         "fontSize": "0.875rem",
                                         "fontWeight": 500,
                                         "letterSpacing": "0.02857em",
-                                        "lineHeight": 1.3125,
+                                        "lineHeight": 1.75,
                                         "textTransform": "uppercase",
                                       },
                                       "caption": Object {
@@ -3590,16 +3592,16 @@ exports[`should match snapshot: SettingsNotification/nomal 1`] = `
                                 }
                               >
                                 <div
-                                  className="MuiListItemText-root-151"
+                                  className="MuiListItemText-root-152"
                                 >
                                   <WithStyles(Typography)
-                                    className="MuiListItemText-primary-154"
+                                    className="MuiListItemText-primary-155"
                                     component="span"
                                     variant="subheading"
                                   >
                                     <Typography
                                       align="inherit"
-                                      className="MuiListItemText-primary-154"
+                                      className="MuiListItemText-primary-155"
                                       classes={
                                         Object {
                                           "alignCenter": "MuiTypography-alignCenter-83",
@@ -3628,6 +3630,7 @@ exports[`should match snapshot: SettingsNotification/nomal 1`] = `
                                           "h5": "MuiTypography-h5-76",
                                           "h6": "MuiTypography-h6-77",
                                           "headline": "MuiTypography-headline-65",
+                                          "inline": "MuiTypography-inline-95",
                                           "noWrap": "MuiTypography-noWrap-86",
                                           "overline": "MuiTypography-overline-80",
                                           "paragraph": "MuiTypography-paragraph-88",
@@ -3663,6 +3666,7 @@ exports[`should match snapshot: SettingsNotification/nomal 1`] = `
                                           "title": "h2",
                                         }
                                       }
+                                      inline={false}
                                       noWrap={false}
                                       paragraph={false}
                                       theme={
@@ -3863,7 +3867,7 @@ exports[`should match snapshot: SettingsNotification/nomal 1`] = `
                                               "fontSize": "0.875rem",
                                               "fontWeight": 500,
                                               "letterSpacing": "0.02857em",
-                                              "lineHeight": 1.3125,
+                                              "lineHeight": 1.75,
                                               "textTransform": "uppercase",
                                             },
                                             "caption": Object {
@@ -4030,19 +4034,19 @@ exports[`should match snapshot: SettingsNotification/nomal 1`] = `
                                       variant="subheading"
                                     >
                                       <span
-                                        className="MuiTypography-root-60 MuiTypography-subheading-67 MuiListItemText-primary-154"
+                                        className="MuiTypography-root-60 MuiTypography-subheading-67 MuiListItemText-primary-155"
                                       >
                                         権限がありません
                                       </span>
                                     </Typography>
                                   </WithStyles(Typography)>
                                   <WithStyles(Typography)
-                                    className="MuiListItemText-secondary-155"
+                                    className="MuiListItemText-secondary-156"
                                     color="textSecondary"
                                   >
                                     <Typography
                                       align="inherit"
-                                      className="MuiListItemText-secondary-155"
+                                      className="MuiListItemText-secondary-156"
                                       classes={
                                         Object {
                                           "alignCenter": "MuiTypography-alignCenter-83",
@@ -4071,6 +4075,7 @@ exports[`should match snapshot: SettingsNotification/nomal 1`] = `
                                           "h5": "MuiTypography-h5-76",
                                           "h6": "MuiTypography-h6-77",
                                           "headline": "MuiTypography-headline-65",
+                                          "inline": "MuiTypography-inline-95",
                                           "noWrap": "MuiTypography-noWrap-86",
                                           "overline": "MuiTypography-overline-80",
                                           "paragraph": "MuiTypography-paragraph-88",
@@ -4105,6 +4110,7 @@ exports[`should match snapshot: SettingsNotification/nomal 1`] = `
                                           "title": "h2",
                                         }
                                       }
+                                      inline={false}
                                       noWrap={false}
                                       paragraph={false}
                                       theme={
@@ -4305,7 +4311,7 @@ exports[`should match snapshot: SettingsNotification/nomal 1`] = `
                                               "fontSize": "0.875rem",
                                               "fontWeight": 500,
                                               "letterSpacing": "0.02857em",
-                                              "lineHeight": 1.3125,
+                                              "lineHeight": 1.75,
                                               "textTransform": "uppercase",
                                             },
                                             "caption": Object {
@@ -4471,7 +4477,7 @@ exports[`should match snapshot: SettingsNotification/nomal 1`] = `
                                       }
                                     >
                                       <p
-                                        className="MuiTypography-root-60 MuiTypography-body1-69 MuiTypography-colorTextSecondary-93 MuiListItemText-secondary-155"
+                                        className="MuiTypography-root-60 MuiTypography-body1-69 MuiTypography-colorTextSecondary-93 MuiListItemText-secondary-156"
                                       >
                                         プッシュ通知の受信が拒否されています。ブラウザの設定を確認して下さい。
                                       </p>

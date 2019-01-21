@@ -464,6 +464,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                     "h5": "MuiTypography-h5-26",
                                     "h6": "MuiTypography-h6-27",
                                     "headline": "MuiTypography-headline-15",
+                                    "inline": "MuiTypography-inline-45",
                                     "noWrap": "MuiTypography-noWrap-36",
                                     "overline": "MuiTypography-overline-30",
                                     "paragraph": "MuiTypography-paragraph-38",
@@ -498,6 +499,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                     "title": "h2",
                                   }
                                 }
+                                inline={false}
                                 noWrap={false}
                                 paragraph={false}
                                 theme={
@@ -698,7 +700,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                         "fontSize": "0.875rem",
                                         "fontWeight": 500,
                                         "letterSpacing": "0.02857em",
-                                        "lineHeight": 1.3125,
+                                        "lineHeight": 1.75,
                                         "textTransform": "uppercase",
                                       },
                                       "caption": Object {
@@ -1022,8 +1024,8 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                               <CustomCard
                                 classes={
                                   Object {
-                                    "card": "CustomCard-card-45",
-                                    "expand": "CustomCard-expand-46",
+                                    "card": "CustomCard-card-46",
+                                    "expand": "CustomCard-expand-47",
                                   }
                                 }
                                 expand={true}
@@ -1036,42 +1038,42 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                 url="/tweets?hashtag=undefined"
                               >
                                 <WithStyles(Button)
-                                  className="CustomCard-card-45 CustomCard-expand-46"
+                                  className="CustomCard-card-46 CustomCard-expand-47"
                                   disableRipple={true}
                                   fullWidth={true}
                                   onClick={[Function]}
                                   variant="contained"
                                 >
                                   <Button
-                                    className="CustomCard-card-45 CustomCard-expand-46"
+                                    className="CustomCard-card-46 CustomCard-expand-47"
                                     classes={
                                       Object {
-                                        "colorInherit": "MuiButton-colorInherit-68",
-                                        "contained": "MuiButton-contained-58",
-                                        "containedPrimary": "MuiButton-containedPrimary-59",
-                                        "containedSecondary": "MuiButton-containedSecondary-60",
-                                        "disabled": "MuiButton-disabled-67",
-                                        "extendedFab": "MuiButton-extendedFab-65",
-                                        "fab": "MuiButton-fab-64",
-                                        "flat": "MuiButton-flat-52",
-                                        "flatPrimary": "MuiButton-flatPrimary-53",
-                                        "flatSecondary": "MuiButton-flatSecondary-54",
-                                        "focusVisible": "MuiButton-focusVisible-66",
-                                        "fullWidth": "MuiButton-fullWidth-72",
-                                        "label": "MuiButton-label-48",
-                                        "mini": "MuiButton-mini-69",
-                                        "outlined": "MuiButton-outlined-55",
-                                        "outlinedPrimary": "MuiButton-outlinedPrimary-56",
-                                        "outlinedSecondary": "MuiButton-outlinedSecondary-57",
-                                        "raised": "MuiButton-raised-61",
-                                        "raisedPrimary": "MuiButton-raisedPrimary-62",
-                                        "raisedSecondary": "MuiButton-raisedSecondary-63",
-                                        "root": "MuiButton-root-47",
-                                        "sizeLarge": "MuiButton-sizeLarge-71",
-                                        "sizeSmall": "MuiButton-sizeSmall-70",
-                                        "text": "MuiButton-text-49",
-                                        "textPrimary": "MuiButton-textPrimary-50",
-                                        "textSecondary": "MuiButton-textSecondary-51",
+                                        "colorInherit": "MuiButton-colorInherit-69",
+                                        "contained": "MuiButton-contained-59",
+                                        "containedPrimary": "MuiButton-containedPrimary-60",
+                                        "containedSecondary": "MuiButton-containedSecondary-61",
+                                        "disabled": "MuiButton-disabled-68",
+                                        "extendedFab": "MuiButton-extendedFab-66",
+                                        "fab": "MuiButton-fab-65",
+                                        "flat": "MuiButton-flat-53",
+                                        "flatPrimary": "MuiButton-flatPrimary-54",
+                                        "flatSecondary": "MuiButton-flatSecondary-55",
+                                        "focusVisible": "MuiButton-focusVisible-67",
+                                        "fullWidth": "MuiButton-fullWidth-73",
+                                        "label": "MuiButton-label-49",
+                                        "mini": "MuiButton-mini-70",
+                                        "outlined": "MuiButton-outlined-56",
+                                        "outlinedPrimary": "MuiButton-outlinedPrimary-57",
+                                        "outlinedSecondary": "MuiButton-outlinedSecondary-58",
+                                        "raised": "MuiButton-raised-62",
+                                        "raisedPrimary": "MuiButton-raisedPrimary-63",
+                                        "raisedSecondary": "MuiButton-raisedSecondary-64",
+                                        "root": "MuiButton-root-48",
+                                        "sizeLarge": "MuiButton-sizeLarge-72",
+                                        "sizeSmall": "MuiButton-sizeSmall-71",
+                                        "text": "MuiButton-text-50",
+                                        "textPrimary": "MuiButton-textPrimary-51",
+                                        "textSecondary": "MuiButton-textSecondary-52",
                                       }
                                     }
                                     color="default"
@@ -1087,23 +1089,23 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                     variant="contained"
                                   >
                                     <WithStyles(ButtonBase)
-                                      className="MuiButton-root-47 MuiButton-contained-58 MuiButton-raised-61 MuiButton-fullWidth-72 CustomCard-card-45 CustomCard-expand-46"
+                                      className="MuiButton-root-48 MuiButton-contained-59 MuiButton-raised-62 MuiButton-fullWidth-73 CustomCard-card-46 CustomCard-expand-47"
                                       component="button"
                                       disableRipple={true}
                                       disabled={false}
                                       focusRipple={true}
-                                      focusVisibleClassName="MuiButton-focusVisible-66"
+                                      focusVisibleClassName="MuiButton-focusVisible-67"
                                       onClick={[Function]}
                                       type="button"
                                     >
                                       <ButtonBase
                                         centerRipple={false}
-                                        className="MuiButton-root-47 MuiButton-contained-58 MuiButton-raised-61 MuiButton-fullWidth-72 CustomCard-card-45 CustomCard-expand-46"
+                                        className="MuiButton-root-48 MuiButton-contained-59 MuiButton-raised-62 MuiButton-fullWidth-73 CustomCard-card-46 CustomCard-expand-47"
                                         classes={
                                           Object {
-                                            "disabled": "MuiButtonBase-disabled-74",
-                                            "focusVisible": "MuiButtonBase-focusVisible-75",
-                                            "root": "MuiButtonBase-root-73",
+                                            "disabled": "MuiButtonBase-disabled-75",
+                                            "focusVisible": "MuiButtonBase-focusVisible-76",
+                                            "root": "MuiButtonBase-root-74",
                                           }
                                         }
                                         component="button"
@@ -1111,13 +1113,13 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                         disableTouchRipple={false}
                                         disabled={false}
                                         focusRipple={true}
-                                        focusVisibleClassName="MuiButton-focusVisible-66"
+                                        focusVisibleClassName="MuiButton-focusVisible-67"
                                         onClick={[Function]}
                                         tabIndex="0"
                                         type="button"
                                       >
                                         <button
-                                          className="MuiButtonBase-root-73 MuiButton-root-47 MuiButton-contained-58 MuiButton-raised-61 MuiButton-fullWidth-72 CustomCard-card-45 CustomCard-expand-46"
+                                          className="MuiButtonBase-root-74 MuiButton-root-48 MuiButton-contained-59 MuiButton-raised-62 MuiButton-fullWidth-73 CustomCard-card-46 CustomCard-expand-47"
                                           disabled={false}
                                           onBlur={[Function]}
                                           onClick={[Function]}
@@ -1135,7 +1137,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                           type="button"
                                         >
                                           <span
-                                            className="MuiButton-label-48"
+                                            className="MuiButton-label-49"
                                           >
                                             <styled.div>
                                               <StyledComponent
@@ -1202,6 +1204,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "h5": "MuiTypography-h5-26",
                                                           "h6": "MuiTypography-h6-27",
                                                           "headline": "MuiTypography-headline-15",
+                                                          "inline": "MuiTypography-inline-45",
                                                           "noWrap": "MuiTypography-noWrap-36",
                                                           "overline": "MuiTypography-overline-30",
                                                           "paragraph": "MuiTypography-paragraph-38",
@@ -1236,6 +1239,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "title": "h2",
                                                         }
                                                       }
+                                                      inline={false}
                                                       noWrap={true}
                                                       paragraph={false}
                                                       theme={
@@ -1436,7 +1440,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                               "fontSize": "0.875rem",
                                                               "fontWeight": 500,
                                                               "letterSpacing": "0.02857em",
-                                                              "lineHeight": 1.3125,
+                                                              "lineHeight": 1.75,
                                                               "textTransform": "uppercase",
                                                             },
                                                             "caption": Object {
@@ -1642,6 +1646,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "h5": "MuiTypography-h5-26",
                                                           "h6": "MuiTypography-h6-27",
                                                           "headline": "MuiTypography-headline-15",
+                                                          "inline": "MuiTypography-inline-45",
                                                           "noWrap": "MuiTypography-noWrap-36",
                                                           "overline": "MuiTypography-overline-30",
                                                           "paragraph": "MuiTypography-paragraph-38",
@@ -1676,6 +1681,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "title": "h2",
                                                         }
                                                       }
+                                                      inline={false}
                                                       noWrap={true}
                                                       paragraph={false}
                                                       theme={
@@ -1876,7 +1882,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                               "fontSize": "0.875rem",
                                                               "fontWeight": 500,
                                                               "letterSpacing": "0.02857em",
-                                                              "lineHeight": 1.3125,
+                                                              "lineHeight": 1.75,
                                                               "textTransform": "uppercase",
                                                             },
                                                             "caption": Object {
@@ -2081,6 +2087,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "h5": "MuiTypography-h5-26",
                                                           "h6": "MuiTypography-h6-27",
                                                           "headline": "MuiTypography-headline-15",
+                                                          "inline": "MuiTypography-inline-45",
                                                           "noWrap": "MuiTypography-noWrap-36",
                                                           "overline": "MuiTypography-overline-30",
                                                           "paragraph": "MuiTypography-paragraph-38",
@@ -2115,6 +2122,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "title": "h2",
                                                         }
                                                       }
+                                                      inline={false}
                                                       noWrap={true}
                                                       paragraph={false}
                                                       theme={
@@ -2315,7 +2323,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                               "fontSize": "0.875rem",
                                                               "fontWeight": 500,
                                                               "letterSpacing": "0.02857em",
-                                                              "lineHeight": 1.3125,
+                                                              "lineHeight": 1.75,
                                                               "textTransform": "uppercase",
                                                             },
                                                             "caption": Object {
@@ -2520,6 +2528,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "h5": "MuiTypography-h5-26",
                                                           "h6": "MuiTypography-h6-27",
                                                           "headline": "MuiTypography-headline-15",
+                                                          "inline": "MuiTypography-inline-45",
                                                           "noWrap": "MuiTypography-noWrap-36",
                                                           "overline": "MuiTypography-overline-30",
                                                           "paragraph": "MuiTypography-paragraph-38",
@@ -2554,6 +2563,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "title": "h2",
                                                         }
                                                       }
+                                                      inline={false}
                                                       noWrap={true}
                                                       paragraph={false}
                                                       theme={
@@ -2754,7 +2764,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                               "fontSize": "0.875rem",
                                                               "fontWeight": 500,
                                                               "letterSpacing": "0.02857em",
-                                                              "lineHeight": 1.3125,
+                                                              "lineHeight": 1.75,
                                                               "textTransform": "uppercase",
                                                             },
                                                             "caption": Object {
@@ -2956,11 +2966,11 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
         absolute={false}
         classes={
           Object {
-            "absolute": "MuiDivider-absolute-77",
-            "inset": "MuiDivider-inset-78",
-            "light": "MuiDivider-light-79",
-            "middle": "MuiDivider-middle-80",
-            "root": "MuiDivider-root-76",
+            "absolute": "MuiDivider-absolute-78",
+            "inset": "MuiDivider-inset-79",
+            "light": "MuiDivider-light-80",
+            "middle": "MuiDivider-middle-81",
+            "root": "MuiDivider-root-77",
           }
         }
         component="hr"
@@ -2968,7 +2978,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
         variant="fullWidth"
       >
         <hr
-          className="MuiDivider-root-76 MuiDivider-light-79"
+          className="MuiDivider-root-77 MuiDivider-light-80"
         />
       </Divider>
     </WithStyles(Divider)>
@@ -3165,6 +3175,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                     "h5": "MuiTypography-h5-26",
                                     "h6": "MuiTypography-h6-27",
                                     "headline": "MuiTypography-headline-15",
+                                    "inline": "MuiTypography-inline-45",
                                     "noWrap": "MuiTypography-noWrap-36",
                                     "overline": "MuiTypography-overline-30",
                                     "paragraph": "MuiTypography-paragraph-38",
@@ -3199,6 +3210,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                     "title": "h2",
                                   }
                                 }
+                                inline={false}
                                 noWrap={false}
                                 paragraph={false}
                                 theme={
@@ -3399,7 +3411,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                         "fontSize": "0.875rem",
                                         "fontWeight": 500,
                                         "letterSpacing": "0.02857em",
-                                        "lineHeight": 1.3125,
+                                        "lineHeight": 1.75,
                                         "textTransform": "uppercase",
                                       },
                                       "caption": Object {
@@ -3723,8 +3735,8 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                               <CustomCard
                                 classes={
                                   Object {
-                                    "card": "CustomCard-card-45",
-                                    "expand": "CustomCard-expand-46",
+                                    "card": "CustomCard-card-46",
+                                    "expand": "CustomCard-expand-47",
                                   }
                                 }
                                 expand={true}
@@ -3737,42 +3749,42 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                 url="/tweets?hashtag=undefined"
                               >
                                 <WithStyles(Button)
-                                  className="CustomCard-card-45 CustomCard-expand-46"
+                                  className="CustomCard-card-46 CustomCard-expand-47"
                                   disableRipple={true}
                                   fullWidth={true}
                                   onClick={[Function]}
                                   variant="contained"
                                 >
                                   <Button
-                                    className="CustomCard-card-45 CustomCard-expand-46"
+                                    className="CustomCard-card-46 CustomCard-expand-47"
                                     classes={
                                       Object {
-                                        "colorInherit": "MuiButton-colorInherit-68",
-                                        "contained": "MuiButton-contained-58",
-                                        "containedPrimary": "MuiButton-containedPrimary-59",
-                                        "containedSecondary": "MuiButton-containedSecondary-60",
-                                        "disabled": "MuiButton-disabled-67",
-                                        "extendedFab": "MuiButton-extendedFab-65",
-                                        "fab": "MuiButton-fab-64",
-                                        "flat": "MuiButton-flat-52",
-                                        "flatPrimary": "MuiButton-flatPrimary-53",
-                                        "flatSecondary": "MuiButton-flatSecondary-54",
-                                        "focusVisible": "MuiButton-focusVisible-66",
-                                        "fullWidth": "MuiButton-fullWidth-72",
-                                        "label": "MuiButton-label-48",
-                                        "mini": "MuiButton-mini-69",
-                                        "outlined": "MuiButton-outlined-55",
-                                        "outlinedPrimary": "MuiButton-outlinedPrimary-56",
-                                        "outlinedSecondary": "MuiButton-outlinedSecondary-57",
-                                        "raised": "MuiButton-raised-61",
-                                        "raisedPrimary": "MuiButton-raisedPrimary-62",
-                                        "raisedSecondary": "MuiButton-raisedSecondary-63",
-                                        "root": "MuiButton-root-47",
-                                        "sizeLarge": "MuiButton-sizeLarge-71",
-                                        "sizeSmall": "MuiButton-sizeSmall-70",
-                                        "text": "MuiButton-text-49",
-                                        "textPrimary": "MuiButton-textPrimary-50",
-                                        "textSecondary": "MuiButton-textSecondary-51",
+                                        "colorInherit": "MuiButton-colorInherit-69",
+                                        "contained": "MuiButton-contained-59",
+                                        "containedPrimary": "MuiButton-containedPrimary-60",
+                                        "containedSecondary": "MuiButton-containedSecondary-61",
+                                        "disabled": "MuiButton-disabled-68",
+                                        "extendedFab": "MuiButton-extendedFab-66",
+                                        "fab": "MuiButton-fab-65",
+                                        "flat": "MuiButton-flat-53",
+                                        "flatPrimary": "MuiButton-flatPrimary-54",
+                                        "flatSecondary": "MuiButton-flatSecondary-55",
+                                        "focusVisible": "MuiButton-focusVisible-67",
+                                        "fullWidth": "MuiButton-fullWidth-73",
+                                        "label": "MuiButton-label-49",
+                                        "mini": "MuiButton-mini-70",
+                                        "outlined": "MuiButton-outlined-56",
+                                        "outlinedPrimary": "MuiButton-outlinedPrimary-57",
+                                        "outlinedSecondary": "MuiButton-outlinedSecondary-58",
+                                        "raised": "MuiButton-raised-62",
+                                        "raisedPrimary": "MuiButton-raisedPrimary-63",
+                                        "raisedSecondary": "MuiButton-raisedSecondary-64",
+                                        "root": "MuiButton-root-48",
+                                        "sizeLarge": "MuiButton-sizeLarge-72",
+                                        "sizeSmall": "MuiButton-sizeSmall-71",
+                                        "text": "MuiButton-text-50",
+                                        "textPrimary": "MuiButton-textPrimary-51",
+                                        "textSecondary": "MuiButton-textSecondary-52",
                                       }
                                     }
                                     color="default"
@@ -3788,23 +3800,23 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                     variant="contained"
                                   >
                                     <WithStyles(ButtonBase)
-                                      className="MuiButton-root-47 MuiButton-contained-58 MuiButton-raised-61 MuiButton-fullWidth-72 CustomCard-card-45 CustomCard-expand-46"
+                                      className="MuiButton-root-48 MuiButton-contained-59 MuiButton-raised-62 MuiButton-fullWidth-73 CustomCard-card-46 CustomCard-expand-47"
                                       component="button"
                                       disableRipple={true}
                                       disabled={false}
                                       focusRipple={true}
-                                      focusVisibleClassName="MuiButton-focusVisible-66"
+                                      focusVisibleClassName="MuiButton-focusVisible-67"
                                       onClick={[Function]}
                                       type="button"
                                     >
                                       <ButtonBase
                                         centerRipple={false}
-                                        className="MuiButton-root-47 MuiButton-contained-58 MuiButton-raised-61 MuiButton-fullWidth-72 CustomCard-card-45 CustomCard-expand-46"
+                                        className="MuiButton-root-48 MuiButton-contained-59 MuiButton-raised-62 MuiButton-fullWidth-73 CustomCard-card-46 CustomCard-expand-47"
                                         classes={
                                           Object {
-                                            "disabled": "MuiButtonBase-disabled-74",
-                                            "focusVisible": "MuiButtonBase-focusVisible-75",
-                                            "root": "MuiButtonBase-root-73",
+                                            "disabled": "MuiButtonBase-disabled-75",
+                                            "focusVisible": "MuiButtonBase-focusVisible-76",
+                                            "root": "MuiButtonBase-root-74",
                                           }
                                         }
                                         component="button"
@@ -3812,13 +3824,13 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                         disableTouchRipple={false}
                                         disabled={false}
                                         focusRipple={true}
-                                        focusVisibleClassName="MuiButton-focusVisible-66"
+                                        focusVisibleClassName="MuiButton-focusVisible-67"
                                         onClick={[Function]}
                                         tabIndex="0"
                                         type="button"
                                       >
                                         <button
-                                          className="MuiButtonBase-root-73 MuiButton-root-47 MuiButton-contained-58 MuiButton-raised-61 MuiButton-fullWidth-72 CustomCard-card-45 CustomCard-expand-46"
+                                          className="MuiButtonBase-root-74 MuiButton-root-48 MuiButton-contained-59 MuiButton-raised-62 MuiButton-fullWidth-73 CustomCard-card-46 CustomCard-expand-47"
                                           disabled={false}
                                           onBlur={[Function]}
                                           onClick={[Function]}
@@ -3836,7 +3848,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                           type="button"
                                         >
                                           <span
-                                            className="MuiButton-label-48"
+                                            className="MuiButton-label-49"
                                           >
                                             <styled.div>
                                               <StyledComponent
@@ -3903,6 +3915,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "h5": "MuiTypography-h5-26",
                                                           "h6": "MuiTypography-h6-27",
                                                           "headline": "MuiTypography-headline-15",
+                                                          "inline": "MuiTypography-inline-45",
                                                           "noWrap": "MuiTypography-noWrap-36",
                                                           "overline": "MuiTypography-overline-30",
                                                           "paragraph": "MuiTypography-paragraph-38",
@@ -3937,6 +3950,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "title": "h2",
                                                         }
                                                       }
+                                                      inline={false}
                                                       noWrap={true}
                                                       paragraph={false}
                                                       theme={
@@ -4137,7 +4151,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                               "fontSize": "0.875rem",
                                                               "fontWeight": 500,
                                                               "letterSpacing": "0.02857em",
-                                                              "lineHeight": 1.3125,
+                                                              "lineHeight": 1.75,
                                                               "textTransform": "uppercase",
                                                             },
                                                             "caption": Object {
@@ -4343,6 +4357,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "h5": "MuiTypography-h5-26",
                                                           "h6": "MuiTypography-h6-27",
                                                           "headline": "MuiTypography-headline-15",
+                                                          "inline": "MuiTypography-inline-45",
                                                           "noWrap": "MuiTypography-noWrap-36",
                                                           "overline": "MuiTypography-overline-30",
                                                           "paragraph": "MuiTypography-paragraph-38",
@@ -4377,6 +4392,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "title": "h2",
                                                         }
                                                       }
+                                                      inline={false}
                                                       noWrap={true}
                                                       paragraph={false}
                                                       theme={
@@ -4577,7 +4593,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                               "fontSize": "0.875rem",
                                                               "fontWeight": 500,
                                                               "letterSpacing": "0.02857em",
-                                                              "lineHeight": 1.3125,
+                                                              "lineHeight": 1.75,
                                                               "textTransform": "uppercase",
                                                             },
                                                             "caption": Object {
@@ -4782,6 +4798,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "h5": "MuiTypography-h5-26",
                                                           "h6": "MuiTypography-h6-27",
                                                           "headline": "MuiTypography-headline-15",
+                                                          "inline": "MuiTypography-inline-45",
                                                           "noWrap": "MuiTypography-noWrap-36",
                                                           "overline": "MuiTypography-overline-30",
                                                           "paragraph": "MuiTypography-paragraph-38",
@@ -4816,6 +4833,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "title": "h2",
                                                         }
                                                       }
+                                                      inline={false}
                                                       noWrap={true}
                                                       paragraph={false}
                                                       theme={
@@ -5016,7 +5034,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                               "fontSize": "0.875rem",
                                                               "fontWeight": 500,
                                                               "letterSpacing": "0.02857em",
-                                                              "lineHeight": 1.3125,
+                                                              "lineHeight": 1.75,
                                                               "textTransform": "uppercase",
                                                             },
                                                             "caption": Object {
@@ -5221,6 +5239,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "h5": "MuiTypography-h5-26",
                                                           "h6": "MuiTypography-h6-27",
                                                           "headline": "MuiTypography-headline-15",
+                                                          "inline": "MuiTypography-inline-45",
                                                           "noWrap": "MuiTypography-noWrap-36",
                                                           "overline": "MuiTypography-overline-30",
                                                           "paragraph": "MuiTypography-paragraph-38",
@@ -5255,6 +5274,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "title": "h2",
                                                         }
                                                       }
+                                                      inline={false}
                                                       noWrap={true}
                                                       paragraph={false}
                                                       theme={
@@ -5455,7 +5475,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                               "fontSize": "0.875rem",
                                                               "fontWeight": 500,
                                                               "letterSpacing": "0.02857em",
-                                                              "lineHeight": 1.3125,
+                                                              "lineHeight": 1.75,
                                                               "textTransform": "uppercase",
                                                             },
                                                             "caption": Object {
@@ -5657,11 +5677,11 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
         absolute={false}
         classes={
           Object {
-            "absolute": "MuiDivider-absolute-77",
-            "inset": "MuiDivider-inset-78",
-            "light": "MuiDivider-light-79",
-            "middle": "MuiDivider-middle-80",
-            "root": "MuiDivider-root-76",
+            "absolute": "MuiDivider-absolute-78",
+            "inset": "MuiDivider-inset-79",
+            "light": "MuiDivider-light-80",
+            "middle": "MuiDivider-middle-81",
+            "root": "MuiDivider-root-77",
           }
         }
         component="hr"
@@ -5669,7 +5689,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
         variant="fullWidth"
       >
         <hr
-          className="MuiDivider-root-76 MuiDivider-light-79"
+          className="MuiDivider-root-77 MuiDivider-light-80"
         />
       </Divider>
     </WithStyles(Divider)>
@@ -5866,6 +5886,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                     "h5": "MuiTypography-h5-26",
                                     "h6": "MuiTypography-h6-27",
                                     "headline": "MuiTypography-headline-15",
+                                    "inline": "MuiTypography-inline-45",
                                     "noWrap": "MuiTypography-noWrap-36",
                                     "overline": "MuiTypography-overline-30",
                                     "paragraph": "MuiTypography-paragraph-38",
@@ -5900,6 +5921,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                     "title": "h2",
                                   }
                                 }
+                                inline={false}
                                 noWrap={false}
                                 paragraph={false}
                                 theme={
@@ -6100,7 +6122,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                         "fontSize": "0.875rem",
                                         "fontWeight": 500,
                                         "letterSpacing": "0.02857em",
-                                        "lineHeight": 1.3125,
+                                        "lineHeight": 1.75,
                                         "textTransform": "uppercase",
                                       },
                                       "caption": Object {
@@ -6424,8 +6446,8 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                               <CustomCard
                                 classes={
                                   Object {
-                                    "card": "CustomCard-card-45",
-                                    "expand": "CustomCard-expand-46",
+                                    "card": "CustomCard-card-46",
+                                    "expand": "CustomCard-expand-47",
                                   }
                                 }
                                 expand={true}
@@ -6438,42 +6460,42 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                 url="/tweets?hashtag=undefined"
                               >
                                 <WithStyles(Button)
-                                  className="CustomCard-card-45 CustomCard-expand-46"
+                                  className="CustomCard-card-46 CustomCard-expand-47"
                                   disableRipple={true}
                                   fullWidth={true}
                                   onClick={[Function]}
                                   variant="contained"
                                 >
                                   <Button
-                                    className="CustomCard-card-45 CustomCard-expand-46"
+                                    className="CustomCard-card-46 CustomCard-expand-47"
                                     classes={
                                       Object {
-                                        "colorInherit": "MuiButton-colorInherit-68",
-                                        "contained": "MuiButton-contained-58",
-                                        "containedPrimary": "MuiButton-containedPrimary-59",
-                                        "containedSecondary": "MuiButton-containedSecondary-60",
-                                        "disabled": "MuiButton-disabled-67",
-                                        "extendedFab": "MuiButton-extendedFab-65",
-                                        "fab": "MuiButton-fab-64",
-                                        "flat": "MuiButton-flat-52",
-                                        "flatPrimary": "MuiButton-flatPrimary-53",
-                                        "flatSecondary": "MuiButton-flatSecondary-54",
-                                        "focusVisible": "MuiButton-focusVisible-66",
-                                        "fullWidth": "MuiButton-fullWidth-72",
-                                        "label": "MuiButton-label-48",
-                                        "mini": "MuiButton-mini-69",
-                                        "outlined": "MuiButton-outlined-55",
-                                        "outlinedPrimary": "MuiButton-outlinedPrimary-56",
-                                        "outlinedSecondary": "MuiButton-outlinedSecondary-57",
-                                        "raised": "MuiButton-raised-61",
-                                        "raisedPrimary": "MuiButton-raisedPrimary-62",
-                                        "raisedSecondary": "MuiButton-raisedSecondary-63",
-                                        "root": "MuiButton-root-47",
-                                        "sizeLarge": "MuiButton-sizeLarge-71",
-                                        "sizeSmall": "MuiButton-sizeSmall-70",
-                                        "text": "MuiButton-text-49",
-                                        "textPrimary": "MuiButton-textPrimary-50",
-                                        "textSecondary": "MuiButton-textSecondary-51",
+                                        "colorInherit": "MuiButton-colorInherit-69",
+                                        "contained": "MuiButton-contained-59",
+                                        "containedPrimary": "MuiButton-containedPrimary-60",
+                                        "containedSecondary": "MuiButton-containedSecondary-61",
+                                        "disabled": "MuiButton-disabled-68",
+                                        "extendedFab": "MuiButton-extendedFab-66",
+                                        "fab": "MuiButton-fab-65",
+                                        "flat": "MuiButton-flat-53",
+                                        "flatPrimary": "MuiButton-flatPrimary-54",
+                                        "flatSecondary": "MuiButton-flatSecondary-55",
+                                        "focusVisible": "MuiButton-focusVisible-67",
+                                        "fullWidth": "MuiButton-fullWidth-73",
+                                        "label": "MuiButton-label-49",
+                                        "mini": "MuiButton-mini-70",
+                                        "outlined": "MuiButton-outlined-56",
+                                        "outlinedPrimary": "MuiButton-outlinedPrimary-57",
+                                        "outlinedSecondary": "MuiButton-outlinedSecondary-58",
+                                        "raised": "MuiButton-raised-62",
+                                        "raisedPrimary": "MuiButton-raisedPrimary-63",
+                                        "raisedSecondary": "MuiButton-raisedSecondary-64",
+                                        "root": "MuiButton-root-48",
+                                        "sizeLarge": "MuiButton-sizeLarge-72",
+                                        "sizeSmall": "MuiButton-sizeSmall-71",
+                                        "text": "MuiButton-text-50",
+                                        "textPrimary": "MuiButton-textPrimary-51",
+                                        "textSecondary": "MuiButton-textSecondary-52",
                                       }
                                     }
                                     color="default"
@@ -6489,23 +6511,23 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                     variant="contained"
                                   >
                                     <WithStyles(ButtonBase)
-                                      className="MuiButton-root-47 MuiButton-contained-58 MuiButton-raised-61 MuiButton-fullWidth-72 CustomCard-card-45 CustomCard-expand-46"
+                                      className="MuiButton-root-48 MuiButton-contained-59 MuiButton-raised-62 MuiButton-fullWidth-73 CustomCard-card-46 CustomCard-expand-47"
                                       component="button"
                                       disableRipple={true}
                                       disabled={false}
                                       focusRipple={true}
-                                      focusVisibleClassName="MuiButton-focusVisible-66"
+                                      focusVisibleClassName="MuiButton-focusVisible-67"
                                       onClick={[Function]}
                                       type="button"
                                     >
                                       <ButtonBase
                                         centerRipple={false}
-                                        className="MuiButton-root-47 MuiButton-contained-58 MuiButton-raised-61 MuiButton-fullWidth-72 CustomCard-card-45 CustomCard-expand-46"
+                                        className="MuiButton-root-48 MuiButton-contained-59 MuiButton-raised-62 MuiButton-fullWidth-73 CustomCard-card-46 CustomCard-expand-47"
                                         classes={
                                           Object {
-                                            "disabled": "MuiButtonBase-disabled-74",
-                                            "focusVisible": "MuiButtonBase-focusVisible-75",
-                                            "root": "MuiButtonBase-root-73",
+                                            "disabled": "MuiButtonBase-disabled-75",
+                                            "focusVisible": "MuiButtonBase-focusVisible-76",
+                                            "root": "MuiButtonBase-root-74",
                                           }
                                         }
                                         component="button"
@@ -6513,13 +6535,13 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                         disableTouchRipple={false}
                                         disabled={false}
                                         focusRipple={true}
-                                        focusVisibleClassName="MuiButton-focusVisible-66"
+                                        focusVisibleClassName="MuiButton-focusVisible-67"
                                         onClick={[Function]}
                                         tabIndex="0"
                                         type="button"
                                       >
                                         <button
-                                          className="MuiButtonBase-root-73 MuiButton-root-47 MuiButton-contained-58 MuiButton-raised-61 MuiButton-fullWidth-72 CustomCard-card-45 CustomCard-expand-46"
+                                          className="MuiButtonBase-root-74 MuiButton-root-48 MuiButton-contained-59 MuiButton-raised-62 MuiButton-fullWidth-73 CustomCard-card-46 CustomCard-expand-47"
                                           disabled={false}
                                           onBlur={[Function]}
                                           onClick={[Function]}
@@ -6537,7 +6559,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                           type="button"
                                         >
                                           <span
-                                            className="MuiButton-label-48"
+                                            className="MuiButton-label-49"
                                           >
                                             <styled.div>
                                               <StyledComponent
@@ -6604,6 +6626,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "h5": "MuiTypography-h5-26",
                                                           "h6": "MuiTypography-h6-27",
                                                           "headline": "MuiTypography-headline-15",
+                                                          "inline": "MuiTypography-inline-45",
                                                           "noWrap": "MuiTypography-noWrap-36",
                                                           "overline": "MuiTypography-overline-30",
                                                           "paragraph": "MuiTypography-paragraph-38",
@@ -6638,6 +6661,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "title": "h2",
                                                         }
                                                       }
+                                                      inline={false}
                                                       noWrap={true}
                                                       paragraph={false}
                                                       theme={
@@ -6838,7 +6862,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                               "fontSize": "0.875rem",
                                                               "fontWeight": 500,
                                                               "letterSpacing": "0.02857em",
-                                                              "lineHeight": 1.3125,
+                                                              "lineHeight": 1.75,
                                                               "textTransform": "uppercase",
                                                             },
                                                             "caption": Object {
@@ -7044,6 +7068,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "h5": "MuiTypography-h5-26",
                                                           "h6": "MuiTypography-h6-27",
                                                           "headline": "MuiTypography-headline-15",
+                                                          "inline": "MuiTypography-inline-45",
                                                           "noWrap": "MuiTypography-noWrap-36",
                                                           "overline": "MuiTypography-overline-30",
                                                           "paragraph": "MuiTypography-paragraph-38",
@@ -7078,6 +7103,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "title": "h2",
                                                         }
                                                       }
+                                                      inline={false}
                                                       noWrap={true}
                                                       paragraph={false}
                                                       theme={
@@ -7278,7 +7304,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                               "fontSize": "0.875rem",
                                                               "fontWeight": 500,
                                                               "letterSpacing": "0.02857em",
-                                                              "lineHeight": 1.3125,
+                                                              "lineHeight": 1.75,
                                                               "textTransform": "uppercase",
                                                             },
                                                             "caption": Object {
@@ -7483,6 +7509,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "h5": "MuiTypography-h5-26",
                                                           "h6": "MuiTypography-h6-27",
                                                           "headline": "MuiTypography-headline-15",
+                                                          "inline": "MuiTypography-inline-45",
                                                           "noWrap": "MuiTypography-noWrap-36",
                                                           "overline": "MuiTypography-overline-30",
                                                           "paragraph": "MuiTypography-paragraph-38",
@@ -7517,6 +7544,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "title": "h2",
                                                         }
                                                       }
+                                                      inline={false}
                                                       noWrap={true}
                                                       paragraph={false}
                                                       theme={
@@ -7717,7 +7745,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                               "fontSize": "0.875rem",
                                                               "fontWeight": 500,
                                                               "letterSpacing": "0.02857em",
-                                                              "lineHeight": 1.3125,
+                                                              "lineHeight": 1.75,
                                                               "textTransform": "uppercase",
                                                             },
                                                             "caption": Object {
@@ -7922,6 +7950,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "h5": "MuiTypography-h5-26",
                                                           "h6": "MuiTypography-h6-27",
                                                           "headline": "MuiTypography-headline-15",
+                                                          "inline": "MuiTypography-inline-45",
                                                           "noWrap": "MuiTypography-noWrap-36",
                                                           "overline": "MuiTypography-overline-30",
                                                           "paragraph": "MuiTypography-paragraph-38",
@@ -7956,6 +7985,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "title": "h2",
                                                         }
                                                       }
+                                                      inline={false}
                                                       noWrap={true}
                                                       paragraph={false}
                                                       theme={
@@ -8156,7 +8186,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                               "fontSize": "0.875rem",
                                                               "fontWeight": 500,
                                                               "letterSpacing": "0.02857em",
-                                                              "lineHeight": 1.3125,
+                                                              "lineHeight": 1.75,
                                                               "textTransform": "uppercase",
                                                             },
                                                             "caption": Object {
@@ -8358,11 +8388,11 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
         absolute={false}
         classes={
           Object {
-            "absolute": "MuiDivider-absolute-77",
-            "inset": "MuiDivider-inset-78",
-            "light": "MuiDivider-light-79",
-            "middle": "MuiDivider-middle-80",
-            "root": "MuiDivider-root-76",
+            "absolute": "MuiDivider-absolute-78",
+            "inset": "MuiDivider-inset-79",
+            "light": "MuiDivider-light-80",
+            "middle": "MuiDivider-middle-81",
+            "root": "MuiDivider-root-77",
           }
         }
         component="hr"
@@ -8370,7 +8400,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
         variant="fullWidth"
       >
         <hr
-          className="MuiDivider-root-76 MuiDivider-light-79"
+          className="MuiDivider-root-77 MuiDivider-light-80"
         />
       </Divider>
     </WithStyles(Divider)>
@@ -8567,6 +8597,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                     "h5": "MuiTypography-h5-26",
                                     "h6": "MuiTypography-h6-27",
                                     "headline": "MuiTypography-headline-15",
+                                    "inline": "MuiTypography-inline-45",
                                     "noWrap": "MuiTypography-noWrap-36",
                                     "overline": "MuiTypography-overline-30",
                                     "paragraph": "MuiTypography-paragraph-38",
@@ -8601,6 +8632,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                     "title": "h2",
                                   }
                                 }
+                                inline={false}
                                 noWrap={false}
                                 paragraph={false}
                                 theme={
@@ -8801,7 +8833,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                         "fontSize": "0.875rem",
                                         "fontWeight": 500,
                                         "letterSpacing": "0.02857em",
-                                        "lineHeight": 1.3125,
+                                        "lineHeight": 1.75,
                                         "textTransform": "uppercase",
                                       },
                                       "caption": Object {
@@ -9115,8 +9147,8 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                               <CustomCard
                                 classes={
                                   Object {
-                                    "card": "CustomCard-card-45",
-                                    "expand": "CustomCard-expand-46",
+                                    "card": "CustomCard-card-46",
+                                    "expand": "CustomCard-expand-47",
                                   }
                                 }
                                 expand={true}
@@ -9124,42 +9156,42 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                 url="https://connpass.com/"
                               >
                                 <WithStyles(Button)
-                                  className="CustomCard-card-45 CustomCard-expand-46"
+                                  className="CustomCard-card-46 CustomCard-expand-47"
                                   disableRipple={true}
                                   fullWidth={true}
                                   onClick={[Function]}
                                   variant="contained"
                                 >
                                   <Button
-                                    className="CustomCard-card-45 CustomCard-expand-46"
+                                    className="CustomCard-card-46 CustomCard-expand-47"
                                     classes={
                                       Object {
-                                        "colorInherit": "MuiButton-colorInherit-68",
-                                        "contained": "MuiButton-contained-58",
-                                        "containedPrimary": "MuiButton-containedPrimary-59",
-                                        "containedSecondary": "MuiButton-containedSecondary-60",
-                                        "disabled": "MuiButton-disabled-67",
-                                        "extendedFab": "MuiButton-extendedFab-65",
-                                        "fab": "MuiButton-fab-64",
-                                        "flat": "MuiButton-flat-52",
-                                        "flatPrimary": "MuiButton-flatPrimary-53",
-                                        "flatSecondary": "MuiButton-flatSecondary-54",
-                                        "focusVisible": "MuiButton-focusVisible-66",
-                                        "fullWidth": "MuiButton-fullWidth-72",
-                                        "label": "MuiButton-label-48",
-                                        "mini": "MuiButton-mini-69",
-                                        "outlined": "MuiButton-outlined-55",
-                                        "outlinedPrimary": "MuiButton-outlinedPrimary-56",
-                                        "outlinedSecondary": "MuiButton-outlinedSecondary-57",
-                                        "raised": "MuiButton-raised-61",
-                                        "raisedPrimary": "MuiButton-raisedPrimary-62",
-                                        "raisedSecondary": "MuiButton-raisedSecondary-63",
-                                        "root": "MuiButton-root-47",
-                                        "sizeLarge": "MuiButton-sizeLarge-71",
-                                        "sizeSmall": "MuiButton-sizeSmall-70",
-                                        "text": "MuiButton-text-49",
-                                        "textPrimary": "MuiButton-textPrimary-50",
-                                        "textSecondary": "MuiButton-textSecondary-51",
+                                        "colorInherit": "MuiButton-colorInherit-69",
+                                        "contained": "MuiButton-contained-59",
+                                        "containedPrimary": "MuiButton-containedPrimary-60",
+                                        "containedSecondary": "MuiButton-containedSecondary-61",
+                                        "disabled": "MuiButton-disabled-68",
+                                        "extendedFab": "MuiButton-extendedFab-66",
+                                        "fab": "MuiButton-fab-65",
+                                        "flat": "MuiButton-flat-53",
+                                        "flatPrimary": "MuiButton-flatPrimary-54",
+                                        "flatSecondary": "MuiButton-flatSecondary-55",
+                                        "focusVisible": "MuiButton-focusVisible-67",
+                                        "fullWidth": "MuiButton-fullWidth-73",
+                                        "label": "MuiButton-label-49",
+                                        "mini": "MuiButton-mini-70",
+                                        "outlined": "MuiButton-outlined-56",
+                                        "outlinedPrimary": "MuiButton-outlinedPrimary-57",
+                                        "outlinedSecondary": "MuiButton-outlinedSecondary-58",
+                                        "raised": "MuiButton-raised-62",
+                                        "raisedPrimary": "MuiButton-raisedPrimary-63",
+                                        "raisedSecondary": "MuiButton-raisedSecondary-64",
+                                        "root": "MuiButton-root-48",
+                                        "sizeLarge": "MuiButton-sizeLarge-72",
+                                        "sizeSmall": "MuiButton-sizeSmall-71",
+                                        "text": "MuiButton-text-50",
+                                        "textPrimary": "MuiButton-textPrimary-51",
+                                        "textSecondary": "MuiButton-textSecondary-52",
                                       }
                                     }
                                     color="default"
@@ -9175,23 +9207,23 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                     variant="contained"
                                   >
                                     <WithStyles(ButtonBase)
-                                      className="MuiButton-root-47 MuiButton-contained-58 MuiButton-raised-61 MuiButton-fullWidth-72 CustomCard-card-45 CustomCard-expand-46"
+                                      className="MuiButton-root-48 MuiButton-contained-59 MuiButton-raised-62 MuiButton-fullWidth-73 CustomCard-card-46 CustomCard-expand-47"
                                       component="button"
                                       disableRipple={true}
                                       disabled={false}
                                       focusRipple={true}
-                                      focusVisibleClassName="MuiButton-focusVisible-66"
+                                      focusVisibleClassName="MuiButton-focusVisible-67"
                                       onClick={[Function]}
                                       type="button"
                                     >
                                       <ButtonBase
                                         centerRipple={false}
-                                        className="MuiButton-root-47 MuiButton-contained-58 MuiButton-raised-61 MuiButton-fullWidth-72 CustomCard-card-45 CustomCard-expand-46"
+                                        className="MuiButton-root-48 MuiButton-contained-59 MuiButton-raised-62 MuiButton-fullWidth-73 CustomCard-card-46 CustomCard-expand-47"
                                         classes={
                                           Object {
-                                            "disabled": "MuiButtonBase-disabled-74",
-                                            "focusVisible": "MuiButtonBase-focusVisible-75",
-                                            "root": "MuiButtonBase-root-73",
+                                            "disabled": "MuiButtonBase-disabled-75",
+                                            "focusVisible": "MuiButtonBase-focusVisible-76",
+                                            "root": "MuiButtonBase-root-74",
                                           }
                                         }
                                         component="button"
@@ -9199,13 +9231,13 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                         disableTouchRipple={false}
                                         disabled={false}
                                         focusRipple={true}
-                                        focusVisibleClassName="MuiButton-focusVisible-66"
+                                        focusVisibleClassName="MuiButton-focusVisible-67"
                                         onClick={[Function]}
                                         tabIndex="0"
                                         type="button"
                                       >
                                         <button
-                                          className="MuiButtonBase-root-73 MuiButton-root-47 MuiButton-contained-58 MuiButton-raised-61 MuiButton-fullWidth-72 CustomCard-card-45 CustomCard-expand-46"
+                                          className="MuiButtonBase-root-74 MuiButton-root-48 MuiButton-contained-59 MuiButton-raised-62 MuiButton-fullWidth-73 CustomCard-card-46 CustomCard-expand-47"
                                           disabled={false}
                                           onBlur={[Function]}
                                           onClick={[Function]}
@@ -9223,7 +9255,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                           type="button"
                                         >
                                           <span
-                                            className="MuiButton-label-48"
+                                            className="MuiButton-label-49"
                                           >
                                             <styled.div>
                                               <StyledComponent
@@ -9290,6 +9322,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "h5": "MuiTypography-h5-26",
                                                           "h6": "MuiTypography-h6-27",
                                                           "headline": "MuiTypography-headline-15",
+                                                          "inline": "MuiTypography-inline-45",
                                                           "noWrap": "MuiTypography-noWrap-36",
                                                           "overline": "MuiTypography-overline-30",
                                                           "paragraph": "MuiTypography-paragraph-38",
@@ -9324,6 +9357,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "title": "h2",
                                                         }
                                                       }
+                                                      inline={false}
                                                       noWrap={true}
                                                       paragraph={false}
                                                       theme={
@@ -9524,7 +9558,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                               "fontSize": "0.875rem",
                                                               "fontWeight": 500,
                                                               "letterSpacing": "0.02857em",
-                                                              "lineHeight": 1.3125,
+                                                              "lineHeight": 1.75,
                                                               "textTransform": "uppercase",
                                                             },
                                                             "caption": Object {
@@ -9730,6 +9764,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "h5": "MuiTypography-h5-26",
                                                           "h6": "MuiTypography-h6-27",
                                                           "headline": "MuiTypography-headline-15",
+                                                          "inline": "MuiTypography-inline-45",
                                                           "noWrap": "MuiTypography-noWrap-36",
                                                           "overline": "MuiTypography-overline-30",
                                                           "paragraph": "MuiTypography-paragraph-38",
@@ -9764,6 +9799,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "title": "h2",
                                                         }
                                                       }
+                                                      inline={false}
                                                       noWrap={true}
                                                       paragraph={false}
                                                       theme={
@@ -9964,7 +10000,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                               "fontSize": "0.875rem",
                                                               "fontWeight": 500,
                                                               "letterSpacing": "0.02857em",
-                                                              "lineHeight": 1.3125,
+                                                              "lineHeight": 1.75,
                                                               "textTransform": "uppercase",
                                                             },
                                                             "caption": Object {
@@ -10169,6 +10205,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "h5": "MuiTypography-h5-26",
                                                           "h6": "MuiTypography-h6-27",
                                                           "headline": "MuiTypography-headline-15",
+                                                          "inline": "MuiTypography-inline-45",
                                                           "noWrap": "MuiTypography-noWrap-36",
                                                           "overline": "MuiTypography-overline-30",
                                                           "paragraph": "MuiTypography-paragraph-38",
@@ -10203,6 +10240,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "title": "h2",
                                                         }
                                                       }
+                                                      inline={false}
                                                       noWrap={true}
                                                       paragraph={false}
                                                       theme={
@@ -10403,7 +10441,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                               "fontSize": "0.875rem",
                                                               "fontWeight": 500,
                                                               "letterSpacing": "0.02857em",
-                                                              "lineHeight": 1.3125,
+                                                              "lineHeight": 1.75,
                                                               "textTransform": "uppercase",
                                                             },
                                                             "caption": Object {
@@ -10608,6 +10646,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "h5": "MuiTypography-h5-26",
                                                           "h6": "MuiTypography-h6-27",
                                                           "headline": "MuiTypography-headline-15",
+                                                          "inline": "MuiTypography-inline-45",
                                                           "noWrap": "MuiTypography-noWrap-36",
                                                           "overline": "MuiTypography-overline-30",
                                                           "paragraph": "MuiTypography-paragraph-38",
@@ -10642,6 +10681,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "title": "h2",
                                                         }
                                                       }
+                                                      inline={false}
                                                       noWrap={true}
                                                       paragraph={false}
                                                       theme={
@@ -10842,7 +10882,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                               "fontSize": "0.875rem",
                                                               "fontWeight": 500,
                                                               "letterSpacing": "0.02857em",
-                                                              "lineHeight": 1.3125,
+                                                              "lineHeight": 1.75,
                                                               "textTransform": "uppercase",
                                                             },
                                                             "caption": Object {
@@ -11044,11 +11084,11 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
         absolute={false}
         classes={
           Object {
-            "absolute": "MuiDivider-absolute-77",
-            "inset": "MuiDivider-inset-78",
-            "light": "MuiDivider-light-79",
-            "middle": "MuiDivider-middle-80",
-            "root": "MuiDivider-root-76",
+            "absolute": "MuiDivider-absolute-78",
+            "inset": "MuiDivider-inset-79",
+            "light": "MuiDivider-light-80",
+            "middle": "MuiDivider-middle-81",
+            "root": "MuiDivider-root-77",
           }
         }
         component="hr"
@@ -11056,7 +11096,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
         variant="fullWidth"
       >
         <hr
-          className="MuiDivider-root-76 MuiDivider-light-79"
+          className="MuiDivider-root-77 MuiDivider-light-80"
         />
       </Divider>
     </WithStyles(Divider)>
@@ -11253,6 +11293,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                     "h5": "MuiTypography-h5-26",
                                     "h6": "MuiTypography-h6-27",
                                     "headline": "MuiTypography-headline-15",
+                                    "inline": "MuiTypography-inline-45",
                                     "noWrap": "MuiTypography-noWrap-36",
                                     "overline": "MuiTypography-overline-30",
                                     "paragraph": "MuiTypography-paragraph-38",
@@ -11287,6 +11328,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                     "title": "h2",
                                   }
                                 }
+                                inline={false}
                                 noWrap={false}
                                 paragraph={false}
                                 theme={
@@ -11487,7 +11529,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                         "fontSize": "0.875rem",
                                         "fontWeight": 500,
                                         "letterSpacing": "0.02857em",
-                                        "lineHeight": 1.3125,
+                                        "lineHeight": 1.75,
                                         "textTransform": "uppercase",
                                       },
                                       "caption": Object {
@@ -11811,8 +11853,8 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                               <CustomCard
                                 classes={
                                   Object {
-                                    "card": "CustomCard-card-45",
-                                    "expand": "CustomCard-expand-46",
+                                    "card": "CustomCard-card-46",
+                                    "expand": "CustomCard-expand-47",
                                   }
                                 }
                                 expand={true}
@@ -11825,42 +11867,42 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                 url="/tweets?hashtag=undefined"
                               >
                                 <WithStyles(Button)
-                                  className="CustomCard-card-45 CustomCard-expand-46"
+                                  className="CustomCard-card-46 CustomCard-expand-47"
                                   disableRipple={true}
                                   fullWidth={true}
                                   onClick={[Function]}
                                   variant="contained"
                                 >
                                   <Button
-                                    className="CustomCard-card-45 CustomCard-expand-46"
+                                    className="CustomCard-card-46 CustomCard-expand-47"
                                     classes={
                                       Object {
-                                        "colorInherit": "MuiButton-colorInherit-68",
-                                        "contained": "MuiButton-contained-58",
-                                        "containedPrimary": "MuiButton-containedPrimary-59",
-                                        "containedSecondary": "MuiButton-containedSecondary-60",
-                                        "disabled": "MuiButton-disabled-67",
-                                        "extendedFab": "MuiButton-extendedFab-65",
-                                        "fab": "MuiButton-fab-64",
-                                        "flat": "MuiButton-flat-52",
-                                        "flatPrimary": "MuiButton-flatPrimary-53",
-                                        "flatSecondary": "MuiButton-flatSecondary-54",
-                                        "focusVisible": "MuiButton-focusVisible-66",
-                                        "fullWidth": "MuiButton-fullWidth-72",
-                                        "label": "MuiButton-label-48",
-                                        "mini": "MuiButton-mini-69",
-                                        "outlined": "MuiButton-outlined-55",
-                                        "outlinedPrimary": "MuiButton-outlinedPrimary-56",
-                                        "outlinedSecondary": "MuiButton-outlinedSecondary-57",
-                                        "raised": "MuiButton-raised-61",
-                                        "raisedPrimary": "MuiButton-raisedPrimary-62",
-                                        "raisedSecondary": "MuiButton-raisedSecondary-63",
-                                        "root": "MuiButton-root-47",
-                                        "sizeLarge": "MuiButton-sizeLarge-71",
-                                        "sizeSmall": "MuiButton-sizeSmall-70",
-                                        "text": "MuiButton-text-49",
-                                        "textPrimary": "MuiButton-textPrimary-50",
-                                        "textSecondary": "MuiButton-textSecondary-51",
+                                        "colorInherit": "MuiButton-colorInherit-69",
+                                        "contained": "MuiButton-contained-59",
+                                        "containedPrimary": "MuiButton-containedPrimary-60",
+                                        "containedSecondary": "MuiButton-containedSecondary-61",
+                                        "disabled": "MuiButton-disabled-68",
+                                        "extendedFab": "MuiButton-extendedFab-66",
+                                        "fab": "MuiButton-fab-65",
+                                        "flat": "MuiButton-flat-53",
+                                        "flatPrimary": "MuiButton-flatPrimary-54",
+                                        "flatSecondary": "MuiButton-flatSecondary-55",
+                                        "focusVisible": "MuiButton-focusVisible-67",
+                                        "fullWidth": "MuiButton-fullWidth-73",
+                                        "label": "MuiButton-label-49",
+                                        "mini": "MuiButton-mini-70",
+                                        "outlined": "MuiButton-outlined-56",
+                                        "outlinedPrimary": "MuiButton-outlinedPrimary-57",
+                                        "outlinedSecondary": "MuiButton-outlinedSecondary-58",
+                                        "raised": "MuiButton-raised-62",
+                                        "raisedPrimary": "MuiButton-raisedPrimary-63",
+                                        "raisedSecondary": "MuiButton-raisedSecondary-64",
+                                        "root": "MuiButton-root-48",
+                                        "sizeLarge": "MuiButton-sizeLarge-72",
+                                        "sizeSmall": "MuiButton-sizeSmall-71",
+                                        "text": "MuiButton-text-50",
+                                        "textPrimary": "MuiButton-textPrimary-51",
+                                        "textSecondary": "MuiButton-textSecondary-52",
                                       }
                                     }
                                     color="default"
@@ -11876,23 +11918,23 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                     variant="contained"
                                   >
                                     <WithStyles(ButtonBase)
-                                      className="MuiButton-root-47 MuiButton-contained-58 MuiButton-raised-61 MuiButton-fullWidth-72 CustomCard-card-45 CustomCard-expand-46"
+                                      className="MuiButton-root-48 MuiButton-contained-59 MuiButton-raised-62 MuiButton-fullWidth-73 CustomCard-card-46 CustomCard-expand-47"
                                       component="button"
                                       disableRipple={true}
                                       disabled={false}
                                       focusRipple={true}
-                                      focusVisibleClassName="MuiButton-focusVisible-66"
+                                      focusVisibleClassName="MuiButton-focusVisible-67"
                                       onClick={[Function]}
                                       type="button"
                                     >
                                       <ButtonBase
                                         centerRipple={false}
-                                        className="MuiButton-root-47 MuiButton-contained-58 MuiButton-raised-61 MuiButton-fullWidth-72 CustomCard-card-45 CustomCard-expand-46"
+                                        className="MuiButton-root-48 MuiButton-contained-59 MuiButton-raised-62 MuiButton-fullWidth-73 CustomCard-card-46 CustomCard-expand-47"
                                         classes={
                                           Object {
-                                            "disabled": "MuiButtonBase-disabled-74",
-                                            "focusVisible": "MuiButtonBase-focusVisible-75",
-                                            "root": "MuiButtonBase-root-73",
+                                            "disabled": "MuiButtonBase-disabled-75",
+                                            "focusVisible": "MuiButtonBase-focusVisible-76",
+                                            "root": "MuiButtonBase-root-74",
                                           }
                                         }
                                         component="button"
@@ -11900,13 +11942,13 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                         disableTouchRipple={false}
                                         disabled={false}
                                         focusRipple={true}
-                                        focusVisibleClassName="MuiButton-focusVisible-66"
+                                        focusVisibleClassName="MuiButton-focusVisible-67"
                                         onClick={[Function]}
                                         tabIndex="0"
                                         type="button"
                                       >
                                         <button
-                                          className="MuiButtonBase-root-73 MuiButton-root-47 MuiButton-contained-58 MuiButton-raised-61 MuiButton-fullWidth-72 CustomCard-card-45 CustomCard-expand-46"
+                                          className="MuiButtonBase-root-74 MuiButton-root-48 MuiButton-contained-59 MuiButton-raised-62 MuiButton-fullWidth-73 CustomCard-card-46 CustomCard-expand-47"
                                           disabled={false}
                                           onBlur={[Function]}
                                           onClick={[Function]}
@@ -11924,7 +11966,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                           type="button"
                                         >
                                           <span
-                                            className="MuiButton-label-48"
+                                            className="MuiButton-label-49"
                                           >
                                             <styled.div>
                                               <StyledComponent
@@ -11991,6 +12033,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "h5": "MuiTypography-h5-26",
                                                           "h6": "MuiTypography-h6-27",
                                                           "headline": "MuiTypography-headline-15",
+                                                          "inline": "MuiTypography-inline-45",
                                                           "noWrap": "MuiTypography-noWrap-36",
                                                           "overline": "MuiTypography-overline-30",
                                                           "paragraph": "MuiTypography-paragraph-38",
@@ -12025,6 +12068,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "title": "h2",
                                                         }
                                                       }
+                                                      inline={false}
                                                       noWrap={true}
                                                       paragraph={false}
                                                       theme={
@@ -12225,7 +12269,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                               "fontSize": "0.875rem",
                                                               "fontWeight": 500,
                                                               "letterSpacing": "0.02857em",
-                                                              "lineHeight": 1.3125,
+                                                              "lineHeight": 1.75,
                                                               "textTransform": "uppercase",
                                                             },
                                                             "caption": Object {
@@ -12431,6 +12475,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "h5": "MuiTypography-h5-26",
                                                           "h6": "MuiTypography-h6-27",
                                                           "headline": "MuiTypography-headline-15",
+                                                          "inline": "MuiTypography-inline-45",
                                                           "noWrap": "MuiTypography-noWrap-36",
                                                           "overline": "MuiTypography-overline-30",
                                                           "paragraph": "MuiTypography-paragraph-38",
@@ -12465,6 +12510,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "title": "h2",
                                                         }
                                                       }
+                                                      inline={false}
                                                       noWrap={true}
                                                       paragraph={false}
                                                       theme={
@@ -12665,7 +12711,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                               "fontSize": "0.875rem",
                                                               "fontWeight": 500,
                                                               "letterSpacing": "0.02857em",
-                                                              "lineHeight": 1.3125,
+                                                              "lineHeight": 1.75,
                                                               "textTransform": "uppercase",
                                                             },
                                                             "caption": Object {
@@ -12870,6 +12916,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "h5": "MuiTypography-h5-26",
                                                           "h6": "MuiTypography-h6-27",
                                                           "headline": "MuiTypography-headline-15",
+                                                          "inline": "MuiTypography-inline-45",
                                                           "noWrap": "MuiTypography-noWrap-36",
                                                           "overline": "MuiTypography-overline-30",
                                                           "paragraph": "MuiTypography-paragraph-38",
@@ -12904,6 +12951,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "title": "h2",
                                                         }
                                                       }
+                                                      inline={false}
                                                       noWrap={true}
                                                       paragraph={false}
                                                       theme={
@@ -13104,7 +13152,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                               "fontSize": "0.875rem",
                                                               "fontWeight": 500,
                                                               "letterSpacing": "0.02857em",
-                                                              "lineHeight": 1.3125,
+                                                              "lineHeight": 1.75,
                                                               "textTransform": "uppercase",
                                                             },
                                                             "caption": Object {
@@ -13309,6 +13357,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "h5": "MuiTypography-h5-26",
                                                           "h6": "MuiTypography-h6-27",
                                                           "headline": "MuiTypography-headline-15",
+                                                          "inline": "MuiTypography-inline-45",
                                                           "noWrap": "MuiTypography-noWrap-36",
                                                           "overline": "MuiTypography-overline-30",
                                                           "paragraph": "MuiTypography-paragraph-38",
@@ -13343,6 +13392,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                           "title": "h2",
                                                         }
                                                       }
+                                                      inline={false}
                                                       noWrap={true}
                                                       paragraph={false}
                                                       theme={
@@ -13543,7 +13593,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
                                                               "fontSize": "0.875rem",
                                                               "fontWeight": 500,
                                                               "letterSpacing": "0.02857em",
-                                                              "lineHeight": 1.3125,
+                                                              "lineHeight": 1.75,
                                                               "textTransform": "uppercase",
                                                             },
                                                             "caption": Object {
@@ -13745,11 +13795,11 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
         absolute={false}
         classes={
           Object {
-            "absolute": "MuiDivider-absolute-77",
-            "inset": "MuiDivider-inset-78",
-            "light": "MuiDivider-light-79",
-            "middle": "MuiDivider-middle-80",
-            "root": "MuiDivider-root-76",
+            "absolute": "MuiDivider-absolute-78",
+            "inset": "MuiDivider-inset-79",
+            "light": "MuiDivider-light-80",
+            "middle": "MuiDivider-middle-81",
+            "root": "MuiDivider-root-77",
           }
         }
         component="hr"
@@ -13757,7 +13807,7 @@ exports[`should match snapshot: EventsOverview/nomal 1`] = `
         variant="fullWidth"
       >
         <hr
-          className="MuiDivider-root-76 MuiDivider-light-79"
+          className="MuiDivider-root-77 MuiDivider-light-80"
         />
       </Divider>
     </WithStyles(Divider)>

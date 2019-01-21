@@ -2,7 +2,7 @@
 
 exports[`should match snapshot: TweetBody/big 1`] = `
 .c0 {
-  margin: 0;
+  margin: 0 0 5px;
   white-space: pre-wrap;
   word-wrap: break-word;
   font-size: 22px;
@@ -45,7 +45,7 @@ exports[`should match snapshot: TweetBody/big 1`] = `
               "lastClassName": "c0",
               "rules": Array [
                 "
-  margin: 0;
+  margin: 0 0 5px;
   white-space: pre-wrap;
   word-wrap: break-word;
   font-size: ",
@@ -130,7 +130,7 @@ exports[`should match snapshot: TweetBody/big 1`] = `
 
 exports[`should match snapshot: TweetBody/nomal 1`] = `
 .c0 {
-  margin: 0;
+  margin: 0 0 5px;
   white-space: pre-wrap;
   word-wrap: break-word;
   font-size: inherit;
@@ -173,7 +173,7 @@ exports[`should match snapshot: TweetBody/nomal 1`] = `
               "lastClassName": "c0",
               "rules": Array [
                 "
-  margin: 0;
+  margin: 0 0 5px;
   white-space: pre-wrap;
   word-wrap: break-word;
   font-size: ",

@@ -462,7 +462,7 @@ exports[`should match snapshot: RecommendedEvents/loading 1`] = `
                                           "fontSize": "0.875rem",
                                           "fontWeight": 500,
                                           "letterSpacing": "0.02857em",
-                                          "lineHeight": 1.3125,
+                                          "lineHeight": 1.75,
                                           "textTransform": "uppercase",
                                         },
                                         "caption": Object {
@@ -782,25 +782,25 @@ exports[`should match snapshot: RecommendedEvents/loading 1`] = `
                                                     center={true}
                                                     classes={
                                                       Object {
-                                                        "child": "MuiTouchRipple-child-139",
-                                                        "childLeaving": "MuiTouchRipple-childLeaving-140",
-                                                        "childPulsate": "MuiTouchRipple-childPulsate-141",
-                                                        "ripple": "MuiTouchRipple-ripple-136",
-                                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate-138",
-                                                        "rippleVisible": "MuiTouchRipple-rippleVisible-137",
-                                                        "root": "MuiTouchRipple-root-135",
+                                                        "child": "MuiTouchRipple-child-140",
+                                                        "childLeaving": "MuiTouchRipple-childLeaving-141",
+                                                        "childPulsate": "MuiTouchRipple-childPulsate-142",
+                                                        "ripple": "MuiTouchRipple-ripple-137",
+                                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate-139",
+                                                        "rippleVisible": "MuiTouchRipple-rippleVisible-138",
+                                                        "root": "MuiTouchRipple-root-136",
                                                       }
                                                     }
                                                   >
                                                     <TransitionGroup
                                                       childFactory={[Function]}
-                                                      className="MuiTouchRipple-root-135"
+                                                      className="MuiTouchRipple-root-136"
                                                       component="span"
                                                       enter={true}
                                                       exit={true}
                                                     >
                                                       <span
-                                                        className="MuiTouchRipple-root-135"
+                                                        className="MuiTouchRipple-root-136"
                                                       />
                                                     </TransitionGroup>
                                                   </TouchRipple>
@@ -1032,7 +1032,7 @@ exports[`should match snapshot: RecommendedEvents/loading 1`] = `
                                                     "fontSize": "0.875rem",
                                                     "fontWeight": 500,
                                                     "letterSpacing": "0.02857em",
-                                                    "lineHeight": 1.3125,
+                                                    "lineHeight": 1.75,
                                                     "textTransform": "uppercase",
                                                   },
                                                   "caption": Object {
@@ -1246,6 +1246,7 @@ exports[`should match snapshot: RecommendedEvents/loading 1`] = `
                                                 "h5": "MuiTypography-h5-76",
                                                 "h6": "MuiTypography-h6-77",
                                                 "headline": "MuiTypography-headline-65",
+                                                "inline": "MuiTypography-inline-95",
                                                 "noWrap": "MuiTypography-noWrap-86",
                                                 "overline": "MuiTypography-overline-80",
                                                 "paragraph": "MuiTypography-paragraph-88",
@@ -1280,6 +1281,7 @@ exports[`should match snapshot: RecommendedEvents/loading 1`] = `
                                                 "title": "h2",
                                               }
                                             }
+                                            inline={false}
                                             noWrap={false}
                                             paragraph={false}
                                             theme={
@@ -1480,7 +1482,7 @@ exports[`should match snapshot: RecommendedEvents/loading 1`] = `
                                                     "fontSize": "0.875rem",
                                                     "fontWeight": 500,
                                                     "letterSpacing": "0.02857em",
-                                                    "lineHeight": 1.3125,
+                                                    "lineHeight": 1.75,
                                                     "textTransform": "uppercase",
                                                   },
                                                   "caption": Object {
@@ -1663,28 +1665,28 @@ exports[`should match snapshot: RecommendedEvents/loading 1`] = `
                                       <CharIcon
                                         classes={
                                           Object {
-                                            "amber": "CharIcon-amber-111",
-                                            "avatar": "CharIcon-avatar-95",
-                                            "blue": "CharIcon-blue-103",
-                                            "blueGrey": "CharIcon-blueGrey-116",
-                                            "brown": "CharIcon-brown-114",
-                                            "cyan": "CharIcon-cyan-105",
-                                            "deepOrange": "CharIcon-deepOrange-113",
-                                            "deepPurple": "CharIcon-deepPurple-101",
-                                            "green": "CharIcon-green-107",
-                                            "grey": "CharIcon-grey-115",
-                                            "indigo": "CharIcon-indigo-102",
-                                            "lightBlue": "CharIcon-lightBlue-104",
-                                            "lightGreen": "CharIcon-lightGreen-108",
-                                            "lime": "CharIcon-lime-109",
-                                            "orange": "CharIcon-orange-112",
-                                            "pink": "CharIcon-pink-99",
-                                            "purple": "CharIcon-purple-100",
-                                            "red": "CharIcon-red-98",
-                                            "smallAvatar": "CharIcon-smallAvatar-96",
-                                            "teal": "CharIcon-teal-106",
-                                            "wrapper": "CharIcon-wrapper-97",
-                                            "yellow": "CharIcon-yellow-110",
+                                            "amber": "CharIcon-amber-112",
+                                            "avatar": "CharIcon-avatar-96",
+                                            "blue": "CharIcon-blue-104",
+                                            "blueGrey": "CharIcon-blueGrey-117",
+                                            "brown": "CharIcon-brown-115",
+                                            "cyan": "CharIcon-cyan-106",
+                                            "deepOrange": "CharIcon-deepOrange-114",
+                                            "deepPurple": "CharIcon-deepPurple-102",
+                                            "green": "CharIcon-green-108",
+                                            "grey": "CharIcon-grey-116",
+                                            "indigo": "CharIcon-indigo-103",
+                                            "lightBlue": "CharIcon-lightBlue-105",
+                                            "lightGreen": "CharIcon-lightGreen-109",
+                                            "lime": "CharIcon-lime-110",
+                                            "orange": "CharIcon-orange-113",
+                                            "pink": "CharIcon-pink-100",
+                                            "purple": "CharIcon-purple-101",
+                                            "red": "CharIcon-red-99",
+                                            "smallAvatar": "CharIcon-smallAvatar-97",
+                                            "teal": "CharIcon-teal-107",
+                                            "wrapper": "CharIcon-wrapper-98",
+                                            "yellow": "CharIcon-yellow-111",
                                           }
                                         }
                                         name="テストユーザ"
@@ -1692,12 +1694,12 @@ exports[`should match snapshot: RecommendedEvents/loading 1`] = `
                                         small={true}
                                       >
                                         <WithStyles(IconButton)
-                                          className="CharIcon-wrapper-97"
+                                          className="CharIcon-wrapper-98"
                                           disableRipple={true}
                                           onClick={[Function]}
                                         >
                                           <IconButton
-                                            className="CharIcon-wrapper-97"
+                                            className="CharIcon-wrapper-98"
                                             classes={
                                               Object {
                                                 "colorInherit": "MuiIconButton-colorInherit-43",
@@ -1715,7 +1717,7 @@ exports[`should match snapshot: RecommendedEvents/loading 1`] = `
                                           >
                                             <WithStyles(ButtonBase)
                                               centerRipple={true}
-                                              className="MuiIconButton-root-42 CharIcon-wrapper-97"
+                                              className="MuiIconButton-root-42 CharIcon-wrapper-98"
                                               disableRipple={true}
                                               disabled={false}
                                               focusRipple={true}
@@ -1723,7 +1725,7 @@ exports[`should match snapshot: RecommendedEvents/loading 1`] = `
                                             >
                                               <ButtonBase
                                                 centerRipple={true}
-                                                className="MuiIconButton-root-42 CharIcon-wrapper-97"
+                                                className="MuiIconButton-root-42 CharIcon-wrapper-98"
                                                 classes={
                                                   Object {
                                                     "disabled": "MuiButtonBase-disabled-49",
@@ -1741,7 +1743,7 @@ exports[`should match snapshot: RecommendedEvents/loading 1`] = `
                                                 type="button"
                                               >
                                                 <button
-                                                  className="MuiButtonBase-root-48 MuiIconButton-root-42 CharIcon-wrapper-97"
+                                                  className="MuiButtonBase-root-48 MuiIconButton-root-42 CharIcon-wrapper-98"
                                                   disabled={false}
                                                   onBlur={[Function]}
                                                   onClick={[Function]}
@@ -1762,21 +1764,21 @@ exports[`should match snapshot: RecommendedEvents/loading 1`] = `
                                                     className="MuiIconButton-label-47"
                                                   >
                                                     <WithStyles(Avatar)
-                                                      className="CharIcon-avatar-95 CharIcon-smallAvatar-96 CharIcon-deepPurple-101"
+                                                      className="CharIcon-avatar-96 CharIcon-smallAvatar-97 CharIcon-deepPurple-102"
                                                     >
                                                       <Avatar
-                                                        className="CharIcon-avatar-95 CharIcon-smallAvatar-96 CharIcon-deepPurple-101"
+                                                        className="CharIcon-avatar-96 CharIcon-smallAvatar-97 CharIcon-deepPurple-102"
                                                         classes={
                                                           Object {
-                                                            "colorDefault": "MuiAvatar-colorDefault-118",
-                                                            "img": "MuiAvatar-img-119",
-                                                            "root": "MuiAvatar-root-117",
+                                                            "colorDefault": "MuiAvatar-colorDefault-119",
+                                                            "img": "MuiAvatar-img-120",
+                                                            "root": "MuiAvatar-root-118",
                                                           }
                                                         }
                                                         component="div"
                                                       >
                                                         <div
-                                                          className="MuiAvatar-root-117 MuiAvatar-colorDefault-118 CharIcon-avatar-95 CharIcon-smallAvatar-96 CharIcon-deepPurple-101"
+                                                          className="MuiAvatar-root-118 MuiAvatar-colorDefault-119 CharIcon-avatar-96 CharIcon-smallAvatar-97 CharIcon-deepPurple-102"
                                                         >
                                                           テ
                                                         </div>
@@ -1819,7 +1821,7 @@ exports[`should match snapshot: RecommendedEvents/loading 1`] = `
             <SideMenu
               classes={
                 Object {
-                  "list": "SideMenu-list-120",
+                  "list": "SideMenu-list-121",
                 }
               }
               history={
@@ -2049,7 +2051,7 @@ exports[`should match snapshot: RecommendedEvents/loading 1`] = `
                           "fontSize": "0.875rem",
                           "fontWeight": 500,
                           "letterSpacing": "0.02857em",
-                          "lineHeight": 1.3125,
+                          "lineHeight": 1.75,
                           "textTransform": "uppercase",
                         },
                         "caption": Object {
@@ -2438,7 +2440,7 @@ exports[`should match snapshot: RecommendedEvents/loading 1`] = `
                             "fontSize": "0.875rem",
                             "fontWeight": 500,
                             "letterSpacing": "0.02857em",
-                            "lineHeight": 1.3125,
+                            "lineHeight": 1.75,
                             "textTransform": "uppercase",
                           },
                           "caption": Object {
@@ -2629,18 +2631,18 @@ exports[`should match snapshot: RecommendedEvents/loading 1`] = `
                       anchor="right"
                       classes={
                         Object {
-                          "docked": "MuiDrawer-docked-122",
-                          "modal": "MuiDrawer-modal-132",
-                          "paper": "MuiDrawer-paper-123",
-                          "paperAnchorBottom": "MuiDrawer-paperAnchorBottom-127",
-                          "paperAnchorDockedBottom": "MuiDrawer-paperAnchorDockedBottom-131",
-                          "paperAnchorDockedLeft": "MuiDrawer-paperAnchorDockedLeft-128",
-                          "paperAnchorDockedRight": "MuiDrawer-paperAnchorDockedRight-130",
-                          "paperAnchorDockedTop": "MuiDrawer-paperAnchorDockedTop-129",
-                          "paperAnchorLeft": "MuiDrawer-paperAnchorLeft-124",
-                          "paperAnchorRight": "MuiDrawer-paperAnchorRight-125",
-                          "paperAnchorTop": "MuiDrawer-paperAnchorTop-126",
-                          "root": "MuiDrawer-root-121",
+                          "docked": "MuiDrawer-docked-123",
+                          "modal": "MuiDrawer-modal-133",
+                          "paper": "MuiDrawer-paper-124",
+                          "paperAnchorBottom": "MuiDrawer-paperAnchorBottom-128",
+                          "paperAnchorDockedBottom": "MuiDrawer-paperAnchorDockedBottom-132",
+                          "paperAnchorDockedLeft": "MuiDrawer-paperAnchorDockedLeft-129",
+                          "paperAnchorDockedRight": "MuiDrawer-paperAnchorDockedRight-131",
+                          "paperAnchorDockedTop": "MuiDrawer-paperAnchorDockedTop-130",
+                          "paperAnchorLeft": "MuiDrawer-paperAnchorLeft-125",
+                          "paperAnchorRight": "MuiDrawer-paperAnchorRight-126",
+                          "paperAnchorTop": "MuiDrawer-paperAnchorTop-127",
+                          "root": "MuiDrawer-root-122",
                         }
                       }
                       elevation={16}
@@ -2844,7 +2846,7 @@ exports[`should match snapshot: RecommendedEvents/loading 1`] = `
                               "fontSize": "0.875rem",
                               "fontWeight": 500,
                               "letterSpacing": "0.02857em",
-                              "lineHeight": 1.3125,
+                              "lineHeight": 1.75,
                               "textTransform": "uppercase",
                             },
                             "caption": Object {
@@ -3026,7 +3028,7 @@ exports[`should match snapshot: RecommendedEvents/loading 1`] = `
                             },
                           }
                         }
-                        className="MuiDrawer-root-121 MuiDrawer-modal-132"
+                        className="MuiDrawer-root-122 MuiDrawer-modal-133"
                         onClose={[Function]}
                         open={false}
                       >
@@ -3041,11 +3043,11 @@ exports[`should match snapshot: RecommendedEvents/loading 1`] = `
                               },
                             }
                           }
-                          className="MuiDrawer-root-121 MuiDrawer-modal-132"
+                          className="MuiDrawer-root-122 MuiDrawer-modal-133"
                           classes={
                             Object {
-                              "hidden": "MuiModal-hidden-134",
-                              "root": "MuiModal-root-133",
+                              "hidden": "MuiModal-hidden-135",
+                              "root": "MuiModal-root-134",
                             }
                           }
                           disableAutoFocus={false}
@@ -3082,17 +3084,17 @@ exports[`should match snapshot: RecommendedEvents/loading 1`] = `
                         anchor="right"
                         classes={
                           Object {
-                            "anchorBottom": "MuiPrivateSwipeArea-anchorBottom-146",
-                            "anchorLeft": "MuiPrivateSwipeArea-anchorLeft-143",
-                            "anchorRight": "MuiPrivateSwipeArea-anchorRight-144",
-                            "anchorTop": "MuiPrivateSwipeArea-anchorTop-145",
-                            "root": "MuiPrivateSwipeArea-root-142",
+                            "anchorBottom": "MuiPrivateSwipeArea-anchorBottom-147",
+                            "anchorLeft": "MuiPrivateSwipeArea-anchorLeft-144",
+                            "anchorRight": "MuiPrivateSwipeArea-anchorRight-145",
+                            "anchorTop": "MuiPrivateSwipeArea-anchorTop-146",
+                            "root": "MuiPrivateSwipeArea-root-143",
                           }
                         }
                         width={20}
                       >
                         <div
-                          className="MuiPrivateSwipeArea-root-142 MuiPrivateSwipeArea-anchorRight-144"
+                          className="MuiPrivateSwipeArea-root-143 MuiPrivateSwipeArea-anchorRight-145"
                           style={
                             Object {
                               "width": 20,
@@ -3180,16 +3182,16 @@ exports[`should match snapshot: RecommendedEvents/loading 1`] = `
                       <CircularProgress
                         classes={
                           Object {
-                            "circle": "MuiCircularProgress-circle-153",
-                            "circleDisableShrink": "MuiCircularProgress-circleDisableShrink-156",
-                            "circleIndeterminate": "MuiCircularProgress-circleIndeterminate-155",
-                            "circleStatic": "MuiCircularProgress-circleStatic-154",
-                            "colorPrimary": "MuiCircularProgress-colorPrimary-150",
-                            "colorSecondary": "MuiCircularProgress-colorSecondary-151",
-                            "indeterminate": "MuiCircularProgress-indeterminate-149",
-                            "root": "MuiCircularProgress-root-147",
-                            "static": "MuiCircularProgress-static-148",
-                            "svg": "MuiCircularProgress-svg-152",
+                            "circle": "MuiCircularProgress-circle-154",
+                            "circleDisableShrink": "MuiCircularProgress-circleDisableShrink-157",
+                            "circleIndeterminate": "MuiCircularProgress-circleIndeterminate-156",
+                            "circleStatic": "MuiCircularProgress-circleStatic-155",
+                            "colorPrimary": "MuiCircularProgress-colorPrimary-151",
+                            "colorSecondary": "MuiCircularProgress-colorSecondary-152",
+                            "indeterminate": "MuiCircularProgress-indeterminate-150",
+                            "root": "MuiCircularProgress-root-148",
+                            "static": "MuiCircularProgress-static-149",
+                            "svg": "MuiCircularProgress-svg-153",
                           }
                         }
                         color="primary"
@@ -3200,7 +3202,7 @@ exports[`should match snapshot: RecommendedEvents/loading 1`] = `
                         variant="indeterminate"
                       >
                         <div
-                          className="MuiCircularProgress-root-147 MuiCircularProgress-colorPrimary-150 MuiCircularProgress-indeterminate-149"
+                          className="MuiCircularProgress-root-148 MuiCircularProgress-colorPrimary-151 MuiCircularProgress-indeterminate-150"
                           role="progressbar"
                           style={
                             Object {
@@ -3210,11 +3212,11 @@ exports[`should match snapshot: RecommendedEvents/loading 1`] = `
                           }
                         >
                           <svg
-                            className="MuiCircularProgress-svg-152"
+                            className="MuiCircularProgress-svg-153"
                             viewBox="22 22 44 44"
                           >
                             <circle
-                              className="MuiCircularProgress-circle-153 MuiCircularProgress-circleIndeterminate-155"
+                              className="MuiCircularProgress-circle-154 MuiCircularProgress-circleIndeterminate-156"
                               cx={44}
                               cy={44}
                               fill="none"
@@ -3696,7 +3698,7 @@ exports[`should match snapshot: RecommendedEvents/nocontents 1`] = `
                                           "fontSize": "0.875rem",
                                           "fontWeight": 500,
                                           "letterSpacing": "0.02857em",
-                                          "lineHeight": 1.3125,
+                                          "lineHeight": 1.75,
                                           "textTransform": "uppercase",
                                         },
                                         "caption": Object {
@@ -4016,25 +4018,25 @@ exports[`should match snapshot: RecommendedEvents/nocontents 1`] = `
                                                     center={true}
                                                     classes={
                                                       Object {
-                                                        "child": "MuiTouchRipple-child-139",
-                                                        "childLeaving": "MuiTouchRipple-childLeaving-140",
-                                                        "childPulsate": "MuiTouchRipple-childPulsate-141",
-                                                        "ripple": "MuiTouchRipple-ripple-136",
-                                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate-138",
-                                                        "rippleVisible": "MuiTouchRipple-rippleVisible-137",
-                                                        "root": "MuiTouchRipple-root-135",
+                                                        "child": "MuiTouchRipple-child-140",
+                                                        "childLeaving": "MuiTouchRipple-childLeaving-141",
+                                                        "childPulsate": "MuiTouchRipple-childPulsate-142",
+                                                        "ripple": "MuiTouchRipple-ripple-137",
+                                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate-139",
+                                                        "rippleVisible": "MuiTouchRipple-rippleVisible-138",
+                                                        "root": "MuiTouchRipple-root-136",
                                                       }
                                                     }
                                                   >
                                                     <TransitionGroup
                                                       childFactory={[Function]}
-                                                      className="MuiTouchRipple-root-135"
+                                                      className="MuiTouchRipple-root-136"
                                                       component="span"
                                                       enter={true}
                                                       exit={true}
                                                     >
                                                       <span
-                                                        className="MuiTouchRipple-root-135"
+                                                        className="MuiTouchRipple-root-136"
                                                       />
                                                     </TransitionGroup>
                                                   </TouchRipple>
@@ -4266,7 +4268,7 @@ exports[`should match snapshot: RecommendedEvents/nocontents 1`] = `
                                                     "fontSize": "0.875rem",
                                                     "fontWeight": 500,
                                                     "letterSpacing": "0.02857em",
-                                                    "lineHeight": 1.3125,
+                                                    "lineHeight": 1.75,
                                                     "textTransform": "uppercase",
                                                   },
                                                   "caption": Object {
@@ -4480,6 +4482,7 @@ exports[`should match snapshot: RecommendedEvents/nocontents 1`] = `
                                                 "h5": "MuiTypography-h5-76",
                                                 "h6": "MuiTypography-h6-77",
                                                 "headline": "MuiTypography-headline-65",
+                                                "inline": "MuiTypography-inline-95",
                                                 "noWrap": "MuiTypography-noWrap-86",
                                                 "overline": "MuiTypography-overline-80",
                                                 "paragraph": "MuiTypography-paragraph-88",
@@ -4514,6 +4517,7 @@ exports[`should match snapshot: RecommendedEvents/nocontents 1`] = `
                                                 "title": "h2",
                                               }
                                             }
+                                            inline={false}
                                             noWrap={false}
                                             paragraph={false}
                                             theme={
@@ -4714,7 +4718,7 @@ exports[`should match snapshot: RecommendedEvents/nocontents 1`] = `
                                                     "fontSize": "0.875rem",
                                                     "fontWeight": 500,
                                                     "letterSpacing": "0.02857em",
-                                                    "lineHeight": 1.3125,
+                                                    "lineHeight": 1.75,
                                                     "textTransform": "uppercase",
                                                   },
                                                   "caption": Object {
@@ -4897,28 +4901,28 @@ exports[`should match snapshot: RecommendedEvents/nocontents 1`] = `
                                       <CharIcon
                                         classes={
                                           Object {
-                                            "amber": "CharIcon-amber-111",
-                                            "avatar": "CharIcon-avatar-95",
-                                            "blue": "CharIcon-blue-103",
-                                            "blueGrey": "CharIcon-blueGrey-116",
-                                            "brown": "CharIcon-brown-114",
-                                            "cyan": "CharIcon-cyan-105",
-                                            "deepOrange": "CharIcon-deepOrange-113",
-                                            "deepPurple": "CharIcon-deepPurple-101",
-                                            "green": "CharIcon-green-107",
-                                            "grey": "CharIcon-grey-115",
-                                            "indigo": "CharIcon-indigo-102",
-                                            "lightBlue": "CharIcon-lightBlue-104",
-                                            "lightGreen": "CharIcon-lightGreen-108",
-                                            "lime": "CharIcon-lime-109",
-                                            "orange": "CharIcon-orange-112",
-                                            "pink": "CharIcon-pink-99",
-                                            "purple": "CharIcon-purple-100",
-                                            "red": "CharIcon-red-98",
-                                            "smallAvatar": "CharIcon-smallAvatar-96",
-                                            "teal": "CharIcon-teal-106",
-                                            "wrapper": "CharIcon-wrapper-97",
-                                            "yellow": "CharIcon-yellow-110",
+                                            "amber": "CharIcon-amber-112",
+                                            "avatar": "CharIcon-avatar-96",
+                                            "blue": "CharIcon-blue-104",
+                                            "blueGrey": "CharIcon-blueGrey-117",
+                                            "brown": "CharIcon-brown-115",
+                                            "cyan": "CharIcon-cyan-106",
+                                            "deepOrange": "CharIcon-deepOrange-114",
+                                            "deepPurple": "CharIcon-deepPurple-102",
+                                            "green": "CharIcon-green-108",
+                                            "grey": "CharIcon-grey-116",
+                                            "indigo": "CharIcon-indigo-103",
+                                            "lightBlue": "CharIcon-lightBlue-105",
+                                            "lightGreen": "CharIcon-lightGreen-109",
+                                            "lime": "CharIcon-lime-110",
+                                            "orange": "CharIcon-orange-113",
+                                            "pink": "CharIcon-pink-100",
+                                            "purple": "CharIcon-purple-101",
+                                            "red": "CharIcon-red-99",
+                                            "smallAvatar": "CharIcon-smallAvatar-97",
+                                            "teal": "CharIcon-teal-107",
+                                            "wrapper": "CharIcon-wrapper-98",
+                                            "yellow": "CharIcon-yellow-111",
                                           }
                                         }
                                         name="テストユーザ"
@@ -4926,12 +4930,12 @@ exports[`should match snapshot: RecommendedEvents/nocontents 1`] = `
                                         small={true}
                                       >
                                         <WithStyles(IconButton)
-                                          className="CharIcon-wrapper-97"
+                                          className="CharIcon-wrapper-98"
                                           disableRipple={true}
                                           onClick={[Function]}
                                         >
                                           <IconButton
-                                            className="CharIcon-wrapper-97"
+                                            className="CharIcon-wrapper-98"
                                             classes={
                                               Object {
                                                 "colorInherit": "MuiIconButton-colorInherit-43",
@@ -4949,7 +4953,7 @@ exports[`should match snapshot: RecommendedEvents/nocontents 1`] = `
                                           >
                                             <WithStyles(ButtonBase)
                                               centerRipple={true}
-                                              className="MuiIconButton-root-42 CharIcon-wrapper-97"
+                                              className="MuiIconButton-root-42 CharIcon-wrapper-98"
                                               disableRipple={true}
                                               disabled={false}
                                               focusRipple={true}
@@ -4957,7 +4961,7 @@ exports[`should match snapshot: RecommendedEvents/nocontents 1`] = `
                                             >
                                               <ButtonBase
                                                 centerRipple={true}
-                                                className="MuiIconButton-root-42 CharIcon-wrapper-97"
+                                                className="MuiIconButton-root-42 CharIcon-wrapper-98"
                                                 classes={
                                                   Object {
                                                     "disabled": "MuiButtonBase-disabled-49",
@@ -4975,7 +4979,7 @@ exports[`should match snapshot: RecommendedEvents/nocontents 1`] = `
                                                 type="button"
                                               >
                                                 <button
-                                                  className="MuiButtonBase-root-48 MuiIconButton-root-42 CharIcon-wrapper-97"
+                                                  className="MuiButtonBase-root-48 MuiIconButton-root-42 CharIcon-wrapper-98"
                                                   disabled={false}
                                                   onBlur={[Function]}
                                                   onClick={[Function]}
@@ -4996,21 +5000,21 @@ exports[`should match snapshot: RecommendedEvents/nocontents 1`] = `
                                                     className="MuiIconButton-label-47"
                                                   >
                                                     <WithStyles(Avatar)
-                                                      className="CharIcon-avatar-95 CharIcon-smallAvatar-96 CharIcon-deepPurple-101"
+                                                      className="CharIcon-avatar-96 CharIcon-smallAvatar-97 CharIcon-deepPurple-102"
                                                     >
                                                       <Avatar
-                                                        className="CharIcon-avatar-95 CharIcon-smallAvatar-96 CharIcon-deepPurple-101"
+                                                        className="CharIcon-avatar-96 CharIcon-smallAvatar-97 CharIcon-deepPurple-102"
                                                         classes={
                                                           Object {
-                                                            "colorDefault": "MuiAvatar-colorDefault-118",
-                                                            "img": "MuiAvatar-img-119",
-                                                            "root": "MuiAvatar-root-117",
+                                                            "colorDefault": "MuiAvatar-colorDefault-119",
+                                                            "img": "MuiAvatar-img-120",
+                                                            "root": "MuiAvatar-root-118",
                                                           }
                                                         }
                                                         component="div"
                                                       >
                                                         <div
-                                                          className="MuiAvatar-root-117 MuiAvatar-colorDefault-118 CharIcon-avatar-95 CharIcon-smallAvatar-96 CharIcon-deepPurple-101"
+                                                          className="MuiAvatar-root-118 MuiAvatar-colorDefault-119 CharIcon-avatar-96 CharIcon-smallAvatar-97 CharIcon-deepPurple-102"
                                                         >
                                                           テ
                                                         </div>
@@ -5053,7 +5057,7 @@ exports[`should match snapshot: RecommendedEvents/nocontents 1`] = `
             <SideMenu
               classes={
                 Object {
-                  "list": "SideMenu-list-120",
+                  "list": "SideMenu-list-121",
                 }
               }
               history={
@@ -5283,7 +5287,7 @@ exports[`should match snapshot: RecommendedEvents/nocontents 1`] = `
                           "fontSize": "0.875rem",
                           "fontWeight": 500,
                           "letterSpacing": "0.02857em",
-                          "lineHeight": 1.3125,
+                          "lineHeight": 1.75,
                           "textTransform": "uppercase",
                         },
                         "caption": Object {
@@ -5672,7 +5676,7 @@ exports[`should match snapshot: RecommendedEvents/nocontents 1`] = `
                             "fontSize": "0.875rem",
                             "fontWeight": 500,
                             "letterSpacing": "0.02857em",
-                            "lineHeight": 1.3125,
+                            "lineHeight": 1.75,
                             "textTransform": "uppercase",
                           },
                           "caption": Object {
@@ -5863,18 +5867,18 @@ exports[`should match snapshot: RecommendedEvents/nocontents 1`] = `
                       anchor="right"
                       classes={
                         Object {
-                          "docked": "MuiDrawer-docked-122",
-                          "modal": "MuiDrawer-modal-132",
-                          "paper": "MuiDrawer-paper-123",
-                          "paperAnchorBottom": "MuiDrawer-paperAnchorBottom-127",
-                          "paperAnchorDockedBottom": "MuiDrawer-paperAnchorDockedBottom-131",
-                          "paperAnchorDockedLeft": "MuiDrawer-paperAnchorDockedLeft-128",
-                          "paperAnchorDockedRight": "MuiDrawer-paperAnchorDockedRight-130",
-                          "paperAnchorDockedTop": "MuiDrawer-paperAnchorDockedTop-129",
-                          "paperAnchorLeft": "MuiDrawer-paperAnchorLeft-124",
-                          "paperAnchorRight": "MuiDrawer-paperAnchorRight-125",
-                          "paperAnchorTop": "MuiDrawer-paperAnchorTop-126",
-                          "root": "MuiDrawer-root-121",
+                          "docked": "MuiDrawer-docked-123",
+                          "modal": "MuiDrawer-modal-133",
+                          "paper": "MuiDrawer-paper-124",
+                          "paperAnchorBottom": "MuiDrawer-paperAnchorBottom-128",
+                          "paperAnchorDockedBottom": "MuiDrawer-paperAnchorDockedBottom-132",
+                          "paperAnchorDockedLeft": "MuiDrawer-paperAnchorDockedLeft-129",
+                          "paperAnchorDockedRight": "MuiDrawer-paperAnchorDockedRight-131",
+                          "paperAnchorDockedTop": "MuiDrawer-paperAnchorDockedTop-130",
+                          "paperAnchorLeft": "MuiDrawer-paperAnchorLeft-125",
+                          "paperAnchorRight": "MuiDrawer-paperAnchorRight-126",
+                          "paperAnchorTop": "MuiDrawer-paperAnchorTop-127",
+                          "root": "MuiDrawer-root-122",
                         }
                       }
                       elevation={16}
@@ -6078,7 +6082,7 @@ exports[`should match snapshot: RecommendedEvents/nocontents 1`] = `
                               "fontSize": "0.875rem",
                               "fontWeight": 500,
                               "letterSpacing": "0.02857em",
-                              "lineHeight": 1.3125,
+                              "lineHeight": 1.75,
                               "textTransform": "uppercase",
                             },
                             "caption": Object {
@@ -6260,7 +6264,7 @@ exports[`should match snapshot: RecommendedEvents/nocontents 1`] = `
                             },
                           }
                         }
-                        className="MuiDrawer-root-121 MuiDrawer-modal-132"
+                        className="MuiDrawer-root-122 MuiDrawer-modal-133"
                         onClose={[Function]}
                         open={false}
                       >
@@ -6275,11 +6279,11 @@ exports[`should match snapshot: RecommendedEvents/nocontents 1`] = `
                               },
                             }
                           }
-                          className="MuiDrawer-root-121 MuiDrawer-modal-132"
+                          className="MuiDrawer-root-122 MuiDrawer-modal-133"
                           classes={
                             Object {
-                              "hidden": "MuiModal-hidden-134",
-                              "root": "MuiModal-root-133",
+                              "hidden": "MuiModal-hidden-135",
+                              "root": "MuiModal-root-134",
                             }
                           }
                           disableAutoFocus={false}
@@ -6316,17 +6320,17 @@ exports[`should match snapshot: RecommendedEvents/nocontents 1`] = `
                         anchor="right"
                         classes={
                           Object {
-                            "anchorBottom": "MuiPrivateSwipeArea-anchorBottom-146",
-                            "anchorLeft": "MuiPrivateSwipeArea-anchorLeft-143",
-                            "anchorRight": "MuiPrivateSwipeArea-anchorRight-144",
-                            "anchorTop": "MuiPrivateSwipeArea-anchorTop-145",
-                            "root": "MuiPrivateSwipeArea-root-142",
+                            "anchorBottom": "MuiPrivateSwipeArea-anchorBottom-147",
+                            "anchorLeft": "MuiPrivateSwipeArea-anchorLeft-144",
+                            "anchorRight": "MuiPrivateSwipeArea-anchorRight-145",
+                            "anchorTop": "MuiPrivateSwipeArea-anchorTop-146",
+                            "root": "MuiPrivateSwipeArea-root-143",
                           }
                         }
                         width={20}
                       >
                         <div
-                          className="MuiPrivateSwipeArea-root-142 MuiPrivateSwipeArea-anchorRight-144"
+                          className="MuiPrivateSwipeArea-root-143 MuiPrivateSwipeArea-anchorRight-145"
                           style={
                             Object {
                               "width": 20,
@@ -6409,6 +6413,7 @@ exports[`should match snapshot: RecommendedEvents/nocontents 1`] = `
                     "h5": "MuiTypography-h5-76",
                     "h6": "MuiTypography-h6-77",
                     "headline": "MuiTypography-headline-65",
+                    "inline": "MuiTypography-inline-95",
                     "noWrap": "MuiTypography-noWrap-86",
                     "overline": "MuiTypography-overline-80",
                     "paragraph": "MuiTypography-paragraph-88",
@@ -6443,6 +6448,7 @@ exports[`should match snapshot: RecommendedEvents/nocontents 1`] = `
                     "title": "h2",
                   }
                 }
+                inline={false}
                 noWrap={false}
                 paragraph={false}
                 theme={
@@ -6643,7 +6649,7 @@ exports[`should match snapshot: RecommendedEvents/nocontents 1`] = `
                         "fontSize": "0.875rem",
                         "fontWeight": 500,
                         "letterSpacing": "0.02857em",
-                        "lineHeight": 1.3125,
+                        "lineHeight": 1.75,
                         "textTransform": "uppercase",
                       },
                       "caption": Object {
@@ -7352,7 +7358,7 @@ exports[`should match snapshot: RecommendedEvents/nomal 1`] = `
                                           "fontSize": "0.875rem",
                                           "fontWeight": 500,
                                           "letterSpacing": "0.02857em",
-                                          "lineHeight": 1.3125,
+                                          "lineHeight": 1.75,
                                           "textTransform": "uppercase",
                                         },
                                         "caption": Object {
@@ -7672,25 +7678,25 @@ exports[`should match snapshot: RecommendedEvents/nomal 1`] = `
                                                     center={true}
                                                     classes={
                                                       Object {
-                                                        "child": "MuiTouchRipple-child-139",
-                                                        "childLeaving": "MuiTouchRipple-childLeaving-140",
-                                                        "childPulsate": "MuiTouchRipple-childPulsate-141",
-                                                        "ripple": "MuiTouchRipple-ripple-136",
-                                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate-138",
-                                                        "rippleVisible": "MuiTouchRipple-rippleVisible-137",
-                                                        "root": "MuiTouchRipple-root-135",
+                                                        "child": "MuiTouchRipple-child-140",
+                                                        "childLeaving": "MuiTouchRipple-childLeaving-141",
+                                                        "childPulsate": "MuiTouchRipple-childPulsate-142",
+                                                        "ripple": "MuiTouchRipple-ripple-137",
+                                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate-139",
+                                                        "rippleVisible": "MuiTouchRipple-rippleVisible-138",
+                                                        "root": "MuiTouchRipple-root-136",
                                                       }
                                                     }
                                                   >
                                                     <TransitionGroup
                                                       childFactory={[Function]}
-                                                      className="MuiTouchRipple-root-135"
+                                                      className="MuiTouchRipple-root-136"
                                                       component="span"
                                                       enter={true}
                                                       exit={true}
                                                     >
                                                       <span
-                                                        className="MuiTouchRipple-root-135"
+                                                        className="MuiTouchRipple-root-136"
                                                       />
                                                     </TransitionGroup>
                                                   </TouchRipple>
@@ -7922,7 +7928,7 @@ exports[`should match snapshot: RecommendedEvents/nomal 1`] = `
                                                     "fontSize": "0.875rem",
                                                     "fontWeight": 500,
                                                     "letterSpacing": "0.02857em",
-                                                    "lineHeight": 1.3125,
+                                                    "lineHeight": 1.75,
                                                     "textTransform": "uppercase",
                                                   },
                                                   "caption": Object {
@@ -8136,6 +8142,7 @@ exports[`should match snapshot: RecommendedEvents/nomal 1`] = `
                                                 "h5": "MuiTypography-h5-76",
                                                 "h6": "MuiTypography-h6-77",
                                                 "headline": "MuiTypography-headline-65",
+                                                "inline": "MuiTypography-inline-95",
                                                 "noWrap": "MuiTypography-noWrap-86",
                                                 "overline": "MuiTypography-overline-80",
                                                 "paragraph": "MuiTypography-paragraph-88",
@@ -8170,6 +8177,7 @@ exports[`should match snapshot: RecommendedEvents/nomal 1`] = `
                                                 "title": "h2",
                                               }
                                             }
+                                            inline={false}
                                             noWrap={false}
                                             paragraph={false}
                                             theme={
@@ -8370,7 +8378,7 @@ exports[`should match snapshot: RecommendedEvents/nomal 1`] = `
                                                     "fontSize": "0.875rem",
                                                     "fontWeight": 500,
                                                     "letterSpacing": "0.02857em",
-                                                    "lineHeight": 1.3125,
+                                                    "lineHeight": 1.75,
                                                     "textTransform": "uppercase",
                                                   },
                                                   "caption": Object {
@@ -8553,28 +8561,28 @@ exports[`should match snapshot: RecommendedEvents/nomal 1`] = `
                                       <CharIcon
                                         classes={
                                           Object {
-                                            "amber": "CharIcon-amber-111",
-                                            "avatar": "CharIcon-avatar-95",
-                                            "blue": "CharIcon-blue-103",
-                                            "blueGrey": "CharIcon-blueGrey-116",
-                                            "brown": "CharIcon-brown-114",
-                                            "cyan": "CharIcon-cyan-105",
-                                            "deepOrange": "CharIcon-deepOrange-113",
-                                            "deepPurple": "CharIcon-deepPurple-101",
-                                            "green": "CharIcon-green-107",
-                                            "grey": "CharIcon-grey-115",
-                                            "indigo": "CharIcon-indigo-102",
-                                            "lightBlue": "CharIcon-lightBlue-104",
-                                            "lightGreen": "CharIcon-lightGreen-108",
-                                            "lime": "CharIcon-lime-109",
-                                            "orange": "CharIcon-orange-112",
-                                            "pink": "CharIcon-pink-99",
-                                            "purple": "CharIcon-purple-100",
-                                            "red": "CharIcon-red-98",
-                                            "smallAvatar": "CharIcon-smallAvatar-96",
-                                            "teal": "CharIcon-teal-106",
-                                            "wrapper": "CharIcon-wrapper-97",
-                                            "yellow": "CharIcon-yellow-110",
+                                            "amber": "CharIcon-amber-112",
+                                            "avatar": "CharIcon-avatar-96",
+                                            "blue": "CharIcon-blue-104",
+                                            "blueGrey": "CharIcon-blueGrey-117",
+                                            "brown": "CharIcon-brown-115",
+                                            "cyan": "CharIcon-cyan-106",
+                                            "deepOrange": "CharIcon-deepOrange-114",
+                                            "deepPurple": "CharIcon-deepPurple-102",
+                                            "green": "CharIcon-green-108",
+                                            "grey": "CharIcon-grey-116",
+                                            "indigo": "CharIcon-indigo-103",
+                                            "lightBlue": "CharIcon-lightBlue-105",
+                                            "lightGreen": "CharIcon-lightGreen-109",
+                                            "lime": "CharIcon-lime-110",
+                                            "orange": "CharIcon-orange-113",
+                                            "pink": "CharIcon-pink-100",
+                                            "purple": "CharIcon-purple-101",
+                                            "red": "CharIcon-red-99",
+                                            "smallAvatar": "CharIcon-smallAvatar-97",
+                                            "teal": "CharIcon-teal-107",
+                                            "wrapper": "CharIcon-wrapper-98",
+                                            "yellow": "CharIcon-yellow-111",
                                           }
                                         }
                                         name="テストユーザ"
@@ -8582,12 +8590,12 @@ exports[`should match snapshot: RecommendedEvents/nomal 1`] = `
                                         small={true}
                                       >
                                         <WithStyles(IconButton)
-                                          className="CharIcon-wrapper-97"
+                                          className="CharIcon-wrapper-98"
                                           disableRipple={true}
                                           onClick={[Function]}
                                         >
                                           <IconButton
-                                            className="CharIcon-wrapper-97"
+                                            className="CharIcon-wrapper-98"
                                             classes={
                                               Object {
                                                 "colorInherit": "MuiIconButton-colorInherit-43",
@@ -8605,7 +8613,7 @@ exports[`should match snapshot: RecommendedEvents/nomal 1`] = `
                                           >
                                             <WithStyles(ButtonBase)
                                               centerRipple={true}
-                                              className="MuiIconButton-root-42 CharIcon-wrapper-97"
+                                              className="MuiIconButton-root-42 CharIcon-wrapper-98"
                                               disableRipple={true}
                                               disabled={false}
                                               focusRipple={true}
@@ -8613,7 +8621,7 @@ exports[`should match snapshot: RecommendedEvents/nomal 1`] = `
                                             >
                                               <ButtonBase
                                                 centerRipple={true}
-                                                className="MuiIconButton-root-42 CharIcon-wrapper-97"
+                                                className="MuiIconButton-root-42 CharIcon-wrapper-98"
                                                 classes={
                                                   Object {
                                                     "disabled": "MuiButtonBase-disabled-49",
@@ -8631,7 +8639,7 @@ exports[`should match snapshot: RecommendedEvents/nomal 1`] = `
                                                 type="button"
                                               >
                                                 <button
-                                                  className="MuiButtonBase-root-48 MuiIconButton-root-42 CharIcon-wrapper-97"
+                                                  className="MuiButtonBase-root-48 MuiIconButton-root-42 CharIcon-wrapper-98"
                                                   disabled={false}
                                                   onBlur={[Function]}
                                                   onClick={[Function]}
@@ -8652,21 +8660,21 @@ exports[`should match snapshot: RecommendedEvents/nomal 1`] = `
                                                     className="MuiIconButton-label-47"
                                                   >
                                                     <WithStyles(Avatar)
-                                                      className="CharIcon-avatar-95 CharIcon-smallAvatar-96 CharIcon-deepPurple-101"
+                                                      className="CharIcon-avatar-96 CharIcon-smallAvatar-97 CharIcon-deepPurple-102"
                                                     >
                                                       <Avatar
-                                                        className="CharIcon-avatar-95 CharIcon-smallAvatar-96 CharIcon-deepPurple-101"
+                                                        className="CharIcon-avatar-96 CharIcon-smallAvatar-97 CharIcon-deepPurple-102"
                                                         classes={
                                                           Object {
-                                                            "colorDefault": "MuiAvatar-colorDefault-118",
-                                                            "img": "MuiAvatar-img-119",
-                                                            "root": "MuiAvatar-root-117",
+                                                            "colorDefault": "MuiAvatar-colorDefault-119",
+                                                            "img": "MuiAvatar-img-120",
+                                                            "root": "MuiAvatar-root-118",
                                                           }
                                                         }
                                                         component="div"
                                                       >
                                                         <div
-                                                          className="MuiAvatar-root-117 MuiAvatar-colorDefault-118 CharIcon-avatar-95 CharIcon-smallAvatar-96 CharIcon-deepPurple-101"
+                                                          className="MuiAvatar-root-118 MuiAvatar-colorDefault-119 CharIcon-avatar-96 CharIcon-smallAvatar-97 CharIcon-deepPurple-102"
                                                         >
                                                           テ
                                                         </div>
@@ -8709,7 +8717,7 @@ exports[`should match snapshot: RecommendedEvents/nomal 1`] = `
             <SideMenu
               classes={
                 Object {
-                  "list": "SideMenu-list-120",
+                  "list": "SideMenu-list-121",
                 }
               }
               history={
@@ -8939,7 +8947,7 @@ exports[`should match snapshot: RecommendedEvents/nomal 1`] = `
                           "fontSize": "0.875rem",
                           "fontWeight": 500,
                           "letterSpacing": "0.02857em",
-                          "lineHeight": 1.3125,
+                          "lineHeight": 1.75,
                           "textTransform": "uppercase",
                         },
                         "caption": Object {
@@ -9328,7 +9336,7 @@ exports[`should match snapshot: RecommendedEvents/nomal 1`] = `
                             "fontSize": "0.875rem",
                             "fontWeight": 500,
                             "letterSpacing": "0.02857em",
-                            "lineHeight": 1.3125,
+                            "lineHeight": 1.75,
                             "textTransform": "uppercase",
                           },
                           "caption": Object {
@@ -9519,18 +9527,18 @@ exports[`should match snapshot: RecommendedEvents/nomal 1`] = `
                       anchor="right"
                       classes={
                         Object {
-                          "docked": "MuiDrawer-docked-122",
-                          "modal": "MuiDrawer-modal-132",
-                          "paper": "MuiDrawer-paper-123",
-                          "paperAnchorBottom": "MuiDrawer-paperAnchorBottom-127",
-                          "paperAnchorDockedBottom": "MuiDrawer-paperAnchorDockedBottom-131",
-                          "paperAnchorDockedLeft": "MuiDrawer-paperAnchorDockedLeft-128",
-                          "paperAnchorDockedRight": "MuiDrawer-paperAnchorDockedRight-130",
-                          "paperAnchorDockedTop": "MuiDrawer-paperAnchorDockedTop-129",
-                          "paperAnchorLeft": "MuiDrawer-paperAnchorLeft-124",
-                          "paperAnchorRight": "MuiDrawer-paperAnchorRight-125",
-                          "paperAnchorTop": "MuiDrawer-paperAnchorTop-126",
-                          "root": "MuiDrawer-root-121",
+                          "docked": "MuiDrawer-docked-123",
+                          "modal": "MuiDrawer-modal-133",
+                          "paper": "MuiDrawer-paper-124",
+                          "paperAnchorBottom": "MuiDrawer-paperAnchorBottom-128",
+                          "paperAnchorDockedBottom": "MuiDrawer-paperAnchorDockedBottom-132",
+                          "paperAnchorDockedLeft": "MuiDrawer-paperAnchorDockedLeft-129",
+                          "paperAnchorDockedRight": "MuiDrawer-paperAnchorDockedRight-131",
+                          "paperAnchorDockedTop": "MuiDrawer-paperAnchorDockedTop-130",
+                          "paperAnchorLeft": "MuiDrawer-paperAnchorLeft-125",
+                          "paperAnchorRight": "MuiDrawer-paperAnchorRight-126",
+                          "paperAnchorTop": "MuiDrawer-paperAnchorTop-127",
+                          "root": "MuiDrawer-root-122",
                         }
                       }
                       elevation={16}
@@ -9734,7 +9742,7 @@ exports[`should match snapshot: RecommendedEvents/nomal 1`] = `
                               "fontSize": "0.875rem",
                               "fontWeight": 500,
                               "letterSpacing": "0.02857em",
-                              "lineHeight": 1.3125,
+                              "lineHeight": 1.75,
                               "textTransform": "uppercase",
                             },
                             "caption": Object {
@@ -9916,7 +9924,7 @@ exports[`should match snapshot: RecommendedEvents/nomal 1`] = `
                             },
                           }
                         }
-                        className="MuiDrawer-root-121 MuiDrawer-modal-132"
+                        className="MuiDrawer-root-122 MuiDrawer-modal-133"
                         onClose={[Function]}
                         open={false}
                       >
@@ -9931,11 +9939,11 @@ exports[`should match snapshot: RecommendedEvents/nomal 1`] = `
                               },
                             }
                           }
-                          className="MuiDrawer-root-121 MuiDrawer-modal-132"
+                          className="MuiDrawer-root-122 MuiDrawer-modal-133"
                           classes={
                             Object {
-                              "hidden": "MuiModal-hidden-134",
-                              "root": "MuiModal-root-133",
+                              "hidden": "MuiModal-hidden-135",
+                              "root": "MuiModal-root-134",
                             }
                           }
                           disableAutoFocus={false}
@@ -9972,17 +9980,17 @@ exports[`should match snapshot: RecommendedEvents/nomal 1`] = `
                         anchor="right"
                         classes={
                           Object {
-                            "anchorBottom": "MuiPrivateSwipeArea-anchorBottom-146",
-                            "anchorLeft": "MuiPrivateSwipeArea-anchorLeft-143",
-                            "anchorRight": "MuiPrivateSwipeArea-anchorRight-144",
-                            "anchorTop": "MuiPrivateSwipeArea-anchorTop-145",
-                            "root": "MuiPrivateSwipeArea-root-142",
+                            "anchorBottom": "MuiPrivateSwipeArea-anchorBottom-147",
+                            "anchorLeft": "MuiPrivateSwipeArea-anchorLeft-144",
+                            "anchorRight": "MuiPrivateSwipeArea-anchorRight-145",
+                            "anchorTop": "MuiPrivateSwipeArea-anchorTop-146",
+                            "root": "MuiPrivateSwipeArea-root-143",
                           }
                         }
                         width={20}
                       >
                         <div
-                          className="MuiPrivateSwipeArea-root-142 MuiPrivateSwipeArea-anchorRight-144"
+                          className="MuiPrivateSwipeArea-root-143 MuiPrivateSwipeArea-anchorRight-145"
                           style={
                             Object {
                               "width": 20,
@@ -10065,6 +10073,7 @@ exports[`should match snapshot: RecommendedEvents/nomal 1`] = `
                     "h5": "MuiTypography-h5-76",
                     "h6": "MuiTypography-h6-77",
                     "headline": "MuiTypography-headline-65",
+                    "inline": "MuiTypography-inline-95",
                     "noWrap": "MuiTypography-noWrap-86",
                     "overline": "MuiTypography-overline-80",
                     "paragraph": "MuiTypography-paragraph-88",
@@ -10099,6 +10108,7 @@ exports[`should match snapshot: RecommendedEvents/nomal 1`] = `
                     "title": "h2",
                   }
                 }
+                inline={false}
                 noWrap={false}
                 paragraph={false}
                 theme={
@@ -10299,7 +10309,7 @@ exports[`should match snapshot: RecommendedEvents/nomal 1`] = `
                         "fontSize": "0.875rem",
                         "fontWeight": 500,
                         "letterSpacing": "0.02857em",
-                        "lineHeight": 1.3125,
+                        "lineHeight": 1.75,
                         "textTransform": "uppercase",
                       },
                       "caption": Object {

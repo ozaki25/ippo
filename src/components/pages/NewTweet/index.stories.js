@@ -19,6 +19,9 @@ const props = {
     location: {},
   },
   firebase: {},
+  parentTweet: {
+    tweet: {},
+  },
 };
 
 const defaultTweetProps = {
@@ -51,6 +54,18 @@ const leaveProps = {
   },
 };
 
+const parentTweetProps = {
+  parentTweet: {
+    tweet: {
+      id: '123',
+      name: '親',
+      text: '親ツイートです',
+      time: '2019/1/22',
+      hashtag: 'test',
+    },
+  },
+};
+
 stories.add('通常パターン', () => <NewTweet {...props} />);
 
 stories.add('エラー', () => (
@@ -67,3 +82,5 @@ stories.add('デフォルトツイート', () => <NewTweet {...props} {...defaul
 stories.add('参加', () => <NewTweet {...props} {...joinProps} />);
 
 stories.add('キャンセル', () => <NewTweet {...props} {...leaveProps} />);
+
+stories.add('親ツイートあり', () => <NewTweet {...props} {...parentTweetProps} />);

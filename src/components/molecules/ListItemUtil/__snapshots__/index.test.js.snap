@@ -289,7 +289,7 @@ exports[`should match snapshot: ListItemWithToggle/checkbox/ 1`] = `
                               "fontSize": "0.875rem",
                               "fontWeight": 500,
                               "letterSpacing": "0.02857em",
-                              "lineHeight": 1.3125,
+                              "lineHeight": 1.75,
                               "textTransform": "uppercase",
                             },
                             "caption": Object {
@@ -493,6 +493,7 @@ exports[`should match snapshot: ListItemWithToggle/checkbox/ 1`] = `
                                 "h5": "MuiTypography-h5-39",
                                 "h6": "MuiTypography-h6-40",
                                 "headline": "MuiTypography-headline-28",
+                                "inline": "MuiTypography-inline-58",
                                 "noWrap": "MuiTypography-noWrap-49",
                                 "overline": "MuiTypography-overline-43",
                                 "paragraph": "MuiTypography-paragraph-51",
@@ -528,6 +529,7 @@ exports[`should match snapshot: ListItemWithToggle/checkbox/ 1`] = `
                                 "title": "h2",
                               }
                             }
+                            inline={false}
                             noWrap={false}
                             paragraph={false}
                             theme={
@@ -728,7 +730,7 @@ exports[`should match snapshot: ListItemWithToggle/checkbox/ 1`] = `
                                     "fontSize": "0.875rem",
                                     "fontWeight": 500,
                                     "letterSpacing": "0.02857em",
-                                    "lineHeight": 1.3125,
+                                    "lineHeight": 1.75,
                                     "textTransform": "uppercase",
                                   },
                                   "caption": Object {
@@ -936,6 +938,7 @@ exports[`should match snapshot: ListItemWithToggle/checkbox/ 1`] = `
                                 "h5": "MuiTypography-h5-39",
                                 "h6": "MuiTypography-h6-40",
                                 "headline": "MuiTypography-headline-28",
+                                "inline": "MuiTypography-inline-58",
                                 "noWrap": "MuiTypography-noWrap-49",
                                 "overline": "MuiTypography-overline-43",
                                 "paragraph": "MuiTypography-paragraph-51",
@@ -970,6 +973,7 @@ exports[`should match snapshot: ListItemWithToggle/checkbox/ 1`] = `
                                 "title": "h2",
                               }
                             }
+                            inline={false}
                             noWrap={false}
                             paragraph={false}
                             theme={
@@ -1170,7 +1174,7 @@ exports[`should match snapshot: ListItemWithToggle/checkbox/ 1`] = `
                                     "fontSize": "0.875rem",
                                     "fontWeight": 500,
                                     "letterSpacing": "0.02857em",
-                                    "lineHeight": 1.3125,
+                                    "lineHeight": 1.75,
                                     "textTransform": "uppercase",
                                   },
                                   "caption": Object {
@@ -1648,7 +1652,7 @@ exports[`should match snapshot: ListItemWithToggle/checkbox/disabled 1`] = `
                                 "fontSize": "0.875rem",
                                 "fontWeight": 500,
                                 "letterSpacing": "0.02857em",
-                                "lineHeight": 1.3125,
+                                "lineHeight": 1.75,
                                 "textTransform": "uppercase",
                               },
                               "caption": Object {
@@ -1852,6 +1856,7 @@ exports[`should match snapshot: ListItemWithToggle/checkbox/disabled 1`] = `
                                   "h5": "MuiTypography-h5-39",
                                   "h6": "MuiTypography-h6-40",
                                   "headline": "MuiTypography-headline-28",
+                                  "inline": "MuiTypography-inline-58",
                                   "noWrap": "MuiTypography-noWrap-49",
                                   "overline": "MuiTypography-overline-43",
                                   "paragraph": "MuiTypography-paragraph-51",
@@ -1887,6 +1892,7 @@ exports[`should match snapshot: ListItemWithToggle/checkbox/disabled 1`] = `
                                   "title": "h2",
                                 }
                               }
+                              inline={false}
                               noWrap={false}
                               paragraph={false}
                               theme={
@@ -2087,7 +2093,7 @@ exports[`should match snapshot: ListItemWithToggle/checkbox/disabled 1`] = `
                                       "fontSize": "0.875rem",
                                       "fontWeight": 500,
                                       "letterSpacing": "0.02857em",
-                                      "lineHeight": 1.3125,
+                                      "lineHeight": 1.75,
                                       "textTransform": "uppercase",
                                     },
                                     "caption": Object {
@@ -2295,6 +2301,7 @@ exports[`should match snapshot: ListItemWithToggle/checkbox/disabled 1`] = `
                                   "h5": "MuiTypography-h5-39",
                                   "h6": "MuiTypography-h6-40",
                                   "headline": "MuiTypography-headline-28",
+                                  "inline": "MuiTypography-inline-58",
                                   "noWrap": "MuiTypography-noWrap-49",
                                   "overline": "MuiTypography-overline-43",
                                   "paragraph": "MuiTypography-paragraph-51",
@@ -2329,6 +2336,7 @@ exports[`should match snapshot: ListItemWithToggle/checkbox/disabled 1`] = `
                                   "title": "h2",
                                 }
                               }
+                              inline={false}
                               noWrap={false}
                               paragraph={false}
                               theme={
@@ -2529,7 +2537,7 @@ exports[`should match snapshot: ListItemWithToggle/checkbox/disabled 1`] = `
                                       "fontSize": "0.875rem",
                                       "fontWeight": 500,
                                       "letterSpacing": "0.02857em",
-                                      "lineHeight": 1.3125,
+                                      "lineHeight": 1.75,
                                       "textTransform": "uppercase",
                                     },
                                     "caption": Object {
@@ -2711,12 +2719,12 @@ exports[`should match snapshot: ListItemWithToggle/checkbox/disabled 1`] = `
                     <ListItemSecondaryAction
                       classes={
                         Object {
-                          "root": "MuiListItemSecondaryAction-root-58",
+                          "root": "MuiListItemSecondaryAction-root-59",
                         }
                       }
                     >
                       <div
-                        className="MuiListItemSecondaryAction-root-58"
+                        className="MuiListItemSecondaryAction-root-59"
                       >
                         <WithStyles(Checkbox)
                           checked={false}
@@ -2729,12 +2737,12 @@ exports[`should match snapshot: ListItemWithToggle/checkbox/disabled 1`] = `
                             checkedIcon={<pure(CheckBox) />}
                             classes={
                               Object {
-                                "checked": "MuiCheckbox-checked-89",
-                                "colorPrimary": "MuiCheckbox-colorPrimary-92",
-                                "colorSecondary": "MuiCheckbox-colorSecondary-93",
-                                "disabled": "MuiCheckbox-disabled-90",
-                                "indeterminate": "MuiCheckbox-indeterminate-91",
-                                "root": "MuiCheckbox-root-88",
+                                "checked": "MuiCheckbox-checked-90",
+                                "colorPrimary": "MuiCheckbox-colorPrimary-93",
+                                "colorSecondary": "MuiCheckbox-colorSecondary-94",
+                                "disabled": "MuiCheckbox-disabled-91",
+                                "indeterminate": "MuiCheckbox-indeterminate-92",
+                                "root": "MuiCheckbox-root-89",
                               }
                             }
                             color="primary"
@@ -2750,9 +2758,9 @@ exports[`should match snapshot: ListItemWithToggle/checkbox/disabled 1`] = `
                               className=""
                               classes={
                                 Object {
-                                  "checked": "MuiCheckbox-checked-89",
-                                  "disabled": "MuiCheckbox-disabled-90",
-                                  "root": "MuiCheckbox-root-88 MuiCheckbox-colorPrimary-92",
+                                  "checked": "MuiCheckbox-checked-90",
+                                  "disabled": "MuiCheckbox-disabled-91",
+                                  "root": "MuiCheckbox-root-89 MuiCheckbox-colorPrimary-93",
                                 }
                               }
                               disabled={true}
@@ -2771,10 +2779,10 @@ exports[`should match snapshot: ListItemWithToggle/checkbox/disabled 1`] = `
                                 className=""
                                 classes={
                                   Object {
-                                    "checked": "MuiPrivateSwitchBase-checked-69 MuiCheckbox-checked-89",
-                                    "disabled": "MuiPrivateSwitchBase-disabled-70 MuiCheckbox-disabled-90",
-                                    "input": "MuiPrivateSwitchBase-input-71",
-                                    "root": "MuiPrivateSwitchBase-root-68 MuiCheckbox-root-88 MuiCheckbox-colorPrimary-92",
+                                    "checked": "MuiPrivateSwitchBase-checked-70 MuiCheckbox-checked-90",
+                                    "disabled": "MuiPrivateSwitchBase-disabled-71 MuiCheckbox-disabled-91",
+                                    "input": "MuiPrivateSwitchBase-input-72",
+                                    "root": "MuiPrivateSwitchBase-root-69 MuiCheckbox-root-89 MuiCheckbox-colorPrimary-93",
                                   }
                                 }
                                 disabled={true}
@@ -2793,10 +2801,10 @@ exports[`should match snapshot: ListItemWithToggle/checkbox/disabled 1`] = `
                                   className=""
                                   classes={
                                     Object {
-                                      "checked": "MuiPrivateSwitchBase-checked-69 MuiCheckbox-checked-89",
-                                      "disabled": "MuiPrivateSwitchBase-disabled-70 MuiCheckbox-disabled-90",
-                                      "input": "MuiPrivateSwitchBase-input-71",
-                                      "root": "MuiPrivateSwitchBase-root-68 MuiCheckbox-root-88 MuiCheckbox-colorPrimary-92",
+                                      "checked": "MuiPrivateSwitchBase-checked-70 MuiCheckbox-checked-90",
+                                      "disabled": "MuiPrivateSwitchBase-disabled-71 MuiCheckbox-disabled-91",
+                                      "input": "MuiPrivateSwitchBase-input-72",
+                                      "root": "MuiPrivateSwitchBase-root-69 MuiCheckbox-root-89 MuiCheckbox-colorPrimary-93",
                                     }
                                   }
                                   disabled={true}
@@ -2810,7 +2818,7 @@ exports[`should match snapshot: ListItemWithToggle/checkbox/disabled 1`] = `
                                   type="checkbox"
                                 >
                                   <WithStyles(IconButton)
-                                    className="MuiPrivateSwitchBase-root-68 MuiCheckbox-root-88 MuiCheckbox-colorPrimary-92 MuiPrivateSwitchBase-disabled-70 MuiCheckbox-disabled-90"
+                                    className="MuiPrivateSwitchBase-root-69 MuiCheckbox-root-89 MuiCheckbox-colorPrimary-93 MuiPrivateSwitchBase-disabled-71 MuiCheckbox-disabled-91"
                                     component="span"
                                     disabled={true}
                                     onBlur={[Function]}
@@ -2818,15 +2826,15 @@ exports[`should match snapshot: ListItemWithToggle/checkbox/disabled 1`] = `
                                     tabIndex={null}
                                   >
                                     <IconButton
-                                      className="MuiPrivateSwitchBase-root-68 MuiCheckbox-root-88 MuiCheckbox-colorPrimary-92 MuiPrivateSwitchBase-disabled-70 MuiCheckbox-disabled-90"
+                                      className="MuiPrivateSwitchBase-root-69 MuiCheckbox-root-89 MuiCheckbox-colorPrimary-93 MuiPrivateSwitchBase-disabled-71 MuiCheckbox-disabled-91"
                                       classes={
                                         Object {
-                                          "colorInherit": "MuiIconButton-colorInherit-73",
-                                          "colorPrimary": "MuiIconButton-colorPrimary-74",
-                                          "colorSecondary": "MuiIconButton-colorSecondary-75",
-                                          "disabled": "MuiIconButton-disabled-76",
-                                          "label": "MuiIconButton-label-77",
-                                          "root": "MuiIconButton-root-72",
+                                          "colorInherit": "MuiIconButton-colorInherit-74",
+                                          "colorPrimary": "MuiIconButton-colorPrimary-75",
+                                          "colorSecondary": "MuiIconButton-colorSecondary-76",
+                                          "disabled": "MuiIconButton-disabled-77",
+                                          "label": "MuiIconButton-label-78",
+                                          "root": "MuiIconButton-root-73",
                                         }
                                       }
                                       color="default"
@@ -2838,7 +2846,7 @@ exports[`should match snapshot: ListItemWithToggle/checkbox/disabled 1`] = `
                                     >
                                       <WithStyles(ButtonBase)
                                         centerRipple={true}
-                                        className="MuiIconButton-root-72 MuiIconButton-disabled-76 MuiPrivateSwitchBase-root-68 MuiCheckbox-root-88 MuiCheckbox-colorPrimary-92 MuiPrivateSwitchBase-disabled-70 MuiCheckbox-disabled-90"
+                                        className="MuiIconButton-root-73 MuiIconButton-disabled-77 MuiPrivateSwitchBase-root-69 MuiCheckbox-root-89 MuiCheckbox-colorPrimary-93 MuiPrivateSwitchBase-disabled-71 MuiCheckbox-disabled-91"
                                         component="span"
                                         disabled={true}
                                         focusRipple={true}
@@ -2848,12 +2856,12 @@ exports[`should match snapshot: ListItemWithToggle/checkbox/disabled 1`] = `
                                       >
                                         <ButtonBase
                                           centerRipple={true}
-                                          className="MuiIconButton-root-72 MuiIconButton-disabled-76 MuiPrivateSwitchBase-root-68 MuiCheckbox-root-88 MuiCheckbox-colorPrimary-92 MuiPrivateSwitchBase-disabled-70 MuiCheckbox-disabled-90"
+                                          className="MuiIconButton-root-73 MuiIconButton-disabled-77 MuiPrivateSwitchBase-root-69 MuiCheckbox-root-89 MuiCheckbox-colorPrimary-93 MuiPrivateSwitchBase-disabled-71 MuiCheckbox-disabled-91"
                                           classes={
                                             Object {
-                                              "disabled": "MuiButtonBase-disabled-79",
-                                              "focusVisible": "MuiButtonBase-focusVisible-80",
-                                              "root": "MuiButtonBase-root-78",
+                                              "disabled": "MuiButtonBase-disabled-80",
+                                              "focusVisible": "MuiButtonBase-focusVisible-81",
+                                              "root": "MuiButtonBase-root-79",
                                             }
                                           }
                                           component="span"
@@ -2867,7 +2875,7 @@ exports[`should match snapshot: ListItemWithToggle/checkbox/disabled 1`] = `
                                           type="button"
                                         >
                                           <span
-                                            className="MuiButtonBase-root-78 MuiButtonBase-disabled-79 MuiIconButton-root-72 MuiIconButton-disabled-76 MuiPrivateSwitchBase-root-68 MuiCheckbox-root-88 MuiCheckbox-colorPrimary-92 MuiPrivateSwitchBase-disabled-70 MuiCheckbox-disabled-90"
+                                            className="MuiButtonBase-root-79 MuiButtonBase-disabled-80 MuiIconButton-root-73 MuiIconButton-disabled-77 MuiPrivateSwitchBase-root-69 MuiCheckbox-root-89 MuiCheckbox-colorPrimary-93 MuiPrivateSwitchBase-disabled-71 MuiCheckbox-disabled-91"
                                             onBlur={[Function]}
                                             onContextMenu={[Function]}
                                             onFocus={[Function]}
@@ -2882,7 +2890,7 @@ exports[`should match snapshot: ListItemWithToggle/checkbox/disabled 1`] = `
                                             tabIndex="-1"
                                           >
                                             <span
-                                              className="MuiIconButton-label-77"
+                                              className="MuiIconButton-label-78"
                                             >
                                               <pure(CheckBoxOutlineBlank)>
                                                 <CheckBoxOutlineBlank>
@@ -2890,15 +2898,15 @@ exports[`should match snapshot: ListItemWithToggle/checkbox/disabled 1`] = `
                                                     <SvgIcon
                                                       classes={
                                                         Object {
-                                                          "colorAction": "MuiSvgIcon-colorAction-97",
-                                                          "colorDisabled": "MuiSvgIcon-colorDisabled-99",
-                                                          "colorError": "MuiSvgIcon-colorError-98",
-                                                          "colorPrimary": "MuiSvgIcon-colorPrimary-95",
-                                                          "colorSecondary": "MuiSvgIcon-colorSecondary-96",
-                                                          "fontSizeInherit": "MuiSvgIcon-fontSizeInherit-100",
-                                                          "fontSizeLarge": "MuiSvgIcon-fontSizeLarge-102",
-                                                          "fontSizeSmall": "MuiSvgIcon-fontSizeSmall-101",
-                                                          "root": "MuiSvgIcon-root-94",
+                                                          "colorAction": "MuiSvgIcon-colorAction-98",
+                                                          "colorDisabled": "MuiSvgIcon-colorDisabled-100",
+                                                          "colorError": "MuiSvgIcon-colorError-99",
+                                                          "colorPrimary": "MuiSvgIcon-colorPrimary-96",
+                                                          "colorSecondary": "MuiSvgIcon-colorSecondary-97",
+                                                          "fontSizeInherit": "MuiSvgIcon-fontSizeInherit-101",
+                                                          "fontSizeLarge": "MuiSvgIcon-fontSizeLarge-103",
+                                                          "fontSizeSmall": "MuiSvgIcon-fontSizeSmall-102",
+                                                          "root": "MuiSvgIcon-root-95",
                                                         }
                                                       }
                                                       color="inherit"
@@ -2908,7 +2916,7 @@ exports[`should match snapshot: ListItemWithToggle/checkbox/disabled 1`] = `
                                                     >
                                                       <svg
                                                         aria-hidden="true"
-                                                        className="MuiSvgIcon-root-94"
+                                                        className="MuiSvgIcon-root-95"
                                                         focusable="false"
                                                         role="presentation"
                                                         viewBox="0 0 24 24"
@@ -2923,7 +2931,7 @@ exports[`should match snapshot: ListItemWithToggle/checkbox/disabled 1`] = `
                                               </pure(CheckBoxOutlineBlank)>
                                               <input
                                                 checked={false}
-                                                className="MuiPrivateSwitchBase-input-71"
+                                                className="MuiPrivateSwitchBase-input-72"
                                                 data-indeterminate={false}
                                                 disabled={true}
                                                 onChange={[Function]}
@@ -3243,7 +3251,7 @@ exports[`should match snapshot: ListItemWithToggle/nomal 1`] = `
                               "fontSize": "0.875rem",
                               "fontWeight": 500,
                               "letterSpacing": "0.02857em",
-                              "lineHeight": 1.3125,
+                              "lineHeight": 1.75,
                               "textTransform": "uppercase",
                             },
                             "caption": Object {
@@ -3447,6 +3455,7 @@ exports[`should match snapshot: ListItemWithToggle/nomal 1`] = `
                                 "h5": "MuiTypography-h5-39",
                                 "h6": "MuiTypography-h6-40",
                                 "headline": "MuiTypography-headline-28",
+                                "inline": "MuiTypography-inline-58",
                                 "noWrap": "MuiTypography-noWrap-49",
                                 "overline": "MuiTypography-overline-43",
                                 "paragraph": "MuiTypography-paragraph-51",
@@ -3482,6 +3491,7 @@ exports[`should match snapshot: ListItemWithToggle/nomal 1`] = `
                                 "title": "h2",
                               }
                             }
+                            inline={false}
                             noWrap={false}
                             paragraph={false}
                             theme={
@@ -3682,7 +3692,7 @@ exports[`should match snapshot: ListItemWithToggle/nomal 1`] = `
                                     "fontSize": "0.875rem",
                                     "fontWeight": 500,
                                     "letterSpacing": "0.02857em",
-                                    "lineHeight": 1.3125,
+                                    "lineHeight": 1.75,
                                     "textTransform": "uppercase",
                                   },
                                   "caption": Object {
@@ -3890,6 +3900,7 @@ exports[`should match snapshot: ListItemWithToggle/nomal 1`] = `
                                 "h5": "MuiTypography-h5-39",
                                 "h6": "MuiTypography-h6-40",
                                 "headline": "MuiTypography-headline-28",
+                                "inline": "MuiTypography-inline-58",
                                 "noWrap": "MuiTypography-noWrap-49",
                                 "overline": "MuiTypography-overline-43",
                                 "paragraph": "MuiTypography-paragraph-51",
@@ -3924,6 +3935,7 @@ exports[`should match snapshot: ListItemWithToggle/nomal 1`] = `
                                 "title": "h2",
                               }
                             }
+                            inline={false}
                             noWrap={false}
                             paragraph={false}
                             theme={
@@ -4124,7 +4136,7 @@ exports[`should match snapshot: ListItemWithToggle/nomal 1`] = `
                                     "fontSize": "0.875rem",
                                     "fontWeight": 500,
                                     "letterSpacing": "0.02857em",
-                                    "lineHeight": 1.3125,
+                                    "lineHeight": 1.75,
                                     "textTransform": "uppercase",
                                   },
                                   "caption": Object {
@@ -4602,7 +4614,7 @@ exports[`should match snapshot: ListItemWithToggle/switch 1`] = `
                                 "fontSize": "0.875rem",
                                 "fontWeight": 500,
                                 "letterSpacing": "0.02857em",
-                                "lineHeight": 1.3125,
+                                "lineHeight": 1.75,
                                 "textTransform": "uppercase",
                               },
                               "caption": Object {
@@ -4806,6 +4818,7 @@ exports[`should match snapshot: ListItemWithToggle/switch 1`] = `
                                   "h5": "MuiTypography-h5-39",
                                   "h6": "MuiTypography-h6-40",
                                   "headline": "MuiTypography-headline-28",
+                                  "inline": "MuiTypography-inline-58",
                                   "noWrap": "MuiTypography-noWrap-49",
                                   "overline": "MuiTypography-overline-43",
                                   "paragraph": "MuiTypography-paragraph-51",
@@ -4841,6 +4854,7 @@ exports[`should match snapshot: ListItemWithToggle/switch 1`] = `
                                   "title": "h2",
                                 }
                               }
+                              inline={false}
                               noWrap={false}
                               paragraph={false}
                               theme={
@@ -5041,7 +5055,7 @@ exports[`should match snapshot: ListItemWithToggle/switch 1`] = `
                                       "fontSize": "0.875rem",
                                       "fontWeight": 500,
                                       "letterSpacing": "0.02857em",
-                                      "lineHeight": 1.3125,
+                                      "lineHeight": 1.75,
                                       "textTransform": "uppercase",
                                     },
                                     "caption": Object {
@@ -5249,6 +5263,7 @@ exports[`should match snapshot: ListItemWithToggle/switch 1`] = `
                                   "h5": "MuiTypography-h5-39",
                                   "h6": "MuiTypography-h6-40",
                                   "headline": "MuiTypography-headline-28",
+                                  "inline": "MuiTypography-inline-58",
                                   "noWrap": "MuiTypography-noWrap-49",
                                   "overline": "MuiTypography-overline-43",
                                   "paragraph": "MuiTypography-paragraph-51",
@@ -5283,6 +5298,7 @@ exports[`should match snapshot: ListItemWithToggle/switch 1`] = `
                                   "title": "h2",
                                 }
                               }
+                              inline={false}
                               noWrap={false}
                               paragraph={false}
                               theme={
@@ -5483,7 +5499,7 @@ exports[`should match snapshot: ListItemWithToggle/switch 1`] = `
                                       "fontSize": "0.875rem",
                                       "fontWeight": 500,
                                       "letterSpacing": "0.02857em",
-                                      "lineHeight": 1.3125,
+                                      "lineHeight": 1.75,
                                       "textTransform": "uppercase",
                                     },
                                     "caption": Object {
@@ -5665,12 +5681,12 @@ exports[`should match snapshot: ListItemWithToggle/switch 1`] = `
                     <ListItemSecondaryAction
                       classes={
                         Object {
-                          "root": "MuiListItemSecondaryAction-root-58",
+                          "root": "MuiListItemSecondaryAction-root-59",
                         }
                       }
                     >
                       <div
-                        className="MuiListItemSecondaryAction-root-58"
+                        className="MuiListItemSecondaryAction-root-59"
                       >
                         <WithStyles(Switch)
                           checked={false}
@@ -5682,15 +5698,15 @@ exports[`should match snapshot: ListItemWithToggle/switch 1`] = `
                             checked={false}
                             classes={
                               Object {
-                                "bar": "MuiSwitch-bar-67",
-                                "checked": "MuiSwitch-checked-63",
-                                "colorPrimary": "MuiSwitch-colorPrimary-64",
-                                "colorSecondary": "MuiSwitch-colorSecondary-65",
-                                "disabled": "MuiSwitch-disabled-66",
-                                "icon": "MuiSwitch-icon-60",
-                                "iconChecked": "MuiSwitch-iconChecked-61",
-                                "root": "MuiSwitch-root-59",
-                                "switchBase": "MuiSwitch-switchBase-62",
+                                "bar": "MuiSwitch-bar-68",
+                                "checked": "MuiSwitch-checked-64",
+                                "colorPrimary": "MuiSwitch-colorPrimary-65",
+                                "colorSecondary": "MuiSwitch-colorSecondary-66",
+                                "disabled": "MuiSwitch-disabled-67",
+                                "icon": "MuiSwitch-icon-61",
+                                "iconChecked": "MuiSwitch-iconChecked-62",
+                                "root": "MuiSwitch-root-60",
+                                "switchBase": "MuiSwitch-switchBase-63",
                               }
                             }
                             color="primary"
@@ -5698,26 +5714,26 @@ exports[`should match snapshot: ListItemWithToggle/switch 1`] = `
                             onChange={[MockFunction]}
                           >
                             <span
-                              className="MuiSwitch-root-59"
+                              className="MuiSwitch-root-60"
                             >
                               <WithStyles(WithFormControlContext(SwitchBase))
                                 checked={false}
                                 checkedIcon={
                                   <span
-                                    className="MuiSwitch-icon-60 MuiSwitch-iconChecked-61"
+                                    className="MuiSwitch-icon-61 MuiSwitch-iconChecked-62"
                                   />
                                 }
                                 classes={
                                   Object {
-                                    "checked": "MuiSwitch-checked-63",
-                                    "disabled": "MuiSwitch-disabled-66",
-                                    "root": "MuiSwitch-switchBase-62 MuiSwitch-colorPrimary-64",
+                                    "checked": "MuiSwitch-checked-64",
+                                    "disabled": "MuiSwitch-disabled-67",
+                                    "root": "MuiSwitch-switchBase-63 MuiSwitch-colorPrimary-65",
                                   }
                                 }
                                 disabled={false}
                                 icon={
                                   <span
-                                    className="MuiSwitch-icon-60"
+                                    className="MuiSwitch-icon-61"
                                   />
                                 }
                                 onChange={[MockFunction]}
@@ -5727,21 +5743,21 @@ exports[`should match snapshot: ListItemWithToggle/switch 1`] = `
                                   checked={false}
                                   checkedIcon={
                                     <span
-                                      className="MuiSwitch-icon-60 MuiSwitch-iconChecked-61"
+                                      className="MuiSwitch-icon-61 MuiSwitch-iconChecked-62"
                                     />
                                   }
                                   classes={
                                     Object {
-                                      "checked": "MuiPrivateSwitchBase-checked-69 MuiSwitch-checked-63",
-                                      "disabled": "MuiPrivateSwitchBase-disabled-70 MuiSwitch-disabled-66",
-                                      "input": "MuiPrivateSwitchBase-input-71",
-                                      "root": "MuiPrivateSwitchBase-root-68 MuiSwitch-switchBase-62 MuiSwitch-colorPrimary-64",
+                                      "checked": "MuiPrivateSwitchBase-checked-70 MuiSwitch-checked-64",
+                                      "disabled": "MuiPrivateSwitchBase-disabled-71 MuiSwitch-disabled-67",
+                                      "input": "MuiPrivateSwitchBase-input-72",
+                                      "root": "MuiPrivateSwitchBase-root-69 MuiSwitch-switchBase-63 MuiSwitch-colorPrimary-65",
                                     }
                                   }
                                   disabled={false}
                                   icon={
                                     <span
-                                      className="MuiSwitch-icon-60"
+                                      className="MuiSwitch-icon-61"
                                     />
                                   }
                                   onChange={[MockFunction]}
@@ -5751,28 +5767,28 @@ exports[`should match snapshot: ListItemWithToggle/switch 1`] = `
                                     checked={false}
                                     checkedIcon={
                                       <span
-                                        className="MuiSwitch-icon-60 MuiSwitch-iconChecked-61"
+                                        className="MuiSwitch-icon-61 MuiSwitch-iconChecked-62"
                                       />
                                     }
                                     classes={
                                       Object {
-                                        "checked": "MuiPrivateSwitchBase-checked-69 MuiSwitch-checked-63",
-                                        "disabled": "MuiPrivateSwitchBase-disabled-70 MuiSwitch-disabled-66",
-                                        "input": "MuiPrivateSwitchBase-input-71",
-                                        "root": "MuiPrivateSwitchBase-root-68 MuiSwitch-switchBase-62 MuiSwitch-colorPrimary-64",
+                                        "checked": "MuiPrivateSwitchBase-checked-70 MuiSwitch-checked-64",
+                                        "disabled": "MuiPrivateSwitchBase-disabled-71 MuiSwitch-disabled-67",
+                                        "input": "MuiPrivateSwitchBase-input-72",
+                                        "root": "MuiPrivateSwitchBase-root-69 MuiSwitch-switchBase-63 MuiSwitch-colorPrimary-65",
                                       }
                                     }
                                     disabled={false}
                                     icon={
                                       <span
-                                        className="MuiSwitch-icon-60"
+                                        className="MuiSwitch-icon-61"
                                       />
                                     }
                                     onChange={[MockFunction]}
                                     type="checkbox"
                                   >
                                     <WithStyles(IconButton)
-                                      className="MuiPrivateSwitchBase-root-68 MuiSwitch-switchBase-62 MuiSwitch-colorPrimary-64"
+                                      className="MuiPrivateSwitchBase-root-69 MuiSwitch-switchBase-63 MuiSwitch-colorPrimary-65"
                                       component="span"
                                       disabled={false}
                                       onBlur={[Function]}
@@ -5780,15 +5796,15 @@ exports[`should match snapshot: ListItemWithToggle/switch 1`] = `
                                       tabIndex={null}
                                     >
                                       <IconButton
-                                        className="MuiPrivateSwitchBase-root-68 MuiSwitch-switchBase-62 MuiSwitch-colorPrimary-64"
+                                        className="MuiPrivateSwitchBase-root-69 MuiSwitch-switchBase-63 MuiSwitch-colorPrimary-65"
                                         classes={
                                           Object {
-                                            "colorInherit": "MuiIconButton-colorInherit-73",
-                                            "colorPrimary": "MuiIconButton-colorPrimary-74",
-                                            "colorSecondary": "MuiIconButton-colorSecondary-75",
-                                            "disabled": "MuiIconButton-disabled-76",
-                                            "label": "MuiIconButton-label-77",
-                                            "root": "MuiIconButton-root-72",
+                                            "colorInherit": "MuiIconButton-colorInherit-74",
+                                            "colorPrimary": "MuiIconButton-colorPrimary-75",
+                                            "colorSecondary": "MuiIconButton-colorSecondary-76",
+                                            "disabled": "MuiIconButton-disabled-77",
+                                            "label": "MuiIconButton-label-78",
+                                            "root": "MuiIconButton-root-73",
                                           }
                                         }
                                         color="default"
@@ -5800,7 +5816,7 @@ exports[`should match snapshot: ListItemWithToggle/switch 1`] = `
                                       >
                                         <WithStyles(ButtonBase)
                                           centerRipple={true}
-                                          className="MuiIconButton-root-72 MuiPrivateSwitchBase-root-68 MuiSwitch-switchBase-62 MuiSwitch-colorPrimary-64"
+                                          className="MuiIconButton-root-73 MuiPrivateSwitchBase-root-69 MuiSwitch-switchBase-63 MuiSwitch-colorPrimary-65"
                                           component="span"
                                           disabled={false}
                                           focusRipple={true}
@@ -5810,12 +5826,12 @@ exports[`should match snapshot: ListItemWithToggle/switch 1`] = `
                                         >
                                           <ButtonBase
                                             centerRipple={true}
-                                            className="MuiIconButton-root-72 MuiPrivateSwitchBase-root-68 MuiSwitch-switchBase-62 MuiSwitch-colorPrimary-64"
+                                            className="MuiIconButton-root-73 MuiPrivateSwitchBase-root-69 MuiSwitch-switchBase-63 MuiSwitch-colorPrimary-65"
                                             classes={
                                               Object {
-                                                "disabled": "MuiButtonBase-disabled-79",
-                                                "focusVisible": "MuiButtonBase-focusVisible-80",
-                                                "root": "MuiButtonBase-root-78",
+                                                "disabled": "MuiButtonBase-disabled-80",
+                                                "focusVisible": "MuiButtonBase-focusVisible-81",
+                                                "root": "MuiButtonBase-root-79",
                                               }
                                             }
                                             component="span"
@@ -5829,7 +5845,7 @@ exports[`should match snapshot: ListItemWithToggle/switch 1`] = `
                                             type="button"
                                           >
                                             <span
-                                              className="MuiButtonBase-root-78 MuiIconButton-root-72 MuiPrivateSwitchBase-root-68 MuiSwitch-switchBase-62 MuiSwitch-colorPrimary-64"
+                                              className="MuiButtonBase-root-79 MuiIconButton-root-73 MuiPrivateSwitchBase-root-69 MuiSwitch-switchBase-63 MuiSwitch-colorPrimary-65"
                                               onBlur={[Function]}
                                               onContextMenu={[Function]}
                                               onFocus={[Function]}
@@ -5844,14 +5860,14 @@ exports[`should match snapshot: ListItemWithToggle/switch 1`] = `
                                               tabIndex={null}
                                             >
                                               <span
-                                                className="MuiIconButton-label-77"
+                                                className="MuiIconButton-label-78"
                                               >
                                                 <span
-                                                  className="MuiSwitch-icon-60"
+                                                  className="MuiSwitch-icon-61"
                                                 />
                                                 <input
                                                   checked={false}
-                                                  className="MuiPrivateSwitchBase-input-71"
+                                                  className="MuiPrivateSwitchBase-input-72"
                                                   disabled={false}
                                                   onChange={[Function]}
                                                   type="checkbox"
@@ -5869,25 +5885,25 @@ exports[`should match snapshot: ListItemWithToggle/switch 1`] = `
                                                     center={true}
                                                     classes={
                                                       Object {
-                                                        "child": "MuiTouchRipple-child-85",
-                                                        "childLeaving": "MuiTouchRipple-childLeaving-86",
-                                                        "childPulsate": "MuiTouchRipple-childPulsate-87",
-                                                        "ripple": "MuiTouchRipple-ripple-82",
-                                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate-84",
-                                                        "rippleVisible": "MuiTouchRipple-rippleVisible-83",
-                                                        "root": "MuiTouchRipple-root-81",
+                                                        "child": "MuiTouchRipple-child-86",
+                                                        "childLeaving": "MuiTouchRipple-childLeaving-87",
+                                                        "childPulsate": "MuiTouchRipple-childPulsate-88",
+                                                        "ripple": "MuiTouchRipple-ripple-83",
+                                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate-85",
+                                                        "rippleVisible": "MuiTouchRipple-rippleVisible-84",
+                                                        "root": "MuiTouchRipple-root-82",
                                                       }
                                                     }
                                                   >
                                                     <TransitionGroup
                                                       childFactory={[Function]}
-                                                      className="MuiTouchRipple-root-81"
+                                                      className="MuiTouchRipple-root-82"
                                                       component="span"
                                                       enter={true}
                                                       exit={true}
                                                     >
                                                       <span
-                                                        className="MuiTouchRipple-root-81"
+                                                        className="MuiTouchRipple-root-82"
                                                       />
                                                     </TransitionGroup>
                                                   </TouchRipple>
@@ -5902,7 +5918,7 @@ exports[`should match snapshot: ListItemWithToggle/switch 1`] = `
                                 </WithFormControlContext(SwitchBase)>
                               </WithStyles(WithFormControlContext(SwitchBase))>
                               <span
-                                className="MuiSwitch-bar-67"
+                                className="MuiSwitch-bar-68"
                               />
                             </span>
                           </Switch>
@@ -6213,7 +6229,7 @@ exports[`should match snapshot: ListItemWithToggle/switch/disabled 1`] = `
                                 "fontSize": "0.875rem",
                                 "fontWeight": 500,
                                 "letterSpacing": "0.02857em",
-                                "lineHeight": 1.3125,
+                                "lineHeight": 1.75,
                                 "textTransform": "uppercase",
                               },
                               "caption": Object {
@@ -6417,6 +6433,7 @@ exports[`should match snapshot: ListItemWithToggle/switch/disabled 1`] = `
                                   "h5": "MuiTypography-h5-39",
                                   "h6": "MuiTypography-h6-40",
                                   "headline": "MuiTypography-headline-28",
+                                  "inline": "MuiTypography-inline-58",
                                   "noWrap": "MuiTypography-noWrap-49",
                                   "overline": "MuiTypography-overline-43",
                                   "paragraph": "MuiTypography-paragraph-51",
@@ -6452,6 +6469,7 @@ exports[`should match snapshot: ListItemWithToggle/switch/disabled 1`] = `
                                   "title": "h2",
                                 }
                               }
+                              inline={false}
                               noWrap={false}
                               paragraph={false}
                               theme={
@@ -6652,7 +6670,7 @@ exports[`should match snapshot: ListItemWithToggle/switch/disabled 1`] = `
                                       "fontSize": "0.875rem",
                                       "fontWeight": 500,
                                       "letterSpacing": "0.02857em",
-                                      "lineHeight": 1.3125,
+                                      "lineHeight": 1.75,
                                       "textTransform": "uppercase",
                                     },
                                     "caption": Object {
@@ -6860,6 +6878,7 @@ exports[`should match snapshot: ListItemWithToggle/switch/disabled 1`] = `
                                   "h5": "MuiTypography-h5-39",
                                   "h6": "MuiTypography-h6-40",
                                   "headline": "MuiTypography-headline-28",
+                                  "inline": "MuiTypography-inline-58",
                                   "noWrap": "MuiTypography-noWrap-49",
                                   "overline": "MuiTypography-overline-43",
                                   "paragraph": "MuiTypography-paragraph-51",
@@ -6894,6 +6913,7 @@ exports[`should match snapshot: ListItemWithToggle/switch/disabled 1`] = `
                                   "title": "h2",
                                 }
                               }
+                              inline={false}
                               noWrap={false}
                               paragraph={false}
                               theme={
@@ -7094,7 +7114,7 @@ exports[`should match snapshot: ListItemWithToggle/switch/disabled 1`] = `
                                       "fontSize": "0.875rem",
                                       "fontWeight": 500,
                                       "letterSpacing": "0.02857em",
-                                      "lineHeight": 1.3125,
+                                      "lineHeight": 1.75,
                                       "textTransform": "uppercase",
                                     },
                                     "caption": Object {
@@ -7276,12 +7296,12 @@ exports[`should match snapshot: ListItemWithToggle/switch/disabled 1`] = `
                     <ListItemSecondaryAction
                       classes={
                         Object {
-                          "root": "MuiListItemSecondaryAction-root-58",
+                          "root": "MuiListItemSecondaryAction-root-59",
                         }
                       }
                     >
                       <div
-                        className="MuiListItemSecondaryAction-root-58"
+                        className="MuiListItemSecondaryAction-root-59"
                       >
                         <WithStyles(Switch)
                           checked={false}
@@ -7293,15 +7313,15 @@ exports[`should match snapshot: ListItemWithToggle/switch/disabled 1`] = `
                             checked={false}
                             classes={
                               Object {
-                                "bar": "MuiSwitch-bar-67",
-                                "checked": "MuiSwitch-checked-63",
-                                "colorPrimary": "MuiSwitch-colorPrimary-64",
-                                "colorSecondary": "MuiSwitch-colorSecondary-65",
-                                "disabled": "MuiSwitch-disabled-66",
-                                "icon": "MuiSwitch-icon-60",
-                                "iconChecked": "MuiSwitch-iconChecked-61",
-                                "root": "MuiSwitch-root-59",
-                                "switchBase": "MuiSwitch-switchBase-62",
+                                "bar": "MuiSwitch-bar-68",
+                                "checked": "MuiSwitch-checked-64",
+                                "colorPrimary": "MuiSwitch-colorPrimary-65",
+                                "colorSecondary": "MuiSwitch-colorSecondary-66",
+                                "disabled": "MuiSwitch-disabled-67",
+                                "icon": "MuiSwitch-icon-61",
+                                "iconChecked": "MuiSwitch-iconChecked-62",
+                                "root": "MuiSwitch-root-60",
+                                "switchBase": "MuiSwitch-switchBase-63",
                               }
                             }
                             color="primary"
@@ -7309,26 +7329,26 @@ exports[`should match snapshot: ListItemWithToggle/switch/disabled 1`] = `
                             onChange={[MockFunction]}
                           >
                             <span
-                              className="MuiSwitch-root-59"
+                              className="MuiSwitch-root-60"
                             >
                               <WithStyles(WithFormControlContext(SwitchBase))
                                 checked={false}
                                 checkedIcon={
                                   <span
-                                    className="MuiSwitch-icon-60 MuiSwitch-iconChecked-61"
+                                    className="MuiSwitch-icon-61 MuiSwitch-iconChecked-62"
                                   />
                                 }
                                 classes={
                                   Object {
-                                    "checked": "MuiSwitch-checked-63",
-                                    "disabled": "MuiSwitch-disabled-66",
-                                    "root": "MuiSwitch-switchBase-62 MuiSwitch-colorPrimary-64",
+                                    "checked": "MuiSwitch-checked-64",
+                                    "disabled": "MuiSwitch-disabled-67",
+                                    "root": "MuiSwitch-switchBase-63 MuiSwitch-colorPrimary-65",
                                   }
                                 }
                                 disabled={true}
                                 icon={
                                   <span
-                                    className="MuiSwitch-icon-60"
+                                    className="MuiSwitch-icon-61"
                                   />
                                 }
                                 onChange={[MockFunction]}
@@ -7338,21 +7358,21 @@ exports[`should match snapshot: ListItemWithToggle/switch/disabled 1`] = `
                                   checked={false}
                                   checkedIcon={
                                     <span
-                                      className="MuiSwitch-icon-60 MuiSwitch-iconChecked-61"
+                                      className="MuiSwitch-icon-61 MuiSwitch-iconChecked-62"
                                     />
                                   }
                                   classes={
                                     Object {
-                                      "checked": "MuiPrivateSwitchBase-checked-69 MuiSwitch-checked-63",
-                                      "disabled": "MuiPrivateSwitchBase-disabled-70 MuiSwitch-disabled-66",
-                                      "input": "MuiPrivateSwitchBase-input-71",
-                                      "root": "MuiPrivateSwitchBase-root-68 MuiSwitch-switchBase-62 MuiSwitch-colorPrimary-64",
+                                      "checked": "MuiPrivateSwitchBase-checked-70 MuiSwitch-checked-64",
+                                      "disabled": "MuiPrivateSwitchBase-disabled-71 MuiSwitch-disabled-67",
+                                      "input": "MuiPrivateSwitchBase-input-72",
+                                      "root": "MuiPrivateSwitchBase-root-69 MuiSwitch-switchBase-63 MuiSwitch-colorPrimary-65",
                                     }
                                   }
                                   disabled={true}
                                   icon={
                                     <span
-                                      className="MuiSwitch-icon-60"
+                                      className="MuiSwitch-icon-61"
                                     />
                                   }
                                   onChange={[MockFunction]}
@@ -7362,28 +7382,28 @@ exports[`should match snapshot: ListItemWithToggle/switch/disabled 1`] = `
                                     checked={false}
                                     checkedIcon={
                                       <span
-                                        className="MuiSwitch-icon-60 MuiSwitch-iconChecked-61"
+                                        className="MuiSwitch-icon-61 MuiSwitch-iconChecked-62"
                                       />
                                     }
                                     classes={
                                       Object {
-                                        "checked": "MuiPrivateSwitchBase-checked-69 MuiSwitch-checked-63",
-                                        "disabled": "MuiPrivateSwitchBase-disabled-70 MuiSwitch-disabled-66",
-                                        "input": "MuiPrivateSwitchBase-input-71",
-                                        "root": "MuiPrivateSwitchBase-root-68 MuiSwitch-switchBase-62 MuiSwitch-colorPrimary-64",
+                                        "checked": "MuiPrivateSwitchBase-checked-70 MuiSwitch-checked-64",
+                                        "disabled": "MuiPrivateSwitchBase-disabled-71 MuiSwitch-disabled-67",
+                                        "input": "MuiPrivateSwitchBase-input-72",
+                                        "root": "MuiPrivateSwitchBase-root-69 MuiSwitch-switchBase-63 MuiSwitch-colorPrimary-65",
                                       }
                                     }
                                     disabled={true}
                                     icon={
                                       <span
-                                        className="MuiSwitch-icon-60"
+                                        className="MuiSwitch-icon-61"
                                       />
                                     }
                                     onChange={[MockFunction]}
                                     type="checkbox"
                                   >
                                     <WithStyles(IconButton)
-                                      className="MuiPrivateSwitchBase-root-68 MuiSwitch-switchBase-62 MuiSwitch-colorPrimary-64 MuiPrivateSwitchBase-disabled-70 MuiSwitch-disabled-66"
+                                      className="MuiPrivateSwitchBase-root-69 MuiSwitch-switchBase-63 MuiSwitch-colorPrimary-65 MuiPrivateSwitchBase-disabled-71 MuiSwitch-disabled-67"
                                       component="span"
                                       disabled={true}
                                       onBlur={[Function]}
@@ -7391,15 +7411,15 @@ exports[`should match snapshot: ListItemWithToggle/switch/disabled 1`] = `
                                       tabIndex={null}
                                     >
                                       <IconButton
-                                        className="MuiPrivateSwitchBase-root-68 MuiSwitch-switchBase-62 MuiSwitch-colorPrimary-64 MuiPrivateSwitchBase-disabled-70 MuiSwitch-disabled-66"
+                                        className="MuiPrivateSwitchBase-root-69 MuiSwitch-switchBase-63 MuiSwitch-colorPrimary-65 MuiPrivateSwitchBase-disabled-71 MuiSwitch-disabled-67"
                                         classes={
                                           Object {
-                                            "colorInherit": "MuiIconButton-colorInherit-73",
-                                            "colorPrimary": "MuiIconButton-colorPrimary-74",
-                                            "colorSecondary": "MuiIconButton-colorSecondary-75",
-                                            "disabled": "MuiIconButton-disabled-76",
-                                            "label": "MuiIconButton-label-77",
-                                            "root": "MuiIconButton-root-72",
+                                            "colorInherit": "MuiIconButton-colorInherit-74",
+                                            "colorPrimary": "MuiIconButton-colorPrimary-75",
+                                            "colorSecondary": "MuiIconButton-colorSecondary-76",
+                                            "disabled": "MuiIconButton-disabled-77",
+                                            "label": "MuiIconButton-label-78",
+                                            "root": "MuiIconButton-root-73",
                                           }
                                         }
                                         color="default"
@@ -7411,7 +7431,7 @@ exports[`should match snapshot: ListItemWithToggle/switch/disabled 1`] = `
                                       >
                                         <WithStyles(ButtonBase)
                                           centerRipple={true}
-                                          className="MuiIconButton-root-72 MuiIconButton-disabled-76 MuiPrivateSwitchBase-root-68 MuiSwitch-switchBase-62 MuiSwitch-colorPrimary-64 MuiPrivateSwitchBase-disabled-70 MuiSwitch-disabled-66"
+                                          className="MuiIconButton-root-73 MuiIconButton-disabled-77 MuiPrivateSwitchBase-root-69 MuiSwitch-switchBase-63 MuiSwitch-colorPrimary-65 MuiPrivateSwitchBase-disabled-71 MuiSwitch-disabled-67"
                                           component="span"
                                           disabled={true}
                                           focusRipple={true}
@@ -7421,12 +7441,12 @@ exports[`should match snapshot: ListItemWithToggle/switch/disabled 1`] = `
                                         >
                                           <ButtonBase
                                             centerRipple={true}
-                                            className="MuiIconButton-root-72 MuiIconButton-disabled-76 MuiPrivateSwitchBase-root-68 MuiSwitch-switchBase-62 MuiSwitch-colorPrimary-64 MuiPrivateSwitchBase-disabled-70 MuiSwitch-disabled-66"
+                                            className="MuiIconButton-root-73 MuiIconButton-disabled-77 MuiPrivateSwitchBase-root-69 MuiSwitch-switchBase-63 MuiSwitch-colorPrimary-65 MuiPrivateSwitchBase-disabled-71 MuiSwitch-disabled-67"
                                             classes={
                                               Object {
-                                                "disabled": "MuiButtonBase-disabled-79",
-                                                "focusVisible": "MuiButtonBase-focusVisible-80",
-                                                "root": "MuiButtonBase-root-78",
+                                                "disabled": "MuiButtonBase-disabled-80",
+                                                "focusVisible": "MuiButtonBase-focusVisible-81",
+                                                "root": "MuiButtonBase-root-79",
                                               }
                                             }
                                             component="span"
@@ -7440,7 +7460,7 @@ exports[`should match snapshot: ListItemWithToggle/switch/disabled 1`] = `
                                             type="button"
                                           >
                                             <span
-                                              className="MuiButtonBase-root-78 MuiButtonBase-disabled-79 MuiIconButton-root-72 MuiIconButton-disabled-76 MuiPrivateSwitchBase-root-68 MuiSwitch-switchBase-62 MuiSwitch-colorPrimary-64 MuiPrivateSwitchBase-disabled-70 MuiSwitch-disabled-66"
+                                              className="MuiButtonBase-root-79 MuiButtonBase-disabled-80 MuiIconButton-root-73 MuiIconButton-disabled-77 MuiPrivateSwitchBase-root-69 MuiSwitch-switchBase-63 MuiSwitch-colorPrimary-65 MuiPrivateSwitchBase-disabled-71 MuiSwitch-disabled-67"
                                               onBlur={[Function]}
                                               onContextMenu={[Function]}
                                               onFocus={[Function]}
@@ -7455,14 +7475,14 @@ exports[`should match snapshot: ListItemWithToggle/switch/disabled 1`] = `
                                               tabIndex="-1"
                                             >
                                               <span
-                                                className="MuiIconButton-label-77"
+                                                className="MuiIconButton-label-78"
                                               >
                                                 <span
-                                                  className="MuiSwitch-icon-60"
+                                                  className="MuiSwitch-icon-61"
                                                 />
                                                 <input
                                                   checked={false}
-                                                  className="MuiPrivateSwitchBase-input-71"
+                                                  className="MuiPrivateSwitchBase-input-72"
                                                   disabled={true}
                                                   onChange={[Function]}
                                                   type="checkbox"
@@ -7477,7 +7497,7 @@ exports[`should match snapshot: ListItemWithToggle/switch/disabled 1`] = `
                                 </WithFormControlContext(SwitchBase)>
                               </WithStyles(WithFormControlContext(SwitchBase))>
                               <span
-                                className="MuiSwitch-bar-67"
+                                className="MuiSwitch-bar-68"
                               />
                             </span>
                           </Switch>

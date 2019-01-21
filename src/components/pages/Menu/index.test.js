@@ -21,7 +21,6 @@ const externalEvent = i => ({
 });
 
 const props = {
-  createEvent: jest.fn(),
   data: {
     loading: false,
     allEvents: {
@@ -31,7 +30,25 @@ const props = {
       internal: [...[...Array(10)].map((_, i) => internalEvent(i))],
       external: [...[...Array(10)].map((_, i) => externalEvent(i))],
     },
+    refetch: jest.fn(),
   },
+  user: {
+    fetchUser: {
+      uid: '123',
+      displayName: 'テストユーザ',
+      categories: 'test,test2',
+      notifications: [
+        {
+          id: '1',
+          title: '通知のタイトル',
+          content: '通知の内容',
+          checked: false,
+        },
+      ],
+    },
+    refetch: jest.fn(),
+  },
+  createEvent: jest.fn(),
   authUser: {
     uid: '123',
     displayName: 'テストユーザ',
@@ -46,4 +63,8 @@ const props = {
   },
 };
 
-snapshot('Menu/nomal', <Menu {...props} />);
+snapshot('Menu/home', <Menu {...props} />);
+
+snapshot('Menu/newEvent', <Menu {...props} tab="イベント作成" />);
+
+snapshot('Menu/notifications', <Menu {...props} tab="通知" />);

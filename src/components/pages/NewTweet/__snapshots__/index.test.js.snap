@@ -1,6 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should match snapshot: NewTweet/nomal 1`] = `
+.c5 {
+  margin: 0 0 5px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-size: inherit;
+}
+
 .c1 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -21,13 +28,17 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
   margin-left: 58px;
 }
 
+.c6 {
+  padding: 8px 0 2px;
+}
+
 .c4 {
   float: left;
   margin-left: -58px;
   position: absolute;
 }
 
-.c5 {
+.c7 {
   margin: 8px 0;
   text-align: right;
 }
@@ -60,6 +71,17 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
         "goBack": [MockFunction],
         "location": Object {},
         "push": [MockFunction],
+      }
+    }
+    parentTweet={
+      Object {
+        "tweet": Object {
+          "hashtag": "test",
+          "id": "123",
+          "name": "親",
+          "text": "親ツイートです",
+          "time": "2019/1/22",
+        },
       }
     }
   >
@@ -258,7 +280,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                   "Naked": [Function],
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-bwzfXH",
+                                    "componentId": "sc-ifAKCX",
                                     "isStatic": false,
                                     "lastClassName": "c0",
                                     "rules": Array [
@@ -470,7 +492,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                           "fontSize": "0.875rem",
                                           "fontWeight": 500,
                                           "letterSpacing": "0.02857em",
-                                          "lineHeight": 1.3125,
+                                          "lineHeight": 1.75,
                                           "textTransform": "uppercase",
                                         },
                                         "caption": Object {
@@ -636,7 +658,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                     "name": "MuiToolbar",
                                   },
                                   "render": [Function],
-                                  "styledComponentId": "sc-bwzfXH",
+                                  "styledComponentId": "sc-ifAKCX",
                                   "target": [Function],
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -790,25 +812,25 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                                     center={true}
                                                     classes={
                                                       Object {
-                                                        "child": "MuiTouchRipple-child-202",
-                                                        "childLeaving": "MuiTouchRipple-childLeaving-203",
-                                                        "childPulsate": "MuiTouchRipple-childPulsate-204",
-                                                        "ripple": "MuiTouchRipple-ripple-199",
-                                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate-201",
-                                                        "rippleVisible": "MuiTouchRipple-rippleVisible-200",
-                                                        "root": "MuiTouchRipple-root-198",
+                                                        "child": "MuiTouchRipple-child-203",
+                                                        "childLeaving": "MuiTouchRipple-childLeaving-204",
+                                                        "childPulsate": "MuiTouchRipple-childPulsate-205",
+                                                        "ripple": "MuiTouchRipple-ripple-200",
+                                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate-202",
+                                                        "rippleVisible": "MuiTouchRipple-rippleVisible-201",
+                                                        "root": "MuiTouchRipple-root-199",
                                                       }
                                                     }
                                                   >
                                                     <TransitionGroup
                                                       childFactory={[Function]}
-                                                      className="MuiTouchRipple-root-198"
+                                                      className="MuiTouchRipple-root-199"
                                                       component="span"
                                                       enter={true}
                                                       exit={true}
                                                     >
                                                       <span
-                                                        className="MuiTouchRipple-root-198"
+                                                        className="MuiTouchRipple-root-199"
                                                       />
                                                     </TransitionGroup>
                                                   </TouchRipple>
@@ -831,7 +853,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                             "Naked": [Function],
                                             "attrs": Array [],
                                             "componentStyle": ComponentStyle {
-                                              "componentId": "sc-bdVaJa",
+                                              "componentId": "sc-bxivhb",
                                               "isStatic": true,
                                               "lastClassName": "c1",
                                               "rules": Array [
@@ -1040,7 +1062,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                                     "fontSize": "0.875rem",
                                                     "fontWeight": 500,
                                                     "letterSpacing": "0.02857em",
-                                                    "lineHeight": 1.3125,
+                                                    "lineHeight": 1.75,
                                                     "textTransform": "uppercase",
                                                   },
                                                   "caption": Object {
@@ -1207,7 +1229,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                               "withTheme": true,
                                             },
                                             "render": [Function],
-                                            "styledComponentId": "sc-bdVaJa",
+                                            "styledComponentId": "sc-bxivhb",
                                             "target": [Function],
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
@@ -1254,6 +1276,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                                 "h5": "MuiTypography-h5-76",
                                                 "h6": "MuiTypography-h6-77",
                                                 "headline": "MuiTypography-headline-65",
+                                                "inline": "MuiTypography-inline-95",
                                                 "noWrap": "MuiTypography-noWrap-86",
                                                 "overline": "MuiTypography-overline-80",
                                                 "paragraph": "MuiTypography-paragraph-88",
@@ -1288,6 +1311,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                                 "title": "h2",
                                               }
                                             }
+                                            inline={false}
                                             noWrap={false}
                                             paragraph={false}
                                             theme={
@@ -1488,7 +1512,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                                     "fontSize": "0.875rem",
                                                     "fontWeight": 500,
                                                     "letterSpacing": "0.02857em",
-                                                    "lineHeight": 1.3125,
+                                                    "lineHeight": 1.75,
                                                     "textTransform": "uppercase",
                                                   },
                                                   "caption": Object {
@@ -1671,28 +1695,28 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                       <CharIcon
                                         classes={
                                           Object {
-                                            "amber": "CharIcon-amber-111",
-                                            "avatar": "CharIcon-avatar-95",
-                                            "blue": "CharIcon-blue-103",
-                                            "blueGrey": "CharIcon-blueGrey-116",
-                                            "brown": "CharIcon-brown-114",
-                                            "cyan": "CharIcon-cyan-105",
-                                            "deepOrange": "CharIcon-deepOrange-113",
-                                            "deepPurple": "CharIcon-deepPurple-101",
-                                            "green": "CharIcon-green-107",
-                                            "grey": "CharIcon-grey-115",
-                                            "indigo": "CharIcon-indigo-102",
-                                            "lightBlue": "CharIcon-lightBlue-104",
-                                            "lightGreen": "CharIcon-lightGreen-108",
-                                            "lime": "CharIcon-lime-109",
-                                            "orange": "CharIcon-orange-112",
-                                            "pink": "CharIcon-pink-99",
-                                            "purple": "CharIcon-purple-100",
-                                            "red": "CharIcon-red-98",
-                                            "smallAvatar": "CharIcon-smallAvatar-96",
-                                            "teal": "CharIcon-teal-106",
-                                            "wrapper": "CharIcon-wrapper-97",
-                                            "yellow": "CharIcon-yellow-110",
+                                            "amber": "CharIcon-amber-112",
+                                            "avatar": "CharIcon-avatar-96",
+                                            "blue": "CharIcon-blue-104",
+                                            "blueGrey": "CharIcon-blueGrey-117",
+                                            "brown": "CharIcon-brown-115",
+                                            "cyan": "CharIcon-cyan-106",
+                                            "deepOrange": "CharIcon-deepOrange-114",
+                                            "deepPurple": "CharIcon-deepPurple-102",
+                                            "green": "CharIcon-green-108",
+                                            "grey": "CharIcon-grey-116",
+                                            "indigo": "CharIcon-indigo-103",
+                                            "lightBlue": "CharIcon-lightBlue-105",
+                                            "lightGreen": "CharIcon-lightGreen-109",
+                                            "lime": "CharIcon-lime-110",
+                                            "orange": "CharIcon-orange-113",
+                                            "pink": "CharIcon-pink-100",
+                                            "purple": "CharIcon-purple-101",
+                                            "red": "CharIcon-red-99",
+                                            "smallAvatar": "CharIcon-smallAvatar-97",
+                                            "teal": "CharIcon-teal-107",
+                                            "wrapper": "CharIcon-wrapper-98",
+                                            "yellow": "CharIcon-yellow-111",
                                           }
                                         }
                                         name="テストユーザ"
@@ -1700,12 +1724,12 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                         small={true}
                                       >
                                         <WithStyles(IconButton)
-                                          className="CharIcon-wrapper-97"
+                                          className="CharIcon-wrapper-98"
                                           disableRipple={true}
                                           onClick={[Function]}
                                         >
                                           <IconButton
-                                            className="CharIcon-wrapper-97"
+                                            className="CharIcon-wrapper-98"
                                             classes={
                                               Object {
                                                 "colorInherit": "MuiIconButton-colorInherit-43",
@@ -1723,7 +1747,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                           >
                                             <WithStyles(ButtonBase)
                                               centerRipple={true}
-                                              className="MuiIconButton-root-42 CharIcon-wrapper-97"
+                                              className="MuiIconButton-root-42 CharIcon-wrapper-98"
                                               disableRipple={true}
                                               disabled={false}
                                               focusRipple={true}
@@ -1731,7 +1755,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                             >
                                               <ButtonBase
                                                 centerRipple={true}
-                                                className="MuiIconButton-root-42 CharIcon-wrapper-97"
+                                                className="MuiIconButton-root-42 CharIcon-wrapper-98"
                                                 classes={
                                                   Object {
                                                     "disabled": "MuiButtonBase-disabled-49",
@@ -1749,7 +1773,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                                 type="button"
                                               >
                                                 <button
-                                                  className="MuiButtonBase-root-48 MuiIconButton-root-42 CharIcon-wrapper-97"
+                                                  className="MuiButtonBase-root-48 MuiIconButton-root-42 CharIcon-wrapper-98"
                                                   disabled={false}
                                                   onBlur={[Function]}
                                                   onClick={[Function]}
@@ -1770,21 +1794,21 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                                     className="MuiIconButton-label-47"
                                                   >
                                                     <WithStyles(Avatar)
-                                                      className="CharIcon-avatar-95 CharIcon-smallAvatar-96 CharIcon-deepPurple-101"
+                                                      className="CharIcon-avatar-96 CharIcon-smallAvatar-97 CharIcon-deepPurple-102"
                                                     >
                                                       <Avatar
-                                                        className="CharIcon-avatar-95 CharIcon-smallAvatar-96 CharIcon-deepPurple-101"
+                                                        className="CharIcon-avatar-96 CharIcon-smallAvatar-97 CharIcon-deepPurple-102"
                                                         classes={
                                                           Object {
-                                                            "colorDefault": "MuiAvatar-colorDefault-118",
-                                                            "img": "MuiAvatar-img-119",
-                                                            "root": "MuiAvatar-root-117",
+                                                            "colorDefault": "MuiAvatar-colorDefault-119",
+                                                            "img": "MuiAvatar-img-120",
+                                                            "root": "MuiAvatar-root-118",
                                                           }
                                                         }
                                                         component="div"
                                                       >
                                                         <div
-                                                          className="MuiAvatar-root-117 MuiAvatar-colorDefault-118 CharIcon-avatar-95 CharIcon-smallAvatar-96 CharIcon-deepPurple-101"
+                                                          className="MuiAvatar-root-118 MuiAvatar-colorDefault-119 CharIcon-avatar-96 CharIcon-smallAvatar-97 CharIcon-deepPurple-102"
                                                         >
                                                           テ
                                                         </div>
@@ -1828,7 +1852,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
             <SideMenu
               classes={
                 Object {
-                  "list": "SideMenu-list-120",
+                  "list": "SideMenu-list-121",
                 }
               }
               history={
@@ -2059,7 +2083,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                           "fontSize": "0.875rem",
                           "fontWeight": 500,
                           "letterSpacing": "0.02857em",
-                          "lineHeight": 1.3125,
+                          "lineHeight": 1.75,
                           "textTransform": "uppercase",
                         },
                         "caption": Object {
@@ -2448,7 +2472,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                             "fontSize": "0.875rem",
                             "fontWeight": 500,
                             "letterSpacing": "0.02857em",
-                            "lineHeight": 1.3125,
+                            "lineHeight": 1.75,
                             "textTransform": "uppercase",
                           },
                           "caption": Object {
@@ -2639,18 +2663,18 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                       anchor="right"
                       classes={
                         Object {
-                          "docked": "MuiDrawer-docked-122",
-                          "modal": "MuiDrawer-modal-132",
-                          "paper": "MuiDrawer-paper-123",
-                          "paperAnchorBottom": "MuiDrawer-paperAnchorBottom-127",
-                          "paperAnchorDockedBottom": "MuiDrawer-paperAnchorDockedBottom-131",
-                          "paperAnchorDockedLeft": "MuiDrawer-paperAnchorDockedLeft-128",
-                          "paperAnchorDockedRight": "MuiDrawer-paperAnchorDockedRight-130",
-                          "paperAnchorDockedTop": "MuiDrawer-paperAnchorDockedTop-129",
-                          "paperAnchorLeft": "MuiDrawer-paperAnchorLeft-124",
-                          "paperAnchorRight": "MuiDrawer-paperAnchorRight-125",
-                          "paperAnchorTop": "MuiDrawer-paperAnchorTop-126",
-                          "root": "MuiDrawer-root-121",
+                          "docked": "MuiDrawer-docked-123",
+                          "modal": "MuiDrawer-modal-133",
+                          "paper": "MuiDrawer-paper-124",
+                          "paperAnchorBottom": "MuiDrawer-paperAnchorBottom-128",
+                          "paperAnchorDockedBottom": "MuiDrawer-paperAnchorDockedBottom-132",
+                          "paperAnchorDockedLeft": "MuiDrawer-paperAnchorDockedLeft-129",
+                          "paperAnchorDockedRight": "MuiDrawer-paperAnchorDockedRight-131",
+                          "paperAnchorDockedTop": "MuiDrawer-paperAnchorDockedTop-130",
+                          "paperAnchorLeft": "MuiDrawer-paperAnchorLeft-125",
+                          "paperAnchorRight": "MuiDrawer-paperAnchorRight-126",
+                          "paperAnchorTop": "MuiDrawer-paperAnchorTop-127",
+                          "root": "MuiDrawer-root-122",
                         }
                       }
                       elevation={16}
@@ -2854,7 +2878,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                               "fontSize": "0.875rem",
                               "fontWeight": 500,
                               "letterSpacing": "0.02857em",
-                              "lineHeight": 1.3125,
+                              "lineHeight": 1.75,
                               "textTransform": "uppercase",
                             },
                             "caption": Object {
@@ -3036,7 +3060,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                             },
                           }
                         }
-                        className="MuiDrawer-root-121 MuiDrawer-modal-132"
+                        className="MuiDrawer-root-122 MuiDrawer-modal-133"
                         onClose={[Function]}
                         open={false}
                       >
@@ -3051,11 +3075,11 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                               },
                             }
                           }
-                          className="MuiDrawer-root-121 MuiDrawer-modal-132"
+                          className="MuiDrawer-root-122 MuiDrawer-modal-133"
                           classes={
                             Object {
-                              "hidden": "MuiModal-hidden-134",
-                              "root": "MuiModal-root-133",
+                              "hidden": "MuiModal-hidden-135",
+                              "root": "MuiModal-root-134",
                             }
                           }
                           disableAutoFocus={false}
@@ -3092,17 +3116,17 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                         anchor="right"
                         classes={
                           Object {
-                            "anchorBottom": "MuiPrivateSwipeArea-anchorBottom-209",
-                            "anchorLeft": "MuiPrivateSwipeArea-anchorLeft-206",
-                            "anchorRight": "MuiPrivateSwipeArea-anchorRight-207",
-                            "anchorTop": "MuiPrivateSwipeArea-anchorTop-208",
-                            "root": "MuiPrivateSwipeArea-root-205",
+                            "anchorBottom": "MuiPrivateSwipeArea-anchorBottom-210",
+                            "anchorLeft": "MuiPrivateSwipeArea-anchorLeft-207",
+                            "anchorRight": "MuiPrivateSwipeArea-anchorRight-208",
+                            "anchorTop": "MuiPrivateSwipeArea-anchorTop-209",
+                            "root": "MuiPrivateSwipeArea-root-206",
                           }
                         }
                         width={20}
                       >
                         <div
-                          className="MuiPrivateSwipeArea-root-205 MuiPrivateSwipeArea-anchorRight-207"
+                          className="MuiPrivateSwipeArea-root-206 MuiPrivateSwipeArea-anchorRight-208"
                           style={
                             Object {
                               "width": 20,
@@ -3127,7 +3151,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-htpNat",
+                "componentId": "sc-EHOje",
                 "isStatic": false,
                 "lastClassName": "c2",
                 "rules": Array [
@@ -3141,7 +3165,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
               "displayName": "styled.div",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-htpNat",
+              "styledComponentId": "sc-EHOje",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -3161,7 +3185,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-bxivhb",
+                      "componentId": "sc-bZQynM",
                       "isStatic": true,
                       "lastClassName": "c3",
                       "rules": Array [
@@ -3173,7 +3197,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                     "displayName": "styled.div",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-bxivhb",
+                    "styledComponentId": "sc-bZQynM",
                     "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -3192,7 +3216,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-ifAKCX",
+                            "componentId": "sc-htoDjs",
                             "isStatic": true,
                             "lastClassName": "c4",
                             "rules": Array [
@@ -3206,7 +3230,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                           "displayName": "styled.div",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-ifAKCX",
+                          "styledComponentId": "sc-htoDjs",
                           "target": "div",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -3219,46 +3243,46 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                         className="c4"
                       >
                         <WithStyles(CharIcon)
-                          name="テストユーザ"
+                          name="親"
                         >
                           <CharIcon
                             classes={
                               Object {
-                                "amber": "CharIcon-amber-111",
-                                "avatar": "CharIcon-avatar-95",
-                                "blue": "CharIcon-blue-103",
-                                "blueGrey": "CharIcon-blueGrey-116",
-                                "brown": "CharIcon-brown-114",
-                                "cyan": "CharIcon-cyan-105",
-                                "deepOrange": "CharIcon-deepOrange-113",
-                                "deepPurple": "CharIcon-deepPurple-101",
-                                "green": "CharIcon-green-107",
-                                "grey": "CharIcon-grey-115",
-                                "indigo": "CharIcon-indigo-102",
-                                "lightBlue": "CharIcon-lightBlue-104",
-                                "lightGreen": "CharIcon-lightGreen-108",
-                                "lime": "CharIcon-lime-109",
-                                "orange": "CharIcon-orange-112",
-                                "pink": "CharIcon-pink-99",
-                                "purple": "CharIcon-purple-100",
-                                "red": "CharIcon-red-98",
-                                "smallAvatar": "CharIcon-smallAvatar-96",
-                                "teal": "CharIcon-teal-106",
-                                "wrapper": "CharIcon-wrapper-97",
-                                "yellow": "CharIcon-yellow-110",
+                                "amber": "CharIcon-amber-112",
+                                "avatar": "CharIcon-avatar-96",
+                                "blue": "CharIcon-blue-104",
+                                "blueGrey": "CharIcon-blueGrey-117",
+                                "brown": "CharIcon-brown-115",
+                                "cyan": "CharIcon-cyan-106",
+                                "deepOrange": "CharIcon-deepOrange-114",
+                                "deepPurple": "CharIcon-deepPurple-102",
+                                "green": "CharIcon-green-108",
+                                "grey": "CharIcon-grey-116",
+                                "indigo": "CharIcon-indigo-103",
+                                "lightBlue": "CharIcon-lightBlue-105",
+                                "lightGreen": "CharIcon-lightGreen-109",
+                                "lime": "CharIcon-lime-110",
+                                "orange": "CharIcon-orange-113",
+                                "pink": "CharIcon-pink-100",
+                                "purple": "CharIcon-purple-101",
+                                "red": "CharIcon-red-99",
+                                "smallAvatar": "CharIcon-smallAvatar-97",
+                                "teal": "CharIcon-teal-107",
+                                "wrapper": "CharIcon-wrapper-98",
+                                "yellow": "CharIcon-yellow-111",
                               }
                             }
-                            name="テストユーザ"
+                            name="親"
                             onClick={null}
                             small={false}
                           >
                             <WithStyles(IconButton)
-                              className="CharIcon-wrapper-97"
+                              className="CharIcon-wrapper-98"
                               disableRipple={true}
                               onClick={null}
                             >
                               <IconButton
-                                className="CharIcon-wrapper-97"
+                                className="CharIcon-wrapper-98"
                                 classes={
                                   Object {
                                     "colorInherit": "MuiIconButton-colorInherit-43",
@@ -3276,7 +3300,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                               >
                                 <WithStyles(ButtonBase)
                                   centerRipple={true}
-                                  className="MuiIconButton-root-42 CharIcon-wrapper-97"
+                                  className="MuiIconButton-root-42 CharIcon-wrapper-98"
                                   disableRipple={true}
                                   disabled={false}
                                   focusRipple={true}
@@ -3284,7 +3308,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                 >
                                   <ButtonBase
                                     centerRipple={true}
-                                    className="MuiIconButton-root-42 CharIcon-wrapper-97"
+                                    className="MuiIconButton-root-42 CharIcon-wrapper-98"
                                     classes={
                                       Object {
                                         "disabled": "MuiButtonBase-disabled-49",
@@ -3302,7 +3326,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                     type="button"
                                   >
                                     <button
-                                      className="MuiButtonBase-root-48 MuiIconButton-root-42 CharIcon-wrapper-97"
+                                      className="MuiButtonBase-root-48 MuiIconButton-root-42 CharIcon-wrapper-98"
                                       disabled={false}
                                       onBlur={[Function]}
                                       onClick={null}
@@ -3323,21 +3347,788 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                         className="MuiIconButton-label-47"
                                       >
                                         <WithStyles(Avatar)
-                                          className="CharIcon-avatar-95 CharIcon-deepPurple-101"
+                                          className="CharIcon-avatar-96 CharIcon-brown-115"
                                         >
                                           <Avatar
-                                            className="CharIcon-avatar-95 CharIcon-deepPurple-101"
+                                            className="CharIcon-avatar-96 CharIcon-brown-115"
                                             classes={
                                               Object {
-                                                "colorDefault": "MuiAvatar-colorDefault-118",
-                                                "img": "MuiAvatar-img-119",
-                                                "root": "MuiAvatar-root-117",
+                                                "colorDefault": "MuiAvatar-colorDefault-119",
+                                                "img": "MuiAvatar-img-120",
+                                                "root": "MuiAvatar-root-118",
                                               }
                                             }
                                             component="div"
                                           >
                                             <div
-                                              className="MuiAvatar-root-117 MuiAvatar-colorDefault-118 CharIcon-avatar-95 CharIcon-deepPurple-101"
+                                              className="MuiAvatar-root-118 MuiAvatar-colorDefault-119 CharIcon-avatar-96 CharIcon-brown-115"
+                                            >
+                                              親
+                                            </div>
+                                          </Avatar>
+                                        </WithStyles(Avatar)>
+                                      </span>
+                                    </button>
+                                  </ButtonBase>
+                                </WithStyles(ButtonBase)>
+                              </IconButton>
+                            </WithStyles(IconButton)>
+                          </CharIcon>
+                        </WithStyles(CharIcon)>
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                  <TweetHeader
+                    name="親"
+                    time="2019/01/22 00:00"
+                  >
+                    <strong>
+                      親
+                    </strong>
+                    <styled.small>
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bdVaJa",
+                              "isStatic": true,
+                              "lastClassName": "bDWFJH",
+                              "rules": Array [],
+                            },
+                            "displayName": "styled.small",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bdVaJa",
+                            "target": "small",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                      >
+                        <small
+                          className=""
+                        >
+                          2019/01/22 00:00
+                        </small>
+                      </StyledComponent>
+                    </styled.small>
+                  </TweetHeader>
+                  <TweetBody
+                    bigText={false}
+                    text="親ツイートです"
+                  >
+                    <styled.div
+                      bigText={0}
+                    >
+                      <StyledComponent
+                        bigText={0}
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bwzfXH",
+                              "isStatic": false,
+                              "lastClassName": "c5",
+                              "rules": Array [
+                                "
+  margin: 0 0 5px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-size: ",
+                                [Function],
+                                ";
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bwzfXH",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                      >
+                        <div
+                          className="c5"
+                        >
+                          親ツイートです
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                  </TweetBody>
+                  <styled.div>
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-gzVnrw",
+                            "isStatic": true,
+                            "lastClassName": "c6",
+                            "rules": Array [
+                              "
+  padding: 8px 0 2px;
+",
+                            ],
+                          },
+                          "displayName": "styled.div",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-gzVnrw",
+                          "target": "div",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                    >
+                      <div
+                        className="c6"
+                      >
+                        <WithStyles(Typography)
+                          color="textSecondary"
+                        >
+                          <Typography
+                            align="inherit"
+                            classes={
+                              Object {
+                                "alignCenter": "MuiTypography-alignCenter-83",
+                                "alignJustify": "MuiTypography-alignJustify-85",
+                                "alignLeft": "MuiTypography-alignLeft-82",
+                                "alignRight": "MuiTypography-alignRight-84",
+                                "body1": "MuiTypography-body1-69",
+                                "body2": "MuiTypography-body2-68",
+                                "button": "MuiTypography-button-71",
+                                "caption": "MuiTypography-caption-70",
+                                "colorError": "MuiTypography-colorError-94",
+                                "colorInherit": "MuiTypography-colorInherit-89",
+                                "colorPrimary": "MuiTypography-colorPrimary-90",
+                                "colorSecondary": "MuiTypography-colorSecondary-91",
+                                "colorTextPrimary": "MuiTypography-colorTextPrimary-92",
+                                "colorTextSecondary": "MuiTypography-colorTextSecondary-93",
+                                "display1": "MuiTypography-display1-64",
+                                "display2": "MuiTypography-display2-63",
+                                "display3": "MuiTypography-display3-62",
+                                "display4": "MuiTypography-display4-61",
+                                "gutterBottom": "MuiTypography-gutterBottom-87",
+                                "h1": "MuiTypography-h1-72",
+                                "h2": "MuiTypography-h2-73",
+                                "h3": "MuiTypography-h3-74",
+                                "h4": "MuiTypography-h4-75",
+                                "h5": "MuiTypography-h5-76",
+                                "h6": "MuiTypography-h6-77",
+                                "headline": "MuiTypography-headline-65",
+                                "inline": "MuiTypography-inline-95",
+                                "noWrap": "MuiTypography-noWrap-86",
+                                "overline": "MuiTypography-overline-80",
+                                "paragraph": "MuiTypography-paragraph-88",
+                                "root": "MuiTypography-root-60",
+                                "srOnly": "MuiTypography-srOnly-81",
+                                "subheading": "MuiTypography-subheading-67",
+                                "subtitle1": "MuiTypography-subtitle1-78",
+                                "subtitle2": "MuiTypography-subtitle2-79",
+                                "title": "MuiTypography-title-66",
+                              }
+                            }
+                            color="textSecondary"
+                            gutterBottom={false}
+                            headlineMapping={
+                              Object {
+                                "body1": "p",
+                                "body2": "p",
+                                "display1": "h1",
+                                "display2": "h1",
+                                "display3": "h1",
+                                "display4": "h1",
+                                "h1": "h1",
+                                "h2": "h2",
+                                "h3": "h3",
+                                "h4": "h4",
+                                "h5": "h5",
+                                "h6": "h6",
+                                "headline": "h1",
+                                "subheading": "h3",
+                                "subtitle1": "h6",
+                                "subtitle2": "h6",
+                                "title": "h2",
+                              }
+                            }
+                            inline={false}
+                            noWrap={false}
+                            paragraph={false}
+                            theme={
+                              Object {
+                                "breakpoints": Object {
+                                  "between": [Function],
+                                  "down": [Function],
+                                  "keys": Array [
+                                    "xs",
+                                    "sm",
+                                    "md",
+                                    "lg",
+                                    "xl",
+                                  ],
+                                  "only": [Function],
+                                  "up": [Function],
+                                  "values": Object {
+                                    "lg": 1280,
+                                    "md": 960,
+                                    "sm": 600,
+                                    "xl": 1920,
+                                    "xs": 0,
+                                  },
+                                  "width": [Function],
+                                },
+                                "direction": "ltr",
+                                "mixins": Object {
+                                  "gutters": [Function],
+                                  "toolbar": Object {
+                                    "@media (min-width:0px) and (orientation: landscape)": Object {
+                                      "minHeight": 48,
+                                    },
+                                    "@media (min-width:600px)": Object {
+                                      "minHeight": 64,
+                                    },
+                                    "minHeight": 56,
+                                  },
+                                },
+                                "overrides": Object {},
+                                "palette": Object {
+                                  "action": Object {
+                                    "active": "rgba(0, 0, 0, 0.54)",
+                                    "disabled": "rgba(0, 0, 0, 0.26)",
+                                    "disabledBackground": "rgba(0, 0, 0, 0.12)",
+                                    "hover": "rgba(0, 0, 0, 0.08)",
+                                    "hoverOpacity": 0.08,
+                                    "selected": "rgba(0, 0, 0, 0.14)",
+                                  },
+                                  "augmentColor": [Function],
+                                  "background": Object {
+                                    "default": "#fafafa",
+                                    "paper": "#fff",
+                                  },
+                                  "common": Object {
+                                    "black": "#000",
+                                    "white": "#fff",
+                                  },
+                                  "contrastThreshold": 3,
+                                  "divider": "rgba(0, 0, 0, 0.12)",
+                                  "error": Object {
+                                    "contrastText": "#fff",
+                                    "dark": "#d32f2f",
+                                    "light": "#e57373",
+                                    "main": "#f44336",
+                                  },
+                                  "getContrastText": [Function],
+                                  "grey": Object {
+                                    "100": "#f5f5f5",
+                                    "200": "#eeeeee",
+                                    "300": "#e0e0e0",
+                                    "400": "#bdbdbd",
+                                    "50": "#fafafa",
+                                    "500": "#9e9e9e",
+                                    "600": "#757575",
+                                    "700": "#616161",
+                                    "800": "#424242",
+                                    "900": "#212121",
+                                    "A100": "#d5d5d5",
+                                    "A200": "#aaaaaa",
+                                    "A400": "#303030",
+                                    "A700": "#616161",
+                                  },
+                                  "primary": Object {
+                                    "contrastText": "#fff",
+                                    "dark": "#303f9f",
+                                    "light": "#7986cb",
+                                    "main": "#3f51b5",
+                                  },
+                                  "secondary": Object {
+                                    "contrastText": "#fff",
+                                    "dark": "#c51162",
+                                    "light": "#ff4081",
+                                    "main": "#f50057",
+                                  },
+                                  "text": Object {
+                                    "disabled": "rgba(0, 0, 0, 0.38)",
+                                    "hint": "rgba(0, 0, 0, 0.38)",
+                                    "primary": "rgba(0, 0, 0, 0.87)",
+                                    "secondary": "rgba(0, 0, 0, 0.54)",
+                                  },
+                                  "tonalOffset": 0.2,
+                                  "type": "light",
+                                },
+                                "props": Object {},
+                                "shadows": Array [
+                                  "none",
+                                  "0px 1px 3px 0px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 2px 1px -1px rgba(0,0,0,0.12)",
+                                  "0px 1px 5px 0px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 3px 1px -2px rgba(0,0,0,0.12)",
+                                  "0px 1px 8px 0px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 3px 3px -2px rgba(0,0,0,0.12)",
+                                  "0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12)",
+                                  "0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12)",
+                                  "0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12)",
+                                  "0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12)",
+                                  "0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12)",
+                                  "0px 5px 6px -3px rgba(0,0,0,0.2),0px 9px 12px 1px rgba(0,0,0,0.14),0px 3px 16px 2px rgba(0,0,0,0.12)",
+                                  "0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12)",
+                                  "0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12)",
+                                  "0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12)",
+                                  "0px 7px 8px -4px rgba(0,0,0,0.2),0px 13px 19px 2px rgba(0,0,0,0.14),0px 5px 24px 4px rgba(0,0,0,0.12)",
+                                  "0px 7px 9px -4px rgba(0,0,0,0.2),0px 14px 21px 2px rgba(0,0,0,0.14),0px 5px 26px 4px rgba(0,0,0,0.12)",
+                                  "0px 8px 9px -5px rgba(0,0,0,0.2),0px 15px 22px 2px rgba(0,0,0,0.14),0px 6px 28px 5px rgba(0,0,0,0.12)",
+                                  "0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12)",
+                                  "0px 8px 11px -5px rgba(0,0,0,0.2),0px 17px 26px 2px rgba(0,0,0,0.14),0px 6px 32px 5px rgba(0,0,0,0.12)",
+                                  "0px 9px 11px -5px rgba(0,0,0,0.2),0px 18px 28px 2px rgba(0,0,0,0.14),0px 7px 34px 6px rgba(0,0,0,0.12)",
+                                  "0px 9px 12px -6px rgba(0,0,0,0.2),0px 19px 29px 2px rgba(0,0,0,0.14),0px 7px 36px 6px rgba(0,0,0,0.12)",
+                                  "0px 10px 13px -6px rgba(0,0,0,0.2),0px 20px 31px 3px rgba(0,0,0,0.14),0px 8px 38px 7px rgba(0,0,0,0.12)",
+                                  "0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12)",
+                                  "0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12)",
+                                  "0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12)",
+                                  "0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12)",
+                                ],
+                                "shape": Object {
+                                  "borderRadius": 4,
+                                },
+                                "spacing": Object {
+                                  "unit": 8,
+                                },
+                                "transitions": Object {
+                                  "create": [Function],
+                                  "duration": Object {
+                                    "complex": 375,
+                                    "enteringScreen": 225,
+                                    "leavingScreen": 195,
+                                    "short": 250,
+                                    "shorter": 200,
+                                    "shortest": 150,
+                                    "standard": 300,
+                                  },
+                                  "easing": Object {
+                                    "easeIn": "cubic-bezier(0.4, 0, 1, 1)",
+                                    "easeInOut": "cubic-bezier(0.4, 0, 0.2, 1)",
+                                    "easeOut": "cubic-bezier(0.0, 0, 0.2, 1)",
+                                    "sharp": "cubic-bezier(0.4, 0, 0.6, 1)",
+                                  },
+                                  "getAutoHeightDuration": [Function],
+                                },
+                                "typography": Object {
+                                  "body1": Object {
+                                    "color": "rgba(0, 0, 0, 0.87)",
+                                    "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                    "fontSize": "0.875rem",
+                                    "fontWeight": 400,
+                                    "lineHeight": "1.46429em",
+                                  },
+                                  "body1Next": Object {
+                                    "color": "rgba(0, 0, 0, 0.87)",
+                                    "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                    "fontSize": "1rem",
+                                    "fontWeight": 400,
+                                    "letterSpacing": "0.00938em",
+                                    "lineHeight": 1.5,
+                                  },
+                                  "body2": Object {
+                                    "color": "rgba(0, 0, 0, 0.87)",
+                                    "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                    "fontSize": "0.875rem",
+                                    "fontWeight": 500,
+                                    "lineHeight": "1.71429em",
+                                  },
+                                  "body2Next": Object {
+                                    "color": "rgba(0, 0, 0, 0.87)",
+                                    "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                    "fontSize": "0.875rem",
+                                    "fontWeight": 400,
+                                    "letterSpacing": "0.01071em",
+                                    "lineHeight": 1.5,
+                                  },
+                                  "button": Object {
+                                    "color": "rgba(0, 0, 0, 0.87)",
+                                    "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                    "fontSize": "0.875rem",
+                                    "fontWeight": 500,
+                                    "textTransform": "uppercase",
+                                  },
+                                  "buttonNext": Object {
+                                    "color": "rgba(0, 0, 0, 0.87)",
+                                    "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                    "fontSize": "0.875rem",
+                                    "fontWeight": 500,
+                                    "letterSpacing": "0.02857em",
+                                    "lineHeight": 1.75,
+                                    "textTransform": "uppercase",
+                                  },
+                                  "caption": Object {
+                                    "color": "rgba(0, 0, 0, 0.54)",
+                                    "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                    "fontSize": "0.75rem",
+                                    "fontWeight": 400,
+                                    "lineHeight": "1.375em",
+                                  },
+                                  "captionNext": Object {
+                                    "color": "rgba(0, 0, 0, 0.87)",
+                                    "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                    "fontSize": "0.75rem",
+                                    "fontWeight": 400,
+                                    "letterSpacing": "0.03333em",
+                                    "lineHeight": 1.66,
+                                  },
+                                  "display1": Object {
+                                    "color": "rgba(0, 0, 0, 0.54)",
+                                    "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                    "fontSize": "2.125rem",
+                                    "fontWeight": 400,
+                                    "lineHeight": "1.20588em",
+                                  },
+                                  "display2": Object {
+                                    "color": "rgba(0, 0, 0, 0.54)",
+                                    "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                    "fontSize": "2.8125rem",
+                                    "fontWeight": 400,
+                                    "lineHeight": "1.13333em",
+                                    "marginLeft": "-.02em",
+                                  },
+                                  "display3": Object {
+                                    "color": "rgba(0, 0, 0, 0.54)",
+                                    "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                    "fontSize": "3.5rem",
+                                    "fontWeight": 400,
+                                    "letterSpacing": "-.02em",
+                                    "lineHeight": "1.30357em",
+                                    "marginLeft": "-.02em",
+                                  },
+                                  "display4": Object {
+                                    "color": "rgba(0, 0, 0, 0.54)",
+                                    "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                    "fontSize": "7rem",
+                                    "fontWeight": 300,
+                                    "letterSpacing": "-.04em",
+                                    "lineHeight": "1.14286em",
+                                    "marginLeft": "-.04em",
+                                  },
+                                  "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                  "fontSize": 14,
+                                  "fontWeightLight": 300,
+                                  "fontWeightMedium": 500,
+                                  "fontWeightRegular": 400,
+                                  "h1": Object {
+                                    "color": "rgba(0, 0, 0, 0.87)",
+                                    "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                    "fontSize": "6rem",
+                                    "fontWeight": 300,
+                                    "letterSpacing": "-0.01562em",
+                                    "lineHeight": 1,
+                                  },
+                                  "h2": Object {
+                                    "color": "rgba(0, 0, 0, 0.87)",
+                                    "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                    "fontSize": "3.75rem",
+                                    "fontWeight": 300,
+                                    "letterSpacing": "-0.00833em",
+                                    "lineHeight": 1,
+                                  },
+                                  "h3": Object {
+                                    "color": "rgba(0, 0, 0, 0.87)",
+                                    "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                    "fontSize": "3rem",
+                                    "fontWeight": 400,
+                                    "letterSpacing": "0em",
+                                    "lineHeight": 1.04,
+                                  },
+                                  "h4": Object {
+                                    "color": "rgba(0, 0, 0, 0.87)",
+                                    "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                    "fontSize": "2.125rem",
+                                    "fontWeight": 400,
+                                    "letterSpacing": "0.00735em",
+                                    "lineHeight": 1.17,
+                                  },
+                                  "h5": Object {
+                                    "color": "rgba(0, 0, 0, 0.87)",
+                                    "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                    "fontSize": "1.5rem",
+                                    "fontWeight": 400,
+                                    "letterSpacing": "0em",
+                                    "lineHeight": 1.33,
+                                  },
+                                  "h6": Object {
+                                    "color": "rgba(0, 0, 0, 0.87)",
+                                    "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                    "fontSize": "1.25rem",
+                                    "fontWeight": 500,
+                                    "letterSpacing": "0.0075em",
+                                    "lineHeight": 1.6,
+                                  },
+                                  "headline": Object {
+                                    "color": "rgba(0, 0, 0, 0.87)",
+                                    "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                    "fontSize": "1.5rem",
+                                    "fontWeight": 400,
+                                    "lineHeight": "1.35417em",
+                                  },
+                                  "overline": Object {
+                                    "color": "rgba(0, 0, 0, 0.87)",
+                                    "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                    "fontSize": "0.75rem",
+                                    "fontWeight": 400,
+                                    "letterSpacing": "0.08333em",
+                                    "lineHeight": 2.66,
+                                    "textTransform": "uppercase",
+                                  },
+                                  "pxToRem": [Function],
+                                  "round": [Function],
+                                  "subheading": Object {
+                                    "color": "rgba(0, 0, 0, 0.87)",
+                                    "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                    "fontSize": "1rem",
+                                    "fontWeight": 400,
+                                    "lineHeight": "1.5em",
+                                  },
+                                  "subtitle1": Object {
+                                    "color": "rgba(0, 0, 0, 0.87)",
+                                    "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                    "fontSize": "1rem",
+                                    "fontWeight": 400,
+                                    "letterSpacing": "0.00938em",
+                                    "lineHeight": 1.75,
+                                  },
+                                  "subtitle2": Object {
+                                    "color": "rgba(0, 0, 0, 0.87)",
+                                    "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                    "fontSize": "0.875rem",
+                                    "fontWeight": 500,
+                                    "letterSpacing": "0.00714em",
+                                    "lineHeight": 1.57,
+                                  },
+                                  "title": Object {
+                                    "color": "rgba(0, 0, 0, 0.87)",
+                                    "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                    "fontSize": "1.3125rem",
+                                    "fontWeight": 500,
+                                    "lineHeight": "1.16667em",
+                                  },
+                                  "useNextVariants": false,
+                                },
+                                "zIndex": Object {
+                                  "appBar": 1100,
+                                  "drawer": 1200,
+                                  "mobileStepper": 1000,
+                                  "modal": 1300,
+                                  "snackbar": 1400,
+                                  "tooltip": 1500,
+                                },
+                              }
+                            }
+                          >
+                            <p
+                              className="MuiTypography-root-60 MuiTypography-body1-69 MuiTypography-colorTextSecondary-93"
+                            >
+                              返信先：@
+                              親
+                              さん
+                            </p>
+                          </Typography>
+                        </WithStyles(Typography)>
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </div>
+              </StyledComponent>
+            </styled.div>
+            <styled.div>
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bZQynM",
+                      "isStatic": true,
+                      "lastClassName": "c3",
+                      "rules": Array [
+                        "
+  margin-left: 58px;
+",
+                      ],
+                    },
+                    "displayName": "styled.div",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bZQynM",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <div
+                  className="c3"
+                >
+                  <styled.div>
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-htoDjs",
+                            "isStatic": true,
+                            "lastClassName": "c4",
+                            "rules": Array [
+                              "
+  float: left;
+  margin-left: -58px;
+  position: absolute;
+",
+                            ],
+                          },
+                          "displayName": "styled.div",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-htoDjs",
+                          "target": "div",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                    >
+                      <div
+                        className="c4"
+                      >
+                        <WithStyles(CharIcon)
+                          name="テストユーザ"
+                        >
+                          <CharIcon
+                            classes={
+                              Object {
+                                "amber": "CharIcon-amber-112",
+                                "avatar": "CharIcon-avatar-96",
+                                "blue": "CharIcon-blue-104",
+                                "blueGrey": "CharIcon-blueGrey-117",
+                                "brown": "CharIcon-brown-115",
+                                "cyan": "CharIcon-cyan-106",
+                                "deepOrange": "CharIcon-deepOrange-114",
+                                "deepPurple": "CharIcon-deepPurple-102",
+                                "green": "CharIcon-green-108",
+                                "grey": "CharIcon-grey-116",
+                                "indigo": "CharIcon-indigo-103",
+                                "lightBlue": "CharIcon-lightBlue-105",
+                                "lightGreen": "CharIcon-lightGreen-109",
+                                "lime": "CharIcon-lime-110",
+                                "orange": "CharIcon-orange-113",
+                                "pink": "CharIcon-pink-100",
+                                "purple": "CharIcon-purple-101",
+                                "red": "CharIcon-red-99",
+                                "smallAvatar": "CharIcon-smallAvatar-97",
+                                "teal": "CharIcon-teal-107",
+                                "wrapper": "CharIcon-wrapper-98",
+                                "yellow": "CharIcon-yellow-111",
+                              }
+                            }
+                            name="テストユーザ"
+                            onClick={null}
+                            small={false}
+                          >
+                            <WithStyles(IconButton)
+                              className="CharIcon-wrapper-98"
+                              disableRipple={true}
+                              onClick={null}
+                            >
+                              <IconButton
+                                className="CharIcon-wrapper-98"
+                                classes={
+                                  Object {
+                                    "colorInherit": "MuiIconButton-colorInherit-43",
+                                    "colorPrimary": "MuiIconButton-colorPrimary-44",
+                                    "colorSecondary": "MuiIconButton-colorSecondary-45",
+                                    "disabled": "MuiIconButton-disabled-46",
+                                    "label": "MuiIconButton-label-47",
+                                    "root": "MuiIconButton-root-42",
+                                  }
+                                }
+                                color="default"
+                                disableRipple={true}
+                                disabled={false}
+                                onClick={null}
+                              >
+                                <WithStyles(ButtonBase)
+                                  centerRipple={true}
+                                  className="MuiIconButton-root-42 CharIcon-wrapper-98"
+                                  disableRipple={true}
+                                  disabled={false}
+                                  focusRipple={true}
+                                  onClick={null}
+                                >
+                                  <ButtonBase
+                                    centerRipple={true}
+                                    className="MuiIconButton-root-42 CharIcon-wrapper-98"
+                                    classes={
+                                      Object {
+                                        "disabled": "MuiButtonBase-disabled-49",
+                                        "focusVisible": "MuiButtonBase-focusVisible-50",
+                                        "root": "MuiButtonBase-root-48",
+                                      }
+                                    }
+                                    component="button"
+                                    disableRipple={true}
+                                    disableTouchRipple={false}
+                                    disabled={false}
+                                    focusRipple={true}
+                                    onClick={null}
+                                    tabIndex="0"
+                                    type="button"
+                                  >
+                                    <button
+                                      className="MuiButtonBase-root-48 MuiIconButton-root-42 CharIcon-wrapper-98"
+                                      disabled={false}
+                                      onBlur={[Function]}
+                                      onClick={null}
+                                      onContextMenu={[Function]}
+                                      onFocus={[Function]}
+                                      onKeyDown={[Function]}
+                                      onKeyUp={[Function]}
+                                      onMouseDown={[Function]}
+                                      onMouseLeave={[Function]}
+                                      onMouseUp={[Function]}
+                                      onTouchEnd={[Function]}
+                                      onTouchMove={[Function]}
+                                      onTouchStart={[Function]}
+                                      tabIndex="0"
+                                      type="button"
+                                    >
+                                      <span
+                                        className="MuiIconButton-label-47"
+                                      >
+                                        <WithStyles(Avatar)
+                                          className="CharIcon-avatar-96 CharIcon-deepPurple-102"
+                                        >
+                                          <Avatar
+                                            className="CharIcon-avatar-96 CharIcon-deepPurple-102"
+                                            classes={
+                                              Object {
+                                                "colorDefault": "MuiAvatar-colorDefault-119",
+                                                "img": "MuiAvatar-img-120",
+                                                "root": "MuiAvatar-root-118",
+                                              }
+                                            }
+                                            component="div"
+                                          >
+                                            <div
+                                              className="MuiAvatar-root-118 MuiAvatar-colorDefault-119 CharIcon-avatar-96 CharIcon-deepPurple-102"
                                             >
                                               テ
                                             </div>
@@ -3368,7 +4159,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                       Object {
                         "current": <textarea
                           aria-invalid="false"
-                          class="MuiInputBase-input-162 MuiFilledInput-input-147 MuiInputBase-inputMultiline-164 MuiFilledInput-inputMultiline-149"
+                          class="MuiInputBase-input-163 MuiFilledInput-input-148 MuiInputBase-inputMultiline-165 MuiFilledInput-inputMultiline-150"
                           name="tweet"
                           placeholder="いまどうしてる？"
                           rows="4"
@@ -3399,10 +4190,10 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                       <FormControl
                         classes={
                           Object {
-                            "fullWidth": "MuiFormControl-fullWidth-138",
-                            "marginDense": "MuiFormControl-marginDense-137",
-                            "marginNormal": "MuiFormControl-marginNormal-136",
-                            "root": "MuiFormControl-root-135",
+                            "fullWidth": "MuiFormControl-fullWidth-139",
+                            "marginDense": "MuiFormControl-marginDense-138",
+                            "marginNormal": "MuiFormControl-marginNormal-137",
+                            "root": "MuiFormControl-root-136",
                           }
                         }
                         component="div"
@@ -3414,7 +4205,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                         variant="filled"
                       >
                         <div
-                          className="MuiFormControl-root-135 MuiFormControl-fullWidth-138"
+                          className="MuiFormControl-root-136 MuiFormControl-fullWidth-139"
                         >
                           <WithStyles(FilledInput)
                             autoFocus={true}
@@ -3423,7 +4214,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                               Object {
                                 "current": <textarea
                                   aria-invalid="false"
-                                  class="MuiInputBase-input-162 MuiFilledInput-input-147 MuiInputBase-inputMultiline-164 MuiFilledInput-inputMultiline-149"
+                                  class="MuiInputBase-input-163 MuiFilledInput-input-148 MuiInputBase-inputMultiline-165 MuiFilledInput-inputMultiline-150"
                                   name="tweet"
                                   placeholder="いまどうしてる？"
                                   rows="4"
@@ -3450,19 +4241,19 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                               autoFocus={true}
                               classes={
                                 Object {
-                                  "adornedEnd": "MuiFilledInput-adornedEnd-144",
-                                  "adornedStart": "MuiFilledInput-adornedStart-143",
-                                  "disabled": "MuiFilledInput-disabled-142",
-                                  "error": "MuiFilledInput-error-145",
-                                  "focused": "MuiFilledInput-focused-141",
-                                  "input": "MuiFilledInput-input-147",
-                                  "inputAdornedEnd": "MuiFilledInput-inputAdornedEnd-151",
-                                  "inputAdornedStart": "MuiFilledInput-inputAdornedStart-150",
-                                  "inputMarginDense": "MuiFilledInput-inputMarginDense-148",
-                                  "inputMultiline": "MuiFilledInput-inputMultiline-149",
-                                  "multiline": "MuiFilledInput-multiline-146",
-                                  "root": "MuiFilledInput-root-139",
-                                  "underline": "MuiFilledInput-underline-140",
+                                  "adornedEnd": "MuiFilledInput-adornedEnd-145",
+                                  "adornedStart": "MuiFilledInput-adornedStart-144",
+                                  "disabled": "MuiFilledInput-disabled-143",
+                                  "error": "MuiFilledInput-error-146",
+                                  "focused": "MuiFilledInput-focused-142",
+                                  "input": "MuiFilledInput-input-148",
+                                  "inputAdornedEnd": "MuiFilledInput-inputAdornedEnd-152",
+                                  "inputAdornedStart": "MuiFilledInput-inputAdornedStart-151",
+                                  "inputMarginDense": "MuiFilledInput-inputMarginDense-149",
+                                  "inputMultiline": "MuiFilledInput-inputMultiline-150",
+                                  "multiline": "MuiFilledInput-multiline-147",
+                                  "root": "MuiFilledInput-root-140",
+                                  "underline": "MuiFilledInput-underline-141",
                                 }
                               }
                               fullWidth={true}
@@ -3470,7 +4261,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                 Object {
                                   "current": <textarea
                                     aria-invalid="false"
-                                    class="MuiInputBase-input-162 MuiFilledInput-input-147 MuiInputBase-inputMultiline-164 MuiFilledInput-inputMultiline-149"
+                                    class="MuiInputBase-input-163 MuiFilledInput-input-148 MuiInputBase-inputMultiline-165 MuiFilledInput-inputMultiline-150"
                                     name="tweet"
                                     placeholder="いまどうしてる？"
                                     rows="4"
@@ -3497,18 +4288,18 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                 autoFocus={true}
                                 classes={
                                   Object {
-                                    "adornedEnd": "MuiFilledInput-adornedEnd-144",
-                                    "adornedStart": "MuiFilledInput-adornedStart-143",
-                                    "disabled": "MuiFilledInput-disabled-142",
-                                    "error": "MuiFilledInput-error-145",
-                                    "focused": "MuiFilledInput-focused-141",
-                                    "input": "MuiFilledInput-input-147",
-                                    "inputAdornedEnd": "MuiFilledInput-inputAdornedEnd-151",
-                                    "inputAdornedStart": "MuiFilledInput-inputAdornedStart-150",
-                                    "inputMarginDense": "MuiFilledInput-inputMarginDense-148",
-                                    "inputMultiline": "MuiFilledInput-inputMultiline-149",
-                                    "multiline": "MuiFilledInput-multiline-146",
-                                    "root": "MuiFilledInput-root-139 MuiFilledInput-underline-140",
+                                    "adornedEnd": "MuiFilledInput-adornedEnd-145",
+                                    "adornedStart": "MuiFilledInput-adornedStart-144",
+                                    "disabled": "MuiFilledInput-disabled-143",
+                                    "error": "MuiFilledInput-error-146",
+                                    "focused": "MuiFilledInput-focused-142",
+                                    "input": "MuiFilledInput-input-148",
+                                    "inputAdornedEnd": "MuiFilledInput-inputAdornedEnd-152",
+                                    "inputAdornedStart": "MuiFilledInput-inputAdornedStart-151",
+                                    "inputMarginDense": "MuiFilledInput-inputMarginDense-149",
+                                    "inputMultiline": "MuiFilledInput-inputMultiline-150",
+                                    "multiline": "MuiFilledInput-multiline-147",
+                                    "root": "MuiFilledInput-root-140 MuiFilledInput-underline-141",
                                     "underline": null,
                                   }
                                 }
@@ -3518,7 +4309,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                   Object {
                                     "current": <textarea
                                       aria-invalid="false"
-                                      class="MuiInputBase-input-162 MuiFilledInput-input-147 MuiInputBase-inputMultiline-164 MuiFilledInput-inputMultiline-149"
+                                      class="MuiInputBase-input-163 MuiFilledInput-input-148 MuiInputBase-inputMultiline-165 MuiFilledInput-inputMultiline-150"
                                       name="tweet"
                                       placeholder="いまどうしてる？"
                                       rows="4"
@@ -3546,23 +4337,23 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                   autoFocus={true}
                                   classes={
                                     Object {
-                                      "adornedEnd": "MuiInputBase-adornedEnd-157 MuiFilledInput-adornedEnd-144",
-                                      "adornedStart": "MuiInputBase-adornedStart-156 MuiFilledInput-adornedStart-143",
-                                      "disabled": "MuiInputBase-disabled-155 MuiFilledInput-disabled-142",
-                                      "error": "MuiInputBase-error-158 MuiFilledInput-error-145",
-                                      "focused": "MuiInputBase-focused-154 MuiFilledInput-focused-141",
-                                      "formControl": "MuiInputBase-formControl-153",
-                                      "fullWidth": "MuiInputBase-fullWidth-161",
-                                      "input": "MuiInputBase-input-162 MuiFilledInput-input-147",
-                                      "inputAdornedEnd": "MuiInputBase-inputAdornedEnd-168 MuiFilledInput-inputAdornedEnd-151",
-                                      "inputAdornedStart": "MuiInputBase-inputAdornedStart-167 MuiFilledInput-inputAdornedStart-150",
-                                      "inputMarginDense": "MuiInputBase-inputMarginDense-163 MuiFilledInput-inputMarginDense-148",
-                                      "inputMultiline": "MuiInputBase-inputMultiline-164 MuiFilledInput-inputMultiline-149",
-                                      "inputType": "MuiInputBase-inputType-165",
-                                      "inputTypeSearch": "MuiInputBase-inputTypeSearch-166",
-                                      "marginDense": "MuiInputBase-marginDense-159",
-                                      "multiline": "MuiInputBase-multiline-160 MuiFilledInput-multiline-146",
-                                      "root": "MuiInputBase-root-152 MuiFilledInput-root-139 MuiFilledInput-underline-140",
+                                      "adornedEnd": "MuiInputBase-adornedEnd-158 MuiFilledInput-adornedEnd-145",
+                                      "adornedStart": "MuiInputBase-adornedStart-157 MuiFilledInput-adornedStart-144",
+                                      "disabled": "MuiInputBase-disabled-156 MuiFilledInput-disabled-143",
+                                      "error": "MuiInputBase-error-159 MuiFilledInput-error-146",
+                                      "focused": "MuiInputBase-focused-155 MuiFilledInput-focused-142",
+                                      "formControl": "MuiInputBase-formControl-154",
+                                      "fullWidth": "MuiInputBase-fullWidth-162",
+                                      "input": "MuiInputBase-input-163 MuiFilledInput-input-148",
+                                      "inputAdornedEnd": "MuiInputBase-inputAdornedEnd-169 MuiFilledInput-inputAdornedEnd-152",
+                                      "inputAdornedStart": "MuiInputBase-inputAdornedStart-168 MuiFilledInput-inputAdornedStart-151",
+                                      "inputMarginDense": "MuiInputBase-inputMarginDense-164 MuiFilledInput-inputMarginDense-149",
+                                      "inputMultiline": "MuiInputBase-inputMultiline-165 MuiFilledInput-inputMultiline-150",
+                                      "inputType": "MuiInputBase-inputType-166",
+                                      "inputTypeSearch": "MuiInputBase-inputTypeSearch-167",
+                                      "marginDense": "MuiInputBase-marginDense-160",
+                                      "multiline": "MuiInputBase-multiline-161 MuiFilledInput-multiline-147",
+                                      "root": "MuiInputBase-root-153 MuiFilledInput-root-140 MuiFilledInput-underline-141",
                                     }
                                   }
                                   fullWidth={true}
@@ -3571,7 +4362,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                     Object {
                                       "current": <textarea
                                         aria-invalid="false"
-                                        class="MuiInputBase-input-162 MuiFilledInput-input-147 MuiInputBase-inputMultiline-164 MuiFilledInput-inputMultiline-149"
+                                        class="MuiInputBase-input-163 MuiFilledInput-input-148 MuiInputBase-inputMultiline-165 MuiFilledInput-inputMultiline-150"
                                         name="tweet"
                                         placeholder="いまどうしてる？"
                                         rows="4"
@@ -3599,23 +4390,23 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                     autoFocus={true}
                                     classes={
                                       Object {
-                                        "adornedEnd": "MuiInputBase-adornedEnd-157 MuiFilledInput-adornedEnd-144",
-                                        "adornedStart": "MuiInputBase-adornedStart-156 MuiFilledInput-adornedStart-143",
-                                        "disabled": "MuiInputBase-disabled-155 MuiFilledInput-disabled-142",
-                                        "error": "MuiInputBase-error-158 MuiFilledInput-error-145",
-                                        "focused": "MuiInputBase-focused-154 MuiFilledInput-focused-141",
-                                        "formControl": "MuiInputBase-formControl-153",
-                                        "fullWidth": "MuiInputBase-fullWidth-161",
-                                        "input": "MuiInputBase-input-162 MuiFilledInput-input-147",
-                                        "inputAdornedEnd": "MuiInputBase-inputAdornedEnd-168 MuiFilledInput-inputAdornedEnd-151",
-                                        "inputAdornedStart": "MuiInputBase-inputAdornedStart-167 MuiFilledInput-inputAdornedStart-150",
-                                        "inputMarginDense": "MuiInputBase-inputMarginDense-163 MuiFilledInput-inputMarginDense-148",
-                                        "inputMultiline": "MuiInputBase-inputMultiline-164 MuiFilledInput-inputMultiline-149",
-                                        "inputType": "MuiInputBase-inputType-165",
-                                        "inputTypeSearch": "MuiInputBase-inputTypeSearch-166",
-                                        "marginDense": "MuiInputBase-marginDense-159",
-                                        "multiline": "MuiInputBase-multiline-160 MuiFilledInput-multiline-146",
-                                        "root": "MuiInputBase-root-152 MuiFilledInput-root-139 MuiFilledInput-underline-140",
+                                        "adornedEnd": "MuiInputBase-adornedEnd-158 MuiFilledInput-adornedEnd-145",
+                                        "adornedStart": "MuiInputBase-adornedStart-157 MuiFilledInput-adornedStart-144",
+                                        "disabled": "MuiInputBase-disabled-156 MuiFilledInput-disabled-143",
+                                        "error": "MuiInputBase-error-159 MuiFilledInput-error-146",
+                                        "focused": "MuiInputBase-focused-155 MuiFilledInput-focused-142",
+                                        "formControl": "MuiInputBase-formControl-154",
+                                        "fullWidth": "MuiInputBase-fullWidth-162",
+                                        "input": "MuiInputBase-input-163 MuiFilledInput-input-148",
+                                        "inputAdornedEnd": "MuiInputBase-inputAdornedEnd-169 MuiFilledInput-inputAdornedEnd-152",
+                                        "inputAdornedStart": "MuiInputBase-inputAdornedStart-168 MuiFilledInput-inputAdornedStart-151",
+                                        "inputMarginDense": "MuiInputBase-inputMarginDense-164 MuiFilledInput-inputMarginDense-149",
+                                        "inputMultiline": "MuiInputBase-inputMultiline-165 MuiFilledInput-inputMultiline-150",
+                                        "inputType": "MuiInputBase-inputType-166",
+                                        "inputTypeSearch": "MuiInputBase-inputTypeSearch-167",
+                                        "marginDense": "MuiInputBase-marginDense-160",
+                                        "multiline": "MuiInputBase-multiline-161 MuiFilledInput-multiline-147",
+                                        "root": "MuiInputBase-root-153 MuiFilledInput-root-140 MuiFilledInput-underline-141",
                                       }
                                     }
                                     fullWidth={true}
@@ -3624,7 +4415,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                       Object {
                                         "current": <textarea
                                           aria-invalid="false"
-                                          class="MuiInputBase-input-162 MuiFilledInput-input-147 MuiInputBase-inputMultiline-164 MuiFilledInput-inputMultiline-149"
+                                          class="MuiInputBase-input-163 MuiFilledInput-input-148 MuiInputBase-inputMultiline-165 MuiFilledInput-inputMultiline-150"
                                           name="tweet"
                                           placeholder="いまどうしてる？"
                                           rows="4"
@@ -3665,7 +4456,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
 #test_event"
                                   >
                                     <div
-                                      className="MuiInputBase-root-152 MuiFilledInput-root-139 MuiFilledInput-underline-140 MuiInputBase-fullWidth-161 MuiInputBase-formControl-153 MuiInputBase-multiline-160 MuiFilledInput-multiline-146"
+                                      className="MuiInputBase-root-153 MuiFilledInput-root-140 MuiFilledInput-underline-141 MuiInputBase-fullWidth-162 MuiInputBase-formControl-154 MuiInputBase-multiline-161 MuiFilledInput-multiline-147"
                                       onClick={[Function]}
                                       style={
                                         Object {
@@ -3676,7 +4467,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                       <textarea
                                         aria-invalid={false}
                                         autoFocus={true}
-                                        className="MuiInputBase-input-162 MuiFilledInput-input-147 MuiInputBase-inputMultiline-164 MuiFilledInput-inputMultiline-149"
+                                        className="MuiInputBase-input-163 MuiFilledInput-input-148 MuiInputBase-inputMultiline-165 MuiFilledInput-inputMultiline-150"
                                         disabled={false}
                                         name="tweet"
                                         onBlur={[Function]}
@@ -3705,9 +4496,9 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-EHOje",
+                            "componentId": "sc-dnqmqq",
                             "isStatic": true,
-                            "lastClassName": "c5",
+                            "lastClassName": "c7",
                             "rules": Array [
                               "
   margin: 8px 0;
@@ -3718,7 +4509,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                           "displayName": "styled.div",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-EHOje",
+                          "styledComponentId": "sc-dnqmqq",
                           "target": "div",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -3728,7 +4519,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                       forwardedRef={null}
                     >
                       <div
-                        className="c5"
+                        className="c7"
                       >
                         <WithStyles(RoundedButton)
                           color="primary"
@@ -3738,7 +4529,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                           <RoundedButton
                             classes={
                               Object {
-                                "rounded": "RoundedButton-rounded-169",
+                                "rounded": "RoundedButton-rounded-170",
                               }
                             }
                             color="primary"
@@ -3746,41 +4537,41 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                             variant="outlined"
                           >
                             <WithStyles(Button)
-                              className="RoundedButton-rounded-169"
+                              className="RoundedButton-rounded-170"
                               color="primary"
                               onClick={[Function]}
                               variant="outlined"
                             >
                               <Button
-                                className="RoundedButton-rounded-169"
+                                className="RoundedButton-rounded-170"
                                 classes={
                                   Object {
-                                    "colorInherit": "MuiButton-colorInherit-191",
-                                    "contained": "MuiButton-contained-181",
-                                    "containedPrimary": "MuiButton-containedPrimary-182",
-                                    "containedSecondary": "MuiButton-containedSecondary-183",
-                                    "disabled": "MuiButton-disabled-190",
-                                    "extendedFab": "MuiButton-extendedFab-188",
-                                    "fab": "MuiButton-fab-187",
-                                    "flat": "MuiButton-flat-175",
-                                    "flatPrimary": "MuiButton-flatPrimary-176",
-                                    "flatSecondary": "MuiButton-flatSecondary-177",
-                                    "focusVisible": "MuiButton-focusVisible-189",
-                                    "fullWidth": "MuiButton-fullWidth-195",
-                                    "label": "MuiButton-label-171",
-                                    "mini": "MuiButton-mini-192",
-                                    "outlined": "MuiButton-outlined-178",
-                                    "outlinedPrimary": "MuiButton-outlinedPrimary-179",
-                                    "outlinedSecondary": "MuiButton-outlinedSecondary-180",
-                                    "raised": "MuiButton-raised-184",
-                                    "raisedPrimary": "MuiButton-raisedPrimary-185",
-                                    "raisedSecondary": "MuiButton-raisedSecondary-186",
-                                    "root": "MuiButton-root-170",
-                                    "sizeLarge": "MuiButton-sizeLarge-194",
-                                    "sizeSmall": "MuiButton-sizeSmall-193",
-                                    "text": "MuiButton-text-172",
-                                    "textPrimary": "MuiButton-textPrimary-173",
-                                    "textSecondary": "MuiButton-textSecondary-174",
+                                    "colorInherit": "MuiButton-colorInherit-192",
+                                    "contained": "MuiButton-contained-182",
+                                    "containedPrimary": "MuiButton-containedPrimary-183",
+                                    "containedSecondary": "MuiButton-containedSecondary-184",
+                                    "disabled": "MuiButton-disabled-191",
+                                    "extendedFab": "MuiButton-extendedFab-189",
+                                    "fab": "MuiButton-fab-188",
+                                    "flat": "MuiButton-flat-176",
+                                    "flatPrimary": "MuiButton-flatPrimary-177",
+                                    "flatSecondary": "MuiButton-flatSecondary-178",
+                                    "focusVisible": "MuiButton-focusVisible-190",
+                                    "fullWidth": "MuiButton-fullWidth-196",
+                                    "label": "MuiButton-label-172",
+                                    "mini": "MuiButton-mini-193",
+                                    "outlined": "MuiButton-outlined-179",
+                                    "outlinedPrimary": "MuiButton-outlinedPrimary-180",
+                                    "outlinedSecondary": "MuiButton-outlinedSecondary-181",
+                                    "raised": "MuiButton-raised-185",
+                                    "raisedPrimary": "MuiButton-raisedPrimary-186",
+                                    "raisedSecondary": "MuiButton-raisedSecondary-187",
+                                    "root": "MuiButton-root-171",
+                                    "sizeLarge": "MuiButton-sizeLarge-195",
+                                    "sizeSmall": "MuiButton-sizeSmall-194",
+                                    "text": "MuiButton-text-173",
+                                    "textPrimary": "MuiButton-textPrimary-174",
+                                    "textSecondary": "MuiButton-textSecondary-175",
                                   }
                                 }
                                 color="primary"
@@ -3795,17 +4586,17 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                 variant="outlined"
                               >
                                 <WithStyles(ButtonBase)
-                                  className="MuiButton-root-170 MuiButton-outlined-178 MuiButton-outlinedPrimary-179 RoundedButton-rounded-169"
+                                  className="MuiButton-root-171 MuiButton-outlined-179 MuiButton-outlinedPrimary-180 RoundedButton-rounded-170"
                                   component="button"
                                   disabled={false}
                                   focusRipple={true}
-                                  focusVisibleClassName="MuiButton-focusVisible-189"
+                                  focusVisibleClassName="MuiButton-focusVisible-190"
                                   onClick={[Function]}
                                   type="button"
                                 >
                                   <ButtonBase
                                     centerRipple={false}
-                                    className="MuiButton-root-170 MuiButton-outlined-178 MuiButton-outlinedPrimary-179 RoundedButton-rounded-169"
+                                    className="MuiButton-root-171 MuiButton-outlined-179 MuiButton-outlinedPrimary-180 RoundedButton-rounded-170"
                                     classes={
                                       Object {
                                         "disabled": "MuiButtonBase-disabled-49",
@@ -3818,13 +4609,13 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                     disableTouchRipple={false}
                                     disabled={false}
                                     focusRipple={true}
-                                    focusVisibleClassName="MuiButton-focusVisible-189"
+                                    focusVisibleClassName="MuiButton-focusVisible-190"
                                     onClick={[Function]}
                                     tabIndex="0"
                                     type="button"
                                   >
                                     <button
-                                      className="MuiButtonBase-root-48 MuiButton-root-170 MuiButton-outlined-178 MuiButton-outlinedPrimary-179 RoundedButton-rounded-169"
+                                      className="MuiButtonBase-root-48 MuiButton-root-171 MuiButton-outlined-179 MuiButton-outlinedPrimary-180 RoundedButton-rounded-170"
                                       disabled={false}
                                       onBlur={[Function]}
                                       onClick={[Function]}
@@ -3842,7 +4633,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                       type="button"
                                     >
                                       <span
-                                        className="MuiButton-label-171"
+                                        className="MuiButton-label-172"
                                       >
                                         アップロード
                                       </span>
@@ -3858,25 +4649,25 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                             center={false}
                                             classes={
                                               Object {
-                                                "child": "MuiTouchRipple-child-202",
-                                                "childLeaving": "MuiTouchRipple-childLeaving-203",
-                                                "childPulsate": "MuiTouchRipple-childPulsate-204",
-                                                "ripple": "MuiTouchRipple-ripple-199",
-                                                "ripplePulsate": "MuiTouchRipple-ripplePulsate-201",
-                                                "rippleVisible": "MuiTouchRipple-rippleVisible-200",
-                                                "root": "MuiTouchRipple-root-198",
+                                                "child": "MuiTouchRipple-child-203",
+                                                "childLeaving": "MuiTouchRipple-childLeaving-204",
+                                                "childPulsate": "MuiTouchRipple-childPulsate-205",
+                                                "ripple": "MuiTouchRipple-ripple-200",
+                                                "ripplePulsate": "MuiTouchRipple-ripplePulsate-202",
+                                                "rippleVisible": "MuiTouchRipple-rippleVisible-201",
+                                                "root": "MuiTouchRipple-root-199",
                                               }
                                             }
                                           >
                                             <TransitionGroup
                                               childFactory={[Function]}
-                                              className="MuiTouchRipple-root-198"
+                                              className="MuiTouchRipple-root-199"
                                               component="span"
                                               enter={true}
                                               exit={true}
                                             >
                                               <span
-                                                className="MuiTouchRipple-root-198"
+                                                className="MuiTouchRipple-root-199"
                                               />
                                             </TransitionGroup>
                                           </TouchRipple>
@@ -3898,7 +4689,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                           <RoundedButton
                             classes={
                               Object {
-                                "rounded": "RoundedButton-rounded-169",
+                                "rounded": "RoundedButton-rounded-170",
                               }
                             }
                             color="primary"
@@ -3906,42 +4697,42 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                             onClick={[Function]}
                           >
                             <WithStyles(Button)
-                              className="RoundedButton-rounded-169"
+                              className="RoundedButton-rounded-170"
                               color="primary"
                               disabled={false}
                               onClick={[Function]}
                               variant="contained"
                             >
                               <Button
-                                className="RoundedButton-rounded-169"
+                                className="RoundedButton-rounded-170"
                                 classes={
                                   Object {
-                                    "colorInherit": "MuiButton-colorInherit-191",
-                                    "contained": "MuiButton-contained-181",
-                                    "containedPrimary": "MuiButton-containedPrimary-182",
-                                    "containedSecondary": "MuiButton-containedSecondary-183",
-                                    "disabled": "MuiButton-disabled-190",
-                                    "extendedFab": "MuiButton-extendedFab-188",
-                                    "fab": "MuiButton-fab-187",
-                                    "flat": "MuiButton-flat-175",
-                                    "flatPrimary": "MuiButton-flatPrimary-176",
-                                    "flatSecondary": "MuiButton-flatSecondary-177",
-                                    "focusVisible": "MuiButton-focusVisible-189",
-                                    "fullWidth": "MuiButton-fullWidth-195",
-                                    "label": "MuiButton-label-171",
-                                    "mini": "MuiButton-mini-192",
-                                    "outlined": "MuiButton-outlined-178",
-                                    "outlinedPrimary": "MuiButton-outlinedPrimary-179",
-                                    "outlinedSecondary": "MuiButton-outlinedSecondary-180",
-                                    "raised": "MuiButton-raised-184",
-                                    "raisedPrimary": "MuiButton-raisedPrimary-185",
-                                    "raisedSecondary": "MuiButton-raisedSecondary-186",
-                                    "root": "MuiButton-root-170",
-                                    "sizeLarge": "MuiButton-sizeLarge-194",
-                                    "sizeSmall": "MuiButton-sizeSmall-193",
-                                    "text": "MuiButton-text-172",
-                                    "textPrimary": "MuiButton-textPrimary-173",
-                                    "textSecondary": "MuiButton-textSecondary-174",
+                                    "colorInherit": "MuiButton-colorInherit-192",
+                                    "contained": "MuiButton-contained-182",
+                                    "containedPrimary": "MuiButton-containedPrimary-183",
+                                    "containedSecondary": "MuiButton-containedSecondary-184",
+                                    "disabled": "MuiButton-disabled-191",
+                                    "extendedFab": "MuiButton-extendedFab-189",
+                                    "fab": "MuiButton-fab-188",
+                                    "flat": "MuiButton-flat-176",
+                                    "flatPrimary": "MuiButton-flatPrimary-177",
+                                    "flatSecondary": "MuiButton-flatSecondary-178",
+                                    "focusVisible": "MuiButton-focusVisible-190",
+                                    "fullWidth": "MuiButton-fullWidth-196",
+                                    "label": "MuiButton-label-172",
+                                    "mini": "MuiButton-mini-193",
+                                    "outlined": "MuiButton-outlined-179",
+                                    "outlinedPrimary": "MuiButton-outlinedPrimary-180",
+                                    "outlinedSecondary": "MuiButton-outlinedSecondary-181",
+                                    "raised": "MuiButton-raised-185",
+                                    "raisedPrimary": "MuiButton-raisedPrimary-186",
+                                    "raisedSecondary": "MuiButton-raisedSecondary-187",
+                                    "root": "MuiButton-root-171",
+                                    "sizeLarge": "MuiButton-sizeLarge-195",
+                                    "sizeSmall": "MuiButton-sizeSmall-194",
+                                    "text": "MuiButton-text-173",
+                                    "textPrimary": "MuiButton-textPrimary-174",
+                                    "textSecondary": "MuiButton-textSecondary-175",
                                   }
                                 }
                                 color="primary"
@@ -3956,17 +4747,17 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                 variant="contained"
                               >
                                 <WithStyles(ButtonBase)
-                                  className="MuiButton-root-170 MuiButton-contained-181 MuiButton-containedPrimary-182 MuiButton-raised-184 MuiButton-raisedPrimary-185 RoundedButton-rounded-169"
+                                  className="MuiButton-root-171 MuiButton-contained-182 MuiButton-containedPrimary-183 MuiButton-raised-185 MuiButton-raisedPrimary-186 RoundedButton-rounded-170"
                                   component="button"
                                   disabled={false}
                                   focusRipple={true}
-                                  focusVisibleClassName="MuiButton-focusVisible-189"
+                                  focusVisibleClassName="MuiButton-focusVisible-190"
                                   onClick={[Function]}
                                   type="button"
                                 >
                                   <ButtonBase
                                     centerRipple={false}
-                                    className="MuiButton-root-170 MuiButton-contained-181 MuiButton-containedPrimary-182 MuiButton-raised-184 MuiButton-raisedPrimary-185 RoundedButton-rounded-169"
+                                    className="MuiButton-root-171 MuiButton-contained-182 MuiButton-containedPrimary-183 MuiButton-raised-185 MuiButton-raisedPrimary-186 RoundedButton-rounded-170"
                                     classes={
                                       Object {
                                         "disabled": "MuiButtonBase-disabled-49",
@@ -3979,13 +4770,13 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                     disableTouchRipple={false}
                                     disabled={false}
                                     focusRipple={true}
-                                    focusVisibleClassName="MuiButton-focusVisible-189"
+                                    focusVisibleClassName="MuiButton-focusVisible-190"
                                     onClick={[Function]}
                                     tabIndex="0"
                                     type="button"
                                   >
                                     <button
-                                      className="MuiButtonBase-root-48 MuiButton-root-170 MuiButton-contained-181 MuiButton-containedPrimary-182 MuiButton-raised-184 MuiButton-raisedPrimary-185 RoundedButton-rounded-169"
+                                      className="MuiButtonBase-root-48 MuiButton-root-171 MuiButton-contained-182 MuiButton-containedPrimary-183 MuiButton-raised-185 MuiButton-raisedPrimary-186 RoundedButton-rounded-170"
                                       disabled={false}
                                       onBlur={[Function]}
                                       onClick={[Function]}
@@ -4003,7 +4794,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                       type="button"
                                     >
                                       <span
-                                        className="MuiButton-label-171"
+                                        className="MuiButton-label-172"
                                       >
                                         ツイート
                                       </span>
@@ -4019,25 +4810,25 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                             center={false}
                                             classes={
                                               Object {
-                                                "child": "MuiTouchRipple-child-202",
-                                                "childLeaving": "MuiTouchRipple-childLeaving-203",
-                                                "childPulsate": "MuiTouchRipple-childPulsate-204",
-                                                "ripple": "MuiTouchRipple-ripple-199",
-                                                "ripplePulsate": "MuiTouchRipple-ripplePulsate-201",
-                                                "rippleVisible": "MuiTouchRipple-rippleVisible-200",
-                                                "root": "MuiTouchRipple-root-198",
+                                                "child": "MuiTouchRipple-child-203",
+                                                "childLeaving": "MuiTouchRipple-childLeaving-204",
+                                                "childPulsate": "MuiTouchRipple-childPulsate-205",
+                                                "ripple": "MuiTouchRipple-ripple-200",
+                                                "ripplePulsate": "MuiTouchRipple-ripplePulsate-202",
+                                                "rippleVisible": "MuiTouchRipple-rippleVisible-201",
+                                                "root": "MuiTouchRipple-root-199",
                                               }
                                             }
                                           >
                                             <TransitionGroup
                                               childFactory={[Function]}
-                                              className="MuiTouchRipple-root-198"
+                                              className="MuiTouchRipple-root-199"
                                               component="span"
                                               enter={true}
                                               exit={true}
                                             >
                                               <span
-                                                className="MuiTouchRipple-root-198"
+                                                className="MuiTouchRipple-root-199"
                                               />
                                             </TransitionGroup>
                                           </TouchRipple>
@@ -4064,7 +4855,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                 anchorEl={null}
                 classes={
                   Object {
-                    "typography": "PopMessage-typography-196",
+                    "typography": "PopMessage-typography-197",
                   }
                 }
                 handleClose={[Function]}
@@ -4098,7 +4889,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                     anchorReference="anchorEl"
                     classes={
                       Object {
-                        "paper": "MuiPopover-paper-197",
+                        "paper": "MuiPopover-paper-198",
                       }
                     }
                     elevation={8}
@@ -4131,8 +4922,8 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                         }
                         classes={
                           Object {
-                            "hidden": "MuiModal-hidden-134",
-                            "root": "MuiModal-root-133",
+                            "hidden": "MuiModal-hidden-135",
+                            "root": "MuiModal-root-134",
                           }
                         }
                         disableAutoFocus={false}

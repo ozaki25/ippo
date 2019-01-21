@@ -141,6 +141,7 @@ exports[`should match snapshot: IconWithText/nomal 1`] = `
                   "h5": "MuiTypography-h5-26",
                   "h6": "MuiTypography-h6-27",
                   "headline": "MuiTypography-headline-15",
+                  "inline": "MuiTypography-inline-45",
                   "noWrap": "MuiTypography-noWrap-36",
                   "overline": "MuiTypography-overline-30",
                   "paragraph": "MuiTypography-paragraph-38",
@@ -175,6 +176,7 @@ exports[`should match snapshot: IconWithText/nomal 1`] = `
                   "title": "h2",
                 }
               }
+              inline={false}
               noWrap={false}
               paragraph={false}
               theme={
@@ -375,7 +377,7 @@ exports[`should match snapshot: IconWithText/nomal 1`] = `
                       "fontSize": "0.875rem",
                       "fontWeight": 500,
                       "letterSpacing": "0.02857em",
-                      "lineHeight": 1.3125,
+                      "lineHeight": 1.75,
                       "textTransform": "uppercase",
                     },
                     "caption": Object {
