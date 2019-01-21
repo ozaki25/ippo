@@ -29,7 +29,8 @@ const props = fixedTweet => ({
             catchMessage: text('catchMessage', '初心者向けにReactのハンズオンをやります！'),
             place: text('place', '晴海3階'),
             name: text('name', 'ozaki25'),
-            startedAt: text('startedAt', '2018-12-10T19:00'),
+            startedAt: text('startedAt', '2018/01/01 12:34'),
+            timestamp: text('timestamp', '1546779693296'),
           }
         : null,
     },
