@@ -7,8 +7,8 @@ const styles = {
     padding: '0 30px',
   },
   slideContainer: {
-    padding: '0 4px',
-    width: 'calc(100% - 8px)',
+    padding: '0',
+    width: '100%',
   },
 };
 

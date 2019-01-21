@@ -12,7 +12,7 @@ const Contents = styled.div`
 const styles = theme => ({
   card: {
     // backgroundColor: theme.palette.primary[50],
-    borderRadius: 2,
+    borderRadius: 0,
     justifyContent: 'normal',
     padding: '12px',
     textAlign: 'left',
