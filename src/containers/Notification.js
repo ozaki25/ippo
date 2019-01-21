@@ -14,5 +14,5 @@ export default compose(
     options: ({ authUser: { uid } }) => ({ variables: { uid } }),
     name: 'user',
   }),
-  graphql(query.createUser, { name: 'updateUser' }),
+  graphql(query.readNotification, { name: 'readNotification' }),
 )(Notification);
