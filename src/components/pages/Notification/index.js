@@ -1,19 +1,42 @@
 import React from 'react';
-import { Divider,Typography } from '@material-ui/core';
+import { Divider, Typography } from '@material-ui/core';
 import propTypes from 'prop-types';
 import Container from 'src/components/templates/Container';
 import dateFormat from 'src/utils/dateFormat';
 
 class Notification extends React.Component {
+  async componentDidMount() {
+    const {
+      user: {
+        refetch,
+        variables: { uid },
+      },
+      match: {
+        params: { id },
+      },
+      readNotification,
+    } = this.props;
+    const {
+      data: {
+        fetchUser: { notifications },
+      },
+    } = await refetch({ uid });
+    const notification = notifications.find(n => n.id === id);
+    if (notification.checked) return;
+    readNotification({ variables: { uid, notificationId: id } });
+  }
+
   render() {
+    console.log(this.props);
     const {
       user: { fetchUser },
       authUser,
       history,
-      match: { params },
+      match: {
+        params: { id },
+      },
       firebase,
     } = this.props;
-    const { id } = params;
     const notification = fetchUser ? fetchUser.notifications.find(n => n.id === id) : null;
     return (
       <Container title="通知" back authUser={authUser} history={history} firebase={firebase}>
@@ -24,7 +47,7 @@ class Notification extends React.Component {
               {dateFormat.datetimeJa(notification.timestamp)}
             </Typography>
             <Typography paragraph>{notification.content}</Typography>
-            <Divider/>
+            <Divider />
           </>
         )}
       </Container>
@@ -48,7 +71,7 @@ Notification.propTypes = {
       ),
     }),
   }),
-  updateUser: propTypes.func.isRequired,
+  readNotification: propTypes.func.isRequired,
   authUser: propTypes.shape({
     displayName: propTypes.string.isRequired,
     uid: propTypes.string.isRequired,
