@@ -88,7 +88,12 @@ class Menu extends React.Component {
             {value === MENU_ITEMS.NEW_EVENT.value && (
               <EventCreateForm onSubmit={this.onSubmitCreateEvent} />
             )}
-            {value === MENU_ITEMS.NOTIFICATION.value && <NotificationList history={history} />}
+            {value === MENU_ITEMS.NOTIFICATION.value && (
+              <NotificationList
+                history={history}
+                notifications={fetchUser ? fetchUser.notifications : []}
+              />
+            )}
           </Container>
         </ContainerWithTabs>
         <Tabs
