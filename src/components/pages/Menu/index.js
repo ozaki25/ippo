@@ -70,7 +70,7 @@ class Menu extends React.Component {
             authUser={authUser}
             history={history}
             firebase={firebase}
-            noPadding={[MENU_ITEMS.HOME.value].includes(value)}
+            noPadding={[MENU_ITEMS.HOME.value, MENU_ITEMS.NOTIFICATION.value].includes(value)}
           >
             {value === MENU_ITEMS.HOME.value &&
               (loading ? (
