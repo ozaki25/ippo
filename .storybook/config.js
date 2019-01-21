@@ -7,9 +7,9 @@ import 'typeface-roboto';
 import '../src/index.css';
 import Layout from './Layout';
 
-addDecorator(Layout);
 addDecorator(withKnobs);
 addDecorator(withInfo);
+addDecorator(Layout);
 addDecorator(StoryRouter());
 
 const req = require.context('../src/components/', true, /stories.js$/);
