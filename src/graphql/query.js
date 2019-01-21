@@ -212,6 +212,13 @@ const fetchUser = gql`
       uid
       displayName
       categories
+      notifications {
+        id
+        checked
+        title
+        content
+        timestamp
+      }
     }
   }
 `;
@@ -264,6 +271,14 @@ const createUser = gql`
   }
 `;
 
+const readNotification = gql`
+  mutation readNotification($uid: String, $notificationId: String) {
+    readNotification(uid: $uid, notificationId: $notificationId) {
+      result
+    }
+  }
+`;
+
 const excuteUpdateExternalEvents = gql`
   mutation excuteUpdateExternalEvents {
     excuteUpdateExternalEvents
@@ -287,5 +302,6 @@ export default {
   createTweet,
   createUser,
   fetchUser,
+  readNotification,
   excuteUpdateExternalEvents,
 };

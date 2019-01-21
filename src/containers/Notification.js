@@ -3,24 +3,16 @@ import { compose } from 'recompose';
 import { withRouter } from 'react-router-dom';
 import { withFirebase } from 'src/context/firebase';
 import query from 'src/graphql/query';
-import Menu from 'src/components/pages/Menu';
+import Notification from 'src/components/pages/Notification';
 import { withAuthorization } from 'src/hoc/Sessions';
-import withTab from 'src/hoc/withTab';
-import paging from 'src/constants/paging';
 
 export default compose(
   withAuthorization,
   withRouter,
   withFirebase,
-  withTab,
-  graphql(query.allEvents, {
-    options: ({ authUser: { uid } }) => ({
-      variables: { uid, limit: paging.eventsPerPageForMenu },
-    }),
-  }),
   graphql(query.fetchUser, {
     options: ({ authUser: { uid } }) => ({ variables: { uid } }),
     name: 'user',
   }),
-  graphql(query.createEvent, { name: 'createEvent' }),
-)(Menu);
+  graphql(query.readNotification, { name: 'readNotification' }),
+)(Notification);

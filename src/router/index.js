@@ -14,6 +14,7 @@ import NewEvent from 'src/containers/NewEvent';
 import Tweet from 'src/containers/Tweet';
 import Tweets from 'src/containers/Tweets';
 import NewTweet from 'src/containers/NewTweet';
+import Notification from 'src/containers/Notification';
 import SettingsNotification from 'src/containers/SettingsNotification';
 import SettingsAccount from 'src/containers/SettingsAccount';
 import ROUTES from 'src/constants/routes';
@@ -35,6 +36,7 @@ const Router = () => (
         <Route path={ROUTES.Tweet} exact component={Tweet} />
         <Route path={ROUTES.Tweets} exact component={Tweets} />
         <Route path={ROUTES.NewTweet} exact component={NewTweet} />
+        <Route path={ROUTES.Notification} exact component={Notification} />
         <Route path={ROUTES.SettingsNotification} exact component={SettingsNotification} />
         <Route path={ROUTES.SettingsAccount} exact component={SettingsAccount} />
         <Route path={ROUTES.Admin} exact component={Admin} />
