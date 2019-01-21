@@ -14,14 +14,13 @@ const Notification = ({ id, title, content, checked, onClick }) => (
 const NotificationList = ({ notifications, history }) => (
   <List>
     {notifications.map(n => (
-      <>
+      <div key={n.id}>
         <Notification
-          key={n.id}
           {...n}
           onClick={() => history.push(ROUTES.Notification.replace(':id', n.id))}
         />
         <Divider />
-      </>
+      </div>
     ))}
   </List>
 );

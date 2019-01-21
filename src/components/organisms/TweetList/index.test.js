@@ -80,7 +80,9 @@ const props = {
       time: '12月10日',
     },
   ],
-  history: jest.fn(),
+  history: {
+    push: jest.fn(),
+  },
 };
 
 snapshot('TweetList/nomal', <TweetList {...props} />);

@@ -418,7 +418,7 @@ exports[`should match snapshot: Container/back 1`] = `
                                         "fontSize": "0.875rem",
                                         "fontWeight": 500,
                                         "letterSpacing": "0.02857em",
-                                        "lineHeight": 1.3125,
+                                        "lineHeight": 1.75,
                                         "textTransform": "uppercase",
                                       },
                                       "caption": Object {
@@ -624,12 +624,12 @@ exports[`should match snapshot: Container/back 1`] = `
                                     <IconButton
                                       classes={
                                         Object {
-                                          "colorInherit": "MuiIconButton-colorInherit-100",
-                                          "colorPrimary": "MuiIconButton-colorPrimary-101",
-                                          "colorSecondary": "MuiIconButton-colorSecondary-102",
-                                          "disabled": "MuiIconButton-disabled-103",
-                                          "label": "MuiIconButton-label-104",
-                                          "root": "MuiIconButton-root-99",
+                                          "colorInherit": "MuiIconButton-colorInherit-101",
+                                          "colorPrimary": "MuiIconButton-colorPrimary-102",
+                                          "colorSecondary": "MuiIconButton-colorSecondary-103",
+                                          "disabled": "MuiIconButton-disabled-104",
+                                          "label": "MuiIconButton-label-105",
+                                          "root": "MuiIconButton-root-100",
                                         }
                                       }
                                       color="inherit"
@@ -638,19 +638,19 @@ exports[`should match snapshot: Container/back 1`] = `
                                     >
                                       <WithStyles(ButtonBase)
                                         centerRipple={true}
-                                        className="MuiIconButton-root-99 MuiIconButton-colorInherit-100"
+                                        className="MuiIconButton-root-100 MuiIconButton-colorInherit-101"
                                         disabled={false}
                                         focusRipple={true}
                                         onClick={[MockFunction]}
                                       >
                                         <ButtonBase
                                           centerRipple={true}
-                                          className="MuiIconButton-root-99 MuiIconButton-colorInherit-100"
+                                          className="MuiIconButton-root-100 MuiIconButton-colorInherit-101"
                                           classes={
                                             Object {
-                                              "disabled": "MuiButtonBase-disabled-106",
-                                              "focusVisible": "MuiButtonBase-focusVisible-107",
-                                              "root": "MuiButtonBase-root-105",
+                                              "disabled": "MuiButtonBase-disabled-107",
+                                              "focusVisible": "MuiButtonBase-focusVisible-108",
+                                              "root": "MuiButtonBase-root-106",
                                             }
                                           }
                                           component="button"
@@ -663,7 +663,7 @@ exports[`should match snapshot: Container/back 1`] = `
                                           type="button"
                                         >
                                           <button
-                                            className="MuiButtonBase-root-105 MuiIconButton-root-99 MuiIconButton-colorInherit-100"
+                                            className="MuiButtonBase-root-106 MuiIconButton-root-100 MuiIconButton-colorInherit-101"
                                             disabled={false}
                                             onBlur={[Function]}
                                             onClick={[MockFunction]}
@@ -681,7 +681,7 @@ exports[`should match snapshot: Container/back 1`] = `
                                             type="button"
                                           >
                                             <span
-                                              className="MuiIconButton-label-104"
+                                              className="MuiIconButton-label-105"
                                             >
                                               <pure(ArrowBackIosOutlinedIcon)>
                                                 <ArrowBackIosOutlinedIcon>
@@ -689,15 +689,15 @@ exports[`should match snapshot: Container/back 1`] = `
                                                     <SvgIcon
                                                       classes={
                                                         Object {
-                                                          "colorAction": "MuiSvgIcon-colorAction-134",
-                                                          "colorDisabled": "MuiSvgIcon-colorDisabled-136",
-                                                          "colorError": "MuiSvgIcon-colorError-135",
-                                                          "colorPrimary": "MuiSvgIcon-colorPrimary-132",
-                                                          "colorSecondary": "MuiSvgIcon-colorSecondary-133",
-                                                          "fontSizeInherit": "MuiSvgIcon-fontSizeInherit-137",
-                                                          "fontSizeLarge": "MuiSvgIcon-fontSizeLarge-139",
-                                                          "fontSizeSmall": "MuiSvgIcon-fontSizeSmall-138",
-                                                          "root": "MuiSvgIcon-root-131",
+                                                          "colorAction": "MuiSvgIcon-colorAction-135",
+                                                          "colorDisabled": "MuiSvgIcon-colorDisabled-137",
+                                                          "colorError": "MuiSvgIcon-colorError-136",
+                                                          "colorPrimary": "MuiSvgIcon-colorPrimary-133",
+                                                          "colorSecondary": "MuiSvgIcon-colorSecondary-134",
+                                                          "fontSizeInherit": "MuiSvgIcon-fontSizeInherit-138",
+                                                          "fontSizeLarge": "MuiSvgIcon-fontSizeLarge-140",
+                                                          "fontSizeSmall": "MuiSvgIcon-fontSizeSmall-139",
+                                                          "root": "MuiSvgIcon-root-132",
                                                         }
                                                       }
                                                       color="inherit"
@@ -707,7 +707,7 @@ exports[`should match snapshot: Container/back 1`] = `
                                                     >
                                                       <svg
                                                         aria-hidden="true"
-                                                        className="MuiSvgIcon-root-131"
+                                                        className="MuiSvgIcon-root-132"
                                                         focusable="false"
                                                         role="presentation"
                                                         viewBox="0 0 24 24"
@@ -738,25 +738,25 @@ exports[`should match snapshot: Container/back 1`] = `
                                                   center={true}
                                                   classes={
                                                     Object {
-                                                      "child": "MuiTouchRipple-child-144",
-                                                      "childLeaving": "MuiTouchRipple-childLeaving-145",
-                                                      "childPulsate": "MuiTouchRipple-childPulsate-146",
-                                                      "ripple": "MuiTouchRipple-ripple-141",
-                                                      "ripplePulsate": "MuiTouchRipple-ripplePulsate-143",
-                                                      "rippleVisible": "MuiTouchRipple-rippleVisible-142",
-                                                      "root": "MuiTouchRipple-root-140",
+                                                      "child": "MuiTouchRipple-child-145",
+                                                      "childLeaving": "MuiTouchRipple-childLeaving-146",
+                                                      "childPulsate": "MuiTouchRipple-childPulsate-147",
+                                                      "ripple": "MuiTouchRipple-ripple-142",
+                                                      "ripplePulsate": "MuiTouchRipple-ripplePulsate-144",
+                                                      "rippleVisible": "MuiTouchRipple-rippleVisible-143",
+                                                      "root": "MuiTouchRipple-root-141",
                                                     }
                                                   }
                                                 >
                                                   <TransitionGroup
                                                     childFactory={[Function]}
-                                                    className="MuiTouchRipple-root-140"
+                                                    className="MuiTouchRipple-root-141"
                                                     component="span"
                                                     enter={true}
                                                     exit={true}
                                                   >
                                                     <span
-                                                      className="MuiTouchRipple-root-140"
+                                                      className="MuiTouchRipple-root-141"
                                                     />
                                                   </TransitionGroup>
                                                 </TouchRipple>
@@ -988,7 +988,7 @@ exports[`should match snapshot: Container/back 1`] = `
                                                   "fontSize": "0.875rem",
                                                   "fontWeight": 500,
                                                   "letterSpacing": "0.02857em",
-                                                  "lineHeight": 1.3125,
+                                                  "lineHeight": 1.75,
                                                   "textTransform": "uppercase",
                                                 },
                                                 "caption": Object {
@@ -1202,6 +1202,7 @@ exports[`should match snapshot: Container/back 1`] = `
                                               "h5": "MuiTypography-h5-58",
                                               "h6": "MuiTypography-h6-59",
                                               "headline": "MuiTypography-headline-47",
+                                              "inline": "MuiTypography-inline-77",
                                               "noWrap": "MuiTypography-noWrap-68",
                                               "overline": "MuiTypography-overline-62",
                                               "paragraph": "MuiTypography-paragraph-70",
@@ -1236,6 +1237,7 @@ exports[`should match snapshot: Container/back 1`] = `
                                               "title": "h2",
                                             }
                                           }
+                                          inline={false}
                                           noWrap={false}
                                           paragraph={false}
                                           theme={
@@ -1436,7 +1438,7 @@ exports[`should match snapshot: Container/back 1`] = `
                                                   "fontSize": "0.875rem",
                                                   "fontWeight": 500,
                                                   "letterSpacing": "0.02857em",
-                                                  "lineHeight": 1.3125,
+                                                  "lineHeight": 1.75,
                                                   "textTransform": "uppercase",
                                                 },
                                                 "caption": Object {
@@ -1617,28 +1619,28 @@ exports[`should match snapshot: Container/back 1`] = `
                                     <CharIcon
                                       classes={
                                         Object {
-                                          "amber": "CharIcon-amber-93",
-                                          "avatar": "CharIcon-avatar-77",
-                                          "blue": "CharIcon-blue-85",
-                                          "blueGrey": "CharIcon-blueGrey-98",
-                                          "brown": "CharIcon-brown-96",
-                                          "cyan": "CharIcon-cyan-87",
-                                          "deepOrange": "CharIcon-deepOrange-95",
-                                          "deepPurple": "CharIcon-deepPurple-83",
-                                          "green": "CharIcon-green-89",
-                                          "grey": "CharIcon-grey-97",
-                                          "indigo": "CharIcon-indigo-84",
-                                          "lightBlue": "CharIcon-lightBlue-86",
-                                          "lightGreen": "CharIcon-lightGreen-90",
-                                          "lime": "CharIcon-lime-91",
-                                          "orange": "CharIcon-orange-94",
-                                          "pink": "CharIcon-pink-81",
-                                          "purple": "CharIcon-purple-82",
-                                          "red": "CharIcon-red-80",
-                                          "smallAvatar": "CharIcon-smallAvatar-78",
-                                          "teal": "CharIcon-teal-88",
-                                          "wrapper": "CharIcon-wrapper-79",
-                                          "yellow": "CharIcon-yellow-92",
+                                          "amber": "CharIcon-amber-94",
+                                          "avatar": "CharIcon-avatar-78",
+                                          "blue": "CharIcon-blue-86",
+                                          "blueGrey": "CharIcon-blueGrey-99",
+                                          "brown": "CharIcon-brown-97",
+                                          "cyan": "CharIcon-cyan-88",
+                                          "deepOrange": "CharIcon-deepOrange-96",
+                                          "deepPurple": "CharIcon-deepPurple-84",
+                                          "green": "CharIcon-green-90",
+                                          "grey": "CharIcon-grey-98",
+                                          "indigo": "CharIcon-indigo-85",
+                                          "lightBlue": "CharIcon-lightBlue-87",
+                                          "lightGreen": "CharIcon-lightGreen-91",
+                                          "lime": "CharIcon-lime-92",
+                                          "orange": "CharIcon-orange-95",
+                                          "pink": "CharIcon-pink-82",
+                                          "purple": "CharIcon-purple-83",
+                                          "red": "CharIcon-red-81",
+                                          "smallAvatar": "CharIcon-smallAvatar-79",
+                                          "teal": "CharIcon-teal-89",
+                                          "wrapper": "CharIcon-wrapper-80",
+                                          "yellow": "CharIcon-yellow-93",
                                         }
                                       }
                                       name="テストユーザ"
@@ -1646,20 +1648,20 @@ exports[`should match snapshot: Container/back 1`] = `
                                       small={true}
                                     >
                                       <WithStyles(IconButton)
-                                        className="CharIcon-wrapper-79"
+                                        className="CharIcon-wrapper-80"
                                         disableRipple={true}
                                         onClick={[Function]}
                                       >
                                         <IconButton
-                                          className="CharIcon-wrapper-79"
+                                          className="CharIcon-wrapper-80"
                                           classes={
                                             Object {
-                                              "colorInherit": "MuiIconButton-colorInherit-100",
-                                              "colorPrimary": "MuiIconButton-colorPrimary-101",
-                                              "colorSecondary": "MuiIconButton-colorSecondary-102",
-                                              "disabled": "MuiIconButton-disabled-103",
-                                              "label": "MuiIconButton-label-104",
-                                              "root": "MuiIconButton-root-99",
+                                              "colorInherit": "MuiIconButton-colorInherit-101",
+                                              "colorPrimary": "MuiIconButton-colorPrimary-102",
+                                              "colorSecondary": "MuiIconButton-colorSecondary-103",
+                                              "disabled": "MuiIconButton-disabled-104",
+                                              "label": "MuiIconButton-label-105",
+                                              "root": "MuiIconButton-root-100",
                                             }
                                           }
                                           color="default"
@@ -1669,7 +1671,7 @@ exports[`should match snapshot: Container/back 1`] = `
                                         >
                                           <WithStyles(ButtonBase)
                                             centerRipple={true}
-                                            className="MuiIconButton-root-99 CharIcon-wrapper-79"
+                                            className="MuiIconButton-root-100 CharIcon-wrapper-80"
                                             disableRipple={true}
                                             disabled={false}
                                             focusRipple={true}
@@ -1677,12 +1679,12 @@ exports[`should match snapshot: Container/back 1`] = `
                                           >
                                             <ButtonBase
                                               centerRipple={true}
-                                              className="MuiIconButton-root-99 CharIcon-wrapper-79"
+                                              className="MuiIconButton-root-100 CharIcon-wrapper-80"
                                               classes={
                                                 Object {
-                                                  "disabled": "MuiButtonBase-disabled-106",
-                                                  "focusVisible": "MuiButtonBase-focusVisible-107",
-                                                  "root": "MuiButtonBase-root-105",
+                                                  "disabled": "MuiButtonBase-disabled-107",
+                                                  "focusVisible": "MuiButtonBase-focusVisible-108",
+                                                  "root": "MuiButtonBase-root-106",
                                                 }
                                               }
                                               component="button"
@@ -1695,7 +1697,7 @@ exports[`should match snapshot: Container/back 1`] = `
                                               type="button"
                                             >
                                               <button
-                                                className="MuiButtonBase-root-105 MuiIconButton-root-99 CharIcon-wrapper-79"
+                                                className="MuiButtonBase-root-106 MuiIconButton-root-100 CharIcon-wrapper-80"
                                                 disabled={false}
                                                 onBlur={[Function]}
                                                 onClick={[Function]}
@@ -1713,24 +1715,24 @@ exports[`should match snapshot: Container/back 1`] = `
                                                 type="button"
                                               >
                                                 <span
-                                                  className="MuiIconButton-label-104"
+                                                  className="MuiIconButton-label-105"
                                                 >
                                                   <WithStyles(Avatar)
-                                                    className="CharIcon-avatar-77 CharIcon-smallAvatar-78 CharIcon-deepPurple-83"
+                                                    className="CharIcon-avatar-78 CharIcon-smallAvatar-79 CharIcon-deepPurple-84"
                                                   >
                                                     <Avatar
-                                                      className="CharIcon-avatar-77 CharIcon-smallAvatar-78 CharIcon-deepPurple-83"
+                                                      className="CharIcon-avatar-78 CharIcon-smallAvatar-79 CharIcon-deepPurple-84"
                                                       classes={
                                                         Object {
-                                                          "colorDefault": "MuiAvatar-colorDefault-109",
-                                                          "img": "MuiAvatar-img-110",
-                                                          "root": "MuiAvatar-root-108",
+                                                          "colorDefault": "MuiAvatar-colorDefault-110",
+                                                          "img": "MuiAvatar-img-111",
+                                                          "root": "MuiAvatar-root-109",
                                                         }
                                                       }
                                                       component="div"
                                                     >
                                                       <div
-                                                        className="MuiAvatar-root-108 MuiAvatar-colorDefault-109 CharIcon-avatar-77 CharIcon-smallAvatar-78 CharIcon-deepPurple-83"
+                                                        className="MuiAvatar-root-109 MuiAvatar-colorDefault-110 CharIcon-avatar-78 CharIcon-smallAvatar-79 CharIcon-deepPurple-84"
                                                       >
                                                         テ
                                                       </div>
@@ -1772,7 +1774,7 @@ exports[`should match snapshot: Container/back 1`] = `
           <SideMenu
             classes={
               Object {
-                "list": "SideMenu-list-111",
+                "list": "SideMenu-list-112",
               }
             }
             history={
@@ -2002,7 +2004,7 @@ exports[`should match snapshot: Container/back 1`] = `
                         "fontSize": "0.875rem",
                         "fontWeight": 500,
                         "letterSpacing": "0.02857em",
-                        "lineHeight": 1.3125,
+                        "lineHeight": 1.75,
                         "textTransform": "uppercase",
                       },
                       "caption": Object {
@@ -2391,7 +2393,7 @@ exports[`should match snapshot: Container/back 1`] = `
                           "fontSize": "0.875rem",
                           "fontWeight": 500,
                           "letterSpacing": "0.02857em",
-                          "lineHeight": 1.3125,
+                          "lineHeight": 1.75,
                           "textTransform": "uppercase",
                         },
                         "caption": Object {
@@ -2582,18 +2584,18 @@ exports[`should match snapshot: Container/back 1`] = `
                     anchor="right"
                     classes={
                       Object {
-                        "docked": "MuiDrawer-docked-113",
-                        "modal": "MuiDrawer-modal-123",
-                        "paper": "MuiDrawer-paper-114",
-                        "paperAnchorBottom": "MuiDrawer-paperAnchorBottom-118",
-                        "paperAnchorDockedBottom": "MuiDrawer-paperAnchorDockedBottom-122",
-                        "paperAnchorDockedLeft": "MuiDrawer-paperAnchorDockedLeft-119",
-                        "paperAnchorDockedRight": "MuiDrawer-paperAnchorDockedRight-121",
-                        "paperAnchorDockedTop": "MuiDrawer-paperAnchorDockedTop-120",
-                        "paperAnchorLeft": "MuiDrawer-paperAnchorLeft-115",
-                        "paperAnchorRight": "MuiDrawer-paperAnchorRight-116",
-                        "paperAnchorTop": "MuiDrawer-paperAnchorTop-117",
-                        "root": "MuiDrawer-root-112",
+                        "docked": "MuiDrawer-docked-114",
+                        "modal": "MuiDrawer-modal-124",
+                        "paper": "MuiDrawer-paper-115",
+                        "paperAnchorBottom": "MuiDrawer-paperAnchorBottom-119",
+                        "paperAnchorDockedBottom": "MuiDrawer-paperAnchorDockedBottom-123",
+                        "paperAnchorDockedLeft": "MuiDrawer-paperAnchorDockedLeft-120",
+                        "paperAnchorDockedRight": "MuiDrawer-paperAnchorDockedRight-122",
+                        "paperAnchorDockedTop": "MuiDrawer-paperAnchorDockedTop-121",
+                        "paperAnchorLeft": "MuiDrawer-paperAnchorLeft-116",
+                        "paperAnchorRight": "MuiDrawer-paperAnchorRight-117",
+                        "paperAnchorTop": "MuiDrawer-paperAnchorTop-118",
+                        "root": "MuiDrawer-root-113",
                       }
                     }
                     elevation={16}
@@ -2797,7 +2799,7 @@ exports[`should match snapshot: Container/back 1`] = `
                             "fontSize": "0.875rem",
                             "fontWeight": 500,
                             "letterSpacing": "0.02857em",
-                            "lineHeight": 1.3125,
+                            "lineHeight": 1.75,
                             "textTransform": "uppercase",
                           },
                           "caption": Object {
@@ -2979,7 +2981,7 @@ exports[`should match snapshot: Container/back 1`] = `
                           },
                         }
                       }
-                      className="MuiDrawer-root-112 MuiDrawer-modal-123"
+                      className="MuiDrawer-root-113 MuiDrawer-modal-124"
                       onClose={[Function]}
                       open={false}
                     >
@@ -2994,11 +2996,11 @@ exports[`should match snapshot: Container/back 1`] = `
                             },
                           }
                         }
-                        className="MuiDrawer-root-112 MuiDrawer-modal-123"
+                        className="MuiDrawer-root-113 MuiDrawer-modal-124"
                         classes={
                           Object {
-                            "hidden": "MuiModal-hidden-125",
-                            "root": "MuiModal-root-124",
+                            "hidden": "MuiModal-hidden-126",
+                            "root": "MuiModal-root-125",
                           }
                         }
                         disableAutoFocus={false}
@@ -3035,17 +3037,17 @@ exports[`should match snapshot: Container/back 1`] = `
                       anchor="right"
                       classes={
                         Object {
-                          "anchorBottom": "MuiPrivateSwipeArea-anchorBottom-130",
-                          "anchorLeft": "MuiPrivateSwipeArea-anchorLeft-127",
-                          "anchorRight": "MuiPrivateSwipeArea-anchorRight-128",
-                          "anchorTop": "MuiPrivateSwipeArea-anchorTop-129",
-                          "root": "MuiPrivateSwipeArea-root-126",
+                          "anchorBottom": "MuiPrivateSwipeArea-anchorBottom-131",
+                          "anchorLeft": "MuiPrivateSwipeArea-anchorLeft-128",
+                          "anchorRight": "MuiPrivateSwipeArea-anchorRight-129",
+                          "anchorTop": "MuiPrivateSwipeArea-anchorTop-130",
+                          "root": "MuiPrivateSwipeArea-root-127",
                         }
                       }
                       width={20}
                     >
                       <div
-                        className="MuiPrivateSwipeArea-root-126 MuiPrivateSwipeArea-anchorRight-128"
+                        className="MuiPrivateSwipeArea-root-127 MuiPrivateSwipeArea-anchorRight-129"
                         style={
                           Object {
                             "width": 20,
@@ -3600,7 +3602,7 @@ exports[`should match snapshot: Container/nopadding 1`] = `
                                         "fontSize": "0.875rem",
                                         "fontWeight": 500,
                                         "letterSpacing": "0.02857em",
-                                        "lineHeight": 1.3125,
+                                        "lineHeight": 1.75,
                                         "textTransform": "uppercase",
                                       },
                                       "caption": Object {
@@ -4020,7 +4022,7 @@ exports[`should match snapshot: Container/nopadding 1`] = `
                                                   "fontSize": "0.875rem",
                                                   "fontWeight": 500,
                                                   "letterSpacing": "0.02857em",
-                                                  "lineHeight": 1.3125,
+                                                  "lineHeight": 1.75,
                                                   "textTransform": "uppercase",
                                                 },
                                                 "caption": Object {
@@ -4234,6 +4236,7 @@ exports[`should match snapshot: Container/nopadding 1`] = `
                                               "h5": "MuiTypography-h5-58",
                                               "h6": "MuiTypography-h6-59",
                                               "headline": "MuiTypography-headline-47",
+                                              "inline": "MuiTypography-inline-77",
                                               "noWrap": "MuiTypography-noWrap-68",
                                               "overline": "MuiTypography-overline-62",
                                               "paragraph": "MuiTypography-paragraph-70",
@@ -4268,6 +4271,7 @@ exports[`should match snapshot: Container/nopadding 1`] = `
                                               "title": "h2",
                                             }
                                           }
+                                          inline={false}
                                           noWrap={false}
                                           paragraph={false}
                                           theme={
@@ -4468,7 +4472,7 @@ exports[`should match snapshot: Container/nopadding 1`] = `
                                                   "fontSize": "0.875rem",
                                                   "fontWeight": 500,
                                                   "letterSpacing": "0.02857em",
-                                                  "lineHeight": 1.3125,
+                                                  "lineHeight": 1.75,
                                                   "textTransform": "uppercase",
                                                 },
                                                 "caption": Object {
@@ -4649,28 +4653,28 @@ exports[`should match snapshot: Container/nopadding 1`] = `
                                     <CharIcon
                                       classes={
                                         Object {
-                                          "amber": "CharIcon-amber-93",
-                                          "avatar": "CharIcon-avatar-77",
-                                          "blue": "CharIcon-blue-85",
-                                          "blueGrey": "CharIcon-blueGrey-98",
-                                          "brown": "CharIcon-brown-96",
-                                          "cyan": "CharIcon-cyan-87",
-                                          "deepOrange": "CharIcon-deepOrange-95",
-                                          "deepPurple": "CharIcon-deepPurple-83",
-                                          "green": "CharIcon-green-89",
-                                          "grey": "CharIcon-grey-97",
-                                          "indigo": "CharIcon-indigo-84",
-                                          "lightBlue": "CharIcon-lightBlue-86",
-                                          "lightGreen": "CharIcon-lightGreen-90",
-                                          "lime": "CharIcon-lime-91",
-                                          "orange": "CharIcon-orange-94",
-                                          "pink": "CharIcon-pink-81",
-                                          "purple": "CharIcon-purple-82",
-                                          "red": "CharIcon-red-80",
-                                          "smallAvatar": "CharIcon-smallAvatar-78",
-                                          "teal": "CharIcon-teal-88",
-                                          "wrapper": "CharIcon-wrapper-79",
-                                          "yellow": "CharIcon-yellow-92",
+                                          "amber": "CharIcon-amber-94",
+                                          "avatar": "CharIcon-avatar-78",
+                                          "blue": "CharIcon-blue-86",
+                                          "blueGrey": "CharIcon-blueGrey-99",
+                                          "brown": "CharIcon-brown-97",
+                                          "cyan": "CharIcon-cyan-88",
+                                          "deepOrange": "CharIcon-deepOrange-96",
+                                          "deepPurple": "CharIcon-deepPurple-84",
+                                          "green": "CharIcon-green-90",
+                                          "grey": "CharIcon-grey-98",
+                                          "indigo": "CharIcon-indigo-85",
+                                          "lightBlue": "CharIcon-lightBlue-87",
+                                          "lightGreen": "CharIcon-lightGreen-91",
+                                          "lime": "CharIcon-lime-92",
+                                          "orange": "CharIcon-orange-95",
+                                          "pink": "CharIcon-pink-82",
+                                          "purple": "CharIcon-purple-83",
+                                          "red": "CharIcon-red-81",
+                                          "smallAvatar": "CharIcon-smallAvatar-79",
+                                          "teal": "CharIcon-teal-89",
+                                          "wrapper": "CharIcon-wrapper-80",
+                                          "yellow": "CharIcon-yellow-93",
                                         }
                                       }
                                       name="テストユーザ"
@@ -4678,20 +4682,20 @@ exports[`should match snapshot: Container/nopadding 1`] = `
                                       small={true}
                                     >
                                       <WithStyles(IconButton)
-                                        className="CharIcon-wrapper-79"
+                                        className="CharIcon-wrapper-80"
                                         disableRipple={true}
                                         onClick={[Function]}
                                       >
                                         <IconButton
-                                          className="CharIcon-wrapper-79"
+                                          className="CharIcon-wrapper-80"
                                           classes={
                                             Object {
-                                              "colorInherit": "MuiIconButton-colorInherit-100",
-                                              "colorPrimary": "MuiIconButton-colorPrimary-101",
-                                              "colorSecondary": "MuiIconButton-colorSecondary-102",
-                                              "disabled": "MuiIconButton-disabled-103",
-                                              "label": "MuiIconButton-label-104",
-                                              "root": "MuiIconButton-root-99",
+                                              "colorInherit": "MuiIconButton-colorInherit-101",
+                                              "colorPrimary": "MuiIconButton-colorPrimary-102",
+                                              "colorSecondary": "MuiIconButton-colorSecondary-103",
+                                              "disabled": "MuiIconButton-disabled-104",
+                                              "label": "MuiIconButton-label-105",
+                                              "root": "MuiIconButton-root-100",
                                             }
                                           }
                                           color="default"
@@ -4701,7 +4705,7 @@ exports[`should match snapshot: Container/nopadding 1`] = `
                                         >
                                           <WithStyles(ButtonBase)
                                             centerRipple={true}
-                                            className="MuiIconButton-root-99 CharIcon-wrapper-79"
+                                            className="MuiIconButton-root-100 CharIcon-wrapper-80"
                                             disableRipple={true}
                                             disabled={false}
                                             focusRipple={true}
@@ -4709,12 +4713,12 @@ exports[`should match snapshot: Container/nopadding 1`] = `
                                           >
                                             <ButtonBase
                                               centerRipple={true}
-                                              className="MuiIconButton-root-99 CharIcon-wrapper-79"
+                                              className="MuiIconButton-root-100 CharIcon-wrapper-80"
                                               classes={
                                                 Object {
-                                                  "disabled": "MuiButtonBase-disabled-106",
-                                                  "focusVisible": "MuiButtonBase-focusVisible-107",
-                                                  "root": "MuiButtonBase-root-105",
+                                                  "disabled": "MuiButtonBase-disabled-107",
+                                                  "focusVisible": "MuiButtonBase-focusVisible-108",
+                                                  "root": "MuiButtonBase-root-106",
                                                 }
                                               }
                                               component="button"
@@ -4727,7 +4731,7 @@ exports[`should match snapshot: Container/nopadding 1`] = `
                                               type="button"
                                             >
                                               <button
-                                                className="MuiButtonBase-root-105 MuiIconButton-root-99 CharIcon-wrapper-79"
+                                                className="MuiButtonBase-root-106 MuiIconButton-root-100 CharIcon-wrapper-80"
                                                 disabled={false}
                                                 onBlur={[Function]}
                                                 onClick={[Function]}
@@ -4745,24 +4749,24 @@ exports[`should match snapshot: Container/nopadding 1`] = `
                                                 type="button"
                                               >
                                                 <span
-                                                  className="MuiIconButton-label-104"
+                                                  className="MuiIconButton-label-105"
                                                 >
                                                   <WithStyles(Avatar)
-                                                    className="CharIcon-avatar-77 CharIcon-smallAvatar-78 CharIcon-deepPurple-83"
+                                                    className="CharIcon-avatar-78 CharIcon-smallAvatar-79 CharIcon-deepPurple-84"
                                                   >
                                                     <Avatar
-                                                      className="CharIcon-avatar-77 CharIcon-smallAvatar-78 CharIcon-deepPurple-83"
+                                                      className="CharIcon-avatar-78 CharIcon-smallAvatar-79 CharIcon-deepPurple-84"
                                                       classes={
                                                         Object {
-                                                          "colorDefault": "MuiAvatar-colorDefault-109",
-                                                          "img": "MuiAvatar-img-110",
-                                                          "root": "MuiAvatar-root-108",
+                                                          "colorDefault": "MuiAvatar-colorDefault-110",
+                                                          "img": "MuiAvatar-img-111",
+                                                          "root": "MuiAvatar-root-109",
                                                         }
                                                       }
                                                       component="div"
                                                     >
                                                       <div
-                                                        className="MuiAvatar-root-108 MuiAvatar-colorDefault-109 CharIcon-avatar-77 CharIcon-smallAvatar-78 CharIcon-deepPurple-83"
+                                                        className="MuiAvatar-root-109 MuiAvatar-colorDefault-110 CharIcon-avatar-78 CharIcon-smallAvatar-79 CharIcon-deepPurple-84"
                                                       >
                                                         テ
                                                       </div>
@@ -4804,7 +4808,7 @@ exports[`should match snapshot: Container/nopadding 1`] = `
           <SideMenu
             classes={
               Object {
-                "list": "SideMenu-list-111",
+                "list": "SideMenu-list-112",
               }
             }
             history={
@@ -5034,7 +5038,7 @@ exports[`should match snapshot: Container/nopadding 1`] = `
                         "fontSize": "0.875rem",
                         "fontWeight": 500,
                         "letterSpacing": "0.02857em",
-                        "lineHeight": 1.3125,
+                        "lineHeight": 1.75,
                         "textTransform": "uppercase",
                       },
                       "caption": Object {
@@ -5423,7 +5427,7 @@ exports[`should match snapshot: Container/nopadding 1`] = `
                           "fontSize": "0.875rem",
                           "fontWeight": 500,
                           "letterSpacing": "0.02857em",
-                          "lineHeight": 1.3125,
+                          "lineHeight": 1.75,
                           "textTransform": "uppercase",
                         },
                         "caption": Object {
@@ -5614,18 +5618,18 @@ exports[`should match snapshot: Container/nopadding 1`] = `
                     anchor="right"
                     classes={
                       Object {
-                        "docked": "MuiDrawer-docked-113",
-                        "modal": "MuiDrawer-modal-123",
-                        "paper": "MuiDrawer-paper-114",
-                        "paperAnchorBottom": "MuiDrawer-paperAnchorBottom-118",
-                        "paperAnchorDockedBottom": "MuiDrawer-paperAnchorDockedBottom-122",
-                        "paperAnchorDockedLeft": "MuiDrawer-paperAnchorDockedLeft-119",
-                        "paperAnchorDockedRight": "MuiDrawer-paperAnchorDockedRight-121",
-                        "paperAnchorDockedTop": "MuiDrawer-paperAnchorDockedTop-120",
-                        "paperAnchorLeft": "MuiDrawer-paperAnchorLeft-115",
-                        "paperAnchorRight": "MuiDrawer-paperAnchorRight-116",
-                        "paperAnchorTop": "MuiDrawer-paperAnchorTop-117",
-                        "root": "MuiDrawer-root-112",
+                        "docked": "MuiDrawer-docked-114",
+                        "modal": "MuiDrawer-modal-124",
+                        "paper": "MuiDrawer-paper-115",
+                        "paperAnchorBottom": "MuiDrawer-paperAnchorBottom-119",
+                        "paperAnchorDockedBottom": "MuiDrawer-paperAnchorDockedBottom-123",
+                        "paperAnchorDockedLeft": "MuiDrawer-paperAnchorDockedLeft-120",
+                        "paperAnchorDockedRight": "MuiDrawer-paperAnchorDockedRight-122",
+                        "paperAnchorDockedTop": "MuiDrawer-paperAnchorDockedTop-121",
+                        "paperAnchorLeft": "MuiDrawer-paperAnchorLeft-116",
+                        "paperAnchorRight": "MuiDrawer-paperAnchorRight-117",
+                        "paperAnchorTop": "MuiDrawer-paperAnchorTop-118",
+                        "root": "MuiDrawer-root-113",
                       }
                     }
                     elevation={16}
@@ -5829,7 +5833,7 @@ exports[`should match snapshot: Container/nopadding 1`] = `
                             "fontSize": "0.875rem",
                             "fontWeight": 500,
                             "letterSpacing": "0.02857em",
-                            "lineHeight": 1.3125,
+                            "lineHeight": 1.75,
                             "textTransform": "uppercase",
                           },
                           "caption": Object {
@@ -6011,7 +6015,7 @@ exports[`should match snapshot: Container/nopadding 1`] = `
                           },
                         }
                       }
-                      className="MuiDrawer-root-112 MuiDrawer-modal-123"
+                      className="MuiDrawer-root-113 MuiDrawer-modal-124"
                       onClose={[Function]}
                       open={false}
                     >
@@ -6026,11 +6030,11 @@ exports[`should match snapshot: Container/nopadding 1`] = `
                             },
                           }
                         }
-                        className="MuiDrawer-root-112 MuiDrawer-modal-123"
+                        className="MuiDrawer-root-113 MuiDrawer-modal-124"
                         classes={
                           Object {
-                            "hidden": "MuiModal-hidden-125",
-                            "root": "MuiModal-root-124",
+                            "hidden": "MuiModal-hidden-126",
+                            "root": "MuiModal-root-125",
                           }
                         }
                         disableAutoFocus={false}
@@ -6067,17 +6071,17 @@ exports[`should match snapshot: Container/nopadding 1`] = `
                       anchor="right"
                       classes={
                         Object {
-                          "anchorBottom": "MuiPrivateSwipeArea-anchorBottom-130",
-                          "anchorLeft": "MuiPrivateSwipeArea-anchorLeft-127",
-                          "anchorRight": "MuiPrivateSwipeArea-anchorRight-128",
-                          "anchorTop": "MuiPrivateSwipeArea-anchorTop-129",
-                          "root": "MuiPrivateSwipeArea-root-126",
+                          "anchorBottom": "MuiPrivateSwipeArea-anchorBottom-131",
+                          "anchorLeft": "MuiPrivateSwipeArea-anchorLeft-128",
+                          "anchorRight": "MuiPrivateSwipeArea-anchorRight-129",
+                          "anchorTop": "MuiPrivateSwipeArea-anchorTop-130",
+                          "root": "MuiPrivateSwipeArea-root-127",
                         }
                       }
                       width={20}
                     >
                       <div
-                        className="MuiPrivateSwipeArea-root-126 MuiPrivateSwipeArea-anchorRight-128"
+                        className="MuiPrivateSwipeArea-root-127 MuiPrivateSwipeArea-anchorRight-129"
                         style={
                           Object {
                             "width": 20,
@@ -6555,7 +6559,7 @@ exports[`should match snapshot: Container/padding 1`] = `
                                         "fontSize": "0.875rem",
                                         "fontWeight": 500,
                                         "letterSpacing": "0.02857em",
-                                        "lineHeight": 1.3125,
+                                        "lineHeight": 1.75,
                                         "textTransform": "uppercase",
                                       },
                                       "caption": Object {
@@ -6975,7 +6979,7 @@ exports[`should match snapshot: Container/padding 1`] = `
                                                   "fontSize": "0.875rem",
                                                   "fontWeight": 500,
                                                   "letterSpacing": "0.02857em",
-                                                  "lineHeight": 1.3125,
+                                                  "lineHeight": 1.75,
                                                   "textTransform": "uppercase",
                                                 },
                                                 "caption": Object {
@@ -7189,6 +7193,7 @@ exports[`should match snapshot: Container/padding 1`] = `
                                               "h5": "MuiTypography-h5-58",
                                               "h6": "MuiTypography-h6-59",
                                               "headline": "MuiTypography-headline-47",
+                                              "inline": "MuiTypography-inline-77",
                                               "noWrap": "MuiTypography-noWrap-68",
                                               "overline": "MuiTypography-overline-62",
                                               "paragraph": "MuiTypography-paragraph-70",
@@ -7223,6 +7228,7 @@ exports[`should match snapshot: Container/padding 1`] = `
                                               "title": "h2",
                                             }
                                           }
+                                          inline={false}
                                           noWrap={false}
                                           paragraph={false}
                                           theme={
@@ -7423,7 +7429,7 @@ exports[`should match snapshot: Container/padding 1`] = `
                                                   "fontSize": "0.875rem",
                                                   "fontWeight": 500,
                                                   "letterSpacing": "0.02857em",
-                                                  "lineHeight": 1.3125,
+                                                  "lineHeight": 1.75,
                                                   "textTransform": "uppercase",
                                                 },
                                                 "caption": Object {
@@ -7604,28 +7610,28 @@ exports[`should match snapshot: Container/padding 1`] = `
                                     <CharIcon
                                       classes={
                                         Object {
-                                          "amber": "CharIcon-amber-93",
-                                          "avatar": "CharIcon-avatar-77",
-                                          "blue": "CharIcon-blue-85",
-                                          "blueGrey": "CharIcon-blueGrey-98",
-                                          "brown": "CharIcon-brown-96",
-                                          "cyan": "CharIcon-cyan-87",
-                                          "deepOrange": "CharIcon-deepOrange-95",
-                                          "deepPurple": "CharIcon-deepPurple-83",
-                                          "green": "CharIcon-green-89",
-                                          "grey": "CharIcon-grey-97",
-                                          "indigo": "CharIcon-indigo-84",
-                                          "lightBlue": "CharIcon-lightBlue-86",
-                                          "lightGreen": "CharIcon-lightGreen-90",
-                                          "lime": "CharIcon-lime-91",
-                                          "orange": "CharIcon-orange-94",
-                                          "pink": "CharIcon-pink-81",
-                                          "purple": "CharIcon-purple-82",
-                                          "red": "CharIcon-red-80",
-                                          "smallAvatar": "CharIcon-smallAvatar-78",
-                                          "teal": "CharIcon-teal-88",
-                                          "wrapper": "CharIcon-wrapper-79",
-                                          "yellow": "CharIcon-yellow-92",
+                                          "amber": "CharIcon-amber-94",
+                                          "avatar": "CharIcon-avatar-78",
+                                          "blue": "CharIcon-blue-86",
+                                          "blueGrey": "CharIcon-blueGrey-99",
+                                          "brown": "CharIcon-brown-97",
+                                          "cyan": "CharIcon-cyan-88",
+                                          "deepOrange": "CharIcon-deepOrange-96",
+                                          "deepPurple": "CharIcon-deepPurple-84",
+                                          "green": "CharIcon-green-90",
+                                          "grey": "CharIcon-grey-98",
+                                          "indigo": "CharIcon-indigo-85",
+                                          "lightBlue": "CharIcon-lightBlue-87",
+                                          "lightGreen": "CharIcon-lightGreen-91",
+                                          "lime": "CharIcon-lime-92",
+                                          "orange": "CharIcon-orange-95",
+                                          "pink": "CharIcon-pink-82",
+                                          "purple": "CharIcon-purple-83",
+                                          "red": "CharIcon-red-81",
+                                          "smallAvatar": "CharIcon-smallAvatar-79",
+                                          "teal": "CharIcon-teal-89",
+                                          "wrapper": "CharIcon-wrapper-80",
+                                          "yellow": "CharIcon-yellow-93",
                                         }
                                       }
                                       name="テストユーザ"
@@ -7633,20 +7639,20 @@ exports[`should match snapshot: Container/padding 1`] = `
                                       small={true}
                                     >
                                       <WithStyles(IconButton)
-                                        className="CharIcon-wrapper-79"
+                                        className="CharIcon-wrapper-80"
                                         disableRipple={true}
                                         onClick={[Function]}
                                       >
                                         <IconButton
-                                          className="CharIcon-wrapper-79"
+                                          className="CharIcon-wrapper-80"
                                           classes={
                                             Object {
-                                              "colorInherit": "MuiIconButton-colorInherit-100",
-                                              "colorPrimary": "MuiIconButton-colorPrimary-101",
-                                              "colorSecondary": "MuiIconButton-colorSecondary-102",
-                                              "disabled": "MuiIconButton-disabled-103",
-                                              "label": "MuiIconButton-label-104",
-                                              "root": "MuiIconButton-root-99",
+                                              "colorInherit": "MuiIconButton-colorInherit-101",
+                                              "colorPrimary": "MuiIconButton-colorPrimary-102",
+                                              "colorSecondary": "MuiIconButton-colorSecondary-103",
+                                              "disabled": "MuiIconButton-disabled-104",
+                                              "label": "MuiIconButton-label-105",
+                                              "root": "MuiIconButton-root-100",
                                             }
                                           }
                                           color="default"
@@ -7656,7 +7662,7 @@ exports[`should match snapshot: Container/padding 1`] = `
                                         >
                                           <WithStyles(ButtonBase)
                                             centerRipple={true}
-                                            className="MuiIconButton-root-99 CharIcon-wrapper-79"
+                                            className="MuiIconButton-root-100 CharIcon-wrapper-80"
                                             disableRipple={true}
                                             disabled={false}
                                             focusRipple={true}
@@ -7664,12 +7670,12 @@ exports[`should match snapshot: Container/padding 1`] = `
                                           >
                                             <ButtonBase
                                               centerRipple={true}
-                                              className="MuiIconButton-root-99 CharIcon-wrapper-79"
+                                              className="MuiIconButton-root-100 CharIcon-wrapper-80"
                                               classes={
                                                 Object {
-                                                  "disabled": "MuiButtonBase-disabled-106",
-                                                  "focusVisible": "MuiButtonBase-focusVisible-107",
-                                                  "root": "MuiButtonBase-root-105",
+                                                  "disabled": "MuiButtonBase-disabled-107",
+                                                  "focusVisible": "MuiButtonBase-focusVisible-108",
+                                                  "root": "MuiButtonBase-root-106",
                                                 }
                                               }
                                               component="button"
@@ -7682,7 +7688,7 @@ exports[`should match snapshot: Container/padding 1`] = `
                                               type="button"
                                             >
                                               <button
-                                                className="MuiButtonBase-root-105 MuiIconButton-root-99 CharIcon-wrapper-79"
+                                                className="MuiButtonBase-root-106 MuiIconButton-root-100 CharIcon-wrapper-80"
                                                 disabled={false}
                                                 onBlur={[Function]}
                                                 onClick={[Function]}
@@ -7700,24 +7706,24 @@ exports[`should match snapshot: Container/padding 1`] = `
                                                 type="button"
                                               >
                                                 <span
-                                                  className="MuiIconButton-label-104"
+                                                  className="MuiIconButton-label-105"
                                                 >
                                                   <WithStyles(Avatar)
-                                                    className="CharIcon-avatar-77 CharIcon-smallAvatar-78 CharIcon-deepPurple-83"
+                                                    className="CharIcon-avatar-78 CharIcon-smallAvatar-79 CharIcon-deepPurple-84"
                                                   >
                                                     <Avatar
-                                                      className="CharIcon-avatar-77 CharIcon-smallAvatar-78 CharIcon-deepPurple-83"
+                                                      className="CharIcon-avatar-78 CharIcon-smallAvatar-79 CharIcon-deepPurple-84"
                                                       classes={
                                                         Object {
-                                                          "colorDefault": "MuiAvatar-colorDefault-109",
-                                                          "img": "MuiAvatar-img-110",
-                                                          "root": "MuiAvatar-root-108",
+                                                          "colorDefault": "MuiAvatar-colorDefault-110",
+                                                          "img": "MuiAvatar-img-111",
+                                                          "root": "MuiAvatar-root-109",
                                                         }
                                                       }
                                                       component="div"
                                                     >
                                                       <div
-                                                        className="MuiAvatar-root-108 MuiAvatar-colorDefault-109 CharIcon-avatar-77 CharIcon-smallAvatar-78 CharIcon-deepPurple-83"
+                                                        className="MuiAvatar-root-109 MuiAvatar-colorDefault-110 CharIcon-avatar-78 CharIcon-smallAvatar-79 CharIcon-deepPurple-84"
                                                       >
                                                         テ
                                                       </div>
@@ -7759,7 +7765,7 @@ exports[`should match snapshot: Container/padding 1`] = `
           <SideMenu
             classes={
               Object {
-                "list": "SideMenu-list-111",
+                "list": "SideMenu-list-112",
               }
             }
             history={
@@ -7989,7 +7995,7 @@ exports[`should match snapshot: Container/padding 1`] = `
                         "fontSize": "0.875rem",
                         "fontWeight": 500,
                         "letterSpacing": "0.02857em",
-                        "lineHeight": 1.3125,
+                        "lineHeight": 1.75,
                         "textTransform": "uppercase",
                       },
                       "caption": Object {
@@ -8378,7 +8384,7 @@ exports[`should match snapshot: Container/padding 1`] = `
                           "fontSize": "0.875rem",
                           "fontWeight": 500,
                           "letterSpacing": "0.02857em",
-                          "lineHeight": 1.3125,
+                          "lineHeight": 1.75,
                           "textTransform": "uppercase",
                         },
                         "caption": Object {
@@ -8569,18 +8575,18 @@ exports[`should match snapshot: Container/padding 1`] = `
                     anchor="right"
                     classes={
                       Object {
-                        "docked": "MuiDrawer-docked-113",
-                        "modal": "MuiDrawer-modal-123",
-                        "paper": "MuiDrawer-paper-114",
-                        "paperAnchorBottom": "MuiDrawer-paperAnchorBottom-118",
-                        "paperAnchorDockedBottom": "MuiDrawer-paperAnchorDockedBottom-122",
-                        "paperAnchorDockedLeft": "MuiDrawer-paperAnchorDockedLeft-119",
-                        "paperAnchorDockedRight": "MuiDrawer-paperAnchorDockedRight-121",
-                        "paperAnchorDockedTop": "MuiDrawer-paperAnchorDockedTop-120",
-                        "paperAnchorLeft": "MuiDrawer-paperAnchorLeft-115",
-                        "paperAnchorRight": "MuiDrawer-paperAnchorRight-116",
-                        "paperAnchorTop": "MuiDrawer-paperAnchorTop-117",
-                        "root": "MuiDrawer-root-112",
+                        "docked": "MuiDrawer-docked-114",
+                        "modal": "MuiDrawer-modal-124",
+                        "paper": "MuiDrawer-paper-115",
+                        "paperAnchorBottom": "MuiDrawer-paperAnchorBottom-119",
+                        "paperAnchorDockedBottom": "MuiDrawer-paperAnchorDockedBottom-123",
+                        "paperAnchorDockedLeft": "MuiDrawer-paperAnchorDockedLeft-120",
+                        "paperAnchorDockedRight": "MuiDrawer-paperAnchorDockedRight-122",
+                        "paperAnchorDockedTop": "MuiDrawer-paperAnchorDockedTop-121",
+                        "paperAnchorLeft": "MuiDrawer-paperAnchorLeft-116",
+                        "paperAnchorRight": "MuiDrawer-paperAnchorRight-117",
+                        "paperAnchorTop": "MuiDrawer-paperAnchorTop-118",
+                        "root": "MuiDrawer-root-113",
                       }
                     }
                     elevation={16}
@@ -8784,7 +8790,7 @@ exports[`should match snapshot: Container/padding 1`] = `
                             "fontSize": "0.875rem",
                             "fontWeight": 500,
                             "letterSpacing": "0.02857em",
-                            "lineHeight": 1.3125,
+                            "lineHeight": 1.75,
                             "textTransform": "uppercase",
                           },
                           "caption": Object {
@@ -8966,7 +8972,7 @@ exports[`should match snapshot: Container/padding 1`] = `
                           },
                         }
                       }
-                      className="MuiDrawer-root-112 MuiDrawer-modal-123"
+                      className="MuiDrawer-root-113 MuiDrawer-modal-124"
                       onClose={[Function]}
                       open={false}
                     >
@@ -8981,11 +8987,11 @@ exports[`should match snapshot: Container/padding 1`] = `
                             },
                           }
                         }
-                        className="MuiDrawer-root-112 MuiDrawer-modal-123"
+                        className="MuiDrawer-root-113 MuiDrawer-modal-124"
                         classes={
                           Object {
-                            "hidden": "MuiModal-hidden-125",
-                            "root": "MuiModal-root-124",
+                            "hidden": "MuiModal-hidden-126",
+                            "root": "MuiModal-root-125",
                           }
                         }
                         disableAutoFocus={false}
@@ -9022,17 +9028,17 @@ exports[`should match snapshot: Container/padding 1`] = `
                       anchor="right"
                       classes={
                         Object {
-                          "anchorBottom": "MuiPrivateSwipeArea-anchorBottom-130",
-                          "anchorLeft": "MuiPrivateSwipeArea-anchorLeft-127",
-                          "anchorRight": "MuiPrivateSwipeArea-anchorRight-128",
-                          "anchorTop": "MuiPrivateSwipeArea-anchorTop-129",
-                          "root": "MuiPrivateSwipeArea-root-126",
+                          "anchorBottom": "MuiPrivateSwipeArea-anchorBottom-131",
+                          "anchorLeft": "MuiPrivateSwipeArea-anchorLeft-128",
+                          "anchorRight": "MuiPrivateSwipeArea-anchorRight-129",
+                          "anchorTop": "MuiPrivateSwipeArea-anchorTop-130",
+                          "root": "MuiPrivateSwipeArea-root-127",
                         }
                       }
                       width={20}
                     >
                       <div
-                        className="MuiPrivateSwipeArea-root-126 MuiPrivateSwipeArea-anchorRight-128"
+                        className="MuiPrivateSwipeArea-root-127 MuiPrivateSwipeArea-anchorRight-129"
                         style={
                           Object {
                             "width": 20,
