@@ -1,10 +1,7 @@
 import React from 'react';
 import { Divider, List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
 import { DraftsRounded, EmailRounded } from '@material-ui/icons';
-
 import propTypes from 'prop-types';
-// import RoundedButton from 'src/components/atoms/RoundedButton/index';
-// import ROUTES from 'src/constants/routes';
 
 const Notification = ({ id, title, content, checked }) => (
   <ListItem>
@@ -14,7 +11,6 @@ const Notification = ({ id, title, content, checked }) => (
 );
 
 const NotificationList = ({ notifications, history }) => (
-  // <>
   <List>
     {notifications.map(n => (
       <>
@@ -23,14 +19,6 @@ const NotificationList = ({ notifications, history }) => (
       </>
     ))}
   </List>
-  // <RoundedButton
-  //   color="primary"
-  //   onClick={() => history.push(ROUTES.SettingsNotification)}
-  //   fullWidth
-  // >
-  //   プッシュ通知の設定
-  // </RoundedButton>
-  // </>
 );
 
 NotificationList.displayName = 'NotificationList';
