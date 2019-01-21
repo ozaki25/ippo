@@ -168,11 +168,13 @@ NewTweet.displayName = 'NewTweet';
 NewTweet.propTypes = {
   hashtag: propTypes.string.isRequired,
   parentTweet: propTypes.shape({
-    id: propTypes.string,
-    name: propTypes.string,
-    text: propTypes.string,
-    time: propTypes.string,
-    hashtag: propTypes.string,
+    tweet: propTypes.shape({
+      id: propTypes.string,
+      name: propTypes.string,
+      text: propTypes.string,
+      time: propTypes.string,
+      hashtag: propTypes.string,
+    }),
   }),
   createTweet: propTypes.func.isRequired,
   authUser: propTypes.shape({
