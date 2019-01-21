@@ -29,12 +29,16 @@ const withAuthentication = Component => {
         // 新規ユーザであればDB登録
         if (!fetchUser.uid) this.props.createUser({ variables: { user } });
         saveUserToLocal(user);
+        // 登録前の状態でキャッシュが残るのでrefetchしておく
+        this.props.fetchUser.refetch({ uid });
       };
 
       const signupWithEmail = async ({ uid, name, categories }) => {
         const user = { uid, displayName: name, categories };
         saveUserToLocal(user);
         await this.props.createUser({ variables: { user } });
+        // 登録後のデータを取得しておく
+        await this.props.fetchUser.refetch({ uid });
       };
 
       const signinWithEmail = async ({ uid }) => {
