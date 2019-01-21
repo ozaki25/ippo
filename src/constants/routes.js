@@ -11,7 +11,7 @@ const Admin = '/admin';
 const Tweet = '/tweets/detail/:id';
 const Tweets = '/tweets';
 const NewTweet = '/tweets/new';
-const Notification = '/notification';
+const Notification = '/notification/:id';
 const SettingsNotification = '/settings/notification';
 const SettingsAccount = '/settings/account';
 
