@@ -2,13 +2,13 @@ import { graphql } from 'react-apollo';
 import { withRouter } from 'react-router-dom';
 import { withFirebase } from 'src/context/firebase';
 import { compose } from 'recompose';
-import query from 'src/graphql/query';
+import mutation from 'src/graphql/mutation';
 import Admin from 'src/components/pages/Admin';
 
 export default compose(
   withFirebase,
   withRouter,
-  graphql(query.publishNotification, { name: 'publishNotification' }),
-  graphql(query.registerNotification, { name: 'registerNotification' }),
-  graphql(query.excuteUpdateExternalEvents, { name: 'excuteUpdateExternalEvents' }),
+  graphql(mutation.publishNotification, { name: 'publishNotification' }),
+  graphql(mutation.registerNotification, { name: 'registerNotification' }),
+  graphql(mutation.excuteUpdateExternalEvents, { name: 'excuteUpdateExternalEvents' }),
 )(Admin);
