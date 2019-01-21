@@ -49,6 +49,7 @@ const props = ({ loading = false }) => ({
         },
       ],
     },
+    refetch: action('refetch'),
   },
   createEvent: action('createEvent'),
   authUser: {

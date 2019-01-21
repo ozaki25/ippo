@@ -46,6 +46,7 @@ const props = {
         },
       ],
     },
+    refetch: jest.fn(),
   },
   createEvent: jest.fn(),
   authUser: {
