@@ -1,7 +1,7 @@
 import { compose } from 'recompose';
 import { withRouter } from 'react-router-dom';
 import { graphql } from 'react-apollo';
-import query from 'src/graphql/query';
+import mutation from 'src/graphql/mutation';
 import SettingsNotification from 'src/components/pages/SettingsNotification/';
 import { withFirebase } from 'src/context/firebase';
 import { withAuthorization } from 'src/hoc/Sessions';
@@ -12,6 +12,6 @@ export default compose(
   withRouter,
   withFirebase,
   withNotification,
-  graphql(query.registerNotification, { name: 'registerNotification' }),
-  graphql(query.unregisterNotification, { name: 'unregisterNotification' }),
+  graphql(mutation.registerNotification, { name: 'registerNotification' }),
+  graphql(mutation.unregisterNotification, { name: 'unregisterNotification' }),
 )(SettingsNotification);

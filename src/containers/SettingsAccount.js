@@ -3,6 +3,7 @@ import { graphql } from 'react-apollo';
 import { compose } from 'recompose';
 import { withRouter } from 'react-router-dom';
 import query from 'src/graphql/query';
+import mutation from 'src/graphql/mutation';
 import { setAuthUser } from 'src/modules/session';
 import SettingsAccount from 'src/components/pages/SettingsAccount';
 import { withFirebase } from 'src/context/firebase';
@@ -23,5 +24,5 @@ export default compose(
   graphql(query.fetchUser, {
     options: ({ authUser: { uid } }) => ({ variables: { uid } }),
   }),
-  graphql(query.createUser, { name: 'updateUser' }),
+  graphql(mutation.createUser, { name: 'updateUser' }),
 )(SettingsAccount);

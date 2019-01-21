@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { compose } from 'recompose';
 import { compose as apolloCompose, graphql } from 'react-apollo';
 import query from 'src/graphql/query';
+import mutation from 'src/graphql/mutation';
 import { withFirebase } from 'src/context/firebase';
 import { setAuthUser } from 'src/modules/session';
 
@@ -94,7 +95,7 @@ const withAuthentication = Component => {
     ),
   )(
     apolloCompose(
-      graphql(query.createUser, { name: 'createUser' }),
+      graphql(mutation.createUser, { name: 'createUser' }),
       graphql(query.fetchUser, { name: 'fetchUser' }),
     )(WithAuthentication),
   );
