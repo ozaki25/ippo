@@ -215,6 +215,7 @@ const fetchUser = gql`
       notifications {
         id
         checked
+        title
         content
         timestamp
       }
