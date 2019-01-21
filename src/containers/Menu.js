@@ -18,5 +18,9 @@ export default compose(
       variables: { uid, limit: paging.eventsPerPageForMenu },
     }),
   }),
+  graphql(query.fetchUser, {
+    options: ({ authUser: { uid } }) => ({ variables: { uid } }),
+    name: 'user',
+  }),
   graphql(query.createEvent, { name: 'createEvent' }),
 )(Menu);
