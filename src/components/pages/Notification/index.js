@@ -27,7 +27,6 @@ class Notification extends React.Component {
   }
 
   render() {
-    console.log(this.props);
     const {
       user: { fetchUser },
       authUser,
@@ -70,7 +69,16 @@ Notification.propTypes = {
         }),
       ),
     }),
+    refetch: propTypes.func.isRequired,
+    variables: propTypes.shape({
+      uid: propTypes.string.isRequired,
+    }).isRequired,
   }),
+  match: propTypes.shape({
+    params: propTypes.shape({
+      id: propTypes.string.isRequired,
+    }).isRequired,
+  }).isRequired,
   readNotification: propTypes.func.isRequired,
   authUser: propTypes.shape({
     displayName: propTypes.string.isRequired,
