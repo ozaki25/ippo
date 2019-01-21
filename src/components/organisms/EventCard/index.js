@@ -7,7 +7,7 @@ import IconWithText from 'src/components/templates/IconWithText';
 
 const EventCard = ({ title, eventUrl, catchMessage, place, datetime, expand, noWrap, history }) => (
   <CustomCard expand={expand} url={eventUrl} history={history}>
-    <Typography variant="h5" noWrap={noWrap}>
+    <Typography variant="h6" noWrap={noWrap}>
       {title}
     </Typography>
     {catchMessage && (
