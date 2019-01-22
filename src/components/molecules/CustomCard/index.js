@@ -11,18 +11,18 @@ const Contents = styled.div`
 
 const styles = theme => ({
   card: {
-    // backgroundColor: theme.palette.primary[50],
+    backgroundColor: theme.palette.primary['A100'],
     borderRadius: 0,
     justifyContent: 'normal',
     padding: '12px',
     textAlign: 'left',
     textTransform: 'none',
     '&:focus': {
-      // backgroundColor: theme.palette.primary[100],
+      backgroundColor: theme.palette.primary['50'],
       opacity: 0.8,
     },
     '&:hover': {
-      // backgroundColor: theme.palette.primary[100],
+      backgroundColor: theme.palette.primary['50'],
       opacity: 0.8,
     },
   },
