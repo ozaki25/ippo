@@ -4,6 +4,7 @@ import { NavigateNextRounded } from '@material-ui/icons';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import EventCard from 'src/components/organisms/EventCard';
 import EventCardList from 'src/components/organisms/EventCardList';
 import ShrinkSwipeable from 'src/components/templates/ShrinkSwipeable';
 import IconWithText from 'src/components/templates/IconWithText';
@@ -29,64 +30,111 @@ const LinkHeading = ({ linkTo, children }) => (
   </StyledLink>
 );
 
-const EventsOverview = ({ joined, organized, recommended, internal, external, history }) => (
-  <>
-    <EventsContainer>
-      <LinkHeading linkTo={ROUTES.JoinedEvents}>参加イベント</LinkHeading>
-      <ShrinkSwipeable>
-        {EventCardList({
-          events: eventFormat.internal(joined),
-          expand: true,
-          noWrap: true,
-          history,
-        })}
-      </ShrinkSwipeable>
-    </EventsContainer>
-    <EventsContainer>
-      <LinkHeading linkTo={ROUTES.RecommendedEvents}>おすすめイベント</LinkHeading>
-      <ShrinkSwipeable>
-        {EventCardList({
-          events: eventFormat.internal(recommended),
-          expand: true,
-          noWrap: true,
-          history,
-        })}
-      </ShrinkSwipeable>
-    </EventsContainer>
-    <EventsContainer>
-      <LinkHeading linkTo={ROUTES.InternalEvents}>社内イベント</LinkHeading>
-      <ShrinkSwipeable>
-        {EventCardList({
-          events: eventFormat.internal(internal),
-          expand: true,
-          noWrap: true,
-          history,
-        })}
-      </ShrinkSwipeable>
-    </EventsContainer>
-    <EventsContainer>
-      <LinkHeading linkTo={ROUTES.ExternalEvents}>社外イベント</LinkHeading>
-      <ShrinkSwipeable>
-        {EventCardList({
-          events: eventFormat.external(external),
-          expand: true,
-          noWrap: true,
-        })}
-      </ShrinkSwipeable>
-    </EventsContainer>
-    <EventsContainer>
-      <LinkHeading linkTo={ROUTES.OrganizedEvents}>主催イベント</LinkHeading>
-      <ShrinkSwipeable>
-        {EventCardList({
-          events: eventFormat.internal(organized),
-          expand: true,
-          noWrap: true,
-          history,
-        })}
-      </ShrinkSwipeable>
-    </EventsContainer>
-  </>
-);
+const EventsOverview = ({ joined, organized, recommended, internal, external, history }) => {
+  const joinedEvents = eventFormat.internal(joined);
+  const organizedEvents = eventFormat.internal(organized);
+  const recommendedEvents = eventFormat.internal(recommended);
+  const internalEvents = eventFormat.internal(internal);
+  const externalEvents = eventFormat.external(external);
+  return (
+    <>
+      <EventsContainer>
+        <LinkHeading linkTo={ROUTES.JoinedEvents}>参加イベント</LinkHeading>
+        <ShrinkSwipeable>
+          {joinedEvents && joinedEvents.length ? (
+            EventCardList({
+              events: joinedEvents,
+              expand: true,
+              noWrap: true,
+              history,
+            })
+          ) : (
+            <EventCard
+              title="イベントに申し込んでみよう！"
+              eventUrl={ROUTES.InternalEvents}
+              history={history}
+            />
+          )}
+        </ShrinkSwipeable>
+      </EventsContainer>
+      <EventsContainer>
+        <LinkHeading linkTo={ROUTES.RecommendedEvents}>おすすめイベント</LinkHeading>
+        <ShrinkSwipeable>
+          {recommendedEvents && recommendedEvents.length ? (
+            EventCardList({
+              events: recommendedEvents,
+              expand: true,
+              noWrap: true,
+              history,
+            })
+          ) : (
+            <EventCard
+              title="興味のあるカテゴリを追加してみよう！"
+              eventUrl={ROUTES.SettingsAccount}
+              history={history}
+            />
+          )}
+        </ShrinkSwipeable>
+      </EventsContainer>
+      <EventsContainer>
+        <LinkHeading linkTo={ROUTES.InternalEvents}>社内イベント</LinkHeading>
+        <ShrinkSwipeable>
+          {internalEvents && [
+            ...EventCardList({
+              events: internalEvents,
+              expand: true,
+              noWrap: true,
+              history,
+            }),
+            <EventCard
+              title="社内イベントをもっと見る"
+              eventUrl={ROUTES.InternalEvents}
+              history={history}
+              expand
+            />,
+          ]}
+        </ShrinkSwipeable>
+      </EventsContainer>
+      <EventsContainer>
+        <LinkHeading linkTo={ROUTES.ExternalEvents}>社外イベント</LinkHeading>
+        <ShrinkSwipeable>
+          {externalEvents && [
+            ...EventCardList({
+              events: externalEvents,
+              expand: true,
+              noWrap: true,
+            }),
+            <EventCard
+              title="社外イベントをもっと見る"
+              eventUrl={ROUTES.ExternalEvents}
+              history={history}
+              expand
+            />,
+          ]}
+        </ShrinkSwipeable>
+      </EventsContainer>
+      <EventsContainer>
+        <LinkHeading linkTo={ROUTES.OrganizedEvents}>主催イベント</LinkHeading>
+        <ShrinkSwipeable>
+          {organizedEvents && organizedEvents.length ? (
+            EventCardList({
+              events: organizedEvents,
+              expand: true,
+              noWrap: true,
+              history,
+            })
+          ) : (
+            <EventCard
+              title="イベントを開催してみよう！"
+              eventUrl={`${ROUTES.Menu}?tab=イベント作成`}
+              history={history}
+            />
+          )}
+        </ShrinkSwipeable>
+      </EventsContainer>
+    </>
+  );
+};
 
 EventsOverview.displayName = 'EventsOverview';
 
