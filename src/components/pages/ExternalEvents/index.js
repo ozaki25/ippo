@@ -3,7 +3,7 @@ import InfiniteScroll from 'react-infinite-scroller';
 import { Typography } from '@material-ui/core';
 import propTypes from 'prop-types';
 import Spinner from 'src/components/atoms/Spinner';
-import EventCardList from 'src/components/organisms/EventCardList';
+import EventList from 'src/components/organisms/EventList';
 import Container from 'src/components/templates/Container';
 import eventFormat from 'src/utils/eventFormat';
 import paging from 'src/constants/paging';
@@ -31,7 +31,14 @@ const ExternalEvents = ({
   };
 
   return (
-    <Container title="社外イベント" back authUser={authUser} history={history} firebase={firebase}>
+    <Container
+      title="社外イベント"
+      back
+      noPadding
+      authUser={authUser}
+      history={history}
+      firebase={firebase}
+    >
       {loading ? (
         <Spinner />
       ) : externalEvents.items && externalEvents.items.length ? (
@@ -43,7 +50,7 @@ const ExternalEvents = ({
           loader={<Spinner key={externalEvents.items.length} />}
           threshold={300}
         >
-          <EventCardList events={eventFormat.external(externalEvents.items)} />
+          <EventList events={eventFormat.external(externalEvents.items)} />
         </InfiniteScroll>
       ) : (
         <Typography>No Contents</Typography>

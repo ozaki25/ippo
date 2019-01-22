@@ -5,7 +5,7 @@ import { Typography } from '@material-ui/core';
 import EventCard from 'src/components/organisms/EventCard';
 
 const EventCardContainer = styled.div`
-  margin: ${({ horizontal }) => (horizontal ? '2px 0' : '12px 0')};
+  margin: ${({ horizontal }) => (horizontal ? '2px 0' : '0')};
 `;
 
 const EventCardList = ({ events, expand, noWrap, history, horizontal }) =>
@@ -18,7 +18,6 @@ const EventCardList = ({ events, expand, noWrap, history, horizontal }) =>
           catchMessage={event.catchMessage}
           place={event.place}
           datetime={event.startedAt}
-          interactive
           expand={expand}
           noWrap={noWrap}
           history={history}
