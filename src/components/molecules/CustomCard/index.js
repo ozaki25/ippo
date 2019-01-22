@@ -11,17 +11,18 @@ const Contents = styled.div`
 
 const styles = theme => ({
   card: {
-    backgroundColor: theme.palette.primary[100],
+    backgroundColor: theme.palette.primary['A100'],
+    borderRadius: 0,
     justifyContent: 'normal',
     padding: '12px',
     textAlign: 'left',
     textTransform: 'none',
     '&:focus': {
-      backgroundColor: theme.palette.primary[100],
+      backgroundColor: theme.palette.primary['50'],
       opacity: 0.8,
     },
     '&:hover': {
-      backgroundColor: theme.palette.primary[100],
+      backgroundColor: theme.palette.primary['50'],
       opacity: 0.8,
     },
   },
@@ -36,7 +37,8 @@ const CustomCard = ({ classes, expand, url, history, children }) => (
   <Button
     onClick={() => onClick(url, history)}
     className={classnames(classes.card, expand && classes.expand)}
-    variant="contained"
+    variant="outlined"
+    color="primary"
     disableRipple
     fullWidth
   >

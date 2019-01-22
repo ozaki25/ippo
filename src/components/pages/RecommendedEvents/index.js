@@ -35,6 +35,7 @@ const RecommendedEvents = ({
     <Container
       title="おすすめイベント"
       back
+      noPadding
       authUser={authUser}
       history={history}
       firebase={firebase}

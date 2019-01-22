@@ -1,16 +1,42 @@
 import React from 'react';
 import { Typography } from '@material-ui/core';
+import { AccessTimeRounded, DescriptionOutlined, PlaceOutlined } from '@material-ui/icons';
 import propTypes from 'prop-types';
 import CustomCard from 'src/components/molecules/CustomCard';
+import IconWithText from 'src/components/templates/IconWithText';
 
 const EventCard = ({ title, eventUrl, catchMessage, place, datetime, expand, noWrap, history }) => (
   <CustomCard expand={expand} url={eventUrl} history={history}>
     <Typography variant="h6" noWrap={noWrap}>
       {title}
     </Typography>
-    {catchMessage && <Typography noWrap={noWrap}>{`概要：${catchMessage}`}</Typography>}
-    {place && <Typography noWrap={noWrap}>{`場所：${place}`}</Typography>}
-    {datetime && <Typography noWrap={noWrap}>{`日時：${datetime}`}</Typography>}
+    {catchMessage && (
+      <>
+        <IconWithText fullWidth>
+          <DescriptionOutlined fontSize="small" />
+          <Typography noWrap={noWrap}>{catchMessage}</Typography>
+        </IconWithText>
+        <br />
+      </>
+    )}
+    {place && (
+      <>
+        <IconWithText fullWidth>
+          <PlaceOutlined fontSize="small" />
+          <Typography noWrap={noWrap}>{place}</Typography>
+        </IconWithText>
+        <br />
+      </>
+    )}
+    {datetime && (
+      <>
+        <IconWithText fullWidth>
+          <AccessTimeRounded fontSize="small" />
+          <Typography noWrap={noWrap}>{datetime}</Typography>
+        </IconWithText>
+        <br />
+      </>
+    )}
   </CustomCard>
 );
 

@@ -32,7 +32,14 @@ const JoinedEvents = ({
   };
 
   return (
-    <Container title="参加イベント" back authUser={authUser} history={history} firebase={firebase}>
+    <Container
+      title="参加イベント"
+      back
+      noPadding
+      authUser={authUser}
+      history={history}
+      firebase={firebase}
+    >
       {loading ? (
         <Spinner />
       ) : joinedEvents.items && joinedEvents.items.length ? (

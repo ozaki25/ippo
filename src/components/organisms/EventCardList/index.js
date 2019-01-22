@@ -1,29 +1,22 @@
 import React from 'react';
-import styled from 'styled-components';
 import propTypes from 'prop-types';
 import { Typography } from '@material-ui/core';
 import EventCard from 'src/components/organisms/EventCard';
 
-const EventCardContainer = styled.div`
-  margin: ${({ horizontal }) => (horizontal ? '2px 0' : '12px 0')};
-`;
-
-const EventCardList = ({ events, expand, noWrap, history, horizontal }) =>
+const EventCardList = ({ events, expand, noWrap, history }) =>
   events && events.length ? (
     events.map(event => (
-      <EventCardContainer key={event.id} horizontal={horizontal ? 1 : 0}>
-        <EventCard
-          title={event.title}
-          eventUrl={event.eventUrl}
-          catchMessage={event.catchMessage}
-          place={event.place}
-          datetime={event.startedAt}
-          interactive
-          expand={expand}
-          noWrap={noWrap}
-          history={history}
-        />
-      </EventCardContainer>
+      <EventCard
+        key={event.id}
+        title={event.title}
+        eventUrl={event.eventUrl}
+        catchMessage={event.catchMessage}
+        place={event.place}
+        datetime={event.startedAt}
+        expand={expand}
+        noWrap={noWrap}
+        history={history}
+      />
     ))
   ) : (
     <Typography>該当するイベントがありません</Typography>
@@ -43,7 +36,6 @@ EventCardList.propTypes = {
   ).isRequired,
   expand: propTypes.bool,
   noWrap: propTypes.bool,
-  horizontal: propTypes.bool,
   history: propTypes.shape({
     push: propTypes.func,
   }),
@@ -53,7 +45,6 @@ EventCardList.defaultProps = {
   eventUrl: '',
   expand: false,
   noWrap: false,
-  horizontal: false,
   history: null,
 };
 

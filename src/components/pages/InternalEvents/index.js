@@ -8,7 +8,14 @@ import eventFormat from 'src/utils/eventFormat';
 
 const InternalEvents = ({ data: { loading, internalEvents }, authUser, history, firebase }) => {
   return (
-    <Container title="社内イベント" back authUser={authUser} history={history} firebase={firebase}>
+    <Container
+      title="社内イベント"
+      back
+      noPadding
+      authUser={authUser}
+      history={history}
+      firebase={firebase}
+    >
       {loading ? (
         <Spinner />
       ) : internalEvents.items && internalEvents.items.length ? (

@@ -32,7 +32,14 @@ const OrganizedEvents = ({
   };
 
   return (
-    <Container title="主催イベント" back authUser={authUser} history={history} firebase={firebase}>
+    <Container
+      title="主催イベント"
+      back
+      noPadding
+      authUser={authUser}
+      history={history}
+      firebase={firebase}
+    >
       {loading ? (
         <Spinner />
       ) : organizedEvents.items && organizedEvents.items.length ? (

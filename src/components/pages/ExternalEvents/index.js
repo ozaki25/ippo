@@ -31,7 +31,14 @@ const ExternalEvents = ({
   };
 
   return (
-    <Container title="社外イベント" back authUser={authUser} history={history} firebase={firebase}>
+    <Container
+      title="社外イベント"
+      back
+      noPadding
+      authUser={authUser}
+      history={history}
+      firebase={firebase}
+    >
       {loading ? (
         <Spinner />
       ) : externalEvents.items && externalEvents.items.length ? (
