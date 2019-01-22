@@ -21,6 +21,7 @@ import { withStyles } from '@material-ui/core/styles';
 import propTypes from 'prop-types';
 import CharIcon from 'src/components/atoms/CharIcon';
 import A2HSDialog from 'src/components/organisms/A2HSDialog';
+import WebAuthnDialog from 'src/components/organisms/WebAuthnDialog';
 import ROUTES from 'src/constants/routes';
 import MENU_ITEMS from 'src/constants/menuItems';
 
@@ -31,15 +32,19 @@ const styles = {
 };
 
 class SideMenu extends React.Component {
-  state = { isOpenA2HSDialog: false };
+  state = { isOpenA2HSDialog: false, isOpenWebAuthnDialog: false };
 
   openA2HSDialog = () => this.setState({ isOpenA2HSDialog: true, open: false });
 
   closeA2HSDialog = () => this.setState({ isOpenA2HSDialog: false });
 
+  openWebAuthnDialog = () => this.setState({ isOpenWebAuthnDialog: true, open: false });
+
+  closeWebAuthnDialog = () => this.setState({ isOpenWebAuthnDialog: false });
+
   render() {
     const { open, name, onOpen, onClose, signout, history, classes } = this.props;
-    const { isOpenA2HSDialog } = this.state;
+    const { isOpenA2HSDialog, isOpenWebAuthnDialog } = this.state;
     return (
       <>
         <SwipeableDrawer anchor="right" open={open} onClose={onClose} onOpen={onOpen}>
@@ -107,6 +112,12 @@ class SideMenu extends React.Component {
                   </ListItemIcon>
                   <ListItemText primary="ホーム画面に追加" />
                 </ListItem>
+                <ListItem onClick={this.openWebAuthnDialog} button>
+                  <ListItemIcon>
+                    <GetAppRounded />
+                  </ListItemIcon>
+                  <ListItemText primary="生体認証(β版)" />
+                </ListItem>
               </List>
               <Divider />
               <List>
@@ -121,6 +132,7 @@ class SideMenu extends React.Component {
           </div>
         </SwipeableDrawer>
         <A2HSDialog open={isOpenA2HSDialog} onClose={this.closeA2HSDialog} />
+        <WebAuthnDialog open={isOpenWebAuthnDialog} onClose={this.closeWebAuthnDialog} />
       </>
     );
   }
