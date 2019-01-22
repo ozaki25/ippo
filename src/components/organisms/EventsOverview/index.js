@@ -87,6 +87,7 @@ const EventsOverview = ({ joined, organized, recommended, internal, external, hi
               history,
             }),
             <EventCard
+              key="more"
               title="社内イベントをもっと見る"
               eventUrl={ROUTES.InternalEvents}
               history={history}
@@ -105,6 +106,7 @@ const EventsOverview = ({ joined, organized, recommended, internal, external, hi
               noWrap: true,
             }),
             <EventCard
+              key="more"
               title="社外イベントをもっと見る"
               eventUrl={ROUTES.ExternalEvents}
               history={history}
