@@ -1,5 +1,5 @@
 import React from 'react';
-import { Divider, Typography } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
 import { NavigateNextRounded } from '@material-ui/icons';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
@@ -11,7 +11,7 @@ import eventFormat from 'src/utils/eventFormat';
 import ROUTES from 'src/constants/routes';
 
 const EventsContainer = styled.div`
-  margin: 8px 0;
+  margin-top: 8px;
 `;
 
 const StyledLink = styled(Link)`
@@ -38,12 +38,10 @@ const EventsOverview = ({ joined, organized, recommended, internal, external, hi
           events: eventFormat.internal(joined),
           expand: true,
           noWrap: true,
-          horizontal: true,
           history,
         })}
       </ShrinkSwipeable>
     </EventsContainer>
-    <Divider light />
     <EventsContainer>
       <LinkHeading linkTo={ROUTES.RecommendedEvents}>おすすめイベント</LinkHeading>
       <ShrinkSwipeable>
@@ -51,12 +49,10 @@ const EventsOverview = ({ joined, organized, recommended, internal, external, hi
           events: eventFormat.internal(recommended),
           expand: true,
           noWrap: true,
-          horizontal: true,
           history,
         })}
       </ShrinkSwipeable>
     </EventsContainer>
-    <Divider light />
     <EventsContainer>
       <LinkHeading linkTo={ROUTES.InternalEvents}>社内イベント</LinkHeading>
       <ShrinkSwipeable>
@@ -64,12 +60,10 @@ const EventsOverview = ({ joined, organized, recommended, internal, external, hi
           events: eventFormat.internal(internal),
           expand: true,
           noWrap: true,
-          horizontal: true,
           history,
         })}
       </ShrinkSwipeable>
     </EventsContainer>
-    <Divider light />
     <EventsContainer>
       <LinkHeading linkTo={ROUTES.ExternalEvents}>社外イベント</LinkHeading>
       <ShrinkSwipeable>
@@ -77,11 +71,9 @@ const EventsOverview = ({ joined, organized, recommended, internal, external, hi
           events: eventFormat.external(external),
           expand: true,
           noWrap: true,
-          horizontal: true,
         })}
       </ShrinkSwipeable>
     </EventsContainer>
-    <Divider light />
     <EventsContainer>
       <LinkHeading linkTo={ROUTES.OrganizedEvents}>主催イベント</LinkHeading>
       <ShrinkSwipeable>
@@ -89,12 +81,10 @@ const EventsOverview = ({ joined, organized, recommended, internal, external, hi
           events: eventFormat.internal(organized),
           expand: true,
           noWrap: true,
-          horizontal: true,
           history,
         })}
       </ShrinkSwipeable>
     </EventsContainer>
-    <Divider light />
   </>
 );
 
