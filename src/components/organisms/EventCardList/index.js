@@ -1,26 +1,22 @@
 import React from 'react';
 import propTypes from 'prop-types';
-import { Typography } from '@material-ui/core';
 import EventCard from 'src/components/organisms/EventCard';
 
 const EventCardList = ({ events, expand, noWrap, history }) =>
-  events && events.length ? (
-    events.map(event => (
-      <EventCard
-        key={event.id}
-        title={event.title}
-        eventUrl={event.eventUrl}
-        catchMessage={event.catchMessage}
-        place={event.place}
-        datetime={event.startedAt}
-        expand={expand}
-        noWrap={noWrap}
-        history={history}
-      />
-    ))
-  ) : (
-    <Typography>該当するイベントがありません</Typography>
-  );
+  events &&
+  events.map(event => (
+    <EventCard
+      key={event.id}
+      title={event.title}
+      eventUrl={event.eventUrl}
+      catchMessage={event.catchMessage}
+      place={event.place}
+      datetime={event.startedAt}
+      expand={expand}
+      noWrap={noWrap}
+      history={history}
+    />
+  ));
 EventCardList.displayName = 'EventCardList';
 
 EventCardList.propTypes = {
