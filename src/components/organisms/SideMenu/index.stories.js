@@ -7,6 +7,7 @@ import SideMenu from '.';
 const stories = storiesOf('organisms/SideMenu', module);
 
 const props = {
+  uid: text('uid', '123'),
   name: text('name', 'なまえ あいうえお'),
   onOpen: action('open'),
   onClose: action('close'),

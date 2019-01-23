@@ -44,7 +44,7 @@ class SideMenu extends React.Component {
   closeWebAuthnDialog = () => this.setState({ isOpenWebAuthnDialog: false });
 
   render() {
-    const { open, name, onOpen, onClose, signout, history, classes } = this.props;
+    const { open, name, onOpen, onClose, signout, history, uid, classes } = this.props;
     const { isOpenA2HSDialog, isOpenWebAuthnDialog } = this.state;
     return (
       <>
@@ -133,7 +133,7 @@ class SideMenu extends React.Component {
           </div>
         </SwipeableDrawer>
         <A2HSDialog open={isOpenA2HSDialog} onClose={this.closeA2HSDialog} />
-        <WebAuthnDialog open={isOpenWebAuthnDialog} onClose={this.closeWebAuthnDialog} />
+        <WebAuthnDialog open={isOpenWebAuthnDialog} onClose={this.closeWebAuthnDialog} uid={uid} />
       </>
     );
   }
@@ -143,6 +143,7 @@ SideMenu.displayName = 'SideMenu';
 
 SideMenu.propTypes = {
   open: propTypes.bool.isRequired,
+  uid: propTypes.string.isRequired,
   name: propTypes.string.isRequired,
   onOpen: propTypes.func.isRequired,
   onClose: propTypes.func.isRequired,

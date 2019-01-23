@@ -61,6 +61,7 @@ class NavigationBar extends React.Component {
             open={open}
             onOpen={this.openSideMenu}
             onClose={this.closeSideMenu}
+            uid={authUser.uid}
             name={authUser.displayName}
             signout={firebase.doSignOut}
             history={history}

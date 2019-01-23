@@ -3,8 +3,10 @@ function str2buf(str) {
 }
 
 function buf2str(buf) {
+  let str = '';
   if (!(buf.constructor === Uint8Array)) buf = new Uint8Array(buf);
-  return buf.map(x => String.fromCharCode(x)).join(',');
+  buf.map(x => (str += String.fromCharCode(x)));
+  return str;
 }
 
 export default {
