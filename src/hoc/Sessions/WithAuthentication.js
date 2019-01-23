@@ -26,7 +26,6 @@ const withAuthentication = Component => {
           data: { fetchUser },
         } = await this.props.fetchUser.refetch({ uid });
         const user = fetchUser.uid ? fetchUser : { uid, displayName };
-
         // 新規ユーザであればDB登録
         if (!fetchUser.uid) this.props.createUser({ variables: { user } });
         saveUserToLocal(user);
