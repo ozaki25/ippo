@@ -9,7 +9,7 @@ import TweetFooter from 'src/components/organisms/TweetFooter';
 import dateFormat from 'src/utils/dateFormat';
 
 const Container = styled.div`
-  padding: 3px 0 15px;
+  padding: 3px 0 50px;
 `;
 
 const TweetContainer = styled.div`
