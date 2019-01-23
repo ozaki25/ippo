@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from '@material-ui/core';
+import { withStyles } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
@@ -9,6 +10,12 @@ import SigninForm from 'src/components/organisms/SigninForm';
 import Container from 'src/components/templates/Container';
 import ROUTES from 'src/constants/routes';
 import webAuthentication from 'src/utils/webAuthentication';
+
+const styles = {
+  nonCaps: {
+    textTransform: 'none',
+  },
+};
 
 const ButtonContainer = styled.div`
   margin: 8px 0;
@@ -83,7 +90,7 @@ class Signin extends React.Component {
   onChange = event => this.setState({ [event.target.name]: event.target.value });
 
   render() {
-    const { history, firebase } = this.props;
+    const { history, firebase, classes } = this.props;
     return (
       <Container header={false} history={history} firebase={firebase}>
         <ImageContainer>
@@ -99,7 +106,7 @@ class Signin extends React.Component {
           </Button>
         </ButtonContainer>
         <ButtonContainer>
-          <Button onClick={this.webauthSignin} color="primary">
+          <Button onClick={this.webauthSignin} color="primary" className={classes.nonCaps}>
             生体認証でログイン(β版)
           </Button>
         </ButtonContainer>
@@ -130,4 +137,4 @@ Signin.propTypes = {
 
 Signin.defaultProps = {};
 
-export default Signin;
+export default withStyles(styles)(Signin);
