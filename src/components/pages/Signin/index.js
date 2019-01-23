@@ -8,6 +8,7 @@ import OverlaySpinner from 'src/components/molecules/OverlaySpinner';
 import SigninForm from 'src/components/organisms/SigninForm';
 import Container from 'src/components/templates/Container';
 import ROUTES from 'src/constants/routes';
+import webAuthentication from 'src/utils/webAuthentication';
 
 const ButtonContainer = styled.div`
   margin: 8px 0;
@@ -60,6 +61,25 @@ class Signin extends React.Component {
     }
   };
 
+  webauthSignin = async () => {
+    const { rawId, uid } = this.props;
+    if (!rawId) {
+      alert('認証情報の登録が確認できませんでした。');
+      return;
+    }
+    const result = await webAuthentication.runAssertion(rawId);
+    if (result) {
+      const {
+        data: { fetchUser },
+      } = await this.props.fetchUser.refetch({ uid });
+      localStorage.setItem('authUser', JSON.stringify(fetchUser));
+      this.props.onSetAuthUser(fetchUser);
+      this.props.history.replace(ROUTES.Menu);
+    } else {
+      alert('認証に失敗しました。。');
+    }
+  };
+
   onChange = event => this.setState({ [event.target.name]: event.target.value });
 
   render() {
@@ -76,6 +96,11 @@ class Signin extends React.Component {
         <ButtonContainer>
           <Button component={Link} to={ROUTES.Signup} color="primary">
             新規登録
+          </Button>
+        </ButtonContainer>
+        <ButtonContainer>
+          <Button onClick={this.webauthSignin} color="primary">
+            生体認証でログイン(β版)
           </Button>
         </ButtonContainer>
         <OverlaySpinner visible={this.state.loading} />
@@ -99,6 +124,8 @@ Signin.propTypes = {
     doSignInWithGoogle: propTypes.func.isRequired,
     doSignOut: propTypes.func.isRequired,
   }).isRequired,
+  rawId: propTypes.object,
+  uid: propTypes.string,
 };
 
 Signin.defaultProps = {};
