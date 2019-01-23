@@ -1,53 +1,65 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should match snapshot: TweetHeader/nomal 1`] = `
-<MockRouter
-  createHref={[Function]}
-  location=""
-  params={Object {}}
-  path=""
-  push={[Function]}
-  replace={[Function]}
-  url=""
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
 >
-  <TweetHeader
-    name="ozaki25"
-    time="12月10日"
+  <MockRouter
+    createHref={[Function]}
+    location=""
+    params={Object {}}
+    path=""
+    push={[Function]}
+    replace={[Function]}
+    url=""
   >
-    <strong>
-      ozaki25
-    </strong>
-    <styled.small>
-      <StyledComponent
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "sc-bdVaJa",
-              "isStatic": true,
-              "lastClassName": "bDWFJH",
-              "rules": Array [],
-            },
-            "displayName": "styled.small",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "sc-bdVaJa",
-            "target": "small",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
+    <TweetHeader
+      name="ozaki25"
+      time="12月10日"
+    >
+      <strong>
+        ozaki25
+      </strong>
+      <styled.small>
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-bdVaJa",
+                "isStatic": true,
+                "lastClassName": "bDWFJH",
+                "rules": Array [],
+              },
+              "displayName": "styled.small",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-bdVaJa",
+              "target": "small",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
           }
-        }
-        forwardedRef={null}
-      >
-        <small
-          className=""
+          forwardedRef={null}
         >
-          12月10日
-        </small>
-      </StyledComponent>
-    </styled.small>
-  </TweetHeader>
-</MockRouter>
+          <small
+            className=""
+          >
+            12月10日
+          </small>
+        </StyledComponent>
+      </styled.small>
+    </TweetHeader>
+  </MockRouter>
+</Provider>
 `;

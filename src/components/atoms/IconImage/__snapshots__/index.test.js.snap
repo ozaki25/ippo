@@ -7,51 +7,63 @@ exports[`should match snapshot: IconImage/nomal 1`] = `
   width: 48px;
 }
 
-<MockRouter
-  createHref={[Function]}
-  location=""
-  params={Object {}}
-  path=""
-  push={[Function]}
-  replace={[Function]}
-  url=""
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
 >
-  <IconImage>
-    <styled.img>
-      <StyledComponent
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "sc-bdVaJa",
-              "isStatic": true,
-              "lastClassName": "c0",
-              "rules": Array [
-                "
+  <MockRouter
+    createHref={[Function]}
+    location=""
+    params={Object {}}
+    path=""
+    push={[Function]}
+    replace={[Function]}
+    url=""
+  >
+    <IconImage>
+      <styled.img>
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-bdVaJa",
+                "isStatic": true,
+                "lastClassName": "c0",
+                "rules": Array [
+                  "
   border-radius: 50%;
   height: 48px;
   width: 48px;
 ",
-              ],
-            },
-            "displayName": "styled.img",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "sc-bdVaJa",
-            "target": "img",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
+                ],
+              },
+              "displayName": "styled.img",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-bdVaJa",
+              "target": "img",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
           }
-        }
-        forwardedRef={null}
-      >
-        <img
-          className="c0"
-        />
-      </StyledComponent>
-    </styled.img>
-  </IconImage>
-</MockRouter>
+          forwardedRef={null}
+        >
+          <img
+            className="c0"
+          />
+        </StyledComponent>
+      </styled.img>
+    </IconImage>
+  </MockRouter>
+</Provider>
 `;

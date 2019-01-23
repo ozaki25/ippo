@@ -49,7 +49,11 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
 >
   <TweetList
     hasMore={true}
-    history={[MockFunction]}
+    history={
+      Object {
+        "push": [MockFunction],
+      }
+    }
     items={
       Array [
         Object {
