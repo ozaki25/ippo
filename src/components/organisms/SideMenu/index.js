@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import {
   Divider,
   List,
@@ -12,6 +13,7 @@ import {
   AccountBox,
   AddBoxRounded,
   ExitToApp,
+  Fingerprint,
   GetAppRounded,
   HomeRounded,
   NotificationsRounded,
@@ -21,8 +23,10 @@ import { withStyles } from '@material-ui/core/styles';
 import propTypes from 'prop-types';
 import CharIcon from 'src/components/atoms/CharIcon';
 import A2HSDialog from 'src/components/organisms/A2HSDialog';
+import WebAuthnDialog from 'src/components/organisms/WebAuthnDialog';
 import ROUTES from 'src/constants/routes';
 import MENU_ITEMS from 'src/constants/menuItems';
+import { setAuthUser } from 'src/modules/session';
 
 const styles = {
   list: {
@@ -31,15 +35,28 @@ const styles = {
 };
 
 class SideMenu extends React.Component {
-  state = { isOpenA2HSDialog: false };
+  state = { isOpenA2HSDialog: false, isOpenWebAuthnDialog: false };
 
   openA2HSDialog = () => this.setState({ isOpenA2HSDialog: true, open: false });
 
   closeA2HSDialog = () => this.setState({ isOpenA2HSDialog: false });
 
+  openWebAuthnDialog = () => this.setState({ isOpenWebAuthnDialog: true, open: false });
+
+  closeWebAuthnDialog = () => this.setState({ isOpenWebAuthnDialog: false });
+
   render() {
-    const { open, name, onOpen, onClose, signout, history, classes } = this.props;
-    const { isOpenA2HSDialog } = this.state;
+    const {
+      open,
+      authUser: { displayName, uid },
+      onOpen,
+      onClose,
+      signout,
+      onSetAuthUser,
+      history,
+      classes,
+    } = this.props;
+    const { isOpenA2HSDialog, isOpenWebAuthnDialog } = this.state;
     return (
       <>
         <SwipeableDrawer anchor="right" open={open} onClose={onClose} onOpen={onOpen}>
@@ -48,11 +65,11 @@ class SideMenu extends React.Component {
               <List>
                 <ListItem>
                   <ListItemIcon>
-                    <CharIcon name={name} />
+                    <CharIcon name={displayName} />
                   </ListItemIcon>
                 </ListItem>
                 <ListItem>
-                  <ListItemText primary={name} />
+                  <ListItemText primary={displayName} />
                 </ListItem>
               </List>
               <Divider />
@@ -107,10 +124,23 @@ class SideMenu extends React.Component {
                   </ListItemIcon>
                   <ListItemText primary="ホーム画面に追加" />
                 </ListItem>
+                <ListItem onClick={this.openWebAuthnDialog} button>
+                  <ListItemIcon>
+                    <Fingerprint />
+                  </ListItemIcon>
+                  <ListItemText primary="生体認証(β版)" />
+                </ListItem>
               </List>
               <Divider />
               <List>
-                <ListItem onClick={signout} button>
+                <ListItem
+                  onClick={() => {
+                    localStorage.removeItem('authUser');
+                    onSetAuthUser(null);
+                    signout();
+                  }}
+                  button
+                >
                   <ListItemIcon>
                     <ExitToApp />
                   </ListItemIcon>
@@ -121,6 +151,7 @@ class SideMenu extends React.Component {
           </div>
         </SwipeableDrawer>
         <A2HSDialog open={isOpenA2HSDialog} onClose={this.closeA2HSDialog} />
+        <WebAuthnDialog open={isOpenWebAuthnDialog} onClose={this.closeWebAuthnDialog} uid={uid} />
       </>
     );
   }
@@ -130,7 +161,10 @@ SideMenu.displayName = 'SideMenu';
 
 SideMenu.propTypes = {
   open: propTypes.bool.isRequired,
-  name: propTypes.string.isRequired,
+  authUser: propTypes.shape({
+    displayName: propTypes.string.isRequired,
+    uid: propTypes.string.isRequired,
+  }),
   onOpen: propTypes.func.isRequired,
   onClose: propTypes.func.isRequired,
   signout: propTypes.func,
@@ -145,4 +179,11 @@ SideMenu.defaultProps = {
   signout: null,
 };
 
-export default withStyles(styles)(SideMenu);
+const mapDispatchToProps = dispatch => ({
+  onSetAuthUser: authUser => dispatch(setAuthUser(authUser)),
+});
+
+export default connect(
+  null,
+  mapDispatchToProps,
+)(withStyles(styles)(SideMenu));

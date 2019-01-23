@@ -10,7 +10,9 @@ const withAuthorization = Component => {
     componentDidMount() {
       this.listener = this.props.firebase.onAuthUserListener(
         authUser => !authUser && this.props.history.push(ROUTES.Signin),
-        () => this.props.history.push(ROUTES.Signin),
+        () => {
+          if (!this.props.authUser) this.props.history.push(ROUTES.Signin);
+        },
       );
     }
 
