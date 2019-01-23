@@ -9,11 +9,8 @@ const withAuthorization = Component => {
   class WithAuthorization extends React.Component {
     componentDidMount() {
       this.listener = this.props.firebase.onAuthUserListener(
-        authUser => {
-          console.log({ authUser });
-          // !authUser && this.props.history.push(ROUTES.Signin);
-        },
-        () => {}, //this.props.history.push(ROUTES.Signin),
+        authUser => !authUser && this.props.history.push(ROUTES.Signin),
+        () => this.props.history.push(ROUTES.Signin),
       );
     }
 
