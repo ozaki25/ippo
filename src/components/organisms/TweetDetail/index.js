@@ -9,6 +9,10 @@ import TweetFooter from 'src/components/organisms/TweetFooter';
 import dateFormat from 'src/utils/dateFormat';
 
 const Container = styled.div`
+  padding-bottom: 150px;
+`;
+
+const TweetContainer = styled.div`
   padding: 9px 12px 0;
 `;
 
@@ -36,8 +40,8 @@ const Item = styled.div`
 const todo = () => console.log('TODO');
 
 const TweetDetail = ({ name, text, time, comments, onClickReply }) => (
-  <>
-    <Container>
+  <Container>
+    <TweetContainer>
       <TweetHeader>
         <IconContainer>
           <CharIcon name={name} />
@@ -59,7 +63,7 @@ const TweetDetail = ({ name, text, time, comments, onClickReply }) => (
         onClickRetweet={todo}
         onClickLike={todo}
       />
-    </Container>
+    </TweetContainer>
     <Divider light />
     {comments &&
       comments.map(comment => (
@@ -71,7 +75,7 @@ const TweetDetail = ({ name, text, time, comments, onClickReply }) => (
           noFooter
         />
       ))}
-  </>
+  </Container>
 );
 
 TweetDetail.displayName = 'TweetDetail';
