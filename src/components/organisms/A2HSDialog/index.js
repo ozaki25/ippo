@@ -51,13 +51,21 @@ class A2HSDialog extends React.Component {
         <DialogTitle id="simple-dialog-title">ホーム画面への追加手順</DialogTitle>
         <DialogContent>
           <>
-            <Button className={classes.nonCaps} onClick={() => this.setState({ content: '1' })}>
+            <Button
+              color="primary"
+              className={classes.nonCaps}
+              onClick={() => this.setState({ content: '1' })}
+            >
               iOS/Safariをお使いの方
             </Button>
-            <Button className={classes.nonCaps} onClick={() => this.setState({ content: '2' })}>
+            {content === '1' && <IosA2HS />}
+            <Button
+              color="primary"
+              className={classes.nonCaps}
+              onClick={() => this.setState({ content: '2' })}
+            >
               Android/Chromeをお使いの方
             </Button>
-            {content === '1' && <IosA2HS />}
             {content === '2' && <AndroidA2HS />}
           </>
         </DialogContent>
