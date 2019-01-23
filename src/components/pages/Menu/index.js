@@ -23,7 +23,7 @@ const styles = theme => ({
 });
 
 const ContainerWithTabs = styled.div`
-  margin-bottom: 48px;
+  margin-bottom: 58px;
 `;
 
 class Menu extends React.Component {
