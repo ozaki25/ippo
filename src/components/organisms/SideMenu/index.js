@@ -12,7 +12,7 @@ import {
   AccountBox,
   AddBoxRounded,
   ExitToApp,
-  FingerPrint,
+  Fingerprint,
   GetAppRounded,
   HomeRounded,
   NotificationsRounded,
@@ -115,7 +115,7 @@ class SideMenu extends React.Component {
                 </ListItem>
                 <ListItem onClick={this.openWebAuthnDialog} button>
                   <ListItemIcon>
-                    <FingerPrint />
+                    <Fingerprint />
                   </ListItemIcon>
                   <ListItemText primary="生体認証(β版)" />
                 </ListItem>
