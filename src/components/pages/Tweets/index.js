@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import propTypes from 'prop-types';
 import Spinner from 'src/components/atoms/Spinner';
 import FloatingButton from 'src/components/molecules/FloatingButton';
@@ -10,6 +11,10 @@ import eventFormat from 'src/utils/eventFormat';
 import paging from 'src/constants/paging';
 import ROUTES from 'src/constants/routes';
 import TWEET_WORD from 'src/constants/tweetWord';
+
+const TweetContainer = styled.div`
+  padding-bottom: 150px;
+`
 
 class Tweets extends React.Component {
   componentDidMount() {
@@ -95,7 +100,7 @@ class Tweets extends React.Component {
         {loading ? (
           <Spinner />
         ) : (
-          <>
+          <TweetContainer>
             {tweets.event && (
               <TweetEventSummary
                 {...eventFormat.internal([tweets.event])[0]}
@@ -113,7 +118,7 @@ class Tweets extends React.Component {
               }))}
               history={history}
             />
-          </>
+          </TweetContainer>
         )}
         <FloatingButton icon="edit" onClick={this.onClickNewTweet} />
       </Container>
