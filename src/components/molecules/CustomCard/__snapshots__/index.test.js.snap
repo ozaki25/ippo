@@ -5,31 +5,27 @@ exports[`should match snapshot: CustomCard/expand 1`] = `
   width: 100%;
 }
 
-<MockRouter
-  createHref={[Function]}
-  location=""
-  params={Object {}}
-  path=""
-  push={[Function]}
-  replace={[Function]}
-  url=""
->
-  <WithStyles(CustomCard)
-    expand={true}
-    history={
-      Object {
-        "push": [MockFunction],
-      }
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
     }
-    url="https://connpass.com/"
+  }
+>
+  <MockRouter
+    createHref={[Function]}
+    location=""
+    params={Object {}}
+    path=""
+    push={[Function]}
+    replace={[Function]}
+    url=""
   >
-    <CustomCard
-      classes={
-        Object {
-          "card": "CustomCard-card-1",
-          "expand": "CustomCard-expand-2",
-        }
-      }
+    <WithStyles(CustomCard)
       expand={true}
       history={
         Object {
@@ -38,154 +34,171 @@ exports[`should match snapshot: CustomCard/expand 1`] = `
       }
       url="https://connpass.com/"
     >
-      <WithStyles(Button)
-        className="CustomCard-card-1 CustomCard-expand-2"
-        disableRipple={true}
-        fullWidth={true}
-        onClick={[Function]}
-        variant="contained"
-      >
-        <Button
-          className="CustomCard-card-1 CustomCard-expand-2"
-          classes={
-            Object {
-              "colorInherit": "MuiButton-colorInherit-24",
-              "contained": "MuiButton-contained-14",
-              "containedPrimary": "MuiButton-containedPrimary-15",
-              "containedSecondary": "MuiButton-containedSecondary-16",
-              "disabled": "MuiButton-disabled-23",
-              "extendedFab": "MuiButton-extendedFab-21",
-              "fab": "MuiButton-fab-20",
-              "flat": "MuiButton-flat-8",
-              "flatPrimary": "MuiButton-flatPrimary-9",
-              "flatSecondary": "MuiButton-flatSecondary-10",
-              "focusVisible": "MuiButton-focusVisible-22",
-              "fullWidth": "MuiButton-fullWidth-28",
-              "label": "MuiButton-label-4",
-              "mini": "MuiButton-mini-25",
-              "outlined": "MuiButton-outlined-11",
-              "outlinedPrimary": "MuiButton-outlinedPrimary-12",
-              "outlinedSecondary": "MuiButton-outlinedSecondary-13",
-              "raised": "MuiButton-raised-17",
-              "raisedPrimary": "MuiButton-raisedPrimary-18",
-              "raisedSecondary": "MuiButton-raisedSecondary-19",
-              "root": "MuiButton-root-3",
-              "sizeLarge": "MuiButton-sizeLarge-27",
-              "sizeSmall": "MuiButton-sizeSmall-26",
-              "text": "MuiButton-text-5",
-              "textPrimary": "MuiButton-textPrimary-6",
-              "textSecondary": "MuiButton-textSecondary-7",
-            }
+      <CustomCard
+        classes={
+          Object {
+            "card": "CustomCard-card-1",
+            "expand": "CustomCard-expand-2",
           }
-          color="default"
-          component="button"
-          disableFocusRipple={false}
+        }
+        expand={true}
+        history={
+          Object {
+            "push": [MockFunction],
+          }
+        }
+        url="https://connpass.com/"
+      >
+        <WithStyles(Button)
+          className="CustomCard-card-1 CustomCard-expand-2"
+          color="primary"
           disableRipple={true}
-          disabled={false}
           fullWidth={true}
-          mini={false}
           onClick={[Function]}
-          size="medium"
-          type="button"
-          variant="contained"
+          variant="outlined"
         >
-          <WithStyles(ButtonBase)
-            className="MuiButton-root-3 MuiButton-contained-14 MuiButton-raised-17 MuiButton-fullWidth-28 CustomCard-card-1 CustomCard-expand-2"
+          <Button
+            className="CustomCard-card-1 CustomCard-expand-2"
+            classes={
+              Object {
+                "colorInherit": "MuiButton-colorInherit-24",
+                "contained": "MuiButton-contained-14",
+                "containedPrimary": "MuiButton-containedPrimary-15",
+                "containedSecondary": "MuiButton-containedSecondary-16",
+                "disabled": "MuiButton-disabled-23",
+                "extendedFab": "MuiButton-extendedFab-21",
+                "fab": "MuiButton-fab-20",
+                "flat": "MuiButton-flat-8",
+                "flatPrimary": "MuiButton-flatPrimary-9",
+                "flatSecondary": "MuiButton-flatSecondary-10",
+                "focusVisible": "MuiButton-focusVisible-22",
+                "fullWidth": "MuiButton-fullWidth-28",
+                "label": "MuiButton-label-4",
+                "mini": "MuiButton-mini-25",
+                "outlined": "MuiButton-outlined-11",
+                "outlinedPrimary": "MuiButton-outlinedPrimary-12",
+                "outlinedSecondary": "MuiButton-outlinedSecondary-13",
+                "raised": "MuiButton-raised-17",
+                "raisedPrimary": "MuiButton-raisedPrimary-18",
+                "raisedSecondary": "MuiButton-raisedSecondary-19",
+                "root": "MuiButton-root-3",
+                "sizeLarge": "MuiButton-sizeLarge-27",
+                "sizeSmall": "MuiButton-sizeSmall-26",
+                "text": "MuiButton-text-5",
+                "textPrimary": "MuiButton-textPrimary-6",
+                "textSecondary": "MuiButton-textSecondary-7",
+              }
+            }
+            color="primary"
             component="button"
+            disableFocusRipple={false}
             disableRipple={true}
             disabled={false}
-            focusRipple={true}
-            focusVisibleClassName="MuiButton-focusVisible-22"
+            fullWidth={true}
+            mini={false}
             onClick={[Function]}
+            size="medium"
             type="button"
+            variant="outlined"
           >
-            <ButtonBase
-              centerRipple={false}
-              className="MuiButton-root-3 MuiButton-contained-14 MuiButton-raised-17 MuiButton-fullWidth-28 CustomCard-card-1 CustomCard-expand-2"
-              classes={
-                Object {
-                  "disabled": "MuiButtonBase-disabled-30",
-                  "focusVisible": "MuiButtonBase-focusVisible-31",
-                  "root": "MuiButtonBase-root-29",
-                }
-              }
+            <WithStyles(ButtonBase)
+              className="MuiButton-root-3 MuiButton-outlined-11 MuiButton-outlinedPrimary-12 MuiButton-fullWidth-28 CustomCard-card-1 CustomCard-expand-2"
               component="button"
               disableRipple={true}
-              disableTouchRipple={false}
               disabled={false}
               focusRipple={true}
               focusVisibleClassName="MuiButton-focusVisible-22"
               onClick={[Function]}
-              tabIndex="0"
               type="button"
             >
-              <button
-                className="MuiButtonBase-root-29 MuiButton-root-3 MuiButton-contained-14 MuiButton-raised-17 MuiButton-fullWidth-28 CustomCard-card-1 CustomCard-expand-2"
+              <ButtonBase
+                centerRipple={false}
+                className="MuiButton-root-3 MuiButton-outlined-11 MuiButton-outlinedPrimary-12 MuiButton-fullWidth-28 CustomCard-card-1 CustomCard-expand-2"
+                classes={
+                  Object {
+                    "disabled": "MuiButtonBase-disabled-30",
+                    "focusVisible": "MuiButtonBase-focusVisible-31",
+                    "root": "MuiButtonBase-root-29",
+                  }
+                }
+                component="button"
+                disableRipple={true}
+                disableTouchRipple={false}
                 disabled={false}
-                onBlur={[Function]}
+                focusRipple={true}
+                focusVisibleClassName="MuiButton-focusVisible-22"
                 onClick={[Function]}
-                onContextMenu={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
                 tabIndex="0"
                 type="button"
               >
-                <span
-                  className="MuiButton-label-4"
+                <button
+                  className="MuiButtonBase-root-29 MuiButton-root-3 MuiButton-outlined-11 MuiButton-outlinedPrimary-12 MuiButton-fullWidth-28 CustomCard-card-1 CustomCard-expand-2"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchMove={[Function]}
+                  onTouchStart={[Function]}
+                  tabIndex="0"
+                  type="button"
                 >
-                  <styled.div>
-                    <StyledComponent
-                      forwardedComponent={
-                        Object {
-                          "$$typeof": Symbol(react.forward_ref),
-                          "attrs": Array [],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "sc-bdVaJa",
-                            "isStatic": true,
-                            "lastClassName": "c0",
-                            "rules": Array [
-                              "
+                  <span
+                    className="MuiButton-label-4"
+                  >
+                    <styled.div>
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bdVaJa",
+                              "isStatic": true,
+                              "lastClassName": "c0",
+                              "rules": Array [
+                                "
   width: 100%;
 ",
-                            ],
-                          },
-                          "displayName": "styled.div",
-                          "foldedComponentIds": Array [],
-                          "render": [Function],
-                          "styledComponentId": "sc-bdVaJa",
-                          "target": "div",
-                          "toString": [Function],
-                          "warnTooManyClasses": [Function],
-                          "withComponent": [Function],
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bdVaJa",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
                         }
-                      }
-                      forwardedRef={null}
-                    >
-                      <div
-                        className="c0"
+                        forwardedRef={null}
                       >
-                        <h2>
-                          Hello
-                        </h2>
-                      </div>
-                    </StyledComponent>
-                  </styled.div>
-                </span>
-              </button>
-            </ButtonBase>
-          </WithStyles(ButtonBase)>
-        </Button>
-      </WithStyles(Button)>
-    </CustomCard>
-  </WithStyles(CustomCard)>
-</MockRouter>
+                        <div
+                          className="c0"
+                        >
+                          <h2>
+                            Hello
+                          </h2>
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                  </span>
+                </button>
+              </ButtonBase>
+            </WithStyles(ButtonBase)>
+          </Button>
+        </WithStyles(Button)>
+      </CustomCard>
+    </WithStyles(CustomCard)>
+  </MockRouter>
+</Provider>
 `;
 
 exports[`should match snapshot: CustomCard/nomal 1`] = `
@@ -193,31 +206,27 @@ exports[`should match snapshot: CustomCard/nomal 1`] = `
   width: 100%;
 }
 
-<MockRouter
-  createHref={[Function]}
-  location=""
-  params={Object {}}
-  path=""
-  push={[Function]}
-  replace={[Function]}
-  url=""
->
-  <WithStyles(CustomCard)
-    history={
-      Object {
-        "push": [MockFunction],
-      }
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
     }
-    url="https://connpass.com/"
+  }
+>
+  <MockRouter
+    createHref={[Function]}
+    location=""
+    params={Object {}}
+    path=""
+    push={[Function]}
+    replace={[Function]}
+    url=""
   >
-    <CustomCard
-      classes={
-        Object {
-          "card": "CustomCard-card-1",
-          "expand": "CustomCard-expand-2",
-        }
-      }
-      expand={false}
+    <WithStyles(CustomCard)
       history={
         Object {
           "push": [MockFunction],
@@ -225,152 +234,169 @@ exports[`should match snapshot: CustomCard/nomal 1`] = `
       }
       url="https://connpass.com/"
     >
-      <WithStyles(Button)
-        className="CustomCard-card-1"
-        disableRipple={true}
-        fullWidth={true}
-        onClick={[Function]}
-        variant="contained"
-      >
-        <Button
-          className="CustomCard-card-1"
-          classes={
-            Object {
-              "colorInherit": "MuiButton-colorInherit-24",
-              "contained": "MuiButton-contained-14",
-              "containedPrimary": "MuiButton-containedPrimary-15",
-              "containedSecondary": "MuiButton-containedSecondary-16",
-              "disabled": "MuiButton-disabled-23",
-              "extendedFab": "MuiButton-extendedFab-21",
-              "fab": "MuiButton-fab-20",
-              "flat": "MuiButton-flat-8",
-              "flatPrimary": "MuiButton-flatPrimary-9",
-              "flatSecondary": "MuiButton-flatSecondary-10",
-              "focusVisible": "MuiButton-focusVisible-22",
-              "fullWidth": "MuiButton-fullWidth-28",
-              "label": "MuiButton-label-4",
-              "mini": "MuiButton-mini-25",
-              "outlined": "MuiButton-outlined-11",
-              "outlinedPrimary": "MuiButton-outlinedPrimary-12",
-              "outlinedSecondary": "MuiButton-outlinedSecondary-13",
-              "raised": "MuiButton-raised-17",
-              "raisedPrimary": "MuiButton-raisedPrimary-18",
-              "raisedSecondary": "MuiButton-raisedSecondary-19",
-              "root": "MuiButton-root-3",
-              "sizeLarge": "MuiButton-sizeLarge-27",
-              "sizeSmall": "MuiButton-sizeSmall-26",
-              "text": "MuiButton-text-5",
-              "textPrimary": "MuiButton-textPrimary-6",
-              "textSecondary": "MuiButton-textSecondary-7",
-            }
+      <CustomCard
+        classes={
+          Object {
+            "card": "CustomCard-card-1",
+            "expand": "CustomCard-expand-2",
           }
-          color="default"
-          component="button"
-          disableFocusRipple={false}
+        }
+        expand={false}
+        history={
+          Object {
+            "push": [MockFunction],
+          }
+        }
+        url="https://connpass.com/"
+      >
+        <WithStyles(Button)
+          className="CustomCard-card-1"
+          color="primary"
           disableRipple={true}
-          disabled={false}
           fullWidth={true}
-          mini={false}
           onClick={[Function]}
-          size="medium"
-          type="button"
-          variant="contained"
+          variant="outlined"
         >
-          <WithStyles(ButtonBase)
-            className="MuiButton-root-3 MuiButton-contained-14 MuiButton-raised-17 MuiButton-fullWidth-28 CustomCard-card-1"
+          <Button
+            className="CustomCard-card-1"
+            classes={
+              Object {
+                "colorInherit": "MuiButton-colorInherit-24",
+                "contained": "MuiButton-contained-14",
+                "containedPrimary": "MuiButton-containedPrimary-15",
+                "containedSecondary": "MuiButton-containedSecondary-16",
+                "disabled": "MuiButton-disabled-23",
+                "extendedFab": "MuiButton-extendedFab-21",
+                "fab": "MuiButton-fab-20",
+                "flat": "MuiButton-flat-8",
+                "flatPrimary": "MuiButton-flatPrimary-9",
+                "flatSecondary": "MuiButton-flatSecondary-10",
+                "focusVisible": "MuiButton-focusVisible-22",
+                "fullWidth": "MuiButton-fullWidth-28",
+                "label": "MuiButton-label-4",
+                "mini": "MuiButton-mini-25",
+                "outlined": "MuiButton-outlined-11",
+                "outlinedPrimary": "MuiButton-outlinedPrimary-12",
+                "outlinedSecondary": "MuiButton-outlinedSecondary-13",
+                "raised": "MuiButton-raised-17",
+                "raisedPrimary": "MuiButton-raisedPrimary-18",
+                "raisedSecondary": "MuiButton-raisedSecondary-19",
+                "root": "MuiButton-root-3",
+                "sizeLarge": "MuiButton-sizeLarge-27",
+                "sizeSmall": "MuiButton-sizeSmall-26",
+                "text": "MuiButton-text-5",
+                "textPrimary": "MuiButton-textPrimary-6",
+                "textSecondary": "MuiButton-textSecondary-7",
+              }
+            }
+            color="primary"
             component="button"
+            disableFocusRipple={false}
             disableRipple={true}
             disabled={false}
-            focusRipple={true}
-            focusVisibleClassName="MuiButton-focusVisible-22"
+            fullWidth={true}
+            mini={false}
             onClick={[Function]}
+            size="medium"
             type="button"
+            variant="outlined"
           >
-            <ButtonBase
-              centerRipple={false}
-              className="MuiButton-root-3 MuiButton-contained-14 MuiButton-raised-17 MuiButton-fullWidth-28 CustomCard-card-1"
-              classes={
-                Object {
-                  "disabled": "MuiButtonBase-disabled-30",
-                  "focusVisible": "MuiButtonBase-focusVisible-31",
-                  "root": "MuiButtonBase-root-29",
-                }
-              }
+            <WithStyles(ButtonBase)
+              className="MuiButton-root-3 MuiButton-outlined-11 MuiButton-outlinedPrimary-12 MuiButton-fullWidth-28 CustomCard-card-1"
               component="button"
               disableRipple={true}
-              disableTouchRipple={false}
               disabled={false}
               focusRipple={true}
               focusVisibleClassName="MuiButton-focusVisible-22"
               onClick={[Function]}
-              tabIndex="0"
               type="button"
             >
-              <button
-                className="MuiButtonBase-root-29 MuiButton-root-3 MuiButton-contained-14 MuiButton-raised-17 MuiButton-fullWidth-28 CustomCard-card-1"
+              <ButtonBase
+                centerRipple={false}
+                className="MuiButton-root-3 MuiButton-outlined-11 MuiButton-outlinedPrimary-12 MuiButton-fullWidth-28 CustomCard-card-1"
+                classes={
+                  Object {
+                    "disabled": "MuiButtonBase-disabled-30",
+                    "focusVisible": "MuiButtonBase-focusVisible-31",
+                    "root": "MuiButtonBase-root-29",
+                  }
+                }
+                component="button"
+                disableRipple={true}
+                disableTouchRipple={false}
                 disabled={false}
-                onBlur={[Function]}
+                focusRipple={true}
+                focusVisibleClassName="MuiButton-focusVisible-22"
                 onClick={[Function]}
-                onContextMenu={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
                 tabIndex="0"
                 type="button"
               >
-                <span
-                  className="MuiButton-label-4"
+                <button
+                  className="MuiButtonBase-root-29 MuiButton-root-3 MuiButton-outlined-11 MuiButton-outlinedPrimary-12 MuiButton-fullWidth-28 CustomCard-card-1"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchMove={[Function]}
+                  onTouchStart={[Function]}
+                  tabIndex="0"
+                  type="button"
                 >
-                  <styled.div>
-                    <StyledComponent
-                      forwardedComponent={
-                        Object {
-                          "$$typeof": Symbol(react.forward_ref),
-                          "attrs": Array [],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "sc-bdVaJa",
-                            "isStatic": true,
-                            "lastClassName": "c0",
-                            "rules": Array [
-                              "
+                  <span
+                    className="MuiButton-label-4"
+                  >
+                    <styled.div>
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bdVaJa",
+                              "isStatic": true,
+                              "lastClassName": "c0",
+                              "rules": Array [
+                                "
   width: 100%;
 ",
-                            ],
-                          },
-                          "displayName": "styled.div",
-                          "foldedComponentIds": Array [],
-                          "render": [Function],
-                          "styledComponentId": "sc-bdVaJa",
-                          "target": "div",
-                          "toString": [Function],
-                          "warnTooManyClasses": [Function],
-                          "withComponent": [Function],
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bdVaJa",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
                         }
-                      }
-                      forwardedRef={null}
-                    >
-                      <div
-                        className="c0"
+                        forwardedRef={null}
                       >
-                        <h2>
-                          Hello
-                        </h2>
-                      </div>
-                    </StyledComponent>
-                  </styled.div>
-                </span>
-              </button>
-            </ButtonBase>
-          </WithStyles(ButtonBase)>
-        </Button>
-      </WithStyles(Button)>
-    </CustomCard>
-  </WithStyles(CustomCard)>
-</MockRouter>
+                        <div
+                          className="c0"
+                        >
+                          <h2>
+                            Hello
+                          </h2>
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                  </span>
+                </button>
+              </ButtonBase>
+            </WithStyles(ButtonBase)>
+          </Button>
+        </WithStyles(Button)>
+      </CustomCard>
+    </WithStyles(CustomCard)>
+  </MockRouter>
+</Provider>
 `;

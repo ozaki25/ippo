@@ -1,100 +1,112 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should match snapshot: ShrinkSwipeable/nomal 1`] = `
-<MockRouter
-  createHref={[Function]}
-  location=""
-  params={Object {}}
-  path=""
-  push={[Function]}
-  replace={[Function]}
-  url=""
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
 >
-  <ShrinkSwipeable>
-    <ReactSwipableView
-      animateHeight={false}
-      animateTransitions={true}
-      axis="x"
-      disableLazyLoading={false}
-      disabled={false}
-      enableMouseEvents={true}
-      hysteresis={0.4}
-      ignoreNativeScroll={false}
-      index={0}
-      resistance={false}
-      slideStyle={
-        Object {
-          "padding": "0 4px",
-          "width": "calc(100% - 8px)",
+  <MockRouter
+    createHref={[Function]}
+    location=""
+    params={Object {}}
+    path=""
+    push={[Function]}
+    replace={[Function]}
+    url=""
+  >
+    <ShrinkSwipeable>
+      <ReactSwipableView
+        animateHeight={false}
+        animateTransitions={true}
+        axis="x"
+        disableLazyLoading={false}
+        disabled={false}
+        enableMouseEvents={true}
+        hysteresis={0.4}
+        ignoreNativeScroll={false}
+        index={0}
+        resistance={false}
+        slideStyle={
+          Object {
+            "padding": "0",
+            "width": "100%",
+          }
         }
-      }
-      springConfig={
-        Object {
-          "delay": "0s",
-          "duration": "0.35s",
-          "easeFunction": "cubic-bezier(0.15, 0.3, 0.25, 1)",
+        springConfig={
+          Object {
+            "delay": "0s",
+            "duration": "0.35s",
+            "easeFunction": "cubic-bezier(0.15, 0.3, 0.25, 1)",
+          }
         }
-      }
-      style={
-        Object {
-          "padding": "0 30px",
-        }
-      }
-      threshold={5}
-    >
-      <div
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseMove={[Function]}
-        onMouseUp={[Function]}
-        onScroll={[Function]}
-        onTouchEnd={[Function]}
-        onTouchStart={[Function]}
         style={
           Object {
-            "overflowX": "hidden",
             "padding": "0 30px",
           }
         }
+        threshold={5}
       >
         <div
-          className="react-swipeable-view-container"
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseMove={[Function]}
+          onMouseUp={[Function]}
+          onScroll={[Function]}
+          onTouchEnd={[Function]}
+          onTouchStart={[Function]}
           style={
             Object {
-              "WebkitFlexDirection": "row",
-              "WebkitTransition": "all 0s ease 0s",
-              "direction": "ltr",
-              "display": "flex",
-              "flexDirection": "row",
-              "height": null,
-              "transition": "all 0s ease 0s",
-              "willChange": "transform",
+              "overflowX": "hidden",
+              "padding": "0 30px",
             }
           }
         >
           <div
-            aria-hidden={false}
-            data-swipeable="true"
-            key=".$1"
+            className="react-swipeable-view-container"
             style={
               Object {
-                "WebkitFlexShrink": 0,
-                "flexShrink": 0,
-                "overflow": "auto",
-                "padding": "0 4px",
-                "width": "calc(100% - 8px)",
+                "WebkitFlexDirection": "row",
+                "WebkitTransition": "all 0s ease 0s",
+                "direction": "ltr",
+                "display": "flex",
+                "flexDirection": "row",
+                "height": null,
+                "transition": "all 0s ease 0s",
+                "willChange": "transform",
               }
             }
           >
-            <h1
-              key="1"
+            <div
+              aria-hidden={false}
+              data-swipeable="true"
+              key=".$1"
+              style={
+                Object {
+                  "WebkitFlexShrink": 0,
+                  "flexShrink": 0,
+                  "overflow": "auto",
+                  "padding": "0",
+                  "width": "100%",
+                }
+              }
             >
-              テスト1
-            </h1>
+              <h1
+                key="1"
+              >
+                テスト1
+              </h1>
+            </div>
           </div>
         </div>
-      </div>
-    </ReactSwipableView>
-  </ShrinkSwipeable>
-</MockRouter>
+      </ReactSwipableView>
+    </ShrinkSwipeable>
+  </MockRouter>
+</Provider>
 `;

@@ -13,119 +13,131 @@ exports[`should match snapshot: TweetBody/big 1`] = `
   text-decoration: none;
 }
 
-<MockRouter
-  createHref={[Function]}
-  location=""
-  params={Object {}}
-  path=""
-  push={[Function]}
-  replace={[Function]}
-  url=""
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
 >
-  <TweetBody
-    bigText={true}
-    text="Storybookいいところ
+  <MockRouter
+    createHref={[Function]}
+    location=""
+    params={Object {}}
+    path=""
+    push={[Function]}
+    replace={[Function]}
+    url=""
+  >
+    <TweetBody
+      bigText={true}
+      text="Storybookいいところ
   - どんなコンポーネントが存在してるか可視化できる
   - コンポーネントの扱い方が分かる
   - UIの修正デバッグが楽
   #ThinkAtomicDesign"
-  >
-    <styled.div
-      bigText={1}
     >
-      <StyledComponent
+      <styled.div
         bigText={1}
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "sc-bdVaJa",
-              "isStatic": false,
-              "lastClassName": "c0",
-              "rules": Array [
-                "
+      >
+        <StyledComponent
+          bigText={1}
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-bdVaJa",
+                "isStatic": false,
+                "lastClassName": "c0",
+                "rules": Array [
+                  "
   margin: 0 0 5px;
   white-space: pre-wrap;
   word-wrap: break-word;
   font-size: ",
-                [Function],
-                ";
+                  [Function],
+                  ";
 ",
-              ],
-            },
-            "displayName": "styled.div",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "sc-bdVaJa",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
+                ],
+              },
+              "displayName": "styled.div",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-bdVaJa",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
           }
-        }
-        forwardedRef={null}
-      >
-        <div
-          className="c0"
+          forwardedRef={null}
         >
-          Storybookいいところ
+          <div
+            className="c0"
+          >
+            Storybookいいところ
   - どんなコンポーネントが存在してるか可視化できる
   - コンポーネントの扱い方が分かる
   - UIの修正デバッグが楽
   
-          <Styled(Link)
-            key="#ThinkAtomicDesign0"
-            to="/tweets?hashtag=ThinkAtomicDesign"
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-bwzfXH",
-                    "isStatic": true,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "
-  text-decoration: none;
-",
-                    ],
-                  },
-                  "displayName": "Styled(Link)",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-bwzfXH",
-                  "target": [Function],
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                  Symbol(Symbol.hasInstance): [Function],
-                }
-              }
-              forwardedRef={null}
+            <Styled(Link)
+              key="#ThinkAtomicDesign0"
               to="/tweets?hashtag=ThinkAtomicDesign"
             >
-              <Link
-                className="c1"
-                replace={false}
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bwzfXH",
+                      "isStatic": true,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "
+  text-decoration: none;
+",
+                      ],
+                    },
+                    "displayName": "Styled(Link)",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bwzfXH",
+                    "target": [Function],
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                    Symbol(Symbol.hasInstance): [Function],
+                  }
+                }
+                forwardedRef={null}
                 to="/tweets?hashtag=ThinkAtomicDesign"
               >
-                <a
+                <Link
                   className="c1"
-                  onClick={[Function]}
+                  replace={false}
+                  to="/tweets?hashtag=ThinkAtomicDesign"
                 >
-                  #ThinkAtomicDesign
-                </a>
-              </Link>
-            </StyledComponent>
-          </Styled(Link)>
-        </div>
-      </StyledComponent>
-    </styled.div>
-  </TweetBody>
-</MockRouter>
+                  <a
+                    className="c1"
+                    onClick={[Function]}
+                  >
+                    #ThinkAtomicDesign
+                  </a>
+                </Link>
+              </StyledComponent>
+            </Styled(Link)>
+          </div>
+        </StyledComponent>
+      </styled.div>
+    </TweetBody>
+  </MockRouter>
+</Provider>
 `;
 
 exports[`should match snapshot: TweetBody/nomal 1`] = `
@@ -141,117 +153,129 @@ exports[`should match snapshot: TweetBody/nomal 1`] = `
   text-decoration: none;
 }
 
-<MockRouter
-  createHref={[Function]}
-  location=""
-  params={Object {}}
-  path=""
-  push={[Function]}
-  replace={[Function]}
-  url=""
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
 >
-  <TweetBody
-    bigText={false}
-    text="Storybookいいところ
+  <MockRouter
+    createHref={[Function]}
+    location=""
+    params={Object {}}
+    path=""
+    push={[Function]}
+    replace={[Function]}
+    url=""
+  >
+    <TweetBody
+      bigText={false}
+      text="Storybookいいところ
   - どんなコンポーネントが存在してるか可視化できる
   - コンポーネントの扱い方が分かる
   - UIの修正デバッグが楽
   #ThinkAtomicDesign"
-  >
-    <styled.div
-      bigText={0}
     >
-      <StyledComponent
+      <styled.div
         bigText={0}
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "sc-bdVaJa",
-              "isStatic": false,
-              "lastClassName": "c0",
-              "rules": Array [
-                "
+      >
+        <StyledComponent
+          bigText={0}
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-bdVaJa",
+                "isStatic": false,
+                "lastClassName": "c0",
+                "rules": Array [
+                  "
   margin: 0 0 5px;
   white-space: pre-wrap;
   word-wrap: break-word;
   font-size: ",
-                [Function],
-                ";
+                  [Function],
+                  ";
 ",
-              ],
-            },
-            "displayName": "styled.div",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "sc-bdVaJa",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
+                ],
+              },
+              "displayName": "styled.div",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-bdVaJa",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
           }
-        }
-        forwardedRef={null}
-      >
-        <div
-          className="c0"
+          forwardedRef={null}
         >
-          Storybookいいところ
+          <div
+            className="c0"
+          >
+            Storybookいいところ
   - どんなコンポーネントが存在してるか可視化できる
   - コンポーネントの扱い方が分かる
   - UIの修正デバッグが楽
   
-          <Styled(Link)
-            key="#ThinkAtomicDesign0"
-            to="/tweets?hashtag=ThinkAtomicDesign"
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-bwzfXH",
-                    "isStatic": true,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "
-  text-decoration: none;
-",
-                    ],
-                  },
-                  "displayName": "Styled(Link)",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-bwzfXH",
-                  "target": [Function],
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                  Symbol(Symbol.hasInstance): [Function],
-                }
-              }
-              forwardedRef={null}
+            <Styled(Link)
+              key="#ThinkAtomicDesign0"
               to="/tweets?hashtag=ThinkAtomicDesign"
             >
-              <Link
-                className="c1"
-                replace={false}
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bwzfXH",
+                      "isStatic": true,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "
+  text-decoration: none;
+",
+                      ],
+                    },
+                    "displayName": "Styled(Link)",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bwzfXH",
+                    "target": [Function],
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                    Symbol(Symbol.hasInstance): [Function],
+                  }
+                }
+                forwardedRef={null}
                 to="/tweets?hashtag=ThinkAtomicDesign"
               >
-                <a
+                <Link
                   className="c1"
-                  onClick={[Function]}
+                  replace={false}
+                  to="/tweets?hashtag=ThinkAtomicDesign"
                 >
-                  #ThinkAtomicDesign
-                </a>
-              </Link>
-            </StyledComponent>
-          </Styled(Link)>
-        </div>
-      </StyledComponent>
-    </styled.div>
-  </TweetBody>
-</MockRouter>
+                  <a
+                    className="c1"
+                    onClick={[Function]}
+                  >
+                    #ThinkAtomicDesign
+                  </a>
+                </Link>
+              </StyledComponent>
+            </Styled(Link)>
+          </div>
+        </StyledComponent>
+      </styled.div>
+    </TweetBody>
+  </MockRouter>
+</Provider>
 `;

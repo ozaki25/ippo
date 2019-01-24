@@ -5,207 +5,231 @@ exports[`should match snapshot: AsyncSwipeable/loading 1`] = `
   text-align: center;
 }
 
-<MockRouter
-  createHref={[Function]}
-  location=""
-  params={Object {}}
-  path=""
-  push={[Function]}
-  replace={[Function]}
-  url=""
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
 >
-  <AsyncSwipeable
-    loading={true}
+  <MockRouter
+    createHref={[Function]}
+    location=""
+    params={Object {}}
+    path=""
+    push={[Function]}
+    replace={[Function]}
+    url=""
   >
-    <Spinner>
-      <styled.div>
-        <StyledComponent
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "sc-bdVaJa",
-                "isStatic": true,
-                "lastClassName": "c0",
-                "rules": Array [
-                  "
+    <AsyncSwipeable
+      loading={true}
+    >
+      <Spinner>
+        <styled.div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": true,
+                  "lastClassName": "c0",
+                  "rules": Array [
+                    "
   text-align: center;
 ",
-                ],
-              },
-              "displayName": "styled.div",
-              "foldedComponentIds": Array [],
-              "render": [Function],
-              "styledComponentId": "sc-bdVaJa",
-              "target": "div",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
             }
-          }
-          forwardedRef={null}
-        >
-          <div
-            className="c0"
+            forwardedRef={null}
           >
-            <WithStyles(CircularProgress)>
-              <CircularProgress
-                classes={
-                  Object {
-                    "circle": "MuiCircularProgress-circle-7",
-                    "circleDisableShrink": "MuiCircularProgress-circleDisableShrink-10",
-                    "circleIndeterminate": "MuiCircularProgress-circleIndeterminate-9",
-                    "circleStatic": "MuiCircularProgress-circleStatic-8",
-                    "colorPrimary": "MuiCircularProgress-colorPrimary-4",
-                    "colorSecondary": "MuiCircularProgress-colorSecondary-5",
-                    "indeterminate": "MuiCircularProgress-indeterminate-3",
-                    "root": "MuiCircularProgress-root-1",
-                    "static": "MuiCircularProgress-static-2",
-                    "svg": "MuiCircularProgress-svg-6",
-                  }
-                }
-                color="primary"
-                disableShrink={false}
-                size={40}
-                thickness={3.6}
-                value={0}
-                variant="indeterminate"
-              >
-                <div
-                  className="MuiCircularProgress-root-1 MuiCircularProgress-colorPrimary-4 MuiCircularProgress-indeterminate-3"
-                  role="progressbar"
-                  style={
+            <div
+              className="c0"
+            >
+              <WithStyles(CircularProgress)>
+                <CircularProgress
+                  classes={
                     Object {
-                      "height": 40,
-                      "width": 40,
+                      "circle": "MuiCircularProgress-circle-7",
+                      "circleDisableShrink": "MuiCircularProgress-circleDisableShrink-10",
+                      "circleIndeterminate": "MuiCircularProgress-circleIndeterminate-9",
+                      "circleStatic": "MuiCircularProgress-circleStatic-8",
+                      "colorPrimary": "MuiCircularProgress-colorPrimary-4",
+                      "colorSecondary": "MuiCircularProgress-colorSecondary-5",
+                      "indeterminate": "MuiCircularProgress-indeterminate-3",
+                      "root": "MuiCircularProgress-root-1",
+                      "static": "MuiCircularProgress-static-2",
+                      "svg": "MuiCircularProgress-svg-6",
                     }
                   }
+                  color="primary"
+                  disableShrink={false}
+                  size={40}
+                  thickness={3.6}
+                  value={0}
+                  variant="indeterminate"
                 >
-                  <svg
-                    className="MuiCircularProgress-svg-6"
-                    viewBox="22 22 44 44"
+                  <div
+                    className="MuiCircularProgress-root-1 MuiCircularProgress-colorPrimary-4 MuiCircularProgress-indeterminate-3"
+                    role="progressbar"
+                    style={
+                      Object {
+                        "height": 40,
+                        "width": 40,
+                      }
+                    }
                   >
-                    <circle
-                      className="MuiCircularProgress-circle-7 MuiCircularProgress-circleIndeterminate-9"
-                      cx={44}
-                      cy={44}
-                      fill="none"
-                      r={20.2}
-                      strokeWidth={3.6}
-                      style={Object {}}
-                    />
-                  </svg>
-                </div>
-              </CircularProgress>
-            </WithStyles(CircularProgress)>
-          </div>
-        </StyledComponent>
-      </styled.div>
-    </Spinner>
-  </AsyncSwipeable>
-</MockRouter>
+                    <svg
+                      className="MuiCircularProgress-svg-6"
+                      viewBox="22 22 44 44"
+                    >
+                      <circle
+                        className="MuiCircularProgress-circle-7 MuiCircularProgress-circleIndeterminate-9"
+                        cx={44}
+                        cy={44}
+                        fill="none"
+                        r={20.2}
+                        strokeWidth={3.6}
+                        style={Object {}}
+                      />
+                    </svg>
+                  </div>
+                </CircularProgress>
+              </WithStyles(CircularProgress)>
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </Spinner>
+    </AsyncSwipeable>
+  </MockRouter>
+</Provider>
 `;
 
 exports[`should match snapshot: AsyncSwipeable/nomal 1`] = `
-<MockRouter
-  createHref={[Function]}
-  location=""
-  params={Object {}}
-  path=""
-  push={[Function]}
-  replace={[Function]}
-  url=""
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
 >
-  <AsyncSwipeable
-    loading={false}
+  <MockRouter
+    createHref={[Function]}
+    location=""
+    params={Object {}}
+    path=""
+    push={[Function]}
+    replace={[Function]}
+    url=""
   >
-    <ShrinkSwipeable>
-      <ReactSwipableView
-        animateHeight={false}
-        animateTransitions={true}
-        axis="x"
-        disableLazyLoading={false}
-        disabled={false}
-        enableMouseEvents={true}
-        hysteresis={0.4}
-        ignoreNativeScroll={false}
-        index={0}
-        resistance={false}
-        slideStyle={
-          Object {
-            "padding": "0 4px",
-            "width": "calc(100% - 8px)",
+    <AsyncSwipeable
+      loading={false}
+    >
+      <ShrinkSwipeable>
+        <ReactSwipableView
+          animateHeight={false}
+          animateTransitions={true}
+          axis="x"
+          disableLazyLoading={false}
+          disabled={false}
+          enableMouseEvents={true}
+          hysteresis={0.4}
+          ignoreNativeScroll={false}
+          index={0}
+          resistance={false}
+          slideStyle={
+            Object {
+              "padding": "0",
+              "width": "100%",
+            }
           }
-        }
-        springConfig={
-          Object {
-            "delay": "0s",
-            "duration": "0.35s",
-            "easeFunction": "cubic-bezier(0.15, 0.3, 0.25, 1)",
+          springConfig={
+            Object {
+              "delay": "0s",
+              "duration": "0.35s",
+              "easeFunction": "cubic-bezier(0.15, 0.3, 0.25, 1)",
+            }
           }
-        }
-        style={
-          Object {
-            "padding": "0 30px",
-          }
-        }
-        threshold={5}
-      >
-        <div
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseMove={[Function]}
-          onMouseUp={[Function]}
-          onScroll={[Function]}
-          onTouchEnd={[Function]}
-          onTouchStart={[Function]}
           style={
             Object {
-              "overflowX": "hidden",
               "padding": "0 30px",
             }
           }
+          threshold={5}
         >
           <div
-            className="react-swipeable-view-container"
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseMove={[Function]}
+            onMouseUp={[Function]}
+            onScroll={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
             style={
               Object {
-                "WebkitFlexDirection": "row",
-                "WebkitTransition": "all 0s ease 0s",
-                "direction": "ltr",
-                "display": "flex",
-                "flexDirection": "row",
-                "height": null,
-                "transition": "all 0s ease 0s",
-                "willChange": "transform",
+                "overflowX": "hidden",
+                "padding": "0 30px",
               }
             }
           >
             <div
-              aria-hidden={false}
-              data-swipeable="true"
-              key=".$1"
+              className="react-swipeable-view-container"
               style={
                 Object {
-                  "WebkitFlexShrink": 0,
-                  "flexShrink": 0,
-                  "overflow": "auto",
-                  "padding": "0 4px",
-                  "width": "calc(100% - 8px)",
+                  "WebkitFlexDirection": "row",
+                  "WebkitTransition": "all 0s ease 0s",
+                  "direction": "ltr",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "height": null,
+                  "transition": "all 0s ease 0s",
+                  "willChange": "transform",
                 }
               }
             >
-              <h1
-                key="1"
+              <div
+                aria-hidden={false}
+                data-swipeable="true"
+                key=".$1"
+                style={
+                  Object {
+                    "WebkitFlexShrink": 0,
+                    "flexShrink": 0,
+                    "overflow": "auto",
+                    "padding": "0",
+                    "width": "100%",
+                  }
+                }
               >
-                テスト1
-              </h1>
+                <h1
+                  key="1"
+                >
+                  テスト1
+                </h1>
+              </div>
             </div>
           </div>
-        </div>
-      </ReactSwipableView>
-    </ShrinkSwipeable>
-  </AsyncSwipeable>
-</MockRouter>
+        </ReactSwipableView>
+      </ShrinkSwipeable>
+    </AsyncSwipeable>
+  </MockRouter>
+</Provider>
 `;
