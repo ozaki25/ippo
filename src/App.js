@@ -9,6 +9,7 @@ import Firebase from 'src/utils/firebase';
 import FirebaseContext from 'src/context/firebase';
 import theme from 'src/theme';
 import { withAuthentication } from 'src/hoc/Sessions';
+import 'src/customelements/uploader';
 
 const AuthRouter = withAuthentication(Router);
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { TextField, Typography } from '@material-ui/core';
+import { Dialog, DialogTitle, TextField, Typography } from '@material-ui/core';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
 import RoundedButton from 'src/components/atoms/RoundedButton';
@@ -37,6 +37,10 @@ const Buttons = styled.div`
   text-align: right;
 `;
 
+const UploaderContainer = styled.div`
+  padding: 8px 4px;
+`;
+
 const message = type => {
   switch (type) {
     case TWEET_WORD.JOIN_TYPE:
@@ -66,6 +70,7 @@ class NewTweet extends React.Component {
       error: false,
       anchorEl: null,
       type,
+      open: false,
     };
     this.tweet = React.createRef();
   }
@@ -76,8 +81,6 @@ class NewTweet extends React.Component {
   }
 
   onChange = event => this.setState({ [event.target.name]: event.target.value });
-
-  onClickUpload = () => console.log('TODO');
 
   onClickTweet = async () => {
     const { createTweet, authUser, history, hashtag, parentTweet } = this.props;
@@ -104,6 +107,8 @@ class NewTweet extends React.Component {
   };
 
   handleClose = () => this.setState({ anchorEl: null });
+
+  toggleUploadDialog = () => this.setState(prevState => ({ open: !prevState.open }));
 
   render() {
     const {
@@ -147,13 +152,19 @@ class NewTweet extends React.Component {
             autoFocus
           />
           <Buttons>
-            <RoundedButton color="primary" variant="outlined" onClick={this.onClickUpload}>
+            <RoundedButton color="primary" variant="outlined" onClick={this.toggleUploadDialog}>
               アップロード
             </RoundedButton>{' '}
             <RoundedButton color="primary" disabled={disabled} onClick={this.onClickTweet}>
               ツイート
             </RoundedButton>
           </Buttons>
+          <Dialog open={this.state.open} onClose={this.toggleUploadDialog}>
+            <DialogTitle>ファイルアップロード</DialogTitle>
+            <UploaderContainer>
+              <x-uploader />
+            </UploaderContainer>
+          </Dialog>
         </Wrapper>
         <PopMessage anchorEl={anchorEl} handleClose={this.handleClose}>
           {message(type)}
