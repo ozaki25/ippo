@@ -45,11 +45,11 @@ class XUploader extends HTMLElement {
         this.dispatch({ url: `https://s3-ap-northeast-1.amazonaws.com/${bucket}/${name}`, name });
       } else {
         console.log(putFileResponse);
-        this.onError({ error: 'Failed' });
+        this.dispatch({ error: 'Failed' });
       }
     } catch (e) {
       console.log(e);
-      this.onError({ error: e });
+      this.dispatch({ error: e });
     }
   };
 }
