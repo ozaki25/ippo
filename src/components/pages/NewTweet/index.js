@@ -73,6 +73,7 @@ class NewTweet extends React.Component {
       open: false,
     };
     this.tweet = React.createRef();
+    window.addEventListener('uploaded', this.onUploaded);
   }
 
   componentDidMount() {
@@ -109,6 +110,21 @@ class NewTweet extends React.Component {
   handleClose = () => this.setState({ anchorEl: null });
 
   toggleUploadDialog = () => this.setState(prevState => ({ open: !prevState.open }));
+
+  onUploaded = e => {
+    const {
+      detail: { url, error },
+    } = e;
+    if (error) {
+      alert('アップロードに失敗しました');
+    } else {
+      this.setState(prevState => ({
+        tweet: `${url}
+${prevState.tweet}`,
+      }));
+      this.toggleUploadDialog();
+    }
+  };
 
   render() {
     const {
