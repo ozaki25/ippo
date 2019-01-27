@@ -155,7 +155,7 @@ ${prevState.tweet}`,
           {error && <Typography color="error">{error}</Typography>}
           <TextField
             name="tweet"
-            rows="4"
+            rows="6"
             margin="none"
             placeholder="いまどうしてる？"
             InputProps={inputProps}
