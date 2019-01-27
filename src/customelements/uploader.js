@@ -42,7 +42,7 @@ class XUploader extends HTMLElement {
       const { url, bucket } = await getUploadUrlResponse.json();
       const putFileResponse = await this.putFile({ url, file, type });
       if (putFileResponse.ok) {
-        this.dispatch({ url: `https://s3-ap-northeast-1.amazonaws.com/${bucket}/${name}`, name });
+        this.dispatch({ url: encodeURI(`https://s3-ap-northeast-1.amazonaws.com/${bucket}/${name}`), name });
       } else {
         console.log(putFileResponse);
         this.dispatch({ error: 'Failed' });
