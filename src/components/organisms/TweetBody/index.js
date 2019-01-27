@@ -16,9 +16,7 @@ const StyledLink = styled(Link)`
   text-decoration: none;
 `;
 
-const TweetBody = ({ text, bigText }) => {
-  if (typeof text !== 'string')
-    return <StyledTweetBody bigText={bigText ? 1 : 0}>{text}</StyledTweetBody>;
+const linkHashtag = text => {
   const hashtagList = tweetFormat.detectHashtag(text);
   let tmp = text;
   const result = hashtagList.map((hashtag, i) => {
@@ -34,7 +32,14 @@ const TweetBody = ({ text, bigText }) => {
       </StyledLink>,
     ];
   });
-  return <StyledTweetBody bigText={bigText ? 1 : 0}>{[...result, tmp].flat()}</StyledTweetBody>;
+  return [[...result, tmp].flat()];
+};
+
+const TweetBody = ({ text, bigText }) => {
+  if (typeof text !== 'string')
+    return <StyledTweetBody bigText={bigText ? 1 : 0}>{text}</StyledTweetBody>;
+  const tweet = linkHashtag(text);
+  return <StyledTweetBody bigText={bigText ? 1 : 0}>{tweet}</StyledTweetBody>;
 };
 
 TweetBody.displayName = 'TweetBody';
