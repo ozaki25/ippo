@@ -16,25 +16,53 @@ const StyledLink = styled(Link)`
   text-decoration: none;
 `;
 
+const linkHashtag = textList => {
+  return textList.map(text => {
+    if (typeof text !== 'string') return text;
+    const hashtagList = tweetFormat.detectHashtag(text);
+    let tmp = text;
+    const result = hashtagList.map((hashtag, i) => {
+      const [before, ...after] = tmp.split(hashtag);
+      tmp = after.join(hashtag);
+      return [
+        before,
+        <StyledLink
+          to={`${ROUTES.Tweets}?hashtag=${hashtag.replace('#', '')}`}
+          key={`${hashtag}${i}`}
+        >
+          {hashtag}
+        </StyledLink>,
+      ];
+    });
+    return [[...result, tmp].flat()];
+  });
+};
+
+const linkUrl = textList => {
+  return textList.map(text => {
+    if (typeof text !== 'string') return text;
+    const urlList = tweetFormat.detectUrl(text);
+    let tmp = text;
+    const result = urlList.map((url, i) => {
+      const [before, ...after] = tmp.split(url);
+      tmp = after.join(url);
+      return [
+        before,
+        <a href={url} key={`${url}${i}`}>
+          {url}
+        </a>,
+      ];
+    });
+    return [[...result, tmp].flat()];
+  });
+};
+
 const TweetBody = ({ text, bigText }) => {
   if (typeof text !== 'string')
     return <StyledTweetBody bigText={bigText ? 1 : 0}>{text}</StyledTweetBody>;
-  const hashtagList = tweetFormat.detectHashtag(text);
-  let tmp = text;
-  const result = hashtagList.map((hashtag, i) => {
-    const [before, ...after] = tmp.split(hashtag);
-    tmp = after.join(hashtag);
-    return [
-      before,
-      <StyledLink
-        to={`${ROUTES.Tweets}?hashtag=${hashtag.replace('#', '')}`}
-        key={`${hashtag}${i}`}
-      >
-        {hashtag}
-      </StyledLink>,
-    ];
-  });
-  return <StyledTweetBody bigText={bigText ? 1 : 0}>{[...result, tmp].flat()}</StyledTweetBody>;
+  const tmpTweet = linkUrl([text]);
+  const tmp2Tweet = linkHashtag(tmpTweet);
+  return <StyledTweetBody bigText={bigText ? 1 : 0}>{tmp2Tweet}</StyledTweetBody>;
 };
 
 TweetBody.displayName = 'TweetBody';
