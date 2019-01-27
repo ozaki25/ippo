@@ -147,8 +147,7 @@ describe('#detectUrl', () => {
         ]);
       });
     });
-    // 未対応
-    describe.skip('日本語を含む場合', () => {
+    describe('日本語を含む場合', () => {
       test('すべて返ること', () => {
         const text = `テストツイートhttps://qiita.com/search?q=日本語 です
         テストツイート`;
