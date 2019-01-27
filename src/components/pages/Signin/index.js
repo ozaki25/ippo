@@ -69,9 +69,11 @@ class Signin extends React.Component {
   };
 
   webauthSignin = async () => {
+    if (!navigator.credentials) alert('お使いのブラウザではこの機能を使うことができません');
     const { rawId, uid } = this.props;
     if (!rawId) {
-      alert('認証情報の登録が確認できませんでした。');
+      alert(`認証情報の登録が確認できませんでした。
+      ログインして認証情報を登録するとご利用できます。`);
       return;
     }
     const result = await webAuthentication.runAssertion(rawId);
