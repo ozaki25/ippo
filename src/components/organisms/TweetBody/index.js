@@ -18,7 +18,6 @@ const StyledLink = styled(Link)`
 
 const linkHashtag = textList => {
   return textList.map(text => {
-    console.log(text);
     if (typeof text !== 'string') return text;
     const hashtagList = tweetFormat.detectHashtag(text);
     let tmp = text;
