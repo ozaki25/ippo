@@ -73,7 +73,7 @@ class Signin extends React.Component {
     const { rawId, uid } = this.props;
     if (!rawId) {
       alert(`認証情報の登録が確認できませんでした。
-      ログインして認証情報を登録するとご利用できます。`);
+ログインして認証情報を登録するとご利用できます。`);
       return;
     }
     const result = await webAuthentication.runAssertion(rawId);
