@@ -24,8 +24,19 @@ https://github.com/ozaki25/ippo/commit/08a791084bc78c7990153d06c06068c2e1457c01#
   ),
 };
 
-stories.add('通常パターン', () => <TweetBody {...props} />);
+const propsLinkAndHashtag = {
+  text: text(
+    'text',
+    `リンク有りのツイート
+https://github.com/ozaki25/ippo/commit/08a791084bc78c7990153d06c06068c2e1457c01#diff-ded5796553e17f3b91a36dd3fa989d76L79
+#ThinkAtomicDesign`,
+  ),
+};
 
 stories.add('文字サイズ大きめ', () => <TweetBody {...props} bigText />);
 
+stories.add('ハッシュタグ有り', () => <TweetBody {...props} />);
+
 stories.add('リンク有り', () => <TweetBody {...propsLink} />);
+
+stories.add('リンク/ハッシュタグ有り', () => <TweetBody {...propsLinkAndHashtag} />);
