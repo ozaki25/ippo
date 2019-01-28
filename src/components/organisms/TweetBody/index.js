@@ -17,7 +17,9 @@ const StyledLink = styled(Link)`
 `;
 
 const linkHashtag = textList => {
+  console.log('hashtag', textList);
   return textList.map(text => {
+    console.log('hashtag', text);
     if (typeof text !== 'string') return text;
     const hashtagList = tweetFormat.detectHashtag(text);
     let tmp = text;
@@ -34,27 +36,29 @@ const linkHashtag = textList => {
         </StyledLink>,
       ];
     });
-    return [[...result, tmp].flat()];
+    return [...result, tmp].flat();
   });
 };
 
 const linkUrl = textList => {
-  return textList.map(text => {
-    if (typeof text !== 'string') return text;
-    const urlList = tweetFormat.detectUrl(text);
-    let tmp = text;
-    const result = urlList.map((url, i) => {
-      const [before, ...after] = tmp.split(url);
-      tmp = after.join(url);
-      return [
-        before,
-        <a href={url} key={`${url}${i}`}>
-          {url}
-        </a>,
-      ];
-    });
-    return [[...result, tmp].flat()];
-  });
+  return textList
+    .map(text => {
+      if (typeof text !== 'string') return text;
+      const urlList = tweetFormat.detectUrl(text);
+      let tmp = text;
+      const result = urlList.map((url, i) => {
+        const [before, ...after] = tmp.split(url);
+        tmp = after.join(url);
+        return [
+          before,
+          <a href={url} key={`${url}${i}`}>
+            {url}
+          </a>,
+        ];
+      });
+      return [...result, tmp].flat();
+    })
+    .flat();
 };
 
 const TweetBody = ({ text, bigText }) => {
