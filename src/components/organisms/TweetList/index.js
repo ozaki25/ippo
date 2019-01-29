@@ -11,7 +11,7 @@ const TweetList = ({ items, loadMore, hasMore, history }) => (
     pageStart={0}
     loadMore={loadMore}
     hasMore={hasMore}
-    loader={<Spinner key={items.length} />}
+    loader={null}
     threshold={300}
   >
     {items.map(item => (
