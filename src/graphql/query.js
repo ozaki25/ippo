@@ -168,6 +168,7 @@ const tweet = gql`
         time
         hashtag
       }
+      likes
     }
   }
 `;
@@ -188,6 +189,7 @@ const tweets = gql`
           time
           hashtag
         }
+        likes
       }
       startId
       event {
