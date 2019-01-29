@@ -5,7 +5,7 @@ import Spinner from 'src/components/atoms/Spinner';
 import Tweet from 'src/components/organisms/Tweet';
 import ROUTES from 'src/constants/routes';
 
-const TweetList = ({ items, loadMore, hasMore, history }) => (
+const TweetList = ({ items, loadMore, hasMore, history, onClickReply, onClickLike }) => (
   <InfiniteScroll
     key={items.length}
     pageStart={0}
@@ -22,9 +22,8 @@ const TweetList = ({ items, loadMore, hasMore, history }) => (
           if (['a', 'svg', 'path'].includes(e.target.tagName.toLowerCase())) return;
           history.push(`${ROUTES.Tweet.replace(':id', item.id)}?hashtag=${item.hashtag}`);
         }}
-        onClickReply={() =>
-          history.push(`${ROUTES.NewTweet}?hashtag=${item.hashtag}&parent=${item.id}`)
-        }
+        onClickReply={() => onClickReply({ hashtag: item.hashtag, tweetid: item.id })}
+        onClickLike={() => onClickLike({ hashtag: item.hashtag, tweetid: item.id })}
       />
     ))}
   </InfiniteScroll>
@@ -46,6 +45,8 @@ TweetList.propTypes = {
   history: propTypes.shape({
     push: propTypes.func,
   }).isRequired,
+  onClickReply: propTypes.func.isRequired,
+  onClickLike: propTypes.func.isRequired,
 };
 
 TweetList.defaultProps = {
