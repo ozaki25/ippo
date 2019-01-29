@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { text } from '@storybook/addon-knobs';
+import { action } from '@storybook/addon-actions';
 import TweetDetail from '.';
 
 const stories = storiesOf('organisms/TweetDetail', module);
@@ -16,6 +17,8 @@ const props = {
   #ThinkAtomicDesign`,
   ),
   time: text('time', '2019/01/19 01:44'),
+  onClickReply: action('reply'),
+  onClickLike: action('like'),
 };
 
 stories.add('通常パターン', () => <TweetDetail {...props} />);

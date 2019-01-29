@@ -14,7 +14,7 @@ import TWEET_WORD from 'src/constants/tweetWord';
 
 const TweetContainer = styled.div`
   padding-bottom: 150px;
-`
+`;
 
 class Tweets extends React.Component {
   componentDidMount() {
@@ -77,6 +77,18 @@ class Tweets extends React.Component {
     );
   };
 
+  onClickReply = ({ hashtag, tweetid }) =>
+    this.props.history.push(`${ROUTES.NewTweet}?hashtag=${hashtag}&parent=${tweetid}`);
+
+  onClickLike = async ({ hashtag, tweetid }) => {
+    const {
+      addLike,
+      authUser: { uid },
+    } = this.props;
+    const result = await addLike({ variables: { uid, hashtag, tweetid } });
+    console.log(result);
+  };
+
   render() {
     const {
       data: {
@@ -116,6 +128,8 @@ class Tweets extends React.Component {
                 ...tweet,
                 time: dateFormat.datetimeJa(tweet.time),
               }))}
+              onClickReply={this.onClickReply}
+              onClickLike={this.onClickLike}
               history={history}
             />
           </TweetContainer>
@@ -139,6 +153,8 @@ Tweets.propTypes = {
           text: propTypes.string.isRequired,
           time: propTypes.string.isRequired,
           hashtag: propTypes.string.isRequired,
+          comments: propTypes.array,
+          likes: propTypes.array,
         }),
       ),
       startId: propTypes.string,
@@ -160,6 +176,7 @@ Tweets.propTypes = {
       limit: propTypes.number.isRequired,
     }),
   }),
+  addLike: propTypes.func.isRequired,
   authUser: propTypes.shape({
     displayName: propTypes.string.isRequired,
     uid: propTypes.string.isRequired,
