@@ -41,6 +41,7 @@ const props = fixedTweet => ({
       limit: 10,
     },
   },
+  addLike: action('add like'),
   authUser: {
     uid: '123',
     displayName: 'テストユーザ',

@@ -86,6 +86,8 @@ http://atomicdesign.bradfrost.com/chapter-4/
   history: {
     push: action('push'),
   },
+  onClickReply: action('reply'),
+  onClickLike: action('like'),
 };
 
 stories.add('通常パターン', () => <TweetList {...props} />);

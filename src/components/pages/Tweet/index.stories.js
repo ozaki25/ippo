@@ -17,8 +17,10 @@ const props = ({ comments }) => ({
       hashtag: 'test',
       comments,
     },
+    variables: { hashtag: 'tag' },
     refetch: action('refetch'),
   },
+  addLike: action('add like'),
   authUser: {
     uid: '123',
     displayName: 'テストユーザ',
