@@ -14,10 +14,10 @@ class Tweet extends React.Component {
 
   onClickNewTweet = () => {
     const {
-      data: { variables },
       history,
+      data: { tweet, variables },
     } = this.props;
-    history.push(`${ROUTES.NewTweet}?hashtag=${variables.hashtag}`);
+    history.push(`${ROUTES.NewTweet}?hashtag=${variables.hashtag}&parent=${tweet.id}`);
   };
 
   onClickReply = () => {
