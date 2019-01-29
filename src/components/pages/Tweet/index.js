@@ -64,6 +64,7 @@ class Tweet extends React.Component {
             text={tweet.text}
             time={dateFormat.datetimeJa(tweet.time)}
             comments={tweet.comments}
+            likes={tweet.likes}
             onClickReply={this.onClickReply}
             onClickLike={this.onClickLike}
           />
@@ -86,6 +87,7 @@ Tweet.propTypes = {
       time: propTypes.string.isRequired,
       hashtag: propTypes.string.isRequired,
       comments: propTypes.arrayOf(propTypes.object),
+      tweets: propTypes.arrayOf(propTypes.string),
     }),
     refetch: propTypes.func,
   }),
