@@ -153,6 +153,8 @@ Tweets.propTypes = {
           text: propTypes.string.isRequired,
           time: propTypes.string.isRequired,
           hashtag: propTypes.string.isRequired,
+          comments: propTypes.array,
+          likes: propTypes.array,
         }),
       ),
       startId: propTypes.string,
