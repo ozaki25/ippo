@@ -83,6 +83,7 @@ http://atomicdesign.bradfrost.com/chapter-4/
       time: '12月10日',
     },
   ],
+  uid: '123',
   history: {
     push: action('push'),
   },

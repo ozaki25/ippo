@@ -130,6 +130,7 @@ class Tweets extends React.Component {
               }))}
               onClickReply={this.onClickReply}
               onClickLike={this.onClickLike}
+              uid={authUser.uid}
               history={history}
             />
           </TweetContainer>
