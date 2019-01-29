@@ -48,6 +48,14 @@ const createUser = gql`
   }
 `;
 
+const addLikeToTweet = gql`
+  mutation addLikeToTweet($uid: String, $hashtag: String, $tweetid: String) {
+    addLikeToTweet(uid: $uid, hashtag: $hashtag, tweetid: $tweetid) {
+      result
+    }
+  }
+`;
+
 const readNotification = gql`
   mutation readNotification($uid: String, $notificationId: String) {
     readNotification(uid: $uid, notificationId: $notificationId) {
@@ -69,6 +77,7 @@ export default {
   createEvent,
   createTweet,
   createUser,
+  addLikeToTweet,
   readNotification,
   excuteUpdateExternalEvents,
 };
