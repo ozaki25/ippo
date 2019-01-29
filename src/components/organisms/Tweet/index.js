@@ -31,6 +31,7 @@ const Tweet = ({
   time,
   comments,
   likes,
+  liked,
   fixed,
   noFooter,
   onClick,
@@ -50,6 +51,7 @@ const Tweet = ({
           <TweetFooter
             replyCount={comments ? comments.length : 0}
             likeCount={likes ? likes.length : 0}
+            liked={liked}
             onClickReply={onClickReply}
             onClickRetweet={todo}
             onClickLike={onClickLike}
@@ -69,6 +71,7 @@ Tweet.propTypes = {
   time: propTypes.string.isRequired,
   comments: propTypes.array,
   likes: propTypes.array,
+  liked: propTypes.bool,
   fixed: propTypes.bool,
   noFooter: propTypes.bool,
   onClick: propTypes.func,
@@ -79,6 +82,7 @@ Tweet.propTypes = {
 Tweet.defaultProps = {
   comments: [],
   likes: [],
+  liked: false,
   fixed: false,
   noFooter: false,
   onClick: null,

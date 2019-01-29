@@ -19,7 +19,16 @@ const styles = {
 };
 
 const TweetFooter = withStyles(styles)(
-  ({ replyCount, retweetCount, likeCount, classes, onClickReply, onClickRetweet, onClickLike }) => (
+  ({
+    replyCount,
+    retweetCount,
+    likeCount,
+    liked,
+    classes,
+    onClickReply,
+    onClickRetweet,
+    onClickLike,
+  }) => (
     <>
       <TweetFooterAction>
         <IconButton onClick={onClickReply} className={classes.smallIcon}>
@@ -39,7 +48,7 @@ const TweetFooter = withStyles(styles)(
       </TweetFooterAction>
       <TweetFooterAction>
         <IconButton onClick={onClickLike} className={classes.smallIcon}>
-          <FavoriteBorder fontSize="inherit" color="action" />
+          <FavoriteBorder fontSize="inherit" color={liked ? 'secondary' : 'action'} />
         </IconButton>
         <Typography color="textSecondary" inline>
           {likeCount}
@@ -55,6 +64,7 @@ TweetFooter.propTypes = {
   replyCount: propTypes.number,
   retweetCount: propTypes.number,
   likeCount: propTypes.number,
+  liked: propTypes.bool,
   onClickReply: propTypes.func,
   onClickRetweet: propTypes.func.isRequired,
   onClickLike: propTypes.func.isRequired,
@@ -64,6 +74,7 @@ TweetFooter.defaultProps = {
   replyCount: 0,
   retweetCount: 0,
   likeCount: 0,
+  liked: false,
   onClickReply: null,
 };
 

@@ -39,7 +39,7 @@ const Item = styled.div`
 
 const todo = () => console.log('TODO');
 
-const TweetDetail = ({ name, text, time, comments, likes, onClickReply, onClickLike }) => (
+const TweetDetail = ({ name, text, time, comments, likes, liked, onClickReply, onClickLike }) => (
   <Container>
     <TweetContainer>
       <TweetHeader>
@@ -60,6 +60,7 @@ const TweetDetail = ({ name, text, time, comments, likes, onClickReply, onClickL
       <TweetFooter
         replyCount={comments ? comments.length : 0}
         likeCount={likes ? likes.length : 0}
+        liked={liked}
         onClickReply={onClickReply}
         onClickRetweet={todo}
         onClickLike={onClickLike}
@@ -87,6 +88,7 @@ TweetDetail.propTypes = {
   time: propTypes.string.isRequired,
   comments: propTypes.array,
   likes: propTypes.array,
+  liked: propTypes.bool,
   onClickReply: propTypes.func,
   onClickLike: propTypes.func,
 };
@@ -94,6 +96,7 @@ TweetDetail.propTypes = {
 TweetDetail.defaultProps = {
   comments: [],
   likes: [],
+  liked: false,
   onClickReply: null,
   onClickLike: null,
 };

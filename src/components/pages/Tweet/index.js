@@ -65,6 +65,7 @@ class Tweet extends React.Component {
             time={dateFormat.datetimeJa(tweet.time)}
             comments={tweet.comments}
             likes={tweet.likes}
+            liked={tweet.likes && tweet.likes.includes(authUser.uid)}
             onClickReply={this.onClickReply}
             onClickLike={this.onClickLike}
           />

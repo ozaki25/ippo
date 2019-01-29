@@ -80,6 +80,7 @@ const props = {
       time: '12月10日',
     },
   ],
+  uid: '123',
   history: {
     push: jest.fn(),
   },

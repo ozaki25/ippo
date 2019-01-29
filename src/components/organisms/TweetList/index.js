@@ -5,7 +5,7 @@ import Spinner from 'src/components/atoms/Spinner';
 import Tweet from 'src/components/organisms/Tweet';
 import ROUTES from 'src/constants/routes';
 
-const TweetList = ({ items, loadMore, hasMore, history, onClickReply, onClickLike }) => (
+const TweetList = ({ items, loadMore, hasMore, uid, history, onClickReply, onClickLike }) => (
   <InfiniteScroll
     key={items.length}
     pageStart={0}
@@ -18,6 +18,7 @@ const TweetList = ({ items, loadMore, hasMore, history, onClickReply, onClickLik
       <Tweet
         key={item.id}
         {...item}
+        liked={item.likes && item.likes.includes(uid)}
         onClick={e => {
           if (['a', 'svg', 'path'].includes(e.target.tagName.toLowerCase())) return;
           history.push(`${ROUTES.Tweet.replace(':id', item.id)}?hashtag=${item.hashtag}`);
@@ -42,6 +43,7 @@ TweetList.propTypes = {
   ),
   loadMore: propTypes.func.isRequired,
   hasMore: propTypes.bool.isRequired,
+  uid: propTypes.string.isRequired,
   history: propTypes.shape({
     push: propTypes.func,
   }).isRequired,
