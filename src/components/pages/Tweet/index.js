@@ -20,9 +20,29 @@ class Tweet extends React.Component {
     history.push(`${ROUTES.NewTweet}?hashtag=${variables.hashtag}`);
   };
 
+  onClickReply = () => {
+    const {
+      history,
+      data: { tweet, variables },
+    } = this.props;
+    history.push(`${ROUTES.NewTweet}?hashtag=${variables.hashtag}&parent=${tweet.id}`);
+  };
+
+  onClickLike = async () => {
+    const {
+      addLike,
+      authUser,
+      data: { variables, tweet },
+    } = this.props;
+    const result = await addLike({
+      variables: { uid: authUser.uid, hashtag: variables.hashtag, tweetid: tweet.id },
+    });
+    console.log(result);
+  };
+
   render() {
     const {
-      data: { tweet, loading, variables },
+      data: { tweet, loading },
       authUser,
       history,
       firebase,
@@ -44,9 +64,8 @@ class Tweet extends React.Component {
             text={tweet.text}
             time={dateFormat.datetimeJa(tweet.time)}
             comments={tweet.comments}
-            onClickReply={() =>
-              history.push(`${ROUTES.NewTweet}?hashtag=${variables.hashtag}&parent=${tweet.id}`)
-            }
+            onClickReply={this.onClickReply}
+            onClickLike={this.onClickLike}
           />
         )}
         <FloatingButton icon="edit" onClick={this.onClickNewTweet} />
@@ -70,6 +89,7 @@ Tweet.propTypes = {
     }),
     refetch: propTypes.func,
   }),
+  addLike: propTypes.func.isRequired,
   authUser: propTypes.shape({
     displayName: propTypes.string.isRequired,
     uid: propTypes.string.isRequired,
