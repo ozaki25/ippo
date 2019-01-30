@@ -84,9 +84,11 @@ class Tweets extends React.Component {
     const {
       addLike,
       authUser: { uid },
+      data: { refetch },
     } = this.props;
     const result = await addLike({ variables: { uid, hashtag, tweetid } });
     console.log(result);
+    refetch();
   };
 
   render() {
