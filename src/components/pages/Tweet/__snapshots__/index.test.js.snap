@@ -80,6 +80,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
     url=""
   >
     <Tweet
+      addLike={[MockFunction]}
       authUser={
         Object {
           "displayName": "テストユーザ",
@@ -3125,6 +3126,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                                   "root": "MuiModal-root-134",
                                 }
                               }
+                              closeAfterTransition={false}
                               disableAutoFocus={false}
                               disableBackdropClick={false}
                               disableEnforceFocus={false}
@@ -3244,6 +3246,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                               }
                             }
                             className="MuiDialog-root-137"
+                            closeAfterTransition={true}
                             disableBackdropClick={false}
                             disableEscapeKeyDown={false}
                             onClose={[Function]}
@@ -3267,6 +3270,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                                   "root": "MuiModal-root-134",
                                 }
                               }
+                              closeAfterTransition={true}
                               disableAutoFocus={false}
                               disableBackdropClick={false}
                               disableEnforceFocus={false}
@@ -3353,6 +3357,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                               }
                             }
                             className="MuiDialog-root-137"
+                            closeAfterTransition={true}
                             disableBackdropClick={false}
                             disableEscapeKeyDown={false}
                             onClose={[Function]}
@@ -3376,6 +3381,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                                   "root": "MuiModal-root-134",
                                 }
                               }
+                              closeAfterTransition={true}
                               disableAutoFocus={false}
                               disableBackdropClick={false}
                               disableEnforceFocus={false}
@@ -3444,7 +3450,10 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
             >
               <TweetDetail
                 comments={Array []}
+                liked={false}
+                likes={Array []}
                 name="テストユーザ"
+                onClickLike={[Function]}
                 onClickReply={[Function]}
                 text="投稿内容"
                 time="2018/01/01 12:34"
@@ -4336,6 +4345,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                             </WithStyles(Divider)>
                             <TweetFooter
                               likeCount={0}
+                              liked={false}
                               onClickLike={[Function]}
                               onClickReply={[Function]}
                               onClickRetweet={[Function]}
@@ -4349,6 +4359,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                                   }
                                 }
                                 likeCount={0}
+                                liked={false}
                                 onClickLike={[Function]}
                                 onClickReply={[Function]}
                                 onClickRetweet={[Function]}

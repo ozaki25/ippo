@@ -57,10 +57,13 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
     <Tweet
       comments={Array []}
       fixed={false}
+      liked={false}
+      likes={Array []}
       name="ozaki25"
       noFooter={false}
       onClick={null}
-      onClickReply={null}
+      onClickLike={[MockFunction]}
+      onClickReply={[MockFunction]}
       text="Storybookいいところ
   - どんなコンポーネントが存在してるか可視化できる
   - コンポーネントの扱い方が分かる
@@ -448,8 +451,9 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                   </TweetBody>
                   <TweetFooter
                     likeCount={0}
-                    onClickLike={[Function]}
-                    onClickReply={null}
+                    liked={false}
+                    onClickLike={[MockFunction]}
+                    onClickReply={[MockFunction]}
                     onClickRetweet={[Function]}
                     replyCount={0}
                     retweetCount={0}
@@ -461,8 +465,9 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                         }
                       }
                       likeCount={0}
-                      onClickLike={[Function]}
-                      onClickReply={null}
+                      liked={false}
+                      onClickLike={[MockFunction]}
+                      onClickReply={[MockFunction]}
                       onClickRetweet={[Function]}
                       replyCount={0}
                       retweetCount={0}
@@ -502,7 +507,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                           >
                             <WithStyles(IconButton)
                               className="Component-smallIcon-35"
-                              onClick={null}
+                              onClick={[MockFunction]}
                             >
                               <IconButton
                                 className="Component-smallIcon-35"
@@ -518,14 +523,14 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                                 }
                                 color="default"
                                 disabled={false}
-                                onClick={null}
+                                onClick={[MockFunction]}
                               >
                                 <WithStyles(ButtonBase)
                                   centerRipple={true}
                                   className="MuiIconButton-root-23 Component-smallIcon-35"
                                   disabled={false}
                                   focusRipple={true}
-                                  onClick={null}
+                                  onClick={[MockFunction]}
                                 >
                                   <ButtonBase
                                     centerRipple={true}
@@ -542,7 +547,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                                     disableTouchRipple={false}
                                     disabled={false}
                                     focusRipple={true}
-                                    onClick={null}
+                                    onClick={[MockFunction]}
                                     tabIndex="0"
                                     type="button"
                                   >
@@ -550,7 +555,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                                       className="MuiButtonBase-root-29 MuiIconButton-root-23 Component-smallIcon-35"
                                       disabled={false}
                                       onBlur={[Function]}
-                                      onClick={null}
+                                      onClick={[MockFunction]}
                                       onContextMenu={[Function]}
                                       onFocus={[Function]}
                                       onKeyDown={[Function]}
@@ -1774,7 +1779,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                           >
                             <WithStyles(IconButton)
                               className="Component-smallIcon-35"
-                              onClick={[Function]}
+                              onClick={[MockFunction]}
                             >
                               <IconButton
                                 className="Component-smallIcon-35"
@@ -1790,14 +1795,14 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                                 }
                                 color="default"
                                 disabled={false}
-                                onClick={[Function]}
+                                onClick={[MockFunction]}
                               >
                                 <WithStyles(ButtonBase)
                                   centerRipple={true}
                                   className="MuiIconButton-root-23 Component-smallIcon-35"
                                   disabled={false}
                                   focusRipple={true}
-                                  onClick={[Function]}
+                                  onClick={[MockFunction]}
                                 >
                                   <ButtonBase
                                     centerRipple={true}
@@ -1814,7 +1819,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                                     disableTouchRipple={false}
                                     disabled={false}
                                     focusRipple={true}
-                                    onClick={[Function]}
+                                    onClick={[MockFunction]}
                                     tabIndex="0"
                                     type="button"
                                   >
@@ -1822,7 +1827,7 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                                       className="MuiButtonBase-root-29 MuiIconButton-root-23 Component-smallIcon-35"
                                       disabled={false}
                                       onBlur={[Function]}
-                                      onClick={[Function]}
+                                      onClick={[MockFunction]}
                                       onContextMenu={[Function]}
                                       onFocus={[Function]}
                                       onKeyDown={[Function]}

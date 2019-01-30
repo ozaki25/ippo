@@ -25,6 +25,7 @@ const props = {
       limit: 10,
     },
   },
+  addLike: jest.fn(),
   authUser: {
     uid: '123',
     displayName: 'テストユーザ',
@@ -34,7 +35,7 @@ const props = {
     goBack: jest.fn(),
   },
   firebase: {
-    doSignOut:jest.fn()
+    doSignOut: jest.fn(),
   },
 };
 

@@ -108,9 +108,12 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
       <Tweet
         comments={Array []}
         fixed={true}
+        liked={false}
+        likes={Array []}
         name="ozaki25"
         noFooter={true}
         onClick={null}
+        onClickLike={null}
         onClickReply={null}
         text={
           <ForwardRef>
@@ -3707,9 +3710,12 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
       <Tweet
         comments={Array []}
         fixed={true}
+        liked={false}
+        likes={Array []}
         name="ozaki25"
         noFooter={true}
         onClick={null}
+        onClickLike={null}
         onClickReply={null}
         text={
           <ForwardRef>

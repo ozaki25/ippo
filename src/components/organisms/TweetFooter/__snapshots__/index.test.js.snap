@@ -29,6 +29,7 @@ exports[`should match snapshot: TweetFooter/nomal 1`] = `
   >
     <TweetFooter
       likeCount={0}
+      liked={false}
       onClickLike={[MockFunction]}
       onClickReply={[MockFunction]}
       onClickRetweet={[MockFunction]}
@@ -42,6 +43,7 @@ exports[`should match snapshot: TweetFooter/nomal 1`] = `
           }
         }
         likeCount={0}
+        liked={false}
         onClickLike={[MockFunction]}
         onClickReply={[MockFunction]}
         onClickRetweet={[MockFunction]}

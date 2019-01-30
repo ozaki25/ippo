@@ -143,6 +143,9 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
         ]
       }
       loadMore={[MockFunction]}
+      onClickLike={[MockFunction]}
+      onClickReply={[MockFunction]}
+      uid="123"
     >
       <InfiniteScroll
         element="div"
@@ -165,9 +168,12 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
             fixed={false}
             id="1"
             key="1"
+            liked={false}
+            likes={Array []}
             name="ozaki25"
             noFooter={false}
             onClick={[Function]}
+            onClickLike={[Function]}
             onClickReply={[Function]}
             text="PagesとOrganisms以外は状態を持たせない
   - それ以外のコンポーネントはステートレスなので簡単に作れる
@@ -553,6 +559,7 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                         </TweetBody>
                         <TweetFooter
                           likeCount={0}
+                          liked={false}
                           onClickLike={[Function]}
                           onClickReply={[Function]}
                           onClickRetweet={[Function]}
@@ -566,6 +573,7 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                               }
                             }
                             likeCount={0}
+                            liked={false}
                             onClickLike={[Function]}
                             onClickReply={[Function]}
                             onClickRetweet={[Function]}
@@ -2518,9 +2526,12 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
             fixed={false}
             id="2"
             key="2"
+            liked={false}
+            likes={Array []}
             name="ozaki25"
             noFooter={false}
             onClick={[Function]}
+            onClickLike={[Function]}
             onClickReply={[Function]}
             text="コンポーネントマネージャー
   - コンポーネントの管理に責任を持つ人
@@ -2903,6 +2914,7 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                         </TweetBody>
                         <TweetFooter
                           likeCount={0}
+                          liked={false}
                           onClickLike={[Function]}
                           onClickReply={[Function]}
                           onClickRetweet={[Function]}
@@ -2916,6 +2928,7 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                               }
                             }
                             likeCount={0}
+                            liked={false}
                             onClickLike={[Function]}
                             onClickReply={[Function]}
                             onClickRetweet={[Function]}
@@ -4868,9 +4881,12 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
             fixed={false}
             id="3"
             key="3"
+            liked={false}
+            likes={Array []}
             name="ozaki25"
             noFooter={false}
             onClick={[Function]}
+            onClickLike={[Function]}
             onClickReply={[Function]}
             text="Storybookいいところ
   - どんなコンポーネントが存在してるか可視化できる
@@ -5259,6 +5275,7 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                         </TweetBody>
                         <TweetFooter
                           likeCount={0}
+                          liked={false}
                           onClickLike={[Function]}
                           onClickReply={[Function]}
                           onClickRetweet={[Function]}
@@ -5272,6 +5289,7 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                               }
                             }
                             likeCount={0}
+                            liked={false}
                             onClickLike={[Function]}
                             onClickReply={[Function]}
                             onClickRetweet={[Function]}
@@ -7224,9 +7242,12 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
             fixed={false}
             id="4"
             key="4"
+            liked={false}
+            likes={Array []}
             name="ozaki25"
             noFooter={false}
             onClick={[Function]}
+            onClickLike={[Function]}
             onClickReply={[Function]}
             text="不必要にコンポーネント化しすぎた
   AtomicDesignあるあるだと思う
@@ -7609,6 +7630,7 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                         </TweetBody>
                         <TweetFooter
                           likeCount={0}
+                          liked={false}
                           onClickLike={[Function]}
                           onClickReply={[Function]}
                           onClickRetweet={[Function]}
@@ -7622,6 +7644,7 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                               }
                             }
                             likeCount={0}
+                            liked={false}
                             onClickLike={[Function]}
                             onClickReply={[Function]}
                             onClickRetweet={[Function]}
@@ -9574,9 +9597,12 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
             fixed={false}
             id="5"
             key="5"
+            liked={false}
+            likes={Array []}
             name="ozaki25"
             noFooter={false}
             onClick={[Function]}
+            onClickLike={[Function]}
             onClickReply={[Function]}
             text="これかな
   http://atomicdesign.bradfrost.com/chapter-4/ 
@@ -9904,7 +9930,14 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                                 className="c3"
                               >
                                 これかな
-  http://atomicdesign.bradfrost.com/chapter-4/ 
+  
+                                <a
+                                  href="http://atomicdesign.bradfrost.com/chapter-4/"
+                                  key="http://atomicdesign.bradfrost.com/chapter-4/0"
+                                >
+                                  http://atomicdesign.bradfrost.com/chapter-4/
+                                </a>
+                                 
   
                                 <Styled(Link)
                                   key="#ThinkAtomicDesign0"
@@ -9959,6 +9992,7 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                         </TweetBody>
                         <TweetFooter
                           likeCount={0}
+                          liked={false}
                           onClickLike={[Function]}
                           onClickReply={[Function]}
                           onClickRetweet={[Function]}
@@ -9972,6 +10006,7 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                               }
                             }
                             likeCount={0}
+                            liked={false}
                             onClickLike={[Function]}
                             onClickReply={[Function]}
                             onClickRetweet={[Function]}
@@ -11924,9 +11959,12 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
             fixed={false}
             id="6"
             key="6"
+            liked={false}
+            likes={Array []}
             name="ozaki25"
             noFooter={false}
             onClick={[Function]}
+            onClickLike={[Function]}
             onClickReply={[Function]}
             text="AtomicDesignはベースにすぎなくてプロジェクトごとに柔軟に変えていくことも必要
   #ThinkAtomicDesign"
@@ -12306,6 +12344,7 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                         </TweetBody>
                         <TweetFooter
                           likeCount={0}
+                          liked={false}
                           onClickLike={[Function]}
                           onClickReply={[Function]}
                           onClickRetweet={[Function]}
@@ -12319,6 +12358,7 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                               }
                             }
                             likeCount={0}
+                            liked={false}
                             onClickLike={[Function]}
                             onClickReply={[Function]}
                             onClickRetweet={[Function]}
@@ -14271,9 +14311,12 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
             fixed={false}
             id="7"
             key="7"
+            liked={false}
+            likes={Array []}
             name="ozaki25"
             noFooter={false}
             onClick={[Function]}
+            onClickLike={[Function]}
             onClickReply={[Function]}
             text="PagesとOrganismsどの単位でReduxをConnectするか
   #ThinkAtomicDesign"
@@ -14653,6 +14696,7 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                         </TweetBody>
                         <TweetFooter
                           likeCount={0}
+                          liked={false}
                           onClickLike={[Function]}
                           onClickReply={[Function]}
                           onClickRetweet={[Function]}
@@ -14666,6 +14710,7 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                               }
                             }
                             likeCount={0}
+                            liked={false}
                             onClickLike={[Function]}
                             onClickReply={[Function]}
                             onClickRetweet={[Function]}
@@ -16618,9 +16663,12 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
             fixed={false}
             id="8"
             key="8"
+            liked={false}
+            likes={Array []}
             name="ozaki25"
             noFooter={false}
             onClick={[Function]}
+            onClickLike={[Function]}
             onClickReply={[Function]}
             text="コンポーネント指向
   - 見た目と機能をカプセル化
@@ -17003,6 +17051,7 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                         </TweetBody>
                         <TweetFooter
                           likeCount={0}
+                          liked={false}
                           onClickLike={[Function]}
                           onClickReply={[Function]}
                           onClickRetweet={[Function]}
@@ -17016,6 +17065,7 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                               }
                             }
                             likeCount={0}
+                            liked={false}
                             onClickLike={[Function]}
                             onClickReply={[Function]}
                             onClickRetweet={[Function]}
@@ -18968,9 +19018,12 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
             fixed={false}
             id="9"
             key="9"
+            liked={false}
+            likes={Array []}
             name="ozaki25"
             noFooter={false}
             onClick={[Function]}
+            onClickLike={[Function]}
             onClickReply={[Function]}
             text="Template必要なのか
   たしかに使ってない
@@ -19353,6 +19406,7 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                         </TweetBody>
                         <TweetFooter
                           likeCount={0}
+                          liked={false}
                           onClickLike={[Function]}
                           onClickReply={[Function]}
                           onClickRetweet={[Function]}
@@ -19366,6 +19420,7 @@ exports[`should match snapshot: TweetList/nomal 1`] = `
                               }
                             }
                             likeCount={0}
+                            liked={false}
                             onClickLike={[Function]}
                             onClickReply={[Function]}
                             onClickRetweet={[Function]}

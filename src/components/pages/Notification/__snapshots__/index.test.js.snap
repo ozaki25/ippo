@@ -3124,6 +3124,7 @@ exports[`should match snapshot: Notification/nomal 1`] = `
                                   "root": "MuiModal-root-134",
                                 }
                               }
+                              closeAfterTransition={false}
                               disableAutoFocus={false}
                               disableBackdropClick={false}
                               disableEnforceFocus={false}
@@ -3243,6 +3244,7 @@ exports[`should match snapshot: Notification/nomal 1`] = `
                               }
                             }
                             className="MuiDialog-root-137"
+                            closeAfterTransition={true}
                             disableBackdropClick={false}
                             disableEscapeKeyDown={false}
                             onClose={[Function]}
@@ -3266,6 +3268,7 @@ exports[`should match snapshot: Notification/nomal 1`] = `
                                   "root": "MuiModal-root-134",
                                 }
                               }
+                              closeAfterTransition={true}
                               disableAutoFocus={false}
                               disableBackdropClick={false}
                               disableEnforceFocus={false}
@@ -3352,6 +3355,7 @@ exports[`should match snapshot: Notification/nomal 1`] = `
                               }
                             }
                             className="MuiDialog-root-137"
+                            closeAfterTransition={true}
                             disableBackdropClick={false}
                             disableEscapeKeyDown={false}
                             onClose={[Function]}
@@ -3375,6 +3379,7 @@ exports[`should match snapshot: Notification/nomal 1`] = `
                                   "root": "MuiModal-root-134",
                                 }
                               }
+                              closeAfterTransition={true}
                               disableAutoFocus={false}
                               disableBackdropClick={false}
                               disableEnforceFocus={false}

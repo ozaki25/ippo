@@ -3124,6 +3124,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                   "root": "MuiModal-root-134",
                                 }
                               }
+                              closeAfterTransition={false}
                               disableAutoFocus={false}
                               disableBackdropClick={false}
                               disableEnforceFocus={false}
@@ -3243,6 +3244,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                               }
                             }
                             className="MuiDialog-root-137"
+                            closeAfterTransition={true}
                             disableBackdropClick={false}
                             disableEscapeKeyDown={false}
                             onClose={[Function]}
@@ -3266,6 +3268,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                   "root": "MuiModal-root-134",
                                 }
                               }
+                              closeAfterTransition={true}
                               disableAutoFocus={false}
                               disableBackdropClick={false}
                               disableEnforceFocus={false}
@@ -3352,6 +3355,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                               }
                             }
                             className="MuiDialog-root-137"
+                            closeAfterTransition={true}
                             disableBackdropClick={false}
                             disableEscapeKeyDown={false}
                             onClose={[Function]}
@@ -3375,6 +3379,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                   "root": "MuiModal-root-134",
                                 }
                               }
+                              closeAfterTransition={true}
                               disableAutoFocus={false}
                               disableBackdropClick={false}
                               disableEnforceFocus={false}
@@ -4425,7 +4430,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                             class="MuiInputBase-input-178 MuiFilledInput-input-163 MuiInputBase-inputMultiline-180 MuiFilledInput-inputMultiline-165"
                             name="tweet"
                             placeholder="いまどうしてる？"
-                            rows="4"
+                            rows="6"
                           >
                             
 #test_event
@@ -4438,7 +4443,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                       onChange={[Function]}
                       placeholder="いまどうしてる？"
                       required={false}
-                      rows="4"
+                      rows="6"
                       select={false}
                       value="
 #test_event"
@@ -4480,7 +4485,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                     class="MuiInputBase-input-178 MuiFilledInput-input-163 MuiInputBase-inputMultiline-180 MuiFilledInput-inputMultiline-165"
                                     name="tweet"
                                     placeholder="いまどうしてる？"
-                                    rows="4"
+                                    rows="6"
                                   >
                                     
 #test_event
@@ -4491,7 +4496,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                               name="tweet"
                               onChange={[Function]}
                               placeholder="いまどうしてる？"
-                              rows="4"
+                              rows="6"
                               style={
                                 Object {
                                   "paddingTop": "10px",
@@ -4527,7 +4532,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                       class="MuiInputBase-input-178 MuiFilledInput-input-163 MuiInputBase-inputMultiline-180 MuiFilledInput-inputMultiline-165"
                                       name="tweet"
                                       placeholder="いまどうしてる？"
-                                      rows="4"
+                                      rows="6"
                                     >
                                       
 #test_event
@@ -4538,7 +4543,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                 name="tweet"
                                 onChange={[Function]}
                                 placeholder="いまどうしてる？"
-                                rows="4"
+                                rows="6"
                                 style={
                                   Object {
                                     "paddingTop": "10px",
@@ -4575,7 +4580,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                         class="MuiInputBase-input-178 MuiFilledInput-input-163 MuiInputBase-inputMultiline-180 MuiFilledInput-inputMultiline-165"
                                         name="tweet"
                                         placeholder="いまどうしてる？"
-                                        rows="4"
+                                        rows="6"
                                       >
                                         
 #test_event
@@ -4586,7 +4591,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                   name="tweet"
                                   onChange={[Function]}
                                   placeholder="いまどうしてる？"
-                                  rows="4"
+                                  rows="6"
                                   style={
                                     Object {
                                       "paddingTop": "10px",
@@ -4628,7 +4633,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                           class="MuiInputBase-input-178 MuiFilledInput-input-163 MuiInputBase-inputMultiline-180 MuiFilledInput-inputMultiline-165"
                                           name="tweet"
                                           placeholder="いまどうしてる？"
-                                          rows="4"
+                                          rows="6"
                                         >
                                           
 #test_event
@@ -4639,7 +4644,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                     name="tweet"
                                     onChange={[Function]}
                                     placeholder="いまどうしてる？"
-                                    rows="4"
+                                    rows="6"
                                     style={
                                       Object {
                                         "paddingTop": "10px",
@@ -4681,7 +4686,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                             class="MuiInputBase-input-178 MuiFilledInput-input-163 MuiInputBase-inputMultiline-180 MuiFilledInput-inputMultiline-165"
                                             name="tweet"
                                             placeholder="いまどうしてる？"
-                                            rows="4"
+                                            rows="6"
                                           >
                                             
 #test_event
@@ -4708,7 +4713,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                       name="tweet"
                                       onChange={[Function]}
                                       placeholder="いまどうしてる？"
-                                      rows="4"
+                                      rows="6"
                                       style={
                                         Object {
                                           "paddingTop": "10px",
@@ -4738,7 +4743,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                           onFocus={[Function]}
                                           placeholder="いまどうしてる？"
                                           required={false}
-                                          rows="4"
+                                          rows="6"
                                           value="
 #test_event"
                                         />
@@ -5157,6 +5162,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                             }
                           }
                           className="MuiDialog-root-137"
+                          closeAfterTransition={true}
                           disableBackdropClick={false}
                           disableEscapeKeyDown={false}
                           onClose={[Function]}
@@ -5180,6 +5186,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                                 "root": "MuiModal-root-134",
                               }
                             }
+                            closeAfterTransition={true}
                             disableAutoFocus={false}
                             disableBackdropClick={false}
                             disableEnforceFocus={false}
@@ -5285,6 +5292,7 @@ exports[`should match snapshot: NewTweet/nomal 1`] = `
                               "root": "MuiModal-root-134",
                             }
                           }
+                          closeAfterTransition={false}
                           disableAutoFocus={false}
                           disableBackdropClick={false}
                           disableEnforceFocus={false}

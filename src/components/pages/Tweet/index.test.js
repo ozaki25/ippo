@@ -14,6 +14,7 @@ const props = {
     },
     refetch: jest.fn(),
   },
+  addLike: jest.fn(),
   authUser: {
     uid: '123',
     displayName: 'テストユーザ',

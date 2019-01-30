@@ -10,6 +10,8 @@ const props = {
   - UIの修正デバッグが楽
   #ThinkAtomicDesign`,
   time: '2019/01/19 01:44',
+  onClickReply: jest.fn(),
+  onClickLike: jest.fn(),
 };
 
 snapshot('Tweet/nomal', <Tweet {...props} />);
