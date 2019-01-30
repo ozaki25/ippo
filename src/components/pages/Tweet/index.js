@@ -17,7 +17,9 @@ class Tweet extends React.Component {
       history,
       data: { tweet, variables },
     } = this.props;
-    history.push(`${ROUTES.NewTweet}?hashtag=${variables.hashtag}&parent=${tweet.id}`);
+    history.push(
+      `${ROUTES.NewTweet}?hashtag=${variables.hashtag}&parent=${tweet.id}`,
+    );
   };
 
   onClickReply = () => {
@@ -25,19 +27,26 @@ class Tweet extends React.Component {
       history,
       data: { tweet, variables },
     } = this.props;
-    history.push(`${ROUTES.NewTweet}?hashtag=${variables.hashtag}&parent=${tweet.id}`);
+    history.push(
+      `${ROUTES.NewTweet}?hashtag=${variables.hashtag}&parent=${tweet.id}`,
+    );
   };
 
   onClickLike = async () => {
     const {
       addLike,
       authUser,
-      data: { variables, tweet },
+      data: { variables, tweet, refetch },
     } = this.props;
     const result = await addLike({
-      variables: { uid: authUser.uid, hashtag: variables.hashtag, tweetid: tweet.id },
+      variables: {
+        uid: authUser.uid,
+        hashtag: variables.hashtag,
+        tweetid: tweet.id,
+      },
     });
     console.log(result);
+    refetch();
   };
 
   render() {
