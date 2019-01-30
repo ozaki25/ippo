@@ -84,6 +84,8 @@ const props = {
   history: {
     push: jest.fn(),
   },
+  onClickReply: jest.fn(),
+  onClickLike: jest.fn(),
 };
 
 snapshot('TweetList/nomal', <TweetList {...props} />);

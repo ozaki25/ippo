@@ -70,6 +70,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
     url=""
   >
     <Tweets
+      addLike={[MockFunction]}
       authUser={
         Object {
           "displayName": "テストユーザ",
@@ -3144,6 +3145,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                   "root": "MuiModal-root-134",
                                 }
                               }
+                              closeAfterTransition={false}
                               disableAutoFocus={false}
                               disableBackdropClick={false}
                               disableEnforceFocus={false}
@@ -3263,6 +3265,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                               }
                             }
                             className="MuiDialog-root-137"
+                            closeAfterTransition={true}
                             disableBackdropClick={false}
                             disableEscapeKeyDown={false}
                             onClose={[Function]}
@@ -3286,6 +3289,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                   "root": "MuiModal-root-134",
                                 }
                               }
+                              closeAfterTransition={true}
                               disableAutoFocus={false}
                               disableBackdropClick={false}
                               disableEnforceFocus={false}
@@ -3372,6 +3376,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                               }
                             }
                             className="MuiDialog-root-137"
+                            closeAfterTransition={true}
                             disableBackdropClick={false}
                             disableEscapeKeyDown={false}
                             onClose={[Function]}
@@ -3395,6 +3400,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                   "root": "MuiModal-root-134",
                                 }
                               }
+                              closeAfterTransition={true}
                               disableAutoFocus={false}
                               disableBackdropClick={false}
                               disableEnforceFocus={false}
@@ -3512,6 +3518,9 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                         ]
                       }
                       loadMore={[Function]}
+                      onClickLike={[Function]}
+                      onClickReply={[Function]}
+                      uid="123"
                     >
                       <InfiniteScroll
                         element="div"
@@ -3535,9 +3544,12 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                             hashtag="test"
                             id="1"
                             key="1"
+                            liked={false}
+                            likes={Array []}
                             name="テストユーザ"
                             noFooter={false}
                             onClick={[Function]}
+                            onClickLike={[Function]}
                             onClickReply={[Function]}
                             text="投稿内容"
                             time="2018/01/01 12:34"
@@ -3867,6 +3879,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                         </TweetBody>
                                         <TweetFooter
                                           likeCount={0}
+                                          liked={false}
                                           onClickLike={[Function]}
                                           onClickReply={[Function]}
                                           onClickRetweet={[Function]}
@@ -3880,6 +3893,7 @@ exports[`should match snapshot: Tweets/nomal 1`] = `
                                               }
                                             }
                                             likeCount={0}
+                                            liked={false}
                                             onClickLike={[Function]}
                                             onClickReply={[Function]}
                                             onClickRetweet={[Function]}
