@@ -17,9 +17,7 @@ class Tweet extends React.Component {
       history,
       data: { tweet, variables },
     } = this.props;
-    history.push(
-      `${ROUTES.NewTweet}?hashtag=${variables.hashtag}&parent=${tweet.id}`,
-    );
+    history.push(`${ROUTES.NewTweet}?hashtag=${variables.hashtag}&parent=${tweet.id}`);
   };
 
   onClickReply = () => {
@@ -27,9 +25,7 @@ class Tweet extends React.Component {
       history,
       data: { tweet, variables },
     } = this.props;
-    history.push(
-      `${ROUTES.NewTweet}?hashtag=${variables.hashtag}&parent=${tweet.id}`,
-    );
+    history.push(`${ROUTES.NewTweet}?hashtag=${variables.hashtag}&parent=${tweet.id}`);
   };
 
   onClickLike = async () => {
