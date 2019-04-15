@@ -1,0 +1,11 @@
+{
+  "src": "./src/",
+  "dist": "./build/",
+  "jsBudgetLimit": 200,
+  "jsBudgetPath": "./build/**/*.js",
+  "manifestPath": "./build/manifest.json",
+  "readableAssets": {
+    "./public/": "/"
+  },
+  "serverScripts": ["start", "dev", "serve", "server", "watch"]
+}
