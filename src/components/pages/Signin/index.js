@@ -108,7 +108,7 @@ class Signin extends React.Component {
           </Button>
         </ButtonContainer>
         <ButtonContainer>
-          <Button onClick={this.webauthSignin} color="primary" className={classes.nonCaps}>
+          <Button onClick={this.webauthSignin} color="primary" className={classes.nonCaps} disabled>
             生体認証でログイン(β版)
           </Button>
         </ButtonContainer>
