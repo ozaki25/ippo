@@ -99,7 +99,6 @@ class Signin extends React.Component {
   onChange = event => this.setState({ [event.target.name]: event.target.value });
 
   onSubmitPasscode = passcode => {
-    console.log({ passcode, PASSCODE });
     if (passcode === PASSCODE) {
       localStorage.setItem('ippo-passed', 'true');
       this.setState({ passed: true });
