@@ -12,7 +12,9 @@
     "storybook": "NODE_PATH=. start-storybook -p 9009 -s public",
     "build-storybook": "NODE_PATH=. build-storybook -s public",
     "deploy-storybook": "NODE_PATH=. build-storybook -s public && cd storybook-static && git init && git add -A && git commit -m 'deploy storybook' && git push -f git@github.com:ozaki25/ippo.git master:gh-pages",
-    "deploy": "yarn build && firebase deploy"
+    "deploy": "yarn build && firebase deploy",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -58,6 +60,7 @@
     "@storybook/addons": "^4.0.9",
     "@storybook/react": "^4.0.9",
     "babel-loader": "^8.0.4",
+    "cypress": "^3.3.1",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",
     "enzyme-to-json": "^3.3.5",
