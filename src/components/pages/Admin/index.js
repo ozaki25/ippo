@@ -64,7 +64,7 @@ const Admin = ({
       <Divider />
       <ItemContainer>
         <Typography variant="h6">connpassデータのアップデート</Typography>
-        <Button onClick={onClickUpdateConnpass} color="primary" variant="outlined">
+        <Button id="execute" onClick={onClickUpdateConnpass} color="primary" variant="outlined">
           実行
         </Button>
       </ItemContainer>
