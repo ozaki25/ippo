@@ -124,7 +124,7 @@ class SideMenu extends React.Component {
                   </ListItemIcon>
                   <ListItemText primary="ホーム画面に追加" />
                 </ListItem>
-                <ListItem onClick={this.openWebAuthnDialog} button>
+                <ListItem onClick={this.openWebAuthnDialog} button disabled>
                   <ListItemIcon>
                     <Fingerprint />
                   </ListItemIcon>
