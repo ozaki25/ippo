@@ -7,6 +7,7 @@ import propTypes from 'prop-types';
 import GoogleButton from 'src/components/atoms/GoogleButton';
 import OverlaySpinner from 'src/components/molecules/OverlaySpinner';
 import SigninForm from 'src/components/organisms/SigninForm';
+import InputPassDialog from 'src/components/organisms/InputPassDialog';
 import Container from 'src/components/templates/Container';
 import ROUTES from 'src/constants/routes';
 import webAuthentication from 'src/utils/webAuthentication';
@@ -31,8 +32,10 @@ const StyledImg = styled.img`
   max-width: 60%;
 `;
 
+const PASSCODE = process.env.REACT_APP_PASSCODE;
+
 class Signin extends React.Component {
-  state = { loading: false };
+  state = { loading: false, passed: false };
 
   componentWillMount() {
     const key = sessionStorage.getItem('willRedirect');
@@ -41,6 +44,10 @@ class Signin extends React.Component {
       this.redirectResult();
     } else {
       this.props.firebase.doSignOut();
+
+      if (localStorage.getItem('ippo-passed')) {
+        this.setState({ passed: true });
+      }
     }
   }
 
@@ -91,9 +98,20 @@ class Signin extends React.Component {
 
   onChange = event => this.setState({ [event.target.name]: event.target.value });
 
+  onSubmitPasscode = passcode => {
+    console.log({ passcode, PASSCODE });
+    if (passcode === PASSCODE) {
+      localStorage.setItem('ippo-passed', 'true');
+      this.setState({ passed: true });
+    } else {
+      window.close();
+    }
+  };
+
   render() {
     const { history, firebase, classes } = this.props;
-    return (
+    const { passed } = this.state;
+    return passed ? (
       <Container header={false} history={history} firebase={firebase}>
         <ImageContainer>
           <StyledImg src="/images/ippo.png" alt="IPPO" />
@@ -114,6 +132,8 @@ class Signin extends React.Component {
         </ButtonContainer>
         <OverlaySpinner visible={this.state.loading} />
       </Container>
+    ) : (
+      <InputPassDialog open={!passed} onClick={this.onSubmitPasscode} />
     );
   }
 }
