@@ -2,7 +2,7 @@ version: 2
 jobs:
   e2e:
     docker:
-      - image: node:8
+      - image: node:10
     steps:
       - checkout
       - run: yarn install
@@ -12,7 +12,7 @@ workflows:
   e2e_workflow:
     triggers:
       - schedule:
-          cron: '0 *\/3 * * *'
+          cron: '0 */3 * * *'
           filters:
             branches:
               only:
