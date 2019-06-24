@@ -12,7 +12,8 @@ workflows:
   schedule_workflow:
     triggers:
       - schedule:
-          cron: '0 /3 * * *'
+          cron: '0 0 * * *'
+          # cron: '0 /3 * * *'
           filters:
             branches:
               only:
