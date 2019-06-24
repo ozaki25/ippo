@@ -12,10 +12,10 @@ workflows:
   schedule_workflow:
     triggers:
       - schedule:
-        cron: '0 0-23/3 * * *'
-        filters:
-          branches:
-            only:
-              - master
+          cron: '0 0-23/3 * * *'
+          filters:
+            branches:
+              only:
+                - master
     jobs:
       - e2e
