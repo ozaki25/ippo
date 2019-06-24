@@ -42,9 +42,9 @@ class Signin extends React.Component {
     if (key) {
       sessionStorage.removeItem('willRedirect');
       this.redirectResult();
+      this.setState({ passed: true });
     } else {
       this.props.firebase.doSignOut();
-
       if (localStorage.getItem('ippo-passed')) {
         this.setState({ passed: true });
       }
