@@ -6,6 +6,6 @@ const isUndecided = () => Notification.permission === 'default';
 
 const permission = () => Notification.permission;
 
-const isSupported = () => 'PushManager' in window;
+const isSupported = () => 'PushManager' in window && 'Notification' in window;
 
 export default { isGranted, isDenied, isUndecided, permission, isSupported };
