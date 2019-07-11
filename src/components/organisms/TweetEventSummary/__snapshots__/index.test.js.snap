@@ -116,7 +116,7 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
         onClickLike={null}
         onClickReply={null}
         text={
-          <ForwardRef>
+          <ForwardRef(styled.div)>
             <WithStyles(Typography)
               variant="h5"
             >
@@ -158,12 +158,12 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
                 </WithStyles(Typography)>
               </IconWithText>
             </div>
-            <ForwardRef
+            <ForwardRef(Styled(Link))
               to="/tweets?hashtag=test"
             >
               #test
                
-            </ForwardRef>
+            </ForwardRef(Styled(Link))>
             <WithStyles(RoundedButton)
               color="primary"
               disabled={true}
@@ -178,7 +178,7 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
             >
               キャンセルする
             </WithStyles(RoundedButton)>
-          </ForwardRef>
+          </ForwardRef(styled.div)>
         }
         time="2019/01/06 22:01"
       >
@@ -1031,7 +1031,7 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
                     <TweetBody
                       bigText={false}
                       text={
-                        <ForwardRef>
+                        <ForwardRef(styled.div)>
                           <WithStyles(Typography)
                             variant="h5"
                           >
@@ -1073,12 +1073,12 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
                               </WithStyles(Typography)>
                             </IconWithText>
                           </div>
-                          <ForwardRef
+                          <ForwardRef(Styled(Link))
                             to="/tweets?hashtag=test"
                           >
                             #test
                              
-                          </ForwardRef>
+                          </ForwardRef(Styled(Link))>
                           <WithStyles(RoundedButton)
                             color="primary"
                             disabled={true}
@@ -1093,7 +1093,7 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
                           >
                             キャンセルする
                           </WithStyles(RoundedButton)>
-                        </ForwardRef>
+                        </ForwardRef(styled.div)>
                       }
                     >
                       <styled.div
@@ -3718,7 +3718,7 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
         onClickLike={null}
         onClickReply={null}
         text={
-          <ForwardRef>
+          <ForwardRef(styled.div)>
             <WithStyles(Typography)
               variant="h5"
             >
@@ -3760,12 +3760,12 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
                 </WithStyles(Typography)>
               </IconWithText>
             </div>
-            <ForwardRef
+            <ForwardRef(Styled(Link))
               to="/tweets?hashtag=test"
             >
               #test
                
-            </ForwardRef>
+            </ForwardRef(Styled(Link))>
             <WithStyles(RoundedButton)
               color="primary"
               disabled={false}
@@ -3780,7 +3780,7 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
             >
               キャンセルする
             </WithStyles(RoundedButton)>
-          </ForwardRef>
+          </ForwardRef(styled.div)>
         }
         time="2019/01/06 22:01"
       >
@@ -4633,7 +4633,7 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
                     <TweetBody
                       bigText={false}
                       text={
-                        <ForwardRef>
+                        <ForwardRef(styled.div)>
                           <WithStyles(Typography)
                             variant="h5"
                           >
@@ -4675,12 +4675,12 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
                               </WithStyles(Typography)>
                             </IconWithText>
                           </div>
-                          <ForwardRef
+                          <ForwardRef(Styled(Link))
                             to="/tweets?hashtag=test"
                           >
                             #test
                              
-                          </ForwardRef>
+                          </ForwardRef(Styled(Link))>
                           <WithStyles(RoundedButton)
                             color="primary"
                             disabled={false}
@@ -4695,7 +4695,7 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
                           >
                             キャンセルする
                           </WithStyles(RoundedButton)>
-                        </ForwardRef>
+                        </ForwardRef(styled.div)>
                       }
                     >
                       <styled.div

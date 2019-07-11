@@ -3070,11 +3070,19 @@ exports[`should match snapshot: Container/back 1`] = `
                       defer={false}
                       fallback={null}
                     >
-                      <WithStyles(SwipeArea)
+                      <WithStyles(Component)
                         anchor="right"
+                        innerRef={
+                          Object {
+                            "current": <div
+                              class="MuiPrivateSwipeArea-root-142 MuiPrivateSwipeArea-anchorRight-144"
+                              style="width: 20px;"
+                            />,
+                          }
+                        }
                         width={20}
                       >
-                        <SwipeArea
+                        <ForwardRef
                           anchor="right"
                           classes={
                             Object {
@@ -3095,8 +3103,8 @@ exports[`should match snapshot: Container/back 1`] = `
                               }
                             }
                           />
-                        </SwipeArea>
-                      </WithStyles(SwipeArea)>
+                        </ForwardRef>
+                      </WithStyles(Component)>
                     </NoSsr>
                   </SwipeableDrawer>
                 </WithTheme(SwipeableDrawer)>
@@ -6383,11 +6391,19 @@ exports[`should match snapshot: Container/nopadding 1`] = `
                       defer={false}
                       fallback={null}
                     >
-                      <WithStyles(SwipeArea)
+                      <WithStyles(Component)
                         anchor="right"
+                        innerRef={
+                          Object {
+                            "current": <div
+                              class="MuiPrivateSwipeArea-root-142 MuiPrivateSwipeArea-anchorRight-144"
+                              style="width: 20px;"
+                            />,
+                          }
+                        }
                         width={20}
                       >
-                        <SwipeArea
+                        <ForwardRef
                           anchor="right"
                           classes={
                             Object {
@@ -6408,8 +6424,8 @@ exports[`should match snapshot: Container/nopadding 1`] = `
                               }
                             }
                           />
-                        </SwipeArea>
-                      </WithStyles(SwipeArea)>
+                        </ForwardRef>
+                      </WithStyles(Component)>
                     </NoSsr>
                   </SwipeableDrawer>
                 </WithTheme(SwipeableDrawer)>
@@ -9607,11 +9623,19 @@ exports[`should match snapshot: Container/padding 1`] = `
                       defer={false}
                       fallback={null}
                     >
-                      <WithStyles(SwipeArea)
+                      <WithStyles(Component)
                         anchor="right"
+                        innerRef={
+                          Object {
+                            "current": <div
+                              class="MuiPrivateSwipeArea-root-142 MuiPrivateSwipeArea-anchorRight-144"
+                              style="width: 20px;"
+                            />,
+                          }
+                        }
                         width={20}
                       >
-                        <SwipeArea
+                        <ForwardRef
                           anchor="right"
                           classes={
                             Object {
@@ -9632,8 +9656,8 @@ exports[`should match snapshot: Container/padding 1`] = `
                               }
                             }
                           />
-                        </SwipeArea>
-                      </WithStyles(SwipeArea)>
+                        </ForwardRef>
+                      </WithStyles(Component)>
                     </NoSsr>
                   </SwipeableDrawer>
                 </WithTheme(SwipeableDrawer)>

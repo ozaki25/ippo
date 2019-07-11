@@ -3153,11 +3153,19 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                         defer={false}
                         fallback={null}
                       >
-                        <WithStyles(SwipeArea)
+                        <WithStyles(Component)
                           anchor="right"
+                          innerRef={
+                            Object {
+                              "current": <div
+                                class="MuiPrivateSwipeArea-root-175 MuiPrivateSwipeArea-anchorRight-177"
+                                style="width: 20px;"
+                              />,
+                            }
+                          }
                           width={20}
                         >
-                          <SwipeArea
+                          <ForwardRef
                             anchor="right"
                             classes={
                               Object {
@@ -3178,8 +3186,8 @@ exports[`should match snapshot: Tweet/nomal 1`] = `
                                 }
                               }
                             />
-                          </SwipeArea>
-                        </WithStyles(SwipeArea)>
+                          </ForwardRef>
+                        </WithStyles(Component)>
                       </NoSsr>
                     </SwipeableDrawer>
                   </WithTheme(SwipeableDrawer)>
