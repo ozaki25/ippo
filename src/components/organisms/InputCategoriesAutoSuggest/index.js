@@ -123,8 +123,8 @@ function InputCategoriesAutoSuggest({
     setInputValue(newValue);
   };
 
-  const onSuggestionsFetchRequested = ({ value }) => {
-    setChips(getSuggestions({ value, selected: inputValue }));
+  const onSuggestionsFetchRequested = props => {
+    setChips(getSuggestions({ value: props.value, selected: value }));
   };
 
   const onSuggestionsClearRequested = () => {
