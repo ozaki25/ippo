@@ -218,27 +218,28 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                   blurBehavior="clear"
                   classes={
                     Object {
-                      "chip": "ChipInput-chip-22",
-                      "chipContainer": "ChipInput-chipContainer-9",
-                      "disabled": "ChipInput-disabled-19",
-                      "error": "ChipInput-error-21",
-                      "filled": "ChipInput-filled-12",
-                      "focused": "ChipInput-focused-18",
-                      "helperText": "ChipInput-helperText-16",
-                      "inkbar": "ChipInput-inkbar-17",
-                      "input": "ChipInput-input-8",
-                      "inputRoot": "ChipInput-inputRoot-7",
-                      "label": "ChipInput-label-14",
-                      "labelShrink": "ChipInput-labelShrink-15",
-                      "labeled": "ChipInput-labeled-13",
-                      "outlined": "ChipInput-outlined-10",
-                      "root": "ChipInput-root-6",
-                      "standard": "ChipInput-standard-11",
-                      "underline": "ChipInput-underline-20",
+                      "chip": "WAMuiChipInput-chip-22",
+                      "chipContainer": "WAMuiChipInput-chipContainer-9",
+                      "disabled": "WAMuiChipInput-disabled-19",
+                      "error": "WAMuiChipInput-error-21",
+                      "filled": "WAMuiChipInput-filled-12",
+                      "focused": "WAMuiChipInput-focused-18",
+                      "helperText": "WAMuiChipInput-helperText-16",
+                      "inkbar": "WAMuiChipInput-inkbar-17",
+                      "input": "WAMuiChipInput-input-8",
+                      "inputRoot": "WAMuiChipInput-inputRoot-7",
+                      "label": "WAMuiChipInput-label-14",
+                      "labelShrink": "WAMuiChipInput-labelShrink-15",
+                      "labeled": "WAMuiChipInput-labeled-13",
+                      "outlined": "WAMuiChipInput-outlined-10",
+                      "root": "WAMuiChipInput-root-6",
+                      "standard": "WAMuiChipInput-standard-11",
+                      "underline": "WAMuiChipInput-underline-20",
                     }
                   }
                   clearInputValueOnChange={true}
                   color="primary"
+                  delayBeforeAdd={false}
                   disableUnderline={false}
                   fullWidth={true}
                   inputRef={[Function]}
@@ -271,14 +272,14 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                   variant="standard"
                 >
                   <WithStyles(FormControl)
-                    className="ChipInput-root-6"
+                    className="WAMuiChipInput-root-6"
                     color="primary"
                     fullWidth={true}
                     onClick={[Function]}
                     variant="standard"
                   >
                     <FormControl
-                      className="ChipInput-root-6"
+                      className="WAMuiChipInput-root-6"
                       classes={
                         Object {
                           "fullWidth": "MuiFormControl-fullWidth-26",
@@ -298,15 +299,15 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                       variant="standard"
                     >
                       <div
-                        className="MuiFormControl-root-23 MuiFormControl-fullWidth-26 ChipInput-root-6"
+                        className="MuiFormControl-root-23 MuiFormControl-fullWidth-26 WAMuiChipInput-root-6"
                         color="primary"
                         onClick={[Function]}
                       >
                         <WithStyles(WithFormControlContext(InputLabel))
                           classes={
                             Object {
-                              "root": "ChipInput-standard-11 ChipInput-label-14",
-                              "shrink": "ChipInput-labelShrink-15",
+                              "root": "WAMuiChipInput-standard-11 WAMuiChipInput-label-14",
+                              "shrink": "WAMuiChipInput-labelShrink-15",
                             }
                           }
                           focused={false}
@@ -325,8 +326,8 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                                 "marginDense": "MuiInputLabel-marginDense-33",
                                 "outlined": "MuiInputLabel-outlined-37",
                                 "required": "MuiInputLabel-required-31",
-                                "root": "MuiInputLabel-root-27 ChipInput-standard-11 ChipInput-label-14",
-                                "shrink": "MuiInputLabel-shrink-34 ChipInput-labelShrink-15",
+                                "root": "MuiInputLabel-root-27 WAMuiChipInput-standard-11 WAMuiChipInput-label-14",
+                                "shrink": "MuiInputLabel-shrink-34 WAMuiChipInput-labelShrink-15",
                               }
                             }
                             focused={false}
@@ -345,8 +346,8 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                                   "marginDense": "MuiInputLabel-marginDense-33",
                                   "outlined": "MuiInputLabel-outlined-37",
                                   "required": "MuiInputLabel-required-31",
-                                  "root": "MuiInputLabel-root-27 ChipInput-standard-11 ChipInput-label-14",
-                                  "shrink": "MuiInputLabel-shrink-34 ChipInput-labelShrink-15",
+                                  "root": "MuiInputLabel-root-27 WAMuiChipInput-standard-11 WAMuiChipInput-label-14",
+                                  "shrink": "MuiInputLabel-shrink-34 WAMuiChipInput-labelShrink-15",
                                 }
                               }
                               disableAnimation={false}
@@ -371,7 +372,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                               variant="standard"
                             >
                               <WithStyles(WithFormControlContext(FormLabel))
-                                className="MuiInputLabel-root-27 ChipInput-standard-11 ChipInput-label-14 MuiInputLabel-formControl-32 MuiInputLabel-animated-35 MuiInputLabel-shrink-34 ChipInput-labelShrink-15"
+                                className="MuiInputLabel-root-27 WAMuiChipInput-standard-11 WAMuiChipInput-label-14 MuiInputLabel-formControl-32 MuiInputLabel-animated-35 MuiInputLabel-shrink-34 WAMuiChipInput-labelShrink-15"
                                 classes={
                                   Object {
                                     "disabled": "MuiInputLabel-disabled-29",
@@ -384,7 +385,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                                 focused={false}
                               >
                                 <WithFormControlContext(FormLabel)
-                                  className="MuiInputLabel-root-27 ChipInput-standard-11 ChipInput-label-14 MuiInputLabel-formControl-32 MuiInputLabel-animated-35 MuiInputLabel-shrink-34 ChipInput-labelShrink-15"
+                                  className="MuiInputLabel-root-27 WAMuiChipInput-standard-11 WAMuiChipInput-label-14 MuiInputLabel-formControl-32 MuiInputLabel-animated-35 MuiInputLabel-shrink-34 WAMuiChipInput-labelShrink-15"
                                   classes={
                                     Object {
                                       "asterisk": "MuiFormLabel-asterisk-44",
@@ -400,7 +401,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                                   focused={false}
                                 >
                                   <FormLabel
-                                    className="MuiInputLabel-root-27 ChipInput-standard-11 ChipInput-label-14 MuiInputLabel-formControl-32 MuiInputLabel-animated-35 MuiInputLabel-shrink-34 ChipInput-labelShrink-15"
+                                    className="MuiInputLabel-root-27 WAMuiChipInput-standard-11 WAMuiChipInput-label-14 MuiInputLabel-formControl-32 MuiInputLabel-animated-35 MuiInputLabel-shrink-34 WAMuiChipInput-labelShrink-15"
                                     classes={
                                       Object {
                                         "asterisk": "MuiFormLabel-asterisk-44",
@@ -433,7 +434,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                                     }
                                   >
                                     <label
-                                      className="MuiFormLabel-root-38 MuiInputLabel-root-27 ChipInput-standard-11 ChipInput-label-14 MuiInputLabel-formControl-32 MuiInputLabel-animated-35 MuiInputLabel-shrink-34 ChipInput-labelShrink-15"
+                                      className="MuiFormLabel-root-38 MuiInputLabel-root-27 WAMuiChipInput-standard-11 WAMuiChipInput-label-14 MuiInputLabel-formControl-32 MuiInputLabel-animated-35 MuiInputLabel-shrink-34 WAMuiChipInput-labelShrink-15"
                                       data-shrink={true}
                                     >
                                       カテゴリ
@@ -445,10 +446,10 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                           </WithFormControlContext(InputLabel)>
                         </WithStyles(WithFormControlContext(InputLabel))>
                         <div
-                          className="ChipInput-standard-11 ChipInput-chipContainer-9 ChipInput-inkbar-17 ChipInput-underline-20 ChipInput-labeled-13"
+                          className="WAMuiChipInput-standard-11 WAMuiChipInput-chipContainer-9 WAMuiChipInput-inkbar-17 WAMuiChipInput-underline-20 WAMuiChipInput-labeled-13"
                         >
                           <WithStyles(Chip)
-                            className="ChipInput-chip-22"
+                            className="WAMuiChipInput-chip-22"
                             key="0"
                             label="test1"
                             onClick={[Function]}
@@ -461,7 +462,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                             }
                           >
                             <Chip
-                              className="ChipInput-chip-22"
+                              className="WAMuiChipInput-chip-22"
                               classes={
                                 Object {
                                   "avatar": "MuiChip-avatar-114",
@@ -505,7 +506,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                               variant="default"
                             >
                               <div
-                                className="MuiChip-root-102 MuiChip-clickable-105 MuiChip-deletable-108 ChipInput-chip-22"
+                                className="MuiChip-root-102 MuiChip-clickable-105 MuiChip-deletable-108 WAMuiChipInput-chip-22"
                                 onClick={[Function]}
                                 onKeyDown={[Function]}
                                 onKeyUp={[Function]}
@@ -576,7 +577,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                             </Chip>
                           </WithStyles(Chip)>
                           <WithStyles(Chip)
-                            className="ChipInput-chip-22"
+                            className="WAMuiChipInput-chip-22"
                             key="1"
                             label="test2"
                             onClick={[Function]}
@@ -589,7 +590,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                             }
                           >
                             <Chip
-                              className="ChipInput-chip-22"
+                              className="WAMuiChipInput-chip-22"
                               classes={
                                 Object {
                                   "avatar": "MuiChip-avatar-114",
@@ -633,7 +634,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                               variant="default"
                             >
                               <div
-                                className="MuiChip-root-102 MuiChip-clickable-105 MuiChip-deletable-108 ChipInput-chip-22"
+                                className="MuiChip-root-102 MuiChip-clickable-105 MuiChip-deletable-108 WAMuiChipInput-chip-22"
                                 onClick={[Function]}
                                 onKeyDown={[Function]}
                                 onKeyUp={[Function]}
@@ -704,7 +705,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                             </Chip>
                           </WithStyles(Chip)>
                           <WithStyles(Chip)
-                            className="ChipInput-chip-22"
+                            className="WAMuiChipInput-chip-22"
                             key="2"
                             label="test3"
                             onClick={[Function]}
@@ -717,7 +718,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                             }
                           >
                             <Chip
-                              className="ChipInput-chip-22"
+                              className="WAMuiChipInput-chip-22"
                               classes={
                                 Object {
                                   "avatar": "MuiChip-avatar-114",
@@ -761,7 +762,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                               variant="default"
                             >
                               <div
-                                className="MuiChip-root-102 MuiChip-clickable-105 MuiChip-deletable-108 ChipInput-chip-22"
+                                className="MuiChip-root-102 MuiChip-clickable-105 MuiChip-deletable-108 WAMuiChipInput-chip-22"
                                 onClick={[Function]}
                                 onKeyDown={[Function]}
                                 onKeyUp={[Function]}
@@ -832,7 +833,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                             </Chip>
                           </WithStyles(Chip)>
                           <WithStyles(Chip)
-                            className="ChipInput-chip-22"
+                            className="WAMuiChipInput-chip-22"
                             key="3"
                             label="test4"
                             onClick={[Function]}
@@ -845,7 +846,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                             }
                           >
                             <Chip
-                              className="ChipInput-chip-22"
+                              className="WAMuiChipInput-chip-22"
                               classes={
                                 Object {
                                   "avatar": "MuiChip-avatar-114",
@@ -889,7 +890,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                               variant="default"
                             >
                               <div
-                                className="MuiChip-root-102 MuiChip-clickable-105 MuiChip-deletable-108 ChipInput-chip-22"
+                                className="MuiChip-root-102 MuiChip-clickable-105 MuiChip-deletable-108 WAMuiChipInput-chip-22"
                                 onClick={[Function]}
                                 onKeyDown={[Function]}
                                 onKeyUp={[Function]}
@@ -960,7 +961,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                             </Chip>
                           </WithStyles(Chip)>
                           <WithStyles(Chip)
-                            className="ChipInput-chip-22"
+                            className="WAMuiChipInput-chip-22"
                             key="4"
                             label="test5"
                             onClick={[Function]}
@@ -973,7 +974,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                             }
                           >
                             <Chip
-                              className="ChipInput-chip-22"
+                              className="WAMuiChipInput-chip-22"
                               classes={
                                 Object {
                                   "avatar": "MuiChip-avatar-114",
@@ -1017,7 +1018,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                               variant="default"
                             >
                               <div
-                                className="MuiChip-root-102 MuiChip-clickable-105 MuiChip-deletable-108 ChipInput-chip-22"
+                                className="MuiChip-root-102 MuiChip-clickable-105 MuiChip-deletable-108 WAMuiChipInput-chip-22"
                                 onClick={[Function]}
                                 onKeyDown={[Function]}
                                 onKeyUp={[Function]}
@@ -1088,7 +1089,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                             </Chip>
                           </WithStyles(Chip)>
                           <WithStyles(Chip)
-                            className="ChipInput-chip-22"
+                            className="WAMuiChipInput-chip-22"
                             key="5"
                             label="日本語1"
                             onClick={[Function]}
@@ -1101,7 +1102,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                             }
                           >
                             <Chip
-                              className="ChipInput-chip-22"
+                              className="WAMuiChipInput-chip-22"
                               classes={
                                 Object {
                                   "avatar": "MuiChip-avatar-114",
@@ -1145,7 +1146,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                               variant="default"
                             >
                               <div
-                                className="MuiChip-root-102 MuiChip-clickable-105 MuiChip-deletable-108 ChipInput-chip-22"
+                                className="MuiChip-root-102 MuiChip-clickable-105 MuiChip-deletable-108 WAMuiChipInput-chip-22"
                                 onClick={[Function]}
                                 onKeyDown={[Function]}
                                 onKeyUp={[Function]}
@@ -1216,7 +1217,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                             </Chip>
                           </WithStyles(Chip)>
                           <WithStyles(Chip)
-                            className="ChipInput-chip-22"
+                            className="WAMuiChipInput-chip-22"
                             key="6"
                             label="日本語2"
                             onClick={[Function]}
@@ -1229,7 +1230,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                             }
                           >
                             <Chip
-                              className="ChipInput-chip-22"
+                              className="WAMuiChipInput-chip-22"
                               classes={
                                 Object {
                                   "avatar": "MuiChip-avatar-114",
@@ -1273,7 +1274,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                               variant="default"
                             >
                               <div
-                                className="MuiChip-root-102 MuiChip-clickable-105 MuiChip-deletable-108 ChipInput-chip-22"
+                                className="MuiChip-root-102 MuiChip-clickable-105 MuiChip-deletable-108 WAMuiChipInput-chip-22"
                                 onClick={[Function]}
                                 onKeyDown={[Function]}
                                 onKeyUp={[Function]}
@@ -1344,7 +1345,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                             </Chip>
                           </WithStyles(Chip)>
                           <WithStyles(Chip)
-                            className="ChipInput-chip-22"
+                            className="WAMuiChipInput-chip-22"
                             key="7"
                             label="日本語3"
                             onClick={[Function]}
@@ -1357,7 +1358,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                             }
                           >
                             <Chip
-                              className="ChipInput-chip-22"
+                              className="WAMuiChipInput-chip-22"
                               classes={
                                 Object {
                                   "avatar": "MuiChip-avatar-114",
@@ -1401,7 +1402,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                               variant="default"
                             >
                               <div
-                                className="MuiChip-root-102 MuiChip-clickable-105 MuiChip-deletable-108 ChipInput-chip-22"
+                                className="MuiChip-root-102 MuiChip-clickable-105 MuiChip-deletable-108 WAMuiChipInput-chip-22"
                                 onClick={[Function]}
                                 onKeyDown={[Function]}
                                 onKeyUp={[Function]}
@@ -1472,7 +1473,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                             </Chip>
                           </WithStyles(Chip)>
                           <WithStyles(Chip)
-                            className="ChipInput-chip-22"
+                            className="WAMuiChipInput-chip-22"
                             key="8"
                             label="日本語4"
                             onClick={[Function]}
@@ -1485,7 +1486,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                             }
                           >
                             <Chip
-                              className="ChipInput-chip-22"
+                              className="WAMuiChipInput-chip-22"
                               classes={
                                 Object {
                                   "avatar": "MuiChip-avatar-114",
@@ -1529,7 +1530,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                               variant="default"
                             >
                               <div
-                                className="MuiChip-root-102 MuiChip-clickable-105 MuiChip-deletable-108 ChipInput-chip-22"
+                                className="MuiChip-root-102 MuiChip-clickable-105 MuiChip-deletable-108 WAMuiChipInput-chip-22"
                                 onClick={[Function]}
                                 onKeyDown={[Function]}
                                 onKeyUp={[Function]}
@@ -1600,7 +1601,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                             </Chip>
                           </WithStyles(Chip)>
                           <WithStyles(Chip)
-                            className="ChipInput-chip-22"
+                            className="WAMuiChipInput-chip-22"
                             key="9"
                             label="日本語5"
                             onClick={[Function]}
@@ -1613,7 +1614,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                             }
                           >
                             <Chip
-                              className="ChipInput-chip-22"
+                              className="WAMuiChipInput-chip-22"
                               classes={
                                 Object {
                                   "avatar": "MuiChip-avatar-114",
@@ -1657,7 +1658,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                               variant="default"
                             >
                               <div
-                                className="MuiChip-root-102 MuiChip-clickable-105 MuiChip-deletable-108 ChipInput-chip-22"
+                                className="MuiChip-root-102 MuiChip-clickable-105 MuiChip-deletable-108 WAMuiChipInput-chip-22"
                                 onClick={[Function]}
                                 onKeyDown={[Function]}
                                 onKeyUp={[Function]}
@@ -1730,8 +1731,8 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                           <WithStyles(Input)
                             classes={
                               Object {
-                                "input": "ChipInput-input-8 ChipInput-standard-11",
-                                "root": "ChipInput-inputRoot-7 ChipInput-standard-11",
+                                "input": "WAMuiChipInput-input-8 WAMuiChipInput-standard-11",
+                                "root": "WAMuiChipInput-inputRoot-7 WAMuiChipInput-standard-11",
                               }
                             }
                             disableUnderline={true}
@@ -1753,13 +1754,13 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                                   "focused": "MuiInput-focused-47",
                                   "formControl": "MuiInput-formControl-46",
                                   "fullWidth": "MuiInput-fullWidth-52",
-                                  "input": "MuiInput-input-53 ChipInput-input-8 ChipInput-standard-11",
+                                  "input": "MuiInput-input-53 WAMuiChipInput-input-8 WAMuiChipInput-standard-11",
                                   "inputMarginDense": "MuiInput-inputMarginDense-54",
                                   "inputMultiline": "MuiInput-inputMultiline-55",
                                   "inputType": "MuiInput-inputType-56",
                                   "inputTypeSearch": "MuiInput-inputTypeSearch-57",
                                   "multiline": "MuiInput-multiline-51",
-                                  "root": "MuiInput-root-45 ChipInput-inputRoot-7 ChipInput-standard-11",
+                                  "root": "MuiInput-root-45 WAMuiChipInput-inputRoot-7 WAMuiChipInput-standard-11",
                                   "underline": "MuiInput-underline-49",
                                 }
                               }
@@ -1782,13 +1783,13 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                                     "focused": "MuiInput-focused-47",
                                     "formControl": "MuiInput-formControl-46",
                                     "fullWidth": "MuiInput-fullWidth-52",
-                                    "input": "MuiInput-input-53 ChipInput-input-8 ChipInput-standard-11",
+                                    "input": "MuiInput-input-53 WAMuiChipInput-input-8 WAMuiChipInput-standard-11",
                                     "inputMarginDense": "MuiInput-inputMarginDense-54",
                                     "inputMultiline": "MuiInput-inputMultiline-55",
                                     "inputType": "MuiInput-inputType-56",
                                     "inputTypeSearch": "MuiInput-inputTypeSearch-57",
                                     "multiline": "MuiInput-multiline-51",
-                                    "root": "MuiInput-root-45 ChipInput-inputRoot-7 ChipInput-standard-11",
+                                    "root": "MuiInput-root-45 WAMuiChipInput-inputRoot-7 WAMuiChipInput-standard-11",
                                     "underline": null,
                                   }
                                 }
@@ -1816,7 +1817,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                                       "focused": "MuiInputBase-focused-60 MuiInput-focused-47",
                                       "formControl": "MuiInputBase-formControl-59 MuiInput-formControl-46",
                                       "fullWidth": "MuiInputBase-fullWidth-67 MuiInput-fullWidth-52",
-                                      "input": "MuiInputBase-input-68 MuiInput-input-53 ChipInput-input-8 ChipInput-standard-11",
+                                      "input": "MuiInputBase-input-68 MuiInput-input-53 WAMuiChipInput-input-8 WAMuiChipInput-standard-11",
                                       "inputAdornedEnd": "MuiInputBase-inputAdornedEnd-74",
                                       "inputAdornedStart": "MuiInputBase-inputAdornedStart-73",
                                       "inputMarginDense": "MuiInputBase-inputMarginDense-69 MuiInput-inputMarginDense-54",
@@ -1825,7 +1826,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                                       "inputTypeSearch": "MuiInputBase-inputTypeSearch-72 MuiInput-inputTypeSearch-57",
                                       "marginDense": "MuiInputBase-marginDense-65",
                                       "multiline": "MuiInputBase-multiline-66 MuiInput-multiline-51",
-                                      "root": "MuiInputBase-root-58 MuiInput-root-45 ChipInput-inputRoot-7 ChipInput-standard-11",
+                                      "root": "MuiInputBase-root-58 MuiInput-root-45 WAMuiChipInput-inputRoot-7 WAMuiChipInput-standard-11",
                                     }
                                   }
                                   fullWidth={false}
@@ -1852,7 +1853,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                                         "focused": "MuiInputBase-focused-60 MuiInput-focused-47",
                                         "formControl": "MuiInputBase-formControl-59 MuiInput-formControl-46",
                                         "fullWidth": "MuiInputBase-fullWidth-67 MuiInput-fullWidth-52",
-                                        "input": "MuiInputBase-input-68 MuiInput-input-53 ChipInput-input-8 ChipInput-standard-11",
+                                        "input": "MuiInputBase-input-68 MuiInput-input-53 WAMuiChipInput-input-8 WAMuiChipInput-standard-11",
                                         "inputAdornedEnd": "MuiInputBase-inputAdornedEnd-74",
                                         "inputAdornedStart": "MuiInputBase-inputAdornedStart-73",
                                         "inputMarginDense": "MuiInputBase-inputMarginDense-69 MuiInput-inputMarginDense-54",
@@ -1861,7 +1862,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                                         "inputTypeSearch": "MuiInputBase-inputTypeSearch-72 MuiInput-inputTypeSearch-57",
                                         "marginDense": "MuiInputBase-marginDense-65",
                                         "multiline": "MuiInputBase-multiline-66 MuiInput-multiline-51",
-                                        "root": "MuiInputBase-root-58 MuiInput-root-45 ChipInput-inputRoot-7 ChipInput-standard-11",
+                                        "root": "MuiInputBase-root-58 MuiInput-root-45 WAMuiChipInput-inputRoot-7 WAMuiChipInput-standard-11",
                                       }
                                     }
                                     fullWidth={false}
@@ -1895,13 +1896,13 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/many_selected 1`] = `
                                     value=""
                                   >
                                     <div
-                                      className="MuiInputBase-root-58 MuiInput-root-45 ChipInput-inputRoot-7 ChipInput-standard-11 MuiInputBase-formControl-59 MuiInput-formControl-46"
+                                      className="MuiInputBase-root-58 MuiInput-root-45 WAMuiChipInput-inputRoot-7 WAMuiChipInput-standard-11 MuiInputBase-formControl-59 MuiInput-formControl-46"
                                       onClick={[Function]}
                                       onKeyPress={[Function]}
                                     >
                                       <input
                                         aria-invalid={false}
-                                        className="MuiInputBase-input-68 MuiInput-input-53 ChipInput-input-8 ChipInput-standard-11"
+                                        className="MuiInputBase-input-68 MuiInput-input-53 WAMuiChipInput-input-8 WAMuiChipInput-standard-11"
                                         disabled={false}
                                         onBlur={[Function]}
                                         onChange={[Function]}
@@ -2145,27 +2146,28 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/nomal 1`] = `
                   blurBehavior="clear"
                   classes={
                     Object {
-                      "chip": "ChipInput-chip-22",
-                      "chipContainer": "ChipInput-chipContainer-9",
-                      "disabled": "ChipInput-disabled-19",
-                      "error": "ChipInput-error-21",
-                      "filled": "ChipInput-filled-12",
-                      "focused": "ChipInput-focused-18",
-                      "helperText": "ChipInput-helperText-16",
-                      "inkbar": "ChipInput-inkbar-17",
-                      "input": "ChipInput-input-8",
-                      "inputRoot": "ChipInput-inputRoot-7",
-                      "label": "ChipInput-label-14",
-                      "labelShrink": "ChipInput-labelShrink-15",
-                      "labeled": "ChipInput-labeled-13",
-                      "outlined": "ChipInput-outlined-10",
-                      "root": "ChipInput-root-6",
-                      "standard": "ChipInput-standard-11",
-                      "underline": "ChipInput-underline-20",
+                      "chip": "WAMuiChipInput-chip-22",
+                      "chipContainer": "WAMuiChipInput-chipContainer-9",
+                      "disabled": "WAMuiChipInput-disabled-19",
+                      "error": "WAMuiChipInput-error-21",
+                      "filled": "WAMuiChipInput-filled-12",
+                      "focused": "WAMuiChipInput-focused-18",
+                      "helperText": "WAMuiChipInput-helperText-16",
+                      "inkbar": "WAMuiChipInput-inkbar-17",
+                      "input": "WAMuiChipInput-input-8",
+                      "inputRoot": "WAMuiChipInput-inputRoot-7",
+                      "label": "WAMuiChipInput-label-14",
+                      "labelShrink": "WAMuiChipInput-labelShrink-15",
+                      "labeled": "WAMuiChipInput-labeled-13",
+                      "outlined": "WAMuiChipInput-outlined-10",
+                      "root": "WAMuiChipInput-root-6",
+                      "standard": "WAMuiChipInput-standard-11",
+                      "underline": "WAMuiChipInput-underline-20",
                     }
                   }
                   clearInputValueOnChange={true}
                   color="primary"
+                  delayBeforeAdd={false}
                   disableUnderline={false}
                   fullWidth={true}
                   inputRef={[Function]}
@@ -2185,14 +2187,14 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/nomal 1`] = `
                   variant="standard"
                 >
                   <WithStyles(FormControl)
-                    className="ChipInput-root-6"
+                    className="WAMuiChipInput-root-6"
                     color="primary"
                     fullWidth={true}
                     onClick={[Function]}
                     variant="standard"
                   >
                     <FormControl
-                      className="ChipInput-root-6"
+                      className="WAMuiChipInput-root-6"
                       classes={
                         Object {
                           "fullWidth": "MuiFormControl-fullWidth-26",
@@ -2212,15 +2214,15 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/nomal 1`] = `
                       variant="standard"
                     >
                       <div
-                        className="MuiFormControl-root-23 MuiFormControl-fullWidth-26 ChipInput-root-6"
+                        className="MuiFormControl-root-23 MuiFormControl-fullWidth-26 WAMuiChipInput-root-6"
                         color="primary"
                         onClick={[Function]}
                       >
                         <WithStyles(WithFormControlContext(InputLabel))
                           classes={
                             Object {
-                              "root": "ChipInput-standard-11 ChipInput-label-14",
-                              "shrink": "ChipInput-labelShrink-15",
+                              "root": "WAMuiChipInput-standard-11 WAMuiChipInput-label-14",
+                              "shrink": "WAMuiChipInput-labelShrink-15",
                             }
                           }
                           focused={false}
@@ -2239,8 +2241,8 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/nomal 1`] = `
                                 "marginDense": "MuiInputLabel-marginDense-33",
                                 "outlined": "MuiInputLabel-outlined-37",
                                 "required": "MuiInputLabel-required-31",
-                                "root": "MuiInputLabel-root-27 ChipInput-standard-11 ChipInput-label-14",
-                                "shrink": "MuiInputLabel-shrink-34 ChipInput-labelShrink-15",
+                                "root": "MuiInputLabel-root-27 WAMuiChipInput-standard-11 WAMuiChipInput-label-14",
+                                "shrink": "MuiInputLabel-shrink-34 WAMuiChipInput-labelShrink-15",
                               }
                             }
                             focused={false}
@@ -2259,8 +2261,8 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/nomal 1`] = `
                                   "marginDense": "MuiInputLabel-marginDense-33",
                                   "outlined": "MuiInputLabel-outlined-37",
                                   "required": "MuiInputLabel-required-31",
-                                  "root": "MuiInputLabel-root-27 ChipInput-standard-11 ChipInput-label-14",
-                                  "shrink": "MuiInputLabel-shrink-34 ChipInput-labelShrink-15",
+                                  "root": "MuiInputLabel-root-27 WAMuiChipInput-standard-11 WAMuiChipInput-label-14",
+                                  "shrink": "MuiInputLabel-shrink-34 WAMuiChipInput-labelShrink-15",
                                 }
                               }
                               disableAnimation={false}
@@ -2285,7 +2287,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/nomal 1`] = `
                               variant="standard"
                             >
                               <WithStyles(WithFormControlContext(FormLabel))
-                                className="MuiInputLabel-root-27 ChipInput-standard-11 ChipInput-label-14 MuiInputLabel-formControl-32 MuiInputLabel-animated-35"
+                                className="MuiInputLabel-root-27 WAMuiChipInput-standard-11 WAMuiChipInput-label-14 MuiInputLabel-formControl-32 MuiInputLabel-animated-35"
                                 classes={
                                   Object {
                                     "disabled": "MuiInputLabel-disabled-29",
@@ -2298,7 +2300,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/nomal 1`] = `
                                 focused={false}
                               >
                                 <WithFormControlContext(FormLabel)
-                                  className="MuiInputLabel-root-27 ChipInput-standard-11 ChipInput-label-14 MuiInputLabel-formControl-32 MuiInputLabel-animated-35"
+                                  className="MuiInputLabel-root-27 WAMuiChipInput-standard-11 WAMuiChipInput-label-14 MuiInputLabel-formControl-32 MuiInputLabel-animated-35"
                                   classes={
                                     Object {
                                       "asterisk": "MuiFormLabel-asterisk-44",
@@ -2314,7 +2316,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/nomal 1`] = `
                                   focused={false}
                                 >
                                   <FormLabel
-                                    className="MuiInputLabel-root-27 ChipInput-standard-11 ChipInput-label-14 MuiInputLabel-formControl-32 MuiInputLabel-animated-35"
+                                    className="MuiInputLabel-root-27 WAMuiChipInput-standard-11 WAMuiChipInput-label-14 MuiInputLabel-formControl-32 MuiInputLabel-animated-35"
                                     classes={
                                       Object {
                                         "asterisk": "MuiFormLabel-asterisk-44",
@@ -2347,7 +2349,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/nomal 1`] = `
                                     }
                                   >
                                     <label
-                                      className="MuiFormLabel-root-38 MuiInputLabel-root-27 ChipInput-standard-11 ChipInput-label-14 MuiInputLabel-formControl-32 MuiInputLabel-animated-35"
+                                      className="MuiFormLabel-root-38 MuiInputLabel-root-27 WAMuiChipInput-standard-11 WAMuiChipInput-label-14 MuiInputLabel-formControl-32 MuiInputLabel-animated-35"
                                       data-shrink={false}
                                     >
                                       カテゴリ
@@ -2359,13 +2361,13 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/nomal 1`] = `
                           </WithFormControlContext(InputLabel)>
                         </WithStyles(WithFormControlContext(InputLabel))>
                         <div
-                          className="ChipInput-standard-11 ChipInput-chipContainer-9 ChipInput-inkbar-17 ChipInput-underline-20 ChipInput-labeled-13"
+                          className="WAMuiChipInput-standard-11 WAMuiChipInput-chipContainer-9 WAMuiChipInput-inkbar-17 WAMuiChipInput-underline-20 WAMuiChipInput-labeled-13"
                         >
                           <WithStyles(Input)
                             classes={
                               Object {
-                                "input": "ChipInput-input-8 ChipInput-standard-11",
-                                "root": "ChipInput-inputRoot-7 ChipInput-standard-11",
+                                "input": "WAMuiChipInput-input-8 WAMuiChipInput-standard-11",
+                                "root": "WAMuiChipInput-inputRoot-7 WAMuiChipInput-standard-11",
                               }
                             }
                             disableUnderline={true}
@@ -2387,13 +2389,13 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/nomal 1`] = `
                                   "focused": "MuiInput-focused-47",
                                   "formControl": "MuiInput-formControl-46",
                                   "fullWidth": "MuiInput-fullWidth-52",
-                                  "input": "MuiInput-input-53 ChipInput-input-8 ChipInput-standard-11",
+                                  "input": "MuiInput-input-53 WAMuiChipInput-input-8 WAMuiChipInput-standard-11",
                                   "inputMarginDense": "MuiInput-inputMarginDense-54",
                                   "inputMultiline": "MuiInput-inputMultiline-55",
                                   "inputType": "MuiInput-inputType-56",
                                   "inputTypeSearch": "MuiInput-inputTypeSearch-57",
                                   "multiline": "MuiInput-multiline-51",
-                                  "root": "MuiInput-root-45 ChipInput-inputRoot-7 ChipInput-standard-11",
+                                  "root": "MuiInput-root-45 WAMuiChipInput-inputRoot-7 WAMuiChipInput-standard-11",
                                   "underline": "MuiInput-underline-49",
                                 }
                               }
@@ -2416,13 +2418,13 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/nomal 1`] = `
                                     "focused": "MuiInput-focused-47",
                                     "formControl": "MuiInput-formControl-46",
                                     "fullWidth": "MuiInput-fullWidth-52",
-                                    "input": "MuiInput-input-53 ChipInput-input-8 ChipInput-standard-11",
+                                    "input": "MuiInput-input-53 WAMuiChipInput-input-8 WAMuiChipInput-standard-11",
                                     "inputMarginDense": "MuiInput-inputMarginDense-54",
                                     "inputMultiline": "MuiInput-inputMultiline-55",
                                     "inputType": "MuiInput-inputType-56",
                                     "inputTypeSearch": "MuiInput-inputTypeSearch-57",
                                     "multiline": "MuiInput-multiline-51",
-                                    "root": "MuiInput-root-45 ChipInput-inputRoot-7 ChipInput-standard-11",
+                                    "root": "MuiInput-root-45 WAMuiChipInput-inputRoot-7 WAMuiChipInput-standard-11",
                                     "underline": null,
                                   }
                                 }
@@ -2450,7 +2452,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/nomal 1`] = `
                                       "focused": "MuiInputBase-focused-60 MuiInput-focused-47",
                                       "formControl": "MuiInputBase-formControl-59 MuiInput-formControl-46",
                                       "fullWidth": "MuiInputBase-fullWidth-67 MuiInput-fullWidth-52",
-                                      "input": "MuiInputBase-input-68 MuiInput-input-53 ChipInput-input-8 ChipInput-standard-11",
+                                      "input": "MuiInputBase-input-68 MuiInput-input-53 WAMuiChipInput-input-8 WAMuiChipInput-standard-11",
                                       "inputAdornedEnd": "MuiInputBase-inputAdornedEnd-74",
                                       "inputAdornedStart": "MuiInputBase-inputAdornedStart-73",
                                       "inputMarginDense": "MuiInputBase-inputMarginDense-69 MuiInput-inputMarginDense-54",
@@ -2459,7 +2461,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/nomal 1`] = `
                                       "inputTypeSearch": "MuiInputBase-inputTypeSearch-72 MuiInput-inputTypeSearch-57",
                                       "marginDense": "MuiInputBase-marginDense-65",
                                       "multiline": "MuiInputBase-multiline-66 MuiInput-multiline-51",
-                                      "root": "MuiInputBase-root-58 MuiInput-root-45 ChipInput-inputRoot-7 ChipInput-standard-11",
+                                      "root": "MuiInputBase-root-58 MuiInput-root-45 WAMuiChipInput-inputRoot-7 WAMuiChipInput-standard-11",
                                     }
                                   }
                                   fullWidth={false}
@@ -2486,7 +2488,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/nomal 1`] = `
                                         "focused": "MuiInputBase-focused-60 MuiInput-focused-47",
                                         "formControl": "MuiInputBase-formControl-59 MuiInput-formControl-46",
                                         "fullWidth": "MuiInputBase-fullWidth-67 MuiInput-fullWidth-52",
-                                        "input": "MuiInputBase-input-68 MuiInput-input-53 ChipInput-input-8 ChipInput-standard-11",
+                                        "input": "MuiInputBase-input-68 MuiInput-input-53 WAMuiChipInput-input-8 WAMuiChipInput-standard-11",
                                         "inputAdornedEnd": "MuiInputBase-inputAdornedEnd-74",
                                         "inputAdornedStart": "MuiInputBase-inputAdornedStart-73",
                                         "inputMarginDense": "MuiInputBase-inputMarginDense-69 MuiInput-inputMarginDense-54",
@@ -2495,7 +2497,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/nomal 1`] = `
                                         "inputTypeSearch": "MuiInputBase-inputTypeSearch-72 MuiInput-inputTypeSearch-57",
                                         "marginDense": "MuiInputBase-marginDense-65",
                                         "multiline": "MuiInputBase-multiline-66 MuiInput-multiline-51",
-                                        "root": "MuiInputBase-root-58 MuiInput-root-45 ChipInput-inputRoot-7 ChipInput-standard-11",
+                                        "root": "MuiInputBase-root-58 MuiInput-root-45 WAMuiChipInput-inputRoot-7 WAMuiChipInput-standard-11",
                                       }
                                     }
                                     fullWidth={false}
@@ -2529,13 +2531,13 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/nomal 1`] = `
                                     value=""
                                   >
                                     <div
-                                      className="MuiInputBase-root-58 MuiInput-root-45 ChipInput-inputRoot-7 ChipInput-standard-11 MuiInputBase-formControl-59 MuiInput-formControl-46"
+                                      className="MuiInputBase-root-58 MuiInput-root-45 WAMuiChipInput-inputRoot-7 WAMuiChipInput-standard-11 MuiInputBase-formControl-59 MuiInput-formControl-46"
                                       onClick={[Function]}
                                       onKeyPress={[Function]}
                                     >
                                       <input
                                         aria-invalid={false}
-                                        className="MuiInputBase-input-68 MuiInput-input-53 ChipInput-input-8 ChipInput-standard-11"
+                                        className="MuiInputBase-input-68 MuiInput-input-53 WAMuiChipInput-input-8 WAMuiChipInput-standard-11"
                                         disabled={false}
                                         onBlur={[Function]}
                                         onChange={[Function]}
@@ -2795,27 +2797,28 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/one_selected 1`] = `
                   blurBehavior="clear"
                   classes={
                     Object {
-                      "chip": "ChipInput-chip-22",
-                      "chipContainer": "ChipInput-chipContainer-9",
-                      "disabled": "ChipInput-disabled-19",
-                      "error": "ChipInput-error-21",
-                      "filled": "ChipInput-filled-12",
-                      "focused": "ChipInput-focused-18",
-                      "helperText": "ChipInput-helperText-16",
-                      "inkbar": "ChipInput-inkbar-17",
-                      "input": "ChipInput-input-8",
-                      "inputRoot": "ChipInput-inputRoot-7",
-                      "label": "ChipInput-label-14",
-                      "labelShrink": "ChipInput-labelShrink-15",
-                      "labeled": "ChipInput-labeled-13",
-                      "outlined": "ChipInput-outlined-10",
-                      "root": "ChipInput-root-6",
-                      "standard": "ChipInput-standard-11",
-                      "underline": "ChipInput-underline-20",
+                      "chip": "WAMuiChipInput-chip-22",
+                      "chipContainer": "WAMuiChipInput-chipContainer-9",
+                      "disabled": "WAMuiChipInput-disabled-19",
+                      "error": "WAMuiChipInput-error-21",
+                      "filled": "WAMuiChipInput-filled-12",
+                      "focused": "WAMuiChipInput-focused-18",
+                      "helperText": "WAMuiChipInput-helperText-16",
+                      "inkbar": "WAMuiChipInput-inkbar-17",
+                      "input": "WAMuiChipInput-input-8",
+                      "inputRoot": "WAMuiChipInput-inputRoot-7",
+                      "label": "WAMuiChipInput-label-14",
+                      "labelShrink": "WAMuiChipInput-labelShrink-15",
+                      "labeled": "WAMuiChipInput-labeled-13",
+                      "outlined": "WAMuiChipInput-outlined-10",
+                      "root": "WAMuiChipInput-root-6",
+                      "standard": "WAMuiChipInput-standard-11",
+                      "underline": "WAMuiChipInput-underline-20",
                     }
                   }
                   clearInputValueOnChange={true}
                   color="primary"
+                  delayBeforeAdd={false}
                   disableUnderline={false}
                   fullWidth={true}
                   inputRef={[Function]}
@@ -2839,14 +2842,14 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/one_selected 1`] = `
                   variant="standard"
                 >
                   <WithStyles(FormControl)
-                    className="ChipInput-root-6"
+                    className="WAMuiChipInput-root-6"
                     color="primary"
                     fullWidth={true}
                     onClick={[Function]}
                     variant="standard"
                   >
                     <FormControl
-                      className="ChipInput-root-6"
+                      className="WAMuiChipInput-root-6"
                       classes={
                         Object {
                           "fullWidth": "MuiFormControl-fullWidth-26",
@@ -2866,15 +2869,15 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/one_selected 1`] = `
                       variant="standard"
                     >
                       <div
-                        className="MuiFormControl-root-23 MuiFormControl-fullWidth-26 ChipInput-root-6"
+                        className="MuiFormControl-root-23 MuiFormControl-fullWidth-26 WAMuiChipInput-root-6"
                         color="primary"
                         onClick={[Function]}
                       >
                         <WithStyles(WithFormControlContext(InputLabel))
                           classes={
                             Object {
-                              "root": "ChipInput-standard-11 ChipInput-label-14",
-                              "shrink": "ChipInput-labelShrink-15",
+                              "root": "WAMuiChipInput-standard-11 WAMuiChipInput-label-14",
+                              "shrink": "WAMuiChipInput-labelShrink-15",
                             }
                           }
                           focused={false}
@@ -2893,8 +2896,8 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/one_selected 1`] = `
                                 "marginDense": "MuiInputLabel-marginDense-33",
                                 "outlined": "MuiInputLabel-outlined-37",
                                 "required": "MuiInputLabel-required-31",
-                                "root": "MuiInputLabel-root-27 ChipInput-standard-11 ChipInput-label-14",
-                                "shrink": "MuiInputLabel-shrink-34 ChipInput-labelShrink-15",
+                                "root": "MuiInputLabel-root-27 WAMuiChipInput-standard-11 WAMuiChipInput-label-14",
+                                "shrink": "MuiInputLabel-shrink-34 WAMuiChipInput-labelShrink-15",
                               }
                             }
                             focused={false}
@@ -2913,8 +2916,8 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/one_selected 1`] = `
                                   "marginDense": "MuiInputLabel-marginDense-33",
                                   "outlined": "MuiInputLabel-outlined-37",
                                   "required": "MuiInputLabel-required-31",
-                                  "root": "MuiInputLabel-root-27 ChipInput-standard-11 ChipInput-label-14",
-                                  "shrink": "MuiInputLabel-shrink-34 ChipInput-labelShrink-15",
+                                  "root": "MuiInputLabel-root-27 WAMuiChipInput-standard-11 WAMuiChipInput-label-14",
+                                  "shrink": "MuiInputLabel-shrink-34 WAMuiChipInput-labelShrink-15",
                                 }
                               }
                               disableAnimation={false}
@@ -2939,7 +2942,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/one_selected 1`] = `
                               variant="standard"
                             >
                               <WithStyles(WithFormControlContext(FormLabel))
-                                className="MuiInputLabel-root-27 ChipInput-standard-11 ChipInput-label-14 MuiInputLabel-formControl-32 MuiInputLabel-animated-35 MuiInputLabel-shrink-34 ChipInput-labelShrink-15"
+                                className="MuiInputLabel-root-27 WAMuiChipInput-standard-11 WAMuiChipInput-label-14 MuiInputLabel-formControl-32 MuiInputLabel-animated-35 MuiInputLabel-shrink-34 WAMuiChipInput-labelShrink-15"
                                 classes={
                                   Object {
                                     "disabled": "MuiInputLabel-disabled-29",
@@ -2952,7 +2955,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/one_selected 1`] = `
                                 focused={false}
                               >
                                 <WithFormControlContext(FormLabel)
-                                  className="MuiInputLabel-root-27 ChipInput-standard-11 ChipInput-label-14 MuiInputLabel-formControl-32 MuiInputLabel-animated-35 MuiInputLabel-shrink-34 ChipInput-labelShrink-15"
+                                  className="MuiInputLabel-root-27 WAMuiChipInput-standard-11 WAMuiChipInput-label-14 MuiInputLabel-formControl-32 MuiInputLabel-animated-35 MuiInputLabel-shrink-34 WAMuiChipInput-labelShrink-15"
                                   classes={
                                     Object {
                                       "asterisk": "MuiFormLabel-asterisk-44",
@@ -2968,7 +2971,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/one_selected 1`] = `
                                   focused={false}
                                 >
                                   <FormLabel
-                                    className="MuiInputLabel-root-27 ChipInput-standard-11 ChipInput-label-14 MuiInputLabel-formControl-32 MuiInputLabel-animated-35 MuiInputLabel-shrink-34 ChipInput-labelShrink-15"
+                                    className="MuiInputLabel-root-27 WAMuiChipInput-standard-11 WAMuiChipInput-label-14 MuiInputLabel-formControl-32 MuiInputLabel-animated-35 MuiInputLabel-shrink-34 WAMuiChipInput-labelShrink-15"
                                     classes={
                                       Object {
                                         "asterisk": "MuiFormLabel-asterisk-44",
@@ -3001,7 +3004,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/one_selected 1`] = `
                                     }
                                   >
                                     <label
-                                      className="MuiFormLabel-root-38 MuiInputLabel-root-27 ChipInput-standard-11 ChipInput-label-14 MuiInputLabel-formControl-32 MuiInputLabel-animated-35 MuiInputLabel-shrink-34 ChipInput-labelShrink-15"
+                                      className="MuiFormLabel-root-38 MuiInputLabel-root-27 WAMuiChipInput-standard-11 WAMuiChipInput-label-14 MuiInputLabel-formControl-32 MuiInputLabel-animated-35 MuiInputLabel-shrink-34 WAMuiChipInput-labelShrink-15"
                                       data-shrink={true}
                                     >
                                       カテゴリ
@@ -3013,10 +3016,10 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/one_selected 1`] = `
                           </WithFormControlContext(InputLabel)>
                         </WithStyles(WithFormControlContext(InputLabel))>
                         <div
-                          className="ChipInput-standard-11 ChipInput-chipContainer-9 ChipInput-inkbar-17 ChipInput-underline-20 ChipInput-labeled-13"
+                          className="WAMuiChipInput-standard-11 WAMuiChipInput-chipContainer-9 WAMuiChipInput-inkbar-17 WAMuiChipInput-underline-20 WAMuiChipInput-labeled-13"
                         >
                           <WithStyles(Chip)
-                            className="ChipInput-chip-22"
+                            className="WAMuiChipInput-chip-22"
                             key="0"
                             label="test"
                             onClick={[Function]}
@@ -3029,7 +3032,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/one_selected 1`] = `
                             }
                           >
                             <Chip
-                              className="ChipInput-chip-22"
+                              className="WAMuiChipInput-chip-22"
                               classes={
                                 Object {
                                   "avatar": "MuiChip-avatar-114",
@@ -3073,7 +3076,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/one_selected 1`] = `
                               variant="default"
                             >
                               <div
-                                className="MuiChip-root-102 MuiChip-clickable-105 MuiChip-deletable-108 ChipInput-chip-22"
+                                className="MuiChip-root-102 MuiChip-clickable-105 MuiChip-deletable-108 WAMuiChipInput-chip-22"
                                 onClick={[Function]}
                                 onKeyDown={[Function]}
                                 onKeyUp={[Function]}
@@ -3146,8 +3149,8 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/one_selected 1`] = `
                           <WithStyles(Input)
                             classes={
                               Object {
-                                "input": "ChipInput-input-8 ChipInput-standard-11",
-                                "root": "ChipInput-inputRoot-7 ChipInput-standard-11",
+                                "input": "WAMuiChipInput-input-8 WAMuiChipInput-standard-11",
+                                "root": "WAMuiChipInput-inputRoot-7 WAMuiChipInput-standard-11",
                               }
                             }
                             disableUnderline={true}
@@ -3169,13 +3172,13 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/one_selected 1`] = `
                                   "focused": "MuiInput-focused-47",
                                   "formControl": "MuiInput-formControl-46",
                                   "fullWidth": "MuiInput-fullWidth-52",
-                                  "input": "MuiInput-input-53 ChipInput-input-8 ChipInput-standard-11",
+                                  "input": "MuiInput-input-53 WAMuiChipInput-input-8 WAMuiChipInput-standard-11",
                                   "inputMarginDense": "MuiInput-inputMarginDense-54",
                                   "inputMultiline": "MuiInput-inputMultiline-55",
                                   "inputType": "MuiInput-inputType-56",
                                   "inputTypeSearch": "MuiInput-inputTypeSearch-57",
                                   "multiline": "MuiInput-multiline-51",
-                                  "root": "MuiInput-root-45 ChipInput-inputRoot-7 ChipInput-standard-11",
+                                  "root": "MuiInput-root-45 WAMuiChipInput-inputRoot-7 WAMuiChipInput-standard-11",
                                   "underline": "MuiInput-underline-49",
                                 }
                               }
@@ -3198,13 +3201,13 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/one_selected 1`] = `
                                     "focused": "MuiInput-focused-47",
                                     "formControl": "MuiInput-formControl-46",
                                     "fullWidth": "MuiInput-fullWidth-52",
-                                    "input": "MuiInput-input-53 ChipInput-input-8 ChipInput-standard-11",
+                                    "input": "MuiInput-input-53 WAMuiChipInput-input-8 WAMuiChipInput-standard-11",
                                     "inputMarginDense": "MuiInput-inputMarginDense-54",
                                     "inputMultiline": "MuiInput-inputMultiline-55",
                                     "inputType": "MuiInput-inputType-56",
                                     "inputTypeSearch": "MuiInput-inputTypeSearch-57",
                                     "multiline": "MuiInput-multiline-51",
-                                    "root": "MuiInput-root-45 ChipInput-inputRoot-7 ChipInput-standard-11",
+                                    "root": "MuiInput-root-45 WAMuiChipInput-inputRoot-7 WAMuiChipInput-standard-11",
                                     "underline": null,
                                   }
                                 }
@@ -3232,7 +3235,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/one_selected 1`] = `
                                       "focused": "MuiInputBase-focused-60 MuiInput-focused-47",
                                       "formControl": "MuiInputBase-formControl-59 MuiInput-formControl-46",
                                       "fullWidth": "MuiInputBase-fullWidth-67 MuiInput-fullWidth-52",
-                                      "input": "MuiInputBase-input-68 MuiInput-input-53 ChipInput-input-8 ChipInput-standard-11",
+                                      "input": "MuiInputBase-input-68 MuiInput-input-53 WAMuiChipInput-input-8 WAMuiChipInput-standard-11",
                                       "inputAdornedEnd": "MuiInputBase-inputAdornedEnd-74",
                                       "inputAdornedStart": "MuiInputBase-inputAdornedStart-73",
                                       "inputMarginDense": "MuiInputBase-inputMarginDense-69 MuiInput-inputMarginDense-54",
@@ -3241,7 +3244,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/one_selected 1`] = `
                                       "inputTypeSearch": "MuiInputBase-inputTypeSearch-72 MuiInput-inputTypeSearch-57",
                                       "marginDense": "MuiInputBase-marginDense-65",
                                       "multiline": "MuiInputBase-multiline-66 MuiInput-multiline-51",
-                                      "root": "MuiInputBase-root-58 MuiInput-root-45 ChipInput-inputRoot-7 ChipInput-standard-11",
+                                      "root": "MuiInputBase-root-58 MuiInput-root-45 WAMuiChipInput-inputRoot-7 WAMuiChipInput-standard-11",
                                     }
                                   }
                                   fullWidth={false}
@@ -3268,7 +3271,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/one_selected 1`] = `
                                         "focused": "MuiInputBase-focused-60 MuiInput-focused-47",
                                         "formControl": "MuiInputBase-formControl-59 MuiInput-formControl-46",
                                         "fullWidth": "MuiInputBase-fullWidth-67 MuiInput-fullWidth-52",
-                                        "input": "MuiInputBase-input-68 MuiInput-input-53 ChipInput-input-8 ChipInput-standard-11",
+                                        "input": "MuiInputBase-input-68 MuiInput-input-53 WAMuiChipInput-input-8 WAMuiChipInput-standard-11",
                                         "inputAdornedEnd": "MuiInputBase-inputAdornedEnd-74",
                                         "inputAdornedStart": "MuiInputBase-inputAdornedStart-73",
                                         "inputMarginDense": "MuiInputBase-inputMarginDense-69 MuiInput-inputMarginDense-54",
@@ -3277,7 +3280,7 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/one_selected 1`] = `
                                         "inputTypeSearch": "MuiInputBase-inputTypeSearch-72 MuiInput-inputTypeSearch-57",
                                         "marginDense": "MuiInputBase-marginDense-65",
                                         "multiline": "MuiInputBase-multiline-66 MuiInput-multiline-51",
-                                        "root": "MuiInputBase-root-58 MuiInput-root-45 ChipInput-inputRoot-7 ChipInput-standard-11",
+                                        "root": "MuiInputBase-root-58 MuiInput-root-45 WAMuiChipInput-inputRoot-7 WAMuiChipInput-standard-11",
                                       }
                                     }
                                     fullWidth={false}
@@ -3311,13 +3314,13 @@ exports[`should match snapshot: InputCategoriesAutoSuggest/one_selected 1`] = `
                                     value=""
                                   >
                                     <div
-                                      className="MuiInputBase-root-58 MuiInput-root-45 ChipInput-inputRoot-7 ChipInput-standard-11 MuiInputBase-formControl-59 MuiInput-formControl-46"
+                                      className="MuiInputBase-root-58 MuiInput-root-45 WAMuiChipInput-inputRoot-7 WAMuiChipInput-standard-11 MuiInputBase-formControl-59 MuiInput-formControl-46"
                                       onClick={[Function]}
                                       onKeyPress={[Function]}
                                     >
                                       <input
                                         aria-invalid={false}
-                                        className="MuiInputBase-input-68 MuiInput-input-53 ChipInput-input-8 ChipInput-standard-11"
+                                        className="MuiInputBase-input-68 MuiInput-input-53 WAMuiChipInput-input-8 WAMuiChipInput-standard-11"
                                         disabled={false}
                                         onBlur={[Function]}
                                         onChange={[Function]}

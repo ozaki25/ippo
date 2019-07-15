@@ -2960,11 +2960,19 @@ exports[`should match snapshot: Admin/nomal 1`] = `
                         defer={false}
                         fallback={null}
                       >
-                        <WithStyles(SwipeArea)
+                        <WithStyles(Component)
                           anchor="right"
+                          innerRef={
+                            Object {
+                              "current": <div
+                                class="MuiPrivateSwipeArea-root-173 MuiPrivateSwipeArea-anchorRight-175"
+                                style="width: 20px;"
+                              />,
+                            }
+                          }
                           width={20}
                         >
-                          <SwipeArea
+                          <ForwardRef
                             anchor="right"
                             classes={
                               Object {
@@ -2985,8 +2993,8 @@ exports[`should match snapshot: Admin/nomal 1`] = `
                                 }
                               }
                             />
-                          </SwipeArea>
-                        </WithStyles(SwipeArea)>
+                          </ForwardRef>
+                        </WithStyles(Component)>
                       </NoSsr>
                     </SwipeableDrawer>
                   </WithTheme(SwipeableDrawer)>
@@ -4946,6 +4954,7 @@ exports[`should match snapshot: Admin/nomal 1`] = `
                     </WithStyles(Typography)>
                     <WithStyles(Button)
                       color="primary"
+                      id="execute"
                       onClick={[Function]}
                       variant="outlined"
                     >
@@ -4985,6 +4994,7 @@ exports[`should match snapshot: Admin/nomal 1`] = `
                         disableFocusRipple={false}
                         disabled={false}
                         fullWidth={false}
+                        id="execute"
                         mini={false}
                         onClick={[Function]}
                         size="medium"
@@ -4997,6 +5007,7 @@ exports[`should match snapshot: Admin/nomal 1`] = `
                           disabled={false}
                           focusRipple={true}
                           focusVisibleClassName="MuiButton-focusVisible-161"
+                          id="execute"
                           onClick={[Function]}
                           type="button"
                         >
@@ -5016,6 +5027,7 @@ exports[`should match snapshot: Admin/nomal 1`] = `
                             disabled={false}
                             focusRipple={true}
                             focusVisibleClassName="MuiButton-focusVisible-161"
+                            id="execute"
                             onClick={[Function]}
                             tabIndex="0"
                             type="button"
@@ -5023,6 +5035,7 @@ exports[`should match snapshot: Admin/nomal 1`] = `
                             <button
                               className="MuiButtonBase-root-106 MuiButton-root-142 MuiButton-outlined-150 MuiButton-outlinedPrimary-151"
                               disabled={false}
+                              id="execute"
                               onBlur={[Function]}
                               onClick={[Function]}
                               onContextMenu={[Function]}

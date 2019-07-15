@@ -8,7 +8,7 @@ import { withStyles } from '@material-ui/core/styles';
 import propTypes from 'prop-types';
 import CATEGORIES from 'src/constants/categories';
 
-const renderInput = ({
+const renderInputComponent = ({
   onChange,
   onAdd,
   onDelete,
@@ -39,7 +39,11 @@ const renderSuggestion = (suggestion, { query, isHighlighted }) => {
   const matches = match(suggestion, query);
   const parts = parse(suggestion, matches);
   return (
-    <MenuItem selected={isHighlighted} component="div" onMouseDown={e => e.preventDefault()}>
+    <MenuItem
+      selected={isHighlighted}
+      component="div"
+      onMouseDown={e => e.preventDefault()}
+    >
       {parts.map((part, index) =>
         part.highlight ? (
           <span key={index} style={{ fontWeight: 300 }}>
@@ -105,56 +109,62 @@ const styles = theme => ({
   },
 });
 
-class InputCategoriesAutoSuggest extends React.Component {
-  state = {
-    suggestions: [],
-    textFieldInput: '',
+function InputCategoriesAutoSuggest({
+  classes,
+  label,
+  value,
+  handleAddChip,
+  handleDeleteChip,
+}) {
+  const [inputValue, setInputValue] = React.useState('');
+  const [chips, setChips] = React.useState([]);
+
+  const onChange = (e, { newValue }) => {
+    setInputValue(newValue);
   };
 
-  handleSuggestionsFetchRequested = ({ value }) => {
-    const suggestions = getSuggestions({ value, selected: this.props.value });
-    this.setState({ suggestions });
+  const onSuggestionsFetchRequested = props => {
+    setChips(getSuggestions({ value: props.value, selected: value }));
   };
 
-  handleSuggestionsClearRequested = () => this.setState({ suggestions: [] });
+  const onSuggestionsClearRequested = () => {
+    setChips([]);
+  };
 
-  handletextFieldInputChange = (event, { newValue }) => this.setState({ textFieldInput: newValue });
+  const onSuggestionSelected = (e, { suggestionValue }) => {
+    e.preventDefault();
+    handleAddChip(suggestionValue);
+  };
 
-  render() {
-    const { classes, label, value, handleAddChip, handleDeleteChip } = this.props;
-    const { suggestions, textFieldInput } = this.state;
-    return (
-      <Autosuggest
-        theme={{
-          container: classes.container,
-          suggestionsContainerOpen: classes.suggestionsContainerOpen,
-          suggestionsList: classes.suggestionsList,
-          suggestion: classes.suggestion,
-        }}
-        renderInputComponent={renderInput}
-        suggestions={suggestions}
-        onSuggestionsFetchRequested={this.handleSuggestionsFetchRequested}
-        onSuggestionsClearRequested={this.handleSuggestionsClearRequested}
-        renderSuggestionsContainer={renderSuggestionsContainer}
-        getSuggestionValue={getSuggestionValue}
-        renderSuggestion={renderSuggestion}
-        onSuggestionSelected={(e, { suggestionValue }) => {
-          handleAddChip(suggestionValue);
-          e.preventDefault();
-        }}
-        inputProps={{
-          classes,
-          chips: value,
-          onChange: this.handletextFieldInputChange,
-          value: textFieldInput,
-          onAdd: handleAddChip,
-          onDelete: handleDeleteChip,
-          label: label,
-        }}
-      />
-    );
-  }
+  return (
+    <Autosuggest
+      theme={{
+        container: classes.container,
+        suggestionsContainerOpen: classes.suggestionsContainerOpen,
+        suggestionsList: classes.suggestionsList,
+        suggestion: classes.suggestion,
+      }}
+      suggestions={chips}
+      onSuggestionsFetchRequested={onSuggestionsFetchRequested}
+      onSuggestionsClearRequested={onSuggestionsClearRequested}
+      onSuggestionSelected={onSuggestionSelected}
+      renderSuggestion={renderSuggestion}
+      renderSuggestionsContainer={renderSuggestionsContainer}
+      renderInputComponent={renderInputComponent}
+      getSuggestionValue={getSuggestionValue}
+      inputProps={{
+        classes,
+        label,
+        chips: value,
+        value: inputValue,
+        onChange,
+        onAdd: handleAddChip,
+        onDelete: handleDeleteChip,
+      }}
+    />
+  );
 }
+
 InputCategoriesAutoSuggest.displayName = 'InputCategoriesAutoSuggest';
 
 InputCategoriesAutoSuggest.propTypes = {

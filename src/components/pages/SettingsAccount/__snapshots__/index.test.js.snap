@@ -3106,11 +3106,19 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                         defer={false}
                         fallback={null}
                       >
-                        <WithStyles(SwipeArea)
+                        <WithStyles(Component)
                           anchor="right"
+                          innerRef={
+                            Object {
+                              "current": <div
+                                class="MuiPrivateSwipeArea-root-300 MuiPrivateSwipeArea-anchorRight-302"
+                                style="width: 20px;"
+                              />,
+                            }
+                          }
                           width={20}
                         >
-                          <SwipeArea
+                          <ForwardRef
                             anchor="right"
                             classes={
                               Object {
@@ -3131,8 +3139,8 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                                 }
                               }
                             />
-                          </SwipeArea>
-                        </WithStyles(SwipeArea)>
+                          </ForwardRef>
+                        </WithStyles(Component)>
                       </NoSsr>
                     </SwipeableDrawer>
                   </WithTheme(SwipeableDrawer)>
@@ -4097,27 +4105,28 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                               blurBehavior="clear"
                               classes={
                                 Object {
-                                  "chip": "ChipInput-chip-241",
-                                  "chipContainer": "ChipInput-chipContainer-228",
-                                  "disabled": "ChipInput-disabled-238",
-                                  "error": "ChipInput-error-240",
-                                  "filled": "ChipInput-filled-231",
-                                  "focused": "ChipInput-focused-237",
-                                  "helperText": "ChipInput-helperText-235",
-                                  "inkbar": "ChipInput-inkbar-236",
-                                  "input": "ChipInput-input-227",
-                                  "inputRoot": "ChipInput-inputRoot-226",
-                                  "label": "ChipInput-label-233",
-                                  "labelShrink": "ChipInput-labelShrink-234",
-                                  "labeled": "ChipInput-labeled-232",
-                                  "outlined": "ChipInput-outlined-229",
-                                  "root": "ChipInput-root-225",
-                                  "standard": "ChipInput-standard-230",
-                                  "underline": "ChipInput-underline-239",
+                                  "chip": "WAMuiChipInput-chip-241",
+                                  "chipContainer": "WAMuiChipInput-chipContainer-228",
+                                  "disabled": "WAMuiChipInput-disabled-238",
+                                  "error": "WAMuiChipInput-error-240",
+                                  "filled": "WAMuiChipInput-filled-231",
+                                  "focused": "WAMuiChipInput-focused-237",
+                                  "helperText": "WAMuiChipInput-helperText-235",
+                                  "inkbar": "WAMuiChipInput-inkbar-236",
+                                  "input": "WAMuiChipInput-input-227",
+                                  "inputRoot": "WAMuiChipInput-inputRoot-226",
+                                  "label": "WAMuiChipInput-label-233",
+                                  "labelShrink": "WAMuiChipInput-labelShrink-234",
+                                  "labeled": "WAMuiChipInput-labeled-232",
+                                  "outlined": "WAMuiChipInput-outlined-229",
+                                  "root": "WAMuiChipInput-root-225",
+                                  "standard": "WAMuiChipInput-standard-230",
+                                  "underline": "WAMuiChipInput-underline-239",
                                 }
                               }
                               clearInputValueOnChange={true}
                               color="primary"
+                              delayBeforeAdd={false}
                               disableUnderline={false}
                               fullWidth={true}
                               inputRef={[Function]}
@@ -4142,14 +4151,14 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                               variant="standard"
                             >
                               <WithStyles(FormControl)
-                                className="ChipInput-root-225"
+                                className="WAMuiChipInput-root-225"
                                 color="primary"
                                 fullWidth={true}
                                 onClick={[Function]}
                                 variant="standard"
                               >
                                 <FormControl
-                                  className="ChipInput-root-225"
+                                  className="WAMuiChipInput-root-225"
                                   classes={
                                     Object {
                                       "fullWidth": "MuiFormControl-fullWidth-171",
@@ -4169,15 +4178,15 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                                   variant="standard"
                                 >
                                   <div
-                                    className="MuiFormControl-root-168 MuiFormControl-fullWidth-171 ChipInput-root-225"
+                                    className="MuiFormControl-root-168 MuiFormControl-fullWidth-171 WAMuiChipInput-root-225"
                                     color="primary"
                                     onClick={[Function]}
                                   >
                                     <WithStyles(WithFormControlContext(InputLabel))
                                       classes={
                                         Object {
-                                          "root": "ChipInput-standard-230 ChipInput-label-233",
-                                          "shrink": "ChipInput-labelShrink-234",
+                                          "root": "WAMuiChipInput-standard-230 WAMuiChipInput-label-233",
+                                          "shrink": "WAMuiChipInput-labelShrink-234",
                                         }
                                       }
                                       focused={false}
@@ -4196,8 +4205,8 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                                             "marginDense": "MuiInputLabel-marginDense-178",
                                             "outlined": "MuiInputLabel-outlined-182",
                                             "required": "MuiInputLabel-required-176",
-                                            "root": "MuiInputLabel-root-172 ChipInput-standard-230 ChipInput-label-233",
-                                            "shrink": "MuiInputLabel-shrink-179 ChipInput-labelShrink-234",
+                                            "root": "MuiInputLabel-root-172 WAMuiChipInput-standard-230 WAMuiChipInput-label-233",
+                                            "shrink": "MuiInputLabel-shrink-179 WAMuiChipInput-labelShrink-234",
                                           }
                                         }
                                         focused={false}
@@ -4216,8 +4225,8 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                                               "marginDense": "MuiInputLabel-marginDense-178",
                                               "outlined": "MuiInputLabel-outlined-182",
                                               "required": "MuiInputLabel-required-176",
-                                              "root": "MuiInputLabel-root-172 ChipInput-standard-230 ChipInput-label-233",
-                                              "shrink": "MuiInputLabel-shrink-179 ChipInput-labelShrink-234",
+                                              "root": "MuiInputLabel-root-172 WAMuiChipInput-standard-230 WAMuiChipInput-label-233",
+                                              "shrink": "MuiInputLabel-shrink-179 WAMuiChipInput-labelShrink-234",
                                             }
                                           }
                                           disableAnimation={false}
@@ -4242,7 +4251,7 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                                           variant="standard"
                                         >
                                           <WithStyles(WithFormControlContext(FormLabel))
-                                            className="MuiInputLabel-root-172 ChipInput-standard-230 ChipInput-label-233 MuiInputLabel-formControl-177 MuiInputLabel-animated-180 MuiInputLabel-shrink-179 ChipInput-labelShrink-234"
+                                            className="MuiInputLabel-root-172 WAMuiChipInput-standard-230 WAMuiChipInput-label-233 MuiInputLabel-formControl-177 MuiInputLabel-animated-180 MuiInputLabel-shrink-179 WAMuiChipInput-labelShrink-234"
                                             classes={
                                               Object {
                                                 "disabled": "MuiInputLabel-disabled-174",
@@ -4255,7 +4264,7 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                                             focused={false}
                                           >
                                             <WithFormControlContext(FormLabel)
-                                              className="MuiInputLabel-root-172 ChipInput-standard-230 ChipInput-label-233 MuiInputLabel-formControl-177 MuiInputLabel-animated-180 MuiInputLabel-shrink-179 ChipInput-labelShrink-234"
+                                              className="MuiInputLabel-root-172 WAMuiChipInput-standard-230 WAMuiChipInput-label-233 MuiInputLabel-formControl-177 MuiInputLabel-animated-180 MuiInputLabel-shrink-179 WAMuiChipInput-labelShrink-234"
                                               classes={
                                                 Object {
                                                   "asterisk": "MuiFormLabel-asterisk-189",
@@ -4271,7 +4280,7 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                                               focused={false}
                                             >
                                               <FormLabel
-                                                className="MuiInputLabel-root-172 ChipInput-standard-230 ChipInput-label-233 MuiInputLabel-formControl-177 MuiInputLabel-animated-180 MuiInputLabel-shrink-179 ChipInput-labelShrink-234"
+                                                className="MuiInputLabel-root-172 WAMuiChipInput-standard-230 WAMuiChipInput-label-233 MuiInputLabel-formControl-177 MuiInputLabel-animated-180 MuiInputLabel-shrink-179 WAMuiChipInput-labelShrink-234"
                                                 classes={
                                                   Object {
                                                     "asterisk": "MuiFormLabel-asterisk-189",
@@ -4304,7 +4313,7 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                                                 }
                                               >
                                                 <label
-                                                  className="MuiFormLabel-root-183 MuiInputLabel-root-172 ChipInput-standard-230 ChipInput-label-233 MuiInputLabel-formControl-177 MuiInputLabel-animated-180 MuiInputLabel-shrink-179 ChipInput-labelShrink-234"
+                                                  className="MuiFormLabel-root-183 MuiInputLabel-root-172 WAMuiChipInput-standard-230 WAMuiChipInput-label-233 MuiInputLabel-formControl-177 MuiInputLabel-animated-180 MuiInputLabel-shrink-179 WAMuiChipInput-labelShrink-234"
                                                   data-shrink={true}
                                                 >
                                                   興味のあるカテゴリ
@@ -4316,10 +4325,10 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                                       </WithFormControlContext(InputLabel)>
                                     </WithStyles(WithFormControlContext(InputLabel))>
                                     <div
-                                      className="ChipInput-standard-230 ChipInput-chipContainer-228 ChipInput-inkbar-236 ChipInput-underline-239 ChipInput-labeled-232"
+                                      className="WAMuiChipInput-standard-230 WAMuiChipInput-chipContainer-228 WAMuiChipInput-inkbar-236 WAMuiChipInput-underline-239 WAMuiChipInput-labeled-232"
                                     >
                                       <WithStyles(Chip)
-                                        className="ChipInput-chip-241"
+                                        className="WAMuiChipInput-chip-241"
                                         key="0"
                                         label="test1"
                                         onClick={[Function]}
@@ -4332,7 +4341,7 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                                         }
                                       >
                                         <Chip
-                                          className="ChipInput-chip-241"
+                                          className="WAMuiChipInput-chip-241"
                                           classes={
                                             Object {
                                               "avatar": "MuiChip-avatar-254",
@@ -4376,7 +4385,7 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                                           variant="default"
                                         >
                                           <div
-                                            className="MuiChip-root-242 MuiChip-clickable-245 MuiChip-deletable-248 ChipInput-chip-241"
+                                            className="MuiChip-root-242 MuiChip-clickable-245 MuiChip-deletable-248 WAMuiChipInput-chip-241"
                                             onClick={[Function]}
                                             onKeyDown={[Function]}
                                             onKeyUp={[Function]}
@@ -4447,7 +4456,7 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                                         </Chip>
                                       </WithStyles(Chip)>
                                       <WithStyles(Chip)
-                                        className="ChipInput-chip-241"
+                                        className="WAMuiChipInput-chip-241"
                                         key="1"
                                         label="test2"
                                         onClick={[Function]}
@@ -4460,7 +4469,7 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                                         }
                                       >
                                         <Chip
-                                          className="ChipInput-chip-241"
+                                          className="WAMuiChipInput-chip-241"
                                           classes={
                                             Object {
                                               "avatar": "MuiChip-avatar-254",
@@ -4504,7 +4513,7 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                                           variant="default"
                                         >
                                           <div
-                                            className="MuiChip-root-242 MuiChip-clickable-245 MuiChip-deletable-248 ChipInput-chip-241"
+                                            className="MuiChip-root-242 MuiChip-clickable-245 MuiChip-deletable-248 WAMuiChipInput-chip-241"
                                             onClick={[Function]}
                                             onKeyDown={[Function]}
                                             onKeyUp={[Function]}
@@ -4577,8 +4586,8 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                                       <WithStyles(Input)
                                         classes={
                                           Object {
-                                            "input": "ChipInput-input-227 ChipInput-standard-230",
-                                            "root": "ChipInput-inputRoot-226 ChipInput-standard-230",
+                                            "input": "WAMuiChipInput-input-227 WAMuiChipInput-standard-230",
+                                            "root": "WAMuiChipInput-inputRoot-226 WAMuiChipInput-standard-230",
                                           }
                                         }
                                         disableUnderline={true}
@@ -4600,13 +4609,13 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                                               "focused": "MuiInput-focused-192",
                                               "formControl": "MuiInput-formControl-191",
                                               "fullWidth": "MuiInput-fullWidth-197",
-                                              "input": "MuiInput-input-198 ChipInput-input-227 ChipInput-standard-230",
+                                              "input": "MuiInput-input-198 WAMuiChipInput-input-227 WAMuiChipInput-standard-230",
                                               "inputMarginDense": "MuiInput-inputMarginDense-199",
                                               "inputMultiline": "MuiInput-inputMultiline-200",
                                               "inputType": "MuiInput-inputType-201",
                                               "inputTypeSearch": "MuiInput-inputTypeSearch-202",
                                               "multiline": "MuiInput-multiline-196",
-                                              "root": "MuiInput-root-190 ChipInput-inputRoot-226 ChipInput-standard-230",
+                                              "root": "MuiInput-root-190 WAMuiChipInput-inputRoot-226 WAMuiChipInput-standard-230",
                                               "underline": "MuiInput-underline-194",
                                             }
                                           }
@@ -4629,13 +4638,13 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                                                 "focused": "MuiInput-focused-192",
                                                 "formControl": "MuiInput-formControl-191",
                                                 "fullWidth": "MuiInput-fullWidth-197",
-                                                "input": "MuiInput-input-198 ChipInput-input-227 ChipInput-standard-230",
+                                                "input": "MuiInput-input-198 WAMuiChipInput-input-227 WAMuiChipInput-standard-230",
                                                 "inputMarginDense": "MuiInput-inputMarginDense-199",
                                                 "inputMultiline": "MuiInput-inputMultiline-200",
                                                 "inputType": "MuiInput-inputType-201",
                                                 "inputTypeSearch": "MuiInput-inputTypeSearch-202",
                                                 "multiline": "MuiInput-multiline-196",
-                                                "root": "MuiInput-root-190 ChipInput-inputRoot-226 ChipInput-standard-230",
+                                                "root": "MuiInput-root-190 WAMuiChipInput-inputRoot-226 WAMuiChipInput-standard-230",
                                                 "underline": null,
                                               }
                                             }
@@ -4663,7 +4672,7 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                                                   "focused": "MuiInputBase-focused-205 MuiInput-focused-192",
                                                   "formControl": "MuiInputBase-formControl-204 MuiInput-formControl-191",
                                                   "fullWidth": "MuiInputBase-fullWidth-212 MuiInput-fullWidth-197",
-                                                  "input": "MuiInputBase-input-213 MuiInput-input-198 ChipInput-input-227 ChipInput-standard-230",
+                                                  "input": "MuiInputBase-input-213 MuiInput-input-198 WAMuiChipInput-input-227 WAMuiChipInput-standard-230",
                                                   "inputAdornedEnd": "MuiInputBase-inputAdornedEnd-219",
                                                   "inputAdornedStart": "MuiInputBase-inputAdornedStart-218",
                                                   "inputMarginDense": "MuiInputBase-inputMarginDense-214 MuiInput-inputMarginDense-199",
@@ -4672,7 +4681,7 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                                                   "inputTypeSearch": "MuiInputBase-inputTypeSearch-217 MuiInput-inputTypeSearch-202",
                                                   "marginDense": "MuiInputBase-marginDense-210",
                                                   "multiline": "MuiInputBase-multiline-211 MuiInput-multiline-196",
-                                                  "root": "MuiInputBase-root-203 MuiInput-root-190 ChipInput-inputRoot-226 ChipInput-standard-230",
+                                                  "root": "MuiInputBase-root-203 MuiInput-root-190 WAMuiChipInput-inputRoot-226 WAMuiChipInput-standard-230",
                                                 }
                                               }
                                               fullWidth={false}
@@ -4699,7 +4708,7 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                                                     "focused": "MuiInputBase-focused-205 MuiInput-focused-192",
                                                     "formControl": "MuiInputBase-formControl-204 MuiInput-formControl-191",
                                                     "fullWidth": "MuiInputBase-fullWidth-212 MuiInput-fullWidth-197",
-                                                    "input": "MuiInputBase-input-213 MuiInput-input-198 ChipInput-input-227 ChipInput-standard-230",
+                                                    "input": "MuiInputBase-input-213 MuiInput-input-198 WAMuiChipInput-input-227 WAMuiChipInput-standard-230",
                                                     "inputAdornedEnd": "MuiInputBase-inputAdornedEnd-219",
                                                     "inputAdornedStart": "MuiInputBase-inputAdornedStart-218",
                                                     "inputMarginDense": "MuiInputBase-inputMarginDense-214 MuiInput-inputMarginDense-199",
@@ -4708,7 +4717,7 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                                                     "inputTypeSearch": "MuiInputBase-inputTypeSearch-217 MuiInput-inputTypeSearch-202",
                                                     "marginDense": "MuiInputBase-marginDense-210",
                                                     "multiline": "MuiInputBase-multiline-211 MuiInput-multiline-196",
-                                                    "root": "MuiInputBase-root-203 MuiInput-root-190 ChipInput-inputRoot-226 ChipInput-standard-230",
+                                                    "root": "MuiInputBase-root-203 MuiInput-root-190 WAMuiChipInput-inputRoot-226 WAMuiChipInput-standard-230",
                                                   }
                                                 }
                                                 fullWidth={false}
@@ -4742,13 +4751,13 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                                                 value=""
                                               >
                                                 <div
-                                                  className="MuiInputBase-root-203 MuiInput-root-190 ChipInput-inputRoot-226 ChipInput-standard-230 MuiInputBase-formControl-204 MuiInput-formControl-191"
+                                                  className="MuiInputBase-root-203 MuiInput-root-190 WAMuiChipInput-inputRoot-226 WAMuiChipInput-standard-230 MuiInputBase-formControl-204 MuiInput-formControl-191"
                                                   onClick={[Function]}
                                                   onKeyPress={[Function]}
                                                 >
                                                   <input
                                                     aria-invalid={false}
-                                                    className="MuiInputBase-input-213 MuiInput-input-198 ChipInput-input-227 ChipInput-standard-230"
+                                                    className="MuiInputBase-input-213 MuiInput-input-198 WAMuiChipInput-input-227 WAMuiChipInput-standard-230"
                                                     disabled={false}
                                                     onBlur={[Function]}
                                                     onChange={[Function]}
