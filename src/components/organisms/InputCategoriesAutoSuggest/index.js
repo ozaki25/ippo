@@ -118,8 +118,18 @@ function InputCategoriesAutoSuggest({
 }) {
   const [inputValue, setInputValue] = React.useState('');
   const [chips, setChips] = React.useState([]);
+  // const [value, setSelectedChips] = React.useState([]);
+
+  // const handleAddChip = chip => {
+  //   setSelectedChips([...value, chip]);
+  // };
+
+  // const handleDeleteChip = (chip, index) => {
+  //   setSelectedChips(value.filter((val, i) => index !== i));
+  // };
 
   const onChange = (e, { newValue }) => {
+    console.log({ old: inputValue, new: newValue });
     setInputValue(newValue);
   };
 
