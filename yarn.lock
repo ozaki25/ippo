@@ -8418,10 +8418,10 @@ material-colors@^1.2.1:
   resolved "https://registry.yarnpkg.com/material-colors/-/material-colors-1.2.6.tgz#6d1958871126992ceecc72f4bcc4d8f010865f46"
   integrity sha512-6qE4B9deFBIa9YSpOc9O0Sgc43zTeVYbgDT5veRKSlB2+ZuHNoVVxA1L/ckMUayV9Ay9y7Z/SZCLcGteW9i7bg==
 
-material-ui-chip-input@1.0.0-beta.11:
-  version "1.0.0-beta.11"
-  resolved "https://registry.yarnpkg.com/material-ui-chip-input/-/material-ui-chip-input-1.0.0-beta.11.tgz#c99bd6e84a7ce459730b56e4f2fffd81a1860fda"
-  integrity sha512-2Z4eX+khad/7ukA5+S/6AtoanfS0JIcDyqZ3WDDe3v2jDxkEAtYccI9H2gZgevmbRPAeORgMunZurCyE6G2iYQ==
+material-ui-chip-input@1.0.0-beta.12:
+  version "1.0.0-beta.12"
+  resolved "https://registry.yarnpkg.com/material-ui-chip-input/-/material-ui-chip-input-1.0.0-beta.12.tgz#d228d8480a09b65c6276585e0f91bbe9275f9a27"
+  integrity sha512-jAhVhn5NEQS/v2r3lHuc/VrA6aO0iLmjWVtIO6MM/BHqmuHFS5TrpxApVCZG30Adrivg/qsCfp9Pmt35r7nIAA==
   dependencies:
     classnames "^2.2.5"
     prop-types "^15.6.1"
