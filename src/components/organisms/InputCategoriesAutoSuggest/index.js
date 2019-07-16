@@ -129,7 +129,7 @@ function InputCategoriesAutoSuggest({
   // };
 
   const onChange = (e, { newValue }) => {
-    console.log({ old: inputValue, new: newValue, event: e });
+    console.log({ old: inputValue, new: newValue, event: JSON.stringify(e) });
     setInputValue(newValue);
   };
 
@@ -171,7 +171,7 @@ function InputCategoriesAutoSuggest({
         onAdd: handleAddChip,
         onDelete: handleDeleteChip,
       }}
-      focusInputOnSuggestionClick
+      // focusInputOnSuggestionClick
     />
   );
 }
