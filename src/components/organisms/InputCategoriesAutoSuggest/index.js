@@ -31,7 +31,7 @@ const renderInputComponent = ({
     value={chips}
     inputRef={ref}
     fullWidth
-    clearInputValueOnChange
+    // clearInputValueOnChange
   />
 );
 
