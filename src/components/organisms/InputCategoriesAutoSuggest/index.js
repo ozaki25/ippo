@@ -31,7 +31,7 @@ const renderInputComponent = ({
     value={chips}
     inputRef={ref}
     fullWidth
-    // clearInputValueOnChange
+    clearInputValueOnChange
   />
 );
 
@@ -129,7 +129,7 @@ function InputCategoriesAutoSuggest({
   // };
 
   const onChange = (e, { newValue }) => {
-    console.log({ old: inputValue, new: newValue });
+    console.log({ old: inputValue, new: newValue, event: e });
     setInputValue(newValue);
   };
 
