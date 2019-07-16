@@ -129,7 +129,7 @@ function InputCategoriesAutoSuggest({
   // };
 
   const onChange = (e, { newValue }) => {
-    console.log({ old: inputValue, new: newValue, event: JSON.stringify(e) });
+    console.log({ old: inputValue, new: newValue });
     setInputValue(newValue);
   };
 
