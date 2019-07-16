@@ -171,6 +171,7 @@ function InputCategoriesAutoSuggest({
         onAdd: handleAddChip,
         onDelete: handleDeleteChip,
       }}
+      focusInputOnSuggestionClick
     />
   );
 }
