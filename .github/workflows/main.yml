@@ -4,9 +4,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@development
+      - uses: actions/checkout@master
       - name: Use Node.js 12
-        uses: actions/setup-node@development
+        uses: actions/setup-node@master
         with:
           node-version: 12
       - name: install
