@@ -1,0 +1,19 @@
+name: Main
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@development
+      - name: Use Node.js 12
+        uses: actions/setup-node@development
+        with:
+          node-version: 12
+      - name: install
+        run: |
+          yarn install
+      - name: test
+        run: |
+          yarn test
+        env:
+          CI: true
