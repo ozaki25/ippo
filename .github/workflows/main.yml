@@ -17,3 +17,4 @@ jobs:
           yarn test
         env:
           CI: true
+          TZ: Asia/Tokyo
