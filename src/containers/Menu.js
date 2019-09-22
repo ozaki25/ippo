@@ -1,13 +1,13 @@
 import { graphql } from 'react-apollo';
 import { compose } from 'recompose';
 import { withRouter } from 'react-router-dom';
-import { withFirebase } from 'src/context/firebase';
-import query from 'src/graphql/query';
-import mutation from 'src/graphql/mutation';
-import Menu from 'src/components/pages/Menu';
-import { withAuthorization } from 'src/hoc/Sessions';
-import withTab from 'src/hoc/withTab';
-import paging from 'src/constants/paging';
+import { withFirebase } from 'context/firebase';
+import query from 'graphql/query';
+import mutation from 'graphql/mutation';
+import Menu from 'components/pages/Menu';
+import { withAuthorization } from 'hoc/Sessions';
+import withTab from 'hoc/withTab';
+import paging from 'constants/paging';
 
 export default compose(
   withAuthorization,

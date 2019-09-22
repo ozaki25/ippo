@@ -2,15 +2,15 @@ import React from 'react';
 import { Dialog, DialogTitle, TextField, Typography } from '@material-ui/core';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
-import RoundedButton from 'src/components/atoms/RoundedButton';
-import CharIcon from 'src/components/atoms/CharIcon';
-import PopMessage from 'src/components/atoms/PopMessage';
-import TweetHeader from 'src/components/organisms/TweetHeader';
-import TweetBody from 'src/components/organisms/TweetBody';
-import Container from 'src/components/templates/Container';
-import TWEET_WORD from 'src/constants/tweetWord';
-import alertMessage from 'src/constants/alertMessage';
-import dateFormat from 'src/utils/dateFormat';
+import RoundedButton from 'components/atoms/RoundedButton';
+import CharIcon from 'components/atoms/CharIcon';
+import PopMessage from 'components/atoms/PopMessage';
+import TweetHeader from 'components/organisms/TweetHeader';
+import TweetBody from 'components/organisms/TweetBody';
+import Container from 'components/templates/Container';
+import TWEET_WORD from 'constants/tweetWord';
+import alertMessage from 'constants/alertMessage';
+import dateFormat from 'utils/dateFormat';
 
 const inputProps = {
   style: {

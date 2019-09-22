@@ -631,7 +631,6 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
                                     "withComponent": [Function],
-                                    Symbol(Symbol.hasInstance): [Function],
                                   }
                                 }
                                 forwardedRef={null}
@@ -780,25 +779,25 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                                                       center={true}
                                                       classes={
                                                         Object {
-                                                          "child": "MuiTouchRipple-child-297",
-                                                          "childLeaving": "MuiTouchRipple-childLeaving-298",
-                                                          "childPulsate": "MuiTouchRipple-childPulsate-299",
-                                                          "ripple": "MuiTouchRipple-ripple-294",
-                                                          "ripplePulsate": "MuiTouchRipple-ripplePulsate-296",
-                                                          "rippleVisible": "MuiTouchRipple-rippleVisible-295",
-                                                          "root": "MuiTouchRipple-root-293",
+                                                          "child": "MuiTouchRipple-child-298",
+                                                          "childLeaving": "MuiTouchRipple-childLeaving-299",
+                                                          "childPulsate": "MuiTouchRipple-childPulsate-300",
+                                                          "ripple": "MuiTouchRipple-ripple-295",
+                                                          "ripplePulsate": "MuiTouchRipple-ripplePulsate-297",
+                                                          "rippleVisible": "MuiTouchRipple-rippleVisible-296",
+                                                          "root": "MuiTouchRipple-root-294",
                                                         }
                                                       }
                                                     >
                                                       <TransitionGroup
                                                         childFactory={[Function]}
-                                                        className="MuiTouchRipple-root-293"
+                                                        className="MuiTouchRipple-root-294"
                                                         component="span"
                                                         enter={true}
                                                         exit={true}
                                                       >
                                                         <span
-                                                          className="MuiTouchRipple-root-293"
+                                                          className="MuiTouchRipple-root-294"
                                                         />
                                                       </TransitionGroup>
                                                     </TouchRipple>
@@ -1202,7 +1201,6 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                                               "toString": [Function],
                                               "warnTooManyClasses": [Function],
                                               "withComponent": [Function],
-                                              Symbol(Symbol.hasInstance): [Function],
                                             }
                                           }
                                           forwardedRef={null}
@@ -3111,7 +3109,7 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                           innerRef={
                             Object {
                               "current": <div
-                                class="MuiPrivateSwipeArea-root-300 MuiPrivateSwipeArea-anchorRight-302"
+                                class="MuiPrivateSwipeArea-root-301 MuiPrivateSwipeArea-anchorRight-303"
                                 style="width: 20px;"
                               />,
                             }
@@ -3122,17 +3120,17 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                             anchor="right"
                             classes={
                               Object {
-                                "anchorBottom": "MuiPrivateSwipeArea-anchorBottom-304",
-                                "anchorLeft": "MuiPrivateSwipeArea-anchorLeft-301",
-                                "anchorRight": "MuiPrivateSwipeArea-anchorRight-302",
-                                "anchorTop": "MuiPrivateSwipeArea-anchorTop-303",
-                                "root": "MuiPrivateSwipeArea-root-300",
+                                "anchorBottom": "MuiPrivateSwipeArea-anchorBottom-305",
+                                "anchorLeft": "MuiPrivateSwipeArea-anchorLeft-302",
+                                "anchorRight": "MuiPrivateSwipeArea-anchorRight-303",
+                                "anchorTop": "MuiPrivateSwipeArea-anchorTop-304",
+                                "root": "MuiPrivateSwipeArea-root-301",
                               }
                             }
                             width={20}
                           >
                             <div
-                              className="MuiPrivateSwipeArea-root-300 MuiPrivateSwipeArea-anchorRight-302"
+                              className="MuiPrivateSwipeArea-root-301 MuiPrivateSwipeArea-anchorRight-303"
                               style={
                                 Object {
                                   "width": 20,
@@ -4118,6 +4116,7 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                                   "label": "WAMuiChipInput-label-233",
                                   "labelShrink": "WAMuiChipInput-labelShrink-234",
                                   "labeled": "WAMuiChipInput-labeled-232",
+                                  "marginDense": "WAMuiChipInput-marginDense-242",
                                   "outlined": "WAMuiChipInput-outlined-229",
                                   "root": "WAMuiChipInput-root-225",
                                   "standard": "WAMuiChipInput-standard-230",
@@ -4344,31 +4343,31 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                                           className="WAMuiChipInput-chip-241"
                                           classes={
                                             Object {
-                                              "avatar": "MuiChip-avatar-254",
-                                              "avatarChildren": "MuiChip-avatarChildren-257",
-                                              "avatarColorPrimary": "MuiChip-avatarColorPrimary-255",
-                                              "avatarColorSecondary": "MuiChip-avatarColorSecondary-256",
-                                              "clickable": "MuiChip-clickable-245",
-                                              "clickableColorPrimary": "MuiChip-clickableColorPrimary-246",
-                                              "clickableColorSecondary": "MuiChip-clickableColorSecondary-247",
-                                              "colorPrimary": "MuiChip-colorPrimary-243",
-                                              "colorSecondary": "MuiChip-colorSecondary-244",
-                                              "deletable": "MuiChip-deletable-248",
-                                              "deletableColorPrimary": "MuiChip-deletableColorPrimary-249",
-                                              "deletableColorSecondary": "MuiChip-deletableColorSecondary-250",
-                                              "deleteIcon": "MuiChip-deleteIcon-262",
-                                              "deleteIconColorPrimary": "MuiChip-deleteIconColorPrimary-263",
-                                              "deleteIconColorSecondary": "MuiChip-deleteIconColorSecondary-264",
-                                              "deleteIconOutlinedColorPrimary": "MuiChip-deleteIconOutlinedColorPrimary-265",
-                                              "deleteIconOutlinedColorSecondary": "MuiChip-deleteIconOutlinedColorSecondary-266",
-                                              "icon": "MuiChip-icon-258",
-                                              "iconColorPrimary": "MuiChip-iconColorPrimary-259",
-                                              "iconColorSecondary": "MuiChip-iconColorSecondary-260",
-                                              "label": "MuiChip-label-261",
-                                              "outlined": "MuiChip-outlined-251",
-                                              "outlinedPrimary": "MuiChip-outlinedPrimary-252",
-                                              "outlinedSecondary": "MuiChip-outlinedSecondary-253",
-                                              "root": "MuiChip-root-242",
+                                              "avatar": "MuiChip-avatar-255",
+                                              "avatarChildren": "MuiChip-avatarChildren-258",
+                                              "avatarColorPrimary": "MuiChip-avatarColorPrimary-256",
+                                              "avatarColorSecondary": "MuiChip-avatarColorSecondary-257",
+                                              "clickable": "MuiChip-clickable-246",
+                                              "clickableColorPrimary": "MuiChip-clickableColorPrimary-247",
+                                              "clickableColorSecondary": "MuiChip-clickableColorSecondary-248",
+                                              "colorPrimary": "MuiChip-colorPrimary-244",
+                                              "colorSecondary": "MuiChip-colorSecondary-245",
+                                              "deletable": "MuiChip-deletable-249",
+                                              "deletableColorPrimary": "MuiChip-deletableColorPrimary-250",
+                                              "deletableColorSecondary": "MuiChip-deletableColorSecondary-251",
+                                              "deleteIcon": "MuiChip-deleteIcon-263",
+                                              "deleteIconColorPrimary": "MuiChip-deleteIconColorPrimary-264",
+                                              "deleteIconColorSecondary": "MuiChip-deleteIconColorSecondary-265",
+                                              "deleteIconOutlinedColorPrimary": "MuiChip-deleteIconOutlinedColorPrimary-266",
+                                              "deleteIconOutlinedColorSecondary": "MuiChip-deleteIconOutlinedColorSecondary-267",
+                                              "icon": "MuiChip-icon-259",
+                                              "iconColorPrimary": "MuiChip-iconColorPrimary-260",
+                                              "iconColorSecondary": "MuiChip-iconColorSecondary-261",
+                                              "label": "MuiChip-label-262",
+                                              "outlined": "MuiChip-outlined-252",
+                                              "outlinedPrimary": "MuiChip-outlinedPrimary-253",
+                                              "outlinedSecondary": "MuiChip-outlinedSecondary-254",
+                                              "root": "MuiChip-root-243",
                                             }
                                           }
                                           color="default"
@@ -4385,7 +4384,7 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                                           variant="default"
                                         >
                                           <div
-                                            className="MuiChip-root-242 MuiChip-clickable-245 MuiChip-deletable-248 WAMuiChipInput-chip-241"
+                                            className="MuiChip-root-243 MuiChip-clickable-246 MuiChip-deletable-249 WAMuiChipInput-chip-241"
                                             onClick={[Function]}
                                             onKeyDown={[Function]}
                                             onKeyUp={[Function]}
@@ -4399,24 +4398,24 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                                             tabIndex={0}
                                           >
                                             <span
-                                              className="MuiChip-label-261"
+                                              className="MuiChip-label-262"
                                             >
                                               test1
                                             </span>
                                             <pure(Cancel)
-                                              className="MuiChip-deleteIcon-262"
+                                              className="MuiChip-deleteIcon-263"
                                               onClick={[Function]}
                                             >
                                               <Cancel
-                                                className="MuiChip-deleteIcon-262"
+                                                className="MuiChip-deleteIcon-263"
                                                 onClick={[Function]}
                                               >
                                                 <WithStyles(SvgIcon)
-                                                  className="MuiChip-deleteIcon-262"
+                                                  className="MuiChip-deleteIcon-263"
                                                   onClick={[Function]}
                                                 >
                                                   <SvgIcon
-                                                    className="MuiChip-deleteIcon-262"
+                                                    className="MuiChip-deleteIcon-263"
                                                     classes={
                                                       Object {
                                                         "colorAction": "MuiSvgIcon-colorAction-54",
@@ -4438,7 +4437,7 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                                                   >
                                                     <svg
                                                       aria-hidden="true"
-                                                      className="MuiSvgIcon-root-51 MuiChip-deleteIcon-262"
+                                                      className="MuiSvgIcon-root-51 MuiChip-deleteIcon-263"
                                                       focusable="false"
                                                       onClick={[Function]}
                                                       role="presentation"
@@ -4472,31 +4471,31 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                                           className="WAMuiChipInput-chip-241"
                                           classes={
                                             Object {
-                                              "avatar": "MuiChip-avatar-254",
-                                              "avatarChildren": "MuiChip-avatarChildren-257",
-                                              "avatarColorPrimary": "MuiChip-avatarColorPrimary-255",
-                                              "avatarColorSecondary": "MuiChip-avatarColorSecondary-256",
-                                              "clickable": "MuiChip-clickable-245",
-                                              "clickableColorPrimary": "MuiChip-clickableColorPrimary-246",
-                                              "clickableColorSecondary": "MuiChip-clickableColorSecondary-247",
-                                              "colorPrimary": "MuiChip-colorPrimary-243",
-                                              "colorSecondary": "MuiChip-colorSecondary-244",
-                                              "deletable": "MuiChip-deletable-248",
-                                              "deletableColorPrimary": "MuiChip-deletableColorPrimary-249",
-                                              "deletableColorSecondary": "MuiChip-deletableColorSecondary-250",
-                                              "deleteIcon": "MuiChip-deleteIcon-262",
-                                              "deleteIconColorPrimary": "MuiChip-deleteIconColorPrimary-263",
-                                              "deleteIconColorSecondary": "MuiChip-deleteIconColorSecondary-264",
-                                              "deleteIconOutlinedColorPrimary": "MuiChip-deleteIconOutlinedColorPrimary-265",
-                                              "deleteIconOutlinedColorSecondary": "MuiChip-deleteIconOutlinedColorSecondary-266",
-                                              "icon": "MuiChip-icon-258",
-                                              "iconColorPrimary": "MuiChip-iconColorPrimary-259",
-                                              "iconColorSecondary": "MuiChip-iconColorSecondary-260",
-                                              "label": "MuiChip-label-261",
-                                              "outlined": "MuiChip-outlined-251",
-                                              "outlinedPrimary": "MuiChip-outlinedPrimary-252",
-                                              "outlinedSecondary": "MuiChip-outlinedSecondary-253",
-                                              "root": "MuiChip-root-242",
+                                              "avatar": "MuiChip-avatar-255",
+                                              "avatarChildren": "MuiChip-avatarChildren-258",
+                                              "avatarColorPrimary": "MuiChip-avatarColorPrimary-256",
+                                              "avatarColorSecondary": "MuiChip-avatarColorSecondary-257",
+                                              "clickable": "MuiChip-clickable-246",
+                                              "clickableColorPrimary": "MuiChip-clickableColorPrimary-247",
+                                              "clickableColorSecondary": "MuiChip-clickableColorSecondary-248",
+                                              "colorPrimary": "MuiChip-colorPrimary-244",
+                                              "colorSecondary": "MuiChip-colorSecondary-245",
+                                              "deletable": "MuiChip-deletable-249",
+                                              "deletableColorPrimary": "MuiChip-deletableColorPrimary-250",
+                                              "deletableColorSecondary": "MuiChip-deletableColorSecondary-251",
+                                              "deleteIcon": "MuiChip-deleteIcon-263",
+                                              "deleteIconColorPrimary": "MuiChip-deleteIconColorPrimary-264",
+                                              "deleteIconColorSecondary": "MuiChip-deleteIconColorSecondary-265",
+                                              "deleteIconOutlinedColorPrimary": "MuiChip-deleteIconOutlinedColorPrimary-266",
+                                              "deleteIconOutlinedColorSecondary": "MuiChip-deleteIconOutlinedColorSecondary-267",
+                                              "icon": "MuiChip-icon-259",
+                                              "iconColorPrimary": "MuiChip-iconColorPrimary-260",
+                                              "iconColorSecondary": "MuiChip-iconColorSecondary-261",
+                                              "label": "MuiChip-label-262",
+                                              "outlined": "MuiChip-outlined-252",
+                                              "outlinedPrimary": "MuiChip-outlinedPrimary-253",
+                                              "outlinedSecondary": "MuiChip-outlinedSecondary-254",
+                                              "root": "MuiChip-root-243",
                                             }
                                           }
                                           color="default"
@@ -4513,7 +4512,7 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                                           variant="default"
                                         >
                                           <div
-                                            className="MuiChip-root-242 MuiChip-clickable-245 MuiChip-deletable-248 WAMuiChipInput-chip-241"
+                                            className="MuiChip-root-243 MuiChip-clickable-246 MuiChip-deletable-249 WAMuiChipInput-chip-241"
                                             onClick={[Function]}
                                             onKeyDown={[Function]}
                                             onKeyUp={[Function]}
@@ -4527,24 +4526,24 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                                             tabIndex={0}
                                           >
                                             <span
-                                              className="MuiChip-label-261"
+                                              className="MuiChip-label-262"
                                             >
                                               test2
                                             </span>
                                             <pure(Cancel)
-                                              className="MuiChip-deleteIcon-262"
+                                              className="MuiChip-deleteIcon-263"
                                               onClick={[Function]}
                                             >
                                               <Cancel
-                                                className="MuiChip-deleteIcon-262"
+                                                className="MuiChip-deleteIcon-263"
                                                 onClick={[Function]}
                                               >
                                                 <WithStyles(SvgIcon)
-                                                  className="MuiChip-deleteIcon-262"
+                                                  className="MuiChip-deleteIcon-263"
                                                   onClick={[Function]}
                                                 >
                                                   <SvgIcon
-                                                    className="MuiChip-deleteIcon-262"
+                                                    className="MuiChip-deleteIcon-263"
                                                     classes={
                                                       Object {
                                                         "colorAction": "MuiSvgIcon-colorAction-54",
@@ -4566,7 +4565,7 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                                                   >
                                                     <svg
                                                       aria-hidden="true"
-                                                      className="MuiSvgIcon-root-51 MuiChip-deleteIcon-262"
+                                                      className="MuiSvgIcon-root-51 MuiChip-deleteIcon-263"
                                                       focusable="false"
                                                       onClick={[Function]}
                                                       role="presentation"
@@ -4851,32 +4850,32 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                   <Button
                     classes={
                       Object {
-                        "colorInherit": "MuiButton-colorInherit-288",
-                        "contained": "MuiButton-contained-278",
-                        "containedPrimary": "MuiButton-containedPrimary-279",
-                        "containedSecondary": "MuiButton-containedSecondary-280",
-                        "disabled": "MuiButton-disabled-287",
-                        "extendedFab": "MuiButton-extendedFab-285",
-                        "fab": "MuiButton-fab-284",
-                        "flat": "MuiButton-flat-272",
-                        "flatPrimary": "MuiButton-flatPrimary-273",
-                        "flatSecondary": "MuiButton-flatSecondary-274",
-                        "focusVisible": "MuiButton-focusVisible-286",
-                        "fullWidth": "MuiButton-fullWidth-292",
-                        "label": "MuiButton-label-268",
-                        "mini": "MuiButton-mini-289",
-                        "outlined": "MuiButton-outlined-275",
-                        "outlinedPrimary": "MuiButton-outlinedPrimary-276",
-                        "outlinedSecondary": "MuiButton-outlinedSecondary-277",
-                        "raised": "MuiButton-raised-281",
-                        "raisedPrimary": "MuiButton-raisedPrimary-282",
-                        "raisedSecondary": "MuiButton-raisedSecondary-283",
-                        "root": "MuiButton-root-267",
-                        "sizeLarge": "MuiButton-sizeLarge-291",
-                        "sizeSmall": "MuiButton-sizeSmall-290",
-                        "text": "MuiButton-text-269",
-                        "textPrimary": "MuiButton-textPrimary-270",
-                        "textSecondary": "MuiButton-textSecondary-271",
+                        "colorInherit": "MuiButton-colorInherit-289",
+                        "contained": "MuiButton-contained-279",
+                        "containedPrimary": "MuiButton-containedPrimary-280",
+                        "containedSecondary": "MuiButton-containedSecondary-281",
+                        "disabled": "MuiButton-disabled-288",
+                        "extendedFab": "MuiButton-extendedFab-286",
+                        "fab": "MuiButton-fab-285",
+                        "flat": "MuiButton-flat-273",
+                        "flatPrimary": "MuiButton-flatPrimary-274",
+                        "flatSecondary": "MuiButton-flatSecondary-275",
+                        "focusVisible": "MuiButton-focusVisible-287",
+                        "fullWidth": "MuiButton-fullWidth-293",
+                        "label": "MuiButton-label-269",
+                        "mini": "MuiButton-mini-290",
+                        "outlined": "MuiButton-outlined-276",
+                        "outlinedPrimary": "MuiButton-outlinedPrimary-277",
+                        "outlinedSecondary": "MuiButton-outlinedSecondary-278",
+                        "raised": "MuiButton-raised-282",
+                        "raisedPrimary": "MuiButton-raisedPrimary-283",
+                        "raisedSecondary": "MuiButton-raisedSecondary-284",
+                        "root": "MuiButton-root-268",
+                        "sizeLarge": "MuiButton-sizeLarge-292",
+                        "sizeSmall": "MuiButton-sizeSmall-291",
+                        "text": "MuiButton-text-270",
+                        "textPrimary": "MuiButton-textPrimary-271",
+                        "textSecondary": "MuiButton-textSecondary-272",
                       }
                     }
                     color="primary"
@@ -4891,17 +4890,17 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                     variant="contained"
                   >
                     <WithStyles(ButtonBase)
-                      className="MuiButton-root-267 MuiButton-contained-278 MuiButton-containedPrimary-279 MuiButton-raised-281 MuiButton-raisedPrimary-282 MuiButton-fullWidth-292"
+                      className="MuiButton-root-268 MuiButton-contained-279 MuiButton-containedPrimary-280 MuiButton-raised-282 MuiButton-raisedPrimary-283 MuiButton-fullWidth-293"
                       component="button"
                       disabled={false}
                       focusRipple={true}
-                      focusVisibleClassName="MuiButton-focusVisible-286"
+                      focusVisibleClassName="MuiButton-focusVisible-287"
                       onClick={[Function]}
                       type="button"
                     >
                       <ButtonBase
                         centerRipple={false}
-                        className="MuiButton-root-267 MuiButton-contained-278 MuiButton-containedPrimary-279 MuiButton-raised-281 MuiButton-raisedPrimary-282 MuiButton-fullWidth-292"
+                        className="MuiButton-root-268 MuiButton-contained-279 MuiButton-containedPrimary-280 MuiButton-raised-282 MuiButton-raisedPrimary-283 MuiButton-fullWidth-293"
                         classes={
                           Object {
                             "disabled": "MuiButtonBase-disabled-49",
@@ -4914,13 +4913,13 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                         disableTouchRipple={false}
                         disabled={false}
                         focusRipple={true}
-                        focusVisibleClassName="MuiButton-focusVisible-286"
+                        focusVisibleClassName="MuiButton-focusVisible-287"
                         onClick={[Function]}
                         tabIndex="0"
                         type="button"
                       >
                         <button
-                          className="MuiButtonBase-root-48 MuiButton-root-267 MuiButton-contained-278 MuiButton-containedPrimary-279 MuiButton-raised-281 MuiButton-raisedPrimary-282 MuiButton-fullWidth-292"
+                          className="MuiButtonBase-root-48 MuiButton-root-268 MuiButton-contained-279 MuiButton-containedPrimary-280 MuiButton-raised-282 MuiButton-raisedPrimary-283 MuiButton-fullWidth-293"
                           disabled={false}
                           onBlur={[Function]}
                           onClick={[Function]}
@@ -4938,7 +4937,7 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                           type="button"
                         >
                           <span
-                            className="MuiButton-label-268"
+                            className="MuiButton-label-269"
                           >
                             更新する
                           </span>
@@ -4954,25 +4953,25 @@ exports[`should match snapshot: SettingsAccount/nomal 1`] = `
                                 center={false}
                                 classes={
                                   Object {
-                                    "child": "MuiTouchRipple-child-297",
-                                    "childLeaving": "MuiTouchRipple-childLeaving-298",
-                                    "childPulsate": "MuiTouchRipple-childPulsate-299",
-                                    "ripple": "MuiTouchRipple-ripple-294",
-                                    "ripplePulsate": "MuiTouchRipple-ripplePulsate-296",
-                                    "rippleVisible": "MuiTouchRipple-rippleVisible-295",
-                                    "root": "MuiTouchRipple-root-293",
+                                    "child": "MuiTouchRipple-child-298",
+                                    "childLeaving": "MuiTouchRipple-childLeaving-299",
+                                    "childPulsate": "MuiTouchRipple-childPulsate-300",
+                                    "ripple": "MuiTouchRipple-ripple-295",
+                                    "ripplePulsate": "MuiTouchRipple-ripplePulsate-297",
+                                    "rippleVisible": "MuiTouchRipple-rippleVisible-296",
+                                    "root": "MuiTouchRipple-root-294",
                                   }
                                 }
                               >
                                 <TransitionGroup
                                   childFactory={[Function]}
-                                  className="MuiTouchRipple-root-293"
+                                  className="MuiTouchRipple-root-294"
                                   component="span"
                                   enter={true}
                                   exit={true}
                                 >
                                   <span
-                                    className="MuiTouchRipple-root-293"
+                                    className="MuiTouchRipple-root-294"
                                   />
                                 </TransitionGroup>
                               </TouchRipple>

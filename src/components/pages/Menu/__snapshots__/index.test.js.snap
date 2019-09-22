@@ -517,7 +517,7 @@ exports[`should match snapshot: Menu/home 1`] = `
             ],
             "results": Array [
               Object {
-                "isThrow": false,
+                "type": "return",
                 "value": undefined,
               },
             ],
@@ -557,7 +557,7 @@ exports[`should match snapshot: Menu/home 1`] = `
             ],
             "results": Array [
               Object {
-                "isThrow": false,
+                "type": "return",
                 "value": undefined,
               },
             ],
@@ -999,7 +999,7 @@ exports[`should match snapshot: Menu/home 1`] = `
               ],
               "results": Array [
                 Object {
-                  "isThrow": false,
+                  "type": "return",
                   "value": undefined,
                 },
               ],
@@ -1040,7 +1040,7 @@ exports[`should match snapshot: Menu/home 1`] = `
               ],
               "results": Array [
                 Object {
-                  "isThrow": false,
+                  "type": "return",
                   "value": undefined,
                 },
               ],
@@ -1657,7 +1657,6 @@ exports[`should match snapshot: Menu/home 1`] = `
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
                                             "withComponent": [Function],
-                                            Symbol(Symbol.hasInstance): [Function],
                                           }
                                         }
                                         forwardedRef={null}
@@ -2078,7 +2077,6 @@ exports[`should match snapshot: Menu/home 1`] = `
                                                       "toString": [Function],
                                                       "warnTooManyClasses": [Function],
                                                       "withComponent": [Function],
-                                                      Symbol(Symbol.hasInstance): [Function],
                                                     }
                                                   }
                                                   forwardedRef={null}
@@ -4776,7 +4774,6 @@ exports[`should match snapshot: Menu/home 1`] = `
                                         "toString": [Function],
                                         "warnTooManyClasses": [Function],
                                         "withComponent": [Function],
-                                        Symbol(Symbol.hasInstance): [Function],
                                       }
                                     }
                                     forwardedRef={null}
@@ -7736,7 +7733,6 @@ exports[`should match snapshot: Menu/home 1`] = `
                                         "toString": [Function],
                                         "warnTooManyClasses": [Function],
                                         "withComponent": [Function],
-                                        Symbol(Symbol.hasInstance): [Function],
                                       }
                                     }
                                     forwardedRef={null}
@@ -10696,7 +10692,6 @@ exports[`should match snapshot: Menu/home 1`] = `
                                         "toString": [Function],
                                         "warnTooManyClasses": [Function],
                                         "withComponent": [Function],
-                                        Symbol(Symbol.hasInstance): [Function],
                                       }
                                     }
                                     forwardedRef={null}
@@ -13656,7 +13651,6 @@ exports[`should match snapshot: Menu/home 1`] = `
                                         "toString": [Function],
                                         "warnTooManyClasses": [Function],
                                         "withComponent": [Function],
-                                        Symbol(Symbol.hasInstance): [Function],
                                       }
                                     }
                                     forwardedRef={null}
@@ -16598,7 +16592,6 @@ exports[`should match snapshot: Menu/home 1`] = `
                                         "toString": [Function],
                                         "warnTooManyClasses": [Function],
                                         "withComponent": [Function],
-                                        Symbol(Symbol.hasInstance): [Function],
                                       }
                                     }
                                     forwardedRef={null}
@@ -21010,11 +21003,11 @@ exports[`should match snapshot: Menu/newEvent 1`] = `
             ],
             "results": Array [
               Object {
-                "isThrow": false,
+                "type": "return",
                 "value": undefined,
               },
               Object {
-                "isThrow": false,
+                "type": "return",
                 "value": undefined,
               },
             ],
@@ -21056,11 +21049,11 @@ exports[`should match snapshot: Menu/newEvent 1`] = `
             ],
             "results": Array [
               Object {
-                "isThrow": false,
+                "type": "return",
                 "value": undefined,
               },
               Object {
-                "isThrow": false,
+                "type": "return",
                 "value": undefined,
               },
             ],
@@ -21503,11 +21496,11 @@ exports[`should match snapshot: Menu/newEvent 1`] = `
               ],
               "results": Array [
                 Object {
-                  "isThrow": false,
+                  "type": "return",
                   "value": undefined,
                 },
                 Object {
-                  "isThrow": false,
+                  "type": "return",
                   "value": undefined,
                 },
               ],
@@ -21549,11 +21542,11 @@ exports[`should match snapshot: Menu/newEvent 1`] = `
               ],
               "results": Array [
                 Object {
-                  "isThrow": false,
+                  "type": "return",
                   "value": undefined,
                 },
                 Object {
-                  "isThrow": false,
+                  "type": "return",
                   "value": undefined,
                 },
               ],
@@ -22170,7 +22163,6 @@ exports[`should match snapshot: Menu/newEvent 1`] = `
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
                                             "withComponent": [Function],
-                                            Symbol(Symbol.hasInstance): [Function],
                                           }
                                         }
                                         forwardedRef={null}
@@ -22591,7 +22583,6 @@ exports[`should match snapshot: Menu/newEvent 1`] = `
                                                       "toString": [Function],
                                                       "warnTooManyClasses": [Function],
                                                       "withComponent": [Function],
-                                                      Symbol(Symbol.hasInstance): [Function],
                                                     }
                                                   }
                                                   forwardedRef={null}
@@ -26794,6 +26785,7 @@ exports[`should match snapshot: Menu/newEvent 1`] = `
                                             "label": "WAMuiChipInput-label-293",
                                             "labelShrink": "WAMuiChipInput-labelShrink-294",
                                             "labeled": "WAMuiChipInput-labeled-292",
+                                            "marginDense": "WAMuiChipInput-marginDense-302",
                                             "outlined": "WAMuiChipInput-outlined-289",
                                             "root": "WAMuiChipInput-root-285",
                                             "standard": "WAMuiChipInput-standard-290",
@@ -29543,15 +29535,15 @@ exports[`should match snapshot: Menu/notifications 1`] = `
             ],
             "results": Array [
               Object {
-                "isThrow": false,
+                "type": "return",
                 "value": undefined,
               },
               Object {
-                "isThrow": false,
+                "type": "return",
                 "value": undefined,
               },
               Object {
-                "isThrow": false,
+                "type": "return",
                 "value": undefined,
               },
             ],
@@ -29594,15 +29586,15 @@ exports[`should match snapshot: Menu/notifications 1`] = `
             ],
             "results": Array [
               Object {
-                "isThrow": false,
+                "type": "return",
                 "value": undefined,
               },
               Object {
-                "isThrow": false,
+                "type": "return",
                 "value": undefined,
               },
               Object {
-                "isThrow": false,
+                "type": "return",
                 "value": undefined,
               },
             ],
@@ -30046,15 +30038,15 @@ exports[`should match snapshot: Menu/notifications 1`] = `
               ],
               "results": Array [
                 Object {
-                  "isThrow": false,
+                  "type": "return",
                   "value": undefined,
                 },
                 Object {
-                  "isThrow": false,
+                  "type": "return",
                   "value": undefined,
                 },
                 Object {
-                  "isThrow": false,
+                  "type": "return",
                   "value": undefined,
                 },
               ],
@@ -30097,15 +30089,15 @@ exports[`should match snapshot: Menu/notifications 1`] = `
               ],
               "results": Array [
                 Object {
-                  "isThrow": false,
+                  "type": "return",
                   "value": undefined,
                 },
                 Object {
-                  "isThrow": false,
+                  "type": "return",
                   "value": undefined,
                 },
                 Object {
-                  "isThrow": false,
+                  "type": "return",
                   "value": undefined,
                 },
               ],
@@ -30722,7 +30714,6 @@ exports[`should match snapshot: Menu/notifications 1`] = `
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
                                             "withComponent": [Function],
-                                            Symbol(Symbol.hasInstance): [Function],
                                           }
                                         }
                                         forwardedRef={null}
@@ -31143,7 +31134,6 @@ exports[`should match snapshot: Menu/notifications 1`] = `
                                                       "toString": [Function],
                                                       "warnTooManyClasses": [Function],
                                                       "withComponent": [Function],
-                                                      Symbol(Symbol.hasInstance): [Function],
                                                     }
                                                   }
                                                   forwardedRef={null}
@@ -33375,10 +33365,10 @@ exports[`should match snapshot: Menu/notifications 1`] = `
                           <List
                             classes={
                               Object {
-                                "dense": "MuiList-dense-304",
-                                "padding": "MuiList-padding-303",
-                                "root": "MuiList-root-302",
-                                "subheader": "MuiList-subheader-305",
+                                "dense": "MuiList-dense-305",
+                                "padding": "MuiList-padding-304",
+                                "root": "MuiList-root-303",
+                                "subheader": "MuiList-subheader-306",
                               }
                             }
                             component="ul"
@@ -33386,7 +33376,7 @@ exports[`should match snapshot: Menu/notifications 1`] = `
                             disablePadding={false}
                           >
                             <ul
-                              className="MuiList-root-302 MuiList-padding-303"
+                              className="MuiList-root-303 MuiList-padding-304"
                             >
                               <div
                                 key="1"
@@ -33408,18 +33398,18 @@ exports[`should match snapshot: Menu/notifications 1`] = `
                                       button={true}
                                       classes={
                                         Object {
-                                          "alignItemsFlexStart": "MuiListItem-alignItemsFlexStart-311",
-                                          "button": "MuiListItem-button-315",
-                                          "container": "MuiListItem-container-307",
-                                          "default": "MuiListItem-default-309",
-                                          "dense": "MuiListItem-dense-310",
-                                          "disabled": "MuiListItem-disabled-312",
-                                          "divider": "MuiListItem-divider-313",
-                                          "focusVisible": "MuiListItem-focusVisible-308",
-                                          "gutters": "MuiListItem-gutters-314",
-                                          "root": "MuiListItem-root-306",
-                                          "secondaryAction": "MuiListItem-secondaryAction-316",
-                                          "selected": "MuiListItem-selected-317",
+                                          "alignItemsFlexStart": "MuiListItem-alignItemsFlexStart-312",
+                                          "button": "MuiListItem-button-316",
+                                          "container": "MuiListItem-container-308",
+                                          "default": "MuiListItem-default-310",
+                                          "dense": "MuiListItem-dense-311",
+                                          "disabled": "MuiListItem-disabled-313",
+                                          "divider": "MuiListItem-divider-314",
+                                          "focusVisible": "MuiListItem-focusVisible-309",
+                                          "gutters": "MuiListItem-gutters-315",
+                                          "root": "MuiListItem-root-307",
+                                          "secondaryAction": "MuiListItem-secondaryAction-317",
+                                          "selected": "MuiListItem-selected-318",
                                         }
                                       }
                                       dense={false}
@@ -33434,15 +33424,15 @@ exports[`should match snapshot: Menu/notifications 1`] = `
                                         dense={false}
                                       >
                                         <WithStyles(ButtonBase)
-                                          className="MuiListItem-root-306 MuiListItem-default-309 MuiListItem-gutters-314 MuiListItem-button-315"
+                                          className="MuiListItem-root-307 MuiListItem-default-310 MuiListItem-gutters-315 MuiListItem-button-316"
                                           component="div"
                                           disabled={false}
-                                          focusVisibleClassName="MuiListItem-focusVisible-308"
+                                          focusVisibleClassName="MuiListItem-focusVisible-309"
                                           onClick={[Function]}
                                         >
                                           <ButtonBase
                                             centerRipple={false}
-                                            className="MuiListItem-root-306 MuiListItem-default-309 MuiListItem-gutters-314 MuiListItem-button-315"
+                                            className="MuiListItem-root-307 MuiListItem-default-310 MuiListItem-gutters-315 MuiListItem-button-316"
                                             classes={
                                               Object {
                                                 "disabled": "MuiButtonBase-disabled-108",
@@ -33455,13 +33445,13 @@ exports[`should match snapshot: Menu/notifications 1`] = `
                                             disableTouchRipple={false}
                                             disabled={false}
                                             focusRipple={false}
-                                            focusVisibleClassName="MuiListItem-focusVisible-308"
+                                            focusVisibleClassName="MuiListItem-focusVisible-309"
                                             onClick={[Function]}
                                             tabIndex="0"
                                             type="button"
                                           >
                                             <div
-                                              className="MuiButtonBase-root-107 MuiListItem-root-306 MuiListItem-default-309 MuiListItem-gutters-314 MuiListItem-button-315"
+                                              className="MuiButtonBase-root-107 MuiListItem-root-307 MuiListItem-default-310 MuiListItem-gutters-315 MuiListItem-button-316"
                                               onBlur={[Function]}
                                               onClick={[Function]}
                                               onContextMenu={[Function]}
@@ -33483,12 +33473,12 @@ exports[`should match snapshot: Menu/notifications 1`] = `
                                                 <ListItemIcon
                                                   classes={
                                                     Object {
-                                                      "root": "MuiListItemIcon-root-318",
+                                                      "root": "MuiListItemIcon-root-319",
                                                     }
                                                   }
                                                 >
                                                   <div
-                                                    className="MuiListItemIcon-root-318"
+                                                    className="MuiListItemIcon-root-319"
                                                   >
                                                     <pure(EmailRoundedIcon)>
                                                       <EmailRoundedIcon>
@@ -33543,12 +33533,12 @@ exports[`should match snapshot: Menu/notifications 1`] = `
                                                 <ListItemText
                                                   classes={
                                                     Object {
-                                                      "dense": "MuiListItemText-dense-321",
-                                                      "inset": "MuiListItemText-inset-320",
-                                                      "primary": "MuiListItemText-primary-322",
-                                                      "root": "MuiListItemText-root-319",
-                                                      "secondary": "MuiListItemText-secondary-323",
-                                                      "textDense": "MuiListItemText-textDense-324",
+                                                      "dense": "MuiListItemText-dense-322",
+                                                      "inset": "MuiListItemText-inset-321",
+                                                      "primary": "MuiListItemText-primary-323",
+                                                      "root": "MuiListItemText-root-320",
+                                                      "secondary": "MuiListItemText-secondary-324",
+                                                      "textDense": "MuiListItemText-textDense-325",
                                                     }
                                                   }
                                                   disableTypography={false}
@@ -33918,15 +33908,15 @@ exports[`should match snapshot: Menu/notifications 1`] = `
                                                   }
                                                 >
                                                   <div
-                                                    className="MuiListItemText-root-319"
+                                                    className="MuiListItemText-root-320"
                                                   >
                                                     <WithStyles(Typography)
-                                                      className="MuiListItemText-secondary-323"
+                                                      className="MuiListItemText-secondary-324"
                                                       color="textSecondary"
                                                     >
                                                       <Typography
                                                         align="inherit"
-                                                        className="MuiListItemText-secondary-323"
+                                                        className="MuiListItemText-secondary-324"
                                                         classes={
                                                           Object {
                                                             "alignCenter": "MuiTypography-alignCenter-66",
@@ -34357,7 +34347,7 @@ exports[`should match snapshot: Menu/notifications 1`] = `
                                                         }
                                                       >
                                                         <p
-                                                          className="MuiTypography-root-43 MuiTypography-body1-52 MuiTypography-colorTextSecondary-76 MuiListItemText-secondary-323"
+                                                          className="MuiTypography-root-43 MuiTypography-body1-52 MuiTypography-colorTextSecondary-76 MuiListItemText-secondary-324"
                                                         >
                                                           通知のタイトル
                                                         </p>
@@ -34414,11 +34404,11 @@ exports[`should match snapshot: Menu/notifications 1`] = `
                                     absolute={false}
                                     classes={
                                       Object {
-                                        "absolute": "MuiDivider-absolute-326",
-                                        "inset": "MuiDivider-inset-327",
-                                        "light": "MuiDivider-light-328",
-                                        "middle": "MuiDivider-middle-329",
-                                        "root": "MuiDivider-root-325",
+                                        "absolute": "MuiDivider-absolute-327",
+                                        "inset": "MuiDivider-inset-328",
+                                        "light": "MuiDivider-light-329",
+                                        "middle": "MuiDivider-middle-330",
+                                        "root": "MuiDivider-root-326",
                                       }
                                     }
                                     component="hr"
@@ -34426,7 +34416,7 @@ exports[`should match snapshot: Menu/notifications 1`] = `
                                     variant="fullWidth"
                                   >
                                     <hr
-                                      className="MuiDivider-root-325"
+                                      className="MuiDivider-root-326"
                                     />
                                   </Divider>
                                 </WithStyles(Divider)>

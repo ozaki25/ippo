@@ -2,7 +2,7 @@ import React from 'react';
 import { Typography } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import styled from 'styled-components';
-import PinIcon from 'src/components/atoms/PinIcon';
+import PinIcon from 'components/atoms/PinIcon';
 
 const styles = theme => ({
   icon: {

@@ -3,10 +3,10 @@ import { Button, List, ListItem, ListItemIcon, TextField, Typography } from '@ma
 // ユーザアイコンの上にこのアイコンを重ねたい
 // import { PhotoCameraOutlined } from '@material-ui/icons';
 import propTypes from 'prop-types';
-import CharIcon from 'src/components/atoms/CharIcon';
-import OverlaySpinner from 'src/components/molecules/OverlaySpinner';
-import InputCategoriesAutoSuggest from 'src/components/organisms/InputCategoriesAutoSuggest';
-import Container from 'src/components/templates/Container';
+import CharIcon from 'components/atoms/CharIcon';
+import OverlaySpinner from 'components/molecules/OverlaySpinner';
+import InputCategoriesAutoSuggest from 'components/organisms/InputCategoriesAutoSuggest';
+import Container from 'components/templates/Container';
 
 class SettingsAccount extends React.Component {
   constructor(props) {

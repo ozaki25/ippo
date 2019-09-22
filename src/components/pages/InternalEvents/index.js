@@ -1,10 +1,10 @@
 import React from 'react';
 import { Typography } from '@material-ui/core';
 import propTypes from 'prop-types';
-import Spinner from 'src/components/atoms/Spinner';
-import EventCardList from 'src/components/organisms/EventCardList';
-import Container from 'src/components/templates/Container';
-import eventFormat from 'src/utils/eventFormat';
+import Spinner from 'components/atoms/Spinner';
+import EventCardList from 'components/organisms/EventCardList';
+import Container from 'components/templates/Container';
+import eventFormat from 'utils/eventFormat';
 
 const InternalEvents = ({ data: { loading, internalEvents }, authUser, history, firebase }) => {
   return (

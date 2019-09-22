@@ -1,8 +1,8 @@
 import React from 'react';
 import { Divider, Typography } from '@material-ui/core';
 import propTypes from 'prop-types';
-import Container from 'src/components/templates/Container';
-import dateFormat from 'src/utils/dateFormat';
+import Container from 'components/templates/Container';
+import dateFormat from 'utils/dateFormat';
 
 class Notification extends React.Component {
   async componentDidMount() {

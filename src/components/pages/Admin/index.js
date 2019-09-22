@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Divider, Typography } from '@material-ui/core';
 import styled from 'styled-components';
-import Container from 'src/components/templates/Container';
-import notifications from 'src/utils/notifications';
-import alertMessage from 'src/constants/alertMessage';
-import ROUTES from 'src/constants/routes';
+import Container from 'components/templates/Container';
+import notifications from 'utils/notifications';
+import alertMessage from 'constants/alertMessage';
+import ROUTES from 'constants/routes';
 
 const ItemContainer = styled.div`
   margin: 8px 0;

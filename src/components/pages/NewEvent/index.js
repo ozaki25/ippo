@@ -1,8 +1,8 @@
 import React from 'react';
 import propTypes from 'prop-types';
-import EventCreateForm from 'src/components/organisms/EventCreateForm';
-import Container from 'src/components/templates/Container';
-import ROUTES from 'src/constants/routes';
+import EventCreateForm from 'components/organisms/EventCreateForm';
+import Container from 'components/templates/Container';
+import ROUTES from 'constants/routes';
 
 const NewEvent = ({ createEvent, authUser, history, firebase }) => {
   return (

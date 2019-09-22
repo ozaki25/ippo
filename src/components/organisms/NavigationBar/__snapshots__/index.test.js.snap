@@ -587,7 +587,6 @@ exports[`should match snapshot: NavigationBar/all 1`] = `
                                 "toString": [Function],
                                 "warnTooManyClasses": [Function],
                                 "withComponent": [Function],
-                                Symbol(Symbol.hasInstance): [Function],
                               }
                             }
                             forwardedRef={null}
@@ -1158,7 +1157,6 @@ exports[`should match snapshot: NavigationBar/all 1`] = `
                                           "toString": [Function],
                                           "warnTooManyClasses": [Function],
                                           "withComponent": [Function],
-                                          Symbol(Symbol.hasInstance): [Function],
                                         }
                                       }
                                       forwardedRef={null}
@@ -3911,7 +3909,6 @@ exports[`should match snapshot: NavigationBar/back 1`] = `
                                 "toString": [Function],
                                 "warnTooManyClasses": [Function],
                                 "withComponent": [Function],
-                                Symbol(Symbol.hasInstance): [Function],
                               }
                             }
                             forwardedRef={null}
@@ -4482,7 +4479,6 @@ exports[`should match snapshot: NavigationBar/back 1`] = `
                                           "toString": [Function],
                                           "warnTooManyClasses": [Function],
                                           "withComponent": [Function],
-                                          Symbol(Symbol.hasInstance): [Function],
                                         }
                                       }
                                       forwardedRef={null}
@@ -5540,7 +5536,6 @@ exports[`should match snapshot: NavigationBar/login 1`] = `
                                 "toString": [Function],
                                 "warnTooManyClasses": [Function],
                                 "withComponent": [Function],
-                                Symbol(Symbol.hasInstance): [Function],
                               }
                             }
                             forwardedRef={null}
@@ -5961,7 +5956,6 @@ exports[`should match snapshot: NavigationBar/login 1`] = `
                                           "toString": [Function],
                                           "warnTooManyClasses": [Function],
                                           "withComponent": [Function],
-                                          Symbol(Symbol.hasInstance): [Function],
                                         }
                                       }
                                       forwardedRef={null}
@@ -8713,7 +8707,6 @@ exports[`should match snapshot: NavigationBar/nologin 1`] = `
                                 "toString": [Function],
                                 "warnTooManyClasses": [Function],
                                 "withComponent": [Function],
-                                Symbol(Symbol.hasInstance): [Function],
                               }
                             }
                             forwardedRef={null}
@@ -9134,7 +9127,6 @@ exports[`should match snapshot: NavigationBar/nologin 1`] = `
                                           "toString": [Function],
                                           "warnTooManyClasses": [Function],
                                           "withComponent": [Function],
-                                          Symbol(Symbol.hasInstance): [Function],
                                         }
                                       }
                                       forwardedRef={null}

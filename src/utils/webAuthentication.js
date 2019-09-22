@@ -1,4 +1,4 @@
-import arrayBuffer from 'src/utils/arrayBuffer';
+import arrayBuffer from 'utils/arrayBuffer';
 
 const runAttestation = async () => {
   if (!navigator.credentials) alert('お使いのブラウザではこの機能を使うことができません');

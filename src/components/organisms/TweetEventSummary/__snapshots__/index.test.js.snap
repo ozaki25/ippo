@@ -3256,7 +3256,6 @@ exports[`should match snapshot: TweetEventSummary/joined 1`] = `
                                           "toString": [Function],
                                           "warnTooManyClasses": [Function],
                                           "withComponent": [Function],
-                                          Symbol(Symbol.hasInstance): [Function],
                                         }
                                       }
                                       forwardedRef={null}
@@ -6858,7 +6857,6 @@ exports[`should match snapshot: TweetEventSummary/nomal 1`] = `
                                           "toString": [Function],
                                           "warnTooManyClasses": [Function],
                                           "withComponent": [Function],
-                                          Symbol(Symbol.hasInstance): [Function],
                                         }
                                       }
                                       forwardedRef={null}

@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
-import tweetFormat from 'src/utils/tweetFormat';
-import ROUTES from 'src/constants/routes';
+import tweetFormat from 'utils/tweetFormat';
+import ROUTES from 'constants/routes';
 
 const StyledTweetBody = styled.div`
   margin: 0 0 5px;

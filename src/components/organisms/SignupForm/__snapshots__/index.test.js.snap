@@ -1158,6 +1158,7 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
                           "label": "WAMuiChipInput-label-66",
                           "labelShrink": "WAMuiChipInput-labelShrink-67",
                           "labeled": "WAMuiChipInput-labeled-65",
+                          "marginDense": "WAMuiChipInput-marginDense-75",
                           "outlined": "WAMuiChipInput-outlined-62",
                           "root": "WAMuiChipInput-root-58",
                           "standard": "WAMuiChipInput-standard-63",
@@ -1570,33 +1571,33 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
                     <Paper
                       classes={
                         Object {
-                          "elevation0": "MuiPaper-elevation0-77",
-                          "elevation1": "MuiPaper-elevation1-78",
-                          "elevation10": "MuiPaper-elevation10-87",
-                          "elevation11": "MuiPaper-elevation11-88",
-                          "elevation12": "MuiPaper-elevation12-89",
-                          "elevation13": "MuiPaper-elevation13-90",
-                          "elevation14": "MuiPaper-elevation14-91",
-                          "elevation15": "MuiPaper-elevation15-92",
-                          "elevation16": "MuiPaper-elevation16-93",
-                          "elevation17": "MuiPaper-elevation17-94",
-                          "elevation18": "MuiPaper-elevation18-95",
-                          "elevation19": "MuiPaper-elevation19-96",
-                          "elevation2": "MuiPaper-elevation2-79",
-                          "elevation20": "MuiPaper-elevation20-97",
-                          "elevation21": "MuiPaper-elevation21-98",
-                          "elevation22": "MuiPaper-elevation22-99",
-                          "elevation23": "MuiPaper-elevation23-100",
-                          "elevation24": "MuiPaper-elevation24-101",
-                          "elevation3": "MuiPaper-elevation3-80",
-                          "elevation4": "MuiPaper-elevation4-81",
-                          "elevation5": "MuiPaper-elevation5-82",
-                          "elevation6": "MuiPaper-elevation6-83",
-                          "elevation7": "MuiPaper-elevation7-84",
-                          "elevation8": "MuiPaper-elevation8-85",
-                          "elevation9": "MuiPaper-elevation9-86",
-                          "root": "MuiPaper-root-75",
-                          "rounded": "MuiPaper-rounded-76",
+                          "elevation0": "MuiPaper-elevation0-78",
+                          "elevation1": "MuiPaper-elevation1-79",
+                          "elevation10": "MuiPaper-elevation10-88",
+                          "elevation11": "MuiPaper-elevation11-89",
+                          "elevation12": "MuiPaper-elevation12-90",
+                          "elevation13": "MuiPaper-elevation13-91",
+                          "elevation14": "MuiPaper-elevation14-92",
+                          "elevation15": "MuiPaper-elevation15-93",
+                          "elevation16": "MuiPaper-elevation16-94",
+                          "elevation17": "MuiPaper-elevation17-95",
+                          "elevation18": "MuiPaper-elevation18-96",
+                          "elevation19": "MuiPaper-elevation19-97",
+                          "elevation2": "MuiPaper-elevation2-80",
+                          "elevation20": "MuiPaper-elevation20-98",
+                          "elevation21": "MuiPaper-elevation21-99",
+                          "elevation22": "MuiPaper-elevation22-100",
+                          "elevation23": "MuiPaper-elevation23-101",
+                          "elevation24": "MuiPaper-elevation24-102",
+                          "elevation3": "MuiPaper-elevation3-81",
+                          "elevation4": "MuiPaper-elevation4-82",
+                          "elevation5": "MuiPaper-elevation5-83",
+                          "elevation6": "MuiPaper-elevation6-84",
+                          "elevation7": "MuiPaper-elevation7-85",
+                          "elevation8": "MuiPaper-elevation8-86",
+                          "elevation9": "MuiPaper-elevation9-87",
+                          "root": "MuiPaper-root-76",
+                          "rounded": "MuiPaper-rounded-77",
                         }
                       }
                       component="div"
@@ -1607,7 +1608,7 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
                       style={Object {}}
                     >
                       <div
-                        className="MuiPaper-root-75 MuiPaper-elevation2-79"
+                        className="MuiPaper-root-76 MuiPaper-elevation2-80"
                         id="react-autowhatever-1"
                         role="listbox"
                         style={Object {}}
@@ -1630,32 +1631,32 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
           <Button
             classes={
               Object {
-                "colorInherit": "MuiButton-colorInherit-123",
-                "contained": "MuiButton-contained-113",
-                "containedPrimary": "MuiButton-containedPrimary-114",
-                "containedSecondary": "MuiButton-containedSecondary-115",
-                "disabled": "MuiButton-disabled-122",
-                "extendedFab": "MuiButton-extendedFab-120",
-                "fab": "MuiButton-fab-119",
-                "flat": "MuiButton-flat-107",
-                "flatPrimary": "MuiButton-flatPrimary-108",
-                "flatSecondary": "MuiButton-flatSecondary-109",
-                "focusVisible": "MuiButton-focusVisible-121",
-                "fullWidth": "MuiButton-fullWidth-127",
-                "label": "MuiButton-label-103",
-                "mini": "MuiButton-mini-124",
-                "outlined": "MuiButton-outlined-110",
-                "outlinedPrimary": "MuiButton-outlinedPrimary-111",
-                "outlinedSecondary": "MuiButton-outlinedSecondary-112",
-                "raised": "MuiButton-raised-116",
-                "raisedPrimary": "MuiButton-raisedPrimary-117",
-                "raisedSecondary": "MuiButton-raisedSecondary-118",
-                "root": "MuiButton-root-102",
-                "sizeLarge": "MuiButton-sizeLarge-126",
-                "sizeSmall": "MuiButton-sizeSmall-125",
-                "text": "MuiButton-text-104",
-                "textPrimary": "MuiButton-textPrimary-105",
-                "textSecondary": "MuiButton-textSecondary-106",
+                "colorInherit": "MuiButton-colorInherit-124",
+                "contained": "MuiButton-contained-114",
+                "containedPrimary": "MuiButton-containedPrimary-115",
+                "containedSecondary": "MuiButton-containedSecondary-116",
+                "disabled": "MuiButton-disabled-123",
+                "extendedFab": "MuiButton-extendedFab-121",
+                "fab": "MuiButton-fab-120",
+                "flat": "MuiButton-flat-108",
+                "flatPrimary": "MuiButton-flatPrimary-109",
+                "flatSecondary": "MuiButton-flatSecondary-110",
+                "focusVisible": "MuiButton-focusVisible-122",
+                "fullWidth": "MuiButton-fullWidth-128",
+                "label": "MuiButton-label-104",
+                "mini": "MuiButton-mini-125",
+                "outlined": "MuiButton-outlined-111",
+                "outlinedPrimary": "MuiButton-outlinedPrimary-112",
+                "outlinedSecondary": "MuiButton-outlinedSecondary-113",
+                "raised": "MuiButton-raised-117",
+                "raisedPrimary": "MuiButton-raisedPrimary-118",
+                "raisedSecondary": "MuiButton-raisedSecondary-119",
+                "root": "MuiButton-root-103",
+                "sizeLarge": "MuiButton-sizeLarge-127",
+                "sizeSmall": "MuiButton-sizeSmall-126",
+                "text": "MuiButton-text-105",
+                "textPrimary": "MuiButton-textPrimary-106",
+                "textSecondary": "MuiButton-textSecondary-107",
               }
             }
             color="primary"
@@ -1670,22 +1671,22 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
             variant="contained"
           >
             <WithStyles(ButtonBase)
-              className="MuiButton-root-102 MuiButton-contained-113 MuiButton-containedPrimary-114 MuiButton-raised-116 MuiButton-raisedPrimary-117 MuiButton-disabled-122 MuiButton-fullWidth-127"
+              className="MuiButton-root-103 MuiButton-contained-114 MuiButton-containedPrimary-115 MuiButton-raised-117 MuiButton-raisedPrimary-118 MuiButton-disabled-123 MuiButton-fullWidth-128"
               component="button"
               disabled={true}
               focusRipple={true}
-              focusVisibleClassName="MuiButton-focusVisible-121"
+              focusVisibleClassName="MuiButton-focusVisible-122"
               onClick={[Function]}
               type="button"
             >
               <ButtonBase
                 centerRipple={false}
-                className="MuiButton-root-102 MuiButton-contained-113 MuiButton-containedPrimary-114 MuiButton-raised-116 MuiButton-raisedPrimary-117 MuiButton-disabled-122 MuiButton-fullWidth-127"
+                className="MuiButton-root-103 MuiButton-contained-114 MuiButton-containedPrimary-115 MuiButton-raised-117 MuiButton-raisedPrimary-118 MuiButton-disabled-123 MuiButton-fullWidth-128"
                 classes={
                   Object {
-                    "disabled": "MuiButtonBase-disabled-129",
-                    "focusVisible": "MuiButtonBase-focusVisible-130",
-                    "root": "MuiButtonBase-root-128",
+                    "disabled": "MuiButtonBase-disabled-130",
+                    "focusVisible": "MuiButtonBase-focusVisible-131",
+                    "root": "MuiButtonBase-root-129",
                   }
                 }
                 component="button"
@@ -1693,13 +1694,13 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
                 disableTouchRipple={false}
                 disabled={true}
                 focusRipple={true}
-                focusVisibleClassName="MuiButton-focusVisible-121"
+                focusVisibleClassName="MuiButton-focusVisible-122"
                 onClick={[Function]}
                 tabIndex="0"
                 type="button"
               >
                 <button
-                  className="MuiButtonBase-root-128 MuiButtonBase-disabled-129 MuiButton-root-102 MuiButton-contained-113 MuiButton-containedPrimary-114 MuiButton-raised-116 MuiButton-raisedPrimary-117 MuiButton-disabled-122 MuiButton-fullWidth-127"
+                  className="MuiButtonBase-root-129 MuiButtonBase-disabled-130 MuiButton-root-103 MuiButton-contained-114 MuiButton-containedPrimary-115 MuiButton-raised-117 MuiButton-raisedPrimary-118 MuiButton-disabled-123 MuiButton-fullWidth-128"
                   disabled={true}
                   onBlur={[Function]}
                   onClick={[Function]}
@@ -1717,7 +1718,7 @@ exports[`should match snapshot: SignupForm/nomal 1`] = `
                   type="button"
                 >
                   <span
-                    className="MuiButton-label-103"
+                    className="MuiButton-label-104"
                   >
                     登録
                   </span>

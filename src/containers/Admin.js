@@ -1,9 +1,9 @@
 import { graphql } from 'react-apollo';
 import { withRouter } from 'react-router-dom';
-import { withFirebase } from 'src/context/firebase';
+import { withFirebase } from 'context/firebase';
 import { compose } from 'recompose';
-import mutation from 'src/graphql/mutation';
-import Admin from 'src/components/pages/Admin';
+import mutation from 'graphql/mutation';
+import Admin from 'components/pages/Admin';
 
 export default compose(
   withFirebase,

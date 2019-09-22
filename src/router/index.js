@@ -1,23 +1,23 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import ScrollToTop from 'src/router/ScrollToTop';
-import Menu from 'src/containers/Menu';
-import Signin from 'src/containers/Signin';
-import Signup from 'src/containers/Signup';
-import Admin from 'src/containers/Admin';
-import JoinedEvents from 'src/containers/JoinedEvents';
-import OrganizedEvents from 'src/containers/OrganizedEvents';
-import RecommendedEvents from 'src/containers/RecommendedEvents';
-import InternalEvents from 'src/containers/InternalEvents';
-import ExternalEvents from 'src/containers/ExternalEvents';
-import NewEvent from 'src/containers/NewEvent';
-import Tweet from 'src/containers/Tweet';
-import Tweets from 'src/containers/Tweets';
-import NewTweet from 'src/containers/NewTweet';
-import Notification from 'src/containers/Notification';
-import SettingsNotification from 'src/containers/SettingsNotification';
-import SettingsAccount from 'src/containers/SettingsAccount';
-import ROUTES from 'src/constants/routes';
+import ScrollToTop from 'router/ScrollToTop';
+import Menu from 'containers/Menu';
+import Signin from 'containers/Signin';
+import Signup from 'containers/Signup';
+import Admin from 'containers/Admin';
+import JoinedEvents from 'containers/JoinedEvents';
+import OrganizedEvents from 'containers/OrganizedEvents';
+import RecommendedEvents from 'containers/RecommendedEvents';
+import InternalEvents from 'containers/InternalEvents';
+import ExternalEvents from 'containers/ExternalEvents';
+import NewEvent from 'containers/NewEvent';
+import Tweet from 'containers/Tweet';
+import Tweets from 'containers/Tweets';
+import NewTweet from 'containers/NewTweet';
+import Notification from 'containers/Notification';
+import SettingsNotification from 'containers/SettingsNotification';
+import SettingsAccount from 'containers/SettingsAccount';
+import ROUTES from 'constants/routes';
 
 const Router = () => (
   <BrowserRouter>

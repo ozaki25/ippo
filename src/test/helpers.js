@@ -5,7 +5,7 @@ import toJson from 'enzyme-to-json';
 import 'jest-styled-components';
 import MockRouter from 'react-mock-router';
 import { Provider } from 'react-redux';
-import store from '../src/modules/createStore';
+import store from 'modules/createStore';
 
 configure({ adapter: new Adapter() });
 

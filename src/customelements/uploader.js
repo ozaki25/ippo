@@ -1,4 +1,4 @@
-import api from 'src/constants/api';
+import api from 'constants/api';
 
 const lambdaUrl = api.uploadEndpoint;
 
