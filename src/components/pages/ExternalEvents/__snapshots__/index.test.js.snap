@@ -644,7 +644,6 @@ exports[`should match snapshot: ExternalEvents/loading 1`] = `
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
                                     "withComponent": [Function],
-                                    Symbol(Symbol.hasInstance): [Function],
                                   }
                                 }
                                 forwardedRef={null}
@@ -1215,7 +1214,6 @@ exports[`should match snapshot: ExternalEvents/loading 1`] = `
                                               "toString": [Function],
                                               "warnTooManyClasses": [Function],
                                               "withComponent": [Function],
-                                              Symbol(Symbol.hasInstance): [Function],
                                             }
                                           }
                                           forwardedRef={null}
@@ -4156,7 +4154,6 @@ exports[`should match snapshot: ExternalEvents/nocontents 1`] = `
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
                                     "withComponent": [Function],
-                                    Symbol(Symbol.hasInstance): [Function],
                                   }
                                 }
                                 forwardedRef={null}
@@ -4727,7 +4724,6 @@ exports[`should match snapshot: ExternalEvents/nocontents 1`] = `
                                               "toString": [Function],
                                               "warnTooManyClasses": [Function],
                                               "withComponent": [Function],
-                                              Symbol(Symbol.hasInstance): [Function],
                                             }
                                           }
                                           forwardedRef={null}
@@ -8123,7 +8119,6 @@ exports[`should match snapshot: ExternalEvents/nomal 1`] = `
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
                                     "withComponent": [Function],
-                                    Symbol(Symbol.hasInstance): [Function],
                                   }
                                 }
                                 forwardedRef={null}
@@ -8694,7 +8689,6 @@ exports[`should match snapshot: ExternalEvents/nomal 1`] = `
                                               "toString": [Function],
                                               "warnTooManyClasses": [Function],
                                               "withComponent": [Function],
-                                              Symbol(Symbol.hasInstance): [Function],
                                             }
                                           }
                                           forwardedRef={null}

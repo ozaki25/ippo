@@ -610,7 +610,6 @@ exports[`should match snapshot: Signup/nomal 1`] = `
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
                                     "withComponent": [Function],
-                                    Symbol(Symbol.hasInstance): [Function],
                                   }
                                 }
                                 forwardedRef={null}
@@ -754,25 +753,25 @@ exports[`should match snapshot: Signup/nomal 1`] = `
                                                       center={true}
                                                       classes={
                                                         Object {
-                                                          "child": "MuiTouchRipple-child-200",
-                                                          "childLeaving": "MuiTouchRipple-childLeaving-201",
-                                                          "childPulsate": "MuiTouchRipple-childPulsate-202",
-                                                          "ripple": "MuiTouchRipple-ripple-197",
-                                                          "ripplePulsate": "MuiTouchRipple-ripplePulsate-199",
-                                                          "rippleVisible": "MuiTouchRipple-rippleVisible-198",
-                                                          "root": "MuiTouchRipple-root-196",
+                                                          "child": "MuiTouchRipple-child-201",
+                                                          "childLeaving": "MuiTouchRipple-childLeaving-202",
+                                                          "childPulsate": "MuiTouchRipple-childPulsate-203",
+                                                          "ripple": "MuiTouchRipple-ripple-198",
+                                                          "ripplePulsate": "MuiTouchRipple-ripplePulsate-200",
+                                                          "rippleVisible": "MuiTouchRipple-rippleVisible-199",
+                                                          "root": "MuiTouchRipple-root-197",
                                                         }
                                                       }
                                                     >
                                                       <TransitionGroup
                                                         childFactory={[Function]}
-                                                        className="MuiTouchRipple-root-196"
+                                                        className="MuiTouchRipple-root-197"
                                                         component="span"
                                                         enter={true}
                                                         exit={true}
                                                       >
                                                         <span
-                                                          className="MuiTouchRipple-root-196"
+                                                          className="MuiTouchRipple-root-197"
                                                         />
                                                       </TransitionGroup>
                                                     </TouchRipple>
@@ -1176,7 +1175,6 @@ exports[`should match snapshot: Signup/nomal 1`] = `
                                               "toString": [Function],
                                               "warnTooManyClasses": [Function],
                                               "withComponent": [Function],
-                                              Symbol(Symbol.hasInstance): [Function],
                                             }
                                           }
                                           forwardedRef={null}
@@ -2817,6 +2815,7 @@ exports[`should match snapshot: Signup/nomal 1`] = `
                                     "label": "WAMuiChipInput-label-161",
                                     "labelShrink": "WAMuiChipInput-labelShrink-162",
                                     "labeled": "WAMuiChipInput-labeled-160",
+                                    "marginDense": "WAMuiChipInput-marginDense-170",
                                     "outlined": "WAMuiChipInput-outlined-157",
                                     "root": "WAMuiChipInput-root-153",
                                     "standard": "WAMuiChipInput-standard-158",
@@ -3289,32 +3288,32 @@ exports[`should match snapshot: Signup/nomal 1`] = `
                     <Button
                       classes={
                         Object {
-                          "colorInherit": "MuiButton-colorInherit-191",
-                          "contained": "MuiButton-contained-181",
-                          "containedPrimary": "MuiButton-containedPrimary-182",
-                          "containedSecondary": "MuiButton-containedSecondary-183",
-                          "disabled": "MuiButton-disabled-190",
-                          "extendedFab": "MuiButton-extendedFab-188",
-                          "fab": "MuiButton-fab-187",
-                          "flat": "MuiButton-flat-175",
-                          "flatPrimary": "MuiButton-flatPrimary-176",
-                          "flatSecondary": "MuiButton-flatSecondary-177",
-                          "focusVisible": "MuiButton-focusVisible-189",
-                          "fullWidth": "MuiButton-fullWidth-195",
-                          "label": "MuiButton-label-171",
-                          "mini": "MuiButton-mini-192",
-                          "outlined": "MuiButton-outlined-178",
-                          "outlinedPrimary": "MuiButton-outlinedPrimary-179",
-                          "outlinedSecondary": "MuiButton-outlinedSecondary-180",
-                          "raised": "MuiButton-raised-184",
-                          "raisedPrimary": "MuiButton-raisedPrimary-185",
-                          "raisedSecondary": "MuiButton-raisedSecondary-186",
-                          "root": "MuiButton-root-170",
-                          "sizeLarge": "MuiButton-sizeLarge-194",
-                          "sizeSmall": "MuiButton-sizeSmall-193",
-                          "text": "MuiButton-text-172",
-                          "textPrimary": "MuiButton-textPrimary-173",
-                          "textSecondary": "MuiButton-textSecondary-174",
+                          "colorInherit": "MuiButton-colorInherit-192",
+                          "contained": "MuiButton-contained-182",
+                          "containedPrimary": "MuiButton-containedPrimary-183",
+                          "containedSecondary": "MuiButton-containedSecondary-184",
+                          "disabled": "MuiButton-disabled-191",
+                          "extendedFab": "MuiButton-extendedFab-189",
+                          "fab": "MuiButton-fab-188",
+                          "flat": "MuiButton-flat-176",
+                          "flatPrimary": "MuiButton-flatPrimary-177",
+                          "flatSecondary": "MuiButton-flatSecondary-178",
+                          "focusVisible": "MuiButton-focusVisible-190",
+                          "fullWidth": "MuiButton-fullWidth-196",
+                          "label": "MuiButton-label-172",
+                          "mini": "MuiButton-mini-193",
+                          "outlined": "MuiButton-outlined-179",
+                          "outlinedPrimary": "MuiButton-outlinedPrimary-180",
+                          "outlinedSecondary": "MuiButton-outlinedSecondary-181",
+                          "raised": "MuiButton-raised-185",
+                          "raisedPrimary": "MuiButton-raisedPrimary-186",
+                          "raisedSecondary": "MuiButton-raisedSecondary-187",
+                          "root": "MuiButton-root-171",
+                          "sizeLarge": "MuiButton-sizeLarge-195",
+                          "sizeSmall": "MuiButton-sizeSmall-194",
+                          "text": "MuiButton-text-173",
+                          "textPrimary": "MuiButton-textPrimary-174",
+                          "textSecondary": "MuiButton-textSecondary-175",
                         }
                       }
                       color="primary"
@@ -3329,17 +3328,17 @@ exports[`should match snapshot: Signup/nomal 1`] = `
                       variant="contained"
                     >
                       <WithStyles(ButtonBase)
-                        className="MuiButton-root-170 MuiButton-contained-181 MuiButton-containedPrimary-182 MuiButton-raised-184 MuiButton-raisedPrimary-185 MuiButton-disabled-190 MuiButton-fullWidth-195"
+                        className="MuiButton-root-171 MuiButton-contained-182 MuiButton-containedPrimary-183 MuiButton-raised-185 MuiButton-raisedPrimary-186 MuiButton-disabled-191 MuiButton-fullWidth-196"
                         component="button"
                         disabled={true}
                         focusRipple={true}
-                        focusVisibleClassName="MuiButton-focusVisible-189"
+                        focusVisibleClassName="MuiButton-focusVisible-190"
                         onClick={[Function]}
                         type="button"
                       >
                         <ButtonBase
                           centerRipple={false}
-                          className="MuiButton-root-170 MuiButton-contained-181 MuiButton-containedPrimary-182 MuiButton-raised-184 MuiButton-raisedPrimary-185 MuiButton-disabled-190 MuiButton-fullWidth-195"
+                          className="MuiButton-root-171 MuiButton-contained-182 MuiButton-containedPrimary-183 MuiButton-raised-185 MuiButton-raisedPrimary-186 MuiButton-disabled-191 MuiButton-fullWidth-196"
                           classes={
                             Object {
                               "disabled": "MuiButtonBase-disabled-49",
@@ -3352,13 +3351,13 @@ exports[`should match snapshot: Signup/nomal 1`] = `
                           disableTouchRipple={false}
                           disabled={true}
                           focusRipple={true}
-                          focusVisibleClassName="MuiButton-focusVisible-189"
+                          focusVisibleClassName="MuiButton-focusVisible-190"
                           onClick={[Function]}
                           tabIndex="0"
                           type="button"
                         >
                           <button
-                            className="MuiButtonBase-root-48 MuiButtonBase-disabled-49 MuiButton-root-170 MuiButton-contained-181 MuiButton-containedPrimary-182 MuiButton-raised-184 MuiButton-raisedPrimary-185 MuiButton-disabled-190 MuiButton-fullWidth-195"
+                            className="MuiButtonBase-root-48 MuiButtonBase-disabled-49 MuiButton-root-171 MuiButton-contained-182 MuiButton-containedPrimary-183 MuiButton-raised-185 MuiButton-raisedPrimary-186 MuiButton-disabled-191 MuiButton-fullWidth-196"
                             disabled={true}
                             onBlur={[Function]}
                             onClick={[Function]}
@@ -3376,7 +3375,7 @@ exports[`should match snapshot: Signup/nomal 1`] = `
                             type="button"
                           >
                             <span
-                              className="MuiButton-label-171"
+                              className="MuiButton-label-172"
                             >
                               登録
                             </span>

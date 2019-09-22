@@ -600,7 +600,6 @@ exports[`should match snapshot: Container/back 1`] = `
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
                                   "withComponent": [Function],
-                                  Symbol(Symbol.hasInstance): [Function],
                                 }
                               }
                               forwardedRef={null}
@@ -1171,7 +1170,6 @@ exports[`should match snapshot: Container/back 1`] = `
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
                                             "withComponent": [Function],
-                                            Symbol(Symbol.hasInstance): [Function],
                                           }
                                         }
                                         forwardedRef={null}
@@ -4071,7 +4069,6 @@ exports[`should match snapshot: Container/nopadding 1`] = `
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
                                   "withComponent": [Function],
-                                  Symbol(Symbol.hasInstance): [Function],
                                 }
                               }
                               forwardedRef={null}
@@ -4492,7 +4489,6 @@ exports[`should match snapshot: Container/nopadding 1`] = `
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
                                             "withComponent": [Function],
-                                            Symbol(Symbol.hasInstance): [Function],
                                           }
                                         }
                                         forwardedRef={null}
@@ -7303,7 +7299,6 @@ exports[`should match snapshot: Container/padding 1`] = `
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
                                   "withComponent": [Function],
-                                  Symbol(Symbol.hasInstance): [Function],
                                 }
                               }
                               forwardedRef={null}
@@ -7724,7 +7719,6 @@ exports[`should match snapshot: Container/padding 1`] = `
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
                                             "withComponent": [Function],
-                                            Symbol(Symbol.hasInstance): [Function],
                                           }
                                         }
                                         forwardedRef={null}

@@ -58,7 +58,6 @@ exports[`should match snapshot: GoogleButton/nomal 1`] = `
             "toString": [Function],
             "warnTooManyClasses": [Function],
             "withComponent": [Function],
-            Symbol(Symbol.hasInstance): [Function],
           }
         }
         forwardedRef={null}

@@ -620,7 +620,6 @@ exports[`should match snapshot: NewEvent/nomal 1`] = `
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
                                     "withComponent": [Function],
-                                    Symbol(Symbol.hasInstance): [Function],
                                   }
                                 }
                                 forwardedRef={null}
@@ -769,25 +768,25 @@ exports[`should match snapshot: NewEvent/nomal 1`] = `
                                                       center={true}
                                                       classes={
                                                         Object {
-                                                          "child": "MuiTouchRipple-child-260",
-                                                          "childLeaving": "MuiTouchRipple-childLeaving-261",
-                                                          "childPulsate": "MuiTouchRipple-childPulsate-262",
-                                                          "ripple": "MuiTouchRipple-ripple-257",
-                                                          "ripplePulsate": "MuiTouchRipple-ripplePulsate-259",
-                                                          "rippleVisible": "MuiTouchRipple-rippleVisible-258",
-                                                          "root": "MuiTouchRipple-root-256",
+                                                          "child": "MuiTouchRipple-child-261",
+                                                          "childLeaving": "MuiTouchRipple-childLeaving-262",
+                                                          "childPulsate": "MuiTouchRipple-childPulsate-263",
+                                                          "ripple": "MuiTouchRipple-ripple-258",
+                                                          "ripplePulsate": "MuiTouchRipple-ripplePulsate-260",
+                                                          "rippleVisible": "MuiTouchRipple-rippleVisible-259",
+                                                          "root": "MuiTouchRipple-root-257",
                                                         }
                                                       }
                                                     >
                                                       <TransitionGroup
                                                         childFactory={[Function]}
-                                                        className="MuiTouchRipple-root-256"
+                                                        className="MuiTouchRipple-root-257"
                                                         component="span"
                                                         enter={true}
                                                         exit={true}
                                                       >
                                                         <span
-                                                          className="MuiTouchRipple-root-256"
+                                                          className="MuiTouchRipple-root-257"
                                                         />
                                                       </TransitionGroup>
                                                     </TouchRipple>
@@ -1191,7 +1190,6 @@ exports[`should match snapshot: NewEvent/nomal 1`] = `
                                               "toString": [Function],
                                               "warnTooManyClasses": [Function],
                                               "withComponent": [Function],
-                                              Symbol(Symbol.hasInstance): [Function],
                                             }
                                           }
                                           forwardedRef={null}
@@ -3100,7 +3098,7 @@ exports[`should match snapshot: NewEvent/nomal 1`] = `
                           innerRef={
                             Object {
                               "current": <div
-                                class="MuiPrivateSwipeArea-root-263 MuiPrivateSwipeArea-anchorRight-265"
+                                class="MuiPrivateSwipeArea-root-264 MuiPrivateSwipeArea-anchorRight-266"
                                 style="width: 20px;"
                               />,
                             }
@@ -3111,17 +3109,17 @@ exports[`should match snapshot: NewEvent/nomal 1`] = `
                             anchor="right"
                             classes={
                               Object {
-                                "anchorBottom": "MuiPrivateSwipeArea-anchorBottom-267",
-                                "anchorLeft": "MuiPrivateSwipeArea-anchorLeft-264",
-                                "anchorRight": "MuiPrivateSwipeArea-anchorRight-265",
-                                "anchorTop": "MuiPrivateSwipeArea-anchorTop-266",
-                                "root": "MuiPrivateSwipeArea-root-263",
+                                "anchorBottom": "MuiPrivateSwipeArea-anchorBottom-268",
+                                "anchorLeft": "MuiPrivateSwipeArea-anchorLeft-265",
+                                "anchorRight": "MuiPrivateSwipeArea-anchorRight-266",
+                                "anchorTop": "MuiPrivateSwipeArea-anchorTop-267",
+                                "root": "MuiPrivateSwipeArea-root-264",
                               }
                             }
                             width={20}
                           >
                             <div
-                              className="MuiPrivateSwipeArea-root-263 MuiPrivateSwipeArea-anchorRight-265"
+                              className="MuiPrivateSwipeArea-root-264 MuiPrivateSwipeArea-anchorRight-266"
                               style={
                                 Object {
                                   "width": 20,
@@ -5392,6 +5390,7 @@ exports[`should match snapshot: NewEvent/nomal 1`] = `
                                     "label": "WAMuiChipInput-label-221",
                                     "labelShrink": "WAMuiChipInput-labelShrink-222",
                                     "labeled": "WAMuiChipInput-labeled-220",
+                                    "marginDense": "WAMuiChipInput-marginDense-230",
                                     "outlined": "WAMuiChipInput-outlined-217",
                                     "root": "WAMuiChipInput-root-213",
                                     "standard": "WAMuiChipInput-standard-218",
@@ -6531,32 +6530,32 @@ exports[`should match snapshot: NewEvent/nomal 1`] = `
                     <Button
                       classes={
                         Object {
-                          "colorInherit": "MuiButton-colorInherit-251",
-                          "contained": "MuiButton-contained-241",
-                          "containedPrimary": "MuiButton-containedPrimary-242",
-                          "containedSecondary": "MuiButton-containedSecondary-243",
-                          "disabled": "MuiButton-disabled-250",
-                          "extendedFab": "MuiButton-extendedFab-248",
-                          "fab": "MuiButton-fab-247",
-                          "flat": "MuiButton-flat-235",
-                          "flatPrimary": "MuiButton-flatPrimary-236",
-                          "flatSecondary": "MuiButton-flatSecondary-237",
-                          "focusVisible": "MuiButton-focusVisible-249",
-                          "fullWidth": "MuiButton-fullWidth-255",
-                          "label": "MuiButton-label-231",
-                          "mini": "MuiButton-mini-252",
-                          "outlined": "MuiButton-outlined-238",
-                          "outlinedPrimary": "MuiButton-outlinedPrimary-239",
-                          "outlinedSecondary": "MuiButton-outlinedSecondary-240",
-                          "raised": "MuiButton-raised-244",
-                          "raisedPrimary": "MuiButton-raisedPrimary-245",
-                          "raisedSecondary": "MuiButton-raisedSecondary-246",
-                          "root": "MuiButton-root-230",
-                          "sizeLarge": "MuiButton-sizeLarge-254",
-                          "sizeSmall": "MuiButton-sizeSmall-253",
-                          "text": "MuiButton-text-232",
-                          "textPrimary": "MuiButton-textPrimary-233",
-                          "textSecondary": "MuiButton-textSecondary-234",
+                          "colorInherit": "MuiButton-colorInherit-252",
+                          "contained": "MuiButton-contained-242",
+                          "containedPrimary": "MuiButton-containedPrimary-243",
+                          "containedSecondary": "MuiButton-containedSecondary-244",
+                          "disabled": "MuiButton-disabled-251",
+                          "extendedFab": "MuiButton-extendedFab-249",
+                          "fab": "MuiButton-fab-248",
+                          "flat": "MuiButton-flat-236",
+                          "flatPrimary": "MuiButton-flatPrimary-237",
+                          "flatSecondary": "MuiButton-flatSecondary-238",
+                          "focusVisible": "MuiButton-focusVisible-250",
+                          "fullWidth": "MuiButton-fullWidth-256",
+                          "label": "MuiButton-label-232",
+                          "mini": "MuiButton-mini-253",
+                          "outlined": "MuiButton-outlined-239",
+                          "outlinedPrimary": "MuiButton-outlinedPrimary-240",
+                          "outlinedSecondary": "MuiButton-outlinedSecondary-241",
+                          "raised": "MuiButton-raised-245",
+                          "raisedPrimary": "MuiButton-raisedPrimary-246",
+                          "raisedSecondary": "MuiButton-raisedSecondary-247",
+                          "root": "MuiButton-root-231",
+                          "sizeLarge": "MuiButton-sizeLarge-255",
+                          "sizeSmall": "MuiButton-sizeSmall-254",
+                          "text": "MuiButton-text-233",
+                          "textPrimary": "MuiButton-textPrimary-234",
+                          "textSecondary": "MuiButton-textSecondary-235",
                         }
                       }
                       color="primary"
@@ -6571,17 +6570,17 @@ exports[`should match snapshot: NewEvent/nomal 1`] = `
                       variant="contained"
                     >
                       <WithStyles(ButtonBase)
-                        className="MuiButton-root-230 MuiButton-contained-241 MuiButton-containedPrimary-242 MuiButton-raised-244 MuiButton-raisedPrimary-245 MuiButton-disabled-250 MuiButton-fullWidth-255"
+                        className="MuiButton-root-231 MuiButton-contained-242 MuiButton-containedPrimary-243 MuiButton-raised-245 MuiButton-raisedPrimary-246 MuiButton-disabled-251 MuiButton-fullWidth-256"
                         component="button"
                         disabled={true}
                         focusRipple={true}
-                        focusVisibleClassName="MuiButton-focusVisible-249"
+                        focusVisibleClassName="MuiButton-focusVisible-250"
                         onClick={[Function]}
                         type="button"
                       >
                         <ButtonBase
                           centerRipple={false}
-                          className="MuiButton-root-230 MuiButton-contained-241 MuiButton-containedPrimary-242 MuiButton-raised-244 MuiButton-raisedPrimary-245 MuiButton-disabled-250 MuiButton-fullWidth-255"
+                          className="MuiButton-root-231 MuiButton-contained-242 MuiButton-containedPrimary-243 MuiButton-raised-245 MuiButton-raisedPrimary-246 MuiButton-disabled-251 MuiButton-fullWidth-256"
                           classes={
                             Object {
                               "disabled": "MuiButtonBase-disabled-49",
@@ -6594,13 +6593,13 @@ exports[`should match snapshot: NewEvent/nomal 1`] = `
                           disableTouchRipple={false}
                           disabled={true}
                           focusRipple={true}
-                          focusVisibleClassName="MuiButton-focusVisible-249"
+                          focusVisibleClassName="MuiButton-focusVisible-250"
                           onClick={[Function]}
                           tabIndex="0"
                           type="button"
                         >
                           <button
-                            className="MuiButtonBase-root-48 MuiButtonBase-disabled-49 MuiButton-root-230 MuiButton-contained-241 MuiButton-containedPrimary-242 MuiButton-raised-244 MuiButton-raisedPrimary-245 MuiButton-disabled-250 MuiButton-fullWidth-255"
+                            className="MuiButtonBase-root-48 MuiButtonBase-disabled-49 MuiButton-root-231 MuiButton-contained-242 MuiButton-containedPrimary-243 MuiButton-raised-245 MuiButton-raisedPrimary-246 MuiButton-disabled-251 MuiButton-fullWidth-256"
                             disabled={true}
                             onBlur={[Function]}
                             onClick={[Function]}
@@ -6618,7 +6617,7 @@ exports[`should match snapshot: NewEvent/nomal 1`] = `
                             type="button"
                           >
                             <span
-                              className="MuiButton-label-231"
+                              className="MuiButton-label-232"
                             >
                               作成
                             </span>
