@@ -1,9 +1,9 @@
 import React from 'react';
 import InfiniteScroll from 'react-infinite-scroller';
 import propTypes from 'prop-types';
-import Spinner from 'src/components/atoms/Spinner';
-import Tweet from 'src/components/organisms/Tweet';
-import ROUTES from 'src/constants/routes';
+import Spinner from 'components/atoms/Spinner';
+import Tweet from 'components/organisms/Tweet';
+import ROUTES from 'constants/routes';
 
 const TweetList = ({ items, loadMore, hasMore, uid, history, onClickReply, onClickLike }) => (
   <InfiniteScroll

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, InputAdornment, TextField, Typography } from '@material-ui/core';
 import propTypes from 'prop-types';
-import InputCategoriesAutoSuggest from 'src/components/organisms/InputCategoriesAutoSuggest';
+import InputCategoriesAutoSuggest from 'components/organisms/InputCategoriesAutoSuggest';
 
 class EventCreateForm extends React.Component {
   state = {

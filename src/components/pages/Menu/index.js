@@ -4,13 +4,13 @@ import { AddBoxRounded, HomeRounded, NotificationsRounded } from '@material-ui/i
 import { withStyles } from '@material-ui/core/styles';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
-import OverlaySpinner from 'src/components/molecules/OverlaySpinner';
-import EventsOverview from 'src/components/organisms/EventsOverview';
-import EventCreateForm from 'src/components/organisms/EventCreateForm';
-import NotificationList from 'src/components/organisms/NotificationList';
-import Container from 'src/components/templates/Container';
-import ROUTES from 'src/constants/routes';
-import MENU_ITEMS from 'src/constants/menuItems';
+import OverlaySpinner from 'components/molecules/OverlaySpinner';
+import EventsOverview from 'components/organisms/EventsOverview';
+import EventCreateForm from 'components/organisms/EventCreateForm';
+import NotificationList from 'components/organisms/NotificationList';
+import Container from 'components/templates/Container';
+import ROUTES from 'constants/routes';
+import MENU_ITEMS from 'constants/menuItems';
 
 const styles = theme => ({
   bottomBar: {

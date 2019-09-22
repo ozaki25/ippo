@@ -1,7 +1,7 @@
 import { withRouter } from 'react-router-dom';
-import { withFirebase } from 'src/context/firebase';
+import { withFirebase } from 'context/firebase';
 import { compose } from 'recompose';
-import Signup from 'src/components/pages/Signup';
+import Signup from 'components/pages/Signup';
 
 export default compose(
   withRouter,

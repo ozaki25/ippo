@@ -1,8 +1,8 @@
 import React from 'react';
 import { Divider, List } from '@material-ui/core';
 import propTypes from 'prop-types';
-import ListItemUtil from 'src/components/molecules/ListItemUtil';
-import Container from 'src/components/templates/Container';
+import ListItemUtil from 'components/molecules/ListItemUtil';
+import Container from 'components/templates/Container';
 
 class SettingsNotification extends React.Component {
   constructor(props) {

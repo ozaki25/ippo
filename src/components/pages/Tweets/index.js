@@ -1,16 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
-import Spinner from 'src/components/atoms/Spinner';
-import FloatingButton from 'src/components/molecules/FloatingButton';
-import TweetEventSummary from 'src/components/organisms/TweetEventSummary';
-import TweetsList from 'src/components/organisms/TweetList';
-import Container from 'src/components/templates/Container';
-import dateFormat from 'src/utils/dateFormat';
-import eventFormat from 'src/utils/eventFormat';
-import paging from 'src/constants/paging';
-import ROUTES from 'src/constants/routes';
-import TWEET_WORD from 'src/constants/tweetWord';
+import Spinner from 'components/atoms/Spinner';
+import FloatingButton from 'components/molecules/FloatingButton';
+import TweetEventSummary from 'components/organisms/TweetEventSummary';
+import TweetsList from 'components/organisms/TweetList';
+import Container from 'components/templates/Container';
+import dateFormat from 'utils/dateFormat';
+import eventFormat from 'utils/eventFormat';
+import paging from 'constants/paging';
+import ROUTES from 'constants/routes';
+import TWEET_WORD from 'constants/tweetWord';
 
 const TweetContainer = styled.div`
   padding-bottom: 150px;

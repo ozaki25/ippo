@@ -21,12 +21,12 @@ import {
 } from '@material-ui/icons';
 import { withStyles } from '@material-ui/core/styles';
 import propTypes from 'prop-types';
-import CharIcon from 'src/components/atoms/CharIcon';
-import A2HSDialog from 'src/components/organisms/A2HSDialog';
-import WebAuthnDialog from 'src/components/organisms/WebAuthnDialog';
-import ROUTES from 'src/constants/routes';
-import MENU_ITEMS from 'src/constants/menuItems';
-import { setAuthUser } from 'src/modules/session';
+import CharIcon from 'components/atoms/CharIcon';
+import A2HSDialog from 'components/organisms/A2HSDialog';
+import WebAuthnDialog from 'components/organisms/WebAuthnDialog';
+import ROUTES from 'constants/routes';
+import MENU_ITEMS from 'constants/menuItems';
+import { setAuthUser } from 'modules/session';
 
 const styles = {
   list: {

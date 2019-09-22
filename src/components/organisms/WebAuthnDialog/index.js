@@ -2,8 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Button, Dialog, DialogContent, DialogTitle } from '@material-ui/core';
 import propTypes from 'prop-types';
-import { setRawId } from 'src/modules/webauth';
-import webAuthentication from 'src/utils/webAuthentication';
+import { setRawId } from 'modules/webauth';
+import webAuthentication from 'utils/webAuthentication';
 
 class WebAuthnDialog extends React.Component {
   onClick = async () => {

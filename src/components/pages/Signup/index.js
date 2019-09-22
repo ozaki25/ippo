@@ -1,9 +1,9 @@
 import React from 'react';
 import propTypes from 'prop-types';
-import OverlaySpinner from 'src/components/molecules/OverlaySpinner';
-import SignupForm from 'src/components/organisms/SignupForm';
-import Container from 'src/components/templates/Container';
-import ROUTES from 'src/constants/routes';
+import OverlaySpinner from 'components/molecules/OverlaySpinner';
+import SignupForm from 'components/organisms/SignupForm';
+import Container from 'components/templates/Container';
+import ROUTES from 'constants/routes';
 
 class Signup extends React.Component {
   state = { loading: false };

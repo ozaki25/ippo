@@ -4,11 +4,11 @@ import { Typography } from '@material-ui/core';
 import { AccessTimeRounded, DescriptionOutlined, PlaceOutlined } from '@material-ui/icons';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
-import RoundedButton from 'src/components/atoms/RoundedButton';
-import Tweet from 'src/components/organisms/Tweet';
-import IconWithText from 'src/components/templates/IconWithText';
-import dateFormat from 'src/utils/dateFormat';
-import ROUTES from 'src/constants/routes';
+import RoundedButton from 'components/atoms/RoundedButton';
+import Tweet from 'components/organisms/Tweet';
+import IconWithText from 'components/templates/IconWithText';
+import dateFormat from 'utils/dateFormat';
+import ROUTES from 'constants/routes';
 
 const Container = styled.div`
   padding-top: 8px;

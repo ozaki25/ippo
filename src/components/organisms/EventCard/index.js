@@ -2,8 +2,8 @@ import React from 'react';
 import { Typography } from '@material-ui/core';
 import { AccessTimeRounded, DescriptionOutlined, PlaceOutlined } from '@material-ui/icons';
 import propTypes from 'prop-types';
-import CustomCard from 'src/components/molecules/CustomCard';
-import IconWithText from 'src/components/templates/IconWithText';
+import CustomCard from 'components/molecules/CustomCard';
+import IconWithText from 'components/templates/IconWithText';
 
 const EventCard = ({ title, eventUrl, catchMessage, place, datetime, expand, noWrap, history }) => (
   <CustomCard expand={expand} url={eventUrl} history={history}>

@@ -6,7 +6,7 @@ import ChipInput from 'material-ui-chip-input';
 import { MenuItem, Paper } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import propTypes from 'prop-types';
-import CATEGORIES from 'src/constants/categories';
+import CATEGORIES from 'constants/categories';
 
 const renderInputComponent = ({
   onChange,

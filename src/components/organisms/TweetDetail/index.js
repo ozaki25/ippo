@@ -2,11 +2,11 @@ import React from 'react';
 import { Divider, Typography } from '@material-ui/core';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
-import CharIcon from 'src/components/atoms/CharIcon';
-import Tweet from 'src/components/organisms/Tweet';
-import TweetBody from 'src/components/organisms/TweetBody';
-import TweetFooter from 'src/components/organisms/TweetFooter';
-import dateFormat from 'src/utils/dateFormat';
+import CharIcon from 'components/atoms/CharIcon';
+import Tweet from 'components/organisms/Tweet';
+import TweetBody from 'components/organisms/TweetBody';
+import TweetFooter from 'components/organisms/TweetFooter';
+import dateFormat from 'utils/dateFormat';
 
 const Container = styled.div`
   padding-bottom: 150px;

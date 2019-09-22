@@ -1,11 +1,11 @@
 import React from 'react';
 import propTypes from 'prop-types';
-import Spinner from 'src/components/atoms/Spinner';
-import FloatingButton from 'src/components/molecules/FloatingButton';
-import TweetDetail from 'src/components/organisms/TweetDetail';
-import Container from 'src/components/templates/Container';
-import ROUTES from 'src/constants/routes';
-import dateFormat from 'src/utils/dateFormat';
+import Spinner from 'components/atoms/Spinner';
+import FloatingButton from 'components/molecules/FloatingButton';
+import TweetDetail from 'components/organisms/TweetDetail';
+import Container from 'components/templates/Container';
+import ROUTES from 'constants/routes';
+import dateFormat from 'utils/dateFormat';
 
 class Tweet extends React.Component {
   componentDidMount() {

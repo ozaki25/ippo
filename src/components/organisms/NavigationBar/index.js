@@ -5,8 +5,8 @@ import { AppBar, IconButton, Toolbar, Typography } from '@material-ui/core';
 import { ArrowBackIosOutlined } from '@material-ui/icons';
 import { withStyles } from '@material-ui/core/styles';
 import propTypes from 'prop-types';
-import CharIcon from 'src/components/atoms/CharIcon';
-import SideMenu from 'src/components/organisms/SideMenu';
+import CharIcon from 'components/atoms/CharIcon';
+import SideMenu from 'components/organisms/SideMenu';
 
 const styles = theme => ({
   appBar: {

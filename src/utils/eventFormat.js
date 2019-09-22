@@ -1,5 +1,5 @@
-import dateFormat from 'src/utils/dateFormat';
-import ROUTES from 'src/constants/routes';
+import dateFormat from 'utils/dateFormat';
+import ROUTES from 'constants/routes';
 
 const external = props =>
   props
