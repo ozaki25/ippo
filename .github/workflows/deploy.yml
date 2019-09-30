@@ -17,14 +17,15 @@ jobs:
           yarn install
       - name: build
         run: |
-          yarn build-storybook
-      - name: deploy
+          yarn build
+      - name: install-netlify
         uses: netlify/actions/cli@master
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+      - name: deploy
         run: |
-          netlify deploy --prod
+          netlify deploy --prod --dir ./build
   deploy-storybook:
     runs-on: ubuntu-latest
     steps:
@@ -36,7 +37,7 @@ jobs:
       - name: install
         run: |
           yarn install
-      - name: build
+      - name: build-storybook
         run: |
           yarn build-storybook
       - name: deploy
