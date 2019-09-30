@@ -1,4 +1,4 @@
-name: deploy storybook to github pages
+name: deploy app to netlify
 on:
   push:
     branches:
@@ -19,8 +19,7 @@ jobs:
         run: |
           yarn build-storybook
       - name: deploy
-        uses: peaceiris/actions-gh-pages@v2.3.1
+        uses: netlify/actions/cli@master
         env:
-          PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
-          PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: ./storybook-static
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
