@@ -29,3 +29,5 @@ storybook-static/
 .firebase/
 
 .vscode/
+# Local Netlify folder
+.netlify
