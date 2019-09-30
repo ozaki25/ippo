@@ -12,7 +12,7 @@
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "NODE_PATH=src build-storybook -s public",
     "deploy-storybook": "NODE_PATH=src build-storybook -s public && cd storybook-static && git init && git add -A && git commit -m 'deploy storybook' && git push -f git@github.com:ozaki25/ippo.git master:gh-pages",
-    "deploy": "yarn build && firebase deploy"
+    "deploy": "netlify deploy --prod"
   },
   "eslintConfig": {
     "extends": "react-app"
