@@ -14,11 +14,16 @@ jobs:
           node-version: 12
       - name: install
         run: |
-          yarn install	
-          yarn add global netlify-cli
+          yarn install
       - name: build
         run: |
           yarn build
+      - name: deploy
+        run: |
+          npx netlify-cli deploy
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
   deploy-storybook:
     runs-on: ubuntu-latest
     steps:
