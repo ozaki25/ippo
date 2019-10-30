@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '@material-ui/core';
+import { Button, Typography } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
@@ -76,7 +76,8 @@ class Signin extends React.Component {
   };
 
   webauthSignin = async () => {
-    if (!navigator.credentials) alert('お使いのブラウザではこの機能を使うことができません');
+    if (!navigator.credentials)
+      alert('お使いのブラウザではこの機能を使うことができません');
     const { rawId, uid } = this.props;
     if (!rawId) {
       alert(`認証情報の登録が確認できませんでした。
@@ -96,7 +97,8 @@ class Signin extends React.Component {
     }
   };
 
-  onChange = event => this.setState({ [event.target.name]: event.target.value });
+  onChange = event =>
+    this.setState({ [event.target.name]: event.target.value });
 
   onSubmitPasscode = passcode => {
     if (passcode === PASSCODE) {
@@ -125,10 +127,18 @@ class Signin extends React.Component {
           </Button>
         </ButtonContainer>
         <ButtonContainer>
-          <Button onClick={this.webauthSignin} color="primary" className={classes.nonCaps} disabled>
+          <Button
+            onClick={this.webauthSignin}
+            color="primary"
+            className={classes.nonCaps}
+            disabled
+          >
             生体認証でログイン(β版)
           </Button>
         </ButtonContainer>
+        <Typography color="primary" align="right">
+          Happy Halloween!
+        </Typography>
         <OverlaySpinner visible={this.state.loading} />
       </Container>
     ) : (
