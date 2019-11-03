@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Typography } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
@@ -136,9 +136,6 @@ class Signin extends React.Component {
             生体認証でログイン(β版)
           </Button>
         </ButtonContainer>
-        <Typography color="primary" align="right">
-          Happy Halloween!
-        </Typography>
         <OverlaySpinner visible={this.state.loading} />
       </Container>
     ) : (
