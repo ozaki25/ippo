@@ -48,6 +48,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.1.6",
+    "@sentry/browser": "^5.11.1",
     "@storybook/addon-actions": "^4.0.9",
     "@storybook/addon-info": "^4.0.9",
     "@storybook/addon-knobs": "^4.0.9",
