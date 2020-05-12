@@ -1,11 +1,11 @@
 import { graphql } from 'react-apollo';
 import { compose } from 'recompose';
 import { withRouter } from 'react-router-dom';
-import { withFirebase } from 'context/firebase';
-import query from 'graphql/query';
-import ExternalEvents from 'components/pages/ExternalEvents/';
-import { withAuthorization } from 'hoc/Sessions';
-import paging from 'constants/paging';
+import { withFirebase } from 'src/context/firebase';
+import query from 'src/graphql/query';
+import ExternalEvents from 'src/components/pages/ExternalEvents/';
+import { withAuthorization } from 'src/hoc/Sessions';
+import paging from 'src/constants/paging';
 
 export default compose(
   withAuthorization,

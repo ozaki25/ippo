@@ -1,5 +1,5 @@
 // import React from 'react';
-// import { snapshot } from 'test/helpers';
+// import { snapshot } from 'src/test/helpers';
 // import PopMessage from '.';
 
 // const props = {

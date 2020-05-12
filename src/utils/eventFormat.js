@@ -1,11 +1,13 @@
-import dateFormat from 'utils/dateFormat';
-import ROUTES from 'constants/routes';
+import dateFormat from 'src/utils/dateFormat';
+import ROUTES from 'src/constants/routes';
 
 const external = props =>
   props
     ? props.map(event => ({
         ...event,
-        startedAt: event.startedAt ? `${dateFormat.datetimeJa(event.startedAt)} 〜` : '',
+        startedAt: event.startedAt
+          ? `${dateFormat.datetimeJa(event.startedAt)} 〜`
+          : '',
       }))
     : [];
 
@@ -14,7 +16,9 @@ const internal = props =>
     ? props.map(event => ({
         ...event,
         eventUrl: `${ROUTES.Tweets}?hashtag=${event.hashtag}`,
-        startedAt: event.startedAt ? `${dateFormat.datetimeJa(event.startedAt)} 〜` : '',
+        startedAt: event.startedAt
+          ? `${dateFormat.datetimeJa(event.startedAt)} 〜`
+          : '',
       }))
     : [];
 

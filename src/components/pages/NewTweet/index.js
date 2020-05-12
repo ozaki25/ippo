@@ -2,15 +2,15 @@ import React from 'react';
 import { Dialog, DialogTitle, TextField, Typography } from '@material-ui/core';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
-import RoundedButton from 'components/atoms/RoundedButton';
-import CharIcon from 'components/atoms/CharIcon';
-import PopMessage from 'components/atoms/PopMessage';
-import TweetHeader from 'components/organisms/TweetHeader';
-import TweetBody from 'components/organisms/TweetBody';
-import Container from 'components/templates/Container';
-import TWEET_WORD from 'constants/tweetWord';
-import alertMessage from 'constants/alertMessage';
-import dateFormat from 'utils/dateFormat';
+import RoundedButton from 'src/components/atoms/RoundedButton';
+import CharIcon from 'src/components/atoms/CharIcon';
+import PopMessage from 'src/components/atoms/PopMessage';
+import TweetHeader from 'src/components/organisms/TweetHeader';
+import TweetBody from 'src/components/organisms/TweetBody';
+import Container from 'src/components/templates/Container';
+import TWEET_WORD from 'src/constants/tweetWord';
+import alertMessage from 'src/constants/alertMessage';
+import dateFormat from 'src/utils/dateFormat';
 
 const inputProps = {
   style: {
@@ -81,7 +81,8 @@ class NewTweet extends React.Component {
     this.state.type && this.setState({ anchorEl: this.tweet.current });
   }
 
-  onChange = event => this.setState({ [event.target.name]: event.target.value });
+  onChange = event =>
+    this.setState({ [event.target.name]: event.target.value });
 
   onClickTweet = async () => {
     const { createTweet, authUser, history, hashtag, parentTweet } = this.props;
@@ -90,7 +91,8 @@ class NewTweet extends React.Component {
       name: authUser.displayName,
       uid: authUser.uid,
       time: new Date().toString(),
-      parentId: parentTweet.tweet && parentTweet.tweet.id ? parentTweet.tweet.id : null,
+      parentId:
+        parentTweet.tweet && parentTweet.tweet.id ? parentTweet.tweet.id : null,
       parentHashtag: hashtag,
     };
     this.setState({ disabled: true });
@@ -109,7 +111,8 @@ class NewTweet extends React.Component {
 
   handleClose = () => this.setState({ anchorEl: null });
 
-  toggleUploadDialog = () => this.setState(prevState => ({ open: !prevState.open }));
+  toggleUploadDialog = () =>
+    this.setState(prevState => ({ open: !prevState.open }));
 
   onUploaded = e => {
     const {
@@ -135,16 +138,27 @@ ${prevState.tweet}`,
     } = this.props;
     const { disabled, error, anchorEl, type } = this.state;
     return (
-      <Container title="ツイート" back authUser={authUser} history={history} firebase={firebase}>
+      <Container
+        title="ツイート"
+        back
+        authUser={authUser}
+        history={history}
+        firebase={firebase}
+      >
         {tweet && tweet.id && (
           <Wrapper>
             <IconContainer>
               <CharIcon name={tweet.name} />
             </IconContainer>
-            <TweetHeader name={tweet.name} time={dateFormat.datetimeJa(tweet.time)} />
+            <TweetHeader
+              name={tweet.name}
+              time={dateFormat.datetimeJa(tweet.time)}
+            />
             <TweetBody text={tweet.text} />
             <ReplyNameContainer>
-              <Typography color="textSecondary">返信先：@{tweet.name}さん</Typography>
+              <Typography color="textSecondary">
+                返信先：@{tweet.name}さん
+              </Typography>
             </ReplyNameContainer>
           </Wrapper>
         )}
@@ -168,10 +182,18 @@ ${prevState.tweet}`,
             autoFocus
           />
           <Buttons>
-            <RoundedButton color="primary" variant="outlined" onClick={this.toggleUploadDialog}>
+            <RoundedButton
+              color="primary"
+              variant="outlined"
+              onClick={this.toggleUploadDialog}
+            >
               アップロード
             </RoundedButton>{' '}
-            <RoundedButton color="primary" disabled={disabled} onClick={this.onClickTweet}>
+            <RoundedButton
+              color="primary"
+              disabled={disabled}
+              onClick={this.onClickTweet}
+            >
               ツイート
             </RoundedButton>
           </Buttons>

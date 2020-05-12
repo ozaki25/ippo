@@ -1,9 +1,10 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import TweetFixedText from '.';
 
-const stories = storiesOf('organisms/TweetFixedText', module);
+export default {
+  title: 'organisms/TweetFixedText',
+};
 
 const props = {};
 
-stories.add('通常パターン', () => <TweetFixedText {...props} />);
+export const 通常パターン = () => <TweetFixedText {...props} />;

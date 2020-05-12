@@ -1,8 +1,8 @@
 import React from 'react';
 import { Divider, Typography } from '@material-ui/core';
 import propTypes from 'prop-types';
-import Container from 'components/templates/Container';
-import dateFormat from 'utils/dateFormat';
+import Container from 'src/components/templates/Container';
+import dateFormat from 'src/utils/dateFormat';
 
 class Notification extends React.Component {
   async componentDidMount() {
@@ -36,9 +36,17 @@ class Notification extends React.Component {
       },
       firebase,
     } = this.props;
-    const notification = fetchUser ? fetchUser.notifications.find(n => n.id === id) : null;
+    const notification = fetchUser
+      ? fetchUser.notifications.find(n => n.id === id)
+      : null;
     return (
-      <Container title="通知" back authUser={authUser} history={history} firebase={firebase}>
+      <Container
+        title="通知"
+        back
+        authUser={authUser}
+        history={history}
+        firebase={firebase}
+      >
         {notification && (
           <>
             <Typography variant="h6">{notification.title}</Typography>

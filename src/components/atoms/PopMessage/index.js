@@ -5,7 +5,7 @@ import propTypes from 'prop-types';
 
 const styles = theme => ({
   typography: {
-    margin: theme.spacing.unit * 2,
+    margin: theme.spacing(2),
   },
 });
 

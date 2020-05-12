@@ -1,7 +1,8 @@
-import arrayBuffer from 'utils/arrayBuffer';
+import arrayBuffer from 'src/utils/arrayBuffer';
 
 const runAttestation = async () => {
-  if (!navigator.credentials) alert('お使いのブラウザではこの機能を使うことができません');
+  if (!navigator.credentials)
+    alert('お使いのブラウザではこの機能を使うことができません');
   // チャレンジ値の生成
   const challengeBuf = new Uint8Array(32);
   window.crypto.getRandomValues(challengeBuf);
@@ -29,7 +30,8 @@ const runAttestation = async () => {
 };
 
 const runAssertion = async rawId => {
-  if (!navigator.credentials) alert('お使いのブラウザではこの機能を使うことができません');
+  if (!navigator.credentials)
+    alert('お使いのブラウザではこの機能を使うことができません');
   // チャレンジ値の生成
   const challengeBuf = new Uint8Array(32);
   window.crypto.getRandomValues(challengeBuf);

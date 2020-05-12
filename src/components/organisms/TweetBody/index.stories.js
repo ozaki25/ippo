@@ -1,42 +1,55 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { text } from '@storybook/addon-knobs';
 import TweetBody from '.';
 
-const stories = storiesOf('organisms/TweetBody', module);
+export default {
+  title: 'organisms/TweetBody',
+};
 
-const props = {
-  text: text(
-    'text',
-    `Storybookいいところ
+export const 文字サイズ大きめ = () => (
+  <TweetBody
+    text={text(
+      'text',
+      `Storybookいいところ
   - どんなコンポーネントが存在してるか可視化できる
   - コンポーネントの扱い方が分かる
   - UIの修正デバッグが楽
   #ThinkAtomicDesign`,
-  ),
-};
+    )}
+    bigText
+  />
+);
 
-const propsLink = {
-  text: text(
-    'text',
-    `リンク有りのツイート
+export const ハッシュタグ有り = () => (
+  <TweetBody
+    text={text(
+      'text',
+      `Storybookいいところ
+  - どんなコンポーネントが存在してるか可視化できる
+  - コンポーネントの扱い方が分かる
+  - UIの修正デバッグが楽
+  #ThinkAtomicDesign`,
+    )}
+  />
+);
+
+export const リンク有り = () => (
+  <TweetBody
+    text={text(
+      'text',
+      `リンク有りのツイート
 https://github.com/ozaki25/ippo/commit/08a791084bc78c7990153d06c06068c2e1457c01#diff-ded5796553e17f3b91a36dd3fa989d76L79`,
-  ),
-};
+    )}
+  />
+);
 
-const propsLinkAndHashtag = {
-  text: text(
-    'text',
-    `リンク有りのツイート
+export const リンク_ハッシュタグ有り = () => (
+  <TweetBody
+    text={text(
+      'text',
+      `リンク有りのツイート
 https://github.com/ozaki25/ippo/commit/08a791084bc78c7990153d06c06068c2e1457c01#diff-ded5796553e17f3b91a36dd3fa989d76L79
 #ThinkAtomicDesign`,
-  ),
-};
-
-stories.add('文字サイズ大きめ', () => <TweetBody {...props} bigText />);
-
-stories.add('ハッシュタグ有り', () => <TweetBody {...props} />);
-
-stories.add('リンク有り', () => <TweetBody {...propsLink} />);
-
-stories.add('リンク/ハッシュタグ有り', () => <TweetBody {...propsLinkAndHashtag} />);
+    )}
+  />
+);

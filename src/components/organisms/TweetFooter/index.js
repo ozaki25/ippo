@@ -1,6 +1,10 @@
 import React from 'react';
 import { IconButton, Typography } from '@material-ui/core';
-import { FavoriteBorder, ModeCommentOutlined, RepeatRounded } from '@material-ui/icons';
+import {
+  FavoriteBorder,
+  ModeCommentOutlined,
+  RepeatRounded,
+} from '@material-ui/icons';
 import { withStyles } from '@material-ui/core/styles';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
@@ -34,7 +38,7 @@ const TweetFooter = withStyles(styles)(
         <IconButton onClick={onClickReply} className={classes.smallIcon}>
           <ModeCommentOutlined fontSize="inherit" color="action" />
         </IconButton>
-        <Typography color="textSecondary" inline>
+        <Typography color="textSecondary" display="inline">
           {replyCount}
         </Typography>
       </TweetFooterAction>
@@ -42,15 +46,18 @@ const TweetFooter = withStyles(styles)(
         <IconButton onClick={onClickRetweet} className={classes.smallIcon}>
           <RepeatRounded fontSize="inherit" color="action" />
         </IconButton>
-        <Typography color="textSecondary" inline>
+        <Typography color="textSecondary" display="inline">
           {retweetCount}
         </Typography>
       </TweetFooterAction>
       <TweetFooterAction>
         <IconButton onClick={onClickLike} className={classes.smallIcon}>
-          <FavoriteBorder fontSize="inherit" color={liked ? 'secondary' : 'action'} />
+          <FavoriteBorder
+            fontSize="inherit"
+            color={liked ? 'secondary' : 'action'}
+          />
         </IconButton>
-        <Typography color="textSecondary" inline>
+        <Typography color="textSecondary" display="inline">
           {likeCount}
         </Typography>
       </TweetFooterAction>

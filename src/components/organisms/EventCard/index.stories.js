@@ -1,18 +1,19 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { text } from '@storybook/addon-knobs';
 import EventCard from '.';
 
-const stories = storiesOf('organisms/EventCard', module);
+export default {
+  title: 'organisms/EventCard',
+};
 
-stories.add('タイトルとリンクのみの場合', () => (
+export const タイトルとリンクのみの場合 = () => (
   <EventCard
     title={text('タイトル', 'イベントのタイトル')}
     eventUrl={text('url', 'https://connpass.com/')}
   />
-));
+);
 
-stories.add('全項目ある場合', () => (
+export const 全項目ある場合 = () => (
   <EventCard
     title={text('タイトル', 'イベントのタイトル')}
     eventUrl={text('url', 'https://connpass.com/')}
@@ -20,17 +21,17 @@ stories.add('全項目ある場合', () => (
     place={text('場所', '東京都千代田区丸の内')}
     datetime={text('日時', '2018年12月1日 19:30〜')}
   />
-));
+);
 
-stories.add('サイズを拡張する場合', () => (
+export const サイズを拡張する場合 = () => (
   <EventCard
     title={text('タイトル', 'イベントのタイトル')}
     eventUrl={text('url', 'https://connpass.com/')}
     expand
   />
-));
+);
 
-stories.add('一行でおさめる場合', () => (
+export const 一行でおさめる場合 = () => (
   <EventCard
     title={text(
       'タイトル',
@@ -51,4 +52,4 @@ stories.add('一行でおさめる場合', () => (
     )}
     noWrap
   />
-));
+);

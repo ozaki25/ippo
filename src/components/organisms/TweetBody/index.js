@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
-import tweetFormat from 'utils/tweetFormat';
-import ROUTES from 'constants/routes';
+import tweetFormat from 'src/utils/tweetFormat';
+import ROUTES from 'src/constants/routes';
 
 const StyledTweetBody = styled.div`
   margin: 0 0 5px;
@@ -64,7 +64,9 @@ const TweetBody = ({ text, bigText }) => {
     return <StyledTweetBody bigText={bigText ? 1 : 0}>{text}</StyledTweetBody>;
   const tmpTweet = linkUrl([text]);
   const tmp2Tweet = linkHashtag(tmpTweet);
-  return <StyledTweetBody bigText={bigText ? 1 : 0}>{tmp2Tweet}</StyledTweetBody>;
+  return (
+    <StyledTweetBody bigText={bigText ? 1 : 0}>{tmp2Tweet}</StyledTweetBody>
+  );
 };
 
 TweetBody.displayName = 'TweetBody';

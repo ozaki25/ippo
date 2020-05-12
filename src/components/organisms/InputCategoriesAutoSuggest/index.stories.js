@@ -1,7 +1,10 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import InputCategoriesAutoSuggest from '.';
+
+export default {
+  title: 'organisms/InputCategoriesAutoSuggest',
+};
 
 const props = {
   handleAddChip: action('add'),
@@ -10,13 +13,13 @@ const props = {
   value: [],
 };
 
-const stories = storiesOf('organisms/InputCategoriesAutoSuggest', module);
+export const 未選択 = () => <InputCategoriesAutoSuggest {...props} />;
 
-stories.add('未選択', () => <InputCategoriesAutoSuggest {...props} />);
+export const _1つ選択済み = () => (
+  <InputCategoriesAutoSuggest {...props} value={['test']} />
+);
 
-stories.add('1つ選択済み', () => <InputCategoriesAutoSuggest {...props} value={['test']} />);
-
-stories.add('たくさん選択済み', () => (
+export const たくさん選択済み = () => (
   <InputCategoriesAutoSuggest
     {...props}
     value={[
@@ -32,4 +35,4 @@ stories.add('たくさん選択済み', () => (
       '日本語5',
     ]}
   />
-));
+);

@@ -1,16 +1,20 @@
 import React from 'react';
 import { Badge, Tab, Tabs } from '@material-ui/core';
-import { AddBoxRounded, HomeRounded, NotificationsRounded } from '@material-ui/icons';
+import {
+  AddBoxRounded,
+  HomeRounded,
+  NotificationsRounded,
+} from '@material-ui/icons';
 import { withStyles } from '@material-ui/core/styles';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
-import OverlaySpinner from 'components/molecules/OverlaySpinner';
-import EventsOverview from 'components/organisms/EventsOverview';
-import EventCreateForm from 'components/organisms/EventCreateForm';
-import NotificationList from 'components/organisms/NotificationList';
-import Container from 'components/templates/Container';
-import ROUTES from 'constants/routes';
-import MENU_ITEMS from 'constants/menuItems';
+import OverlaySpinner from 'src/components/molecules/OverlaySpinner';
+import EventsOverview from 'src/components/organisms/EventsOverview';
+import EventCreateForm from 'src/components/organisms/EventCreateForm';
+import NotificationList from 'src/components/organisms/NotificationList';
+import Container from 'src/components/templates/Container';
+import ROUTES from 'src/constants/routes';
+import MENU_ITEMS from 'src/constants/menuItems';
 
 const styles = theme => ({
   bottomBar: {
@@ -33,7 +37,9 @@ class Menu extends React.Component {
   }
 
   handleChange = (event, value) =>
-    this.props.history.replace(`${ROUTES.Menu}?tab=${MENU_ITEMS.findItemByValue(value).title}`);
+    this.props.history.replace(
+      `${ROUTES.Menu}?tab=${MENU_ITEMS.findItemByValue(value).title}`,
+    );
 
   onSubmitCreateEvent = async event => {
     const {
@@ -71,7 +77,10 @@ class Menu extends React.Component {
             authUser={authUser}
             history={history}
             firebase={firebase}
-            noPadding={[MENU_ITEMS.HOME.value, MENU_ITEMS.NOTIFICATION.value].includes(value)}
+            noPadding={[
+              MENU_ITEMS.HOME.value,
+              MENU_ITEMS.NOTIFICATION.value,
+            ].includes(value)}
           >
             {value === MENU_ITEMS.HOME.value &&
               (loading ? (

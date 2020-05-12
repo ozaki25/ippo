@@ -1,5 +1,5 @@
 import React from 'react';
-import { snapshot } from 'test/helpers';
+import { snapshot } from 'src/test/helpers';
 import NotificationList from '.';
 
 const props = ({ checked }) => ({
@@ -18,6 +18,12 @@ const props = ({ checked }) => ({
   },
 });
 
-snapshot('NotificationList/read', <NotificationList {...props({ checked: true })} />);
+snapshot(
+  'NotificationList/read',
+  <NotificationList {...props({ checked: true })} />,
+);
 
-snapshot('NotificationList/unread', <NotificationList {...props({ checked: false })} />);
+snapshot(
+  'NotificationList/unread',
+  <NotificationList {...props({ checked: false })} />,
+);

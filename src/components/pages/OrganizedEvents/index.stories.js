@@ -1,9 +1,10 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import OrganizedEvents from '.';
 
-const stories = storiesOf('pages/OrganizedEvents', module);
+export default {
+  title: 'pages/OrganizedEvents',
+};
 
 const event = i => ({
   id: String(i),
@@ -34,8 +35,10 @@ const props = ({ loading = false, empty = false }) => ({
   firebase: {},
 });
 
-stories.add('通常パターン', () => <OrganizedEvents {...props({})} />);
+export const 通常パターン = () => <OrganizedEvents {...props({})} />;
 
-stories.add('ロード中', () => <OrganizedEvents {...props({ loading: true, empty: true })} />);
+export const ロード中 = () => (
+  <OrganizedEvents {...props({ loading: true, empty: true })} />
+);
 
-stories.add('データなし', () => <OrganizedEvents {...props({ empty: true })} />);
+export const データなし = () => <OrganizedEvents {...props({ empty: true })} />;

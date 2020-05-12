@@ -1,9 +1,10 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import SettingsAccount from '.';
 
-const stories = storiesOf('pages/SettingsAccount', module);
+export default {
+  title: 'pages/SettingsAccount',
+};
 
 const props = ({ loading = false }) => ({
   data: {
@@ -28,15 +29,19 @@ const props = ({ loading = false }) => ({
   onSetAuthUser: action('onSetAuthUser'),
 });
 
-stories.add('通常パターン', () => <SettingsAccount {...props({})} />);
+export const 通常パターン = () => <SettingsAccount {...props({})} />;
 
-stories.add('ローディング', () => <SettingsAccount {...props({ loading: true })} />);
+export const ローディング = () => (
+  <SettingsAccount {...props({ loading: true })} />
+);
 
-stories.add('エラー', () => (
+export const エラー = () => (
   <SettingsAccount
     {...props({})}
     updateUser={() =>
-      new Promise((resolve, reject) => reject(new Error('Network error: Failed to fetch')))
+      new Promise((resolve, reject) =>
+        reject(new Error('Network error: Failed to fetch')),
+      )
     }
   />
-));
+);

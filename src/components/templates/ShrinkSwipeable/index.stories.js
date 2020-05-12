@@ -1,8 +1,9 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import ShrinkSwipeable from '.';
 
-const stories = storiesOf('templates/ShrinkSwipeable', module);
+export default {
+  title: 'templates/ShrinkSwipeable',
+};
 
 const style = {
   padding: 15,
@@ -27,4 +28,4 @@ const items = [
   </h1>,
 ];
 
-stories.add('通常パターン', () => <ShrinkSwipeable children={items} />);
+export const 通常パターン = () => <ShrinkSwipeable children={items} />;

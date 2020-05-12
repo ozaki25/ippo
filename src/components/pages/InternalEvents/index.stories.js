@@ -1,9 +1,11 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
+import {} from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import InternalEvents from '.';
 
-const stories = storiesOf('pages/InternalEvents', module);
+export default {
+  title: 'pages/InternalEvents',
+};
 
 const event = i => ({
   id: String(i),
@@ -34,8 +36,10 @@ const props = ({ loading = false, empty = false }) => ({
   firebase: {},
 });
 
-stories.add('通常パターン', () => <InternalEvents {...props({})} />);
+export const 通常パターン = () => <InternalEvents {...props({})} />;
 
-stories.add('ロード中', () => <InternalEvents {...props({ loading: true, empty: true })} />);
+export const ロード中 = () => (
+  <InternalEvents {...props({ loading: true, empty: true })} />
+);
 
-stories.add('データなし', () => <InternalEvents {...props({ empty: true })} />);
+export const データなし = () => <InternalEvents {...props({ empty: true })} />;

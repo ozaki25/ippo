@@ -1,9 +1,10 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import Spinner from '.';
 
-const stories = storiesOf('atoms/Spinner', module);
+export default {
+  title: 'atoms/Spinner',
+};
 
 const props = {};
 
-stories.add('通常パターン', () => <Spinner {...props} />);
+export const 通常パターン = () => <Spinner {...props} />;

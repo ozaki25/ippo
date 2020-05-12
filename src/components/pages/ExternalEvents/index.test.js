@@ -1,5 +1,5 @@
 import React from 'react';
-import { snapshot } from 'test/helpers';
+import { snapshot } from 'src/test/helpers';
 import ExternalEvents from '.';
 
 const event = i => ({
@@ -34,6 +34,12 @@ const props = ({ loading = false, empty = false }) => ({
 
 snapshot('ExternalEvents/nomal', <ExternalEvents {...props({})} />);
 
-snapshot('ExternalEvents/loading', <ExternalEvents {...props({ loading: true, empty: true })} />);
+snapshot(
+  'ExternalEvents/loading',
+  <ExternalEvents {...props({ loading: true, empty: true })} />,
+);
 
-snapshot('ExternalEvents/nocontents', <ExternalEvents {...props({ empty: true })} />);
+snapshot(
+  'ExternalEvents/nocontents',
+  <ExternalEvents {...props({ empty: true })} />,
+);

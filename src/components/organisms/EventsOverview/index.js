@@ -4,12 +4,12 @@ import { NavigateNextRounded } from '@material-ui/icons';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import EventCard from 'components/organisms/EventCard';
-import EventCardList from 'components/organisms/EventCardList';
-import ShrinkSwipeable from 'components/templates/ShrinkSwipeable';
-import IconWithText from 'components/templates/IconWithText';
-import eventFormat from 'utils/eventFormat';
-import ROUTES from 'constants/routes';
+import EventCard from 'src/components/organisms/EventCard';
+import EventCardList from 'src/components/organisms/EventCardList';
+import ShrinkSwipeable from 'src/components/templates/ShrinkSwipeable';
+import IconWithText from 'src/components/templates/IconWithText';
+import eventFormat from 'src/utils/eventFormat';
+import ROUTES from 'src/constants/routes';
 
 const EventsContainer = styled.div`
   margin-top: 8px;
@@ -30,7 +30,14 @@ const LinkHeading = ({ linkTo, children }) => (
   </StyledLink>
 );
 
-const EventsOverview = ({ joined, organized, recommended, internal, external, history }) => {
+const EventsOverview = ({
+  joined,
+  organized,
+  recommended,
+  internal,
+  external,
+  history,
+}) => {
   const joinedEvents = eventFormat.internal(joined);
   const organizedEvents = eventFormat.internal(organized);
   const recommendedEvents = eventFormat.internal(recommended);
@@ -58,7 +65,9 @@ const EventsOverview = ({ joined, organized, recommended, internal, external, hi
         </ShrinkSwipeable>
       </EventsContainer>
       <EventsContainer>
-        <LinkHeading linkTo={ROUTES.RecommendedEvents}>おすすめイベント</LinkHeading>
+        <LinkHeading linkTo={ROUTES.RecommendedEvents}>
+          おすすめイベント
+        </LinkHeading>
         <ShrinkSwipeable>
           {recommendedEvents && recommendedEvents.length ? (
             EventCardList({

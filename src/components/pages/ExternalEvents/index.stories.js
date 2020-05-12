@@ -1,9 +1,10 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import ExternalEvents from '.';
 
-const stories = storiesOf('pages/ExternalEvents', module);
+export default {
+  title: 'pages/ExternalEvents',
+};
 
 const event = i => ({
   id: String(i),
@@ -33,8 +34,10 @@ const props = ({ loading = false, empty = false }) => ({
   firebase: {},
 });
 
-stories.add('通常パターン', () => <ExternalEvents {...props({})} />);
+export const 通常パターン = () => <ExternalEvents {...props({})} />;
 
-stories.add('ロード中', () => <ExternalEvents {...props({ loading: true, empty: true })} />);
+export const ロード中 = () => (
+  <ExternalEvents {...props({ loading: true, empty: true })} />
+);
 
-stories.add('データなし', () => <ExternalEvents {...props({ empty: true })} />);
+export const データなし = () => <ExternalEvents {...props({ empty: true })} />;

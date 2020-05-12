@@ -1,9 +1,10 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import Signin from '.';
 
-const stories = storiesOf('pages/Signin', module);
+export default {
+  title: 'pages/Signin',
+};
 
 const props = {
   history: {
@@ -21,4 +22,4 @@ const props = {
   },
 };
 
-stories.add('通常パターン', () => <Signin {...props} />);
+export const 通常パターン = () => <Signin {...props} />;

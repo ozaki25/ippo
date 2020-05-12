@@ -1,5 +1,5 @@
 import React from 'react';
-import { snapshot } from 'test/helpers';
+import { snapshot } from 'src/test/helpers';
 import { Typography } from '@material-ui/core';
 import { AddRounded } from '@material-ui/icons';
 import IconWithText from '.';

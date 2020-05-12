@@ -1,8 +1,9 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import EventCardList from '.';
 
-const stories = storiesOf('organisms/EventCardList', module);
+export default {
+  title: 'organisms/EventCardList',
+};
 
 const event = i => ({
   id: String(i),
@@ -17,7 +18,6 @@ const props = {
   events: [...[...Array(5)].map((_, i) => event(i))],
 };
 
-stories.add('通常パターン', () => <EventCardList {...props} />);
+export const 通常パターン = () => <EventCardList {...props} />;
 
-stories.add('0件の場合', () => <EventCardList events={[]} />);
-
+export const _0件の場合 = () => <EventCardList events={[]} />;

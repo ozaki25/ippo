@@ -1,13 +1,14 @@
 import { graphql } from 'react-apollo';
 import { compose } from 'recompose';
 import { withRouter } from 'react-router-dom';
-import { withFirebase } from 'context/firebase';
-import query from 'graphql/query';
-import mutation from 'graphql/mutation';
-import Tweet from 'components/pages/Tweet';
-import { withAuthorization } from 'hoc/Sessions';
+import { withFirebase } from 'src/context/firebase';
+import query from 'src/graphql/query';
+import mutation from 'src/graphql/mutation';
+import Tweet from 'src/components/pages/Tweet';
+import { withAuthorization } from 'src/hoc/Sessions';
 
-const getHashtag = search => new URLSearchParams(search).get('hashtag') || 'none';
+const getHashtag = search =>
+  new URLSearchParams(search).get('hashtag') || 'none';
 
 export default compose(
   withAuthorization,

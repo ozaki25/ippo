@@ -6,7 +6,7 @@ import ChipInput from 'material-ui-chip-input';
 import { MenuItem, Paper } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import propTypes from 'prop-types';
-import CATEGORIES from 'constants/categories';
+import CATEGORIES from 'src/constants/categories';
 
 const renderInputComponent = ({
   onChange,
@@ -90,8 +90,8 @@ const styles = theme => ({
   },
   suggestionsContainerOpen: {
     position: 'absolute',
-    marginTop: theme.spacing.unit,
-    marginBottom: theme.spacing.unit * 3,
+    marginTop: theme.spacing(1),
+    marginBottom: theme.spacing(3),
     left: 0,
     right: 0,
     zIndex: 1,

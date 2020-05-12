@@ -1,5 +1,5 @@
 import React from 'react';
-import { snapshot } from 'test/helpers';
+import { snapshot } from 'src/test/helpers';
 import InternalEvents from '.';
 
 const event = i => ({
@@ -35,6 +35,12 @@ const props = ({ loading = false, empty = false }) => ({
 
 snapshot('InternalEvents/nomal', <InternalEvents {...props({})} />);
 
-snapshot('InternalEvents/loading', <InternalEvents {...props({ loading: true, empty: true })} />);
+snapshot(
+  'InternalEvents/loading',
+  <InternalEvents {...props({ loading: true, empty: true })} />,
+);
 
-snapshot('InternalEvents/nocontents', <InternalEvents {...props({ empty: true })} />);
+snapshot(
+  'InternalEvents/nocontents',
+  <InternalEvents {...props({ empty: true })} />,
+);

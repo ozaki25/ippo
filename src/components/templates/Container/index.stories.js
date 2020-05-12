@@ -1,10 +1,11 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { text } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
 import Container from '.';
 
-const stories = storiesOf('templates/Container', module);
+export default {
+  title: 'templates/Container',
+};
 
 const props = {
   title: text('title', 'タイトル'),
@@ -20,10 +21,10 @@ const props = {
   firebase: {},
 };
 
-stories.add('paddingあり', () => <Container {...props} />);
+export const paddingあり = () => <Container {...props} />;
 
-stories.add('paddingなし', () => <Container {...props} noPadding />);
+export const paddingなし = () => <Container {...props} noPadding />;
 
-stories.add('戻るあり', () => <Container {...props} back />);
+export const 戻るあり = () => <Container {...props} back />;
 
-stories.add('ヘッダーなし', () => <Container {...props} header={false} />);
+export const ヘッダーなし = () => <Container {...props} header={false} />;

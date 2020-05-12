@@ -1,9 +1,10 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import SettingsNotification from '.';
 
-const stories = storiesOf('pages/SettingsNotification', module);
+export default {
+  title: 'pages/SettingsNotification',
+};
 
 const props = ({ granted, denied, supported }) => ({
   authUser: {
@@ -16,7 +17,9 @@ const props = ({ granted, denied, supported }) => ({
     replace: action('replace'),
   },
   firebase: {
-    askForPermissionToReceiveNotifications: action('askForPermissionToReceiveNotifications'),
+    askForPermissionToReceiveNotifications: action(
+      'askForPermissionToReceiveNotifications',
+    ),
   },
   notifications: {
     isGranted: () => granted,
@@ -27,18 +30,26 @@ const props = ({ granted, denied, supported }) => ({
   unregisterNotification: action('unregister'),
 });
 
-stories.add('通知未対応端末', () => (
-  <SettingsNotification {...props({ granted: false, denied: false, supported: false })} />
-));
+export const 通知未対応端末 = () => (
+  <SettingsNotification
+    {...props({ granted: false, denied: false, supported: false })}
+  />
+);
 
-stories.add('通知対応端末で未設定', () => (
-  <SettingsNotification {...props({ granted: false, denied: false, supported: true })} />
-));
+export const 通知対応端末で未設定 = () => (
+  <SettingsNotification
+    {...props({ granted: false, denied: false, supported: true })}
+  />
+);
 
-stories.add('通知対応端末で許可済み', () => (
-  <SettingsNotification {...props({ granted: true, denied: false, supported: true })} />
-));
+export const 通知対応端末で許可済み = () => (
+  <SettingsNotification
+    {...props({ granted: true, denied: false, supported: true })}
+  />
+);
 
-stories.add('通知対応端末で拒否済み', () => (
-  <SettingsNotification {...props({ granted: false, denied: true, supported: true })} />
-));
+export const 通知対応端末で拒否済み = () => (
+  <SettingsNotification
+    {...props({ granted: false, denied: true, supported: true })}
+  />
+);

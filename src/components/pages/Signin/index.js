@@ -4,13 +4,13 @@ import { withStyles } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
-import GoogleButton from 'components/atoms/GoogleButton';
-import OverlaySpinner from 'components/molecules/OverlaySpinner';
-import SigninForm from 'components/organisms/SigninForm';
-import InputPassDialog from 'components/organisms/InputPassDialog';
-import Container from 'components/templates/Container';
-import ROUTES from 'constants/routes';
-import webAuthentication from 'utils/webAuthentication';
+import GoogleButton from 'src/components/atoms/GoogleButton';
+import OverlaySpinner from 'src/components/molecules/OverlaySpinner';
+import SigninForm from 'src/components/organisms/SigninForm';
+import InputPassDialog from 'src/components/organisms/InputPassDialog';
+import Container from 'src/components/templates/Container';
+import ROUTES from 'src/constants/routes';
+import webAuthentication from 'src/utils/webAuthentication';
 
 const styles = {
   nonCaps: {

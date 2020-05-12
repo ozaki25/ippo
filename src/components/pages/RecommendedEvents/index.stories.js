@@ -1,9 +1,10 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import RecommendedEvents from '.';
 
-const stories = storiesOf('pages/RecommendedEvents', module);
+export default {
+  title: 'pages/RecommendedEvents',
+};
 
 const event = i => ({
   id: String(i),
@@ -34,8 +35,12 @@ const props = ({ loading = false, empty = false }) => ({
   firebase: {},
 });
 
-stories.add('通常パターン', () => <RecommendedEvents {...props({})} />);
+export const 通常パターン = () => <RecommendedEvents {...props({})} />;
 
-stories.add('ロード中', () => <RecommendedEvents {...props({ loading: true, empty: true })} />);
+export const ロード中 = () => (
+  <RecommendedEvents {...props({ loading: true, empty: true })} />
+);
 
-stories.add('データなし', () => <RecommendedEvents {...props({ empty: true })} />);
+export const データなし = () => (
+  <RecommendedEvents {...props({ empty: true })} />
+);

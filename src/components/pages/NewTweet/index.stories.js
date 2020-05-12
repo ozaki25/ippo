@@ -1,10 +1,11 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { text } from '@storybook/addon-knobs';
 import NewTweet from '.';
 
-const stories = storiesOf('pages/NewTweet', module);
+export default {
+  title: 'pages/NewTweet',
+};
 
 const props = {
   hashtag: text('hashtag', 'test_event'),
@@ -66,21 +67,27 @@ const parentTweetProps = {
   },
 };
 
-stories.add('通常パターン', () => <NewTweet {...props} />);
+export const 通常パターン = () => <NewTweet {...props} />;
 
-stories.add('エラー', () => (
+export const エラー = () => (
   <NewTweet
     {...props}
     createTweet={() =>
-      new Promise((resolve, reject) => reject(new Error('Network error: Failed to fetch')))
+      new Promise((resolve, reject) =>
+        reject(new Error('Network error: Failed to fetch')),
+      )
     }
   />
-));
+);
 
-stories.add('デフォルトツイート', () => <NewTweet {...props} {...defaultTweetProps} />);
+export const デフォルトツイート = () => (
+  <NewTweet {...props} {...defaultTweetProps} />
+);
 
-stories.add('参加', () => <NewTweet {...props} {...joinProps} />);
+export const 参加 = () => <NewTweet {...props} {...joinProps} />;
 
-stories.add('キャンセル', () => <NewTweet {...props} {...leaveProps} />);
+export const キャンセル = () => <NewTweet {...props} {...leaveProps} />;
 
-stories.add('親ツイートあり', () => <NewTweet {...props} {...parentTweetProps} />);
+export const 親ツイートあり = () => (
+  <NewTweet {...props} {...parentTweetProps} />
+);

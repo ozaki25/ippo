@@ -1,20 +1,35 @@
 import React from 'react';
 import { Typography } from '@material-ui/core';
-import { AccessTimeRounded, DescriptionOutlined, PlaceOutlined } from '@material-ui/icons';
+import {
+  AccessTimeRounded,
+  DescriptionOutlined,
+  PlaceOutlined,
+} from '@material-ui/icons';
 import propTypes from 'prop-types';
-import CustomCard from 'components/molecules/CustomCard';
-import IconWithText from 'components/templates/IconWithText';
+import CustomCard from 'src/components/molecules/CustomCard';
+import IconWithText from 'src/components/templates/IconWithText';
 
-const EventCard = ({ title, eventUrl, catchMessage, place, datetime, expand, noWrap, history }) => (
+const EventCard = ({
+  title,
+  eventUrl,
+  catchMessage,
+  place,
+  datetime,
+  expand,
+  noWrap,
+  history,
+}) => (
   <CustomCard expand={expand} url={eventUrl} history={history}>
-    <Typography variant="h6" noWrap={noWrap}>
+    <Typography variant="h6" noWrap={noWrap} color="textPrimary">
       {title}
     </Typography>
     {catchMessage && (
       <>
         <IconWithText fullWidth>
           <DescriptionOutlined fontSize="small" />
-          <Typography noWrap={noWrap}>{catchMessage}</Typography>
+          <Typography noWrap={noWrap} color="textPrimary">
+            {catchMessage}
+          </Typography>
         </IconWithText>
         <br />
       </>
@@ -23,7 +38,9 @@ const EventCard = ({ title, eventUrl, catchMessage, place, datetime, expand, noW
       <>
         <IconWithText fullWidth>
           <PlaceOutlined fontSize="small" />
-          <Typography noWrap={noWrap}>{place}</Typography>
+          <Typography noWrap={noWrap} color="textPrimary">
+            {place}
+          </Typography>
         </IconWithText>
         <br />
       </>
@@ -32,7 +49,9 @@ const EventCard = ({ title, eventUrl, catchMessage, place, datetime, expand, noW
       <>
         <IconWithText fullWidth>
           <AccessTimeRounded fontSize="small" />
-          <Typography noWrap={noWrap}>{datetime}</Typography>
+          <Typography noWrap={noWrap} color="textPrimary">
+            {datetime}
+          </Typography>
         </IconWithText>
         <br />
       </>

@@ -1,11 +1,12 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import IconImage from '.';
 
-const stories = storiesOf('atoms/IconImage', module);
+export default {
+  title: 'atoms/IconImage',
+};
 
 const props = {
   src: '/icon.png',
 };
 
-stories.add('通常パターン', () => <IconImage {...props} />);
+export const 通常パターン = () => <IconImage {...props} />;

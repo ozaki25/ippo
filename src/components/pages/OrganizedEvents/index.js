@@ -2,11 +2,11 @@ import React from 'react';
 import InfiniteScroll from 'react-infinite-scroller';
 import { Typography } from '@material-ui/core';
 import propTypes from 'prop-types';
-import Spinner from 'components/atoms/Spinner';
-import EventCardList from 'components/organisms/EventCardList';
-import Container from 'components/templates/Container';
-import eventFormat from 'utils/eventFormat';
-import paging from 'constants/paging';
+import Spinner from 'src/components/atoms/Spinner';
+import EventCardList from 'src/components/organisms/EventCardList';
+import Container from 'src/components/templates/Container';
+import eventFormat from 'src/utils/eventFormat';
+import paging from 'src/constants/paging';
 
 const OrganizedEvents = ({
   data: { loading, organizedEvents, fetchMore },
@@ -24,7 +24,10 @@ const OrganizedEvents = ({
       ...prev,
       organizedEvents: {
         ...prev.organizedEvents,
-        items: [...prev.organizedEvents.items, ...fetchMoreResult.organizedEvents.items],
+        items: [
+          ...prev.organizedEvents.items,
+          ...fetchMoreResult.organizedEvents.items,
+        ],
         startId: fetchMoreResult.organizedEvents.startId,
       },
     });
@@ -51,7 +54,10 @@ const OrganizedEvents = ({
           loader={<Spinner key={organizedEvents.items.length} />}
           threshold={300}
         >
-          <EventCardList events={eventFormat.internal(organizedEvents.items)} history={history} />
+          <EventCardList
+            events={eventFormat.internal(organizedEvents.items)}
+            history={history}
+          />
         </InfiniteScroll>
       ) : (
         <Typography>No Contents</Typography>

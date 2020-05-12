@@ -1,7 +1,12 @@
 import React from 'react';
-import { Button, InputAdornment, TextField, Typography } from '@material-ui/core';
+import {
+  Button,
+  InputAdornment,
+  TextField,
+  Typography,
+} from '@material-ui/core';
 import propTypes from 'prop-types';
-import InputCategoriesAutoSuggest from 'components/organisms/InputCategoriesAutoSuggest';
+import InputCategoriesAutoSuggest from 'src/components/organisms/InputCategoriesAutoSuggest';
 
 class EventCreateForm extends React.Component {
   state = {
@@ -18,7 +23,15 @@ class EventCreateForm extends React.Component {
 
   onClick = async event => {
     event.preventDefault();
-    const { title, catchMessage, place, hashtag, categories, startedAt, endedAt } = this.state;
+    const {
+      title,
+      catchMessage,
+      place,
+      hashtag,
+      categories,
+      startedAt,
+      endedAt,
+    } = this.state;
     this.setState({ loading: true });
     try {
       const { data } = await this.props.onSubmit({
@@ -36,21 +49,23 @@ class EventCreateForm extends React.Component {
     }
   };
 
-  onChange = event => this.setState({ [event.target.name]: event.target.value });
+  onChange = event =>
+    this.setState({ [event.target.name]: event.target.value });
 
   onBlurHashtag = event =>
     this.setState({
-      hashtag: event.target.value
-        .trim()
-        .replace(/#/g, '')
-        .replace(/\s/g, '_'),
+      hashtag: event.target.value.trim().replace(/#/g, '').replace(/\s/g, '_'),
     });
 
   handleAddChip = chip =>
-    this.setState(prevState => ({ categories: [...prevState.categories, chip] }));
+    this.setState(prevState => ({
+      categories: [...prevState.categories, chip],
+    }));
 
   handleDeleteChip = chip =>
-    this.setState(prevState => ({ categories: prevState.categories.filter(c => c !== chip) }));
+    this.setState(prevState => ({
+      categories: prevState.categories.filter(c => c !== chip),
+    }));
 
   render() {
     const {
@@ -64,7 +79,8 @@ class EventCreateForm extends React.Component {
       loading,
       error,
     } = this.state;
-    const invalid = this.state.title.trim() === '' || this.state.hashtag.trim() === '';
+    const invalid =
+      this.state.title.trim() === '' || this.state.hashtag.trim() === '';
     return (
       <form>
         {error && <Typography color="error">{error}</Typography>}

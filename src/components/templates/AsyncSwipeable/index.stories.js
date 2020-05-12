@@ -1,9 +1,10 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { boolean } from '@storybook/addon-knobs';
 import AsyncSwipeable from '.';
 
-const stories = storiesOf('templates/AsyncSwipeable', module);
+export default {
+  title: 'templates/AsyncSwipeable',
+};
 
 const style = {
   padding: 15,
@@ -28,8 +29,10 @@ const items = [
   </h1>,
 ];
 
-stories.add('通常パターン', () => (
+export const 通常パターン = () => (
   <AsyncSwipeable loading={boolean('loading', false)} children={items} />
-));
+);
 
-stories.add('ローディング', () => <AsyncSwipeable loading={boolean('loading', true)} />);
+export const ローディング = () => (
+  <AsyncSwipeable loading={boolean('loading', true)} />
+);

@@ -1,5 +1,5 @@
 import ApolloClient from 'apollo-boost';
-import api from 'constants/api';
+import api from 'src/constants/api';
 
 export default new ApolloClient({
   uri: api.graphqlServer,

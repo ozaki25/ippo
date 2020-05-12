@@ -21,12 +21,12 @@ import {
 } from '@material-ui/icons';
 import { withStyles } from '@material-ui/core/styles';
 import propTypes from 'prop-types';
-import CharIcon from 'components/atoms/CharIcon';
-import A2HSDialog from 'components/organisms/A2HSDialog';
-import WebAuthnDialog from 'components/organisms/WebAuthnDialog';
-import ROUTES from 'constants/routes';
-import MENU_ITEMS from 'constants/menuItems';
-import { setAuthUser } from 'modules/session';
+import CharIcon from 'src/components/atoms/CharIcon';
+import A2HSDialog from 'src/components/organisms/A2HSDialog';
+import WebAuthnDialog from 'src/components/organisms/WebAuthnDialog';
+import ROUTES from 'src/constants/routes';
+import MENU_ITEMS from 'src/constants/menuItems';
+import { setAuthUser } from 'src/modules/session';
 
 const styles = {
   list: {
@@ -41,7 +41,8 @@ class SideMenu extends React.Component {
 
   closeA2HSDialog = () => this.setState({ isOpenA2HSDialog: false });
 
-  openWebAuthnDialog = () => this.setState({ isOpenWebAuthnDialog: true, open: false });
+  openWebAuthnDialog = () =>
+    this.setState({ isOpenWebAuthnDialog: true, open: false });
 
   closeWebAuthnDialog = () => this.setState({ isOpenWebAuthnDialog: false });
 
@@ -59,7 +60,12 @@ class SideMenu extends React.Component {
     const { isOpenA2HSDialog, isOpenWebAuthnDialog } = this.state;
     return (
       <>
-        <SwipeableDrawer anchor="right" open={open} onClose={onClose} onOpen={onOpen}>
+        <SwipeableDrawer
+          anchor="right"
+          open={open}
+          onClose={onClose}
+          onOpen={onOpen}
+        >
           <div tabIndex={0} onClick={onClose} onKeyDown={onClose}>
             <div className={classes.list}>
               <List>
@@ -81,7 +87,11 @@ class SideMenu extends React.Component {
                   <ListItemText primary="ホーム" />
                 </ListItem>
                 <ListItem
-                  onClick={() => history.push(`${ROUTES.Menu}?tab=${MENU_ITEMS.NEW_EVENT.title}`)}
+                  onClick={() =>
+                    history.push(
+                      `${ROUTES.Menu}?tab=${MENU_ITEMS.NEW_EVENT.title}`,
+                    )
+                  }
                   button
                 >
                   <ListItemIcon>
@@ -91,7 +101,9 @@ class SideMenu extends React.Component {
                 </ListItem>
                 <ListItem
                   onClick={() =>
-                    history.push(`${ROUTES.Menu}?tab=${MENU_ITEMS.NOTIFICATION.title}`)
+                    history.push(
+                      `${ROUTES.Menu}?tab=${MENU_ITEMS.NOTIFICATION.title}`,
+                    )
                   }
                   button
                 >
@@ -103,13 +115,19 @@ class SideMenu extends React.Component {
               </List>
               <Divider />
               <List subheader={<ListSubheader>設定</ListSubheader>}>
-                <ListItem onClick={() => history.push(ROUTES.SettingsAccount)} button>
+                <ListItem
+                  onClick={() => history.push(ROUTES.SettingsAccount)}
+                  button
+                >
                   <ListItemIcon>
                     <AccountBox />
                   </ListItemIcon>
                   <ListItemText primary="アカウント設定" />
                 </ListItem>
-                <ListItem onClick={() => history.push(ROUTES.SettingsNotification)} button>
+                <ListItem
+                  onClick={() => history.push(ROUTES.SettingsNotification)}
+                  button
+                >
                   <ListItemIcon>
                     <NotificationsNoneRounded />
                   </ListItemIcon>
@@ -151,7 +169,11 @@ class SideMenu extends React.Component {
           </div>
         </SwipeableDrawer>
         <A2HSDialog open={isOpenA2HSDialog} onClose={this.closeA2HSDialog} />
-        <WebAuthnDialog open={isOpenWebAuthnDialog} onClose={this.closeWebAuthnDialog} uid={uid} />
+        <WebAuthnDialog
+          open={isOpenWebAuthnDialog}
+          onClose={this.closeWebAuthnDialog}
+          uid={uid}
+        />
       </>
     );
   }
@@ -183,7 +205,4 @@ const mapDispatchToProps = dispatch => ({
   onSetAuthUser: authUser => dispatch(setAuthUser(authUser)),
 });
 
-export default connect(
-  null,
-  mapDispatchToProps,
-)(withStyles(styles)(SideMenu));
+export default connect(null, mapDispatchToProps)(withStyles(styles)(SideMenu));

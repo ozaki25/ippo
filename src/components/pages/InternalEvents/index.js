@@ -1,12 +1,17 @@
 import React from 'react';
 import { Typography } from '@material-ui/core';
 import propTypes from 'prop-types';
-import Spinner from 'components/atoms/Spinner';
-import EventCardList from 'components/organisms/EventCardList';
-import Container from 'components/templates/Container';
-import eventFormat from 'utils/eventFormat';
+import Spinner from 'src/components/atoms/Spinner';
+import EventCardList from 'src/components/organisms/EventCardList';
+import Container from 'src/components/templates/Container';
+import eventFormat from 'src/utils/eventFormat';
 
-const InternalEvents = ({ data: { loading, internalEvents }, authUser, history, firebase }) => {
+const InternalEvents = ({
+  data: { loading, internalEvents },
+  authUser,
+  history,
+  firebase,
+}) => {
   return (
     <Container
       title="社内イベント"
@@ -19,7 +24,10 @@ const InternalEvents = ({ data: { loading, internalEvents }, authUser, history, 
       {loading ? (
         <Spinner />
       ) : internalEvents.items && internalEvents.items.length ? (
-        <EventCardList events={eventFormat.internal(internalEvents.items)} history={history} />
+        <EventCardList
+          events={eventFormat.internal(internalEvents.items)}
+          history={history}
+        />
       ) : (
         <Typography>No Contents</Typography>
       )}

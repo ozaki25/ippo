@@ -2,11 +2,11 @@ import React from 'react';
 import InfiniteScroll from 'react-infinite-scroller';
 import { Typography } from '@material-ui/core';
 import propTypes from 'prop-types';
-import Spinner from 'components/atoms/Spinner';
-import EventCardList from 'components/organisms/EventCardList';
-import Container from 'components/templates/Container';
-import eventFormat from 'utils/eventFormat';
-import paging from 'constants/paging';
+import Spinner from 'src/components/atoms/Spinner';
+import EventCardList from 'src/components/organisms/EventCardList';
+import Container from 'src/components/templates/Container';
+import eventFormat from 'src/utils/eventFormat';
+import paging from 'src/constants/paging';
 
 const ExternalEvents = ({
   data: { loading, externalEvents, fetchMore },
@@ -23,7 +23,10 @@ const ExternalEvents = ({
       ...prev,
       externalEvents: {
         ...prev.externalEvents,
-        items: [...prev.externalEvents.items, ...fetchMoreResult.externalEvents.items],
+        items: [
+          ...prev.externalEvents.items,
+          ...fetchMoreResult.externalEvents.items,
+        ],
         startId: fetchMoreResult.externalEvents.startId,
       },
     });

@@ -1,9 +1,10 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import TweetList from '.';
 
-const stories = storiesOf('organisms/TweetList', module);
+export default {
+  title: 'organisms/TweetList',
+};
 
 const props = {
   loadMore: action('loadMore'),
@@ -91,6 +92,6 @@ http://atomicdesign.bradfrost.com/chapter-4/
   onClickLike: action('like'),
 };
 
-stories.add('通常パターン', () => <TweetList {...props} />);
+export const 通常パターン = () => <TweetList {...props} />;
 
-stories.add('ローディング', () => <TweetList {...props} hasMore={true} />);
+export const ローディング = () => <TweetList {...props} hasMore={true} />;

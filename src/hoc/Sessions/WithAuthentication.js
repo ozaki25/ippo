@@ -2,10 +2,10 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { compose } from 'recompose';
 import { compose as apolloCompose, graphql } from 'react-apollo';
-import query from 'graphql/query';
-import mutation from 'graphql/mutation';
-import { withFirebase } from 'context/firebase';
-import { setAuthUser } from 'modules/session';
+import query from 'src/graphql/query';
+import mutation from 'src/graphql/mutation';
+import { withFirebase } from 'src/context/firebase';
+import { setAuthUser } from 'src/modules/session';
 
 const withAuthentication = Component => {
   class WithAuthentication extends React.Component {
@@ -88,10 +88,7 @@ const withAuthentication = Component => {
 
   return compose(
     withFirebase,
-    connect(
-      mapStateToProps,
-      mapDispatchToProps,
-    ),
+    connect(mapStateToProps, mapDispatchToProps),
   )(
     apolloCompose(
       graphql(mutation.createUser, { name: 'createUser' }),

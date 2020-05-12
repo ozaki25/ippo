@@ -1,6 +1,6 @@
 import React from 'react';
 import propTypes from 'prop-types';
-import EventCard from 'components/organisms/EventCard';
+import EventCard from 'src/components/organisms/EventCard';
 
 const EventCardList = ({ events, expand, noWrap, history }) =>
   events &&

@@ -1,7 +1,7 @@
 import React from 'react';
 import propTypes from 'prop-types';
-import Spinner from 'components/atoms/Spinner';
-import ShrinkSwipeable from 'components/templates/ShrinkSwipeable';
+import Spinner from 'src/components/atoms/Spinner';
+import ShrinkSwipeable from 'src/components/templates/ShrinkSwipeable';
 
 const AsyncSwipeable = ({ loading, children }) =>
   loading ? <Spinner /> : <ShrinkSwipeable>{children}</ShrinkSwipeable>;
