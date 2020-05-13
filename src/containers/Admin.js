@@ -1,16 +1,26 @@
-import { graphql } from '@apollo/react-hoc';
+import React from 'react';
 import { withRouter } from 'react-router-dom';
 import { withFirebase } from 'src/context/firebase';
 import { compose } from 'recompose';
-import mutation from 'src/graphql/mutation';
 import Admin from 'src/components/pages/Admin';
+import useMutationPublishNotification from 'src/hooks/useMutationPublishNotification';
+import useMutationRegisterNotification from 'src/hooks/useMutationRegisterNotification';
+import useMutationExcuteUpdateExternalEvents from 'src/hooks/useMutationExcuteUpdateExternalEvents';
 
-export default compose(
-  withFirebase,
-  withRouter,
-  graphql(mutation.publishNotification, { name: 'publishNotification' }),
-  graphql(mutation.registerNotification, { name: 'registerNotification' }),
-  graphql(mutation.excuteUpdateExternalEvents, {
-    name: 'excuteUpdateExternalEvents',
-  }),
-)(Admin);
+const WithAdmin = compose(withFirebase, withRouter)(Admin);
+
+function AdminContainer(props) {
+  const [publishNotification] = useMutationPublishNotification();
+  const [registerNotification] = useMutationRegisterNotification();
+  const [excuteUpdateExternalEvents] = useMutationExcuteUpdateExternalEvents();
+  return (
+    <WithAdmin
+      {...props}
+      publishNotification={publishNotification}
+      registerNotification={registerNotification}
+      excuteUpdateExternalEvents={excuteUpdateExternalEvents}
+    />
+  );
+}
+
+export default AdminContainer;

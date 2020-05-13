@@ -4,7 +4,7 @@ import { withRouter } from 'react-router-dom';
 import { withFirebase } from 'src/context/firebase';
 import ExternalEvents from 'src/components/pages/ExternalEvents/';
 import { withAuthorization } from 'src/hoc/Sessions';
-import useExternalEventsQuery from 'src/hooks/useExternalEventsQuery';
+import useQueryExternalEvents from 'src/hooks/useQueryExternalEvents';
 
 const WithExternalEvents = compose(
   withAuthorization,
@@ -13,8 +13,7 @@ const WithExternalEvents = compose(
 )(ExternalEvents);
 
 function ExternalEventsContainer(props) {
-  const { data } = useExternalEventsQuery();
-  console.log({ data });
+  const data = useQueryExternalEvents();
   return <WithExternalEvents {...props} data={data} />;
 }
 
