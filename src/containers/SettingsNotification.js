@@ -1,6 +1,6 @@
 import { compose } from 'recompose';
 import { withRouter } from 'react-router-dom';
-import { graphql } from 'react-apollo';
+import { graphql } from '@apollo/react-hoc';
 import mutation from 'src/graphql/mutation';
 import SettingsNotification from 'src/components/pages/SettingsNotification/';
 import { withFirebase } from 'src/context/firebase';

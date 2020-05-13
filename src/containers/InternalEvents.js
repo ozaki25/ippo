@@ -1,4 +1,4 @@
-import { graphql } from 'react-apollo';
+import { graphql } from '@apollo/react-hoc';
 import { compose } from 'recompose';
 import { withRouter } from 'react-router-dom';
 import { withFirebase } from 'src/context/firebase';

@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { withFirebase } from 'src/context/firebase';
 import { compose } from 'recompose';
-import { graphql } from 'react-apollo';
+import { graphql } from '@apollo/react-hoc';
 import query from 'src/graphql/query';
 import Signin from 'src/components/pages/Signin';
 import { setAuthUser } from 'src/modules/session';
