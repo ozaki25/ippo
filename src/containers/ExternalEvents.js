@@ -1,10 +1,12 @@
 import React from 'react';
-import { compose } from 'recompose';
 import { withRouter } from 'react-router-dom';
+import { useQuery } from '@apollo/client';
+import { compose } from 'recompose';
+
 import { withFirebase } from 'src/context/firebase';
-import ExternalEvents from 'src/components/pages/ExternalEvents/';
 import { withAuthorization } from 'src/hoc/Sessions';
-import useQueryExternalEvents from 'src/hooks/useQueryExternalEvents';
+import query from 'src/graphql/query';
+import ExternalEvents from 'src/components/pages/ExternalEvents';
 
 const WithExternalEvents = compose(
   withAuthorization,
@@ -13,8 +15,13 @@ const WithExternalEvents = compose(
 )(ExternalEvents);
 
 function ExternalEventsContainer(props) {
-  const data = useQueryExternalEvents();
-  return <WithExternalEvents {...props} data={data} />;
+  const { data, loading, error, fetchMore } = useQuery(query.externalEvents);
+  return (
+    <WithExternalEvents
+      {...props}
+      data={{ ...data, loading, error, fetchMore }}
+    />
+  );
 }
 
 export default ExternalEventsContainer;
