@@ -1,14 +1,22 @@
-import { graphql } from '@apollo/react-hoc';
-import { compose } from 'recompose';
+import React from 'react';
 import { withRouter } from 'react-router-dom';
+import { useQuery } from '@apollo/client';
+import { compose } from 'recompose';
+
 import { withFirebase } from 'src/context/firebase';
+import { withAuthorization } from 'src/hoc/Sessions';
 import query from 'src/graphql/query';
 import InternalEvents from 'src/components/pages/InternalEvents/';
-import { withAuthorization } from 'src/hoc/Sessions';
 
-export default compose(
+const WithInternalEvents = compose(
   withAuthorization,
   withRouter,
   withFirebase,
-  graphql(query.internalEvents),
 )(InternalEvents);
+
+function InternalEventsContainer() {
+  const { data, loading, error, fetchMore } = useQuery(query.internalEvents);
+  return <WithInternalEvents data={{ ...data, loading, error, fetchMore }} />;
+}
+
+export default InternalEventsContainer;
