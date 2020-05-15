@@ -1,6 +1,8 @@
-import { graphql } from '@apollo/react-hoc';
-import { compose } from 'recompose';
+import React from 'react';
 import { withRouter } from 'react-router-dom';
+import { useQuery, useMutation } from '@apollo/client';
+import { compose } from 'recompose';
+
 import { withFirebase } from 'src/context/firebase';
 import query from 'src/graphql/query';
 import mutation from 'src/graphql/mutation';
@@ -9,19 +11,33 @@ import { withAuthorization } from 'src/hoc/Sessions';
 import withTab from 'src/hoc/withTab';
 import paging from 'src/constants/paging';
 
-export default compose(
+const WithMenu = compose(
   withAuthorization,
   withRouter,
   withFirebase,
   withTab,
-  graphql(query.allEvents, {
-    options: ({ authUser: { uid } }) => ({
-      variables: { uid, limit: paging.eventsPerPageForMenu },
-    }),
-  }),
-  graphql(query.fetchUser, {
-    options: ({ authUser: { uid } }) => ({ variables: { uid } }),
-    name: 'user',
-  }),
-  graphql(mutation.createEvent, { name: 'createEvent' }),
-)(Menu);
+)(MenuContainer);
+
+function MenuContainer(props) {
+  const { uid } = props.authUser;
+  const { data, loading, refetch } = useQuery(query.allEvents, {
+    variables: { uid, limit: paging.eventsPerPageForMenu },
+  });
+  const { data: fetchUserData, refetch: fetchUserrefetch } = useQuery(
+    query.fetchUser,
+    {
+      variables: { uid },
+    },
+  );
+  const [createEvent] = useMutation(mutation.createEvent);
+  return (
+    <Menu
+      {...props}
+      data={{ ...data, loading, refetch }}
+      user={{ ...fetchUserData, refetch: fetchUserrefetch }}
+      createEvent={createEvent}
+    />
+  );
+}
+
+export default WithMenu;
