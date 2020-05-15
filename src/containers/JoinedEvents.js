@@ -1,19 +1,28 @@
-import { graphql } from '@apollo/react-hoc';
-import { compose } from 'recompose';
+import React from 'react';
 import { withRouter } from 'react-router-dom';
+import { useQuery } from '@apollo/client';
+import { compose } from 'recompose';
+
+import { withAuthorization } from 'src/hoc/Sessions';
 import { withFirebase } from 'src/context/firebase';
+import paging from 'src/constants/paging';
 import query from 'src/graphql/query';
 import JoinedEvents from 'src/components/pages/JoinedEvents/';
-import { withAuthorization } from 'src/hoc/Sessions';
-import paging from 'src/constants/paging';
 
-export default compose(
+const WithJoinedEvents = compose(
   withAuthorization,
   withRouter,
   withFirebase,
-  graphql(query.joinedEvents, {
-    options: ({ authUser: { uid } }) => ({
-      variables: { uid, limit: paging.eventsPerPage },
-    }),
-  }),
-)(JoinedEvents);
+)(JoinedEventsContainer);
+
+function JoinedEventsContainer(props) {
+  const { uid } = props.authUser;
+  const { data, loading, error, fetchMore } = useQuery(query.joinedEvents, {
+    variables: { uid, limit: paging.eventsPerPage },
+  });
+  return (
+    <JoinedEvents {...props} data={{ ...data, loading, error, fetchMore }} />
+  );
+}
+
+export default WithJoinedEvents;
