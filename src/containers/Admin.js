@@ -1,18 +1,20 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import { withFirebase } from 'src/context/firebase';
 import { compose } from 'recompose';
+import { useMutation } from '@apollo/client';
+
+import { withFirebase } from 'src/context/firebase';
+import mutation from 'src/graphql/mutation';
 import Admin from 'src/components/pages/Admin';
-import useMutationPublishNotification from 'src/hooks/useMutationPublishNotification';
-import useMutationRegisterNotification from 'src/hooks/useMutationRegisterNotification';
-import useMutationExcuteUpdateExternalEvents from 'src/hooks/useMutationExcuteUpdateExternalEvents';
 
 const WithAdmin = compose(withFirebase, withRouter)(Admin);
 
 function AdminContainer(props) {
-  const [publishNotification] = useMutationPublishNotification();
-  const [registerNotification] = useMutationRegisterNotification();
-  const [excuteUpdateExternalEvents] = useMutationExcuteUpdateExternalEvents();
+  const [publishNotification] = useMutation(mutation.publishNotification);
+  const [registerNotification] = useMutation(mutation.registerNotification);
+  const [excuteUpdateExternalEvents] = useMutation(
+    mutation.excuteUpdateExternalEvents,
+  );
   return (
     <WithAdmin
       {...props}
