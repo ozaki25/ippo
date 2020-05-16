@@ -24,38 +24,54 @@ const Router = () => (
     <Switch>
       <>
         <ScrollToTop />
-        <Route path={ROUTES.Signin} exact component={Signin} />
-        <Route path={ROUTES.Signup} exact component={Signup} />
-        <Route path={ROUTES.Menu} exact component={Menu} />
-        <Route path={ROUTES.JoinedEvents} exact component={JoinedEvents} />
-        <Route
-          path={ROUTES.RecommendedEvents}
-          exact
-          component={RecommendedEvents}
-        />
-        <Route path={ROUTES.InternalEvents} exact component={InternalEvents} />
-        <Route path={ROUTES.ExternalEvents} exact component={ExternalEvents} />
-        <Route
-          path={ROUTES.OrganizedEvents}
-          exact
-          component={OrganizedEvents}
-        />
-        <Route path={ROUTES.NewEvent} exact component={NewEvent} />
-        <Route path={ROUTES.Tweet} exact component={Tweet} />
-        <Route path={ROUTES.Tweets} exact component={Tweets} />
-        <Route path={ROUTES.NewTweet} exact component={NewTweet} />
-        <Route path={ROUTES.Notification} exact component={Notification} />
-        <Route
-          path={ROUTES.SettingsNotification}
-          exact
-          component={SettingsNotification}
-        />
-        <Route
-          path={ROUTES.SettingsAccount}
-          exact
-          component={SettingsAccount}
-        />
-        <Route path={ROUTES.Admin} exact component={Admin} />
+        <Route path={ROUTES.Signin} exact>
+          <Signin />
+        </Route>
+        <Route path={ROUTES.Signup} exact>
+          <Signup />
+        </Route>
+        <Route path={ROUTES.Menu} exact>
+          <Menu />
+        </Route>
+        <Route path={ROUTES.JoinedEvents} exact>
+          <JoinedEvents />
+        </Route>
+        <Route path={ROUTES.RecommendedEvents} exact>
+          <RecommendedEvents />
+        </Route>
+        <Route path={ROUTES.InternalEvents} exact>
+          <InternalEvents />
+        </Route>
+        <Route path={ROUTES.ExternalEvents} exact>
+          <ExternalEvents />
+        </Route>
+        <Route path={ROUTES.OrganizedEvents} exact>
+          <OrganizedEvents />
+        </Route>
+        <Route path={ROUTES.NewEvent} exact>
+          <NewEvent />
+        </Route>
+        <Route path={ROUTES.Tweet} exact>
+          <Tweet />
+        </Route>
+        <Route path={ROUTES.Tweets} exact>
+          <Tweets />
+        </Route>
+        <Route path={ROUTES.NewTweet} exact>
+          <NewTweet />
+        </Route>
+        <Route path={ROUTES.Notification} exact>
+          <Notification />
+        </Route>
+        <Route path={ROUTES.SettingsNotification} exact>
+          <SettingsNotification />
+        </Route>
+        <Route path={ROUTES.SettingsAccount} exact>
+          <SettingsAccount />
+        </Route>
+        <Route path={ROUTES.Admin} exact>
+          <Admin />
+        </Route>
       </>
     </Switch>
   </BrowserRouter>
