@@ -1,7 +1,7 @@
 import React from 'react';
 import { useQuery, useMutation } from '@apollo/client';
 import { compose } from 'recompose';
-import { withRouter } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 import { withFirebase } from 'src/context/firebase';
 import { withAuthorization } from 'src/hoc/Sessions';
@@ -11,12 +11,12 @@ import Notification from 'src/components/pages/Notification';
 
 const WithNotification = compose(
   withAuthorization,
-  withRouter,
   withFirebase,
 )(NotificationContainer);
 
 function NotificationContainer(props) {
   const { uid } = props.authUser;
+  const history = useHistory();
   const { data, loading, error, refetch, variables } = useQuery(
     query.fetchUser,
     {
@@ -27,6 +27,7 @@ function NotificationContainer(props) {
   return (
     <Notification
       {...props}
+      history={history}
       readNotification={readNotification}
       user={{ ...data, loading, error, refetch, variables }}
     />

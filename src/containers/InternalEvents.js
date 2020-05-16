@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { compose } from 'recompose';
 
@@ -10,13 +10,18 @@ import InternalEvents from 'src/components/pages/InternalEvents/';
 
 const WithInternalEvents = compose(
   withAuthorization,
-  withRouter,
   withFirebase,
 )(InternalEvents);
 
 function InternalEventsContainer() {
+  const history = useHistory();
   const { data, loading, error, fetchMore } = useQuery(query.internalEvents);
-  return <WithInternalEvents data={{ ...data, loading, error, fetchMore }} />;
+  return (
+    <WithInternalEvents
+      history={history}
+      data={{ ...data, loading, error, fetchMore }}
+    />
+  );
 }
 
 export default InternalEventsContainer;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { useQuery, useMutation } from '@apollo/client';
 import { compose } from 'recompose';
 
@@ -13,13 +13,13 @@ import paging from 'src/constants/paging';
 
 const WithMenu = compose(
   withAuthorization,
-  withRouter,
   withFirebase,
   withTab,
 )(MenuContainer);
 
 function MenuContainer(props) {
   const { uid } = props.authUser;
+  const history = useHistory();
   const { data, loading, refetch } = useQuery(query.allEvents, {
     variables: { uid, limit: paging.eventsPerPageForMenu },
   });
@@ -33,6 +33,7 @@ function MenuContainer(props) {
   return (
     <Menu
       {...props}
+      history={history}
       data={{ ...data, loading, refetch }}
       user={{ ...fetchUserData, refetch: fetchUserrefetch }}
       createEvent={createEvent}

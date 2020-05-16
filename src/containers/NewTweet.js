@@ -1,7 +1,7 @@
 import React from 'react';
 import { useQuery, useMutation } from '@apollo/client';
 import { compose } from 'recompose';
-import { withRouter } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 import { withFirebase } from 'src/context/firebase';
 import { withAuthorization } from 'src/hoc/Sessions';
@@ -13,7 +13,6 @@ import NewTweet from 'src/components/pages/NewTweet';
 
 const WithNewTweet = compose(
   withAuthorization,
-  withRouter,
   withFirebase,
   withHashtag,
   withParentTweet,
@@ -21,6 +20,7 @@ const WithNewTweet = compose(
 
 function NewTweetContainer(props) {
   const { hashtag, parentId } = props;
+  const history = useHistory();
   const { data, loading, error, fetchMore } = useQuery(query.tweet, {
     variables: { hashtag, id: parentId },
   });
@@ -28,6 +28,7 @@ function NewTweetContainer(props) {
   return (
     <NewTweet
       {...props}
+      history={history}
       createTweet={createTweet}
       parentTweet={{ ...data, loading, error, fetchMore }}
     />

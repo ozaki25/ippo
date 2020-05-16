@@ -1,7 +1,7 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { compose } from 'recompose';
 
 import { withFirebase } from 'src/context/firebase';
@@ -19,14 +19,19 @@ const mapDispatchToProps = dispatch => ({
 });
 
 const WithSignin = compose(
-  withRouter,
   withFirebase,
   connect(mapStateToProps, mapDispatchToProps),
 )(Signin);
 
 function SigninContainer() {
+  const history = useHistory();
   const { data, loading, error, refetch } = useQuery(query.fetchUser);
-  return <WithSignin fetchUser={{ ...data, loading, error, refetch }} />;
+  return (
+    <WithSignin
+      history={history}
+      fetchUser={{ ...data, loading, error, refetch }}
+    />
+  );
 }
 
 export default SigninContainer;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
 import { compose } from 'recompose';
-import { withRouter } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 import { withFirebase } from 'src/context/firebase';
 import { withAuthorization } from 'src/hoc/Sessions';
@@ -11,12 +11,12 @@ import RecommendedEvents from 'src/components/pages/RecommendedEvents/';
 
 const WithRecommendedEvents = compose(
   withAuthorization,
-  withRouter,
   withFirebase,
 )(RecommendedEventsContainer);
 
 function RecommendedEventsContainer(props) {
   const { uid } = props.authUser;
+  const history = useHistory();
   const { data, loading, error, fetchMore } = useQuery(
     query.recommendedEvents,
     {
@@ -27,6 +27,7 @@ function RecommendedEventsContainer(props) {
   return (
     <RecommendedEvents
       {...props}
+      history={history}
       data={{ ...data, loading, error, fetchMore }}
     />
   );

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
 import { compose } from 'recompose';
-import { withRouter } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 import { withFirebase } from 'src/context/firebase';
 import { withAuthorization } from 'src/hoc/Sessions';
@@ -11,17 +11,21 @@ import OrganizedEvents from 'src/components/pages/OrganizedEvents/';
 
 const WithOrganizedEvents = compose(
   withAuthorization,
-  withRouter,
   withFirebase,
 )(OrganizedEventsContainer);
 
 function OrganizedEventsContainer(props) {
   const { uid } = props.authUser;
+  const history = useHistory();
   const { data, loading, error, fetchMore } = useQuery(query.organizedEvents, {
     variables: { uid, limit: paging.eventsPerPage },
   });
   return (
-    <OrganizedEvents {...props} data={{ ...data, loading, error, fetchMore }} />
+    <OrganizedEvents
+      {...props}
+      history={history}
+      data={{ ...data, loading, error, fetchMore }}
+    />
   );
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { compose } from 'recompose';
 
@@ -11,17 +11,21 @@ import JoinedEvents from 'src/components/pages/JoinedEvents/';
 
 const WithJoinedEvents = compose(
   withAuthorization,
-  withRouter,
   withFirebase,
 )(JoinedEventsContainer);
 
 function JoinedEventsContainer(props) {
   const { uid } = props.authUser;
+  const history = useHistory();
   const { data, loading, error, fetchMore } = useQuery(query.joinedEvents, {
     variables: { uid, limit: paging.eventsPerPage },
   });
   return (
-    <JoinedEvents {...props} data={{ ...data, loading, error, fetchMore }} />
+    <JoinedEvents
+      {...props}
+      history={history}
+      data={{ ...data, loading, error, fetchMore }}
+    />
   );
 }
 

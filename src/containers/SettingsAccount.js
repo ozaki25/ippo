@@ -3,7 +3,7 @@ import { useQuery, useMutation } from '@apollo/client';
 import { connect } from 'react-redux';
 import { graphql } from '@apollo/react-hoc';
 import { compose } from 'recompose';
-import { withRouter } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 import { withFirebase } from 'src/context/firebase';
 import { withAuthorization } from 'src/hoc/Sessions';
@@ -19,7 +19,6 @@ const mapDispatchToProps = dispatch => ({
 const WithSettingsAccount = compose(
   connect(null, mapDispatchToProps),
   withAuthorization,
-  withRouter,
   withFirebase,
   graphql(query.fetchUser, {
     options: ({ authUser: { uid } }) => ({ variables: { uid } }),
@@ -29,6 +28,7 @@ const WithSettingsAccount = compose(
 
 function SettingsAccountContainer(props) {
   const { uid } = props.authUser;
+  const history = useHistory();
   const { data, loading, error, refetch } = useQuery(query.fetchUser, {
     variables: { uid },
   });
@@ -36,6 +36,7 @@ function SettingsAccountContainer(props) {
   return (
     <SettingsAccount
       {...props}
+      history={history}
       updateUser={updateUser}
       data={{ ...data, loading, error, refetch }}
     />
