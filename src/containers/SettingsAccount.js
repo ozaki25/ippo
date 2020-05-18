@@ -1,7 +1,6 @@
 import React from 'react';
 import { useQuery, useMutation } from '@apollo/client';
 import { connect } from 'react-redux';
-import { graphql } from '@apollo/react-hoc';
 import { compose } from 'recompose';
 import { useHistory } from 'react-router-dom';
 
@@ -20,10 +19,6 @@ const WithSettingsAccount = compose(
   connect(null, mapDispatchToProps),
   withAuthorization,
   withFirebase,
-  graphql(query.fetchUser, {
-    options: ({ authUser: { uid } }) => ({ variables: { uid } }),
-  }),
-  graphql(mutation.createUser, { name: 'updateUser' }),
 )(SettingsAccountContainer);
 
 function SettingsAccountContainer(props) {
