@@ -16,8 +16,6 @@ const props = {
     auth: {
       getRedirectResult: action('getRedirectResult'),
     },
-    doSignInWithEmailAndPassword: action('signin'),
-    doSignInWithGoogle: action('sigin with google'),
     doSignOut: action('signout'),
   },
 };

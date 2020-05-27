@@ -11,8 +11,6 @@ const props = {
     auth: {
       getRedirectResult: jest.fn(),
     },
-    doSignInWithEmailAndPassword: jest.fn(),
-    doSignInWithGoogle: jest.fn(),
     doSignOut: jest.fn(),
   },
 };
