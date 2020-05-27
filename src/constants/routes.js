@@ -1,5 +1,4 @@
 const Signin = '/users/signin';
-const Signup = '/users/signup';
 const Menu = '/';
 const JoinedEvents = '/events/joined';
 const RecommendedEvents = '/events/recommended';
@@ -17,7 +16,6 @@ const SettingsAccount = '/settings/account';
 
 export default {
   Signin,
-  Signup,
   Menu,
   JoinedEvents,
   RecommendedEvents,

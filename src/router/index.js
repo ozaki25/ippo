@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import ScrollToTop from 'src/router/ScrollToTop';
 import Menu from 'src/containers/Menu';
 import Signin from 'src/containers/Signin';
-import Signup from 'src/containers/Signup';
 import Admin from 'src/containers/Admin';
 import JoinedEvents from 'src/containers/JoinedEvents';
 import OrganizedEvents from 'src/containers/OrganizedEvents';
@@ -26,9 +25,6 @@ const Router = () => (
         <ScrollToTop />
         <Route path={ROUTES.Signin} exact>
           <Signin />
-        </Route>
-        <Route path={ROUTES.Signup} exact>
-          <Signup />
         </Route>
         <Route path={ROUTES.Menu} exact>
           <Menu />

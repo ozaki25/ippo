@@ -1,27 +1,10 @@
-import React from 'react';
-import { Button } from '@material-ui/core';
-import { withStyles } from '@material-ui/core/styles';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
-import GoogleButton from 'src/components/atoms/GoogleButton';
-import OverlaySpinner from 'src/components/molecules/OverlaySpinner';
-import SigninForm from 'src/components/organisms/SigninForm';
+import FirebaseAuthButton from 'src/components/atoms/FirebaseAuthButton/index';
+import OverlaySpinner from 'src/components/molecules/OverlaySpinner/index';
 import InputPassDialog from 'src/components/organisms/InputPassDialog';
 import Container from 'src/components/templates/Container';
-import ROUTES from 'src/constants/routes';
-import webAuthentication from 'src/utils/webAuthentication';
-
-const styles = {
-  nonCaps: {
-    textTransform: 'none',
-  },
-};
-
-const ButtonContainer = styled.div`
-  margin: 8px 0;
-  text-align: center;
-`;
 
 const ImageContainer = styled.div`
   text-align: center;
@@ -34,117 +17,38 @@ const StyledImg = styled.img`
 
 const PASSCODE = process.env.REACT_APP_PASSCODE;
 
-class Signin extends React.Component {
-  state = { loading: false, passed: false };
+function Signin({ history, firebase }) {
+  const [passed, setPassed] = useState(false);
+  const [loading, setLoading] = useState(true);
 
-  componentWillMount() {
-    const key = sessionStorage.getItem('willRedirect');
-    if (key) {
-      sessionStorage.removeItem('willRedirect');
-      this.redirectResult();
-      this.setState({ passed: true });
-    } else {
-      this.props.firebase.doSignOut();
-      if (localStorage.getItem('ippo-passed')) {
-        this.setState({ passed: true });
-      }
-    }
-  }
-
-  redirectResult = async () => {
-    this.setState({ loading: true });
-    const result = await this.props.firebase.auth.getRedirectResult();
-    const authUser = result.user;
-    this.setState({ loading: false });
-    if (authUser) {
-      this.props.history.replace(ROUTES.Menu);
-    }
-  };
-
-  signin = async ({ data: { email, pass } }) => {
-    await this.props.firebase.doSignInWithEmailAndPassword(email, pass);
-    this.props.history.replace(ROUTES.Menu);
-  };
-
-  signinWithGoogle = async () => {
-    try {
-      sessionStorage.setItem('willRedirect', 'true');
-      this.props.firebase.doSignInWithGoogle();
-    } catch (e) {
-      console.log(e);
-    }
-  };
-
-  webauthSignin = async () => {
-    if (!navigator.credentials)
-      alert('お使いのブラウザではこの機能を使うことができません');
-    const { rawId, uid } = this.props;
-    if (!rawId) {
-      alert(`認証情報の登録が確認できませんでした。
-ログインして認証情報を登録するとご利用できます。`);
-      return;
-    }
-    const result = await webAuthentication.runAssertion(rawId);
-    if (result) {
-      const {
-        data: { fetchUser },
-      } = await this.props.fetchUser.refetch({ uid });
-      localStorage.setItem('authUser', JSON.stringify(fetchUser));
-      this.props.onSetAuthUser(fetchUser);
-      this.props.history.replace(ROUTES.Menu);
-    } else {
-      alert('認証に失敗しました。。');
-    }
-  };
-
-  onChange = event =>
-    this.setState({ [event.target.name]: event.target.value });
-
-  onSubmitPasscode = passcode => {
+  const onSubmitPasscode = passcode => {
     if (passcode === PASSCODE) {
       localStorage.setItem('ippo-passed', 'true');
-      this.setState({ passed: true });
-    } else {
-      window.close();
+      setPassed(true);
     }
   };
 
-  render() {
-    const { history, firebase, classes } = this.props;
-    const { passed } = this.state;
-    return passed ? (
-      <Container header={false} history={history} firebase={firebase}>
-        <ImageContainer>
-          <StyledImg src="/images/ippo.png" alt="IPPO" />
-        </ImageContainer>
-        <SigninForm onSubmit={this.signin} />
-        <ButtonContainer>
-          <GoogleButton onClick={this.signinWithGoogle} />
-        </ButtonContainer>
-        <ButtonContainer>
-          <Button component={Link} to={ROUTES.Signup} color="primary">
-            新規登録
-          </Button>
-        </ButtonContainer>
-        <ButtonContainer>
-          <Button
-            onClick={this.webauthSignin}
-            color="primary"
-            className={classes.nonCaps}
-            disabled
-          >
-            生体認証でログイン(β版)
-          </Button>
-        </ButtonContainer>
-        <OverlaySpinner visible={this.state.loading} />
-      </Container>
-    ) : (
-      <InputPassDialog open={!passed} onClick={this.onSubmitPasscode} />
-    );
-  }
-}
+  const onLoad = () => setLoading(false);
 
-Signin.displayName = 'Signin';
+  useEffect(() => {
+    firebase.doSignOut();
+    if (localStorage.getItem('ippo-passed')) setPassed(true);
+  }, [firebase]);
+
+  if (!passed) {
+    return <InputPassDialog open={!passed} onClick={onSubmitPasscode} />;
+  }
+
+  return (
+    <Container header={false} history={history} firebase={firebase}>
+      <ImageContainer>
+        <StyledImg src="/images/ippo.png" alt="IPPO" />
+      </ImageContainer>
+      <FirebaseAuthButton firebase={firebase} uiShown={onLoad} />
+      <OverlaySpinner visible={loading} />
+    </Container>
+  );
+}
 
 Signin.propTypes = {
   history: propTypes.shape({
@@ -152,11 +56,7 @@ Signin.propTypes = {
     replace: propTypes.func.isRequired,
   }).isRequired,
   firebase: propTypes.shape({
-    auth: propTypes.shape({
-      getRedirectResult: propTypes.func.isRequired,
-    }),
-    doSignInWithEmailAndPassword: propTypes.func.isRequired,
-    doSignInWithGoogle: propTypes.func.isRequired,
+    auth: propTypes.func.isRequired,
     doSignOut: propTypes.func.isRequired,
   }).isRequired,
   rawId: propTypes.object,
@@ -165,4 +65,4 @@ Signin.propTypes = {
 
 Signin.defaultProps = {};
 
-export default withStyles(styles)(Signin);
+export default Signin;

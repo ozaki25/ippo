@@ -13,11 +13,9 @@ const props = {
     goBack: action('goBack'),
   },
   firebase: {
-    auth: {
-      getRedirectResult: action('getRedirectResult'),
+    auth() {
+      action('auth');
     },
-    doSignInWithEmailAndPassword: action('signin'),
-    doSignInWithGoogle: action('sigin with google'),
     doSignOut: action('signout'),
   },
 };
