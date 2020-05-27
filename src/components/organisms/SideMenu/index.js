@@ -13,7 +13,6 @@ import {
   AccountBox,
   AddBoxRounded,
   ExitToApp,
-  Fingerprint,
   GetAppRounded,
   HomeRounded,
   NotificationsRounded,

@@ -9,18 +9,13 @@ import { setAuthUser } from 'src/modules/session';
 import query from 'src/graphql/query';
 import Signin from 'src/components/pages/Signin';
 
-const mapStateToProps = state => ({
-  rawId: state.webauth.rawId,
-  uid: state.webauth.uid,
-});
-
 const mapDispatchToProps = dispatch => ({
   onSetAuthUser: authUser => dispatch(setAuthUser(authUser)),
 });
 
 const WithSignin = compose(
   withFirebase,
-  connect(mapStateToProps, mapDispatchToProps),
+  connect(null, mapDispatchToProps),
 )(Signin);
 
 function SigninContainer() {
