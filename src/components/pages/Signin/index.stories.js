@@ -13,8 +13,8 @@ const props = {
     goBack: action('goBack'),
   },
   firebase: {
-    auth: {
-      getRedirectResult: action('getRedirectResult'),
+    auth() {
+      action('auth');
     },
     doSignOut: action('signout'),
   },
