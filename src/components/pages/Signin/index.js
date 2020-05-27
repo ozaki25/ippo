@@ -59,8 +59,6 @@ Signin.propTypes = {
     auth: propTypes.func.isRequired,
     doSignOut: propTypes.func.isRequired,
   }).isRequired,
-  rawId: propTypes.object,
-  uid: propTypes.string,
 };
 
 Signin.defaultProps = {};
