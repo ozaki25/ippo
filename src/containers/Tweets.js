@@ -1,10 +1,9 @@
 import React from 'react';
 import { useQuery, useMutation } from '@apollo/client';
-import { compose } from 'recompose';
 import { useHistory } from 'react-router-dom';
 
 import useFirebase from 'src/hooks/useFirebase';
-import { withAuthorization } from 'src/hoc/Sessions';
+import useAuthorization from 'src/hooks/useAuthorization';
 import paging from 'src/constants/paging';
 import tweetPolling from 'src/constants/tweetPolling';
 import query from 'src/graphql/query';
@@ -14,9 +13,8 @@ import Tweets from 'src/components/pages/Tweets/';
 const getHashtag = search =>
   new URLSearchParams(search).get('hashtag') || 'none';
 
-const WithTweets = compose(withAuthorization)(TweetsContainer);
-
 function TweetsContainer(props) {
+  useAuthorization();
   const {
     location: { search },
     authUser: { uid },
@@ -46,4 +44,4 @@ function TweetsContainer(props) {
   );
 }
 
-export default WithTweets;
+export default TweetsContainer;

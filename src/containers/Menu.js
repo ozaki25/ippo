@@ -7,13 +7,14 @@ import useFirebase from 'src/hooks/useFirebase';
 import query from 'src/graphql/query';
 import mutation from 'src/graphql/mutation';
 import Menu from 'src/components/pages/Menu';
-import { withAuthorization } from 'src/hoc/Sessions';
+import useAuthorization from 'src/hooks/useAuthorization';
 import withTab from 'src/hoc/withTab';
 import paging from 'src/constants/paging';
 
-const WithMenu = compose(withAuthorization, withTab)(MenuContainer);
+const WithMenu = compose(withTab)(MenuContainer);
 
 function MenuContainer(props) {
+  useAuthorization();
   const { uid } = props.authUser;
   const history = useHistory();
   const firebase = useFirebase();

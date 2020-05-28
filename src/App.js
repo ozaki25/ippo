@@ -6,22 +6,27 @@ import Router from 'src/router';
 import client from 'src/graphql/client';
 import { AuthUserProvider } from 'src/context/authUser';
 import { FirebaseProvider } from 'src/context/firebase';
+import useAuthentication from 'src/hooks/useAuthentication';
 import theme from 'src/theme';
-import { withAuthentication } from 'src/hoc/Sessions';
 import 'src/customelements/uploader';
 
-const AuthRouter = withAuthentication(Router);
+function AuthRouter() {
+  useAuthentication();
+  return <Router />;
+}
 
-const App = () => (
-  <MuiThemeProvider theme={theme}>
-    <ApolloProvider client={client}>
-      <AuthUserProvider>
-        <FirebaseProvider>
-          <AuthRouter />
-        </FirebaseProvider>
-      </AuthUserProvider>
-    </ApolloProvider>
-  </MuiThemeProvider>
-);
+function App() {
+  return (
+    <MuiThemeProvider theme={theme}>
+      <ApolloProvider client={client}>
+        <AuthUserProvider>
+          <FirebaseProvider>
+            <AuthRouter />
+          </FirebaseProvider>
+        </AuthUserProvider>
+      </ApolloProvider>
+    </MuiThemeProvider>
+  );
+}
 
 export default App;

@@ -1,17 +1,15 @@
 import React from 'react';
 import { useQuery, useMutation } from '@apollo/client';
-import { compose } from 'recompose';
 import { useHistory } from 'react-router-dom';
 
 import useFirebase from 'src/hooks/useFirebase';
-import { withAuthorization } from 'src/hoc/Sessions';
+import useAuthorization from 'src/hooks/useAuthorization';
 import query from 'src/graphql/query';
 import mutation from 'src/graphql/mutation';
 import Notification from 'src/components/pages/Notification';
 
-const WithNotification = compose(withAuthorization)(NotificationContainer);
-
 function NotificationContainer(props) {
+  useAuthorization();
   const { uid } = props.authUser;
   const history = useHistory();
   const firebase = useFirebase();
@@ -33,4 +31,4 @@ function NotificationContainer(props) {
   );
 }
 
-export default WithNotification;
+export default NotificationContainer;

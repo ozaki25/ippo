@@ -1,20 +1,16 @@
 import React from 'react';
 import { useQuery, useMutation } from '@apollo/client';
-import { compose } from 'recompose';
 import { useHistory } from 'react-router-dom';
 
 import useFirebase from 'src/hooks/useFirebase';
 import useAuthUser from 'src/hooks/useAuthUser';
-import { withAuthorization } from 'src/hoc/Sessions';
+import useAuthorization from 'src/hooks/useAuthorization';
 import query from 'src/graphql/query';
 import mutation from 'src/graphql/mutation';
 import SettingsAccount from 'src/components/pages/SettingsAccount';
 
-const WithSettingsAccount = compose(withAuthorization)(
-  SettingsAccountContainer,
-);
-
 function SettingsAccountContainer(props) {
+  useAuthorization();
   const { uid } = props.authUser;
   const history = useHistory();
   const firebase = useFirebase();
@@ -35,4 +31,4 @@ function SettingsAccountContainer(props) {
   );
 }
 
-export default WithSettingsAccount;
+export default SettingsAccountContainer;
