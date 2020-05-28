@@ -3,7 +3,7 @@ import { useQuery, useMutation } from '@apollo/client';
 import { compose } from 'recompose';
 import { useHistory } from 'react-router-dom';
 
-import { withFirebase } from 'src/context/firebase';
+import useFirebase from 'src/hooks/useFirebase';
 import { withAuthorization } from 'src/hoc/Sessions';
 import query from 'src/graphql/query';
 import mutation from 'src/graphql/mutation';
@@ -12,7 +12,7 @@ import Tweet from 'src/components/pages/Tweet';
 const getHashtag = search =>
   new URLSearchParams(search).get('hashtag') || 'none';
 
-const WithTweet = compose(withAuthorization, withFirebase)(TweetContainer);
+const WithTweet = compose(withAuthorization)(TweetContainer);
 
 function TweetContainer(props) {
   const {
@@ -22,6 +22,7 @@ function TweetContainer(props) {
     location: { search },
   } = props;
   const history = useHistory();
+  const firebase = useFirebase();
   const { data, loading, error, refetch, variables } = useQuery(query.tweet, {
     variables: { hashtag: getHashtag(search), id },
   });
@@ -30,6 +31,7 @@ function TweetContainer(props) {
     <Tweet
       {...props}
       history={history}
+      firebase={firebase}
       addLike={addLike}
       data={{ ...data, loading, error, refetch, variables }}
     />

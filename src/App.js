@@ -6,7 +6,7 @@ import Router from 'src/router';
 import client from 'src/graphql/client';
 import store from 'src/modules/createStore';
 import Firebase from 'src/utils/firebase';
-import FirebaseContext from 'src/context/firebase';
+import { FirebaseProvider } from 'src/context/firebase';
 import theme from 'src/theme';
 import { withAuthentication } from 'src/hoc/Sessions';
 import 'src/customelements/uploader';
@@ -17,9 +17,9 @@ const App = () => (
   <MuiThemeProvider theme={theme}>
     <ApolloProvider client={client}>
       <Provider store={store}>
-        <FirebaseContext.Provider value={new Firebase()}>
+        <FirebaseProvider value={new Firebase()}>
           <AuthRouter />
-        </FirebaseContext.Provider>
+        </FirebaseProvider>
       </Provider>
     </ApolloProvider>
   </MuiThemeProvider>

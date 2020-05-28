@@ -1,25 +1,24 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { compose } from 'recompose';
 import { useMutation } from '@apollo/client';
 
-import { withFirebase } from 'src/context/firebase';
+import useFirebase from 'src/hooks/useFirebase';
 import mutation from 'src/graphql/mutation';
 import Admin from 'src/components/pages/Admin';
 
-const WithAdmin = compose(withFirebase)(Admin);
-
 function AdminContainer(props) {
   const history = useHistory();
+  const firebase = useFirebase();
   const [publishNotification] = useMutation(mutation.publishNotification);
   const [registerNotification] = useMutation(mutation.registerNotification);
   const [excuteUpdateExternalEvents] = useMutation(
     mutation.excuteUpdateExternalEvents,
   );
   return (
-    <WithAdmin
+    <Admin
       {...props}
       history={history}
+      firebase={firebase}
       publishNotification={publishNotification}
       registerNotification={registerNotification}
       excuteUpdateExternalEvents={excuteUpdateExternalEvents}
