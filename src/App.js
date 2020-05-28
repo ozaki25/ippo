@@ -1,10 +1,10 @@
 import React from 'react';
 import { ApolloProvider } from '@apollo/client';
-import { Provider } from 'react-redux';
 import { MuiThemeProvider } from '@material-ui/core/styles';
+
 import Router from 'src/router';
 import client from 'src/graphql/client';
-import store from 'src/modules/createStore';
+import { AuthUserProvider } from 'src/context/authUser';
 import { FirebaseProvider } from 'src/context/firebase';
 import theme from 'src/theme';
 import { withAuthentication } from 'src/hoc/Sessions';
@@ -15,11 +15,11 @@ const AuthRouter = withAuthentication(Router);
 const App = () => (
   <MuiThemeProvider theme={theme}>
     <ApolloProvider client={client}>
-      <Provider store={store}>
+      <AuthUserProvider>
         <FirebaseProvider>
           <AuthRouter />
         </FirebaseProvider>
-      </Provider>
+      </AuthUserProvider>
     </ApolloProvider>
   </MuiThemeProvider>
 );
