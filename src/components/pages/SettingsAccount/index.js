@@ -63,7 +63,7 @@ class SettingsAccount extends React.Component {
       const user = { uid, displayName: name, categories: categories.join(',') };
       await updateUser({ variables: { user } });
       localStorage.setItem('authUser', JSON.stringify(user));
-      this.props.onSetAuthUser(user);
+      this.props.setAuthUser(user);
       this.setState({ loading: false });
       alert('更新しました');
       data.refetch({ variables: { uid } });
@@ -167,7 +167,7 @@ SettingsAccount.propTypes = {
     replace: propTypes.func.isRequired,
   }).isRequired,
   firebase: propTypes.object.isRequired,
-  onSetAuthUser: propTypes.func.isRequired,
+  setAuthUser: propTypes.func.isRequired,
 };
 
 SettingsAccount.defaultProps = {};

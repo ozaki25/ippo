@@ -1,5 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import {
   Divider,
   List,
@@ -24,7 +23,7 @@ import CharIcon from 'src/components/atoms/CharIcon';
 import A2HSDialog from 'src/components/organisms/A2HSDialog';
 import ROUTES from 'src/constants/routes';
 import MENU_ITEMS from 'src/constants/menuItems';
-import { setAuthUser } from 'src/modules/session';
+import useAuthUser from 'src/hooks/useAuthUser';
 
 const styles = {
   list: {
@@ -46,7 +45,7 @@ class SideMenu extends React.Component {
       onOpen,
       onClose,
       signout,
-      onSetAuthUser,
+      setAuthUser,
       history,
       classes,
     } = this.props;
@@ -141,7 +140,7 @@ class SideMenu extends React.Component {
                 <ListItem
                   onClick={() => {
                     localStorage.removeItem('authUser');
-                    onSetAuthUser(null);
+                    setAuthUser(null);
                     signout();
                   }}
                   button
@@ -183,8 +182,9 @@ SideMenu.defaultProps = {
   signout: null,
 };
 
-const mapDispatchToProps = dispatch => ({
-  onSetAuthUser: authUser => dispatch(setAuthUser(authUser)),
-});
+function WithSideMenu(props) {
+  const { setAuthUser } = useAuthUser();
+  return <SideMenu {...props} setAuthUser={setAuthUser} />;
+}
 
-export default connect(null, mapDispatchToProps)(withStyles(styles)(SideMenu));
+export default withStyles(styles)(WithSideMenu);
