@@ -2,11 +2,11 @@ import React from 'react';
 import { Divider } from '@material-ui/core';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
-import TweetFixedText from 'components/organisms/TweetFixedText/index';
-import CharIcon from 'components/atoms/CharIcon';
-import TweetHeader from 'components/organisms/TweetHeader';
-import TweetBody from 'components/organisms/TweetBody';
-import TweetFooter from 'components/organisms/TweetFooter';
+import TweetFixedText from 'src/components/organisms/TweetFixedText/index';
+import CharIcon from 'src/components/atoms/CharIcon';
+import TweetHeader from 'src/components/organisms/TweetHeader';
+import TweetBody from 'src/components/organisms/TweetBody';
+import TweetFooter from 'src/components/organisms/TweetFooter';
 
 const Container = styled.div`
   padding: 9px 12px 0;

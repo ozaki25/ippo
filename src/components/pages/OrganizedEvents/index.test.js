@@ -1,5 +1,5 @@
 import React from 'react';
-import { snapshot } from 'test/helpers';
+import { snapshot } from 'src/test/helpers';
 import OrganizedEvents from '.';
 
 const event = i => ({
@@ -35,6 +35,12 @@ const props = ({ loading = false, empty = false }) => ({
 
 snapshot('OrganizedEvents/nomal', <OrganizedEvents {...props({})} />);
 
-snapshot('OrganizedEvents/loading', <OrganizedEvents {...props({ loading: true, empty: true })} />);
+snapshot(
+  'OrganizedEvents/loading',
+  <OrganizedEvents {...props({ loading: true, empty: true })} />,
+);
 
-snapshot('OrganizedEvents/nocontents', <OrganizedEvents {...props({ empty: true })} />);
+snapshot(
+  'OrganizedEvents/nocontents',
+  <OrganizedEvents {...props({ empty: true })} />,
+);

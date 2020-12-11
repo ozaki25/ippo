@@ -1,9 +1,10 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import Signin from '.';
 
-const stories = storiesOf('pages/Signin', module);
+export default {
+  title: 'pages/Signin',
+};
 
 const props = {
   history: {
@@ -12,13 +13,11 @@ const props = {
     goBack: action('goBack'),
   },
   firebase: {
-    auth: {
-      getRedirectResult: action('getRedirectResult'),
+    auth() {
+      action('auth');
     },
-    doSignInWithEmailAndPassword: action('signin'),
-    doSignInWithGoogle: action('sigin with google'),
     doSignOut: action('signout'),
   },
 };
 
-stories.add('通常パターン', () => <Signin {...props} />);
+export const 通常パターン = () => <Signin {...props} />;

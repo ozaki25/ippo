@@ -1,8 +1,11 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { boolean } from '@storybook/addon-knobs';
 import OverlaySpinner from '.';
 
-const stories = storiesOf('molecules/OverlaySpinner', module);
+export default {
+  title: 'molecules/OverlaySpinner',
+};
 
-stories.add('通常パターン', () => <OverlaySpinner visible={boolean('visible', true)} />);
+export const 通常パターン = () => (
+  <OverlaySpinner visible={boolean('visible', true)} />
+);

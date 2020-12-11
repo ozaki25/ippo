@@ -1,10 +1,11 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { text } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
 import TweetDetail from '.';
 
-const stories = storiesOf('organisms/TweetDetail', module);
+export default {
+  title: 'organisms/TweetDetail',
+};
 
 const props = {
   name: text('name', 'ozaki25'),
@@ -21,4 +22,4 @@ const props = {
   onClickLike: action('like'),
 };
 
-stories.add('通常パターン', () => <TweetDetail {...props} />);
+export const 通常パターン = () => <TweetDetail {...props} />;

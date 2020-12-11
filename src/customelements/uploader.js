@@ -1,4 +1,4 @@
-import api from 'constants/api';
+import api from 'src/constants/api';
 
 const lambdaUrl = api.uploadEndpoint;
 
@@ -13,14 +13,20 @@ class XUploader extends HTMLElement {
   connectedCallback() {
     this.attachShadow({ mode: 'open' });
     this.shadowRoot.innerHTML = template;
-    this.shadowRoot.querySelector('button').addEventListener('click', this.onClick);
+    this.shadowRoot
+      .querySelector('button')
+      .addEventListener('click', this.onClick);
   }
 
   getUploadUrl = ({ url, filename, mimetype }) =>
     fetch(`${url}?filename=${filename}&mimetype=${mimetype}`);
 
   putFile = ({ url, file, type }) =>
-    fetch(url, { method: 'PUT', headers: { 'Content-Type': type }, body: file });
+    fetch(url, {
+      method: 'PUT',
+      headers: { 'Content-Type': type },
+      body: file,
+    });
 
   dispatch = ({ url, name, error }) => {
     const event = new CustomEvent('uploaded', { detail: { url, name, error } });
@@ -42,7 +48,12 @@ class XUploader extends HTMLElement {
       const { url, bucket } = await getUploadUrlResponse.json();
       const putFileResponse = await this.putFile({ url, file, type });
       if (putFileResponse.ok) {
-        this.dispatch({ url: encodeURI(`https://s3-ap-northeast-1.amazonaws.com/${bucket}/${name}`), name });
+        this.dispatch({
+          url: encodeURI(
+            `https://s3-ap-northeast-1.amazonaws.com/${bucket}/${name}`,
+          ),
+          name,
+        });
       } else {
         console.log(putFileResponse);
         this.dispatch({ error: 'Failed' });

@@ -1,14 +1,26 @@
-import { graphql } from 'react-apollo';
+import React from 'react';
+import { useMutation } from '@apollo/client';
 import { compose } from 'recompose';
-import { withRouter } from 'react-router-dom';
-import { withFirebase } from 'context/firebase';
-import mutation from 'graphql/mutation';
-import NewEvent from 'components/pages/NewEvent/';
-import { withAuthorization } from 'hoc/Sessions';
+import { useHistory } from 'react-router-dom';
 
-export default compose(
-  withAuthorization,
-  withRouter,
-  withFirebase,
-  graphql(mutation.createEvent, { name: 'createEvent' }),
-)(NewEvent);
+import useFirebase from 'src/hooks/useFirebase';
+import { withAuthorization } from 'src/hoc/Sessions';
+import mutation from 'src/graphql/mutation';
+import NewEvent from 'src/components/pages/NewEvent/';
+
+const WithNewEvent = compose(withAuthorization)(NewEvent);
+
+function NewEventContainer() {
+  const history = useHistory();
+  const firebase = useFirebase();
+  const [createEvent] = useMutation(mutation.createEvent);
+  return (
+    <WithNewEvent
+      history={history}
+      firebase={firebase}
+      createEvent={createEvent}
+    />
+  );
+}
+
+export default NewEventContainer;

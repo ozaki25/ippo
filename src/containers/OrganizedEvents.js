@@ -1,17 +1,33 @@
-import { graphql } from 'react-apollo';
+import React from 'react';
+import { useQuery } from '@apollo/client';
 import { compose } from 'recompose';
-import { withRouter } from 'react-router-dom';
-import { withFirebase } from 'context/firebase';
-import query from 'graphql/query';
-import OrganizedEvents from 'components/pages/OrganizedEvents/';
-import { withAuthorization } from 'hoc/Sessions';
-import paging from 'constants/paging';
+import { useHistory } from 'react-router-dom';
 
-export default compose(
-  withAuthorization,
-  withRouter,
-  withFirebase,
-  graphql(query.organizedEvents, {
-    options: ({ authUser: { uid } }) => ({ variables: { uid, limit: paging.eventsPerPage } }),
-  }),
-)(OrganizedEvents);
+import useFirebase from 'src/hooks/useFirebase';
+import { withAuthorization } from 'src/hoc/Sessions';
+import paging from 'src/constants/paging';
+import query from 'src/graphql/query';
+import OrganizedEvents from 'src/components/pages/OrganizedEvents/';
+
+const WithOrganizedEvents = compose(withAuthorization)(
+  OrganizedEventsContainer,
+);
+
+function OrganizedEventsContainer(props) {
+  const { uid } = props.authUser;
+  const history = useHistory();
+  const firebase = useFirebase();
+  const { data, loading, error, fetchMore } = useQuery(query.organizedEvents, {
+    variables: { uid, limit: paging.eventsPerPage },
+  });
+  return (
+    <OrganizedEvents
+      {...props}
+      history={history}
+      firebase={firebase}
+      data={{ ...data, loading, error, fetchMore }}
+    />
+  );
+}
+
+export default WithOrganizedEvents;

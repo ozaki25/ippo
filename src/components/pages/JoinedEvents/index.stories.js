@@ -1,9 +1,10 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import JoinedEvents from '.';
 
-const stories = storiesOf('pages/JoinedEvents', module);
+export default {
+  title: 'pages/JoinedEvents',
+};
 
 const event = i => ({
   id: String(i),
@@ -34,8 +35,10 @@ const props = ({ loading = false, empty = false }) => ({
   firebase: {},
 });
 
-stories.add('通常パターン', () => <JoinedEvents {...props({})} />);
+export const 通常パターン = () => <JoinedEvents {...props({})} />;
 
-stories.add('ロード中', () => <JoinedEvents {...props({ loading: true, empty: true })} />);
+export const ロード中 = () => (
+  <JoinedEvents {...props({ loading: true, empty: true })} />
+);
 
-stories.add('データなし', () => <JoinedEvents {...props({ empty: true })} />);
+export const データなし = () => <JoinedEvents {...props({ empty: true })} />;

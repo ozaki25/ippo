@@ -1,9 +1,10 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import EventsOverview from '.';
 
-const stories = storiesOf('organisms/EventsOverview', module);
+export default {
+  title: 'organisms/EventsOverview',
+};
 
 const internalEvent = i => ({
   id: `ID${i}`,
@@ -36,4 +37,4 @@ const props = {
   firebase: {},
 };
 
-stories.add('通常パターン', () => <EventsOverview {...props} />);
+export const 通常パターン = () => <EventsOverview {...props} />;

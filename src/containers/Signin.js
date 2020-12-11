@@ -1,27 +1,31 @@
+import React from 'react';
+import { useQuery } from '@apollo/client';
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
-import { withFirebase } from 'context/firebase';
+import { useHistory } from 'react-router-dom';
 import { compose } from 'recompose';
-import { graphql } from 'react-apollo';
-import query from 'graphql/query';
-import Signin from 'components/pages/Signin';
-import { setAuthUser } from 'modules/session';
 
-const mapStateToProps = state => ({
-  rawId: state.webauth.rawId,
-  uid: state.webauth.uid,
-});
+import useFirebase from 'src/hooks/useFirebase';
+import { setAuthUser } from 'src/modules/session';
+import query from 'src/graphql/query';
+import Signin from 'src/components/pages/Signin';
 
 const mapDispatchToProps = dispatch => ({
   onSetAuthUser: authUser => dispatch(setAuthUser(authUser)),
 });
 
-export default compose(
-  withRouter,
-  withFirebase,
-  connect(
-    mapStateToProps,
-    mapDispatchToProps,
-  ),
-  graphql(query.fetchUser, { name: 'fetchUser' }),
-)(Signin);
+const WithSignin = compose(connect(null, mapDispatchToProps))(Signin);
+
+function SigninContainer() {
+  const history = useHistory();
+  const firebase = useFirebase();
+  const { data, loading, error, refetch } = useQuery(query.fetchUser);
+  return (
+    <WithSignin
+      history={history}
+      firebase={firebase}
+      fetchUser={{ ...data, loading, error, refetch }}
+    />
+  );
+}
+
+export default SigninContainer;

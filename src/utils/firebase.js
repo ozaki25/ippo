@@ -21,23 +21,15 @@ const config = process.env.NODE_ENV === 'production' ? prodConfig : devConfig;
 class Firebase {
   constructor() {
     app.initializeApp(config);
-    this.emailAuthProvider = app.auth.EmailAuthProvider;
-    this.auth = app.auth();
-    this.googleProvider = new app.auth.GoogleAuthProvider();
+    this.auth = app.auth;
   }
 
-  doCreateUserWithEmailAndPassword = (email, password) =>
-    this.auth.createUserWithEmailAndPassword(email, password);
-
-  doSignInWithEmailAndPassword = (email, password) =>
-    this.auth.signInWithEmailAndPassword(email, password);
-
-  doSignInWithGoogle = () => this.auth.signInWithRedirect(this.googleProvider);
-
-  doSignOut = () => this.auth.signOut();
+  doSignOut = () => this.auth().signOut();
 
   onAuthUserListener = (next, fallback) =>
-    this.auth.onAuthStateChanged(authUser => (authUser ? next(authUser) : fallback()));
+    this.auth().onAuthStateChanged(authUser =>
+      authUser ? next(authUser) : fallback(),
+    );
 
   askForPermissionToReceiveNotifications = async () => {
     const messaging = app.messaging();

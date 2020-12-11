@@ -1,10 +1,11 @@
 import React from 'react';
 import { Typography } from '@material-ui/core';
 import { AddRounded } from '@material-ui/icons';
-import { storiesOf } from '@storybook/react';
 import IconWithText from '.';
 
-const stories = storiesOf('templates/IconWithText', module);
+export default {
+  title: 'templates/IconWithText',
+};
 
 const props = {
   children: (
@@ -15,4 +16,4 @@ const props = {
   ),
 };
 
-stories.add('通常パターン', () => <IconWithText {...props} />);
+export const 通常パターン = () => <IconWithText {...props} />;

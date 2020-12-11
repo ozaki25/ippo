@@ -1,12 +1,19 @@
 import React from 'react';
-import { Button, List, ListItem, ListItemIcon, TextField, Typography } from '@material-ui/core';
+import {
+  Button,
+  List,
+  ListItem,
+  ListItemIcon,
+  TextField,
+  Typography,
+} from '@material-ui/core';
 // ユーザアイコンの上にこのアイコンを重ねたい
 // import { PhotoCameraOutlined } from '@material-ui/icons';
 import propTypes from 'prop-types';
-import CharIcon from 'components/atoms/CharIcon';
-import OverlaySpinner from 'components/molecules/OverlaySpinner';
-import InputCategoriesAutoSuggest from 'components/organisms/InputCategoriesAutoSuggest';
-import Container from 'components/templates/Container';
+import CharIcon from 'src/components/atoms/CharIcon';
+import OverlaySpinner from 'src/components/molecules/OverlaySpinner';
+import InputCategoriesAutoSuggest from 'src/components/organisms/InputCategoriesAutoSuggest';
+import Container from 'src/components/templates/Container';
 
 class SettingsAccount extends React.Component {
   constructor(props) {
@@ -16,7 +23,10 @@ class SettingsAccount extends React.Component {
     } = props;
     this.state = {
       name: fetchUser ? fetchUser.displayName : '',
-      categories: fetchUser && fetchUser.categories ? fetchUser.categories.split(',') : [],
+      categories:
+        fetchUser && fetchUser.categories
+          ? fetchUser.categories.split(',')
+          : [],
       error: '',
     };
   }
@@ -62,13 +72,18 @@ class SettingsAccount extends React.Component {
     }
   };
 
-  onChange = event => this.setState({ [event.target.name]: event.target.value });
+  onChange = event =>
+    this.setState({ [event.target.name]: event.target.value });
 
   handleAddChip = chip =>
-    this.setState(prevState => ({ categories: [...prevState.categories, chip] }));
+    this.setState(prevState => ({
+      categories: [...prevState.categories, chip],
+    }));
 
   handleDeleteChip = chip =>
-    this.setState(prevState => ({ categories: prevState.categories.filter(c => c !== chip) }));
+    this.setState(prevState => ({
+      categories: prevState.categories.filter(c => c !== chip),
+    }));
 
   render() {
     const {

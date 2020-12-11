@@ -1,10 +1,11 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { text } from '@storybook/addon-knobs';
 import SideMenu from '.';
 
-const stories = storiesOf('organisms/SideMenu', module);
+export default {
+  title: 'organisms/SideMenu',
+};
 
 const props = {
   authUser: {
@@ -21,6 +22,6 @@ const props = {
   },
 };
 
-stories.add('open', () => <SideMenu {...props} open />);
+export const open = () => <SideMenu {...props} open />;
 
-stories.add('close', () => <SideMenu {...props} open={false} />);
+export const close = () => <SideMenu {...props} open={false} />;

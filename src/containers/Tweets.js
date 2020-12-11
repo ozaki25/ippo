@@ -1,25 +1,49 @@
-import { graphql } from 'react-apollo';
+import React from 'react';
+import { useQuery, useMutation } from '@apollo/client';
 import { compose } from 'recompose';
-import { withRouter } from 'react-router-dom';
-import { withFirebase } from 'context/firebase';
-import query from 'graphql/query';
-import mutation from 'graphql/mutation';
-import Tweets from 'components/pages/Tweets/';
-import { withAuthorization } from 'hoc/Sessions';
-import paging from 'constants/paging';
-import tweetPolling from 'constants/tweetPolling';
+import { useHistory } from 'react-router-dom';
 
-const getHashtag = search => new URLSearchParams(search).get('hashtag') || 'none';
+import useFirebase from 'src/hooks/useFirebase';
+import { withAuthorization } from 'src/hoc/Sessions';
+import paging from 'src/constants/paging';
+import tweetPolling from 'src/constants/tweetPolling';
+import query from 'src/graphql/query';
+import mutation from 'src/graphql/mutation';
+import Tweets from 'src/components/pages/Tweets/';
 
-export default compose(
-  withAuthorization,
-  withRouter,
-  withFirebase,
-  graphql(query.tweets, {
-    options: ({ location: { search }, authUser: { uid } }) => ({
+const getHashtag = search =>
+  new URLSearchParams(search).get('hashtag') || 'none';
+
+const WithTweets = compose(withAuthorization)(TweetsContainer);
+
+function TweetsContainer(props) {
+  const {
+    location: { search },
+    authUser: { uid },
+  } = props;
+  const history = useHistory();
+  const firebase = useFirebase();
+  const { data, loading, error, fetchMore, refetch, variables } = useQuery(
+    query.tweets,
+    {
       pollInterval: tweetPolling.duration,
-      variables: { hashtag: getHashtag(search), limit: paging.tweetsPerPage, uid },
-    }),
-  }),
-  graphql(mutation.addLikeToTweet, { name: 'addLike' }),
-)(Tweets);
+      variables: {
+        hashtag: getHashtag(search),
+        limit: paging.tweetsPerPage,
+        uid,
+      },
+    },
+  );
+  const [addLike] = useMutation(mutation.addLikeToTweet);
+  return (
+    <Tweets
+      {...props}
+      history={history}
+      firebase={firebase}
+      addLike={addLike}
+      data={{ ...data, loading, error, fetchMore, refetch, variables }}
+    />
+  );
+}
+
+export default WithTweets;

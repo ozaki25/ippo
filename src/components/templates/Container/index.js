@@ -1,13 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
 import propTypes from 'prop-types';
-import NavigationBar from 'components/organisms/NavigationBar';
+import NavigationBar from 'src/components/organisms/NavigationBar';
 
 const StyledContainer = styled.div`
   padding: ${({ noPadding }) => (noPadding ? 'inherit' : '5px 10px')};
 `;
 
-const Container = ({ children, title, authUser, noPadding, header, back, history, firebase }) => (
+const Container = ({
+  children,
+  title,
+  authUser,
+  noPadding,
+  header,
+  back,
+  history,
+  firebase,
+}) => (
   <>
     {header && (
       <NavigationBar

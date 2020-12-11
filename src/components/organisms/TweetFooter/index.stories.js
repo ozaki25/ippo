@@ -1,9 +1,10 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import TweetFooter from '.';
 
-const stories = storiesOf('organisms/TweetFooter', module);
+export default {
+  title: 'organisms/TweetFooter',
+};
 
 const props = {
   onClickReply: action('onClickReply'),
@@ -11,4 +12,4 @@ const props = {
   onClickLike: action('onClickLike'),
 };
 
-stories.add('通常パターン', () => <TweetFooter {...props} />);
+export const 通常パターン = () => <TweetFooter {...props} />;

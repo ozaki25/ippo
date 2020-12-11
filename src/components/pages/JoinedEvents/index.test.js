@@ -1,5 +1,5 @@
 import React from 'react';
-import { snapshot } from 'test/helpers';
+import { snapshot } from 'src/test/helpers';
 import JoinedEvents from '.';
 
 const event = i => ({
@@ -35,6 +35,12 @@ const props = ({ loading = false, empty = false }) => ({
 
 snapshot('JoinedEvents/nomal', <JoinedEvents {...props({})} />);
 
-snapshot('JoinedEvents/loading', <JoinedEvents {...props({ loading: true, empty: true })} />);
+snapshot(
+  'JoinedEvents/loading',
+  <JoinedEvents {...props({ loading: true, empty: true })} />,
+);
 
-snapshot('JoinedEvents/nocontents', <JoinedEvents {...props({ empty: true })} />);
+snapshot(
+  'JoinedEvents/nocontents',
+  <JoinedEvents {...props({ empty: true })} />,
+);

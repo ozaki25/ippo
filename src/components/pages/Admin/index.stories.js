@@ -1,9 +1,10 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import Admin from '.';
 
-const stories = storiesOf('pages/Admin', module);
+export default {
+  title: 'pages/Admin',
+};
 
 const props = {
   publishNotification: action('publish'),
@@ -18,8 +19,10 @@ const props = {
     goBack: action('goBack'),
   },
   firebase: {
-    askForPermissionToReceiveNotifications: action('askForPermissionToReceiveNotifications'),
+    askForPermissionToReceiveNotifications: action(
+      'askForPermissionToReceiveNotifications',
+    ),
   },
 };
 
-stories.add('通常パターン', () => <Admin {...props} />);
+export const 通常パターン = () => <Admin {...props} />;

@@ -1,7 +1,6 @@
 import { combineReducers } from 'redux';
-import session from 'modules/session';
-import webauth from 'modules/webauth';
+import session from 'src/modules/session';
 
-const reducer = combineReducers({ session, webauth });
+const reducer = combineReducers({ session });
 
 export default reducer;

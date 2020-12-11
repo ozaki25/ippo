@@ -1,5 +1,5 @@
 import React from 'react';
-import { snapshot } from 'test/helpers';
+import { snapshot } from 'src/test/helpers';
 import AsyncSwipeable from '.';
 
 const items = [
@@ -10,6 +10,9 @@ const items = [
   <h1 key="5">テスト5</h1>,
 ];
 
-snapshot('AsyncSwipeable/nomal', <AsyncSwipeable loading={false} children={items} />);
+snapshot(
+  'AsyncSwipeable/nomal',
+  <AsyncSwipeable loading={false} children={items} />,
+);
 
 snapshot('AsyncSwipeable/loading', <AsyncSwipeable loading={true} />);

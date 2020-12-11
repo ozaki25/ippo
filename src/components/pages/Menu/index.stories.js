@@ -1,9 +1,10 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import Menu from '.';
 
-const stories = storiesOf('pages/Menu', module);
+export default {
+  title: 'pages/Menu',
+};
 
 const internalEvent = i => ({
   id: `ID${i}`,
@@ -64,10 +65,10 @@ const props = ({ loading = false }) => ({
   firebase: {},
 });
 
-stories.add('ホーム', () => <Menu {...props({})} />);
+export const ホーム = () => <Menu {...props({})} />;
 
-stories.add('イベント作成', () => <Menu {...props({})} tab="イベント作成" />);
+export const イベント作成 = () => <Menu {...props({})} tab="イベント作成" />;
 
-stories.add('通知一覧', () => <Menu {...props({})} tab="通知" />);
+export const 通知一覧 = () => <Menu {...props({})} tab="通知" />;
 
-stories.add('ロード中', () => <Menu {...props({ loading: true })} />);
+export const ロード中 = () => <Menu {...props({ loading: true })} />;

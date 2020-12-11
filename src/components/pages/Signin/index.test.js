@@ -1,5 +1,5 @@
 import React from 'react';
-import { snapshot } from 'test/helpers';
+import { snapshot } from 'src/test/helpers';
 import Signin from '.';
 
 const props = {
@@ -11,8 +11,6 @@ const props = {
     auth: {
       getRedirectResult: jest.fn(),
     },
-    doSignInWithEmailAndPassword: jest.fn(),
-    doSignInWithGoogle: jest.fn(),
     doSignOut: jest.fn(),
   },
 };

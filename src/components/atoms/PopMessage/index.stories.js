@@ -1,10 +1,11 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { text } from '@storybook/addon-knobs';
 import PopMessage from '.';
 
-const stories = storiesOf('atoms/PopMessage', module);
+export default {
+  title: 'atoms/PopMessage',
+};
 
 const props = {
   anchorEl: document.body,
@@ -12,4 +13,4 @@ const props = {
   children: text('children', 'メッセージ'),
 };
 
-stories.add('通常パターン', () => <PopMessage {...props} />);
+export const 通常パターン = () => <PopMessage {...props} />;

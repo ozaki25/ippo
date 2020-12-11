@@ -1,8 +1,8 @@
 import React from 'react';
 import { Divider, List } from '@material-ui/core';
 import propTypes from 'prop-types';
-import ListItemUtil from 'components/molecules/ListItemUtil';
-import Container from 'components/templates/Container';
+import ListItemUtil from 'src/components/molecules/ListItemUtil';
+import Container from 'src/components/templates/Container';
 
 class SettingsNotification extends React.Component {
   constructor(props) {
@@ -22,7 +22,12 @@ class SettingsNotification extends React.Component {
   }
 
   toggleNotificationPermission = async () => {
-    const { firebase, notifications, registerNotification, unregisterNotification } = this.props;
+    const {
+      firebase,
+      notifications,
+      registerNotification,
+      unregisterNotification,
+    } = this.props;
     const { granted } = this.state;
     this.setState({ loading: true });
     try {
@@ -51,10 +56,14 @@ class SettingsNotification extends React.Component {
   };
 
   toggleRecommendedPermission = () =>
-    this.setState(prevState => ({ allowRecommendedEvent: !prevState.allowRecommendedEvent }));
+    this.setState(prevState => ({
+      allowRecommendedEvent: !prevState.allowRecommendedEvent,
+    }));
 
   toggleJoinedPermission = () =>
-    this.setState(prevState => ({ allowJoinedEvent: !prevState.allowJoinedEvent }));
+    this.setState(prevState => ({
+      allowJoinedEvent: !prevState.allowJoinedEvent,
+    }));
 
   render() {
     const { authUser, history, firebase } = this.props;
@@ -67,7 +76,13 @@ class SettingsNotification extends React.Component {
       loading,
     } = this.state;
     return (
-      <Container title="通知設定" back authUser={authUser} history={history} firebase={firebase}>
+      <Container
+        title="通知設定"
+        back
+        authUser={authUser}
+        history={history}
+        firebase={firebase}
+      >
         <List>
           {denied ? (
             <ListItemUtil

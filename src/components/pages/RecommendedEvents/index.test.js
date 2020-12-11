@@ -1,5 +1,5 @@
 import React from 'react';
-import { snapshot } from 'test/helpers';
+import { snapshot } from 'src/test/helpers';
 import RecommendedEvents from '.';
 
 const event = i => ({
@@ -40,4 +40,7 @@ snapshot(
   <RecommendedEvents {...props({ loading: true, empty: true })} />,
 );
 
-snapshot('RecommendedEvents/nocontents', <RecommendedEvents {...props({ empty: true })} />);
+snapshot(
+  'RecommendedEvents/nocontents',
+  <RecommendedEvents {...props({ empty: true })} />,
+);

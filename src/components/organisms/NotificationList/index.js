@@ -1,12 +1,20 @@
 import React from 'react';
-import { Divider, List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
+import {
+  Divider,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+} from '@material-ui/core';
 import { DraftsRounded, EmailRounded } from '@material-ui/icons';
 import propTypes from 'prop-types';
-import ROUTES from 'constants/routes';
+import ROUTES from 'src/constants/routes';
 
 const Notification = ({ id, title, content, checked, onClick }) => (
   <ListItem onClick={onClick} button>
-    <ListItemIcon>{checked ? <DraftsRounded /> : <EmailRounded />}</ListItemIcon>
+    <ListItemIcon>
+      {checked ? <DraftsRounded /> : <EmailRounded />}
+    </ListItemIcon>
     <ListItemText secondary={title} />
   </ListItem>
 );

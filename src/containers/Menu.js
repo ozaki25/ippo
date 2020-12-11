@@ -1,27 +1,42 @@
-import { graphql } from 'react-apollo';
+import React from 'react';
+import { useHistory } from 'react-router-dom';
+import { useQuery, useMutation } from '@apollo/client';
 import { compose } from 'recompose';
-import { withRouter } from 'react-router-dom';
-import { withFirebase } from 'context/firebase';
-import query from 'graphql/query';
-import mutation from 'graphql/mutation';
-import Menu from 'components/pages/Menu';
-import { withAuthorization } from 'hoc/Sessions';
-import withTab from 'hoc/withTab';
-import paging from 'constants/paging';
 
-export default compose(
-  withAuthorization,
-  withRouter,
-  withFirebase,
-  withTab,
-  graphql(query.allEvents, {
-    options: ({ authUser: { uid } }) => ({
-      variables: { uid, limit: paging.eventsPerPageForMenu },
-    }),
-  }),
-  graphql(query.fetchUser, {
-    options: ({ authUser: { uid } }) => ({ variables: { uid } }),
-    name: 'user',
-  }),
-  graphql(mutation.createEvent, { name: 'createEvent' }),
-)(Menu);
+import useFirebase from 'src/hooks/useFirebase';
+import query from 'src/graphql/query';
+import mutation from 'src/graphql/mutation';
+import Menu from 'src/components/pages/Menu';
+import { withAuthorization } from 'src/hoc/Sessions';
+import withTab from 'src/hoc/withTab';
+import paging from 'src/constants/paging';
+
+const WithMenu = compose(withAuthorization, withTab)(MenuContainer);
+
+function MenuContainer(props) {
+  const { uid } = props.authUser;
+  const history = useHistory();
+  const firebase = useFirebase();
+  const { data, loading, refetch } = useQuery(query.allEvents, {
+    variables: { uid, limit: paging.eventsPerPageForMenu },
+  });
+  const { data: fetchUserData, refetch: fetchUserrefetch } = useQuery(
+    query.fetchUser,
+    {
+      variables: { uid },
+    },
+  );
+  const [createEvent] = useMutation(mutation.createEvent);
+  return (
+    <Menu
+      {...props}
+      history={history}
+      firebase={firebase}
+      data={{ ...data, loading, refetch }}
+      user={{ ...fetchUserData, refetch: fetchUserrefetch }}
+      createEvent={createEvent}
+    />
+  );
+}
+
+export default WithMenu;

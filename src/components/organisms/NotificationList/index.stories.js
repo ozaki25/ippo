@@ -1,10 +1,11 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { text } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
 import NotificationList from '.';
 
-const stories = storiesOf('organisms/NotificationList', module);
+export default {
+  title: 'organisms/NotificationList',
+};
 
 const props = ({ checked }) => ({
   notifications: [
@@ -22,6 +23,6 @@ const props = ({ checked }) => ({
   },
 });
 
-stories.add('既読', () => <NotificationList {...props({ checked: true })} />);
+export const 既読 = () => <NotificationList {...props({ checked: true })} />;
 
-stories.add('未読', () => <NotificationList {...props({ checked: false })} />);
+export const 未読 = () => <NotificationList {...props({ checked: false })} />;

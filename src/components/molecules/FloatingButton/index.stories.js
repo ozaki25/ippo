@@ -1,16 +1,19 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import FloatingButton from '.';
 
-const stories = storiesOf('molecules/FloatingButton', module);
+export default {
+  title: 'molecules/FloatingButton',
+};
 
 const props = {
   onClick: action('onClick'),
 };
 
-stories.add('Add', () => <FloatingButton {...props} icon="add" />);
+export const Add = () => <FloatingButton {...props} icon="add" />;
 
-stories.add('Edit', () => <FloatingButton {...props} icon="edit" />);
+export const Edit = () => <FloatingButton {...props} icon="edit" />;
 
-stories.add('Notifications', () => <FloatingButton {...props} icon="notifications" />);
+export const Notifications = () => (
+  <FloatingButton {...props} icon="notifications" />
+);

@@ -1,9 +1,10 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import NewEvent from '.';
 
-const stories = storiesOf('pages/NewEvent', module);
+export default {
+  title: 'pages/NewEvent',
+};
 
 const props = {
   createEvent: action('createEvent'),
@@ -19,4 +20,4 @@ const props = {
   firebase: {},
 };
 
-stories.add('通常パターン', () => <NewEvent {...props} />);
+export const 通常パターン = () => <NewEvent {...props} />;

@@ -1,10 +1,11 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { boolean, text } from '@storybook/addon-knobs';
 import Tweets from '.';
 
-const stories = storiesOf('pages/Tweets', module);
+export default {
+  title: 'pages/Tweets',
+};
 
 const props = fixedTweet => ({
   data: {
@@ -26,7 +27,10 @@ const props = fixedTweet => ({
             hashtag: text('hashtag', 'react_handson'),
             id: text('id', '1546779693296'),
             title: text('title', 'Reactハンズオン'),
-            catchMessage: text('catchMessage', '初心者向けにReactのハンズオンをやります！'),
+            catchMessage: text(
+              'catchMessage',
+              '初心者向けにReactのハンズオンをやります！',
+            ),
             place: text('place', '晴海3階'),
             name: text('name', 'ozaki25'),
             startedAt: text('startedAt', '2018/01/01 12:34'),
@@ -53,6 +57,6 @@ const props = fixedTweet => ({
   firebase: {},
 });
 
-stories.add('固定ツイートなし', () => <Tweets {...props()} />);
+export const 固定ツイートなし = () => <Tweets {...props()} />;
 
-stories.add('固定ツイートあり', () => <Tweets {...props(true)} />);
+export const 固定ツイートあり = () => <Tweets {...props(true)} />;

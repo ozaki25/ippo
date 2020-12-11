@@ -1,5 +1,5 @@
 import React from 'react';
-import { snapshot } from 'test/helpers';
+import { snapshot } from 'src/test/helpers';
 import InputCategoriesAutoSuggest from '.';
 
 const props = {
@@ -9,7 +9,10 @@ const props = {
   value: [],
 };
 
-snapshot('InputCategoriesAutoSuggest/nomal', <InputCategoriesAutoSuggest {...props} />);
+snapshot(
+  'InputCategoriesAutoSuggest/nomal',
+  <InputCategoriesAutoSuggest {...props} />,
+);
 
 snapshot(
   'InputCategoriesAutoSuggest/one_selected',

@@ -1,10 +1,11 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { text } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
 import Notification from '.';
 
-const stories = storiesOf('pages/Notification', module);
+export default {
+  title: 'pages/Notification',
+};
 
 const props = {
   user: {
@@ -14,7 +15,10 @@ const props = {
           id: '1',
           checked: false,
           title: text('title', '通知のタイトル'),
-          content: text('content', '通知の本文です。ここに通知の内容が表示されます。'),
+          content: text(
+            'content',
+            '通知の本文です。ここに通知の内容が表示されます。',
+          ),
           timestamp: 'Tue Jan 22 2019 00:38:59 GMT+0900 (Japan Standard Time)',
         },
       ],
@@ -42,4 +46,4 @@ const props = {
   readNotification: action('read'),
 };
 
-stories.add('通常パターン', () => <Notification {...props} />);
+export const 通常パターン = () => <Notification {...props} />;

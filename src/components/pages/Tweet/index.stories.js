@@ -1,10 +1,11 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { boolean } from '@storybook/addon-knobs';
 import Tweet from '.';
 
-const stories = storiesOf('pages/Tweet', module);
+export default {
+  title: 'pages/Tweet',
+};
 
 const props = ({ comments }) => ({
   data: {
@@ -49,6 +50,6 @@ const comments = [
   },
 ];
 
-stories.add('通常パターン', () => <Tweet {...props({})} />);
+export const 通常パターン = () => <Tweet {...props({})} />;
 
-stories.add('コメント有り', () => <Tweet {...props({ comments })} />);
+export const コメント有り = () => <Tweet {...props({ comments })} />;

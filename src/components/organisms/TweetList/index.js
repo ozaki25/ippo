@@ -1,11 +1,19 @@
 import React from 'react';
 import InfiniteScroll from 'react-infinite-scroller';
 import propTypes from 'prop-types';
-import Spinner from 'components/atoms/Spinner';
-import Tweet from 'components/organisms/Tweet';
-import ROUTES from 'constants/routes';
+import Spinner from 'src/components/atoms/Spinner';
+import Tweet from 'src/components/organisms/Tweet';
+import ROUTES from 'src/constants/routes';
 
-const TweetList = ({ items, loadMore, hasMore, uid, history, onClickReply, onClickLike }) => (
+const TweetList = ({
+  items,
+  loadMore,
+  hasMore,
+  uid,
+  history,
+  onClickReply,
+  onClickLike,
+}) => (
   <InfiniteScroll
     key={items.length}
     pageStart={0}
@@ -20,11 +28,18 @@ const TweetList = ({ items, loadMore, hasMore, uid, history, onClickReply, onCli
         {...item}
         liked={item.likes && item.likes.includes(uid)}
         onClick={e => {
-          if (['a', 'svg', 'path'].includes(e.target.tagName.toLowerCase())) return;
-          history.push(`${ROUTES.Tweet.replace(':id', item.id)}?hashtag=${item.hashtag}`);
+          if (['a', 'svg', 'path'].includes(e.target.tagName.toLowerCase()))
+            return;
+          history.push(
+            `${ROUTES.Tweet.replace(':id', item.id)}?hashtag=${item.hashtag}`,
+          );
         }}
-        onClickReply={() => onClickReply({ hashtag: item.hashtag, tweetid: item.id })}
-        onClickLike={() => onClickLike({ hashtag: item.hashtag, tweetid: item.id })}
+        onClickReply={() =>
+          onClickReply({ hashtag: item.hashtag, tweetid: item.id })
+        }
+        onClickLike={() =>
+          onClickLike({ hashtag: item.hashtag, tweetid: item.id })
+        }
       />
     ))}
   </InfiniteScroll>
