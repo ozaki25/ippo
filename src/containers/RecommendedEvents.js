@@ -1,19 +1,15 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
-import { compose } from 'recompose';
 import { useHistory } from 'react-router-dom';
 
 import useFirebase from 'src/hooks/useFirebase';
-import { withAuthorization } from 'src/hoc/Sessions';
+import useAuthorization from 'src/hooks/useAuthorization';
 import paging from 'src/constants/paging';
 import query from 'src/graphql/query';
 import RecommendedEvents from 'src/components/pages/RecommendedEvents/';
 
-const WithRecommendedEvents = compose(withAuthorization)(
-  RecommendedEventsContainer,
-);
-
 function RecommendedEventsContainer(props) {
+  useAuthorization();
   const { uid } = props.authUser;
   const history = useHistory();
   const firebase = useFirebase();
@@ -34,4 +30,4 @@ function RecommendedEventsContainer(props) {
   );
 }
 
-export default WithRecommendedEvents;
+export default RecommendedEventsContainer;

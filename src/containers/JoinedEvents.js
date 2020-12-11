@@ -1,17 +1,15 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
-import { compose } from 'recompose';
 
-import { withAuthorization } from 'src/hoc/Sessions';
+import useAuthorization from 'src/hooks/useAuthorization';
 import useFirebase from 'src/hooks/useFirebase';
 import paging from 'src/constants/paging';
 import query from 'src/graphql/query';
 import JoinedEvents from 'src/components/pages/JoinedEvents/';
 
-const WithJoinedEvents = compose(withAuthorization)(JoinedEventsContainer);
-
 function JoinedEventsContainer(props) {
+  useAuthorization();
   const { uid } = props.authUser;
   const history = useHistory();
   const firebase = useFirebase();
@@ -28,4 +26,4 @@ function JoinedEventsContainer(props) {
   );
 }
 
-export default WithJoinedEvents;
+export default JoinedEventsContainer;

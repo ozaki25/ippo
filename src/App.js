@@ -1,28 +1,32 @@
 import React from 'react';
 import { ApolloProvider } from '@apollo/client';
-import { Provider } from 'react-redux';
 import { MuiThemeProvider } from '@material-ui/core/styles';
+
 import Router from 'src/router';
 import client from 'src/graphql/client';
-import store from 'src/modules/createStore';
-import Firebase from 'src/utils/firebase';
+import { AuthUserProvider } from 'src/context/authUser';
 import { FirebaseProvider } from 'src/context/firebase';
+import useAuthentication from 'src/hooks/useAuthentication';
 import theme from 'src/theme';
-import { withAuthentication } from 'src/hoc/Sessions';
 import 'src/customelements/uploader';
 
-const AuthRouter = withAuthentication(Router);
+function AuthRouter() {
+  useAuthentication();
+  return <Router />;
+}
 
-const App = () => (
-  <MuiThemeProvider theme={theme}>
-    <ApolloProvider client={client}>
-      <Provider store={store}>
-        <FirebaseProvider value={new Firebase()}>
-          <AuthRouter />
-        </FirebaseProvider>
-      </Provider>
-    </ApolloProvider>
-  </MuiThemeProvider>
-);
+function App() {
+  return (
+    <MuiThemeProvider theme={theme}>
+      <ApolloProvider client={client}>
+        <AuthUserProvider>
+          <FirebaseProvider>
+            <AuthRouter />
+          </FirebaseProvider>
+        </AuthUserProvider>
+      </ApolloProvider>
+    </MuiThemeProvider>
+  );
+}
 
 export default App;
